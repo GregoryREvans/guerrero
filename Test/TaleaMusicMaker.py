@@ -29,7 +29,8 @@ class TaleaMusicMaker:
         #self.tag=tag
 
     def __call__(self, durations, previous_state):
-        return self.make_music(durations, previous_state)
+        state = previous_state
+        return self.make_music(durations)
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -58,12 +59,13 @@ class TaleaMusicMaker:
                 indices=self.mask_indices,
                 period=self.mask_period)
             )
+        
         tuplet_specifier = rmakers.TupletSpecifier(
             trivialize=True,
             extract_trivial=True,
             rewrite_rest_filled=True,
             )
-        talea_rhythm_maker(
+        talea_rhythm_maker = rmakers.TaleaRhythmMaker(
             talea=rmakers.Talea(
                 counts = self.counts,
                 denominator=self.denominator,
