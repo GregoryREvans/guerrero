@@ -26,8 +26,8 @@ musicmaker_one = TaleaMusicMaker(
     pitches=[0],
     clef='percussion',
     extra_counts_per_division=[1, 0, 0, 1, 0, 3, 0, 0],
-    mask_indices=[0],
-    mask_period=0,
+    mask_indices=[2],
+    mask_period=2,
     beams=False,
 )
 
@@ -400,8 +400,7 @@ for time_signature in time_signatures:
 print('Making containers ...')
 
 def make_container(rhythm_maker, durations):
-    state=rhythm_maker.state
-    selections = rhythm_maker(durations, previous_state=state)
+    selections = rhythm_maker(durations)
     container = abjad.Container(selections)
     # # Add analysis brackets so we can see the phrasing graphically
     # start_indicator = abjad.LilyPondLiteral('\startGroup', format_slot='after')

@@ -1,9 +1,6 @@
 import abjad
 from abjadext import rmakers
 
-global talea_rhythm_maker
-talea_rhythm_maker = rmakers.TaleaRhythmMaker()
-
 class TaleaMusicMaker:
 
     def __init__(
@@ -28,8 +25,8 @@ class TaleaMusicMaker:
         self.clef = abjad.Clef(clef)
         #self.tag=tag
 
-    def __call__(self, durations, previous_state):
-        return self.make_music(durations, previous_state)
+    def __call__(self, durations):
+        return self.make_music(durations)
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -39,11 +36,8 @@ class TaleaMusicMaker:
             c = c + 1
 
     def make_basic_rhythm(self, durations):
-
-        # talea = rmakers.Talea(
-        #     counts = self.counts,
-        #     denominator=self.denominator,
-        #     )
+        talea_rhythm_maker = rmakers.TaleaRhythmMaker()
+        state = talea_rhythm_maker.state
         beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
@@ -75,7 +69,7 @@ class TaleaMusicMaker:
             #tag=self.tag,
             )
 
-        selections = talea_rhythm_maker(durations)
+        selections = talea_rhythm_maker(durations, previous_state=state,)
 
         music = abjad.Staff(selections)
 
@@ -121,7 +115,3 @@ class TaleaMusicMaker:
         # music = self.add_attachments(music)
 
         return music
-
-    @property
-    def state(self) -> abjad.OrderedDict:
-        return talea_rhythm_maker.state
