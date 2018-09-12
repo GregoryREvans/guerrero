@@ -4,6 +4,7 @@ import os
 import pathlib
 import time
 import abjadext.rmakers
+from MusicMakerTalea import MusicMakerTalea
 
 print('Interpreting file ...')
 
@@ -11,7 +12,8 @@ print('Interpreting file ...')
 
 time_signatures = [
     abjad.TimeSignature(pair) for pair in [
-        (4, 4),
+        (5, 4), (4, 4), (3, 4), (5, 4), (4, 4), (3, 4),
+        (3, 4), (4, 4), (5, 4), (3, 4), (4, 4), (5, 4),
     ]
 ]
 
@@ -19,8 +21,66 @@ bounds = abjad.mathtools.cumulative_sums([_.duration for _ in time_signatures])
 
 # Define rhythm-makers: two for actual music, one for silence.
 
-rmaker_one = abjadext.rmakers.NoteRhythmMaker()
+rmaker_one = MusicMakerTalea(
+    counts=[2, 2, 5, 3, 1, 1, 3, 1],
+    denominator=8,
+    pitches=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    clef='percussion',
+    extra_counts_per_division=[1, 0, 0, 1, 0, 3, 0, 0],
+    mask_indices=[0],
+    mask_period=0,
+    beams=False,
+)
 
+# rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
+#     talea=abjadext.rmakers.Talea(
+#         counts=[1, 1, 1, 5, 3, 2, 4],
+#         denominator=16,
+#         ),
+#     beam_specifier=abjadext.rmakers.BeamSpecifier(
+#         beam_divisions_together=True,
+#         beam_rests=False,
+#         ),
+#     extra_counts_per_division=[0, 1, ],
+#     burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+#         left_classes=[abjad.Rest],
+#         left_counts=[1, 0, 1],
+#         ),
+#     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
+#         trivialize=True,
+#         extract_trivial=True,
+#         rewrite_rest_filled=True,
+#         ),
+#     )
+
+rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
+    talea=abjadext.rmakers.Talea(
+        counts=[4, 3, -1, 2],
+        denominator=8,
+        ),
+    beam_specifier=abjadext.rmakers.BeamSpecifier(
+        beam_divisions_together=True,
+        beam_rests=False,
+        ),
+    extra_counts_per_division=[-1, 0,],
+    burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+        left_classes=[abjad.Rest],
+        left_counts=[1, 0, 1],
+        ),
+    tuplet_specifier=abjadext.rmakers.TupletSpecifier(
+        trivialize=True,
+        extract_trivial=True,
+        rewrite_rest_filled=True,
+        ),
+    )
+
+silence_maker = abjadext.rmakers.NoteRhythmMaker(
+    division_masks=[
+        abjadext.rmakers.SilenceMask(
+            pattern=abjad.index([0], 1),
+            ),
+        ],
+    )
 
 # Define a small class so that we can annotate timespans with additional
 # information:
@@ -50,7 +110,14 @@ voice_1_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(0, 4), (3, 4), rmaker_one],
+        [(5, 4), (8, 4), rmaker_one],
+        [(12, 4), (15, 4), rmaker_two],
+        [(17, 4), (20, 4), rmaker_one],
+        [(28, 4), (31, 4), rmaker_two],
+        [(33, 4), (36, 4), rmaker_two],
+        [(40, 4), (43, 4), rmaker_one],
+        [(45, 4), (48, 4), rmaker_two],
     ]
 ])
 
@@ -64,7 +131,14 @@ voice_5_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(0, 4), (3, 4), rmaker_one],
+        [(5, 4), (8, 4), rmaker_one],
+        [(12, 4), (15, 4), rmaker_two],
+        [(17, 4), (20, 4), rmaker_one],
+        [(28, 4), (31, 4), rmaker_two],
+        [(33, 4), (36, 4), rmaker_two],
+        [(40, 4), (43, 4), rmaker_one],
+        [(45, 4), (48, 4), rmaker_two],
     ]
 ])
 
@@ -78,7 +152,14 @@ voice_9_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(0, 4), (3, 4), rmaker_one],
+        [(5, 4), (8, 4), rmaker_one],
+        [(12, 4), (15, 4), rmaker_two],
+        [(17, 4), (20, 4), rmaker_one],
+        [(28, 4), (31, 4), rmaker_two],
+        [(33, 4), (36, 4), rmaker_two],
+        [(40, 4), (43, 4), rmaker_one],
+        [(45, 4), (48, 4), rmaker_two],
     ]
 ])
 
@@ -92,7 +173,14 @@ voice_13_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(0, 4), (3, 4), rmaker_one],
+        [(5, 4), (8, 4), rmaker_one],
+        [(12, 4), (15, 4), rmaker_two],
+        [(17, 4), (20, 4), rmaker_one],
+        [(28, 4), (31, 4), rmaker_two],
+        [(33, 4), (36, 4), rmaker_two],
+        [(40, 4), (43, 4), rmaker_one],
+        [(45, 4), (48, 4), rmaker_two],
     ]
 ])
 
@@ -106,7 +194,22 @@ voice_2_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        # [(4, 4), (7, 4), rmaker_two],#
+        [(4, 4), (5, 4), rmaker_two],#
+        [(5, 4), (7, 4), rmaker_two],#
+        [(9, 4), (12, 4), rmaker_one],
+        # [(16, 4), (19, 4), rmaker_two],#
+        [(16, 4), (17, 4), rmaker_two],#
+        [(17, 4), (19, 4), rmaker_two],#
+        [(21, 4), (24, 4), rmaker_one],
+        [(24, 4), (27, 4), rmaker_one],
+        # [(29, 4), (32, 4), rmaker_two],#
+        [(29, 4), (31, 4), rmaker_two],#
+        [(31, 4), (32, 4), rmaker_two],#
+        [(36, 4), (39, 4), rmaker_one],
+        # [(41, 4), (44, 4), rmaker_two],#
+        [(41, 4), (43, 4), rmaker_two],#
+        [(43, 4), (44, 4), rmaker_two],#
     ]
 ])
 
@@ -120,7 +223,22 @@ voice_6_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        # [(4, 4), (7, 4), rmaker_two],#
+        [(4, 4), (5, 4), rmaker_two],#
+        [(5, 4), (7, 4), rmaker_two],#
+        [(9, 4), (12, 4), rmaker_one],
+        # [(16, 4), (19, 4), rmaker_two],#
+        [(16, 4), (17, 4), rmaker_two],#
+        [(17, 4), (19, 4), rmaker_two],#
+        [(21, 4), (24, 4), rmaker_one],
+        [(24, 4), (27, 4), rmaker_one],
+        # [(29, 4), (32, 4), rmaker_two],#
+        [(29, 4), (31, 4), rmaker_two],#
+        [(31, 4), (32, 4), rmaker_two],#
+        [(36, 4), (39, 4), rmaker_one],
+        # [(41, 4), (44, 4), rmaker_two],#
+        [(41, 4), (43, 4), rmaker_two],#
+        [(43, 4), (44, 4), rmaker_two],#
     ]
 ])
 
@@ -134,7 +252,22 @@ voice_10_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        # [(4, 4), (7, 4), rmaker_two],#
+        [(4, 4), (5, 4), rmaker_two],#
+        [(5, 4), (7, 4), rmaker_two],#
+        [(9, 4), (12, 4), rmaker_one],
+        # [(16, 4), (19, 4), rmaker_two],#
+        [(16, 4), (17, 4), rmaker_two],#
+        [(17, 4), (19, 4), rmaker_two],#
+        [(21, 4), (24, 4), rmaker_one],
+        [(24, 4), (27, 4), rmaker_one],
+        # [(29, 4), (32, 4), rmaker_two],#
+        [(29, 4), (31, 4), rmaker_two],#
+        [(31, 4), (32, 4), rmaker_two],#
+        [(36, 4), (39, 4), rmaker_one],
+        # [(41, 4), (44, 4), rmaker_two],#
+        [(41, 4), (43, 4), rmaker_two],#
+        [(43, 4), (44, 4), rmaker_two],#
     ]
 ])
 
@@ -148,7 +281,22 @@ voice_14_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        # [(4, 4), (7, 4), rmaker_two],#
+        [(4, 4), (5, 4), rmaker_two],#
+        [(5, 4), (7, 4), rmaker_two],#
+        [(9, 4), (12, 4), rmaker_one],
+        # [(16, 4), (19, 4), rmaker_two],#
+        [(16, 4), (17, 4), rmaker_two],#
+        [(17, 4), (19, 4), rmaker_two],#
+        [(21, 4), (24, 4), rmaker_one],
+        [(24, 4), (27, 4), rmaker_one],
+        # [(29, 4), (32, 4), rmaker_two],#
+        [(29, 4), (31, 4), rmaker_two],#
+        [(31, 4), (32, 4), rmaker_two],#
+        [(36, 4), (39, 4), rmaker_one],
+        # [(41, 4), (44, 4), rmaker_two],#
+        [(41, 4), (43, 4), rmaker_two],#
+        [(43, 4), (44, 4), rmaker_two],#
     ]
 ])
 
@@ -162,7 +310,14 @@ voice_3_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(2, 4), (5, 4), rmaker_one],
+        [(9, 4), (12, 4), rmaker_two],
+        [(14, 4), (17, 4), rmaker_two],
+        [(21, 4), (24, 4), rmaker_one],
+        [(24, 4), (27, 4), rmaker_two],
+        [(31, 4), (34, 4), rmaker_one],
+        [(36, 4), (39, 4), rmaker_one],
+        [(43, 4), (46, 4), rmaker_two],
     ]
 ])
 
@@ -176,7 +331,14 @@ voice_7_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(2, 4), (5, 4), rmaker_one],
+        [(9, 4), (12, 4), rmaker_two],
+        [(14, 4), (17, 4), rmaker_two],
+        [(21, 4), (24, 4), rmaker_one],
+        [(24, 4), (27, 4), rmaker_two],
+        [(31, 4), (34, 4), rmaker_one],
+        [(36, 4), (39, 4), rmaker_one],
+        [(43, 4), (46, 4), rmaker_two],
     ]
 ])
 
@@ -190,7 +352,14 @@ voice_11_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(2, 4), (5, 4), rmaker_one],
+        [(9, 4), (12, 4), rmaker_two],
+        [(14, 4), (17, 4), rmaker_two],
+        [(21, 4), (24, 4), rmaker_one],
+        [(24, 4), (27, 4), rmaker_two],
+        [(31, 4), (34, 4), rmaker_one],
+        [(36, 4), (39, 4), rmaker_one],
+        [(43, 4), (46, 4), rmaker_two],
     ]
 ])
 
@@ -204,7 +373,14 @@ voice_15_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(2, 4), (5, 4), rmaker_one],
+        [(9, 4), (12, 4), rmaker_two],
+        [(14, 4), (17, 4), rmaker_two],
+        [(21, 4), (24, 4), rmaker_one],
+        [(24, 4), (27, 4), rmaker_two],
+        [(31, 4), (34, 4), rmaker_one],
+        [(36, 4), (39, 4), rmaker_one],
+        [(43, 4), (46, 4), rmaker_two],
     ]
 ])
 
@@ -218,7 +394,22 @@ voice_4_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(0, 4), (3, 4), rmaker_two],
+        # [(7, 4), (10, 4), rmaker_two],#
+        [(7, 4), (9, 4), rmaker_two],#
+        [(9, 4), (10, 4), rmaker_two],#
+        [(12, 4), (15, 4), rmaker_one],
+        # [(19, 4), (22, 4), rmaker_two],#
+        [(19, 4), (21, 4), rmaker_two],#
+        [(21, 4), (22, 4), rmaker_two],#
+        # [(26, 4), (29, 4), rmaker_one],#
+        [(26, 4), (27, 4), rmaker_one],#
+        [(27, 4), (29, 4), rmaker_one],#
+        [(33, 4), (36, 4), rmaker_one],
+        # [(38, 4), (41, 4), rmaker_two],#
+        [(38, 4), (39, 4), rmaker_two],#
+        [(39, 4), (41, 4), rmaker_two],#
+        [(45, 4), (48, 4), rmaker_one],
     ]
 ])
 
@@ -232,7 +423,22 @@ voice_8_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(0, 4), (3, 4), rmaker_two],
+        # [(7, 4), (10, 4), rmaker_two],#
+        [(7, 4), (9, 4), rmaker_two],#
+        [(9, 4), (10, 4), rmaker_two],#
+        [(12, 4), (15, 4), rmaker_one],
+        # [(19, 4), (22, 4), rmaker_two],#
+        [(19, 4), (21, 4), rmaker_two],#
+        [(21, 4), (22, 4), rmaker_two],#
+        # [(26, 4), (29, 4), rmaker_one],#
+        [(26, 4), (27, 4), rmaker_one],#
+        [(27, 4), (29, 4), rmaker_one],#
+        [(33, 4), (36, 4), rmaker_one],
+        # [(38, 4), (41, 4), rmaker_two],#
+        [(38, 4), (39, 4), rmaker_two],#
+        [(39, 4), (41, 4), rmaker_two],#
+        [(45, 4), (48, 4), rmaker_one],
     ]
 ])
 
@@ -246,7 +452,22 @@ voice_12_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(0, 4), (3, 4), rmaker_two],
+        # [(7, 4), (10, 4), rmaker_two],#
+        [(7, 4), (9, 4), rmaker_two],#
+        [(9, 4), (10, 4), rmaker_two],#
+        [(12, 4), (15, 4), rmaker_one],
+        # [(19, 4), (22, 4), rmaker_two],#
+        [(19, 4), (21, 4), rmaker_two],#
+        [(21, 4), (22, 4), rmaker_two],#
+        # [(26, 4), (29, 4), rmaker_one],#
+        [(26, 4), (27, 4), rmaker_one],#
+        [(27, 4), (29, 4), rmaker_one],#
+        [(33, 4), (36, 4), rmaker_one],
+        # [(38, 4), (41, 4), rmaker_two],#
+        [(38, 4), (39, 4), rmaker_two],#
+        [(39, 4), (41, 4), rmaker_two],#
+        [(45, 4), (48, 4), rmaker_one],
     ]
 ])
 
@@ -260,7 +481,22 @@ voice_16_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, rhythm_maker in [
-        [0, 1, rmaker_one],
+        [(0, 4), (3, 4), rmaker_two],
+        # [(7, 4), (10, 4), rmaker_two],#
+        [(7, 4), (9, 4), rmaker_two],#
+        [(9, 4), (10, 4), rmaker_two],#
+        [(12, 4), (15, 4), rmaker_one],
+        # [(19, 4), (22, 4), rmaker_two],#
+        [(19, 4), (21, 4), rmaker_two],#
+        [(21, 4), (22, 4), rmaker_two],#
+        # [(26, 4), (29, 4), rmaker_one],#
+        [(26, 4), (27, 4), rmaker_one],#
+        [(27, 4), (29, 4), rmaker_one],#
+        [(33, 4), (36, 4), rmaker_one],
+        # [(38, 4), (41, 4), rmaker_two],#
+        [(38, 4), (39, 4), rmaker_two],#
+        [(39, 4), (41, 4), rmaker_two],#
+        [(45, 4), (48, 4), rmaker_one],
     ]
 ])
 
@@ -446,7 +682,7 @@ print('Splitting and rewriting ...')
 # split and rewite meters
 for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
     for i, shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
-        time_signature = time_signatures[0]
+        time_signature = time_signatures[i]
         abjad.mutate(shard).rewrite_meter(time_signature)
 
 print('Beautifying score ...')
@@ -472,56 +708,14 @@ def cyc(lst):
         yield lst[count%len(lst)]
         count += 1
 
-sopranino_scale = [30]
-soprano1_scale = [20]
-soprano2_scale = [14]
-soprano3_scale = [11]
-alto1_scale = [11]
-alto2_scale = [3]
-alto3_scale = [-8]
-tenor1_scale = [3]
-tenor2_scale = [-8]
-tenor3_scale = [-15]
-baritone1_scale = [-8]
-baritone2_scale = [-15]
-baritone3_scale = [-17]
-bass1_scale = [-15]
-bass2_scale = [-17]
-contrabass_scale = [-36]
-
-scales = [
-    sopranino_scale,
-    soprano1_scale,
-    soprano2_scale,
-    soprano3_scale,
-    alto1_scale,
-    alto2_scale,
-    alto3_scale,
-    tenor1_scale,
-    tenor2_scale,
-    tenor3_scale,
-    baritone1_scale,
-    baritone2_scale,
-    baritone3_scale,
-    bass1_scale,
-    bass2_scale,
-    contrabass_scale,
-]
-
-staffs = [staff for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff)]
-
-for staff , scale in zip(staffs , scales):
-    logicl_ties = [i for i in abjad.iterate(staff).logical_ties(pitched=True)]
-    pitches = cyc(scale)
-    for i , logicl_tie in enumerate(logicl_ties):
-        if logicl_tie.is_pitched ==True:
-            pitch = next(pitches)
-            for note in logicl_tie:
-                note.written_pitch = pitch
 
 #attach instruments and clefs
 
 print('Adding attachments ...')
+bar_line = abjad.BarLine('||')
+metro = abjad.MetronomeMark((1, 4), 90)
+markup = abjad.Markup(r'\bold { Invocation }')
+mark = abjad.RehearsalMark(markup=markup)
 
 instruments = cyc([
     abjad.SopraninoSaxophone(),
@@ -558,7 +752,7 @@ abbreviations = cyc([
     abjad.MarginMarkup(markup=abjad.Markup('bar.3'),),
     abjad.MarginMarkup(markup=abjad.Markup('bs.1'),),
     abjad.MarginMarkup(markup=abjad.Markup('bs.2'),),
-    abjad.MarginMarkup(markup=abjad.Markup('cb.'),),
+    abjad.MarginMarkup(markup=abjad.Markup('cbs.'),),
 ])
 
 names = cyc([
@@ -580,31 +774,21 @@ names = cyc([
     abjad.StartMarkup(markup=abjad.Markup('Contrabass'),),
 ])
 
-# clefs = cyc([
-#     abjad.Clef('treble'),
-#     abjad.Clef('treble'),
-#     abjad.Clef('treble'),
-#     abjad.Clef('treble'),
-#     abjad.Clef('treble'),
-#     abjad.Clef('treble'),
-#     abjad.Clef('treble'),
-#     abjad.Clef('bass'),
-#     abjad.Clef('bass'),
-#     abjad.Clef('bass'),
-#     abjad.Clef('bass'),
-#     abjad.Clef('bass'),
-#     abjad.Clef('bass'),
-#     abjad.Clef('bass'),
-#     abjad.Clef('bass'),
-#     abjad.Clef('bass'),
-# ])
-
 for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     abjad.attach(next(instruments), leaf1)
     abjad.attach(next(abbreviations), leaf1)
     abjad.attach(next(names), leaf1)
-    # abjad.attach(next(clefs), leaf1)
+
+for staff in abjad.select(score['Staff Group']).components(abjad.Staff)[0]:
+    leaf1 = abjad.select(staff).leaves()[0]
+    last_leaf = abjad.select(staff).leaves()[-1]
+    abjad.attach(metro, leaf1)
+    abjad.attach(bar_line, last_leaf)
+
+for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
+    leaf1 = abjad.select(staff).leaves()[0]
+    abjad.attach(mark, leaf1)
 
 for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     abjad.Instrument.transpose_from_sounding_pitch(staff)
@@ -619,27 +803,29 @@ score_file = abjad.LilyPondFile.new(
 abjad.SegmentMaker.comment_measure_numbers(score)
 ###################
 
-#print(format(score_file))
-directory = '/Users/evansdsg2/Scores/guerrero/Test'
-pdf_path = f'{directory}/chord.pdf'
-path = pathlib.Path('chord.pdf')
-if path.exists():
-    print(f'Removing {pdf_path} ...')
-    path.unlink()
-time_1 = time.time()
-print(f'Persisting {pdf_path} ...')
-result = abjad.persist(score_file).as_pdf(pdf_path)
-print(result[0])
-print(result[1])
-print(result[2])
-success = result[3]
-if success is False:
-        print('LilyPond failed!')
-time_2 = time.time()
-total_time = time_2 - time_1
-print(f'Total time: {total_time} seconds')
-if path.exists():
-    print(f'Opening {pdf_path} ...')
-    os.system(f'open {pdf_path}')
+# #print(format(score_file))
+# directory = '/Users/evansdsg2/Scores/guerrero/Test'
+# pdf_path = f'{directory}/Test.pdf'
+# path = pathlib.Path('Test.pdf')
+# if path.exists():
+#     print(f'Removing {pdf_path} ...')
+#     path.unlink()
+# time_1 = time.time()
+# print(f'Persisting {pdf_path} ...')
+# result = abjad.persist(score_file).as_pdf(pdf_path)
+# print(result[0])
+# print(result[1])
+# print(result[2])
+# success = result[3]
+# if success is False:
+#         print('LilyPond failed!')
+# time_2 = time.time()
+# total_time = time_2 - time_1
+# print(f'Total time: {total_time} seconds')
+# if path.exists():
+#     print(f'Opening {pdf_path} ...')
+#     os.system(f'open {pdf_path}')
 
-# abjad.show(score)
+# for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+#     abjad.show(staff)
+abjad.show(score)
