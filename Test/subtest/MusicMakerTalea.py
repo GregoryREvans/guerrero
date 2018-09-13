@@ -79,7 +79,7 @@ class MusicMakerTalea:
 
         music = self._apply_pitches(selections)
 
-        return music
+        return music, talea_rhythm_maker.state
 
     def _apply_pitches(self, selections):
         selections = selections
@@ -106,7 +106,7 @@ class MusicMakerTalea:
     #     return music
 
     def make_music(self, durations):
-        music = self.make_basic_rhythm(
+        music, state = self.make_basic_rhythm(
             durations,
             )
         #shards = abjad.mutate(music[:]).split(durations)
@@ -118,4 +118,4 @@ class MusicMakerTalea:
 
         # music = self.add_attachments(music)
 
-        return music
+        return music, state

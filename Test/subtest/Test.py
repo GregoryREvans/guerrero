@@ -624,7 +624,7 @@ for time_signature in time_signatures:
 print('Making containers ...')
 
 def make_container(rhythm_maker, durations):
-    selections = rhythm_maker(durations)
+    selections, state = rhythm_maker(durations, previous_state=state)
     container = abjad.Container(selections)
     # # Add analysis brackets so we can see the phrasing graphically
     # start_indicator = abjad.LilyPondLiteral('\startGroup', format_slot='after')
@@ -642,7 +642,7 @@ def make_container(rhythm_maker, durations):
     # phrase_last_leaf = abjad.select(container).leaves()[-1]
     # abjad.attach(start_indicator, phrase_first_leaf)
     # abjad.attach(stop_indicator, phrase_last_leaf)
-    return container
+    return container, state
 
 # Loop over the timespan list dictionaries, spitting out pairs of voice
 # names and per-voice timespan lists. Group timespans into phrases, with
@@ -653,7 +653,6 @@ def make_container(rhythm_maker, durations):
 def key_function(timespan):
     """
     Get the timespan's annotation's rhythm-maker.
-
     If the annotation's rhythm-maker is None, return the silence maker.
     """
     return timespan.annotation.rhythm_maker or silence_maker
