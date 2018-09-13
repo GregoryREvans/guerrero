@@ -25,8 +25,8 @@ class MusicMakerTalea:
         self.clef = abjad.Clef(clef)
         #self.tag=tag
 
-    def __call__(self, durations):
-        return self.make_music(durations)
+    def __call__(self, durations, previous_state):
+        return self.make_music(durations, previous_state)
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -35,7 +35,7 @@ class MusicMakerTalea:
             yield cyclic[c]
             c = c + 1
 
-    def make_basic_rhythm(self, durations):
+    def make_basic_rhythm(self, durations, previous_state):
 
         # talea = rmakers.Talea(
         #     counts = self.counts,
@@ -105,9 +105,10 @@ class MusicMakerTalea:
     #             abjad.attach(abjad.Dynamic('ppp'), run[0])
     #     return music
 
-    def make_music(self, durations):
+    def make_music(self, durations, previous_state):
         music, state = self.make_basic_rhythm(
             durations,
+            previous_state,
             )
         #shards = abjad.mutate(music[:]).split(durations)
         beam_specifier = rmakers.BeamSpecifier(

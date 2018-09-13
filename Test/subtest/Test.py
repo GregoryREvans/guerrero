@@ -624,6 +624,7 @@ for time_signature in time_signatures:
 print('Making containers ...')
 
 def make_container(rhythm_maker, durations):
+    state = {}
     selections, state = rhythm_maker(durations, previous_state=state)
     container = abjad.Container(selections)
     # # Add analysis brackets so we can see the phrasing graphically
