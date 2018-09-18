@@ -10,7 +10,6 @@ class MusicMakerTalea:
         mask_indices,
         mask_period,
         pitches,
-        rmaker,
         extra_counts_per_division=[0],
         beams=False,
         clef='treble',
@@ -22,7 +21,7 @@ class MusicMakerTalea:
         self.mask_indices=mask_indices
         self.mask_period=mask_period
         self.pitches = pitches
-        self.rmaker = rmakers.TaleaRhythmMaker(),
+        self.rmaker = rmakers.TaleaRhythmMaker()
         self.beams = beams
         self.clef = abjad.Clef(clef)
         #self.tag=tag
@@ -37,7 +36,7 @@ class MusicMakerTalea:
             yield cyclic[c]
             c = c + 1
 
-    def make_basic_rhythm(self, durations, previous_state):
+    def make_basic_rhythm(self, durations):
 
         # talea = rmakers.Talea(
         #     counts = self.counts,
@@ -107,10 +106,9 @@ class MusicMakerTalea:
     #             abjad.attach(abjad.Dynamic('ppp'), run[0])
     #     return music
 
-    def make_music(self, durations, previous_state):
+    def make_music(self, durations):
         music, state = self.make_basic_rhythm(
             durations,
-            previous_state,
             )
         #shards = abjad.mutate(music[:]).split(durations)
         beam_specifier = rmakers.BeamSpecifier(
