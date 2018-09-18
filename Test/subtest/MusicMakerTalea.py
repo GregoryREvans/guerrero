@@ -10,10 +10,11 @@ class MusicMakerTalea:
         mask_indices,
         mask_period,
         pitches,
+        rmaker,
         extra_counts_per_division=[0],
         beams=False,
         clef='treble',
-        #tag='None',
+        #tag='None'
         ):
         self.counts = counts
         self.denominator = denominator
@@ -21,12 +22,13 @@ class MusicMakerTalea:
         self.mask_indices=mask_indices
         self.mask_period=mask_period
         self.pitches = pitches
+        self.rmaker = rmakers.TaleaRhythmMaker(),
         self.beams = beams
         self.clef = abjad.Clef(clef)
         #self.tag=tag
 
-    def __call__(self, durations, previous_state):
-        return self.make_music(durations, previous_state)
+    def __call__(self, durations):
+        return self.make_music(durations)
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -61,7 +63,7 @@ class MusicMakerTalea:
             extract_trivial=True,
             rewrite_rest_filled=True,
             )
-        talea_rhythm_maker = rmakers.TaleaRhythmMaker(
+        talea_rhythm_maker = self.rmaker(
             talea=rmakers.Talea(
                 counts = self.counts,
                 denominator=self.denominator,
@@ -73,13 +75,13 @@ class MusicMakerTalea:
             #tag=self.tag,
             )
 
-        selections = talea_rhythm_maker(durations, previous_state=talea_rhythm_maker.state)
+        selections = talea_rhythm_maker(durations, previous_state=self.rmaker.state)
 
         #music = abjad.Staff(selections)
 
         music = self._apply_pitches(selections)
 
-        return music, talea_rhythm_maker.state
+        return music, self.rmaker.state
 
     def _apply_pitches(self, selections):
         selections = selections
@@ -120,3 +122,7 @@ class MusicMakerTalea:
         # music = self.add_attachments(music)
 
         return music, state
+
+    @property
+    def state(self) -> abjad.OrderedDict:
+        return state

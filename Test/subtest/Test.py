@@ -624,8 +624,7 @@ for time_signature in time_signatures:
 print('Making containers ...')
 
 def make_container(rhythm_maker, durations):
-    state = {}
-    selections, state = rhythm_maker(durations, previous_state=state)
+    selections = rhythm_maker(durations)
     container = abjad.Container(selections)
     # # Add analysis brackets so we can see the phrasing graphically
     # start_indicator = abjad.LilyPondLiteral('\startGroup', format_slot='after')
@@ -643,7 +642,7 @@ def make_container(rhythm_maker, durations):
     # phrase_last_leaf = abjad.select(container).leaves()[-1]
     # abjad.attach(start_indicator, phrase_first_leaf)
     # abjad.attach(stop_indicator, phrase_last_leaf)
-    return container, state
+    return container
 
 # Loop over the timespan list dictionaries, spitting out pairs of voice
 # names and per-voice timespan lists. Group timespans into phrases, with
@@ -681,7 +680,7 @@ print('Splitting and rewriting ...')
 
 # split and rewite meters
 for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
-    for i, shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
+    for i , shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
         time_signature = time_signatures[i]
         abjad.mutate(shard).rewrite_meter(time_signature)
 
