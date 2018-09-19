@@ -4,7 +4,7 @@ import os
 import pathlib
 import time
 import abjadext.rmakers
-from MusicMakerTalea import MusicMakerTalea
+from MusicMaker import MusicMaker
 
 print('Interpreting file ...')
 
@@ -19,41 +19,30 @@ time_signatures = [
 
 bounds = abjad.mathtools.cumulative_sums([_.duration for _ in time_signatures])
 
-# Define rhythm-makers: two for actual music, one for silence.
+# Define rhythm-makers: two to be used by the MusicMaker, one for silence.
 
-rmaker_one = MusicMakerTalea(
-    counts=[2, 2, 5, 3, 1, 1, 3, 1],
-    denominator=8,
-    pitches=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    clef='percussion',
-    extra_counts_per_division=[1, 0, 0, 1, 0, 3, 0, 0],
-    mask_indices=[0],
-    mask_period=0,
-    beams=False,
-)
+rmaker_001 = abjadext.rmakers.TaleaRhythmMaker(
+    talea=abjadext.rmakers.Talea(
+        counts=[1, 1, 1, 5, 3, 2, 4],
+        denominator=16,
+        ),
+    beam_specifier=abjadext.rmakers.BeamSpecifier(
+        beam_divisions_together=True,
+        beam_rests=False,
+        ),
+    extra_counts_per_division=[0, 1, ],
+    burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+        left_classes=[abjad.Rest],
+        left_counts=[1, 0, 1],
+        ),
+    tuplet_specifier=abjadext.rmakers.TupletSpecifier(
+        trivialize=True,
+        extract_trivial=True,
+        rewrite_rest_filled=True,
+        ),
+    )
 
-# rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
-#     talea=abjadext.rmakers.Talea(
-#         counts=[1, 1, 1, 5, 3, 2, 4],
-#         denominator=16,
-#         ),
-#     beam_specifier=abjadext.rmakers.BeamSpecifier(
-#         beam_divisions_together=True,
-#         beam_rests=False,
-#         ),
-#     extra_counts_per_division=[0, 1, ],
-#     burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-#         left_classes=[abjad.Rest],
-#         left_counts=[1, 0, 1],
-#         ),
-#     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
-#         trivialize=True,
-#         extract_trivial=True,
-#         rewrite_rest_filled=True,
-#         ),
-#     )
-
-rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
+rmaker_002 = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
         counts=[4, 3, -1, 2],
         denominator=8,
@@ -73,6 +62,26 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         rewrite_rest_filled=True,
         ),
     )
+
+# Initialize two MusicMakers with the rhythm-makers.
+
+rmaker_one = MusicMaker(
+    rmaker=rmaker_001,
+    pitches=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    continuous=True,
+    starting_dynamic='mf',
+    ending_dynamic='ff',
+    trend='0<|',
+    articulation=abjad.Staccato(),
+)
+rmaker_two = MusicMaker(
+    rmaker=rmaker_002,
+    continuous=True,
+    starting_dynamic='mf',
+    ending_dynamic='ff',
+    trend='0<|',
+    articulation=abjad.Staccato(),
+)
 
 silence_maker = abjadext.rmakers.NoteRhythmMaker(
     division_masks=[
@@ -625,7 +634,8 @@ print('Making containers ...')
 
 def make_container(rhythm_maker, durations):
     selections = rhythm_maker(durations)
-    container = abjad.Container(selections)
+    container = abjad.Container([])
+    container.extend(selections)
     # # Add analysis brackets so we can see the phrasing graphically
     # start_indicator = abjad.LilyPondLiteral('\startGroup', format_slot='after')
     # stop_indicator = abjad.LilyPondLiteral('\stopGroup', format_slot='after')
@@ -798,33 +808,33 @@ score_file = abjad.LilyPondFile.new(
     score,
     includes=['first_stylesheet.ily'],
     )
-# Comment measure numbers
-abjad.SegmentMaker.comment_measure_numbers(score)
+# Comment measure numbers - this function is in the baca.SegmentMaker, not abjad.SegmentMaker
+# abjad.SegmentMaker.comment_measure_numbers(score)
 ###################
 
-# #print(format(score_file))
-# directory = '/Users/evansdsg2/Scores/guerrero/Test'
-# pdf_path = f'{directory}/Test.pdf'
-# path = pathlib.Path('Test.pdf')
-# if path.exists():
-#     print(f'Removing {pdf_path} ...')
-#     path.unlink()
-# time_1 = time.time()
-# print(f'Persisting {pdf_path} ...')
-# result = abjad.persist(score_file).as_pdf(pdf_path)
-# print(result[0])
-# print(result[1])
-# print(result[2])
-# success = result[3]
-# if success is False:
-#         print('LilyPond failed!')
-# time_2 = time.time()
-# total_time = time_2 - time_1
-# print(f'Total time: {total_time} seconds')
-# if path.exists():
-#     print(f'Opening {pdf_path} ...')
-#     os.system(f'open {pdf_path}')
+#print(format(score_file))
+directory = '/Users/evansdsg2/Scores/guerrero/Test/subtest'
+pdf_path = f'{directory}/Test.pdf'
+path = pathlib.Path('Test.pdf')
+if path.exists():
+    print(f'Removing {pdf_path} ...')
+    path.unlink()
+time_1 = time.time()
+print(f'Persisting {pdf_path} ...')
+result = abjad.persist(score_file).as_pdf(pdf_path)
+print(result[0])
+print(result[1])
+print(result[2])
+success = result[3]
+if success is False:
+        print('LilyPond failed!')
+time_2 = time.time()
+total_time = time_2 - time_1
+print(f'Total time: {total_time} seconds')
+if path.exists():
+    print(f'Opening {pdf_path} ...')
+    os.system(f'open {pdf_path}')
 
 # for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 #     abjad.show(staff)
-abjad.show(score)
+# abjad.show(score)
