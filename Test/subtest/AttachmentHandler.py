@@ -19,7 +19,7 @@ class AttachmentHandler:
 
     def add_attachments(self, selections):
         runs = abjad.select(selections).runs()
-        ties = abjad.select(selections).logical_ties()
+        ties = abjad.select(selections).logical_ties(pitched=True)
         for run in runs:
             if len(run) > 1:
                 leaves = abjad.select(run).leaves()
