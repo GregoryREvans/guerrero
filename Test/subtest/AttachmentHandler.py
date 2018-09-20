@@ -4,13 +4,11 @@ class AttachmentHandler:
 
     def __init__(
         self,
-        selections,
         starting_dynamic=None,
         ending_dynamic=None,
         trend=None,
         articulation=None,
         ):
-        self.selections = selections
         self.starting_dynamic = starting_dynamic
         self.ending_dynamic = ending_dynamic
         self.trend = trend

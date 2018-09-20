@@ -5,6 +5,7 @@ import pathlib
 import time
 import abjadext.rmakers
 from MusicMaker import MusicMaker
+from AttachmentHandler import AttachmentHandler
 
 print('Interpreting file ...')
 
@@ -63,24 +64,27 @@ rmaker_002 = abjadext.rmakers.TaleaRhythmMaker(
         ),
     )
 
+# Add AttachmentHandler
+
+attachment_handler_one = AttachmentHandler(
+    starting_dynamic='mf',
+    ending_dynamic='ff',
+    trend='<',
+    articulation=abjad.Staccato(),
+)
+
 # Initialize two MusicMakers with the rhythm-makers.
 
 rmaker_one = MusicMaker(
     rmaker=rmaker_001,
     pitches=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     continuous=True,
-    starting_dynamic='mf',
-    ending_dynamic='ff',
-    trend='<',
-    articulation=abjad.Staccato(),
+    attachment_handler=attachment_handler_one,
 )
 rmaker_two = MusicMaker(
     rmaker=rmaker_002,
     continuous=True,
-    starting_dynamic='mf',
-    ending_dynamic='ff',
-    trend='<',
-    articulation=abjad.Staccato(),
+    attachment_handler=attachment_handler_one,
 )
 
 silence_maker = abjadext.rmakers.NoteRhythmMaker(

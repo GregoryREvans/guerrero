@@ -4,23 +4,17 @@ from AttachmentHandler import AttachmentHandler
 class MusicMaker:
     def __init__(
         self,
+        attachment_handler,
         rmaker,
         pitches=None,
         continuous=False,
-        starting_dynamic=None,
-        ending_dynamic=None,
-        trend=None,
-        articulation=None,
     ):
+        self.attachment_handler = attachment_handler
         self.rmaker = rmaker
         self.pitches = pitches
         self.continuous = continuous
         self._count = 0
         self._state = self.rmaker.state
-        self.starting_dynamic = starting_dynamic
-        self.ending_dynamic = ending_dynamic
-        self.trend = trend
-        self.articulation = articulation
 
     def __call__(self, durations):
         return self._make_music(durations)
@@ -33,8 +27,10 @@ class MusicMaker:
     def _make_music(self, durations):
         selections = self._make_basic_rhythm(durations)
         if self.pitches == None:
+            selections = self.attachment_handler.add_attachments(selections)
             return selections
         selections = self._apply_pitches(selections, self.pitches)
+        selections = self.attachment_handler(selections)
         return selections
         AttachmentHandler(
             selections=selections,
