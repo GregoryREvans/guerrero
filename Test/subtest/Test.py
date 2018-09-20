@@ -70,7 +70,7 @@ attachment_handler_one = AttachmentHandler(
     starting_dynamic='mf',
     ending_dynamic='ff',
     trend='<',
-    articulation=abjad.Staccato(),
+    articulation='staccato',
 )
 
 # Initialize two MusicMakers with the rhythm-makers.

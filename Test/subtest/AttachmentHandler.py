@@ -31,5 +31,5 @@ class AttachmentHandler:
                 abjad.attach(abjad.Dynamic(self.starting_dynamic), leaves[0])
         for tie in ties:
             if len(tie) == 1:
-                abjad.attach(self.articulation, tie[0])
+                abjad.attach(abjad.Articulation(self.articulation), tie[0])
         return selections
