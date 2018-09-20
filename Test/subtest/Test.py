@@ -64,7 +64,7 @@ rmaker_002 = abjadext.rmakers.TaleaRhythmMaker(
         ),
     )
 
-# Add AttachmentHandler
+# Initialize AttachmentHandler
 
 attachment_handler_one = AttachmentHandler(
     starting_dynamic='mf',
