@@ -25,10 +25,20 @@ class AttachmentHandler:
                 leaves = abjad.select(run).leaves()
                 abjad.attach(abjad.Dynamic(self.starting_dynamic), leaves[0])
                 abjad.attach(abjad.DynamicTrend(self.trend), leaves[0])
+                abjad.attach(abjad.LilyPondLiteral(r'\!', 'after'), leaves[-1])
                 abjad.attach(abjad.Dynamic(self.ending_dynamic), leaves[-1])
             else:
+                def cyc(lst):
+                    count = 0
+                    while True:
+                        yield lst[count%len(lst)]
+                        count += 1
+                dynamics = cyc([
+                    self.starting_dynamic,
+                    self.ending_dynamic,
+                ])
                 leaves = abjad.select(run).leaves()
-                abjad.attach(abjad.Dynamic(self.starting_dynamic), leaves[0])
+                abjad.attach(abjad.Dynamic(next(dynamics)), leaves[0])
         for tie in ties:
             if len(tie) == 1:
                 abjad.attach(abjad.Articulation(self.articulation), tie[0])
