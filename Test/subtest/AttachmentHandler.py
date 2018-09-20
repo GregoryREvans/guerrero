@@ -26,7 +26,6 @@ class AttachmentHandler:
             abjad.attach(abjad.Dynamic(self.starting_dynamic), run[0])
             abjad.attach(abjad.DynamicTrend(self.trend), run[0])
             abjad.attach(abjad.Dynamic(self.ending_dynamic), run[-1])
-        return music
         for tie in ties:
-            abjad.attach(abjad.Articulation(self.articulation))
-        return music
+            abjad.attach(self.articulation)
+        return selections

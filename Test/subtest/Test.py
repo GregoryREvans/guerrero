@@ -71,7 +71,7 @@ rmaker_one = MusicMaker(
     continuous=True,
     starting_dynamic='mf',
     ending_dynamic='ff',
-    trend='0<|',
+    trend='<',
     articulation=abjad.Staccato(),
 )
 rmaker_two = MusicMaker(
@@ -79,7 +79,7 @@ rmaker_two = MusicMaker(
     continuous=True,
     starting_dynamic='mf',
     ending_dynamic='ff',
-    trend='0<|',
+    trend='<',
     articulation=abjad.Staccato(),
 )
 
@@ -808,8 +808,8 @@ score_file = abjad.LilyPondFile.new(
     score,
     includes=['first_stylesheet.ily'],
     )
-# Comment measure numbers - this function is in the baca.SegmentMaker, not abjad.SegmentMaker
-# abjad.SegmentMaker.comment_measure_numbers(score)
+
+abjad.SegmentMaker.comment_measure_numbers(score)
 ###################
 
 #print(format(score_file))
