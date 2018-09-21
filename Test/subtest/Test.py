@@ -69,7 +69,7 @@ rmaker_002 = abjadext.rmakers.TaleaRhythmMaker(
 attachment_handler_one = AttachmentHandler(
     starting_dynamic='mf',
     ending_dynamic='ff',
-    trend='<',
+    hairpin_indicator='<',
     articulation='staccato',
 )
 
@@ -625,9 +625,7 @@ for staff in score['Staff Group']:
 # Add skips and time signatures to the global context
 
 for time_signature in time_signatures:
-    skip = abjad.Skip(1)
-    abjad.attach(abjad.Multiplier(time_signature), skip)
-    abjad.attach(time_signature, skip)
+    skip = abjad.Skip(1, multiplier=(time_signature))
     score['Global Context'].append(skip)
 
 # Define a helper function that takes a rhythm maker and some durations and

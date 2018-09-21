@@ -6,13 +6,19 @@ class AttachmentHandler:
         self,
         starting_dynamic=None,
         ending_dynamic=None,
-        trend=None,
+        hairpin_indicator=None,
         articulation=None,
         ):
+        def cyc(lst):
+            count = 0
+            while True:
+                yield lst[count%len(lst)]
+                count += 1
         self.starting_dynamic = starting_dynamic
         self.ending_dynamic = ending_dynamic
-        self.trend = trend
+        self.hairpin_indicator = hairpin_indicator
         self.articulation = articulation
+        self._cyc_dynamics = cyc([starting_dynamic, ending_dynamic])
 
     def __call__(self, selections):
         return self.add_attachments(selections)
@@ -24,21 +30,13 @@ class AttachmentHandler:
             if len(run) > 1:
                 leaves = abjad.select(run).leaves()
                 abjad.attach(abjad.Dynamic(self.starting_dynamic), leaves[0])
-                abjad.attach(abjad.DynamicTrend(self.trend), leaves[0])
+                abjad.attach(abjad.HairpinIndicator(self.hairpin_indicator), leaves[0])
                 abjad.attach(abjad.LilyPondLiteral(r'\!', 'after'), leaves[-1])
                 abjad.attach(abjad.Dynamic(self.ending_dynamic), leaves[-1])
             else:
-                def cyc(lst):
-                    count = 0
-                    while True:
-                        yield lst[count%len(lst)]
-                        count += 1
-                dynamics = cyc([
-                    self.starting_dynamic,
-                    self.ending_dynamic,
-                ])
                 leaves = abjad.select(run).leaves()
-                abjad.attach(abjad.Dynamic(next(dynamics)), leaves[0])
+                dynamic = next(self._cyc_dynamics)
+                abjad.attach(abjad.Dynamic(dynamic), leaves[0])
         for tie in ties:
             if len(tie) == 1:
                 abjad.attach(abjad.Articulation(self.articulation), tie[0])

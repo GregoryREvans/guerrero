@@ -36,7 +36,7 @@ class MusicMaker:
             selections=selections,
             starting_dynamic=self.starting_dynamic,
             ending_dynamic=self.ending_dynamic,
-            trend=self.trend,
+            hairpin_indicator=self.hairpin_indicator,
             articulation=self.articulation,
         )
         return selections
