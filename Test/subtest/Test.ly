@@ -1,7 +1,8 @@
 \version "2.19.82"  %! LilyPondFile
 \language "english" %! LilyPondFile
 
-\include "first_stylesheet.ily" %! LilyPondFile
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
 
 \header { %! LilyPondFile
     tagline = ##f
@@ -17,6 +18,7 @@
         \context TimeSignatureContext = "Global Context"
         {
             % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS
+            \time 5/4
             \mark \markup {
                 \bold
                     {
@@ -25,24 +27,37 @@
                 }
             s1 * 5/4
             % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS
+            \time 4/4
             s1 * 1
             % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS
+            \time 3/4
             s1 * 3/4
             % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS
+            \time 5/4
             s1 * 5/4
             % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS
+            \time 4/4
             s1 * 1
             % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS
+            \time 3/4
             s1 * 3/4
             % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS
+            \time 3/4
             s1 * 3/4
-            s1 * 1
             % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS
-            s1 * 5/4
-            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS
-            s1 * 3/4
+            \time 4/4
             s1 * 1
+            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS
+            \time 5/4
+            s1 * 5/4
             % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS
+            \time 3/4
+            s1 * 3/4
+            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS
+            \time 4/4
+            s1 * 1
+            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
+            \time 5/4
             s1 * 5/4
         }
         \context StaffGroup = "Staff Group"
@@ -68,7 +83,9 @@
                         a16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         as16
                         - \staccato
                         b16
@@ -82,6 +99,7 @@
                         cs'16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -97,9 +115,13 @@
                             cs'4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             d'16
                             - \staccato
+                            [
                             ds'16
                             - \staccato
                             e'16
@@ -111,6 +133,7 @@
                             f'16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -147,7 +170,9 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         f'16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         fs'8.
                         - \staccato
@@ -160,6 +185,7 @@
                         as16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -175,6 +201,7 @@
                         r2.
                     }
                     {
+                        % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
                     }
                     {
@@ -184,15 +211,17 @@
                         \ff
                         - \staccato
                         ~
+                        [
                         a8
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
                         a8
                         \mf
                         - \staccato
+                        ]
                     }
                     {
-                        % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -207,11 +236,12 @@
                         }
                     }
                     {
-                        % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                     }
                     {
+                        % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
                     }
                     {
@@ -223,7 +253,9 @@
                             as8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             b16
                             - \staccato
                             ~
@@ -231,11 +263,12 @@
                             c'8.
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
-                        % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -277,6 +310,8 @@
                         % [Voice 2 measure 2] %! COMMENT_MEASURE_NUMBERS
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d'8
                         \mf
                         - \staccato
@@ -295,18 +330,27 @@
                         f'16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         fs'16
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         g'16
                         - \staccato
+                        ]
                         gs'4
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
                         gs'16
                         - \staccato
+                        [
                         a'8.
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -341,22 +385,30 @@
                             \mf
                             - \staccato
                             ~
+                            [
                             a'8.
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                             bf'16
                             - \staccato
                             b'16
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             c''16
                             - \staccato
+                            ]
                             d'4
                             - \staccato
                         }
                     }
                     {
                         % [Voice 2 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
                         d'16
                         - \staccato
+                        [
                         ds'8.
                         - \staccato
                         e'8
@@ -370,9 +422,11 @@
                         g'16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
+                        % [Voice 2 measure 8] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -383,6 +437,8 @@
                             \stopStaff \startStaff
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
+                            \set stemLeftBeamCount = 0
+                            \set stemRightBeamCount = 1
                             d'8
                             \mf
                             - \staccato
@@ -390,7 +446,7 @@
                         }
                     }
                     {
-                        % [Voice 2 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 9] %! COMMENT_MEASURE_NUMBERS
                         d'4
                         \ff
                         - \staccato
@@ -402,15 +458,19 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/13 {
-                            % [Voice 2 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 2 measure 10] %! COMMENT_MEASURE_NUMBERS
                             r16
                             \stopStaff \startStaff
                             g'4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
                             g'16
                             - \staccato
+                            [
                             gs'8.
                             - \staccato
                             a'8
@@ -418,10 +478,12 @@
                             bf'8
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
+                        % [Voice 2 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -436,7 +498,7 @@
                         }
                     }
                     {
-                        % [Voice 2 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 12] %! COMMENT_MEASURE_NUMBERS
                         d'4
                         \ff
                         - \staccato
@@ -471,7 +533,9 @@
                         bf'16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         b'16
                         - \staccato
                         c''16
@@ -485,6 +549,7 @@
                         ds'8
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -515,7 +580,11 @@
                         \ff
                         - \staccato
                         ~
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d'8
+                        ]
                         d'4.
                         \mf
                         - \staccato
@@ -531,14 +600,20 @@
                             % [Voice 3 measure 6] %! COMMENT_MEASURE_NUMBERS
                             r16
                             \stopStaff \startStaff
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
                             ds'8
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                             e'4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             f'16
                             - \staccato
+                            [
                             fs'16
                             - \staccato
                             g'16
@@ -546,6 +621,7 @@
                             gs'8.
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -560,23 +636,28 @@
                             \ff
                             - \staccato
                             ~
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             d'8
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                         }
                     }
                     {
+                        % [Voice 3 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r1
                     }
                     {
-                        % [Voice 3 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 3 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \stopStaff \startStaff
                         gs'8
                         \mf
                         - \staccato
                         ~
+                        [
                         gs'16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         a'16
                         - \staccato
@@ -589,6 +670,7 @@
                         b'16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -598,13 +680,15 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/13 {
-                            % [Voice 3 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 3 measure 10] %! COMMENT_MEASURE_NUMBERS
                             r16
                             \stopStaff \startStaff
                             b'16
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             c''16
                             - \staccato
                             ~
@@ -620,15 +704,17 @@
                             e'16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
+                        % [Voice 3 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                     }
                     {
-                        % [Voice 3 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 3 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r4
                         \stopStaff \startStaff
                         d'2
@@ -701,7 +787,9 @@
                         e'16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         f'16
                         - \staccato
                         fs'16
@@ -715,6 +803,7 @@
                         gs'16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -751,13 +840,16 @@
                             \mf
                             - \staccato
                             ~
+                            [
                             gs'16
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                             a'16
                             - \staccato
                         }
                     }
                     {
+                        % [Voice 4 measure 8] %! COMMENT_MEASURE_NUMBERS
                         a'8.
                         - \staccato
                         bf'16
@@ -769,6 +861,7 @@
                         d'8
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -776,7 +869,7 @@
                         r2
                     }
                     {
-                        % [Voice 4 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
                     }
                     {
@@ -787,7 +880,9 @@
                             d'8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             ds'16
                             - \staccato
                             ~
@@ -799,11 +894,12 @@
                             f'16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
-                        % [Voice 4 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -812,12 +908,15 @@
                         \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d'8
                         \ff
                         - \staccato
                         ~
                     }
                     {
+                        % [Voice 4 measure 11] %! COMMENT_MEASURE_NUMBERS
                         d'2
                         \mf
                         - \staccato
@@ -827,7 +926,7 @@
                         r2
                     }
                     {
-                        % [Voice 4 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
                     }
                     {
@@ -836,7 +935,9 @@
                         f'16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         fs'8
                         - \staccato
                         ~
@@ -850,6 +951,7 @@
                         gs'8
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                 }
@@ -876,18 +978,27 @@
                             ds''16
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             e''16
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             f''16
                             - \staccato
+                            ]
                             fs''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             fs''16
                             - \staccato
+                            [
                             g''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -899,14 +1010,20 @@
                         % [Voice 5 measure 2] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \stopStaff \startStaff
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         g''8
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         a'4
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         as'16
                         - \staccato
+                        [
                         b'16
                         - \staccato
                         c''16
@@ -914,6 +1031,7 @@
                         cs''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -945,9 +1063,14 @@
                             cs''8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             d''8
                             - \staccato
+                            ]
                             ds''4
                             \ff
                             - \staccato
@@ -967,6 +1090,7 @@
                         r2.
                     }
                     {
+                        % [Voice 5 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
                     }
                     {
@@ -982,7 +1106,7 @@
                         }
                     }
                     {
-                        % [Voice 5 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 9] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -993,19 +1117,22 @@
                         \ff
                         - \staccato
                         ~
+                        [
                         a'8
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
                         a'8
                         \mf
                         - \staccato
+                        ]
                     }
                     {
-                        % [Voice 5 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                     }
                     {
+                        % [Voice 5 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
                     }
                     {
@@ -1014,7 +1141,9 @@
                         ds''16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         e''16
                         - \staccato
                         f''16
@@ -1028,10 +1157,11 @@
                         g''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
-                        % [Voice 5 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 12] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -1075,7 +1205,10 @@
                             a'4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 0
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
                             a'8
@@ -1097,9 +1230,13 @@
                             g''4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             a'16
                             - \staccato
+                            [
                             as'16
                             - \staccato
                             b'16
@@ -1111,6 +1248,7 @@
                             c''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -1129,9 +1267,12 @@
                             % [Voice 6 measure 5] %! COMMENT_MEASURE_NUMBERS
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
+                            \set stemLeftBeamCount = 0
+                            \set stemRightBeamCount = 1
                             a'8
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                             a'4
                             \ff
@@ -1151,7 +1292,9 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         c''16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         cs''8.
                         - \staccato
@@ -1161,8 +1304,11 @@
                         - \staccato
                         ds''16
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         e''16
                         - \staccato
+                        ]
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1170,8 +1316,11 @@
                             % [Voice 6 measure 7] %! COMMENT_MEASURE_NUMBERS
                             f''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
                             f''16
                             - \staccato
+                            [
                             fs''8.
                             - \staccato
                             g''16
@@ -1181,10 +1330,12 @@
                             a'8.
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
+                        % [Voice 6 measure 8] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -1196,7 +1347,7 @@
                         - \staccato
                     }
                     {
-                        % [Voice 6 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 9] %! COMMENT_MEASURE_NUMBERS
                         a'4
                         \ff
                         - \staccato
@@ -1206,27 +1357,37 @@
                         r1
                     }
                     {
-                        % [Voice 6 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 10] %! COMMENT_MEASURE_NUMBERS
                         r16
                         \stopStaff \startStaff
                         a'16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         as'16
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         b'16
                         - \staccato
+                        ]
                         c''4
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
                         c''16
                         - \staccato
+                        [
                         cs''8.
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
+                        % [Voice 6 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -1235,13 +1396,15 @@
                         \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         a'8
                         \mf
                         - \staccato
                         ~
                     }
                     {
-                        % [Voice 6 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 12] %! COMMENT_MEASURE_NUMBERS
                         a'4
                         \ff
                         - \staccato
@@ -1279,14 +1442,19 @@
                             \mf
                             - \staccato
                             ~
+                            [
                             cs''8.
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                             d''16
                             - \staccato
                             ds''16
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             e''16
                             - \staccato
+                            ]
                             f''4
                             \ff
                             - \staccato
@@ -1336,7 +1504,9 @@
                         f''8.
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         fs''8
                         - \staccato
                         g''8
@@ -1348,6 +1518,7 @@
                         as'16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -1359,27 +1530,36 @@
                         \ff
                         - \staccato
                         ~
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         a'8
+                        ]
                         a'4.
                         \mf
                         - \staccato
                     }
                     {
+                        % [Voice 7 measure 8] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/13 {
-                            % [Voice 7 measure 8] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 7 measure 9] %! COMMENT_MEASURE_NUMBERS
                             r16
                             \stopStaff \startStaff
                             as'4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
                             as'16
                             - \staccato
+                            [
                             b'8.
                             - \staccato
                             c''8
@@ -1387,6 +1567,7 @@
                             cs''8
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -1395,13 +1576,15 @@
                         r2
                     }
                     {
-                        % [Voice 7 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 7 measure 10] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \stopStaff \startStaff
                         cs''16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         d''16
                         - \staccato
                         ds''16
@@ -1415,22 +1598,26 @@
                         f''8
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
+                        % [Voice 7 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % [Voice 7 measure 10] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 7 measure 12] %! COMMENT_MEASURE_NUMBERS
                             r8
                             \stopStaff \startStaff
                             a'4
                             \ff
                             - \staccato
                             ~
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             a'8
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
@@ -1494,14 +1681,20 @@
                             % [Voice 8 measure 4] %! COMMENT_MEASURE_NUMBERS
                             r16
                             \stopStaff \startStaff
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
                             bf''8
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                             b''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             c'''16
                             - \staccato
+                            [
                             d''16
                             - \staccato
                             ds''16
@@ -1509,6 +1702,7 @@
                             e''8.
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -1551,21 +1745,31 @@
                         e''8
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                     }
                     {
                         \times 8/9 {
+                            % [Voice 8 measure 8] %! COMMENT_MEASURE_NUMBERS
                             e''16
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
                             f''8
                             - \staccato
+                            ]
                             fs''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             g''16
                             - \staccato
+                            [
                             gs''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -1574,7 +1778,7 @@
                         r2
                     }
                     {
-                        % [Voice 8 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
                     }
                     {
@@ -1584,7 +1788,9 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         gs''16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         gs''16
                         - \staccato
@@ -1599,10 +1805,11 @@
                         b''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
-                        % [Voice 8 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -1611,6 +1818,7 @@
                         \stopStaff \startStaff
                     }
                     {
+                        % [Voice 8 measure 11] %! COMMENT_MEASURE_NUMBERS
                         d''4
                         \mf
                         - \staccato
@@ -1628,7 +1836,7 @@
                         r2
                     }
                     {
-                        % [Voice 8 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
                     }
                     {
@@ -1639,7 +1847,9 @@
                             b''16
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             c'''16
                             - \staccato
                             d''16
@@ -1653,6 +1863,7 @@
                             e''8
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -1679,7 +1890,9 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         e''16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         f''16
                         - \staccato
@@ -1694,6 +1907,7 @@
                         a''8
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -1709,7 +1923,9 @@
                             a''8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             bf''16
                             - \staccato
                             ~
@@ -1721,6 +1937,7 @@
                             c'''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -1754,7 +1971,9 @@
                         c'''16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         d''8
                         - \staccato
                         ~
@@ -1768,6 +1987,7 @@
                         e''8
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -1783,6 +2003,7 @@
                         r2.
                     }
                     {
+                        % [Voice 9 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
                     }
                     {
@@ -1793,7 +2014,7 @@
                         - \staccato
                     }
                     {
-                        % [Voice 9 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 9] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -1810,11 +2031,12 @@
                         }
                     }
                     {
-                        % [Voice 9 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                     }
                     {
+                        % [Voice 9 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
                     }
                     {
@@ -1825,23 +2047,32 @@
                             e''16
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             f''16
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             fs''16
                             - \staccato
+                            ]
                             g''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             g''16
                             - \staccato
+                            [
                             gs''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
-                        % [Voice 9 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 12] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -1852,12 +2083,14 @@
                         \ff
                         - \staccato
                         ~
+                        [
                         d''8
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
                         d''8
                         \mf
                         - \staccato
+                        ]
                     }
                 }
             }
@@ -1899,14 +2132,20 @@
                         % [Voice 10 measure 3] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \stopStaff \startStaff
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         gs''8
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         a''4
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         bf''16
                         - \staccato
+                        [
                         b''16
                         - \staccato
                         c'''16
@@ -1914,6 +2153,7 @@
                         d''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -1933,6 +2173,8 @@
                         - \staccato
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         d''8
                         \mf
                         - \staccato
@@ -1950,17 +2192,25 @@
                             d''8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             ds''8
                             - \staccato
+                            ]
                             e''4
                             - \staccato
                         }
                     }
                     {
                         % [Voice 10 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         f''16
                         - \staccato
+                        [
                         fs''16
                         - \staccato
                         g''16
@@ -1976,9 +2226,11 @@
                         bf''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
+                        % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -1987,7 +2239,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS
                         d''4
                         \ff
                         - \staccato
@@ -1999,15 +2251,19 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/13 {
-                            % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 10 measure 10] %! COMMENT_MEASURE_NUMBERS
                             r16
                             \stopStaff \startStaff
                             bf''4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             b''16
                             - \staccato
+                            [
                             c'''16
                             - \staccato
                             d''16
@@ -2019,10 +2275,12 @@
                             ds''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
+                        % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -2041,7 +2299,7 @@
                         }
                     }
                     {
-                        % [Voice 10 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         d''8
@@ -2085,7 +2343,9 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         as''16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         b''8.
                         - \staccato
@@ -2098,6 +2358,7 @@
                         d'''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -2146,7 +2407,9 @@
                             d'''8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             ds'''16
                             - \staccato
                             ~
@@ -2154,6 +2417,7 @@
                             e'''8.
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -2170,28 +2434,38 @@
                         }
                     }
                     {
+                        % [Voice 11 measure 8] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                     }
                     {
-                        % [Voice 11 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 11 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r16
                         \stopStaff \startStaff
                         e'''16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         f'''16
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         fs'''16
                         - \staccato
+                        ]
                         g'''4
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
                         g'''16
                         - \staccato
+                        [
                         a''8.
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -2201,21 +2475,26 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/13 {
-                            % [Voice 11 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 11 measure 10] %! COMMENT_MEASURE_NUMBERS
                             r8
                             \stopStaff \startStaff
                             a''16
                             \mf
                             - \staccato
                             ~
+                            [
                             a''8.
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                             as''16
                             - \staccato
                             b''16
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             c'''16
                             - \staccato
+                            ]
                             cs'''4
                             \ff
                             - \staccato
@@ -2223,18 +2502,23 @@
                         }
                     }
                     {
+                        % [Voice 11 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                     }
                     {
-                        % [Voice 11 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 11 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \stopStaff \startStaff
                         a''8
                         \ff
                         - \staccato
                         ~
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         a''8
+                        ]
                         a''4.
                         \mf
                         - \staccato
@@ -2269,6 +2553,8 @@
                             \ff
                             - \staccato
                             ~
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             a''8
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
@@ -2306,7 +2592,9 @@
                         cs'''8.
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         d'''8
                         - \staccato
                         ds'''8
@@ -2318,6 +2606,7 @@
                         f'''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -2354,12 +2643,17 @@
                             f'''4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                         }
                     }
                     {
+                        % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
                         f'''16
                         - \staccato
+                        [
                         fs'''8.
                         - \staccato
                         g'''8
@@ -2367,6 +2661,7 @@
                         a''8
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -2374,7 +2669,7 @@
                         r2
                     }
                     {
-                        % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
                     }
                     {
@@ -2385,23 +2680,32 @@
                             a''16
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             as''16
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             b''16
                             - \staccato
+                            ]
                             c'''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
                             c'''16
                             - \staccato
+                            [
                             cs'''8.
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
-                        % [Voice 12 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -2410,6 +2714,7 @@
                         \stopStaff \startStaff
                     }
                     {
+                        % [Voice 12 measure 11] %! COMMENT_MEASURE_NUMBERS
                         a''2
                         \ff
                         - \staccato
@@ -2419,7 +2724,7 @@
                         r2
                     }
                     {
-                        % [Voice 12 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
                     }
                     {
@@ -2429,7 +2734,9 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         cs'''8
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         d'''16
                         - \staccato
@@ -2440,6 +2747,7 @@
                         f'''8.
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                 }
@@ -2466,16 +2774,25 @@
                             f'''8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             fs'''8
                             - \staccato
+                            ]
                             g'''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             a''16
                             - \staccato
+                            [
                             as''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -2491,7 +2808,9 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         as''16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         as''16
                         - \staccato
@@ -2506,6 +2825,7 @@
                         cs'''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -2545,7 +2865,9 @@
                             cs'''16
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             d'''16
                             - \staccato
                             ds'''16
@@ -2559,6 +2881,7 @@
                             f'''8
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -2575,6 +2898,7 @@
                         r2.
                     }
                     {
+                        % [Voice 13 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
                     }
                     {
@@ -2588,7 +2912,7 @@
                         }
                     }
                     {
-                        % [Voice 13 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 9] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -2600,11 +2924,12 @@
                         - \staccato
                     }
                     {
-                        % [Voice 13 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                     }
                     {
+                        % [Voice 13 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
                     }
                     {
@@ -2614,7 +2939,9 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         f'''16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         fs'''16
                         - \staccato
@@ -2629,10 +2956,11 @@
                         b''8
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
-                        % [Voice 13 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 12] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -2694,7 +3022,9 @@
                             e'''8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             f'''16
                             - \staccato
                             ~
@@ -2706,6 +3036,7 @@
                             g'''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -2725,7 +3056,10 @@
                             d'''4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 0
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
                             d'''8
@@ -2745,7 +3079,9 @@
                         g'''16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         gs'''8
                         - \staccato
                         ~
@@ -2756,8 +3092,11 @@
                         - \staccato
                         ~
                         a'''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         bf'''8
                         - \staccato
+                        ]
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2765,23 +3104,34 @@
                             % [Voice 14 measure 7] %! COMMENT_MEASURE_NUMBERS
                             b'''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             c''''16
                             - \staccato
+                            [
                             d'''16
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             ds'''16
                             - \staccato
+                            ]
                             e'''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             e'''16
                             - \staccato
+                            [
                             f'''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
                     {
+                        % [Voice 14 measure 8] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -2790,13 +3140,15 @@
                         \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d'''8
                         \mf
                         - \staccato
                         ~
                     }
                     {
-                        % [Voice 14 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 9] %! COMMENT_MEASURE_NUMBERS
                         d'''4
                         \ff
                         - \staccato
@@ -2806,17 +3158,23 @@
                         r1
                     }
                     {
-                        % [Voice 14 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 10] %! COMMENT_MEASURE_NUMBERS
                         r8
                         \stopStaff \startStaff
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         f'''8
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         fs'''4
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         g'''16
                         - \staccato
+                        [
                         gs'''16
                         - \staccato
                         a'''16
@@ -2824,9 +3182,11 @@
                         bf'''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
+                        % [Voice 14 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -2835,7 +3195,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        % [Voice 14 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 12] %! COMMENT_MEASURE_NUMBERS
                         d'''4
                         \mf
                         - \staccato
@@ -2872,9 +3232,14 @@
                             bf'''8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             b'''8
                             - \staccato
+                            ]
                             c''''4
                             \ff
                             - \staccato
@@ -2894,12 +3259,14 @@
                         \ff
                         - \staccato
                         ~
+                        [
                         d'''8
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
                         d'''8
                         \mf
                         - \staccato
+                        ]
                     }
                     {
                         % [Voice 15 measure 4] %! COMMENT_MEASURE_NUMBERS
@@ -2928,7 +3295,9 @@
                         c''''16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         d'''16
                         - \staccato
                         ds'''16
@@ -2942,6 +3311,7 @@
                         f'''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
@@ -2957,21 +3327,26 @@
                         - \staccato
                     }
                     {
+                        % [Voice 15 measure 8] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 12/13 {
-                            % [Voice 15 measure 8] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 15 measure 9] %! COMMENT_MEASURE_NUMBERS
                             r16
                             \stopStaff \startStaff
                             f'''4
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             fs'''16
                             - \staccato
+                            [
                             g'''16
                             - \staccato
                             gs'''16
@@ -2983,6 +3358,7 @@
                             a'''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -2991,14 +3367,16 @@
                         r2
                     }
                     {
-                        % [Voice 15 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 10] %! COMMENT_MEASURE_NUMBERS
                         r8.
                         \stopStaff \startStaff
                         a'''16
                         \mf
                         - \staccato
                         ~
+                        [
                         a'''16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         bf'''8.
                         - \staccato
@@ -3011,16 +3389,18 @@
                         d'''16
                         \ff
                         - \staccato
+                        ]
                         \!
                     }
                     {
+                        % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 6/5 {
-                            % [Voice 15 measure 10] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 15 measure 12] %! COMMENT_MEASURE_NUMBERS
                             r4
                             \stopStaff \startStaff
                             d'''4.
@@ -3056,7 +3436,11 @@
                         \ff
                         - \staccato
                         ~
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         a'''8
+                        ]
                         a'''4.
                         \mf
                         - \staccato
@@ -3084,6 +3468,8 @@
                         % [Voice 16 measure 3] %! COMMENT_MEASURE_NUMBERS
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         a'''8
                         \mf
                         - \staccato
@@ -3103,7 +3489,9 @@
                             a'''8.
                             \mf
                             - \staccato
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             as'''16
                             - \staccato
                             ~
@@ -3111,6 +3499,7 @@
                             b'''8.
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -3128,6 +3517,8 @@
                             r4
                             \stopStaff \startStaff
                             \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            \set stemLeftBeamCount = 0
                             \set stemRightBeamCount = 1
                             a'''8
                             \ff
@@ -3155,18 +3546,27 @@
                         b'''16
                         \mf
                         - \staccato
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         c''''16
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         cs''''16
                         - \staccato
+                        ]
                     }
                     {
                         \times 8/9 {
+                            % [Voice 16 measure 8] %! COMMENT_MEASURE_NUMBERS
                             d''''4
                             - \staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             d''''16
                             - \staccato
+                            [
                             ds''''16
                             - \staccato
                             ~
@@ -3174,6 +3574,7 @@
                             e''''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }
@@ -3182,7 +3583,7 @@
                         r2
                     }
                     {
-                        % [Voice 16 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
                     }
                     {
@@ -3192,21 +3593,26 @@
                         \mf
                         - \staccato
                         ~
+                        [
                         e''''16
+                        - \tweak stencil #abjad-flared-hairpin
                         \<
                         f''''16
                         - \staccato
                         fs''''16
                         - \staccato
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         g''''16
                         - \staccato
+                        ]
                         a'''4
                         \ff
                         - \staccato
                         \!
                     }
                     {
-                        % [Voice 16 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 10] %! COMMENT_MEASURE_NUMBERS
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                     }
@@ -3215,6 +3621,7 @@
                         \stopStaff \startStaff
                     }
                     {
+                        % [Voice 16 measure 11] %! COMMENT_MEASURE_NUMBERS
                         a'''4.
                         \ff
                         - \staccato
@@ -3225,7 +3632,7 @@
                         r2
                     }
                     {
-                        % [Voice 16 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
                     }
                     {
@@ -3237,7 +3644,9 @@
                             \mf
                             - \staccato
                             ~
+                            [
                             a'''16
+                            - \tweak stencil #abjad-flared-hairpin
                             \<
                             as'''16
                             - \staccato
@@ -3254,6 +3663,7 @@
                             d''''16
                             \ff
                             - \staccato
+                            ]
                             \!
                         }
                     }

@@ -37,6 +37,7 @@ class AttachmentHandler:
                 leaves = abjad.select(run).leaves()
                 dynamic = next(self._cyc_dynamics)
                 abjad.attach(abjad.Dynamic(dynamic), leaves[0])
+                abjad.attach(abjad.HairpinIndicator('--'), leaves[0])
         for tie in ties:
             if len(tie) == 1:
                 abjad.attach(abjad.Articulation(self.articulation), tie[0])

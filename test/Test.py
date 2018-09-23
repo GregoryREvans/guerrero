@@ -613,7 +613,7 @@ for staff in score['Staff Group']:
 
 for time_signature in time_signatures:
     skip = abjad.Skip(1)
-    abjad.attach(abjad.Multiplier(time_signature), skip)
+    skip = abjad.Skip(1, multiplier=(time_signature))
     abjad.attach(time_signature, skip)
     score['Global Context'].append(skip)
 
