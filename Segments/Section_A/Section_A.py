@@ -1323,168 +1323,173 @@ metro = abjad.MetronomeMark((1, 4), 90)
 markup = abjad.Markup(r'\bold { A }')
 mark = abjad.RehearsalMark(markup=markup)
 
-soprano_1_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+size = abjad.MarkupCommand(
+    'override',
+    abjad.SchemePair(('size', .4)),
+    )
+
+fingering_1 = abjad.WoodwindFingering(
+    name='soprano-saxophone',
     center_column=('one', 'two', 'three', 'four', 'six', ),
     left_hand=('ees', 'd', ),
     right_hand=('low-c', ),
-    ),
-    direction=abjad.Down
-)
+    )
+command_1 = fingering_1()
+soprano_1_fingering = abjad.Markup(contents=[size, command_1], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 2']).components(abjad.Chord):
     abjad.attach(soprano_1_fingering, chord)
 
-soprano_2_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_2 = abjad.WoodwindFingering(
+    name='soprano-saxophone',
     center_column=('one', 'two', 'three', 'four', 'six', ),
     left_hand=('ees', 'd', 'b', ),
     right_hand=('low-c', ),
-    ),
-    direction=abjad.Down
-)
+    )
+command_2 = fingering_2()
+soprano_2_fingering = abjad.Markup(contents=[size, command_2], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 3']).components(abjad.Chord):
     abjad.attach(soprano_2_fingering, chord)
 
-soprano_3_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_3 = abjad.WoodwindFingering(
+    name='soprano-saxophone',
     center_column=('one', 'two', 'three', 'four', 'five', ),
     left_hand=('ees', 'd', ),
     right_hand=('low-c', ),
-    ),
-    direction=abjad.Down
-)
+    )
+command_3 = fingering_3()
+soprano_3_fingering = abjad.Markup(contents=[size, command_3], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 4']).components(abjad.Chord):
     abjad.attach(soprano_3_fingering, chord)
 
-alto_1_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_4 = abjad.WoodwindFingering(
+    name='alto-saxophone',
     center_column=('one', 'two', 'three', ),
     left_hand=('d', 'gis', ),
     right_hand=(),
-    ),
-    direction=abjad.Down
-)
+    )
+command_4 = fingering_4()
+alto_1_fingering = abjad.Markup(contents=[size, command_4], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 5']).components(abjad.Chord):
     abjad.attach(alto_1_fingering, chord)
 
-alto_2_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_5 = abjad.WoodwindFingering(
+    name='alto-saxophone',
     center_column=('one', 'two', 'three', 'four', 'five', ),
     left_hand=('b', ),
     right_hand=('low-c', 'c', ),
-    ),
-    direction=abjad.Down
-)
+    )
+command_5 = fingering_5()
+alto_2_fingering = abjad.Markup(contents=[size, command_5], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 6']).components(abjad.Chord):
     abjad.attach(alto_2_fingering, chord)
 
-alto_3_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_6 = abjad.WoodwindFingering(
+    name='alto-saxophone',
     center_column=('one', 'two', 'three', 'four', 'five', 'six', ),
     left_hand=('low-bes', ),
     right_hand=(),
-    ),
-    direction=abjad.Down
-)
+    )
+command_6 = fingering_6()
+alto_3_fingering = abjad.Markup(contents=[size, command_6], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 7']).components(abjad.Chord):
     abjad.attach(alto_3_fingering, chord)
 
-alto_4_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_7 = abjad.WoodwindFingering(
+    name='alto-saxophone',
     center_column=('one', 'two', 'three', 'four', 'five', ),
     left_hand=('b', ),
     right_hand=('low-c', 'c', ),
-    ),
-    direction=abjad.Down
-)
+    )
+command_7 = fingering_7()
+alto_4_fingering = abjad.Markup(contents=[size, command_7], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 8']).components(abjad.Chord):
     abjad.attach(alto_4_fingering, chord)
 
-alto_5_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_8 = abjad.WoodwindFingering(
+    name='alto-saxophone',
     center_column=('one', 'two', 'three', 'four', 'five', 'six', ),
     left_hand=('low-bes', ),
     right_hand=(),
-    ),
-    direction=abjad.Down
-)
+    )
+command_8 = fingering_8()
+alto_5_fingering = abjad.Markup(contents=[size, command_8], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 9']).components(abjad.Chord):
     abjad.attach(alto_5_fingering, chord)
 
-tenor_1_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_9 = abjad.WoodwindFingering(
+    name='tenor-saxophone',
     center_column=('one', 'two', 'three', 'five', 'six', ),
     left_hand=('cis', ),
     right_hand=(),
-    ),
-    direction=abjad.Down
-)
+    )
+command_9 = fingering_9()
+tenor_1_fingering = abjad.Markup(contents=[size, command_9], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 10']).components(abjad.Chord):
     abjad.attach(tenor_1_fingering, chord)
 
-tenor_2_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_10 = abjad.WoodwindFingering(
+    name='tenor-saxophone',
     center_column=('one', 'two', 'three', 'five', 'six', ),
     left_hand=('b', ),
     right_hand=(),
-    ),
-    direction=abjad.Down
-)
+    )
+command_10 = fingering_10()
+tenor_2_fingering = abjad.Markup(contents=[size, command_10], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 11']).components(abjad.Chord):
     abjad.attach(tenor_2_fingering, chord)
 
-tenor_3_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_11 = abjad.WoodwindFingering(
+    name='tenor-saxophone',
     center_column=('one', 'two', 'three', 'five', 'six', ),
     left_hand=(),
     right_hand=(),
-    ),
-    direction=abjad.Down
-)
+    )
+command_11 = fingering_11()
+tenor_3_fingering = abjad.Markup(contents=[size, command_11], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 12']).components(abjad.Chord):
     abjad.attach(tenor_3_fingering, chord)
 
-tenor_4_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_12 = abjad.WoodwindFingering(
+    name='tenor-saxophone',
     center_column=('one', 'two', 'three', 'five', 'six', ),
     left_hand=(),
     right_hand=(),
-    ),
-    direction=abjad.Down
-)
+    )
+command_12 = fingering_12()
+tenor_4_fingering = abjad.Markup(contents=[size, command_12], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 13']).components(abjad.Chord):
     abjad.attach(tenor_4_fingering, chord)
 
-baritone_1_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_13 = abjad.WoodwindFingering(
+    name='baritone-saxophone',
     center_column=('one', 'two', 'three', ),
     left_hand=('ees', 'd', 'gis', ),
     right_hand=(),
-    ),
-    direction=abjad.Down
-)
+    )
+command_13 = fingering_13()
+baritone_1_fingering = abjad.Markup(contents=[size, command_13], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 14']).components(abjad.Chord):
     abjad.attach(baritone_1_fingering, chord)
 
-baritone_2_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_14 = abjad.WoodwindFingering(
+    name='baritone-saxophone',
     center_column=('one', 'two', 'three', 'four', 'five', ),
     left_hand=('b', ),
     right_hand=('low-c', ),
-    ),
-    direction=abjad.Down
-)
+    )
+command_14 = fingering_14()
+baritone_2_fingering = abjad.Markup(contents=[size, command_14], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 15']).components(abjad.Chord):
     abjad.attach(baritone_2_fingering, chord)
 
-baritone_3_fingering = abjad.Markup(contents=abjad.WoodwindFingering(
-    name='saxophone',
+fingering_15 = abjad.WoodwindFingering(
+    name='baritone-saxophone',
     center_column=('one', 'two', 'three', 'five', 'six', ),
     left_hand=('low-a',  ),
     right_hand=('low-c', ),
-    ),
-    direction=abjad.Down
-)
+    )
+command_15 = fingering_15()
+baritone_3_fingering = abjad.Markup(contents=[size, command_15], direction=abjad.Down)
 for chord in abjad.iterate(score['Voice 16']).components(abjad.Chord):
     abjad.attach(baritone_3_fingering, chord)
 

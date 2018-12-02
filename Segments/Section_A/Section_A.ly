@@ -207,7 +207,13 @@
                         <dqf'' e'' dqs'''>2.
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'six'), left_hand=('ees', 'd'), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'soprano-saxophone
+                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -261,7 +267,13 @@
                         <dqf'' e'' dqs'''>2.
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'six'), left_hand=('ees', 'd'), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'soprano-saxophone
+                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -304,7 +316,13 @@
                         <cs'' e'' d'''>2
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'six'), left_hand=('ees', 'd', 'b'), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'soprano-saxophone
+                                #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -355,7 +373,13 @@
                         <cs'' e'' d'''>2
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'six'), left_hand=('ees', 'd', 'b'), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'soprano-saxophone
+                                #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -413,7 +437,13 @@
                         <cqs'' dqs'' d'''>4
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five'), left_hand=('ees', 'd'), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'soprano-saxophone
+                                #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -487,7 +517,13 @@
                         <cqs'' dqs'' d'''>2
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five'), left_hand=('ees', 'd'), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'soprano-saxophone
+                                #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -555,7 +591,13 @@
                         <cqs'' g'' eqf''' bf'''>2
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three'), left_hand=('d', 'gis'), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -617,7 +659,13 @@
                         <cqs'' g'' eqf''' bf'''>2
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three'), left_hand=('d', 'gis'), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -788,7 +836,13 @@
                         <dqf' dqf'' bqf'' ef''' fs'''>4
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five', 'six'), left_hand=('low-bes',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -838,7 +892,13 @@
                         <dqf' dqf'' bqf'' ef''' fs'''>4
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five', 'six'), left_hand=('low-bes',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -880,7 +940,13 @@
                         <dqf' dqf'' bqf'' ef''' fs'''>1
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five', 'six'), left_hand=('low-bes',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -924,7 +990,13 @@
                         <cqs'' eqf'' dqf'''>2.
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five'), left_hand=('b',), right_hand=('low-c', 'c'))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -977,7 +1049,13 @@
                         <cqs'' eqf'' dqf'''>2.
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five'), left_hand=('b',), right_hand=('low-c', 'c'))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -1020,7 +1098,13 @@
                         <dqf' dqf'' bqf'' ef''' fs'''>2
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five', 'six'), left_hand=('low-bes',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -1078,7 +1162,13 @@
                         <dqf' dqf'' bqf'' ef''' fs'''>2
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five', 'six'), left_hand=('low-bes',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'alto-saxophone
+                                #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -1139,7 +1229,13 @@
                         <fs' fqs''>4
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=('cis',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -1214,7 +1310,13 @@
                         <fs' fqs''>2
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=('cis',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -1281,7 +1383,13 @@
                         <fs' fqs'' dqf''' fs'''>2
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=('b',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -1342,7 +1450,13 @@
                         <fs' fqs'' dqf''' fs'''>2
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=('b',), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -1512,7 +1626,13 @@
                         <fs' fqs'' dqf''' gqf'''>4
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=(), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -1567,7 +1687,13 @@
                         <fs' fqs'' dqf''' gqf'''>4
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=(), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -1606,7 +1732,13 @@
                         <fs' fqs'' dqf''' gqf'''>1
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=(), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -1650,7 +1782,13 @@
                         <dqf'' eqf''' aqs'''>2.
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three'), left_hand=('ees', 'd', 'gis'), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -1706,7 +1844,13 @@
                         <dqf'' eqf''' aqs'''>2.
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three'), left_hand=('ees', 'd', 'gis'), right_hand=())" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -1749,7 +1893,13 @@
                         <e' eqs'' bqs''>2
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five'), left_hand=('b',), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -1804,7 +1954,13 @@
                         <e' eqs'' bqs''>2
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'four', 'five'), left_hand=('b',), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -1862,7 +2018,13 @@
                         <gqf' fqs'' dqf''' bf'''>4
                         \f
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=('low-a',), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -1932,7 +2094,13 @@
                         <gqf' fqs'' dqf''' bf'''>2
                         \mp
                         - \tenuto
-                        _ \markup { "WoodwindFingering(name='saxophone', center_column=('one', 'two', 'three', 'five', 'six'), left_hand=('low-a',), right_hand=('low-c',))" }
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                         [
