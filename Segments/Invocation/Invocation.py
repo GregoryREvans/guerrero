@@ -1070,19 +1070,7 @@ for voice in abjad.select(score).components(abjad.Voice):
                 beam_each_division=False,
                 )
             specifier(run)
-            # then attach new indicators at the 0 and -1 of run
-            #only on notes smaller than 1/4
-    for note in abjad.select(voice).leaves(pitched=True):
-        if abjad.inspect(note).duration() < abjad.Duration(1, 4):
-            previous_leaf = abjad.inspect(note).leaf(-1)
-            next_leaf = abjad.inspect(note).leaf(1)
-            if previous_leaf == abjad.Note():
-                if abjad.inspect(previous_leaf).duration() >= abjad.Duration(1, 4):
-                    abjad.attach(abjad.StartBeam(), note)
-            if next_leaf == abjad.Note():
-                if abjad.inspect(next_leaf).duration() >= abjad.Duration(1, 4):
-                    abjad.attach(abjad.StopBeam(), note)
-        # for leaf in group:
+        # for leaf in run:
         #     # continue if leaf can't be beamed
         #     if abjad.Duration(1, 4) <= leaf.written_duration:
         #         continue
@@ -1109,6 +1097,26 @@ for voice in abjad.select(score).components(abjad.Voice):
         #             right=right,
         #             )
         #         abjad.attach(beam_count, leaf)
+            # then attach new indicators at the 0 and -1 of run
+            #only on notes smaller than 1/4
+    for note in abjad.select(voice).leaves(pitched=True):
+        if abjad.inspect(note).duration() < abjad.Duration(1, 4):
+            pre_leaf = abjad.inspect(note).leaf(-1)
+            next_leaf = abjad.inspect(note).leaf(1)
+            if isinstance(pre_leaf, abjad.Note):
+                if abjad.inspect(pre_leaf).duration() >= abjad.Duration(1, 4):
+                    abjad.attach(abjad.StartBeam(), note)
+            if isinstance(pre_leaf, abjad.Rest):
+                abjad.attach(abjad.StartBeam(), note)
+            if pre_leaf == None:
+                abjad.attach(abjad.StartBeam(), note)
+            if isinstance(next_leaf, abjad.Note):
+                if abjad.inspect(next_leaf).duration() >= abjad.Duration(1, 4):
+                    abjad.attach(abjad.StopBeam(), note)
+            if isinstance(next_leaf, abjad.Rest):
+                abjad.attach(abjad.StopBeam(), note)
+            if next_leaf == None:
+                abjad.attach(abjad.StopBeam(), note)
 
 print('Beautifying score ...')
 # cutaway score

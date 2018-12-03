@@ -77,17 +77,21 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         dqs''16
                         ef''16
                         eqf''16
                         ~
+                        ]
                         eqf''4
                         \times 4/5 {
                             e''8.
+                            [
                             eqs''8
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -105,8 +109,10 @@
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             fqs''16
+                            [
                             fs''16
                             gqf''16
+                            ]
                         }
                         g''4
                         \ff
@@ -130,11 +136,13 @@
                         \<
                         ~
                         gqs''8
+                        [
                         af''8
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -149,6 +157,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             a''8
                             ~
                             a''16
@@ -158,12 +167,15 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
                             aqs''16
+                            ]
                             bf''4
                             bqf''16
+                            [
                             b''16
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -218,6 +230,8 @@
                             \<
                             cs'''8
                             ~
+                            [
+                            ]
                         }
                         cs'''4
                         \f
@@ -240,6 +254,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         d''8.
                         ~
                         d''8
@@ -252,6 +267,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -274,6 +290,8 @@
                             - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -310,6 +328,8 @@
                         \times 4/3 {
                             % [Voice 2 measure 2] %! COMMENT_MEASURE_NUMBERS
                             ef''8
+                            [
+                            ]
                             eqf''4
                             \f
 
@@ -331,16 +351,20 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             eqs''16
                             f''16
                             fqs''16
+                            ]
                             fs''4
                             ~
                             fs''16
+                            [
                             gqf''16
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -359,6 +383,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -367,11 +393,13 @@
                             \mp
                             \<
                             ~
+                            [
                         }
                     }
                     {
                         % [Voice 2 measure 5] %! COMMENT_MEASURE_NUMBERS
                         gqs''8
+                        ]
                         af''4.
                         \f
 
@@ -390,9 +418,12 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         a''8
+                        ]
                         aqs''4
                         bf''16
+                        [
                         bqf''16
                         b''16
                         bqs''16
@@ -409,6 +440,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -425,6 +457,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             d'''4
                             ~
                         }
@@ -435,6 +469,8 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
@@ -451,15 +487,19 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             ef''16
                             eqf''16
+                            ]
                             e''4
                             ~
                             e''16
+                            [
                             eqs''8.
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -478,6 +518,7 @@
                             \<
                             fqs''8
                             ~
+                            [
                         }
                     }
                     {
@@ -486,6 +527,7 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -515,6 +557,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         bqs'8
                         ~
                         bqs'8
@@ -525,6 +568,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         % [Voice 3 measure 2] %! COMMENT_MEASURE_NUMBERS
@@ -582,6 +626,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             eqs''8.
                             f''8
                             fqs''4
@@ -598,6 +643,7 @@
                         \mp
                         - \tenuto
                         \<
+                        ]
                         gqs''4.
                         \f
 
@@ -614,6 +660,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                     }
                     {
                         % [Voice 3 measure 8] %! COMMENT_MEASURE_NUMBERS
@@ -630,6 +678,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             a''8
                             ~
                             a''8.
@@ -638,6 +687,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -653,10 +703,12 @@
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         b'16
+                        [
                         bqs'16
                         c''16
                         cqs''16
                         ~
+                        ]
                         cqs''4
                     }
                     {
@@ -674,6 +726,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             dqf''4.
                             \f
 
@@ -706,6 +760,7 @@
                             \mp
                             - \tenuto
                             \<
+                            [
                             bqs'4
                             \f
 
@@ -713,6 +768,7 @@
                             bqs'8
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -722,6 +778,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -762,6 +820,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             d''8
                             dqs''4
                             ef''16
@@ -771,6 +830,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -797,6 +857,8 @@
                         \mp
                         \<
                         ~
+                        [
+                        ]
                     }
                     {
                         % [Voice 4 measure 6] %! COMMENT_MEASURE_NUMBERS
@@ -825,12 +887,14 @@
                     {
                         % [Voice 4 measure 8] %! COMMENT_MEASURE_NUMBERS
                         fs''16
+                        [
                         gqf''8.
                         g''8
                         gqs''8
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -849,6 +913,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             aqf''16
                             a''16
                             aqs''16
@@ -859,6 +924,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -877,6 +943,8 @@
                     {
                         % [Voice 4 measure 11] %! COMMENT_MEASURE_NUMBERS
                         b'8
+                        [
+                        ]
                         bqs'4.
                         \f
 
@@ -900,13 +968,17 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
+                            ]
                             cqs''4
                             cs''16
+                            [
                             dqf''16
                             d''16
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -933,12 +1005,14 @@
                         \<
                         ~
                         d''16
+                        [
                         dqs''8.
                         ef''8
                         eqf''8
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -954,6 +1028,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             eqs''16
                             f''16
                             fqs''16
@@ -964,6 +1039,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1006,6 +1082,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             aqf''16
                             ~
                             aqf''8.
@@ -1016,6 +1093,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1085,10 +1163,12 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         dqf'''16
                         ~
                         dqf'''8
                         d''8
+                        ]
                         dqs''4
                         \ff
                         - \tweak stencil #constante-hairpin
@@ -1108,6 +1188,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             eqf''4.
                             \f
 
@@ -1124,6 +1206,8 @@
                             - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -1153,8 +1237,10 @@
                         \mp
 
                         \<
+                        [
                         bqf'8
                         ~
+                        ]
                     }
                     {
                         % [Voice 6 measure 2] %! COMMENT_MEASURE_NUMBERS
@@ -1177,6 +1263,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             bqs'16
                             c''16
                             cqs''4
@@ -1187,6 +1274,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1210,6 +1298,8 @@
                             \f
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -1221,6 +1311,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -1238,8 +1330,10 @@
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             eqf''16
+                            [
                             e''16
                             eqs''16
+                            ]
                             f''4
                             ~
                         }
@@ -1247,6 +1341,7 @@
                     {
                         % [Voice 6 measure 7] %! COMMENT_MEASURE_NUMBERS
                         f''16
+                        [
                         fqs''8.
                         fs''8
                         gqf''8
@@ -1257,6 +1352,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         % [Voice 6 measure 8] %! COMMENT_MEASURE_NUMBERS
@@ -1271,6 +1367,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             aqf''2
 
                         }
@@ -1297,6 +1395,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             bf'8
                             ~
                             bf'8.
@@ -1306,6 +1405,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1325,6 +1425,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -1333,6 +1435,7 @@
                             \mp
                             \<
                             ~
+                            [
                         }
                     }
                     {
@@ -1341,6 +1444,7 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -1372,16 +1476,20 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             gqf'16
                             g'16
                             gqs'16
+                            ]
                             af'4
                             ~
                             af'16
+                            [
                             aqf'16
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1404,6 +1512,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -1421,6 +1531,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -1429,11 +1541,13 @@
                             \mp
                             - \tenuto
                             \<
+                            [
                             b'4
                             \f
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1449,15 +1563,19 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         c''8
+                        ]
                         cqs''4
                         cs''16
+                        [
                         dqf''16
                         d''16
                         dqs''16
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         % [Voice 7 measure 7] %! COMMENT_MEASURE_NUMBERS
@@ -1487,12 +1605,14 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             eqs''8.
                             f''8
                             fqs''4
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1509,15 +1629,19 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             gqf'16
                             g'16
+                            ]
                             gqs'4
                             ~
                             gqs'16
+                            [
                             af'8.
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1591,6 +1715,8 @@
                             \<
                             dqf'8
                             ~
+                            [
+                            ]
                         }
                     }
                     {
@@ -1612,6 +1738,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         dqs'8
                         ~
                         dqs'8
@@ -1622,6 +1749,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -1668,6 +1796,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             gqf'8.
                         }
                     }
@@ -1683,6 +1812,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1700,6 +1830,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         a'16
                         aqs'8
                         ~
@@ -1711,6 +1842,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         % [Voice 8 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -1724,8 +1856,10 @@
                         \mp
 
                         \<
+                        [
                         bqs'8
                         ~
+                        ]
                     }
                     {
                         % [Voice 8 measure 11] %! COMMENT_MEASURE_NUMBERS
@@ -1751,6 +1885,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             cqs'16
                             cs'16
                             dqf'16
@@ -1758,6 +1893,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1784,6 +1920,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             dqf'8
                             ~
                             dqf'16
@@ -1797,6 +1934,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1811,6 +1949,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         e'16
                         eqs'8
                         ~
@@ -1822,6 +1961,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -1850,6 +1990,7 @@
                             \mp
 
                             ~
+                            [
                             gqf'8
                             \<
                             g'8
@@ -1857,6 +1998,7 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1873,6 +2015,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             af'16
                             aqf'16
                             a'16
@@ -1883,6 +2026,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -1954,6 +2098,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             cs'16
                             ~
                             cs'16
@@ -1966,6 +2111,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2018,6 +2164,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             gqs'4.
                             \f
 
@@ -2039,12 +2187,14 @@
                         \<
                         ~
                         af'16
+                        [
                         aqf'8.
                         a'8
                         aqs'8
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS
@@ -2058,8 +2208,10 @@
                         \mp
 
                         \<
+                        [
                         bqf'8
                         ~
+                        ]
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2086,6 +2238,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             bqs'16
                             c''16
                             cqs''16
@@ -2110,6 +2263,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2146,10 +2300,12 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         gqf''16
                         ~
                         gqf''8
                         g'8
+                        ]
                         gqs'4
                         \ff
                         - \tweak stencil #constante-hairpin
@@ -2168,6 +2324,7 @@
                             \mp
                             - \tenuto
                             \<
+                            [
                             aqf'4
                             \f
 
@@ -2175,6 +2332,7 @@
                             aqf'8
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -2190,6 +2348,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -2221,6 +2381,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             eqf'16
                             e'16
                             eqs'4
@@ -2231,6 +2392,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2248,6 +2410,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             gqf'2
                             \f
 
@@ -2294,8 +2458,10 @@
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             aqf'16
+                            [
                             a'16
                             aqs'16
+                            ]
                             bf'4
                             \ff
                             - \tweak stencil #constante-hairpin
@@ -2315,6 +2481,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -2330,6 +2498,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         c''8.
                         cqs''8
                         cs''8
@@ -2340,6 +2509,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -2355,6 +2525,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             ef'8
                             ~
                             ef'8.
@@ -2364,6 +2535,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2382,6 +2554,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -2390,6 +2564,7 @@
                             \mp
                             - \tenuto
                             ~
+                            [
                             fqs'8
                             \<
                             fs'8
@@ -2397,6 +2572,7 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2470,16 +2646,20 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             dqf'16
                             d'16
                             dqs'16
+                            ]
                             ef'4
                             ~
                             ef'16
+                            [
                             eqf'16
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2501,6 +2681,7 @@
                             \<
                             eqs'8
                             ~
+                            [
                         }
                     }
                     {
@@ -2510,6 +2691,7 @@
                             \f
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -2528,6 +2710,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         fqs'8
                     }
                     {
@@ -2541,6 +2724,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2560,6 +2744,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             a'8.
                             aqs'16
                             ~
@@ -2568,6 +2753,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2606,6 +2792,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         c'16
                         cqs'16
                         cs'16
@@ -2616,6 +2803,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -2641,6 +2829,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             cqs'16
                             ~
                             cqs'16
@@ -2654,6 +2843,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2670,6 +2860,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             e'8.
                             eqs'16
                             ~
@@ -2678,6 +2869,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2696,6 +2888,8 @@
                         \mp
 
                         \<
+                        [
+                        ]
                         fs'4.
                         \f
                         - \tenuto
@@ -2712,6 +2906,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -2725,16 +2921,20 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         gqs'16
                         af'16
                         aqf'16
+                        ]
                         a'4
                         ~
                         a'16
+                        [
                         aqs'8.
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -2761,6 +2961,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             bqf'2
                             \f
 
@@ -2791,6 +2993,7 @@
                             \mp
                             - \tenuto
                             ~
+                            [
                             bqs'8
                             \<
                             c'8
@@ -2798,6 +3001,7 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2818,6 +3022,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             cs'16
                             ~
                             cs'8.
@@ -2828,6 +3033,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2892,6 +3098,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -2907,6 +3115,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             e'8
                             ~
                             e'16
@@ -2920,6 +3129,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2939,6 +3149,8 @@
                         \times 4/5 {
                             % [Voice 14 measure 5] %! COMMENT_MEASURE_NUMBERS
                             fs'4
+                            [
+                            ]
                             gqf'4.
                             \f
 
@@ -2958,6 +3170,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         gqs'16
                         af'8
                         ~
@@ -2982,6 +3195,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -2999,6 +3213,8 @@
                         \<
                         cs''8
                         ~
+                        [
+                        ]
                     }
                     {
                         % [Voice 14 measure 9] %! COMMENT_MEASURE_NUMBERS
@@ -3021,6 +3237,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             d'16
                             ~
                             d'16
@@ -3033,6 +3250,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3056,6 +3274,8 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -3087,12 +3307,14 @@
                         \<
                         ~
                         bf16
+                        [
                         bqf8.
                         b8
                         bqs8
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         % [Voice 15 measure 2] %! COMMENT_MEASURE_NUMBERS
@@ -3110,6 +3332,8 @@
                             \mp
                             - \tenuto
                             \<
+                            [
+                            ]
                             cqs'2
                             \f
 
@@ -3155,6 +3379,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             dqs'16
                             ef'16
                             eqf'16
@@ -3165,6 +3390,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3180,6 +3406,8 @@
                             - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -3197,6 +3425,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             gqf'16
                             ~
                             gqf'8.
@@ -3207,6 +3436,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3221,10 +3451,12 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         aqs'16
                         ~
                         aqs'8
                         bf8
+                        ]
                         bqf4
                         \ff
                         - \tweak stencil #constante-hairpin
@@ -3284,6 +3516,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -3303,6 +3537,8 @@
                             - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -3311,6 +3547,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -3335,6 +3573,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             cs'16
                             dqf'16
                             d'4
@@ -3345,6 +3584,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3366,6 +3606,8 @@
                             \<
                             e'8
                             ~
+                            [
+                            ]
                         }
                     }
                     {
@@ -3395,9 +3637,11 @@
                     {
                         % [Voice 16 measure 8] %! COMMENT_MEASURE_NUMBERS
                         eqs'16
+                        [
                         f'16
                         fqs'16
                         fs'16
+                        ]
                         gqf'4
                         \ff
                         - \tweak stencil #constante-hairpin
@@ -3420,6 +3664,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             gqs'8
                             ~
                             gqs'16
@@ -3435,6 +3680,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3454,6 +3700,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             b4.
                             \f
                             - \tenuto
@@ -3477,6 +3725,7 @@
                             bqs8.
                             \mf
                             ~
+                            [
                             bqs8
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -3487,6 +3736,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3511,12 +3761,14 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         bqs8.
                         ~
                         bqs16
                         c'16
                         cqs'16
                         cs'16
+                        ]
                         dqf'4
                         \ff
                         - \tweak stencil #constante-hairpin
@@ -3536,6 +3788,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             dqs'8
                             ~
                             dqs'16
@@ -3551,6 +3804,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3569,6 +3823,8 @@
                         \mp
 
                         \<
+                        [
+                        ]
                         fs'4.
                         \f
 
@@ -3585,6 +3841,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -3599,6 +3857,7 @@
                             g'8.
                             \mf
                             ~
+                            [
                             g'8
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -3610,6 +3869,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3637,6 +3897,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             aqs'2
                             \f
                             - \tenuto
@@ -3683,6 +3945,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         bqs16
                         c'16
                         cqs'16
@@ -3693,6 +3956,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         % [Voice 17 measure 12] %! COMMENT_MEASURE_NUMBERS
@@ -3755,6 +4019,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -3770,6 +4036,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             cs'16
                             ~
                             cs'16
@@ -3783,6 +4050,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3821,6 +4089,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             fqs'8.
                             fs'16
                             ~
@@ -3835,13 +4104,16 @@
                         g'16
                         gqs'16
                         af'16
+                        ]
                         aqf'4
                         ~
                         aqf'16
+                        [
                         a'8.
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         % [Voice 18 measure 8] %! COMMENT_MEASURE_NUMBERS
@@ -3860,6 +4132,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -3868,6 +4142,7 @@
                             \mp
                             \<
                             ~
+                            [
                         }
                     }
                     {
@@ -3879,6 +4154,7 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3895,6 +4171,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             bqs16
                             ~
                             bqs8.
@@ -3905,6 +4182,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3928,6 +4206,8 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -3959,6 +4239,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             gqf'8
                             ~
                             gqf'16
@@ -3972,6 +4253,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -3988,8 +4270,10 @@
                         \mp
 
                         ~
+                        [
                         aqf'8
                         \<
+                        ]
                         a'4.
                         \f
 
@@ -4010,6 +4294,8 @@
                             \mp
 
                             \<
+                            [
+                            ]
                             bf'4
                             \f
 
@@ -4017,6 +4303,8 @@
                             bf'8
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
@@ -4033,6 +4321,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         b'16
                         bqs'8
                         ~
@@ -4056,12 +4345,15 @@
                             dqf''8
 
                             ~
+                            ]
                             dqf''4.
                             d''8
                             \f
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
+                            ]
                         }
                     }
                     {
@@ -4079,6 +4371,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             ef''16
                             eqf''16
                             e''16
@@ -4089,6 +4382,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
@@ -4105,6 +4399,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             fs'16
                             ~
                             fs'16
@@ -4117,6 +4412,7 @@
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
