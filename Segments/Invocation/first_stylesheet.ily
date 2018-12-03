@@ -10,9 +10,10 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
 	title =  \markup \override #'(font-name . "Didot") \fontsize #15 \bold\center-column {"GUERRERO" }
 	subtitle = \markup \override #'(font-name . "Didot") {" "}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for nineteen saxophones"}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"f o r  n i n e t e e n  s a x o p h o n e s"}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
 }
 
@@ -61,9 +62,9 @@
         \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = #7
+        \override TimeSignature.font-size = #5
         \override TimeSignature.self-alignment-X = #center
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 10) (padding . 6) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 11) (padding . 6) (stretchability . 0))
     }
     \context {
         \Score

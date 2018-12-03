@@ -3,16 +3,26 @@
 \version "2.19.82"
 \language "english"
 #(set-default-paper-size "11x17portrait")
-#(set-global-staff-size 15)
+#(set-global-staff-size 13)
 \include "ekmel.ily"
 \ekmelicStyle evans
+
+\header {
+	tagline = ##f
+	breakbefore = ##t
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
+	title =  \markup \override #'(font-name . "Didot") \fontsize #15 \bold\center-column {"GUERRERO" }
+	subtitle = \markup \override #'(font-name . "Didot") {" "}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"f o r  n i n e t e e n  s a x o p h o n e s"}
+	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
+}
 
 \layout {
     \accidentalStyle forget
 	%\accidentalStyle modern
 	%\accidentalStyle modern-cautionary
 	%\accidentalStyle modern
-    indent = #0
+    indent = #5
 	%ragged-last = ##t
     %ragged-right = ##t
     %left-margin = #15
@@ -36,8 +46,8 @@
 		\override MetronomeMark.Y-extent = #'(0 . 0)
 		\override MetronomeMark.break-align-symbols = #'(left-edge)
 		\override MetronomeMark.extra-offset = #'(0 . 4)
-		\override MetronomeMark.font-size = 3
-		\override RehearsalMark.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
+		\override MetronomeMark.font-size = 4
+		%\override RehearsalMark.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
 		\override RehearsalMark.X-extent = #'(0 . 0)
 		\override RehearsalMark.X-offset = 6
 		\override RehearsalMark.Y-offset = -2.25
@@ -52,27 +62,30 @@
         \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = #1
+        \override TimeSignature.font-size = #5
         \override TimeSignature.self-alignment-X = #center
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 10) (padding . 6) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 11) (padding . 6) (stretchability . 0))
     }
     \context {
         \Score
         \remove Bar_number_engraver
 		\remove Mark_engraver
         \accepts TimeSignatureContext
+		\override BarLine.bar-extent = #'(-2 . 2)
         \override Beam.breakable = ##t
+		\override Beam.concaveness = #10000
+		\override DynamicText.font-size = #-2
 		\override Glissando.breakable = ##t
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 18) (minimum-distance . 18) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 15) (minimum-distance . 15) (padding . 0))
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 32)
+		proportionalNotationDuration = #(ly:make-moment 1 40)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
