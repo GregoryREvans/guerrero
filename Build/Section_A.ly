@@ -883,7 +883,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \times 8/9 {
+                        \times 4/5 {
                             eqs''16
                             \mf
                             - \tenuto
@@ -895,18 +895,18 @@
                             f''16
                             eqs''16
                             - \tenuto
-                            f''16
-                            - \tenuto
-                            fqs''16
-                            - \tenuto
-                            f''16
-                            - \tenuto
-                            eqs''16
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
                         }
+                        f''16
+                        - \tenuto
+                        fqs''16
+                        - \tenuto
+                        f''16
+                        - \tenuto
+                        eqs''16
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         % [Voice 3 measure 11] %! COMMENT_MEASURE_NUMBERS
@@ -944,20 +944,20 @@
                         [
                     }
                     {
-                        % [Voice 3 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        f''8
-                        \mf
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 3 measure 14] %! COMMENT_MEASURE_NUMBERS
+                            f''8
+                            \mf
+                            - \tenuto
+                            \>
+                            eqs''16
+                            ~
+                        }
+                        eqs''16
+                        e''16
                         - \tenuto
-                        \>
                         eqs''8
-                        - \tenuto
-                        e''16
-                        - \tenuto
-                        eqs''16
-                        - \tenuto
-                        ~
-                        eqs''16
-                        e''16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -1044,32 +1044,34 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
-                            eqs''8.
+                        \times 8/9 {
+                            e''16
                             \mf
                             - \tenuto
                             \>
                             [
+                            eqs''8
+                            - \tenuto
+                            ~
+                            eqs''16
                             e''8
                             - \tenuto
                             eqs''8
                             - \tenuto
+                            e''16
+                            ~
                         }
                     }
                     {
                         % [Voice 3 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        e''8.
+                        e''8
+                        eqs''8
                         - \tenuto
-                        eqs''16
-                        - \tenuto
-                        ~
-                        eqs''16
                         f''16
                         - \tenuto
                         fqs''16
                         - \tenuto
-                        fs''16
+                        fs''8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -1249,7 +1251,8 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \times 8/9 {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
                             % [Voice 4 measure 11] %! COMMENT_MEASURE_NUMBERS
                             eqf''16
                             \mf
@@ -1260,32 +1263,29 @@
                             - \tenuto
                             dqs''16
                             - \tenuto
-                            d''16
-                            - \tenuto
-                            dqf''8
-                            - \tenuto
-                            ~
-                            dqf''16
+                        }
+                        d''8.
+                        - \tenuto
+                        dqf''16
+                        - \tenuto
+                        \times 4/5 {
                             cs''16
                             - \tenuto
                             dqf''16
                             - \tenuto
+                            d''16
+                            - \tenuto
+                            dqs''16
+                            - \tenuto
+                            d''16
+                            ~
                         }
                         d''16
-                        - \tenuto
-                        dqs''16
-                        - \tenuto
-                        d''16
-                        - \tenuto
                         dqs''16
                         - \tenuto
                         ~
                         dqs''16
                         d''16
-                        - \tenuto
-                        ~
-                        d''16
-                        dqf''16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -1329,11 +1329,11 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             % [Voice 4 measure 14] %! COMMENT_MEASURE_NUMBERS
-                            cs''8
+                            dqf''8
                             \mf
                             - \tenuto
                             \>
-                            cqs''16
+                            cs''16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -1434,31 +1434,31 @@
                         \stopStaff \startStaff
                     }
                     {
-                        cs''8.
+                        cqs''8.
                         \mf
                         - \tenuto
                         \>
                         [
+                        cs''16
+                        - \tenuto
+                        ~
+                        cs''16
                         dqf''16
                         - \tenuto
                         ~
                         dqf''16
                         d''16
-                        - \tenuto
-                        ~
-                        d''16
-                        dqs''16
                         ~
                     }
                     {
                         \times 4/5 {
                             % [Voice 4 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            dqs''8
-                            d''16
+                            d''8
+                            dqs''16
                             - \tenuto
                             ~
+                            dqs''16
                             d''16
-                            dqf''16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -1660,26 +1660,28 @@
                         g''16
                         gqf''16
                         - \tenuto
-                        fs''16
-                        - \tenuto
-                        gqf''16
-                        - \tenuto
-                        g''8
-                        ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
-                            g''16
-                            gqs''16
+                        \times 4/3 {
+                            fs''16
+                            - \tenuto
+                            gqf''16
                             - \tenuto
                             g''16
-                            - \tenuto
+                            ~
+                        }
+                        g''8
+                        gqs''16
+                        - \tenuto
+                        g''16
+                        - \tenuto
+                        \times 4/5 {
                             gqs''16
                             - \tenuto
                             af''16
                             - \tenuto
                             aqf''16
                             - \tenuto
-                            af''16
+                            af''8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -1733,22 +1735,20 @@
                         \stopStaff \startStaff
                     }
                     {
-                        gqs''16
+                        gqs''8
                         \mf
                         - \tenuto
                         \>
                         [
                         g''16
                         - \tenuto
-                        ~
-                        g''16
                         gqs''16
                         - \tenuto
-                        af''8
+                        ~
+                        gqs''16
+                        af''16
                         - \tenuto
-                        aqf''16
-                        - \tenuto
-                        a''16
+                        aqf''8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -1840,21 +1840,19 @@
                         [
                     }
                     {
-                        \times 4/5 {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
                             % [Voice 5 measure 19] %! COMMENT_MEASURE_NUMBERS
-                            aqf''8
+                            a''16
                             \mf
                             - \tenuto
                             \>
-                            af''16
+                            aqf''8
                             - \tenuto
-                            ~
-                            af''16
-                            gqs''16
-                            ~
                         }
-                        gqs''16
-                        g''8.
+                        af''8
+                        - \tenuto
+                        gqs''8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -1872,13 +1870,14 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
-                            gqf''8
+                        \times 8/9 {
+                            g''16
                             \mf
                             - \tenuto
                             \>
                             [
+                            gqf''8
+                            - \tenuto
                             fs''16
                             - \tenuto
                             fqs''16
@@ -1888,6 +1887,8 @@
                             ~
                             fs''16
                             gqf''16
+                            - \tenuto
+                            g''16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -2053,12 +2054,12 @@
                         \mf
                         - \tenuto
                         \>
-                        f''16
+                        f''8.
                         - \tenuto
-                        eqs''8
-                        ~
-                        \times 8/9 {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 8/7 {
                             eqs''16
+                            - \tenuto
                             f''16
                             - \tenuto
                             fqs''16
@@ -2067,11 +2068,7 @@
                             - \tenuto
                             eqs''16
                             - \tenuto
-                            f''16
-                            - \tenuto
-                            eqs''8
-                            - \tenuto
-                            e''16
+                            f''8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -2198,14 +2195,14 @@
                         \stopStaff \startStaff
                     }
                     {
-                        eqs''16
+                        eqs''8
                         \mf
                         - \tenuto
                         \>
                         [
                         e''16
                         - \tenuto
-                        eqs''8
+                        eqs''16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2399,14 +2396,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
+                        \times 4/5 {
                             eqf''16
                             \mf
                             - \tenuto
                             \>
                             [
-                            ef''8
+                            ef''16
+                            - \tenuto
+                            dqs''8.
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -2449,13 +2447,11 @@
                     }
                     {
                         % [Voice 7 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        dqs''16
+                        d''8
                         \mf
                         - \tenuto
                         \>
-                        d''8
-                        - \tenuto
-                        dqf''16
+                        dqf''8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2568,24 +2564,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \times 4/5 {
-                            cs''16
-                            \mf
-                            - \tenuto
-                            \>
-                            [
-                            dqf''8
-                            - \tenuto
-                            ~
-                            dqf''16
-                            d''16
-                            ~
-                        }
+                        cs''4
+                        \mf
+                        - \tenuto
+                        \>
+                        [
                     }
                     {
                         % [Voice 7 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        d''16
-                        dqs''16
+                        dqf''8
                         - \tenuto
                         d''16
                         - \tenuto
@@ -2780,9 +2767,8 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            bqf'16
+                        \times 4/5 {
+                            bqf'8
                             \mf
                             - \tenuto
                             \>
@@ -2790,6 +2776,8 @@
                             b'16
                             - \tenuto
                             bqf'16
+                            - \tenuto
+                            b'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -2919,15 +2907,14 @@
                     }
                     {
                         % [Voice 8 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        b'16
+                        bqf'8.
                         \mf
                         - \tenuto
                         \>
-                        bqf'8.
+                        bf'16
                         - \tenuto
-                        \times 8/9 {
-                            bf'16
-                            - \tenuto
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 8/7 {
                             bqf'16
                             - \tenuto
                             bf'16
@@ -2940,7 +2927,7 @@
                             - \tenuto
                             ~
                             aqs'16
-                            a'8
+                            a'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -3114,17 +3101,21 @@
                         [
                         a'16
                         - \tenuto
-                        ~
-                        a'16
-                        aqf'16
+                        aqf'8
                         - \tenuto
-                        a'8.
-                        - \tenuto
-                        aqf'16
-                        \pp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \times 4/5 {
+                            a'16
+                            - \tenuto
+                            aqf'8
+                            - \tenuto
+                            ~
+                            aqf'16
+                            a'16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         % [Voice 9 measure 11] %! COMMENT_MEASURE_NUMBERS
@@ -3162,18 +3153,21 @@
                         [
                     }
                     {
+                        % [Voice 9 measure 14] %! COMMENT_MEASURE_NUMBERS
+                        aqs'16
+                        \mf
+                        - \tenuto
+                        \>
+                        a'16
+                        - \tenuto
+                        ~
+                        a'16
+                        aqs'16
+                        ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
-                            % [Voice 9 measure 14] %! COMMENT_MEASURE_NUMBERS
-                            a'16
-                            \mf
-                            - \tenuto
-                            \>
+                        \times 4/3 {
                             aqs'8
-                            - \tenuto
-                            a'8.
-                            - \tenuto
-                            aqs'16
+                            bf'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -3261,32 +3255,30 @@
                         \stopStaff \startStaff
                     }
                     {
-                        bf'16
+                        aqs'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        aqs'16
-                        - \tenuto
                         a'16
                         - \tenuto
                         aqs'16
+                        - \tenuto
+                        a'16
                         - \tenuto
                         ~
-                        aqs'16
                         a'16
-                        - \tenuto
                         aqs'16
                         - \tenuto
                         a'16
+                        - \tenuto
+                        aqf'16
                         - \tenuto
                     }
                     {
                         \times 8/9 {
                             % [Voice 9 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            aqf'8.
-                            - \tenuto
-                            af'16
+                            af'8.
                             - \tenuto
                             aqf'16
                             - \tenuto
@@ -3297,6 +3289,8 @@
                             bf'16
                             - \tenuto
                             aqs'16
+                            - \tenuto
+                            bf'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -3496,24 +3490,22 @@
                         a'16
                         aqs'16
                         - \tenuto
-                        a'8
-                        - \tenuto
-                        aqs'16
-                        - \tenuto
-                        bf'16
-                        ~
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
+                        \times 4/3 {
+                            a'8
+                            - \tenuto
+                            aqs'16
+                            - \tenuto
+                        }
+                        bf'8.
+                        - \tenuto
+                        bqf'16
+                        ~
+                        \times 4/5 {
+                            bqf'16
                             bf'8
-                            bqf'16
                             - \tenuto
-                            ~
-                            bqf'16
-                            bf'16
-                            - \tenuto
-                            ~
-                            bf'16
-                            bqf'16
+                            bqf'8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -3556,11 +3548,13 @@
                     }
                     {
                         % [Voice 10 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        bf'8
+                        bf'16
                         \mf
                         - \tenuto
                         \>
                         aqs'8
+                        - \tenuto
+                        bf'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3660,36 +3654,31 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \times 8/9 {
-                            bf'16
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 8/7 {
+                            bqf'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            bqf'16
+                            bf'8
                             - \tenuto
-                            bf'16
-                            - \tenuto
-                            ~
-                            bf'16
                             bqf'16
                             - \tenuto
                             b'16
                             - \tenuto
                             bqf'16
                             - \tenuto
-                            bf'8
+                            bf'16
                             ~
                         }
                     }
                     {
                         % [Voice 10 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        bf'16
+                        bf'8
                         bqf'16
                         - \tenuto
                         bf'16
-                        - \tenuto
-                        bqf'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3879,8 +3868,7 @@
                         [
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
+                        \times 4/5 {
                             % [Voice 11 measure 9] %! COMMENT_MEASURE_NUMBERS
                             gqs'16
                             \mf
@@ -3890,24 +3878,25 @@
                             - \tenuto
                             aqf'16
                             - \tenuto
-                            ~
-                            aqf'16
-                            af'16
-                            - \tenuto
-                            ~
-                            af'16
-                            aqf'16
+                            af'8
                             - \tenuto
                         }
-                        a'8
-                        - \tenuto
-                        aqf'16
+                        aqf'8
                         - \tenuto
                         a'16
                         - \tenuto
+                        aqf'16
                         ~
-                        a'8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            aqf'16
+                            a'16
+                            - \tenuto
+                            aqs'16
+                            ~
+                        }
                         aqs'8
+                        bf'8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3961,22 +3950,22 @@
                     }
                     {
                         \times 8/9 {
-                            bf'8
+                            aqs'8
                             \mf
                             - \tenuto
                             \>
                             [
-                            aqs'16
-                            - \tenuto
-                            ~
-                            aqs'8
                             a'16
                             - \tenuto
                             ~
-                            a'16
+                            a'8
                             aqf'16
                             - \tenuto
+                            ~
+                            aqf'16
                             a'16
+                            - \tenuto
+                            aqs'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -4070,17 +4059,17 @@
                     }
                     {
                         % [Voice 11 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        aqs'8
+                        a'8
                         \mf
                         - \tenuto
                         \>
-                        a'16
-                        - \tenuto
                         aqs'16
                         - \tenuto
                         bf'16
                         - \tenuto
-                        bqf'8.
+                        bqf'16
+                        - \tenuto
+                        b'8.
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4100,20 +4089,20 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            b'16
+                            bqf'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            bqf'16
-                            - \tenuto
                             bf'16
                             - \tenuto
                             bqf'16
                             - \tenuto
                             bf'16
                             - \tenuto
-                            aqs'8
+                            aqs'16
+                            - \tenuto
+                            a'8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -4294,19 +4283,18 @@
                         g'16
                         - \tenuto
                         gqf'8
-                        - \tenuto
                         ~
-                        gqf'16
-                        fs'16
-                        - \tenuto
-                        ~
-                        fs'16
-                        fqs'16
-                        \pp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \times 4/5 {
+                            gqf'16
+                            fs'8
+                            - \tenuto
+                            fqs'8
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
                     }
                     {
                         % [Voice 12 measure 11] %! COMMENT_MEASURE_NUMBERS
@@ -4427,23 +4415,17 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \times 4/5 {
-                            fs'16
-                            \mf
-                            - \tenuto
-                            \>
-                            [
-                            gqf'8
-                            - \tenuto
-                            ~
-                            gqf'16
-                            g'16
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
+                        fs'8.
+                        \mf
+                        - \tenuto
+                        \>
+                        [
+                        gqf'16
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -4639,20 +4621,21 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fqs'16
-                        \mf
-                        - \tenuto
-                        \>
-                        [
-                        fs'16
-                        - \tenuto
-                        gqf'16
-                        - \tenuto
-                        g'16
-                        \pp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            fqs'16
+                            \mf
+                            - \tenuto
+                            \>
+                            [
+                            fs'16
+                            - \tenuto
+                            gqf'16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         % [Voice 13 measure 11] %! COMMENT_MEASURE_NUMBERS
@@ -4689,22 +4672,19 @@
                         [
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 13 measure 13] %! COMMENT_MEASURE_NUMBERS
-                            gqf'16
-                            \mf
-                            - \tenuto
-                            \>
-                            fs'16
-                            - \tenuto
-                            fqs'16
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
+                        % [Voice 13 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        g'8
+                        \mf
+                        - \tenuto
+                        \>
+                        gqf'16
+                        - \tenuto
+                        fs'16
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -4812,32 +4792,34 @@
                         \stopStaff \startStaff
                     }
                     {
-                        f'16
-                        \mf
-                        - \tenuto
-                        \>
-                        [
-                        fqs'8.
-                        - \tenuto
-                    }
-                    {
                         \times 4/5 {
-                            % [Voice 13 measure 20] %! COMMENT_MEASURE_NUMBERS
-                            f'16
+                            fqs'16
+                            \mf
                             - \tenuto
+                            \>
+                            [
+                            f'8
+                            - \tenuto
+                            ~
+                            f'16
                             fqs'16
                             - \tenuto
-                            f'16
-                            - \tenuto
-                            eqs'16
-                            - \tenuto
-                            e'16
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                         }
+                    }
+                    {
+                        % [Voice 13 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        f'16
+                        - \tenuto
+                        fqs'16
+                        - \tenuto
+                        f'16
+                        - \tenuto
+                        eqs'16
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -5023,17 +5005,20 @@
                         \stopStaff \startStaff
                     }
                     {
-                        eqs'8
-                        \mf
-                        - \tenuto
-                        \>
-                        [
-                        f'8
-                        \pp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            eqs'8
+                            \mf
+                            - \tenuto
+                            \>
+                            [
+                            f'16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -5156,28 +5141,27 @@
                         [
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 12/11 {
-                            % [Voice 14 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            fqs'16
-                            \mf
-                            - \tenuto
-                            \>
-                            fs'8
-                            - \tenuto
-                            fqs'16
-                            - \tenuto
-                            f'8.
-                            - \tenuto
-                            fqs'8
-                            - \tenuto
-                            fs'8
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
+                        % [Voice 14 measure 21] %! COMMENT_MEASURE_NUMBERS
+                        fqs'16
+                        \mf
+                        - \tenuto
+                        \>
+                        fs'16
+                        - \tenuto
+                        fqs'8
+                        - \tenuto
+                        f'16
+                        - \tenuto
+                        fqs'8.
+                        - \tenuto
+                        fs'8
+                        - \tenuto
+                        fqs'8
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -5332,20 +5316,20 @@
                         \stopStaff \startStaff
                     }
                     {
-                        eqs'8.
-                        \mf
-                        - \tenuto
-                        \>
-                        [
-                        e'16
-                        - \tenuto
-                        ~
-                        e'16
+                        \times 4/5 {
+                            eqs'8.
+                            \mf
+                            - \tenuto
+                            \>
+                            [
+                            e'8
+                            - \tenuto
+                        }
                         eqs'16
                         - \tenuto
                         e'16
                         - \tenuto
-                        eqs'16
+                        eqs'8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5387,7 +5371,8 @@
                         [
                     }
                     {
-                        \times 8/9 {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
                             % [Voice 15 measure 14] %! COMMENT_MEASURE_NUMBERS
                             e'16
                             \mf
@@ -5397,21 +5382,15 @@
                             - \tenuto
                             f'16
                             - \tenuto
-                            fqs'16
-                            - \tenuto
-                            fs'8
-                            - \tenuto
-                            ~
-                            fs'16
-                            fqs'16
-                            - \tenuto
-                            f'16
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                         }
+                        fqs'8.
+                        - \tenuto
+                        fs'16
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -5493,43 +5472,40 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fqs'16
-                        \mf
-                        - \tenuto
-                        \>
-                        [
-                        f'16
-                        - \tenuto
-                        eqs'16
-                        - \tenuto
-                        e'16
-                        - \tenuto
-                        ~
-                        e'16
-                        eqs'16
-                        - \tenuto
-                        ~
-                        eqs'16
-                        f'16
-                        - \tenuto
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
-                            % [Voice 15 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            fqs'8
+                        \times 8/9 {
+                            fqs'16
+                            \mf
+                            - \tenuto
+                            \>
+                            [
+                            f'16
+                            - \tenuto
+                            fqs'16
                             - \tenuto
                             f'16
                             - \tenuto
-                            fqs'8.
+                            eqs'8
                             - \tenuto
-                            fs'16
-                            \pp
+                            e'8
                             - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
+                            eqs'16
+                            - \tenuto
                         }
+                    }
+                    {
+                        % [Voice 15 measure 21] %! COMMENT_MEASURE_NUMBERS
+                        f'8
+                        - \tenuto
+                        fqs'16
+                        - \tenuto
+                        f'8.
+                        - \tenuto
+                        fqs'8
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -5711,43 +5687,41 @@
                         \stopStaff \startStaff
                     }
                     {
-                        % [Voice 16 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        dqs'16
-                        \mf
-                        - \tenuto
-                        \>
-                        [
-                        d'16
-                        - \tenuto
-                        ~
-                        d'16
-                        dqf'16
-                        - \tenuto
-                        ~
-                        dqf'8
-                        cs'8
-                        - \tenuto
-                        \times 8/9 {
-                            cqs'16
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 16 measure 11] %! COMMENT_MEASURE_NUMBERS
+                            dqs'8
+                            \mf
                             - \tenuto
+                            \>
+                            [
+                            d'16
+                            ~
+                        }
+                        d'8
+                        dqf'8
+                        - \tenuto
+                        \times 4/5 {
                             cs'16
                             - \tenuto
                             cqs'16
+                            - \tenuto
+                            cs'16
                             - \tenuto
                             ~
-                            cqs'16
                             cs'16
-                            - \tenuto
                             cqs'16
                             - \tenuto
-                            c'16
-                            - \tenuto
-                            bqs8
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
                         }
+                        cs'16
+                        - \tenuto
+                        cqs'16
+                        - \tenuto
+                        c'8
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         % [Voice 16 measure 12] %! COMMENT_MEASURE_NUMBERS
@@ -5784,21 +5758,22 @@
                         [
                     }
                     {
-                        % [Voice 16 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        b16
-                        \mf
-                        - \tenuto
-                        \>
-                        bqs16
-                        - \tenuto
-                        b16
-                        - \tenuto
-                        bqs16
-                        \pp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 16 measure 14] %! COMMENT_MEASURE_NUMBERS
+                            bqs16
+                            \mf
+                            - \tenuto
+                            \>
+                            b16
+                            - \tenuto
+                            bqs16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -5893,39 +5868,40 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
-                            c'16
-                            \mf
-                            - \tenuto
-                            \>
-                            [
-                            bqs16
-                            - \tenuto
-                            c'16
-                            - \tenuto
-                            ~
-                            c'16
-                            cqs'16
-                            - \tenuto
-                            ~
-                            cqs'16
-                            cs'16
-                            - \tenuto
-                        }
-                    }
-                    {
-                        % [Voice 16 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        cqs'8
+                        b16
+                        \mf
+                        - \tenuto
+                        \>
+                        [
+                        bqs16
                         - \tenuto
                         c'16
                         - \tenuto
-                        cqs'16
-                        \pp
+                        bqs16
                         - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        ~
+                        bqs16
+                        c'16
+                        - \tenuto
+                        ~
+                        c'16
+                        cqs'16
+                        - \tenuto
+                    }
+                    {
+                        \times 4/5 {
+                            % [Voice 16 measure 21] %! COMMENT_MEASURE_NUMBERS
+                            cs'8
+                            - \tenuto
+                            cqs'16
+                            - \tenuto
+                            c'8
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -6075,37 +6051,44 @@
                         [
                     }
                     {
-                        \times 8/9 {
-                            % [Voice 17 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            dqs'8
-                            \mf
-                            - \tenuto
-                            \>
-                            ef'16
-                            - \tenuto
+                        % [Voice 17 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        dqs'16
+                        \mf
+                        - \tenuto
+                        \>
+                        ef'16
+                        - \tenuto
+                        ~
+                        ef'16
+                        eqf'16
+                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            eqf'16
+                            ef'8
                             ~
-                            ef'16
-                            eqf'8
-                            - \tenuto
-                            ef'8.
-                            - \tenuto
                         }
-                        eqf'8
-                        - \tenuto
-                        e'16
-                        - \tenuto
-                        eqs'16
-                        - \tenuto
-                        e'8
-                        - \tenuto
+                        ef'16
                         eqf'16
                         - \tenuto
-                        ef'16
-                        \pp
+                        ~
+                        eqf'16
+                        e'16
                         - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \times 4/5 {
+                            eqs'16
+                            - \tenuto
+                            e'8
+                            - \tenuto
+                            eqf'16
+                            - \tenuto
+                            ef'16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
                     }
                     {
                         % [Voice 17 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -6146,28 +6129,25 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 8/7 {
-                            eqf'16
-                            \mf
-                            - \tenuto
-                            \>
-                            [
-                            ef'8
-                            - \tenuto
-                            ~
-                            ef'16
-                            eqf'16
-                            - \tenuto
-                            ef'16
-                            - \tenuto
-                            eqf'16
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
+                        eqf'16
+                        \mf
+                        - \tenuto
+                        \>
+                        [
+                        ef'8.
+                        - \tenuto
+                        eqf'16
+                        - \tenuto
+                        ef'16
+                        - \tenuto
+                        eqf'16
+                        - \tenuto
+                        e'16
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         % [Voice 17 measure 14] %! COMMENT_MEASURE_NUMBERS
@@ -6240,25 +6220,26 @@
                         [
                     }
                     {
-                        % [Voice 17 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        e'16
-                        \mf
-                        - \tenuto
-                        \>
-                        eqf'16
-                        - \tenuto
-                        e'8
-                        - \tenuto
-                        eqf'8
-                        - \tenuto
-                        e'16
-                        - \tenuto
-                        eqs'16
-                        \pp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 8/7 {
+                            % [Voice 17 measure 19] %! COMMENT_MEASURE_NUMBERS
+                            eqf'16
+                            \mf
+                            - \tenuto
+                            \>
+                            e'8
+                            - \tenuto
+                            eqf'8
+                            - \tenuto
+                            e'16
+                            - \tenuto
+                            eqs'16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -6271,29 +6252,25 @@
                         \stopStaff \startStaff
                     }
                     {
-                        \times 8/9 {
-                            e'16
-                            \mf
-                            - \tenuto
-                            \>
-                            [
-                            eqs'16
-                            - \tenuto
-                            f'16
-                            - \tenuto
-                            ~
-                            f'8
-                            fqs'16
-                            - \tenuto
-                            ~
-                            fqs'16
-                            f'8
-                            \pp
-                            - \tenuto
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
+                        e'16
+                        \mf
+                        - \tenuto
+                        \>
+                        [
+                        eqs'16
+                        - \tenuto
+                        f'8.
+                        - \tenuto
+                        fqs'16
+                        - \tenuto
+                        ~
+                        fqs'16
+                        f'16
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         % [Voice 17 measure 21] %! COMMENT_MEASURE_NUMBERS
@@ -6427,28 +6404,33 @@
                         [
                     }
                     {
-                        % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        cqs'8.
-                        \mf
-                        - \tenuto
-                        \>
-                        cs'16
-                        - \tenuto
-                        ~
-                        cs'16
+                        \times 4/5 {
+                            % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS
+                            cqs'16
+                            \mf
+                            - \tenuto
+                            \>
+                            cs'8
+                            - \tenuto
+                            ~
+                            cs'16
+                            cqs'16
+                            ~
+                        }
                         cqs'16
-                        - \tenuto
                         c'16
                         - \tenuto
                         bqs16
                         - \tenuto
-                        ~
-                        bqs16
                         b16
                         - \tenuto
+                        ~
+                        b16
                         bqf16
                         - \tenuto
                         bf16
+                        - \tenuto
+                        aqs16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6553,7 +6535,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        aqs4
+                        a4
                         \mf
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6582,16 +6564,16 @@
                         \markup { cbs. }
                         \set Staff.instrumentName =
                         \markup { Contrabass }
-                        a2.
+                        bf2.
                         \mp
                         ~
                         [
-                        a2
+                        bf2
                         \<
                     }
                     {
                         % [Voice 19 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        a4
+                        bf4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6609,7 +6591,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a4
+                        bf4
                         \mp
                         - \tenuto
                         \<
@@ -6617,7 +6599,7 @@
                     }
                     {
                         % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        a2.
+                        bf2.
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6635,7 +6617,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        bf4
+                        d'4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6644,7 +6626,7 @@
                     }
                     {
                         % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        a4
+                        bf4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6658,7 +6640,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        d'2
+                        g'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6667,7 +6649,7 @@
                     }
                     {
                         % [Voice 19 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        g'1
+                        bf1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6682,17 +6664,17 @@
                     }
                     {
                         % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        bf2.
+                        d'2.
                         \p
                         ~
                         [
-                        bf2
+                        d'2
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        a4
+                        bf4
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6727,7 +6709,7 @@
                     }
                     {
                         % [Voice 19 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        d'2.
+                        g'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6745,7 +6727,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a4
+                        bf4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6776,7 +6758,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a2
+                        d'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6785,7 +6767,7 @@
                     }
                     {
                         % [Voice 19 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        a1
+                        bf1
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6800,17 +6782,17 @@
                     }
                     {
                         % [Voice 19 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        g'2.
+                        bf2.
                         \p
                         ~
                         [
-                        g'2
+                        bf2
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        d'4
+                        bf4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6828,7 +6810,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a4
+                        bf4
                         \mp
                         - \tenuto
                         \<
@@ -6836,7 +6818,7 @@
                     }
                     {
                         % [Voice 19 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        a2.
+                        bf2.
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6880,7 +6862,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a2
+                        d'2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6889,7 +6871,7 @@
                     }
                     {
                         % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        a1
+                        bf1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin

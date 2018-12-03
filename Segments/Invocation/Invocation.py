@@ -70,11 +70,11 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         beam_divisions_together=True,
         beam_rests=False,
         ),
-    extra_counts_per_division=[0, 1, ],
-    burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-        left_classes=[abjad.Note, abjad.Rest],
-        left_counts=[1, 0, 1],
-        ),
+    extra_counts_per_division=[0, 1, -1, ],
+    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+    #     left_classes=[abjad.Note, abjad.Rest],
+    #     left_counts=[1, 0, 1],
+    #     ),
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -91,11 +91,11 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         beam_divisions_together=True,
         beam_rests=False,
         ),
-    extra_counts_per_division=[-1, 0,],
-    burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-        left_classes=[abjad.Note, abjad.Rest],
-        left_counts=[1, 0, 1],
-        ),
+    extra_counts_per_division=[-1, 0, -1, 1, 0, ],
+    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+    #     left_classes=[abjad.Note, abjad.Rest],
+    #     left_counts=[1, 0, 1],
+    #     ),
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -109,14 +109,14 @@ attachment_handler_one = AttachmentHandler(
     starting_dynamic='mf',
     ending_dynamic='ff',
     hairpin='<|',
-    articulation_list=['tenuto'],
+    # articulation_list=['tenuto'],
 )
 
 attachment_handler_two = AttachmentHandler(
-    starting_dynamic='mf',
-    ending_dynamic='ff',
+    starting_dynamic='mp',
+    ending_dynamic='f',
     hairpin='<',
-    articulation_list=['tenuto'],
+    articulation_list=['tenuto', '', '', '', '', ],
 )
 
 # Initialize MusicMakers with the rhythm-makers.
@@ -404,13 +404,19 @@ voice_1_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(0, 4), (3, 4), sopranino_musicmaker_one],
-        [(5, 4), (8, 4), sopranino_musicmaker_one],
-        [(12, 4), (15, 4), sopranino_musicmaker_two],
-        [(17, 4), (20, 4), sopranino_musicmaker_one],
+        [(0, 4), (2, 4), sopranino_musicmaker_one],
+        [(2, 4), (3, 4), sopranino_musicmaker_one],
+        [(5, 4), (7, 4), sopranino_musicmaker_one],
+        [(7, 4), (8, 4), sopranino_musicmaker_one],
+        [(12, 4), (14, 4), sopranino_musicmaker_two],
+        [(14, 4), (15, 4), sopranino_musicmaker_two],
+        [(17, 4), (18, 4), sopranino_musicmaker_one],
+        [(18, 4), (20, 4), sopranino_musicmaker_one],
         [(28, 4), (31, 4), sopranino_musicmaker_two],
-        [(33, 4), (36, 4), sopranino_musicmaker_two],
-        [(40, 4), (43, 4), sopranino_musicmaker_one],
+        [(33, 4), (35, 4), sopranino_musicmaker_two],
+        [(35, 4), (36, 4), sopranino_musicmaker_two],
+        [(40, 4), (42, 4), sopranino_musicmaker_one],
+        [(42, 4), (43, 4), sopranino_musicmaker_one],
         [(45, 4), (95, 8), sopranino_musicmaker_two],
         [(95, 8), (96, 8), silence_maker],
     ]
@@ -1065,35 +1071,42 @@ for voice in abjad.select(score).components(abjad.Voice):
                 )
             specifier(run)
             # then attach new indicators at the 0 and -1 of run
-            abjad.attach(abjad.StartBeam(), run[0])
-            abjad.attach(abjad.StopBeam(), run[-1])
-            # for leaf in run:
-            #     # continue if leaf can't be beamed
-            #     if abjad.Duration(1, 4) <= leaf.written_duration:
-            #         continue
-            #     previous_leaf = abjad.inspect(leaf).leaf(-1)
-            #     next_leaf = abjad.inspect(leaf).leaf(1)
-            #     # if next leaf is quarter note (or greater) ...
-            #     if (isinstance(next_leaf, (abjad.Chord, abjad.Note)) and
-            #         abjad.Duration(1, 4) <= next_leaf.written_duration):
-            #         left = previous_leaf.written_duration.flag_count
-            #         right = leaf.written_duration.flag_count # right-pointing nib
-            #         beam_count = abjad.BeamCount(
-            #             left=left,
-            #             right=right,
-            #             )
-            #         abjad.attach(beam_count, leaf)
-            #         continue
-            #     # if previous leaf is quarter note (or greater) ...
-            #     if (isinstance(previous_leaf, (abjad.Chord, abjad.Note)) and
-            #         abjad.Duration(1, 4) <= previous_leaf.written_duration):
-            #         left = leaf.written_duration.flag_count # left-pointing nib
-            #         right = next_leaf.written_duration.flag_count
-            #         beam_count = abjad.BeamCount(
-            #             left=left,
-            #             right=right,
-            #             )
-            #         abjad.attach(beam_count, leaf)
+            #only on notes smaller than 1/4
+    selection = []
+    for note in abjad.select(voice).leaves(pitched=True):
+        if abjad.inspect(note).duration < abjad.Duration(1, 4):
+            selection.append(note)
+    groups = selection.group_by_contiguity()
+    for group in groups:
+        abjad.attach(abjad.StartBeam(), group[0])
+        abjad.attach(abjad.StopBeam(), group[-1])
+        for leaf in group:
+            # continue if leaf can't be beamed
+            if abjad.Duration(1, 4) <= leaf.written_duration:
+                continue
+            previous_leaf = abjad.inspect(leaf).leaf(-1)
+            next_leaf = abjad.inspect(leaf).leaf(1)
+            # if next leaf is quarter note (or greater) ...
+            if (isinstance(next_leaf, (abjad.Chord, abjad.Note)) and
+                abjad.Duration(1, 4) <= next_leaf.written_duration):
+                left = previous_leaf.written_duration.flag_count
+                right = leaf.written_duration.flag_count # right-pointing nib
+                beam_count = abjad.BeamCount(
+                    left=left,
+                    right=right,
+                    )
+                abjad.attach(beam_count, leaf)
+                continue
+            # if previous leaf is quarter note (or greater) ...
+            if (isinstance(previous_leaf, (abjad.Chord, abjad.Note)) and
+                abjad.Duration(1, 4) <= previous_leaf.written_duration):
+                left = leaf.written_duration.flag_count # left-pointing nib
+                right = next_leaf.written_duration.flag_count
+                beam_count = abjad.BeamCount(
+                    left=left,
+                    right=right,
+                    )
+                abjad.attach(beam_count, leaf)
 
 print('Beautifying score ...')
 # cutaway score
