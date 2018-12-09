@@ -1608,11 +1608,17 @@ for voice in abjad.select(score).components(abjad.Voice):
             if isinstance(pre_leaf, abjad.Note):
                 if abjad.inspect(pre_leaf).duration() >= abjad.Duration(1, 4):
                     abjad.attach(abjad.StartBeam(), note)
+            if isinstance(pre_leaf, abjad.Chord):
+                if abjad.inspect(pre_leaf).duration() >= abjad.Duration(1, 4):
+                    abjad.attach(abjad.StartBeam(), note)
             if isinstance(pre_leaf, abjad.Rest):
                 abjad.attach(abjad.StartBeam(), note)
             if pre_leaf == None:
                 abjad.attach(abjad.StartBeam(), note)
             if isinstance(next_leaf, abjad.Note):
+                if abjad.inspect(next_leaf).duration() >= abjad.Duration(1, 4):
+                    abjad.attach(abjad.StopBeam(), note)
+            if isinstance(next_leaf, abjad.Chord):
                 if abjad.inspect(next_leaf).duration() >= abjad.Duration(1, 4):
                     abjad.attach(abjad.StopBeam(), note)
             if isinstance(next_leaf, abjad.Rest):

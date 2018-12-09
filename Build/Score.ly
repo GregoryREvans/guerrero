@@ -16,8 +16,8 @@
 	{
 	\include "Invocation.ly"
 	\include "Section_A.ly"
-    %{ \include "Section_B.ly"
-    \include "Section_C.ly"
+    \include "Section_B.ly"
+    %{ \include "Section_C.ly"
     \include "Section_D.ly"
     \include "Section_E.ly"
     \include "Section_F.ly"

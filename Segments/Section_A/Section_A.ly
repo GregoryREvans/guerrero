@@ -684,6 +684,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         fs''8.
                         - \tenuto
                         gqf''8
@@ -932,6 +933,7 @@
                             \mf
                             - \tenuto
                             \>
+                            [
                             eqs''16
                             ~
                         }
@@ -1307,6 +1309,7 @@
                             \mf
                             - \tenuto
                             \>
+                            [
                             cs''16
                             \pp
                             - \tenuto
@@ -1621,6 +1624,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         g''16
                         - \tenuto
                         ~
@@ -1809,6 +1813,7 @@
                             \mf
                             - \tenuto
                             \>
+                            [
                             aqf''8
                             - \tenuto
                         }
@@ -2013,6 +2018,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         f''8.
                         - \tenuto
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2397,6 +2403,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         dqf''8
                         \pp
                         - \tenuto
@@ -2838,6 +2845,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         bf'16
                         - \tenuto
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3080,6 +3088,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         a'16
                         - \tenuto
                         ~
@@ -3467,6 +3476,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         aqs'8
                         - \tenuto
                         bf'16
@@ -3782,6 +3792,7 @@
                             \mf
                             - \tenuto
                             \>
+                            [
                             af'16
                             - \tenuto
                             aqf'16
@@ -3966,6 +3977,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         aqs'16
                         - \tenuto
                         bf'16
@@ -4174,6 +4186,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         g'16
                         - \tenuto
                         gqs'16
@@ -4564,6 +4577,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         gqf'16
                         - \tenuto
                         fs'16
@@ -5014,6 +5028,7 @@
                         \mf
                         - \tenuto
                         \>
+                        [
                         fs'16
                         - \tenuto
                         fqs'8
@@ -5241,6 +5256,7 @@
                             \mf
                             - \tenuto
                             \>
+                            [
                             eqs'16
                             - \tenuto
                             f'16
@@ -5621,6 +5637,7 @@
                             \mf
                             - \tenuto
                             \>
+                            [
                             b16
                             - \tenuto
                             bqs16
