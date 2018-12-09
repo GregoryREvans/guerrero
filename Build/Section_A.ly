@@ -70,8 +70,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 5/4
-            s1 * 5/4
+            \time 4/4
+            s1 * 4/4
         }
         \context StaffGroup = "Staff Group"
         <<
@@ -85,7 +85,7 @@
                         \markup { spro. }
                         \set Staff.instrumentName =
                         \markup { Sopranino }
-                        ef'''2.
+                        ef'''2. \!
                         \p
                         ~
                         ef'''2
@@ -384,13 +384,7 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
                         \bar "||"
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -692,7 +686,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4
                         \!
                         \stopStaff \startStaff
                     }
@@ -1047,7 +1041,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r2
                         \!
                         \stopStaff \startStaff
                     }
@@ -1063,7 +1057,7 @@
                         \markup { spr.3 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 3" }
-                        cs''2.
+                        cs''2. \!
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -1429,8 +1423,9 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4
                         \!
+                        r4
                         \stopStaff \startStaff
                     }
                     {
@@ -1439,12 +1434,6 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -1458,7 +1447,7 @@
                         \markup { alt.1 }
                         \set Staff.instrumentName =
                         \markup { "Alto 1" }
-                        <cqs'' g'' eqf''' bf'''>2
+                        <cqs'' g'' eqf''' bf'''>2 \!
                         \mp
                         - \tenuto
                         _ \markup {
@@ -1863,12 +1852,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 6"
@@ -2165,8 +2148,7 @@
                     }
                     {
                         % [Voice 6 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        r2.
-                        r2
+                        r1
                         \stopStaff \startStaff
                     }
                 }
@@ -2544,12 +2526,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 8"
@@ -2562,7 +2538,7 @@
                         \markup { alt.4 }
                         \set Staff.instrumentName =
                         \markup { "Alto 4" }
-                        <cqs'' eqf'' dqf'''>2.
+                        <cqs'' eqf'' dqf'''>2. \!
                         \mp
                         _ \markup {
                             \override
@@ -2858,7 +2834,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4
                         \!
                         \stopStaff \startStaff
                     }
@@ -3215,7 +3191,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r2
                         \!
                         \stopStaff \startStaff
                     }
@@ -3596,8 +3572,9 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4
                         \!
+                        r4
                         \stopStaff \startStaff
                     }
                     {
@@ -3606,12 +3583,6 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -4025,12 +3996,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 12"
@@ -4043,7 +4008,7 @@
                         \markup { ten.3 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 3" }
-                        b4
+                        b4 \!
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4331,8 +4296,7 @@
                     }
                     {
                         % [Voice 12 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        r2.
-                        r2
+                        r1
                         \stopStaff \startStaff
                     }
                 }
@@ -4347,7 +4311,7 @@
                         \markup { ten.4 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 4" }
-                        <fs' fqs'' dqf''' gqf'''>2.
+                        <fs' fqs'' dqf''' gqf'''>2. \!
                         \mp
                         _ \markup {
                             \override
@@ -4730,12 +4694,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 14"
@@ -5034,7 +4992,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4
                         \!
                         \stopStaff \startStaff
                     }
@@ -5372,7 +5330,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r2
                         \!
                         \stopStaff \startStaff
                     }
@@ -5388,7 +5346,7 @@
                         \markup { bar.3 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 3" }
-                        <gqf' fqs'' dqf''' bf'''>2.
+                        <gqf' fqs'' dqf''' bf'''>2. \!
                         \mp
                         - \tenuto
                         _ \markup {
@@ -5762,8 +5720,9 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4
                         \!
+                        r4
                         \stopStaff \startStaff
                     }
                     {
@@ -5772,12 +5731,6 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -6135,12 +6088,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 18"
@@ -6393,8 +6340,7 @@
                     }
                     {
                         % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        r2.
-                        r2
+                        r1
                         \stopStaff \startStaff
                     }
                 }
@@ -6704,12 +6650,6 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }

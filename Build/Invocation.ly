@@ -43,8 +43,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
-            \time 5/4
-            s1 * 5/4
+            \time 9/8
+            s1 * 9/8
         }
         \context StaffGroup = "Staff Group"
         <<
@@ -278,14 +278,9 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
                         \bar "||"
-                        \stopStaff \startStaff
                     }
+
                 }
             }
             \context Staff = "Staff 2"
@@ -311,6 +306,9 @@
                     {
                         % [Voice 2 measure 2] %! COMMENT_MEASURE_NUMBERS
                         eqf''2
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -502,7 +500,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
-                        r4.
+                        r4
                         \stopStaff \startStaff
                     }
                 }
@@ -690,12 +688,15 @@
                             ]
                         }
                         cs''4.
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4.
                         \!
-                        r4
+                        r8
                         \stopStaff \startStaff
                     }
                 }
@@ -712,6 +713,7 @@
                         \markup { "Soprano 3" }
                         b'2
                         \mp
+                        - \tweak stencil #constante-hairpin
                         \<
                         \times 2/3 {
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -944,12 +946,6 @@
                         \<
                         ]
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 5"
@@ -1176,12 +1172,7 @@
                         \<
                         ]
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
-                    }
+
                 }
             }
             \context Staff = "Staff 6"
@@ -1394,7 +1385,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
-                        r4.
+                        r4
                         \stopStaff \startStaff
                     }
                 }
@@ -1602,12 +1593,15 @@
                         [
                         ]
                         a'2
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4.
                         \!
-                        r4
+                        r8
                         \stopStaff \startStaff
                     }
                 }
@@ -1854,12 +1848,7 @@
                         \<
                         ]
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
-                    }
+
                 }
             }
             \context Staff = "Staff 9"
@@ -2093,13 +2082,8 @@
                         \stopStaff \startStaff
                         e'4.
                         \mp
+                        - \tweak stencil #constante-hairpin
                         \<
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -2341,7 +2325,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
-                        r4.
+                        r4
                         \stopStaff \startStaff
                     }
                 }
@@ -2550,7 +2534,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4.
                         \!
-                        r4
+                        r8
                         \stopStaff \startStaff
                     }
                 }
@@ -2799,12 +2783,6 @@
                             ]
                         }
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 13"
@@ -3031,12 +3009,6 @@
                         \<
                         ]
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 14"
@@ -3239,7 +3211,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
-                        r4.
+                        r4
                         \stopStaff \startStaff
                     }
                 }
@@ -3458,7 +3430,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4.
                         \!
-                        r4
+                        r8
                         \stopStaff \startStaff
                     }
                 }
@@ -3482,6 +3454,9 @@
                         ~
                         ]
                         bqf2
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
@@ -3697,12 +3672,6 @@
                         \<
                         ]
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 17"
@@ -3917,15 +3886,9 @@
                     {
                         dqf'4
                         \mp
-
+                        - \tweak stencil #constante-hairpin
                         \<
                         d'4.
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -4160,7 +4123,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
-                        r4.
+                        r4
                         \stopStaff \startStaff
                     }
                 }
@@ -4380,7 +4343,7 @@
                     }
                     {
                         r4.
-                        r4
+                        r8
                         \stopStaff \startStaff
                     }
                 }

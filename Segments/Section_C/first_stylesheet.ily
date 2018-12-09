@@ -39,8 +39,7 @@
 		\override BarNumber.Y-offset = 0
 		\override BarNumber.extra-offset = #'(-4 . 0)
 		%\override BarNumber.font-name = "Didot"
-		%{ \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print) %}
-		\override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
+		\override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print)
 		\override BarNumber.font-size = 1
 		\override BarNumber.padding = 4
 		\override MetronomeMark.X-extent = #'(0 . 0)
@@ -49,7 +48,6 @@
 		\override MetronomeMark.extra-offset = #'(0 . 4)
 		\override MetronomeMark.font-size = 4
 		%\override RehearsalMark.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
-		\override RehearsalMark.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print)
 		\override RehearsalMark.X-extent = #'(0 . 0)
 		\override RehearsalMark.X-offset = 6
 		\override RehearsalMark.Y-offset = -2.25
@@ -78,17 +76,16 @@
 		\override Beam.concaveness = #10000
 		\override DynamicText.font-size = #-2
 		\override Glissando.breakable = ##t
-		\override Glissando.thickness = #2
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 16) (minimum-distance . 16) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 15) (minimum-distance . 15) (padding . 0))
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 41)
+		proportionalNotationDuration = #(ly:make-moment 1 40)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -120,16 +117,16 @@
 	oddFooterMarkup = \markup \fill-line {
     ""
     \concat {
-      "GUERRERO ~"
+      "~"
 	  \fontsize #2
-	  \fromproperty #'page:page-number-string "~ Evans"
+	  \fromproperty #'page:page-number-string "~"
      }
     ""
   }
   evenFooterMarkup = \markup \fill-line {
     ""
-	\concat { "GUERRERO ~" \fontsize #2
-	\fromproperty #'page:page-number-string "~ Evans"
+	\concat { "~" \fontsize #2
+	\fromproperty #'page:page-number-string "~"
     } ""
   }
 }
