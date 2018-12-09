@@ -82,7 +82,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_1_random_walk[i-1] + movement
     soprano_1_random_walk.append(value)
-soprano_1_random_walk_notes = [((x / 2.0) + 18) for x in soprano_1_random_walk]
+soprano_1_random_walk_notes = [((x / 2.0) + 16) for x in soprano_1_random_walk]
 
 seed(3)
 soprano_2_random_walk = []
@@ -91,7 +91,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_2_random_walk[i-1] + movement
     soprano_2_random_walk.append(value)
-soprano_2_random_walk_notes = [((x / 2.0) + 17) for x in soprano_2_random_walk]
+soprano_2_random_walk_notes = [((x / 2.0) + 15) for x in soprano_2_random_walk]
 
 seed(4)
 soprano_3_random_walk = []
@@ -100,7 +100,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_3_random_walk[i-1] + movement
     soprano_3_random_walk.append(value)
-soprano_3_random_walk_notes = [((x / 2.0) + 16) for x in soprano_3_random_walk]
+soprano_3_random_walk_notes = [((x / 2.0) + 13) for x in soprano_3_random_walk]
 
 seed(5)
 alto_1_random_walk = []
@@ -250,7 +250,7 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         beam_divisions_together=True,
         beam_rests=False,
         ),
-    extra_counts_per_division=[-1, 0, 1, -1, 0, ],
+    extra_counts_per_division=[-1, 0, 1, -1, 1, 0, ],
     # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
     #     left_classes=[abjad.Note, abjad.Rest],
     #     left_counts=[1, 0, 1],
@@ -3238,12 +3238,12 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 for staff in abjad.select(score['Staff Group']).components(abjad.Staff)[0]:
     leaf1 = abjad.select(staff).leaves()[0]
     last_leaf = abjad.select(staff).leaves()[-1]
+    abjad.attach(metro, leaf1)
     abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     abjad.attach(mark, leaf1)
-    abjad.attach(metro, leaf1)
 
 # for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
 #     abjad.Instrument.transpose_from_sounding_pitch(staff)
