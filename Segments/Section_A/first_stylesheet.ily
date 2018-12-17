@@ -12,7 +12,7 @@
 	breakbefore = ##t
 	title =  \markup \override #'(font-name . "Didot") \fontsize #15 \bold\center-column {"GUERRERO" }
 	subtitle = \markup \override #'(font-name . "Didot") {" "}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for nineteen saxophones"}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for twenty-one saxophones"}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
 }
 
@@ -73,7 +73,7 @@
 		\override BarLine.bar-extent = #'(-2 . 2)
         \override Beam.breakable = ##t
 		\override Beam.concaveness = #10000
-		\override DynamicText.font-size = #-2
+		\override DynamicText.font-size = #-3
 		\override Glissando.breakable = ##t
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t

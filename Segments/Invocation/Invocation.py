@@ -41,21 +41,23 @@ def grouper(lst1, lst2):
 
 sopranino_notes = [14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 23, 23.5, 24, 24.5, 25, 25.5]
 soprano_1_notes = [15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 23, 23.5, 24, 24.5, 25, 25.5, 26, 26.5]
-soprano_2_notes = [11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5]
+soprano_2_notes = [11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 23]
 soprano_3_notes = [11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5]
 alto_1_notes = [14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 23, 23.5, 24, 24.5, 25, 25.5]
 alto_2_notes = [10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5]
 alto_3_notes = [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5]
-alto_4_notes = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5]
+alto_4_notes = [1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 1.5, 12, 12.5, 13]
 alto_5_notes = [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 1.5, 12, 12.5]
+alto_6_notes = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5]
 tenor_1_notes = [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5]
 tenor_2_notes = [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5]
 tenor_3_notes = [-1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5]
-tenor_4_notes = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5]
+tenor_4_notes = [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12]
+tenor_5_notes = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5]
 baritone_1_notes = [2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5]
 baritone_2_notes = [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5]
-baritone_3_notes = [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5]
-bass_1_notes = [-1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5]
+baritone_3_notes = [-1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10]
+bass_1_notes = [-0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11]
 bass_2_notes = [-1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5]
 contrabass_notes = [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5]
 
@@ -241,6 +243,19 @@ alto_five_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
+#####alto_six#####
+alto_six_musicmaker_one = MusicMaker(
+    rmaker=rmaker_one,
+    pitches=alto_6_notes,
+    continuous=True,
+    attachment_handler=attachment_handler_one,
+)
+alto_six_musicmaker_two = MusicMaker(
+    rmaker=rmaker_two,
+    pitches=alto_6_notes,
+    continuous=True,
+    attachment_handler=attachment_handler_two,
+)
 #####tenor_one#####
 tenor_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
@@ -290,6 +305,19 @@ tenor_four_musicmaker_one = MusicMaker(
 tenor_four_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=tenor_4_notes,
+    continuous=True,
+    attachment_handler=attachment_handler_two,
+)
+#####tenor_five#####
+tenor_five_musicmaker_one = MusicMaker(
+    rmaker=rmaker_one,
+    pitches=tenor_5_notes,
+    continuous=True,
+    attachment_handler=attachment_handler_one,
+)
+tenor_five_musicmaker_two = MusicMaker(
+    rmaker=rmaker_two,
+    pitches=tenor_5_notes,
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
@@ -504,13 +532,13 @@ voice_4_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(0, 4), (1, 4), soprano_three_musicmaker_two],
+        [(1, 8), (1, 4), soprano_three_musicmaker_two],
         [(1, 4), (2, 4), soprano_three_musicmaker_two],
         [(2, 4), (3, 4), soprano_three_musicmaker_two],
         [(7, 4), (8, 4), soprano_three_musicmaker_two],
         [(8, 4), (9, 4), soprano_three_musicmaker_two],
         [(9, 4), (10, 4), soprano_three_musicmaker_two],
-        [(12, 4), (13, 4), soprano_three_musicmaker_one],
+        [(25, 8), (13, 4), soprano_three_musicmaker_one],
         [(13, 4), (14, 4), soprano_three_musicmaker_one],
         [(14, 4), (15, 4), soprano_three_musicmaker_one],
         [(19, 4), (20, 4), soprano_three_musicmaker_two],
@@ -652,10 +680,10 @@ voice_8_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(0, 4), (3, 4), alto_four_musicmaker_two],
+        [(1, 8), (3, 4), alto_four_musicmaker_two],
         [(7, 4), (9, 4), alto_four_musicmaker_two],
         [(9, 4), (10, 4), alto_four_musicmaker_two],
-        [(12, 4), (13, 4), alto_four_musicmaker_one],
+        [(25, 8), (13, 4), alto_four_musicmaker_one],
         [(13, 4), (14, 4), alto_four_musicmaker_one],
         [(14, 4), (15, 4), alto_four_musicmaker_one],
         [(19, 4), (20, 4), alto_four_musicmaker_two],
@@ -717,23 +745,23 @@ voice_10_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(4, 4), (5, 4), tenor_one_musicmaker_two],
-        [(5, 4), (7, 4), tenor_one_musicmaker_two],
-        [(9, 4), (11, 4), tenor_one_musicmaker_one],
-        [(11, 4), (12, 4), tenor_one_musicmaker_one],
-        [(16, 4), (17, 4), tenor_one_musicmaker_two],
-        [(17, 4), (19, 4), tenor_one_musicmaker_two],
-        [(21, 4), (23, 4), tenor_one_musicmaker_one],
-        [(23, 4), (24, 4), tenor_one_musicmaker_one],
-        [(24, 4), (26, 4), tenor_one_musicmaker_one],
-        [(26, 4), (27, 4), tenor_one_musicmaker_one],
-        [(29, 4), (31, 4), tenor_one_musicmaker_two],
-        [(31, 4), (32, 4), tenor_one_musicmaker_two],
-        [(36, 4), (38, 4), tenor_one_musicmaker_one],
-        [(38, 4), (39, 4), tenor_one_musicmaker_one],
-        [(41, 4), (42, 4), tenor_one_musicmaker_two],
-        [(42, 4), (43, 4), tenor_one_musicmaker_two],
-        [(43, 4), (87, 8), tenor_one_musicmaker_two],
+        [(4, 4), (5, 4), alto_six_musicmaker_two],
+        [(5, 4), (7, 4), alto_six_musicmaker_two],
+        [(9, 4), (11, 4), alto_six_musicmaker_one],
+        [(11, 4), (12, 4), alto_six_musicmaker_one],
+        [(16, 4), (17, 4), alto_six_musicmaker_two],
+        [(17, 4), (19, 4), alto_six_musicmaker_two],
+        [(21, 4), (23, 4), alto_six_musicmaker_one],
+        [(23, 4), (24, 4), alto_six_musicmaker_one],
+        [(24, 4), (26, 4), alto_six_musicmaker_one],
+        [(26, 4), (27, 4), alto_six_musicmaker_one],
+        [(29, 4), (31, 4), alto_six_musicmaker_two],
+        [(31, 4), (32, 4), alto_six_musicmaker_two],
+        [(36, 4), (38, 4), alto_six_musicmaker_one],
+        [(38, 4), (39, 4), alto_six_musicmaker_one],
+        [(41, 4), (42, 4), alto_six_musicmaker_two],
+        [(42, 4), (43, 4), alto_six_musicmaker_two],
+        [(43, 4), (87, 8), alto_six_musicmaker_two],
     ]
 ])
 
@@ -747,23 +775,23 @@ voice_11_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(2, 4), (4, 4), tenor_two_musicmaker_one],
-        [(4, 4), (5, 4), tenor_two_musicmaker_one],
-        [(9, 4), (10, 4), tenor_two_musicmaker_two],
-        [(10, 4), (12, 4), tenor_two_musicmaker_two],
-        [(14, 4), (16, 4), tenor_two_musicmaker_two],
-        [(16, 4), (17, 4), tenor_two_musicmaker_two],
-        [(21, 4), (22, 4), tenor_two_musicmaker_one],
-        [(22, 4), (24, 4), tenor_two_musicmaker_one],
-        [(24, 4), (25, 4), tenor_two_musicmaker_two],
-        [(25, 4), (26, 4), tenor_two_musicmaker_two],
-        [(26, 4), (27, 4), tenor_two_musicmaker_two],
-        [(31, 4), (33, 4), tenor_two_musicmaker_one],
-        [(33, 4), (34, 4), tenor_two_musicmaker_one],
-        [(36, 4), (37, 4), tenor_two_musicmaker_one],
-        [(37, 4), (39, 4), tenor_two_musicmaker_one],
-        [(43, 4), (45, 4), tenor_two_musicmaker_two],
-        [(45, 4), (91, 8), tenor_two_musicmaker_two],
+        [(2, 4), (4, 4), tenor_one_musicmaker_one],
+        [(4, 4), (5, 4), tenor_one_musicmaker_one],
+        [(9, 4), (10, 4), tenor_one_musicmaker_two],
+        [(10, 4), (12, 4), tenor_one_musicmaker_two],
+        [(14, 4), (16, 4), tenor_one_musicmaker_two],
+        [(16, 4), (17, 4), tenor_one_musicmaker_two],
+        [(21, 4), (22, 4), tenor_one_musicmaker_one],
+        [(22, 4), (24, 4), tenor_one_musicmaker_one],
+        [(24, 4), (25, 4), tenor_one_musicmaker_two],
+        [(25, 4), (26, 4), tenor_one_musicmaker_two],
+        [(26, 4), (27, 4), tenor_one_musicmaker_two],
+        [(31, 4), (33, 4), tenor_one_musicmaker_one],
+        [(33, 4), (34, 4), tenor_one_musicmaker_one],
+        [(36, 4), (37, 4), tenor_one_musicmaker_one],
+        [(37, 4), (39, 4), tenor_one_musicmaker_one],
+        [(43, 4), (45, 4), tenor_one_musicmaker_two],
+        [(45, 4), (91, 8), tenor_one_musicmaker_two],
     ]
 ])
 
@@ -777,26 +805,26 @@ voice_12_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(0, 4), (2, 4), tenor_three_musicmaker_two],
-        [(2, 4), (3, 4), tenor_three_musicmaker_two],
-        [(7, 4), (8, 4), tenor_three_musicmaker_two],
-        [(8, 4), (9, 4), tenor_three_musicmaker_two],
-        [(9, 4), (10, 4), tenor_three_musicmaker_two],
-        [(12, 4), (14, 4), tenor_three_musicmaker_one],
-        [(14, 4), (15, 4), tenor_three_musicmaker_one],
-        [(19, 4), (20, 4), tenor_three_musicmaker_two],
-        [(20, 4), (21, 4), tenor_three_musicmaker_two],
-        [(21, 4), (22, 4), tenor_three_musicmaker_two],
-        [(26, 4), (27, 4), tenor_three_musicmaker_one],
-        [(27, 4), (28, 4), tenor_three_musicmaker_one],
-        [(28, 4), (29, 4), tenor_three_musicmaker_one],
-        [(33, 4), (34, 4), tenor_three_musicmaker_one],
-        [(34, 4), (36, 4), tenor_three_musicmaker_one],
-        [(38, 4), (39, 4), tenor_three_musicmaker_two],
-        [(39, 4), (40, 4), tenor_three_musicmaker_two],
-        [(40, 4), (41, 4), tenor_three_musicmaker_two],
-        [(45, 4), (47, 4), tenor_three_musicmaker_one],
-        [(47, 4), (95, 8), tenor_three_musicmaker_one],
+        [(1, 8), (2, 4), tenor_two_musicmaker_two],
+        [(2, 4), (3, 4), tenor_two_musicmaker_two],
+        [(7, 4), (8, 4), tenor_two_musicmaker_two],
+        [(8, 4), (9, 4), tenor_two_musicmaker_two],
+        [(9, 4), (10, 4), tenor_two_musicmaker_two],
+        [(25, 8), (14, 4), tenor_two_musicmaker_one],
+        [(14, 4), (15, 4), tenor_two_musicmaker_one],
+        [(19, 4), (20, 4), tenor_two_musicmaker_two],
+        [(20, 4), (21, 4), tenor_two_musicmaker_two],
+        [(21, 4), (22, 4), tenor_two_musicmaker_two],
+        [(26, 4), (27, 4), tenor_two_musicmaker_one],
+        [(27, 4), (28, 4), tenor_two_musicmaker_one],
+        [(28, 4), (29, 4), tenor_two_musicmaker_one],
+        [(33, 4), (34, 4), tenor_two_musicmaker_one],
+        [(34, 4), (36, 4), tenor_two_musicmaker_one],
+        [(38, 4), (39, 4), tenor_two_musicmaker_two],
+        [(39, 4), (40, 4), tenor_two_musicmaker_two],
+        [(40, 4), (41, 4), tenor_two_musicmaker_two],
+        [(45, 4), (47, 4), tenor_two_musicmaker_one],
+        [(47, 4), (95, 8), tenor_two_musicmaker_one],
     ]
 ])
 
@@ -810,23 +838,23 @@ voice_13_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(0, 4), (1, 4), tenor_four_musicmaker_one],
-        [(1, 4), (3, 4), tenor_four_musicmaker_one],
-        [(5, 4), (7, 4), tenor_four_musicmaker_one],
-        [(7, 4), (8, 4), tenor_four_musicmaker_one],
-        [(12, 4), (13, 4), tenor_four_musicmaker_two],
-        [(13, 4), (15, 4), tenor_four_musicmaker_two],
-        [(17, 4), (19, 4), tenor_four_musicmaker_one],
-        [(19, 4), (20, 4), tenor_four_musicmaker_one],
-        [(28, 4), (29, 4), tenor_four_musicmaker_two],
-        [(29, 4), (31, 4), tenor_four_musicmaker_two],
-        [(33, 4), (35, 4), tenor_four_musicmaker_two],
-        [(35, 4), (36, 4), tenor_four_musicmaker_two],
-        [(40, 4), (41, 4), tenor_four_musicmaker_one],
-        [(41, 4), (43, 4), tenor_four_musicmaker_one],
-        [(45, 4), (46, 4), tenor_four_musicmaker_two],
-        [(46, 4), (47, 4), tenor_four_musicmaker_two],
-        [(47, 4), (95, 8), tenor_four_musicmaker_two],
+        [(0, 4), (1, 4), tenor_three_musicmaker_one],
+        [(1, 4), (3, 4), tenor_three_musicmaker_one],
+        [(5, 4), (7, 4), tenor_three_musicmaker_one],
+        [(7, 4), (8, 4), tenor_three_musicmaker_one],
+        [(12, 4), (13, 4), tenor_three_musicmaker_two],
+        [(13, 4), (15, 4), tenor_three_musicmaker_two],
+        [(17, 4), (19, 4), tenor_three_musicmaker_one],
+        [(19, 4), (20, 4), tenor_three_musicmaker_one],
+        [(28, 4), (29, 4), tenor_three_musicmaker_two],
+        [(29, 4), (31, 4), tenor_three_musicmaker_two],
+        [(33, 4), (35, 4), tenor_three_musicmaker_two],
+        [(35, 4), (36, 4), tenor_three_musicmaker_two],
+        [(40, 4), (41, 4), tenor_three_musicmaker_one],
+        [(41, 4), (43, 4), tenor_three_musicmaker_one],
+        [(45, 4), (46, 4), tenor_three_musicmaker_two],
+        [(46, 4), (47, 4), tenor_three_musicmaker_two],
+        [(47, 4), (95, 8), tenor_three_musicmaker_two],
     ]
 ])
 
@@ -840,27 +868,27 @@ voice_14_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(4, 4), (5, 4), baritone_one_musicmaker_two],
-        [(5, 4), (6, 4), baritone_one_musicmaker_two],
-        [(6, 4), (7, 4), baritone_one_musicmaker_two],
-        [(9, 4), (10, 4), baritone_one_musicmaker_one],
-        [(10, 4), (11, 4), baritone_one_musicmaker_one],
-        [(11, 4), (12, 4), baritone_one_musicmaker_one],
-        [(16, 4), (17, 4), baritone_one_musicmaker_two],
-        [(17, 4), (18, 4), baritone_one_musicmaker_two],
-        [(18, 4), (19, 4), baritone_one_musicmaker_two],
-        [(21, 4), (22, 4), baritone_one_musicmaker_one],
-        [(22, 4), (24, 4), baritone_one_musicmaker_one],
-        [(24, 4), (26, 4), baritone_one_musicmaker_one],
-        [(26, 4), (27, 4), baritone_one_musicmaker_one],
-        [(29, 4), (30, 4), baritone_one_musicmaker_two],
-        [(30, 4), (31, 4), baritone_one_musicmaker_two],
-        [(31, 4), (32, 4), baritone_one_musicmaker_two],
-        [(36, 4), (38, 4), baritone_one_musicmaker_one],
-        [(38, 4), (39, 4), baritone_one_musicmaker_one],
-        [(41, 4), (42, 4), baritone_one_musicmaker_two],
-        [(42, 4), (43, 4), baritone_one_musicmaker_two],
-        [(43, 4), (87, 8), baritone_one_musicmaker_two],
+        [(4, 4), (5, 4), tenor_four_musicmaker_two],
+        [(5, 4), (6, 4), tenor_four_musicmaker_two],
+        [(6, 4), (7, 4), tenor_four_musicmaker_two],
+        [(9, 4), (10, 4), tenor_four_musicmaker_one],
+        [(10, 4), (11, 4), tenor_four_musicmaker_one],
+        [(11, 4), (12, 4), tenor_four_musicmaker_one],
+        [(16, 4), (17, 4), tenor_four_musicmaker_two],
+        [(17, 4), (18, 4), tenor_four_musicmaker_two],
+        [(18, 4), (19, 4), tenor_four_musicmaker_two],
+        [(21, 4), (22, 4), tenor_four_musicmaker_one],
+        [(22, 4), (24, 4), tenor_four_musicmaker_one],
+        [(24, 4), (26, 4), tenor_four_musicmaker_one],
+        [(26, 4), (27, 4), tenor_four_musicmaker_one],
+        [(29, 4), (30, 4), tenor_four_musicmaker_two],
+        [(30, 4), (31, 4), tenor_four_musicmaker_two],
+        [(31, 4), (32, 4), tenor_four_musicmaker_two],
+        [(36, 4), (38, 4), tenor_four_musicmaker_one],
+        [(38, 4), (39, 4), tenor_four_musicmaker_one],
+        [(41, 4), (42, 4), tenor_four_musicmaker_two],
+        [(42, 4), (43, 4), tenor_four_musicmaker_two],
+        [(43, 4), (87, 8), tenor_four_musicmaker_two],
     ]
 ])
 
@@ -874,23 +902,23 @@ voice_15_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(2, 4), (3, 4), baritone_two_musicmaker_one],
-        [(3, 4), (5, 4), baritone_two_musicmaker_one],
-        [(9, 4), (11, 4), baritone_two_musicmaker_two],
-        [(11, 4), (12, 4), baritone_two_musicmaker_two],
-        [(14, 4), (15, 4), baritone_two_musicmaker_two],
-        [(15, 4), (17, 4), baritone_two_musicmaker_two],
-        [(21, 4), (23, 4), baritone_two_musicmaker_one],
-        [(23, 4), (24, 4), baritone_two_musicmaker_one],
-        [(24, 4), (26, 4), baritone_two_musicmaker_two],
-        [(26, 4), (27, 4), baritone_two_musicmaker_two],
-        [(31, 4), (32, 4), baritone_two_musicmaker_one],
-        [(32, 4), (34, 4), baritone_two_musicmaker_one],
-        [(36, 4), (38, 4), baritone_two_musicmaker_one],
-        [(38, 4), (39, 4), baritone_two_musicmaker_one],
-        [(43, 4), (44, 4), baritone_two_musicmaker_two],
-        [(44, 4), (45, 4), baritone_two_musicmaker_two],
-        [(45, 4), (91, 8), baritone_two_musicmaker_two],
+        [(2, 4), (3, 4), tenor_five_musicmaker_one],
+        [(3, 4), (5, 4), tenor_five_musicmaker_one],
+        [(9, 4), (11, 4), tenor_five_musicmaker_two],
+        [(11, 4), (12, 4), tenor_five_musicmaker_two],
+        [(14, 4), (15, 4), tenor_five_musicmaker_two],
+        [(15, 4), (17, 4), tenor_five_musicmaker_two],
+        [(21, 4), (23, 4), tenor_five_musicmaker_one],
+        [(23, 4), (24, 4), tenor_five_musicmaker_one],
+        [(24, 4), (26, 4), tenor_five_musicmaker_two],
+        [(26, 4), (27, 4), tenor_five_musicmaker_two],
+        [(31, 4), (32, 4), tenor_five_musicmaker_one],
+        [(32, 4), (34, 4), tenor_five_musicmaker_one],
+        [(36, 4), (38, 4), tenor_five_musicmaker_one],
+        [(38, 4), (39, 4), tenor_five_musicmaker_one],
+        [(43, 4), (44, 4), tenor_five_musicmaker_two],
+        [(44, 4), (45, 4), tenor_five_musicmaker_two],
+        [(45, 4), (91, 8), tenor_five_musicmaker_two],
     ]
 ])
 
@@ -904,24 +932,24 @@ voice_16_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(0, 4), (2, 4), baritone_three_musicmaker_two],
-        [(2, 4), (3, 4), baritone_three_musicmaker_two],
-        [(7, 4), (8, 4), baritone_three_musicmaker_two],
-        [(8, 4), (9, 4), baritone_three_musicmaker_two],
-        [(9, 4), (10, 4), baritone_three_musicmaker_two],
-        [(12, 4), (13, 4), baritone_three_musicmaker_one],
-        [(13, 4), (15, 4), baritone_three_musicmaker_one],
-        [(19, 4), (21, 4), baritone_three_musicmaker_two],
-        [(21, 4), (22, 4), baritone_three_musicmaker_two],
-        [(26, 4), (27, 4), baritone_three_musicmaker_one],
-        [(27, 4), (29, 4), baritone_three_musicmaker_one],
-        [(33, 4), (35, 4), baritone_three_musicmaker_one],
-        [(35, 4), (36, 4), baritone_three_musicmaker_one],
-        [(38, 4), (39, 4), baritone_three_musicmaker_two],
-        [(39, 4), (41, 4), baritone_three_musicmaker_two],
-        [(45, 4), (46, 4), baritone_three_musicmaker_one],
-        [(46, 4), (47, 4), baritone_three_musicmaker_one],
-        [(47, 4), (95, 8), baritone_three_musicmaker_one],
+        [(1, 8), (2, 4), baritone_one_musicmaker_two],
+        [(2, 4), (3, 4), baritone_one_musicmaker_two],
+        [(7, 4), (8, 4), baritone_one_musicmaker_two],
+        [(8, 4), (9, 4), baritone_one_musicmaker_two],
+        [(9, 4), (10, 4), baritone_one_musicmaker_two],
+        [(25, 8), (13, 4), baritone_one_musicmaker_one],
+        [(13, 4), (15, 4), baritone_one_musicmaker_one],
+        [(19, 4), (21, 4), baritone_one_musicmaker_two],
+        [(21, 4), (22, 4), baritone_one_musicmaker_two],
+        [(26, 4), (27, 4), baritone_one_musicmaker_one],
+        [(27, 4), (29, 4), baritone_one_musicmaker_one],
+        [(33, 4), (35, 4), baritone_one_musicmaker_one],
+        [(35, 4), (36, 4), baritone_one_musicmaker_one],
+        [(38, 4), (39, 4), baritone_one_musicmaker_two],
+        [(39, 4), (41, 4), baritone_one_musicmaker_two],
+        [(45, 4), (46, 4), baritone_one_musicmaker_one],
+        [(46, 4), (47, 4), baritone_one_musicmaker_one],
+        [(47, 4), (95, 8), baritone_one_musicmaker_one],
     ]
 ])
 
@@ -935,23 +963,23 @@ voice_17_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(0, 4), (1, 4), bass_one_musicmaker_one],
-        [(1, 4), (2, 4), bass_one_musicmaker_one],
-        [(2, 4), (3, 4), bass_one_musicmaker_one],
-        [(5, 4), (6, 4), bass_one_musicmaker_one],
-        [(6, 4), (8, 4), bass_one_musicmaker_one],
-        [(12, 4), (14, 4), bass_one_musicmaker_two],
-        [(14, 4), (15, 4), bass_one_musicmaker_two],
-        [(17, 4), (18, 4), bass_one_musicmaker_one],
-        [(18, 4), (20, 4), bass_one_musicmaker_one],
-        [(28, 4), (30, 4), bass_one_musicmaker_two],
-        [(30, 4), (31, 4), bass_one_musicmaker_two],
-        [(33, 4), (34, 4), bass_one_musicmaker_two],
-        [(34, 4), (36, 4), bass_one_musicmaker_two],
-        [(40, 4), (42, 4), bass_one_musicmaker_one],
-        [(42, 4), (43, 4), bass_one_musicmaker_one],
-        [(45, 4), (47, 4), bass_one_musicmaker_two],
-        [(47, 4), (95, 8), bass_one_musicmaker_two],
+        [(0, 4), (1, 4), baritone_two_musicmaker_one],
+        [(1, 4), (2, 4), baritone_two_musicmaker_one],
+        [(2, 4), (3, 4), baritone_two_musicmaker_one],
+        [(5, 4), (6, 4), baritone_two_musicmaker_one],
+        [(6, 4), (8, 4), baritone_two_musicmaker_one],
+        [(12, 4), (14, 4), baritone_two_musicmaker_two],
+        [(14, 4), (15, 4), baritone_two_musicmaker_two],
+        [(17, 4), (18, 4), baritone_two_musicmaker_one],
+        [(18, 4), (20, 4), baritone_two_musicmaker_one],
+        [(28, 4), (30, 4), baritone_two_musicmaker_two],
+        [(30, 4), (31, 4), baritone_two_musicmaker_two],
+        [(33, 4), (34, 4), baritone_two_musicmaker_two],
+        [(34, 4), (36, 4), baritone_two_musicmaker_two],
+        [(40, 4), (42, 4), baritone_two_musicmaker_one],
+        [(42, 4), (43, 4), baritone_two_musicmaker_one],
+        [(45, 4), (47, 4), baritone_two_musicmaker_two],
+        [(47, 4), (95, 8), baritone_two_musicmaker_two],
     ]
 ])
 
@@ -965,22 +993,22 @@ voice_18_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(4, 4), (5, 4), bass_two_musicmaker_two],
-        [(5, 4), (7, 4), bass_two_musicmaker_two],
-        [(9, 4), (11, 4), bass_two_musicmaker_one],
-        [(11, 4), (12, 4), bass_two_musicmaker_one],
-        [(16, 4), (17, 4), bass_two_musicmaker_two],
-        [(17, 4), (19, 4), bass_two_musicmaker_two],
-        [(21, 4), (23, 4), bass_two_musicmaker_one],
-        [(23, 4), (24, 4), bass_two_musicmaker_one],
-        [(24, 4), (25, 4), bass_two_musicmaker_one],
-        [(25, 4), (27, 4), bass_two_musicmaker_one],
-        [(29, 4), (31, 4), bass_two_musicmaker_two],
-        [(31, 4), (32, 4), bass_two_musicmaker_two],
-        [(36, 4), (37, 4), bass_two_musicmaker_one],
-        [(37, 4), (39, 4), bass_two_musicmaker_one],
-        [(41, 4), (43, 4), bass_two_musicmaker_two],
-        [(43, 4), (87, 8), bass_two_musicmaker_two],
+        [(4, 4), (5, 4), baritone_three_musicmaker_two],
+        [(5, 4), (7, 4), baritone_three_musicmaker_two],
+        [(9, 4), (11, 4), baritone_three_musicmaker_one],
+        [(11, 4), (12, 4), baritone_three_musicmaker_one],
+        [(16, 4), (17, 4), baritone_three_musicmaker_two],
+        [(17, 4), (19, 4), baritone_three_musicmaker_two],
+        [(21, 4), (23, 4), baritone_three_musicmaker_one],
+        [(23, 4), (24, 4), baritone_three_musicmaker_one],
+        [(24, 4), (25, 4), baritone_three_musicmaker_one],
+        [(25, 4), (27, 4), baritone_three_musicmaker_one],
+        [(29, 4), (31, 4), baritone_three_musicmaker_two],
+        [(31, 4), (32, 4), baritone_three_musicmaker_two],
+        [(36, 4), (37, 4), baritone_three_musicmaker_one],
+        [(37, 4), (39, 4), baritone_three_musicmaker_one],
+        [(41, 4), (43, 4), baritone_three_musicmaker_two],
+        [(43, 4), (87, 8), baritone_three_musicmaker_two],
     ]
 ])
 
@@ -994,23 +1022,89 @@ voice_19_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(2, 4), (4, 4), contrabass_musicmaker_one],
-        [(4, 4), (5, 4), contrabass_musicmaker_one],
-        [(9, 4), (11, 4), contrabass_musicmaker_two],
-        [(11, 4), (12, 4), contrabass_musicmaker_two],
+        [(2, 4), (4, 4), bass_one_musicmaker_one],
+        [(4, 4), (5, 4), bass_one_musicmaker_one],
+        [(9, 4), (11, 4), bass_one_musicmaker_two],
+        [(11, 4), (12, 4), bass_one_musicmaker_two],
+        [(14, 4), (15, 4), bass_one_musicmaker_two],
+        [(15, 4), (17, 4), bass_one_musicmaker_two],
+        [(21, 4), (22, 4), bass_one_musicmaker_one],
+        [(22, 4), (24, 4), bass_one_musicmaker_one],
+        [(24, 4), (25, 4), bass_one_musicmaker_two],
+        [(25, 4), (26, 4), bass_one_musicmaker_two],
+        [(26, 4), (27, 4), bass_one_musicmaker_two],
+        [(31, 4), (33, 4), bass_one_musicmaker_one],
+        [(33, 4), (34, 4), bass_one_musicmaker_one],
+        [(36, 4), (37, 4), bass_one_musicmaker_one],
+        [(37, 4), (39, 4), bass_one_musicmaker_one],
+        [(43, 4), (44, 4), bass_one_musicmaker_two],
+        [(44, 4), (91, 8), bass_one_musicmaker_two],
+    ]
+])
+
+voice_20_timespan_list = abjad.TimespanList([
+    abjad.AnnotatedTimespan(
+        start_offset=start_offset,
+        stop_offset=stop_offset,
+        annotation=MusicSpecifier(
+            music_maker=music_maker,
+            voice_name='Voice 20',
+        ),
+    )
+    for start_offset, stop_offset, music_maker in [
+        [(1, 8), (1, 4), bass_two_musicmaker_two],
+        [(1, 4), (2, 4), bass_two_musicmaker_two],
+        [(2, 4), (3, 4), bass_two_musicmaker_two],
+        [(7, 4), (8, 4), bass_two_musicmaker_two],
+        [(8, 4), (9, 4), bass_two_musicmaker_two],
+        [(9, 4), (10, 4), bass_two_musicmaker_two],
+        [(25, 8), (13, 4), bass_two_musicmaker_one],
+        [(13, 4), (14, 4), bass_two_musicmaker_one],
+        [(14, 4), (15, 4), bass_two_musicmaker_one],
+        [(19, 4), (20, 4), bass_two_musicmaker_two],
+        [(20, 4), (21, 4), bass_two_musicmaker_two],
+        [(21, 4), (22, 4), bass_two_musicmaker_two],
+        [(26, 4), (27, 4), bass_two_musicmaker_one],
+        [(27, 4), (28, 4), bass_two_musicmaker_one],
+        [(28, 4), (29, 4), bass_two_musicmaker_one],
+        [(33, 4), (34, 4), bass_two_musicmaker_one],
+        [(34, 4), (35, 4), bass_two_musicmaker_one],
+        [(35, 4), (36, 4), bass_two_musicmaker_one],
+        [(38, 4), (39, 4), bass_two_musicmaker_two],
+        [(39, 4), (40, 4), bass_two_musicmaker_two],
+        [(40, 4), (41, 4), bass_two_musicmaker_two],
+        [(45, 4), (46, 4), bass_two_musicmaker_one],
+        [(46, 4), (47, 4), bass_two_musicmaker_one],
+        [(47, 4), (95, 8), bass_two_musicmaker_one],
+    ]
+])
+
+voice_21_timespan_list = abjad.TimespanList([
+    abjad.AnnotatedTimespan(
+        start_offset=start_offset,
+        stop_offset=stop_offset,
+        annotation=MusicSpecifier(
+            music_maker=music_maker,
+            voice_name='Voice 21',
+        ),
+    )
+    for start_offset, stop_offset, music_maker in [
+        [(0, 4), (2, 4), contrabass_musicmaker_one],
+        [(2, 4), (3, 4), contrabass_musicmaker_one],
+        [(5, 4), (7, 4), contrabass_musicmaker_one],
+        [(7, 4), (8, 4), contrabass_musicmaker_one],
+        [(12, 4), (14, 4), contrabass_musicmaker_two],
         [(14, 4), (15, 4), contrabass_musicmaker_two],
-        [(15, 4), (17, 4), contrabass_musicmaker_two],
-        [(21, 4), (22, 4), contrabass_musicmaker_one],
-        [(22, 4), (24, 4), contrabass_musicmaker_one],
-        [(24, 4), (25, 4), contrabass_musicmaker_two],
-        [(25, 4), (26, 4), contrabass_musicmaker_two],
-        [(26, 4), (27, 4), contrabass_musicmaker_two],
-        [(31, 4), (33, 4), contrabass_musicmaker_one],
-        [(33, 4), (34, 4), contrabass_musicmaker_one],
-        [(36, 4), (37, 4), contrabass_musicmaker_one],
-        [(37, 4), (39, 4), contrabass_musicmaker_one],
-        [(43, 4), (44, 4), contrabass_musicmaker_two],
-        [(44, 4), (91, 8), contrabass_musicmaker_two],
+        [(17, 4), (18, 4), contrabass_musicmaker_one],
+        [(18, 4), (20, 4), contrabass_musicmaker_one],
+        [(28, 4), (31, 4), contrabass_musicmaker_two],
+        [(33, 4), (35, 4), contrabass_musicmaker_two],
+        [(35, 4), (36, 4), contrabass_musicmaker_two],
+        [(40, 4), (42, 4), contrabass_musicmaker_one],
+        [(42, 4), (43, 4), contrabass_musicmaker_one],
+        [(45, 4), (46, 4), contrabass_musicmaker_two],
+        [(46, 4), (47, 4), contrabass_musicmaker_two],
+        [(47, 4), (95, 8), contrabass_musicmaker_two],
     ]
 ])
 
@@ -1037,6 +1131,8 @@ all_timespan_lists = {
     'Voice 17': voice_17_timespan_list,
     'Voice 18': voice_18_timespan_list,
     'Voice 19': voice_19_timespan_list,
+    'Voice 20': voice_20_timespan_list,
+    'Voice 21': voice_21_timespan_list,
 }
 
 # Determine the "global" timespan of all voices combined:
@@ -1119,6 +1215,8 @@ score = abjad.Score([
             abjad.Staff([abjad.Voice(name='Voice 17')],name='Staff 17', lilypond_type='Staff',),
             abjad.Staff([abjad.Voice(name='Voice 18')],name='Staff 18', lilypond_type='Staff',),
             abjad.Staff([abjad.Voice(name='Voice 19')],name='Staff 19', lilypond_type='Staff',),
+            abjad.Staff([abjad.Voice(name='Voice 20')],name='Staff 20', lilypond_type='Staff',),
+            abjad.Staff([abjad.Voice(name='Voice 21')],name='Staff 21', lilypond_type='Staff',),
         ],
         name='Staff Group',
     )
@@ -1296,10 +1394,12 @@ scales = [
     alto_3_notes,
     alto_4_notes,
     alto_5_notes,
+    alto_6_notes,
     tenor_1_notes,
     tenor_2_notes,
     tenor_3_notes,
     tenor_4_notes,
+    tenor_5_notes,
     baritone_1_notes,
     baritone_2_notes,
     baritone_3_notes,
@@ -1337,6 +1437,8 @@ instruments = cyc([
     abjad.AltoSaxophone(),
     abjad.AltoSaxophone(),
     abjad.AltoSaxophone(),
+    abjad.AltoSaxophone(),
+    abjad.TenorSaxophone(),
     abjad.TenorSaxophone(),
     abjad.TenorSaxophone(),
     abjad.TenorSaxophone(),
@@ -1359,10 +1461,12 @@ abbreviations = cyc([
     abjad.MarginMarkup(markup=abjad.Markup('alt.3'),),
     abjad.MarginMarkup(markup=abjad.Markup('alt.4'),),
     abjad.MarginMarkup(markup=abjad.Markup('alt.5'),),
+    abjad.MarginMarkup(markup=abjad.Markup('alt.6'),),
     abjad.MarginMarkup(markup=abjad.Markup('ten.1'),),
     abjad.MarginMarkup(markup=abjad.Markup('ten.2'),),
     abjad.MarginMarkup(markup=abjad.Markup('ten.3'),),
     abjad.MarginMarkup(markup=abjad.Markup('ten.4'),),
+    abjad.MarginMarkup(markup=abjad.Markup('ten.5'),),
     abjad.MarginMarkup(markup=abjad.Markup('bar.1'),),
     abjad.MarginMarkup(markup=abjad.Markup('bar.2'),),
     abjad.MarginMarkup(markup=abjad.Markup('bar.3'),),
@@ -1381,10 +1485,12 @@ names = cyc([
     abjad.StartMarkup(markup=abjad.Markup('Alto 3'),),
     abjad.StartMarkup(markup=abjad.Markup('Alto 4'),),
     abjad.StartMarkup(markup=abjad.Markup('Alto 5'),),
+    abjad.StartMarkup(markup=abjad.Markup('Alto 6'),),
     abjad.StartMarkup(markup=abjad.Markup('Tenor 1'),),
     abjad.StartMarkup(markup=abjad.Markup('Tenor 2'),),
     abjad.StartMarkup(markup=abjad.Markup('Tenor 3'),),
     abjad.StartMarkup(markup=abjad.Markup('Tenor 4'),),
+    abjad.StartMarkup(markup=abjad.Markup('Tenor 5'),),
     abjad.StartMarkup(markup=abjad.Markup('Baritone 1'),),
     abjad.StartMarkup(markup=abjad.Markup('Baritone 2'),),
     abjad.StartMarkup(markup=abjad.Markup('Baritone 3'),),

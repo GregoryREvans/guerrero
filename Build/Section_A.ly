@@ -70,8 +70,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 4/4
+            \time 9/8
+            s1 * 9/8
         }
         \context StaffGroup = "Staff Group"
         <<
@@ -384,7 +384,13 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
                         \bar "||"
+                        \stopStaff \startStaff
                     }
                 }
             }
@@ -419,7 +425,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -461,7 +467,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -475,7 +481,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -512,7 +518,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -571,7 +577,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -622,7 +628,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -650,7 +656,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -686,7 +692,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r4.
                         \!
                         \stopStaff \startStaff
                     }
@@ -707,7 +713,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -745,7 +751,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -759,7 +765,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -792,7 +798,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -830,7 +836,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -897,7 +903,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -971,7 +977,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -985,7 +991,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -1043,6 +1049,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
+                        r8
                         \stopStaff \startStaff
                     }
                 }
@@ -1076,7 +1083,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
@@ -1101,7 +1108,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
@@ -1133,7 +1140,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
@@ -1189,7 +1196,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
@@ -1273,7 +1280,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
@@ -1356,7 +1363,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
@@ -1370,7 +1377,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
@@ -1423,9 +1430,8 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r2
                         \!
-                        r4
                         \stopStaff \startStaff
                     }
                     {
@@ -1434,6 +1440,12 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
                     }
                 }
             }
@@ -1452,7 +1464,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -1472,7 +1484,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -1505,7 +1517,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -1551,7 +1563,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -1585,7 +1597,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -1660,7 +1672,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -1747,7 +1759,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -1772,7 +1784,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -1852,6 +1864,12 @@
                         - \tweak stencil #constante-hairpin
                         \<
                     }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
+                    }
                 }
             }
             \context Staff = "Staff 6"
@@ -1869,7 +1887,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -1901,7 +1919,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -1973,7 +1991,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2038,7 +2056,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2089,7 +2107,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2111,7 +2129,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2148,7 +2166,8 @@
                     }
                     {
                         % [Voice 6 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        r1
+                        r2.
+                        r4.
                         \stopStaff \startStaff
                     }
                 }
@@ -2177,7 +2196,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2226,7 +2245,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2254,7 +2273,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2268,7 +2287,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2298,7 +2317,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2357,7 +2376,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2399,7 +2418,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2446,7 +2465,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2460,7 +2479,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2518,13 +2537,19 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
                     }
                 }
             }
@@ -2542,7 +2567,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2551,7 +2576,7 @@
                         <cqs'' eqf'' dqf'''>2
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2567,7 +2592,7 @@
                     }
                     {
                         % [Voice 8 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        c''2.
+                        af''2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2581,7 +2606,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        c''4
+                        af''4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2607,7 +2632,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2617,7 +2642,7 @@
                     }
                     {
                         % [Voice 8 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        c''2.
+                        af''2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2631,10 +2656,10 @@
                     }
                     {
                         % [Voice 8 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        c''2.
+                        af''2.
                         \p
                         ~
-                        c''2
+                        af''2
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -2652,7 +2677,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2701,7 +2726,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        c''2
+                        af''2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2714,7 +2739,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2730,10 +2755,10 @@
                     }
                     {
                         % [Voice 8 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        c''2.
+                        af''2.
                         \p
                         ~
-                        c''2
+                        af''2
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -2746,7 +2771,7 @@
                     }
                     {
                         % [Voice 8 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        c''2.
+                        af''2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2765,7 +2790,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2793,7 +2818,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2834,7 +2859,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r4.
                         \!
                         \stopStaff \startStaff
                     }
@@ -2850,7 +2875,7 @@
                         \markup { alt.5 }
                         \set Staff.instrumentName =
                         \markup { "Alto 5" }
-                        cs'1
+                        c''1 \!
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2867,7 +2892,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        cs'2
+                        c''2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2886,7 +2911,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2896,7 +2921,7 @@
                     }
                     {
                         % [Voice 9 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        cs'1
+                        c''1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2919,7 +2944,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2933,7 +2958,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2949,7 +2974,7 @@
                     }
                     {
                         % [Voice 9 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        cs'1
+                        c''1
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -2971,7 +2996,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -3013,7 +3038,7 @@
                     }
                     {
                         % [Voice 9 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        cs'1
+                        c''1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3036,7 +3061,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -3076,7 +3101,7 @@
                     }
                     {
                         % [Voice 9 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        cs'1
+                        c''1
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3093,7 +3118,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        cs'2
+                        c''2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3112,7 +3137,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -3126,7 +3151,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -3193,6 +3218,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
+                        r8
                         \stopStaff \startStaff
                     }
                 }
@@ -3204,10 +3230,10 @@
                     {
                         % [Voice 10 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { ten.1 }
+                        \markup { alt.6 }
                         \set Staff.instrumentName =
-                        \markup { "Tenor 1" }
-                        f''2.
+                        \markup { "Alto 6" }
+                        cs'2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3221,15 +3247,15 @@
                     }
                     {
                         % [Voice 10 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs''>4
+                        <cqs'' g'' eqf''' bf'''>4
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3246,7 +3272,7 @@
                     }
                     {
                         % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        f''1
+                        cs'1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3254,15 +3280,15 @@
                     }
                     {
                         % [Voice 10 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs''>4
+                        <cqs'' g'' eqf''' bf'''>4
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3278,22 +3304,22 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs''>2
+                        <cqs'' g'' eqf''' bf'''>2
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 10 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        f''4
+                        cs'4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3306,15 +3332,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs''>4
+                        <cqs'' g'' eqf''' bf'''>4
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3327,7 +3353,7 @@
                     }
                     {
                         % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        f''2.
+                        cs'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3341,15 +3367,15 @@
                     }
                     {
                         % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs''>4
+                        <cqs'' g'' eqf''' bf'''>4
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3366,33 +3392,33 @@
                     }
                     {
                         % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        aqs'16
+                        bqf'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        a'16
+                        bf'16
                         - \tenuto
                         ~
-                        a'16
-                        aqs'16
+                        bf'16
+                        bqf'16
                         - \tenuto
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            a'8
-                            - \tenuto
-                            aqs'16
-                            - \tenuto
-                        }
-                        bf'8.
-                        - \tenuto
-                        bqf'16
-                        ~
-                        \times 4/5 {
-                            bqf'16
                             bf'8
                             - \tenuto
-                            bqf'8
+                            bqf'16
+                            - \tenuto
+                        }
+                        b'8.
+                        - \tenuto
+                        bqs'16
+                        ~
+                        \times 4/5 {
+                            bqs'16
+                            b'8
+                            - \tenuto
+                            bqs'8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -3402,7 +3428,7 @@
                     }
                     {
                         % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        f''4
+                        cs'4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3419,29 +3445,29 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs''>2
+                        <cqs'' g'' eqf''' bf'''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 10 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        bf'16
+                        b'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        aqs'8
+                        bqf'8
                         - \tenuto
-                        bf'16
+                        b'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3455,7 +3481,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        f''4
+                        cs'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3469,7 +3495,7 @@
                     }
                     {
                         % [Voice 10 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        f''2.
+                        cs'2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3483,7 +3509,7 @@
                     }
                     {
                         % [Voice 10 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        f''4
+                        cs'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3501,29 +3527,29 @@
                     }
                     {
                         % [Voice 10 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs''>1
+                        <cqs'' g'' eqf''' bf'''>1
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
                             }
                         \<
                     }
                     {
                         % [Voice 10 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs''>4
+                        <cqs'' g'' eqf''' bf'''>4
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
+                                #'alto-saxophone
+                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3541,29 +3567,29 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            bqf'16
+                            bqs'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            bf'8
+                            b'8
                             - \tenuto
-                            bqf'16
+                            bqs'16
+                            - \tenuto
+                            c''16
+                            - \tenuto
+                            bqs'16
                             - \tenuto
                             b'16
-                            - \tenuto
-                            bqf'16
-                            - \tenuto
-                            bf'16
                             ~
                         }
                     }
                     {
                         % [Voice 10 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        bf'8
-                        bqf'16
+                        b'8
+                        bqs'16
                         - \tenuto
-                        bf'16
+                        b'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3572,17 +3598,22 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r2
                         \!
-                        r4
                         \stopStaff \startStaff
                     }
                     {
-                        f''4
+                        cs'4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
                     }
                 }
             }
@@ -3593,18 +3624,18 @@
                     {
                         % [Voice 11 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { ten.2 }
+                        \markup { ten.1 }
                         \set Staff.instrumentName =
-                        \markup { "Tenor 2" }
-                        <fs' fqs'' dqf''' fs'''>2
+                        \markup { "Tenor 1" }
+                        <fs' fqs''>2
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3616,7 +3647,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'2
+                        f''2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3624,15 +3655,15 @@
                     }
                     {
                         % [Voice 11 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs'' dqf''' fs'''>1
+                        <fs' fqs''>1
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3649,22 +3680,22 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs'' dqf''' fs'''>2
+                        <fs' fqs''>2
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 11 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        fs'2
+                        f''2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3681,15 +3712,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs'' dqf''' fs'''>2
+                        <fs' fqs''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3702,7 +3733,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'2.
+                        f''2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3716,7 +3747,7 @@
                     }
                     {
                         % [Voice 11 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        fs'2
+                        f''2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3729,15 +3760,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs'' dqf''' fs'''>2
+                        <fs' fqs''>2
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3745,34 +3776,34 @@
                     {
                         \times 4/5 {
                             % [Voice 11 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            gqs'16
+                            aqf'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            af'16
-                            - \tenuto
-                            aqf'16
-                            - \tenuto
-                            af'8
-                            - \tenuto
-                        }
-                        aqf'8
-                        - \tenuto
-                        a'16
-                        - \tenuto
-                        aqf'16
-                        ~
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            aqf'16
                             a'16
                             - \tenuto
                             aqs'16
-                            ~
+                            - \tenuto
+                            a'8
+                            - \tenuto
                         }
                         aqs'8
-                        bf'8
+                        - \tenuto
+                        bf'16
+                        - \tenuto
+                        aqs'16
+                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            aqs'16
+                            bf'16
+                            - \tenuto
+                            bqf'16
+                            ~
+                        }
+                        bqf'8
+                        b'8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3791,7 +3822,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'2
+                        f''2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3799,15 +3830,15 @@
                     }
                     {
                         % [Voice 11 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs'' dqf''' fs'''>2
+                        <fs' fqs''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3824,22 +3855,22 @@
                     }
                     {
                         \times 8/9 {
-                            aqs'8
+                            bqf'8
                             \mf
                             - \tenuto
                             \>
                             [
-                            a'16
+                            bf'16
                             - \tenuto
                             ~
-                            a'8
-                            aqf'16
-                            - \tenuto
-                            ~
-                            aqf'16
-                            a'16
-                            - \tenuto
+                            bf'8
                             aqs'16
+                            - \tenuto
+                            ~
+                            aqs'16
+                            bf'16
+                            - \tenuto
+                            bqf'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -3855,7 +3886,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'2.
+                        f''2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3869,7 +3900,7 @@
                     }
                     {
                         % [Voice 11 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        fs'2
+                        f''2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3882,7 +3913,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'2
+                        f''2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3890,15 +3921,15 @@
                     }
                     {
                         % [Voice 11 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs'' dqf''' fs'''>1
+                        <fs' fqs''>1
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3915,33 +3946,33 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs'' dqf''' fs'''>2
+                        <fs' fqs''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 11 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        a'8
+                        bf'8
                         \mf
                         - \tenuto
                         \>
                         [
-                        aqs'16
-                        - \tenuto
-                        bf'16
-                        - \tenuto
                         bqf'16
                         - \tenuto
-                        b'8.
+                        b'16
+                        - \tenuto
+                        bqs'16
+                        - \tenuto
+                        c''8.
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -3961,20 +3992,20 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            bqf'16
+                            bqs'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            bf'16
+                            b'16
+                            - \tenuto
+                            bqs'16
+                            - \tenuto
+                            b'16
                             - \tenuto
                             bqf'16
                             - \tenuto
-                            bf'16
-                            - \tenuto
-                            aqs'16
-                            - \tenuto
-                            a'8
+                            bf'8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -3990,11 +4021,17 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'2.
+                        f''2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
                     }
                 }
             }
@@ -4005,10 +4042,10 @@
                     {
                         % [Voice 12 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { ten.3 }
+                        \markup { ten.2 }
                         \set Staff.instrumentName =
-                        \markup { "Tenor 3" }
-                        b4 \!
+                        \markup { "Tenor 2" }
+                        fs'4 \!
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4025,29 +4062,29 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs'' dqf''' gqf'''>2
+                        <fs' fqs'' dqf''' fs'''>2
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
                             }
                         \<
                     }
                     {
                         % [Voice 12 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs'' dqf''' gqf'''>2.
+                        <fs' fqs'' dqf''' fs'''>2.
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4061,7 +4098,7 @@
                     }
                     {
                         % [Voice 12 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        b2.
+                        fs'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4075,15 +4112,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs'' dqf''' gqf'''>4
+                        <fs' fqs'' dqf''' fs'''>4
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4101,7 +4138,7 @@
                     }
                     {
                         % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        b4
+                        fs'4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4118,41 +4155,41 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs'' dqf''' gqf'''>2
+                        <fs' fqs'' dqf''' fs'''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 12 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        gqf'8
+                        gqs'8
                         \mf
                         - \tenuto
                         \>
                         [
-                        g'16
+                        af'16
                         - \tenuto
-                        gqs'16
+                        aqf'16
                         - \tenuto
                         ~
-                        gqs'16
-                        g'16
+                        aqf'16
+                        af'16
                         - \tenuto
-                        gqf'8
+                        gqs'8
                         ~
                         \times 4/5 {
-                            gqf'16
-                            fs'8
+                            gqs'16
+                            g'8
                             - \tenuto
-                            fqs'8
+                            gqf'8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -4169,7 +4206,7 @@
                     }
                     {
                         % [Voice 12 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        b2.
+                        fs'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4183,15 +4220,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <fs' fqs'' dqf''' gqf'''>4
+                        <fs' fqs'' dqf''' fs'''>4
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4209,7 +4246,7 @@
                     }
                     {
                         % [Voice 12 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        b4
+                        fs'4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4226,7 +4263,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b2
+                        fs'2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4234,15 +4271,15 @@
                     }
                     {
                         % [Voice 12 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs'' dqf''' gqf'''>2.
+                        <fs' fqs'' dqf''' fs'''>2.
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4256,15 +4293,15 @@
                     }
                     {
                         % [Voice 12 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        <fs' fqs'' dqf''' gqf'''>2.
+                        <fs' fqs'' dqf''' fs'''>2.
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
-                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
+                                #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4277,12 +4314,12 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'8.
+                        g'8.
                         \mf
                         - \tenuto
                         \>
                         [
-                        gqf'16
+                        gqs'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4296,7 +4333,8 @@
                     }
                     {
                         % [Voice 12 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        r1
+                        r2.
+                        r4.
                         \stopStaff \startStaff
                     }
                 }
@@ -4308,14 +4346,14 @@
                     {
                         % [Voice 13 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { ten.4 }
+                        \markup { ten.3 }
                         \set Staff.instrumentName =
-                        \markup { "Tenor 4" }
+                        \markup { "Tenor 3" }
                         <fs' fqs'' dqf''' gqf'''>2. \!
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4324,7 +4362,7 @@
                         <fs' fqs'' dqf''' gqf'''>2
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4338,7 +4376,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4370,7 +4408,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4415,7 +4453,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4453,7 +4491,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4474,14 +4512,14 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            fqs'16
+                            gqf'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            fs'16
+                            g'16
                             - \tenuto
-                            gqf'16
+                            gqs'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -4513,7 +4551,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4523,14 +4561,14 @@
                     }
                     {
                         % [Voice 13 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        g'8
+                        af'8
                         \mf
                         - \tenuto
                         \>
                         [
-                        gqf'16
+                        gqs'16
                         - \tenuto
-                        fs'16
+                        g'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4557,7 +4595,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4604,7 +4642,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4618,7 +4656,7 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -4638,28 +4676,28 @@
                     }
                     {
                         \times 4/5 {
-                            fqs'16
+                            gqf'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            f'8
+                            fs'8
                             - \tenuto
                             ~
-                            f'16
-                            fqs'16
+                            fs'16
+                            gqf'16
                             - \tenuto
                         }
                     }
                     {
                         % [Voice 13 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        f'16
+                        fs'16
+                        - \tenuto
+                        gqf'16
+                        - \tenuto
+                        fs'16
                         - \tenuto
                         fqs'16
-                        - \tenuto
-                        f'16
-                        - \tenuto
-                        eqs'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4686,13 +4724,19 @@
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
                     }
                 }
             }
@@ -4703,26 +4747,26 @@
                     {
                         % [Voice 14 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { bar.1 }
+                        \markup { ten.4 }
                         \set Staff.instrumentName =
-                        \markup { "Baritone 1" }
-                        <dqf'' eqf''' aqs'''>2.
+                        \markup { "Tenor 4" }
+                        <fs' fqs''>2.
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         ~
-                        <dqf'' eqf''' aqs'''>2
+                        <fs' fqs''>2
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         \<
                     }
@@ -4735,7 +4779,7 @@
                     }
                     {
                         % [Voice 14 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        cs''2.
+                        fs'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4749,15 +4793,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <dqf'' eqf''' aqs'''>4
+                        <fs' fqs''>4
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4777,7 +4821,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        cs''2
+                        fs'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4785,7 +4829,7 @@
                     }
                     {
                         % [Voice 14 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        cs''2.
+                        fs'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4799,10 +4843,10 @@
                     }
                     {
                         % [Voice 14 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        cs''2.
+                        fs'2.
                         \p
                         ~
-                        cs''2
+                        fs'2
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -4815,15 +4859,15 @@
                     }
                     {
                         % [Voice 14 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        <dqf'' eqf''' aqs'''>2.
+                        <fs' fqs''>2.
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4838,12 +4882,12 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            eqs'8
+                            fqs'8
                             \mf
                             - \tenuto
                             \>
                             [
-                            f'16
+                            fs'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -4866,7 +4910,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        cs''2
+                        fs'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4874,15 +4918,15 @@
                     }
                     {
                         % [Voice 14 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        <dqf'' eqf''' aqs'''>2.
+                        <fs' fqs''>2.
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4895,10 +4939,10 @@
                     }
                     {
                         % [Voice 14 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        cs''2.
+                        fs'2.
                         \p
                         ~
-                        cs''2
+                        fs'2
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -4911,7 +4955,7 @@
                     }
                     {
                         % [Voice 14 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        cs''2.
+                        fs'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4925,15 +4969,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <dqf'' eqf''' aqs'''>4
+                        <fs' fqs''>4
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4953,37 +4997,37 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <dqf'' eqf''' aqs'''>2
+                        <fs' fqs''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 14 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        fqs'16
+                        gqf'16
                         \mf
                         - \tenuto
                         \>
                         [
+                        g'16
+                        - \tenuto
+                        gqf'8
+                        - \tenuto
                         fs'16
                         - \tenuto
-                        fqs'8
+                        gqf'8.
                         - \tenuto
-                        f'16
+                        g'8
                         - \tenuto
-                        fqs'8.
-                        - \tenuto
-                        fs'8
-                        - \tenuto
-                        fqs'8
+                        gqf'8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -4992,7 +5036,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r4.
                         \!
                         \stopStaff \startStaff
                     }
@@ -5005,10 +5049,10 @@
                     {
                         % [Voice 15 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { bar.2 }
+                        \markup { ten.5 }
                         \set Staff.instrumentName =
-                        \markup { "Baritone 2" }
-                        fs'1
+                        \markup { "Tenor 5" }
+                        b1
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5025,15 +5069,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <e' eqs'' bqs''>2
+                        <fs' fqs'' dqf''' gqf'''>2
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5046,7 +5090,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'2
+                        b2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5054,7 +5098,7 @@
                     }
                     {
                         % [Voice 15 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        fs'1
+                        b1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5072,22 +5116,22 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <e' eqs'' bqs''>2
+                        <fs' fqs'' dqf''' gqf'''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 15 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        fs'2
+                        b2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5101,7 +5145,7 @@
                     }
                     {
                         % [Voice 15 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        fs'1
+                        b1
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5118,15 +5162,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <e' eqs'' bqs''>2
+                        <fs' fqs'' dqf''' gqf'''>2
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5140,19 +5184,19 @@
                     }
                     {
                         \times 4/5 {
-                            eqs'8.
+                            gqf'8.
                             \mf
                             - \tenuto
                             \>
                             [
-                            e'8
+                            fs'8
                             - \tenuto
                         }
-                        eqs'16
+                        gqf'16
                         - \tenuto
-                        e'16
+                        fs'16
                         - \tenuto
-                        eqs'8
+                        gqf'8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5161,7 +5205,7 @@
                     }
                     {
                         % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        fs'1
+                        b1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5179,15 +5223,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <e' eqs'' bqs''>2
+                        <fs' fqs'' dqf''' gqf'''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5196,19 +5240,19 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             % [Voice 15 measure 14] %! COMMENT_MEASURE_NUMBERS
-                            e'16
+                            fs'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            eqs'16
+                            gqf'16
                             - \tenuto
-                            f'16
+                            g'16
                             - \tenuto
                         }
-                        fqs'8.
+                        gqs'8.
                         - \tenuto
-                        fs'16
+                        af'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5223,7 +5267,7 @@
                     }
                     {
                         % [Voice 15 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        fs'1
+                        b1
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5240,7 +5284,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        fs'2
+                        b2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5254,29 +5298,29 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <e' eqs'' bqs''>2
+                        <fs' fqs'' dqf''' gqf'''>2
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
                             }
                         \<
                     }
                     {
                         % [Voice 15 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        <e' eqs'' bqs''>1
+                        <fs' fqs'' dqf''' gqf'''>1
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                                #'tenor-saxophone
+                                #'((cc . (one two three five six)) (lh . ()) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5294,34 +5338,34 @@
                     }
                     {
                         \times 8/9 {
-                            fqs'16
+                            gqs'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            f'16
+                            g'16
                             - \tenuto
-                            fqs'16
+                            gqs'16
                             - \tenuto
-                            f'16
+                            g'16
                             - \tenuto
-                            eqs'8
+                            gqf'8
                             - \tenuto
-                            e'8
+                            fs'8
                             - \tenuto
-                            eqs'16
+                            gqf'16
                             - \tenuto
                         }
                     }
                     {
                         % [Voice 15 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        f'8
+                        g'8
                         - \tenuto
-                        fqs'16
+                        gqs'16
                         - \tenuto
-                        f'8.
+                        g'8.
                         - \tenuto
-                        fqs'8
+                        gqs'8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5332,6 +5376,7 @@
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
+                        r8
                         \stopStaff \startStaff
                     }
                 }
@@ -5343,18 +5388,18 @@
                     {
                         % [Voice 16 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { bar.3 }
+                        \markup { bar.1 }
                         \set Staff.instrumentName =
-                        \markup { "Baritone 3" }
-                        <gqf' fqs'' dqf''' bf'''>2. \!
+                        \markup { "Baritone 1" }
+                        <dqf'' eqf''' aqs'''>2. \!
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5367,7 +5412,7 @@
                     }
                     {
                         % [Voice 16 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        e'4
+                        cs''4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5385,7 +5430,7 @@
                     }
                     {
                         % [Voice 16 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        e'1
+                        cs''1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5393,15 +5438,15 @@
                     }
                     {
                         % [Voice 16 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        <gqf' fqs'' dqf''' bf'''>4
+                        <dqf'' eqf''' aqs'''>4
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5417,7 +5462,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        e'2
+                        cs''2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5425,15 +5470,15 @@
                     }
                     {
                         % [Voice 16 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        <gqf' fqs'' dqf''' bf'''>4
+                        <dqf'' eqf''' aqs'''>4
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5445,15 +5490,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <gqf' fqs'' dqf''' bf'''>4
+                        <dqf'' eqf''' aqs'''>4
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5466,7 +5511,7 @@
                     }
                     {
                         % [Voice 16 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        e'2.
+                        cs''2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5480,15 +5525,15 @@
                     }
                     {
                         % [Voice 16 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        <gqf' fqs'' dqf''' bf'''>4
+                        <dqf'' eqf''' aqs'''>4
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5507,34 +5552,34 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             % [Voice 16 measure 11] %! COMMENT_MEASURE_NUMBERS
-                            dqs'8
+                            eqs'8
                             \mf
                             - \tenuto
                             \>
                             [
-                            d'16
+                            e'16
                             ~
                         }
-                        d'8
-                        dqf'8
+                        e'8
+                        eqf'8
                         - \tenuto
                         \times 4/5 {
-                            cs'16
+                            ef'16
                             - \tenuto
-                            cqs'16
+                            dqs'16
                             - \tenuto
-                            cs'16
+                            ef'16
                             - \tenuto
                             ~
-                            cs'16
-                            cqs'16
+                            ef'16
+                            dqs'16
                             - \tenuto
                         }
-                        cs'16
+                        ef'16
                         - \tenuto
-                        cqs'16
+                        dqs'16
                         - \tenuto
-                        c'8
+                        d'8
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5543,7 +5588,7 @@
                     }
                     {
                         % [Voice 16 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        e'4
+                        cs''4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5560,15 +5605,15 @@
                         \stopStaff \startStaff
                     }
                     {
-                        <gqf' fqs'' dqf''' bf'''>2
+                        <dqf'' eqf''' aqs'''>2
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5577,14 +5622,14 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             % [Voice 16 measure 14] %! COMMENT_MEASURE_NUMBERS
-                            bqs16
+                            dqf'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            b16
+                            cs'16
                             - \tenuto
-                            bqs16
+                            dqf'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -5599,7 +5644,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        e'4
+                        cs''4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5613,7 +5658,7 @@
                     }
                     {
                         % [Voice 16 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        e'2.
+                        cs''2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5627,7 +5672,7 @@
                     }
                     {
                         % [Voice 16 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        e'4
+                        cs''4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5645,29 +5690,29 @@
                     }
                     {
                         % [Voice 16 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        <gqf' fqs'' dqf''' bf'''>1
+                        <dqf'' eqf''' aqs'''>1
                         \mp
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
                             }
                         \<
                     }
                     {
                         % [Voice 16 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        <gqf' fqs'' dqf''' bf'''>4
+                        <dqf'' eqf''' aqs'''>4
                         \f
                         - \tenuto
                         _ \markup {
                             \override
-                                #'(size . 0.4)
+                                #'(size . 0.3)
                             \woodwind-diagram
                                 #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                                #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
                             }
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5683,34 +5728,34 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b16
+                        cs'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        bqs16
+                        dqf'16
                         - \tenuto
-                        c'16
+                        d'16
                         - \tenuto
-                        bqs16
-                        - \tenuto
-                        ~
-                        bqs16
-                        c'16
+                        dqf'16
                         - \tenuto
                         ~
-                        c'16
-                        cqs'16
+                        dqf'16
+                        d'16
+                        - \tenuto
+                        ~
+                        d'16
+                        dqs'16
                         - \tenuto
                     }
                     {
                         \times 4/5 {
                             % [Voice 16 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            cs'8
+                            ef'8
                             - \tenuto
-                            cqs'16
+                            dqs'16
                             - \tenuto
-                            c'8
+                            d'8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -5720,17 +5765,22 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r2
                         \!
-                        r4
                         \stopStaff \startStaff
                     }
                     {
-                        e'4
+                        cs''4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
                     }
                 }
             }
@@ -5741,10 +5791,10 @@
                     {
                         % [Voice 17 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { bs.1 }
+                        \markup { bar.2 }
                         \set Staff.instrumentName =
-                        \markup { "Bass 1" }
-                        b'2
+                        \markup { "Baritone 2" }
+                        fs'2 \!
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5757,7 +5807,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2
+                        fs'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5765,9 +5815,16 @@
                     }
                     {
                         % [Voice 17 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        b'1
+                        <e' eqs'' bqs''>1
                         \mp
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -5783,7 +5840,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2
+                        fs'2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5791,9 +5848,16 @@
                     }
                     {
                         % [Voice 17 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        b'2
+                        <e' eqs'' bqs''>2
                         \f
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -5808,9 +5872,16 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2
+                        <e' eqs'' bqs''>2
                         \mp
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -5822,7 +5893,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2.
+                        fs'2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5836,7 +5907,7 @@
                     }
                     {
                         % [Voice 17 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        b'2
+                        fs'2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5849,46 +5920,53 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2
+                        <e' eqs'' bqs''>2
                         \f
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 17 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        dqs'16
+                        eqs'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        ef'16
+                        f'16
                         - \tenuto
                         ~
-                        ef'16
-                        eqf'16
+                        f'16
+                        fqs'16
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            eqf'16
-                            ef'8
+                            fqs'16
+                            f'8
                             ~
                         }
-                        ef'16
-                        eqf'16
+                        f'16
+                        fqs'16
                         - \tenuto
                         ~
-                        eqf'16
-                        e'16
+                        fqs'16
+                        fs'16
                         - \tenuto
                         \times 4/5 {
-                            eqs'16
+                            gqf'16
                             - \tenuto
-                            e'8
+                            fs'8
                             - \tenuto
-                            eqf'16
+                            fqs'16
                             - \tenuto
-                            ef'16
+                            f'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -5908,7 +5986,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2
+                        fs'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5916,9 +5994,16 @@
                     }
                     {
                         % [Voice 17 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        b'2
+                        <e' eqs'' bqs''>2
                         \mp
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -5933,20 +6018,20 @@
                         \stopStaff \startStaff
                     }
                     {
-                        eqf'16
+                        fqs'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        ef'8.
+                        f'8.
                         - \tenuto
-                        eqf'16
+                        fqs'16
                         - \tenuto
-                        ef'16
+                        f'16
                         - \tenuto
-                        eqf'16
+                        fqs'16
                         - \tenuto
-                        e'16
+                        fs'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5961,7 +6046,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2.
+                        fs'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5975,7 +6060,7 @@
                     }
                     {
                         % [Voice 17 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        b'2
+                        fs'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5988,7 +6073,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2
+                        fs'2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -5996,9 +6081,16 @@
                     }
                     {
                         % [Voice 17 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        b'1
+                        <e' eqs'' bqs''>1
                         \f
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -6014,9 +6106,16 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2
+                        <e' eqs'' bqs''>2
                         \mp
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -6024,18 +6123,18 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
                             % [Voice 17 measure 19] %! COMMENT_MEASURE_NUMBERS
-                            eqf'16
+                            fqs'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            e'8
+                            fs'8
                             - \tenuto
-                            eqf'8
+                            fqs'8
                             - \tenuto
-                            e'16
+                            fs'16
                             - \tenuto
-                            eqs'16
+                            gqf'16
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -6054,20 +6153,20 @@
                         \stopStaff \startStaff
                     }
                     {
-                        e'16
+                        fs'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        eqs'16
+                        gqf'16
                         - \tenuto
-                        f'8.
+                        g'8.
                         - \tenuto
-                        fqs'16
+                        gqs'16
                         - \tenuto
                         ~
-                        fqs'16
-                        f'16
+                        gqs'16
+                        g'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6082,11 +6181,17 @@
                         \stopStaff \startStaff
                     }
                     {
-                        b'2.
+                        fs'2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
                     }
                 }
             }
@@ -6097,10 +6202,10 @@
                     {
                         % [Voice 18 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { bs.2 }
+                        \markup { bar.3 }
                         \set Staff.instrumentName =
-                        \markup { "Bass 2" }
-                        a'4
+                        \markup { "Baritone 3" }
+                        e'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6117,15 +6222,22 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a'2
+                        <gqf' fqs'' dqf''' bf'''>2
                         \f
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        a'2.
+                        e'2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6140,9 +6252,16 @@
                     }
                     {
                         % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        a'2.
+                        <gqf' fqs'' dqf''' bf'''>2.
                         \mp
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -6154,9 +6273,16 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a'4
+                        <gqf' fqs'' dqf''' bf'''>4
                         \f
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -6173,7 +6299,7 @@
                     }
                     {
                         % [Voice 18 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        a'4
+                        e'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6190,41 +6316,48 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a'2
+                        <gqf' fqs'' dqf''' bf'''>2
                         \mp
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
                             % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS
-                            cqs'16
+                            dqs'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            cs'8
+                            ef'8
                             - \tenuto
                             ~
-                            cs'16
-                            cqs'16
+                            ef'16
+                            dqs'16
                             ~
                         }
+                        dqs'16
+                        d'16
+                        - \tenuto
+                        dqf'16
+                        - \tenuto
+                        cs'16
+                        - \tenuto
+                        ~
+                        cs'16
                         cqs'16
+                        - \tenuto
                         c'16
                         - \tenuto
                         bqs16
-                        - \tenuto
-                        b16
-                        - \tenuto
-                        ~
-                        b16
-                        bqf16
-                        - \tenuto
-                        bf16
-                        - \tenuto
-                        aqs16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6240,7 +6373,7 @@
                     }
                     {
                         % [Voice 18 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        a'2.
+                        e'2.
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6254,9 +6387,16 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a'4
+                        <gqf' fqs'' dqf''' bf'''>4
                         \f
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -6273,7 +6413,7 @@
                     }
                     {
                         % [Voice 18 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        a'4
+                        e'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6290,7 +6430,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a'2
+                        e'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6298,9 +6438,16 @@
                     }
                     {
                         % [Voice 18 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        a'2.
+                        <gqf' fqs'' dqf''' bf'''>2.
                         \mp
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -6313,9 +6460,16 @@
                     }
                     {
                         % [Voice 18 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        a'2.
+                        <gqf' fqs'' dqf''' bf'''>2.
                         \f
                         - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.3)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -6327,7 +6481,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        a4
+                        b4
                         \mf
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6340,7 +6494,8 @@
                     }
                     {
                         % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        r1
+                        r2.
+                        r4.
                         \stopStaff \startStaff
                     }
                 }
@@ -6352,18 +6507,18 @@
                     {
                         % [Voice 19 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
-                        \markup { cbs. }
+                        \markup { bs.1 }
                         \set Staff.instrumentName =
-                        \markup { Contrabass }
-                        bf2.
+                        \markup { "Bass 1" }
+                        b'2.
                         \mp
                         ~
-                        bf2
+                        b'2
                         \<
                     }
                     {
                         % [Voice 19 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        bf4
+                        b'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6380,14 +6535,14 @@
                         \stopStaff \startStaff
                     }
                     {
-                        bf4
+                        b'4
                         \mp
                         - \tenuto
                         \<
                     }
                     {
                         % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        bf2.
+                        b'2.
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6404,7 +6559,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        d'4
+                        b'4
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6412,7 +6567,7 @@
                     }
                     {
                         % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        bf4
+                        b'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6425,7 +6580,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        g'2
+                        b'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6433,7 +6588,7 @@
                     }
                     {
                         % [Voice 19 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        bf1
+                        b'1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6447,16 +6602,16 @@
                     }
                     {
                         % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        d'2.
+                        b'2.
                         \p
                         ~
-                        d'2
+                        b'2
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        bf4
+                        b'4
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6473,16 +6628,16 @@
                         \stopStaff \startStaff
                     }
                     {
-                        cqs'16
+                        dqs'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        cs'16
+                        ef'16
                         - \tenuto
-                        dqf'16
+                        eqf'16
                         - \tenuto
-                        d'16
+                        e'16
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6491,7 +6646,7 @@
                     }
                     {
                         % [Voice 19 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        g'2.
+                        b'2.
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6508,7 +6663,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        bf4
+                        b'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6517,14 +6672,14 @@
                     {
                         \times 4/5 {
                             % [Voice 19 measure 13] %! COMMENT_MEASURE_NUMBERS
-                            dqf'16
+                            eqf'16
                             \mf
                             - \tenuto
                             \>
                             [
-                            d'8
+                            e'8
                             - \tenuto
-                            dqf'8
+                            eqf'8
                             \pp
                             - \tenuto
                             - \tweak stencil #constante-hairpin
@@ -6539,7 +6694,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        d'2
+                        b'2
                         \p
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6547,7 +6702,7 @@
                     }
                     {
                         % [Voice 19 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        bf1
+                        b'1
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6561,16 +6716,16 @@
                     }
                     {
                         % [Voice 19 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        bf2.
+                        b'2.
                         \p
                         ~
-                        bf2
+                        b'2
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        bf4
+                        b'4
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6587,14 +6742,14 @@
                         \stopStaff \startStaff
                     }
                     {
-                        bf4
+                        b'4
                         \mp
                         - \tenuto
                         \<
                     }
                     {
                         % [Voice 19 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        bf2.
+                        b'2.
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6611,20 +6766,20 @@
                         \stopStaff \startStaff
                     }
                     {
-                        cs'16
+                        ef'16
                         \mf
                         - \tenuto
                         \>
                         [
-                        cqs'8
+                        dqs'8
                         - \tenuto
-                        c'16
+                        d'16
                         - \tenuto
                         ]
                     }
                     {
                         % [Voice 19 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        bqs4
+                        dqf'4
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6637,7 +6792,7 @@
                         \stopStaff \startStaff
                     }
                     {
-                        d'2
+                        b'2
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -6645,11 +6800,570 @@
                     }
                     {
                         % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        bf1
+                        b'1
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r8
+                        \!
+                        \stopStaff \startStaff
+                    }
+                }
+            }
+            \context Staff = "Staff 20"
+            {
+                \context Voice = "Voice 20"
+                {
+                    {
+                        % [Voice 20 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        \set Staff.shortInstrumentName =
+                        \markup { bs.2 }
+                        \set Staff.instrumentName =
+                        \markup { "Bass 2" }
+                        a'2. \!
+                        \p
+                        ~
+                        a'2
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 20 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r1
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        % [Voice 20 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        a'2.
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        a'4
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                    }
+                    {
+                        % [Voice 20 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        r2.
+                    }
+                    {
+                        % [Voice 20 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        a'2
+                        \mp
+                        - \tenuto
+                        \<
+                    }
+                    {
+                        % [Voice 20 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        a'2.
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        % [Voice 20 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        a'2.
+                        \p
+                        ~
+                        a'2
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 20 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r1
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        % [Voice 20 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        a'2.
+                        \mp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 20 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        dqf'8
+                        \mf
+                        - \tenuto
+                        \>
+                        [
+                        d'8
+                        \pp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                    }
+                    {
+                        % [Voice 20 measure 12] %! COMMENT_MEASURE_NUMBERS
+                        r2.
+                    }
+                    {
+                        % [Voice 20 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        a'2
+                        \mp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 20 measure 14] %! COMMENT_MEASURE_NUMBERS
+                        a'2.
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        % [Voice 20 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        a'2.
+                        \p
+                        ~
+                        a'2
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 20 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r1
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        % [Voice 20 measure 17] %! COMMENT_MEASURE_NUMBERS
+                        a'2.
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 20 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        a'4
+                        \mp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                    }
+                    {
+                        % [Voice 20 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        r2.
+                    }
+                    {
+                        % [Voice 20 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        a'2
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 12/13 {
+                            % [Voice 20 measure 21] %! COMMENT_MEASURE_NUMBERS
+                            dqs'8.
+                            \mf
+                            - \tenuto
+                            \>
+                            [
+                            ef'8
+                            - \tenuto
+                            dqs'16
+                            - \tenuto
+                            ef'16
+                            - \tenuto
+                            eqf'8
+                            - \tenuto
+                            e'16
+                            - \tenuto
+                            eqs'16
+                            - \tenuto
+                            e'16
+                            - \tenuto
+                            eqf'16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4.
+                        \!
+                        \stopStaff \startStaff
+                    }
+                }
+            }
+            \context Staff = "Staff 21"
+            {
+                \context Voice = "Voice 21"
+                {
+                    {
+                        % [Voice 21 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        \set Staff.shortInstrumentName =
+                        \markup { cbs. }
+                        \set Staff.instrumentName =
+                        \markup { Contrabass }
+                        bf1 \!
+                        \mp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                    }
+                    {
+                        % [Voice 21 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        bf2
+                        \mp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        bf2
+                        \mp
+                        - \tenuto
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 4] %! COMMENT_MEASURE_NUMBERS
+                        bf1
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2.
+                        \!
+                    }
+                    {
+                        % [Voice 21 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        d'2
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        bf2
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2.
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        % [Voice 21 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        g'1
+                        \mp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                    }
+                    {
+                        % [Voice 21 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        bf2
+                        \mp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        bqs8
+                        \mf
+                        - \tenuto
+                        \>
+                        [
+                        c'16
+                        - \tenuto
+                        cqs'16
+                        - \tenuto
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            c'16
+                            - \tenuto
+                            bqs16
+                            - \tenuto
+                            c'16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                    }
+                    {
+                        % [Voice 21 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        bf1
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 12] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2.
+                        \!
+                    }
+                    {
+                        % [Voice 21 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        bf2
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 14] %! COMMENT_MEASURE_NUMBERS
+                        cqs'8
+                        \mf
+                        - \tenuto
+                        \>
+                        [
+                        cs'8
+                        - \tenuto
+                        \times 4/5 {
+                            dqf'16
+                            - \tenuto
+                            cs'8
+                            - \tenuto
+                            cqs'16
+                            - \tenuto
+                            c'16
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2.
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        % [Voice 21 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        d'1
+                        \mp
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                    }
+                    {
+                        % [Voice 21 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        g'2
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 17] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r4
+                        \!
+                        \stopStaff \startStaff
+                    }
+                    {
+                        bf2
+                        \mp
+                        - \tenuto
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        bf1
+                        \f
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 21 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2.
+                        \!
+                    }
+                    {
+                        % [Voice 21 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        r2
+                        \stopStaff \startStaff
+                    }
+                    {
+                        cqs'8
+                        \mf
+                        - \tenuto
+                        \>
+                        [
+                        c'8
+                        - \tenuto
+                        cqs'8
+                        - \tenuto
+                        c'8
+                        ~
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 8/7 {
+                            % [Voice 21 measure 21] %! COMMENT_MEASURE_NUMBERS
+                            c'16
+                            bqs8
+                            - \tenuto
+                            b16
+                            - \tenuto
+                            bqs16
+                            - \tenuto
+                            c'8
+                            \pp
+                            - \tenuto
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                    }
+                    {
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
+                        r2
+                        \!
+                        r8
+                        \stopStaff \startStaff
                     }
                 }
             }

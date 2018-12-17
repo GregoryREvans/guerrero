@@ -24,8 +24,6 @@
     \include "Section_G.ly"
     \include "Section_H.ly"
     \include "Section_I.ly"
-    \include "Section_J.ly"
-    \include "Section_K.ly"
-    \include "Section_L.ly" %}
+    \include "Section_J.ly" %}
 	}
 }

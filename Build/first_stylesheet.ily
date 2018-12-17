@@ -3,7 +3,7 @@
 \version "2.19.82"
 \language "english"
 #(set-default-paper-size "11x17portrait")
-#(set-global-staff-size 13)
+#(set-global-staff-size 11)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
@@ -12,8 +12,8 @@
 	breakbefore = ##t
 	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
 	title =  \markup \override #'(font-name . "Didot") \fontsize #15 \bold\center-column {"GUERRERO" }
-	subtitle = \markup \override #'(font-name . "Didot") {" "}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"f o r  n i n e t e e n  s a x o p h o n e s"}
+	subtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"b       o       c       e       t       o       s               d       e               m       a       r       t       e"}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
 }
 
@@ -76,13 +76,13 @@
 		\override BarLine.bar-extent = #'(-2 . 2)
         \override Beam.breakable = ##t
 		\override Beam.concaveness = #10000
-		\override DynamicText.font-size = #-2
+		\override DynamicText.font-size = #-3
 		\override Glissando.breakable = ##t
 		\override Glissando.thickness = #2
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 16) (minimum-distance . 16) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 17) (minimum-distance . 17) (padding . 0))
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
