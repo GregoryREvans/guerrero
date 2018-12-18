@@ -70,8 +70,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 5/4
-            s1 * 5/4
+            \time 9/8
+            s1 * 9/8
         }
         \context StaffGroup = "Staff Group"
         <<
@@ -387,7 +387,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \bar "||"
                         \stopStaff \startStaff
@@ -692,7 +692,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4.
                         \!
                         \stopStaff \startStaff
                     }
@@ -1047,8 +1047,9 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r4.
                         \!
+                        r4
                         \stopStaff \startStaff
                     }
                 }
@@ -1442,7 +1443,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -1865,7 +1866,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -2166,7 +2167,7 @@
                     {
                         % [Voice 6 measure 21] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        r2
+                        r4.
                         \stopStaff \startStaff
                     }
                 }
@@ -2546,7 +2547,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -2858,7 +2859,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4.
                         \!
                         \stopStaff \startStaff
                     }
@@ -3215,8 +3216,9 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r4.
                         \!
+                        r4
                         \stopStaff \startStaff
                     }
                 }
@@ -3609,7 +3611,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -4027,7 +4029,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -4332,7 +4334,7 @@
                     {
                         % [Voice 12 measure 21] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        r2
+                        r4.
                         \stopStaff \startStaff
                     }
                 }
@@ -4732,7 +4734,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -5034,7 +5036,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4.
                         \!
                         \stopStaff \startStaff
                     }
@@ -5372,8 +5374,9 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r4.
                         \!
+                        r4
                         \stopStaff \startStaff
                     }
                 }
@@ -5775,7 +5778,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -6186,7 +6189,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -6492,7 +6495,7 @@
                     {
                         % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        r2
+                        r4.
                         \stopStaff \startStaff
                     }
                 }
@@ -6805,7 +6808,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4
+                        r8
                         \!
                         \stopStaff \startStaff
                     }
@@ -7062,7 +7065,7 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2
+                        r4.
                         \!
                         \stopStaff \startStaff
                     }
@@ -7357,8 +7360,9 @@
                     }
                     {
                         \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r4.
                         \!
+                        r4
                         \stopStaff \startStaff
                     }
                 }

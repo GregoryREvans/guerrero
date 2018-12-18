@@ -47,26 +47,29 @@ def reduceMod(list_length, rw):
 
 # -3 at bottom of chord for completion
 sopranino_chord = [27, ]
-soprano_1_chord = [[13.5, 16, 26.5, ], 22, ]
-soprano_2_chord = [[13, 16, 26, ], 16, ]
-soprano_3_chord = [[12.5, 14.5, 26, ], 13, ]
-alto_1_chord = [[12.5, 19, 27.5, 34, ], 20, ]
-alto_2_chord = [[12.5, 15.5, 25.5, ], 12, ]
-alto_3_chord = [[1.5, 13.5, 22.5, 27, 30, ], 1, ]
-alto_4_chord = [[12.5, 15.5, 25.5, ], 20, ]
-alto_5_chord = [[1.5, 13.5, 22.5, 27, 30, ], 12, ]
-alto_6_chord = [[12.5, 19, 27.5, 34, ], 1, ]
-tenor_1_chord = [[6, 17.5, ], 17, ]
-tenor_2_chord = [[6, 17.5, 25.5, 30, ], 6, ]
-tenor_3_chord = [[6, 17.5, 25.5, 30.5, ], -1, ]
-tenor_4_chord = [[6, 17.5, ], 17, ]
-tenor_5_chord = [[6, 17.5, 25.5, 30.5, ], 6, ]
-baritone_1_chord = [[13.5, 27.5, 33.5, ], 13, ]
-baritone_2_chord = [[4, 16.5, 23.5, ], 6, ]
-baritone_3_chord = [[6.5, 17.5, 25.5, 34, ], 4, ]
+soprano_1_chord = [[13.25, 16, 26.25, ], 22,]
+soprano_2_chord = [[13, 14.75, 26.25, ], 16,] #maybe it's 13.25?
+soprano_3_chord = [[12.75, 15.5, 26, ], 13,]
+alto_1_chord = [[12.5, 19, 27.75, 34, ], 20,]
+alto_2_chord = [[12.5, 15.25, 25.5, ], 12,]
+alto_3_chord = [[1.75, 13.5, 22.25, 27, 30, ], 1,]
+alto_4_chord = [[12.5, 15.25, 25.5, ], 20,]
+alto_5_chord = [[1.75, 13.5, 22.25, 27, 30, ], 12,]
+alto_6_chord = [[12.5, 19, 27.75, 34, ], 1,]
+tenor_1_chord = [[6, 17.5, ], 17,]
+tenor_2_chord = [[6, 17.5, 25.5, 30, ], 6,]
+tenor_3_chord = [[6, 17.5, 25.5, 30.75, ], -1]
+tenor_4_chord = [[6, 17.5, ], 17,]
+tenor_5_chord = [[6, 17.5, 25.5, 30.75, ], 6,]
+baritone_1_chord = [[13.25, 27.5, 33.75, ], 13,]
+baritone_2_chord = [[4, 16.5, 23.5, ], 6,]
+baritone_3_chord = [[7.75, 17.75, 25.5, 34, ], 4,]
 bass_1_chord = [11, ]
 bass_2_chord = [9, ]
 contrabass_chord = [-2, 2, 7, -2, 2, 7, 2, -2]
+
+def reduceMod(x, rw):
+    return [(y % x) for y in rw]
 
 seed(1)
 sopranino_random_walk = []
@@ -75,7 +78,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = sopranino_random_walk[i-1] + movement
     sopranino_random_walk.append(value)
-sopranino_random_walk_notes = [((x / 2.0) + 19) for x in sopranino_random_walk]
+    sopranino_walk_chord = [18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, ]
+l = len(sopranino_walk_chord)
+sopranino_random_walk_notes = [sopranino_walk_chord[x] for x in reduceMod(l, sopranino_random_walk)]
 
 seed(2)
 soprano_1_random_walk = []
@@ -84,7 +89,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_1_random_walk[i-1] + movement
     soprano_1_random_walk.append(value)
-soprano_1_random_walk_notes = [((x / 2.0) + 16) for x in soprano_1_random_walk]
+soprano_1_walk_chord = [17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, ]
+l = len(soprano_1_walk_chord)
+soprano_1_random_walk_notes = [soprano_1_walk_chord[x] for x in reduceMod(l, soprano_1_random_walk)]
 
 seed(3)
 soprano_2_random_walk = []
@@ -93,7 +100,10 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_2_random_walk[i-1] + movement
     soprano_2_random_walk.append(value)
-soprano_2_random_walk_notes = [((x / 2.0) + 15) for x in soprano_2_random_walk]
+soprano_2_random_walk.append(value)
+soprano_2_walk_chord = [16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, ]
+l = len(soprano_2_walk_chord)
+soprano_2_random_walk_notes = [soprano_2_walk_chord[x] for x in reduceMod(l, soprano_2_random_walk)]
 
 seed(4)
 soprano_3_random_walk = []
@@ -102,7 +112,10 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_3_random_walk[i-1] + movement
     soprano_3_random_walk.append(value)
-soprano_3_random_walk_notes = [((x / 2.0) + 13) for x in soprano_3_random_walk]
+soprano_3_random_walk.append(value)
+soprano_3_walk_chord = [15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, ]
+l = len(soprano_3_walk_chord)
+soprano_3_random_walk_notes = [soprano_3_walk_chord[x] for x in reduceMod(l, soprano_3_random_walk)]
 
 seed(5)
 alto_1_random_walk = []
@@ -111,7 +124,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_1_random_walk[i-1] + movement
     alto_1_random_walk.append(value)
-alto_1_random_walk_notes = [((x / 2.0) + 14) for x in alto_1_random_walk]
+alto_1_walk_chord = [14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, ]
+l = len(alto_1_walk_chord)
+alto_1_random_walk_notes = [alto_1_walk_chord[x] for x in reduceMod(l, alto_1_random_walk)]
 
 seed(6)
 alto_2_random_walk = []
@@ -120,7 +135,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_2_random_walk[i-1] + movement
     alto_2_random_walk.append(value)
-alto_2_random_walk_notes = [((x / 2.0) + 13) for x in alto_2_random_walk]
+alto_2_walk_chord = [13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, ]
+l = len(alto_2_walk_chord)
+alto_2_random_walk_notes = [alto_2_walk_chord[x] for x in reduceMod(l, alto_2_random_walk)]
 
 seed(7)
 alto_3_random_walk = []
@@ -129,7 +146,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_3_random_walk[i-1] + movement
     alto_3_random_walk.append(value)
-alto_3_random_walk_notes = [((x / 2.0) + 12) for x in alto_3_random_walk]
+alto_3_walk_chord = [12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, ]
+l = len(alto_3_walk_chord)
+alto_3_random_walk_notes = [alto_3_walk_chord[x] for x in reduceMod(l, alto_3_random_walk)]
 
 seed(8)
 alto_4_random_walk = []
@@ -138,7 +157,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_4_random_walk[i-1] + movement
     alto_4_random_walk.append(value)
-alto_4_random_walk_notes = [((x / 2.0) + 15) for x in alto_4_random_walk]
+alto_4_walk_chord = [11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, ]
+l = len(alto_4_walk_chord)
+alto_4_random_walk_notes = [alto_4_walk_chord[x] for x in reduceMod(l, alto_4_random_walk)]
 
 seed(9)
 alto_5_random_walk = []
@@ -147,7 +168,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_5_random_walk[i-1] + movement
     alto_5_random_walk.append(value)
-alto_5_random_walk_notes = [((x / 2.0) + 10) for x in alto_5_random_walk]
+alto_5_walk_chord = [10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, ]
+l = len(alto_5_walk_chord)
+alto_5_random_walk_notes = [alto_5_walk_chord[x] for x in reduceMod(l, alto_5_random_walk)]
 
 seed(10)
 alto_6_random_walk = []
@@ -156,7 +179,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_6_random_walk[i-1] + movement
     alto_6_random_walk.append(value)
-alto_6_random_walk_notes = [((x / 2.0) + 10) for x in alto_6_random_walk]
+alto_6_walk_chord = [9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, ]
+l = len(alto_6_walk_chord)
+alto_6_random_walk_notes = [alto_6_walk_chord[x] for x in reduceMod(l, alto_6_random_walk)]
 
 seed(11)
 tenor_1_random_walk = []
@@ -165,7 +190,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_1_random_walk[i-1] + movement
     tenor_1_random_walk.append(value)
-tenor_1_random_walk_notes = [((x / 2.0) + 9) for x in tenor_1_random_walk]
+tenor_1_walk_chord = [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, ]
+l = len(tenor_1_walk_chord)
+tenor_1_random_walk_notes = [tenor_1_walk_chord[x] for x in reduceMod(l, tenor_1_random_walk)]
 
 seed(12)
 tenor_2_random_walk = []
@@ -174,7 +201,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_2_random_walk[i-1] + movement
     tenor_2_random_walk.append(value)
-tenor_2_random_walk_notes = [((x / 2.0) + 8) for x in tenor_2_random_walk]
+tenor_2_walk_chord = [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, ]
+l = len(tenor_2_walk_chord)
+tenor_2_random_walk_notes = [tenor_2_walk_chord[x] for x in reduceMod(l, tenor_2_random_walk)]
 
 seed(13)
 tenor_3_random_walk = []
@@ -183,7 +212,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_3_random_walk[i-1] + movement
     tenor_3_random_walk.append(value)
-tenor_3_random_walk_notes = [((x / 2.0) + 7) for x in tenor_3_random_walk]
+tenor_3_walk_chord = [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, ]
+l = len(tenor_3_walk_chord)
+tenor_3_random_walk_notes = [tenor_3_walk_chord[x] for x in reduceMod(l, tenor_3_random_walk)]
 
 seed(14)
 tenor_4_random_walk = []
@@ -192,7 +223,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_4_random_walk[i-1] + movement
     tenor_4_random_walk.append(value)
-tenor_4_random_walk_notes = [((x / 2.0) + 13) for x in tenor_4_random_walk]
+tenor_4_walk_chord = [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, ]
+l = len(tenor_4_walk_chord)
+tenor_4_random_walk_notes = [tenor_4_walk_chord[x] for x in reduceMod(l, tenor_4_random_walk)]
 
 seed(15)
 tenor_5_random_walk = []
@@ -201,7 +234,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_5_random_walk[i-1] + movement
     tenor_5_random_walk.append(value)
-tenor_5_random_walk_notes = [((x / 2.0) + 13) for x in tenor_5_random_walk]
+tenor_5_walk_chord = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, ]
+l = len(tenor_5_walk_chord)
+tenor_5_random_walk_notes = [tenor_5_walk_chord[x] for x in reduceMod(l, tenor_5_random_walk)]
 
 seed(16)
 baritone_1_random_walk = []
@@ -210,7 +245,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_1_random_walk[i-1] + movement
     baritone_1_random_walk.append(value)
-baritone_1_random_walk_notes = [((x / 2.0) + 15) for x in baritone_1_random_walk]
+baritone_1_walk_chord = [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, ]
+l = len(baritone_1_walk_chord)
+baritone_1_random_walk_notes = [baritone_1_walk_chord[x] for x in reduceMod(l, baritone_1_random_walk)]
 
 seed(17)
 baritone_2_random_walk = []
@@ -219,7 +256,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_2_random_walk[i-1] + movement
     baritone_2_random_walk.append(value)
-baritone_2_random_walk_notes = [((x / 2.0) + 4) for x in baritone_2_random_walk]
+baritone_2_walk_chord = [2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, ]
+l = len(baritone_2_walk_chord)
+baritone_2_random_walk_notes = [baritone_2_walk_chord[x] for x in reduceMod(l, baritone_2_random_walk)]
 
 seed(18)
 baritone_3_random_walk = []
@@ -228,7 +267,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_3_random_walk[i-1] + movement
     baritone_3_random_walk.append(value)
-baritone_3_random_walk_notes = [((x / 2.0) + 14) for x in baritone_3_random_walk]
+baritone_3_walk_chord = [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, ]
+l = len(baritone_3_walk_chord)
+baritone_3_random_walk_notes = [baritone_3_walk_chord[x] for x in reduceMod(l, baritone_3_random_walk)]
 
 seed(19)
 bass_1_random_walk = []
@@ -237,7 +278,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = bass_1_random_walk[i-1] + movement
     bass_1_random_walk.append(value)
-bass_1_random_walk_notes = [((x / 2.0) + 2) for x in bass_1_random_walk]
+bass_1_walk_chord = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, ]
+l = len(bass_1_walk_chord)
+bass_1_random_walk_notes = [bass_1_walk_chord[x] for x in reduceMod(l, bass_1_random_walk)]
 
 seed(20)
 bass_2_random_walk = []
@@ -246,7 +289,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = bass_2_random_walk[i-1] + movement
     bass_2_random_walk.append(value)
-bass_2_random_walk_notes = [((x / 2.0) + 1) for x in bass_2_random_walk]
+bass_2_walk_chord = [-1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, ]
+l = len(bass_2_walk_chord)
+bass_2_random_walk_notes = [bass_2_walk_chord[x] for x in reduceMod(l, bass_2_random_walk)]
 
 seed(21)
 contrabass_random_walk = []
@@ -255,7 +300,9 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = contrabass_random_walk[i-1] + movement
     contrabass_random_walk.append(value)
-contrabass_random_walk_notes = [(x / 2.0 + 12) for x in contrabass_random_walk]
+contrabass_walk_chord = [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, ]
+l = len(contrabass_walk_chord)
+contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, contrabass_random_walk)]
 
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
@@ -3727,3 +3774,716 @@ if path.exists():
 #     abjad.show(staff)
 # abjad.show(score)
 # abjad.play(score)
+for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/2.)soprano1'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 3']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/3.)soprano2'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/4.)soprano3'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 5']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/5.)alto1'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/6.)alto2'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 7']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/7.)alto3'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/8.)alto4'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 9']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/9.)alto5'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/10.)alto6'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 11']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/11.)tenor1'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/12.)tenor2'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 13']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/13.)tenor3'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/14.)tenor4'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 15']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/15.)tenor5'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/16.)baritone1'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 17']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/17.)baritone2'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/18.)baritone3'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 19']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/19.)bass1'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/20.)bass2'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 21']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/21.)contrabass'
+    pdf_path = f'{directory}/Section_B.pdf'
+    path = pathlib.Path('Section_B.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')

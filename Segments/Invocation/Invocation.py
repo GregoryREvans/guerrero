@@ -1550,7 +1550,147 @@ if path.exists():
     print(f'Opening {pdf_path} ...')
     os.system(f'open {pdf_path}')
 
-for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-    abjad.show(staff)
 # abjad.show(score)
 # abjad.play(score)
+# for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)
+#
+# for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
+#     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+#     signature_copy = abjad.mutate(signatures).copy()
+#     staff_copy = abjad.mutate(staff).copy()
+#     part = abjad.Score()
+#     part.insert(0, staff)
+#     part.insert(0, signature_copy)
+#     part_file = abjad.LilyPondFile.new(
+#         part,
+#         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+#         )
+#     abjad.show(part_file)

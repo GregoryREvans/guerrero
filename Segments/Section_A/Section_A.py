@@ -18,7 +18,7 @@ time_signatures = [
         (5, 4), (4, 4), (3, 4), (4, 4), (3, 4), (4, 4),
         (5, 4), (5, 4), (4, 4), (3, 4), (4, 4), (3, 4),
         (4, 4), (5, 4), (5, 4), (4, 4), (3, 4), (4, 4),
-        (3, 4), (4, 4), (5, 4),
+        (3, 4), (4, 4), (9, 8),
     ]
 ]
 
@@ -789,7 +789,7 @@ voice_1_timespan_list = abjad.TimespanList([
         [(77, 4), (79, 4), sopranino_musicmaker_one],
         [(79, 4), (83, 4), sopranino_musicmaker_two],
 
-        [(83, 4), (84, 4), silence_maker],
+        [(83, 4), (167, 8), silence_maker],
     ]
 ])
 
@@ -1756,19 +1756,19 @@ for voice in abjad.select(score).components(abjad.Voice):
                 abjad.attach(abjad.StopBeam(), note)
 
 print('Beautifying score ...')
-# cutaway score
-for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-    for selection in abjad.select(staff).components(abjad.Rest).group_by_contiguity():
-        start_command = abjad.LilyPondLiteral(
-            r'\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff',
-            format_slot='before',
-            )
-        stop_command = abjad.LilyPondLiteral(
-            r'\stopStaff \startStaff',
-            format_slot='after',
-            )
-        abjad.attach(start_command, selection[0])
-        abjad.attach(stop_command, selection[-1])
+# # cutaway score
+# for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+#     for selection in abjad.select(staff).components(abjad.Rest).group_by_contiguity():
+#         start_command = abjad.LilyPondLiteral(
+#             r'\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff',
+#             format_slot='before',
+#             )
+#         stop_command = abjad.LilyPondLiteral(
+#             r'\stopStaff \startStaff',
+#             format_slot='after',
+#             )
+#         abjad.attach(start_command, selection[0])
+#         abjad.attach(stop_command, selection[-1])
 
 print('Stopping Hairpins ...')
 for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
@@ -2090,3 +2090,716 @@ if path.exists():
 #     abjad.show(staff)
 # abjad.show(score)
 # abjad.play(score)
+for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/2.)soprano1'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 3']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/3.)soprano2'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/4.)soprano3'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 5']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/5.)alto1'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/6.)alto2'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 7']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/7.)alto3'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/8.)alto4'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 9']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/9.)alto5'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/10.)alto6'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 11']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/11.)tenor1'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/12.)tenor2'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 13']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/13.)tenor3'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/14.)tenor4'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 15']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/15.)tenor5'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/16.)baritone1'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 17']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/17.)baritone2'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/18.)baritone3'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 19']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/19.)bass1'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/20.)bass2'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
+
+for staff in abjad.iterate(score['Staff 21']).components(abjad.Staff):
+    signatures = abjad.select(score['Global Context']).components(abjad.Staff)
+    signature_copy = abjad.mutate(signatures).copy()
+    staff_copy = abjad.mutate(staff).copy()
+    part = abjad.Score()
+    part.insert(0, staff)
+    part.insert(0, signature_copy)
+    part_file = abjad.LilyPondFile.new(
+        part,
+        includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
+        )
+    abjad.show(part_file)
+    directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/21.)contrabass'
+    pdf_path = f'{directory}/Section_A.pdf'
+    path = pathlib.Path('Section_A.pdf')
+    if path.exists():
+        print(f'Removing {pdf_path} ...')
+        path.unlink()
+    time_1 = time.time()
+    print(f'Persisting {pdf_path} ...')
+    result = abjad.persist(part_file).as_pdf(pdf_path)
+    print(result[0])
+    print(result[1])
+    print(result[2])
+    success = result[3]
+    if success is False:
+        print('LilyPond failed!')
+    time_2 = time.time()
+    total_time = time_2 - time_1
+    print(f'Total time: {total_time} seconds')
+    if path.exists():
+        print(f'Opening {pdf_path} ...')
+        os.system(f'open {pdf_path}')
