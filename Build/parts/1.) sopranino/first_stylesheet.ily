@@ -2,8 +2,8 @@
 
 \version "2.19.82"
 \language "english"
-#(set-default-paper-size "11x17portrait")
-#(set-global-staff-size 11)
+#(set-default-paper-size "11x17landscape")
+#(set-global-staff-size 12)
 \include "ekmel.ily"
 \ekmelicStyle evans
 

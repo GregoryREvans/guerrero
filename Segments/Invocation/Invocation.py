@@ -1550,7 +1550,7 @@ if path.exists():
     print(f'Opening {pdf_path} ...')
     os.system(f'open {pdf_path}')
 
-# for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-#     abjad.show(staff)
+for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+    abjad.show(staff)
 # abjad.show(score)
 # abjad.play(score)
