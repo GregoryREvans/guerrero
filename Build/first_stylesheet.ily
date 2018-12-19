@@ -3,7 +3,7 @@
 \version "2.19.82"
 \language "english"
 #(set-default-paper-size "11x17portrait")
-#(set-global-staff-size 11)
+#(set-global-staff-size 10)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
@@ -82,7 +82,7 @@
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 17) (minimum-distance . 17) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 18) (minimum-distance . 18) (padding . 0))
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
