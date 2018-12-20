@@ -3,18 +3,18 @@
 \version "2.19.82"
 \language "english"
 #(set-default-paper-size "11x17portrait")
-#(set-global-staff-size 10)
+#(set-global-staff-size 9)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
-	title =  \markup \override #'(font-name . "Didot") \fontsize #15 \bold\center-column {"GUERRERO" }
-	subtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"b       o       c       e       t       o       s               d       e               m       a       r       t       e"}
-	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #4.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
+	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"GUERRERO" }
+	subtitle = \markup \override #'(font-name . "Didot") \fontsize #7 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #4 \center-column {"b       o       c       e       t       o       s               d       e               m       a       r       t       e"}
+	arranger = \markup \override #'(font-name . "Didot") \fontsize #3.3 {"Gregory Rowland Evans"}
 }
 
 \layout {
@@ -24,7 +24,7 @@
 	%\accidentalStyle modern
     indent = #5
 	%ragged-last = ##t
-    %ragged-right = ##t
+    ragged-right = ##t
     %left-margin = #15
 	\context {
         \name TimeSignatureContext
@@ -82,13 +82,13 @@
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 18) (minimum-distance . 18) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 19) (minimum-distance . 19) (padding . 0))
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 43)
+		proportionalNotationDuration = #(ly:make-moment 1 50)
         autoBeaming = ##f
         tupletFullLength = ##t
     }

@@ -483,13 +483,13 @@ alto_one_musicmaker_one = MusicMaker(
 )
 alto_one_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
-    pitches=soprano_1_random_walk_notes,
+    pitches=alto_1_random_walk_notes,
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
 alto_one_musicmaker_three = MusicMaker(
     rmaker=rmaker_three,
-    pitches=soprano_1_note,
+    pitches=alto_1_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
 )
@@ -502,13 +502,13 @@ alto_two_musicmaker_one = MusicMaker(
 )
 alto_two_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
-    pitches=soprano_2_random_walk_notes,
+    pitches=alto_2_random_walk_notes,
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
 alto_two_musicmaker_three = MusicMaker(
     rmaker=rmaker_three,
-    pitches=soprano_2_note,
+    pitches=alto_2_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
 )
@@ -521,13 +521,13 @@ alto_three_musicmaker_one = MusicMaker(
 )
 alto_three_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
-    pitches=soprano_3_random_walk_notes,
+    pitches=alto_3_random_walk_notes,
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
 alto_three_musicmaker_three = MusicMaker(
     rmaker=rmaker_three,
-    pitches=soprano_3_note,
+    pitches=alto_3_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
 )
