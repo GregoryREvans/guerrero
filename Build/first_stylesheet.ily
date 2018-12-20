@@ -3,18 +3,18 @@
 \version "2.19.82"
 \language "english"
 #(set-default-paper-size "11x17portrait")
-#(set-global-staff-size 9)
+#(set-global-staff-size 8)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Didot") \fontsize #4.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
-	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"GUERRERO" }
-	subtitle = \markup \override #'(font-name . "Didot") \fontsize #7 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #4 \center-column {"b       o       c       e       t       o       s               d       e               m       a       r       t       e"}
-	arranger = \markup \override #'(font-name . "Didot") \fontsize #3.3 {"Gregory Rowland Evans"}
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #5.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
+	title =  \markup \override #'(font-name . "Didot") \fontsize #17 \bold\center-column {"GUERRERO" }
+	subtitle = \markup \override #'(font-name . "Didot") \fontsize #8 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #5 \center-column {"b       o       c       e       t       o       s               d       e               m       a       r       t       e"}
+	arranger = \markup \override #'(font-name . "Didot") \fontsize #4.3 {"Gregory Rowland Evans"}
 }
 
 \layout {
@@ -24,7 +24,7 @@
 	%\accidentalStyle modern
     indent = #5
 	%ragged-last = ##t
-    ragged-right = ##t
+    %{ ragged-right = ##t %}
     %left-margin = #15
 	\context {
         \name TimeSignatureContext
@@ -41,7 +41,7 @@
 		%\override BarNumber.font-name = "Didot"
 		%{ \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print) %}
 		\override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
-		\override BarNumber.font-size = 1
+		\override BarNumber.font-size = 3
 		\override BarNumber.padding = 4
 		\override MetronomeMark.X-extent = #'(0 . 0)
 		\override MetronomeMark.Y-extent = #'(0 . 0)
@@ -56,7 +56,7 @@
 		\override RehearsalMark.break-align-symbols = #'(time-signature)
 		\override RehearsalMark.break-visibility = #end-of-line-invisible
 		\override RehearsalMark.font-name = "Didot"
-		\override RehearsalMark.font-size = 8
+		\override RehearsalMark.font-size = 10
 		\override RehearsalMark.outside-staff-priority = 500
 		\override RehearsalMark.self-alignment-X = #center
         \override TimeSignature.X-extent = #'(0 . 0)
@@ -64,9 +64,9 @@
         \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = #5
+        \override TimeSignature.font-size = #9
         \override TimeSignature.self-alignment-X = #center
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 11) (padding . 6) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 13) (padding . 6) (stretchability . 0))
     }
     \context {
         \Score
@@ -79,16 +79,17 @@
 		\override DynamicText.font-size = #-3
 		\override Glissando.breakable = ##t
 		\override Glissando.thickness = #2
+		\override MetronomeMark.font-size = 3
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 19) (minimum-distance . 19) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 20) (minimum-distance . 20) (padding . 0))
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 50)
+		proportionalNotationDuration = #(ly:make-moment 1 59)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -111,8 +112,10 @@
 
 \paper {
 
-	top-margin = 1.5\cm
-	bottom-margin = 1.5\cm
+	top-margin = 0.7\cm
+	bottom-margin = 0.4\cm
+	left-margin = 1.6\cm
+	right-margin = 1.4\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""
