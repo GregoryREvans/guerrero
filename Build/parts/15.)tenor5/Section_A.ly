@@ -1,4 +1,18 @@
+\version "2.19.82"  %! LilyPondFile
+\language "english" %! LilyPondFile
 
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+
+\header { %! LilyPondFile
+    tagline = ##f
+} %! LilyPondFile
+
+\layout {}
+
+\paper {}
+
+\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -70,8 +84,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 9/8
-            s1 * 9/8
+            \time 4/4
+            s1 * 1
         }
         \context Staff = "Staff 15"
         {
@@ -88,6 +102,7 @@
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
+                    \!
                 }
                 {
                     r4
@@ -100,7 +115,7 @@
                 {
                     <fs' fqs'' dqf''' gef'''>2
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -143,7 +158,7 @@
                 {
                     <fs' fqs'' dqf''' gef'''>2
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -185,7 +200,7 @@
                 {
                     <fs' fqs'' dqf''' gef'''>2
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -205,19 +220,19 @@
                     \times 4/5 {
                         gqf'8.
                         \mf
-                        - \tenuto
+
                         \>
                         [
                         fs'8
-                        - \tenuto
+
                     }
                     gqf'16
-                    - \tenuto
+
                     fs'16
-                    - \tenuto
+
                     gqf'8
                     \pp
-                    - \tenuto
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -242,7 +257,7 @@
                 {
                     <fs' fqs'' dqf''' gef'''>2
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -259,19 +274,19 @@
                         % [Voice 15 measure 14] %! COMMENT_MEASURE_NUMBERS
                         fs'16
                         \mf
-                        - \tenuto
+
                         \>
                         [
                         gqf'16
-                        - \tenuto
+
                         g'16
-                        - \tenuto
+
                     }
                     gqs'8.
-                    - \tenuto
+
                     af'16
                     \pp
-                    - \tenuto
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -311,7 +326,7 @@
                 {
                     <fs' fqs'' dqf''' gef'''>2
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -325,7 +340,7 @@
                     % [Voice 15 measure 18] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs'' dqf''' gef'''>1
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -349,43 +364,43 @@
                     \times 8/9 {
                         gqs'16
                         \mf
-                        - \tenuto
+
                         \>
                         [
                         g'16
-                        - \tenuto
+
                         gqs'16
-                        - \tenuto
+
                         g'16
-                        - \tenuto
+
                         gqf'8
-                        - \tenuto
+                        - \portato
                         fs'8
-                        - \tenuto
+
                         gqf'16
-                        - \tenuto
+
                     }
                 }
                 {
                     % [Voice 15 measure 21] %! COMMENT_MEASURE_NUMBERS
                     g'8
-                    - \tenuto
+
                     gqs'16
-                    - \tenuto
+
                     g'8.
-                    - \tenuto
+                    - \portato
                     gqs'8
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
                 }
                 {
-                    r4.
+                    r2
                     \!
-                    r4
                 }
             }
         }
     >>
+} %! LilyPondFile

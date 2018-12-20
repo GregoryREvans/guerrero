@@ -1,4 +1,18 @@
+\version "2.19.82"  %! LilyPondFile
+\language "english" %! LilyPondFile
 
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+
+\header { %! LilyPondFile
+    tagline = ##f
+} %! LilyPondFile
+
+\layout {}
+
+\paper {}
+
+\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -70,8 +84,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 9/8
-            s1 * 9/8
+            \time 4/4
+            s1 * 1
         }
         \context Staff = "Staff 1"
         {
@@ -86,6 +100,7 @@
                     ef'''2.
                     \p
                     ~
+                    \!
                     ef'''2
                     - \tweak stencil #constante-hairpin
                     \<
@@ -107,9 +122,9 @@
                     r2
                 }
                 {
-                    ef'''4
+                    f''4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -132,14 +147,14 @@
                 {
                     ef'''4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     \<
                 }
                 {
                     % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
-                    ef'''4
+                    b'4
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -156,9 +171,9 @@
                 }
                 {
                     % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
-                    ef'''1
+                    c'1
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -177,9 +192,9 @@
                 }
                 {
                     % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
-                    ef'''4
+                    af'4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -196,14 +211,14 @@
                     \times 4/3 {
                         gqf''16
                         \mf
-                        - \tenuto
+                        - \portato
                         \>
                         [
                         g''16
-                        - \tenuto
+
                         gqs''16
                         \pp
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -226,9 +241,9 @@
                     r2
                 }
                 {
-                    ef'''4
+                    f''4
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -236,14 +251,14 @@
                     % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS
                     g''16
                     \mf
-                    - \tenuto
+
                     \>
                     [
                     gqf''16
-                    - \tenuto
+
                     fs''8
                     \pp
-                    - \tenuto
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -263,7 +278,7 @@
                     % [Voice 1 measure 14] %! COMMENT_MEASURE_NUMBERS
                     ef'''1
                     \mp
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -297,16 +312,16 @@
                     r2
                 }
                 {
-                    ef'''4
+                    b'4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     \<
                 }
                 {
                     % [Voice 1 measure 18] %! COMMENT_MEASURE_NUMBERS
-                    ef'''2.
+                    c'2.
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -322,22 +337,22 @@
                     \times 4/5 {
                         gqf''8
                         \mf
-                        - \tenuto
+
                         \>
                         [
                         g''16
-                        - \tenuto
+
                         gqf''8
-                        - \tenuto
+
                     }
                 }
                 {
                     % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
                     fs''16
-                    - \tenuto
+
                     gqf''8.
                     \pp
-                    - \tenuto
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -355,17 +370,14 @@
                 }
                 {
                     % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    ef'''1
+                    af'1
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
-                }
-                {
-                    r8
-                    \!
                     \bar "||"
                 }
             }
         }
     >>
+} %! LilyPondFile

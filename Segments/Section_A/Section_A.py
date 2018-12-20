@@ -18,7 +18,7 @@ time_signatures = [
         (5, 4), (4, 4), (3, 4), (4, 4), (3, 4), (4, 4),
         (5, 4), (5, 4), (4, 4), (3, 4), (4, 4), (3, 4),
         (4, 4), (5, 4), (5, 4), (4, 4), (3, 4), (4, 4),
-        (3, 4), (4, 4), (9, 8),
+        (3, 4), (4, 4), (4, 4),
     ]
 ]
 
@@ -66,7 +66,7 @@ bass_1_note = [11, ]
 bass_2_note = [9, ]
 contrabass_note = [-2, 2, 7, -2, 2, 7, 2, -2]
 # -3 at bottom of chord for completion
-sopranino_chord = [27, ]
+sopranino_chord = [17, 27, 11, 0, 8,]
 soprano_1_chord = [[13.25, 16, 26.25, ], ]
 soprano_2_chord = [[13, 14.75, 26.25, ], ] #maybe it's 13.25?
 soprano_3_chord = [[12.75, 15.5, 26, ], ]
@@ -84,9 +84,9 @@ tenor_5_chord = [[6, 17.5, 25.5, 30.75, ], ]
 baritone_1_chord = [[13.25, 27.5, 33.75, ], ]
 baritone_2_chord = [[4, 16.5, 23.5, ], ]
 baritone_3_chord = [[7.75, 17.75, 25.5, 34, ], ]
-bass_1_chord = [11, ]
-bass_2_chord = [9, ]
-contrabass_chord = [-2, ]
+bass_1_chord = [11, 9, 18, ]
+bass_2_chord = [9, 11, 18, ]
+contrabass_chord = [-2, 2, 7, -2, 7, 2, ]
 
 seed(1)
 sopranino_random_walk = []
@@ -315,14 +315,14 @@ attachment_handler_two = AttachmentHandler(
     starting_dynamic='mp',
     ending_dynamic='f',
     hairpin='<',
-    articulation_list=['tenuto'],
+    articulation_list=['espressivo'],
 )
 
 attachment_handler_three = AttachmentHandler(
     starting_dynamic='mf',
     ending_dynamic='pp',
     hairpin='>',
-    articulation_list=['tenuto'],
+    articulation_list=['portato', '', '', '', '', ],
 )
 
 # Initialize MusicMakers with the rhythm-makers.
@@ -789,7 +789,7 @@ voice_1_timespan_list = abjad.TimespanList([
         [(77, 4), (79, 4), sopranino_musicmaker_one],
         [(79, 4), (83, 4), sopranino_musicmaker_two],
 
-        [(83, 4), (167, 8), silence_maker],
+        # [(83, 4), (167, 8), silence_maker],
     ]
 ])
 
@@ -1781,6 +1781,12 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
         elif isinstance(previous_leaf, abjad.Rest):
             pass
 
+for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+    first_leaf = abjad.select(staff).leaves()[0]
+    stop = abjad.LilyPondLiteral(r'\!', format_slot='after',)
+    abjad.attach(stop, first_leaf)
+
+
 #attach instruments and clefs
 
 print('Adding attachments ...')
@@ -2101,7 +2107,6 @@ for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2135,7 +2140,6 @@ for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/2.)soprano1'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2169,7 +2173,6 @@ for staff in abjad.iterate(score['Staff 3']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/3.)soprano2'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2203,7 +2206,6 @@ for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/4.)soprano3'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2237,7 +2239,6 @@ for staff in abjad.iterate(score['Staff 5']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/5.)alto1'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2271,7 +2272,6 @@ for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/6.)alto2'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2305,7 +2305,6 @@ for staff in abjad.iterate(score['Staff 7']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/7.)alto3'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2339,7 +2338,6 @@ for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/8.)alto4'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2373,7 +2371,6 @@ for staff in abjad.iterate(score['Staff 9']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/9.)alto5'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2407,7 +2404,6 @@ for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/10.)alto6'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2441,7 +2437,6 @@ for staff in abjad.iterate(score['Staff 11']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/11.)tenor1'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2475,7 +2470,6 @@ for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/12.)tenor2'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2509,7 +2503,6 @@ for staff in abjad.iterate(score['Staff 13']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/13.)tenor3'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2543,7 +2536,6 @@ for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/14.)tenor4'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2577,7 +2569,6 @@ for staff in abjad.iterate(score['Staff 15']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/15.)tenor5'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2611,7 +2602,6 @@ for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/16.)baritone1'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2645,7 +2635,6 @@ for staff in abjad.iterate(score['Staff 17']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/17.)baritone2'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2679,7 +2668,6 @@ for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/18.)baritone3'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2713,7 +2701,6 @@ for staff in abjad.iterate(score['Staff 19']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/19.)bass1'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2747,7 +2734,6 @@ for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/20.)bass2'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')
@@ -2781,7 +2767,6 @@ for staff in abjad.iterate(score['Staff 21']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/21.)contrabass'
     pdf_path = f'{directory}/Section_A.pdf'
     path = pathlib.Path('Section_A.pdf')

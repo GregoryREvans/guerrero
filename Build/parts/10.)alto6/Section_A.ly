@@ -1,4 +1,18 @@
+\version "2.19.82"  %! LilyPondFile
+\language "english" %! LilyPondFile
 
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+
+\header { %! LilyPondFile
+    tagline = ##f
+} %! LilyPondFile
+
+\layout {}
+
+\paper {}
+
+\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -70,8 +84,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 9/8
-            s1 * 9/8
+            \time 4/4
+            s1 * 1
         }
         \context Staff = "Staff 10"
         {
@@ -88,6 +102,7 @@
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
+                    \!
                 }
                 {
                     r2
@@ -97,7 +112,7 @@
                     % [Voice 10 measure 2] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -128,7 +143,7 @@
                     % [Voice 10 measure 5] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>4
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -150,7 +165,7 @@
                 {
                     <cqs'' g'' eef''' bf'''>2
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -176,7 +191,7 @@
                 {
                     <cqs'' g'' eef''' bf'''>4
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -207,7 +222,7 @@
                     % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -230,33 +245,33 @@
                     % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS
                     bqf'16
                     \mf
-                    - \tenuto
+
                     \>
                     [
                     bf'16
-                    - \tenuto
+                    - \portato
                     ~
                     bf'16
                     bqf'16
-                    - \tenuto
+
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         bf'8
-                        - \tenuto
+
                         bqf'16
-                        - \tenuto
+
                     }
                     b'8.
-                    - \tenuto
+
                     bqs'16
                     ~
                     \times 4/5 {
                         bqs'16
                         b'8
-                        - \tenuto
+                        - \portato
                         bqs'8
                         \pp
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -281,7 +296,7 @@
                 {
                     <cqs'' g'' eef''' bf'''>2
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -296,14 +311,14 @@
                     % [Voice 10 measure 14] %! COMMENT_MEASURE_NUMBERS
                     b'16
                     \mf
-                    - \tenuto
+
                     \>
                     [
                     bqf'8
-                    - \tenuto
+
                     b'16
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -355,7 +370,7 @@
                     % [Voice 10 measure 18] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>1
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -369,7 +384,7 @@
                     % [Voice 10 measure 19] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>4
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -393,17 +408,17 @@
                     \times 8/7 {
                         bqs'16
                         \mf
-                        - \tenuto
+                        - \portato
                         \>
                         [
                         b'8
-                        - \tenuto
+
                         bqs'16
-                        - \tenuto
+
                         c''16
-                        - \tenuto
+
                         bqs'16
-                        - \tenuto
+
                         b'16
                         ~
                     }
@@ -412,10 +427,10 @@
                     % [Voice 10 measure 21] %! COMMENT_MEASURE_NUMBERS
                     b'8
                     bqs'16
-                    - \tenuto
+                    - \portato
                     b'16
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -431,10 +446,7 @@
                     - \tweak stencil #constante-hairpin
                     \<
                 }
-                {
-                    r8
-                    \!
-                }
             }
         }
     >>
+} %! LilyPondFile

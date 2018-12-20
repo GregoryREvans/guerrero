@@ -1,4 +1,18 @@
+\version "2.19.82"  %! LilyPondFile
+\language "english" %! LilyPondFile
 
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+
+\header { %! LilyPondFile
+    tagline = ##f
+} %! LilyPondFile
+
+\layout {}
+
+\paper {}
+
+\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -70,8 +84,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 9/8
-            s1 * 9/8
+            \time 4/4
+            s1 * 1
         }
         \context Staff = "Staff 13"
         {
@@ -93,6 +107,7 @@
                             #'((cc . (one two three five six)) (lh . ()) (rh . ()))
                         }
                     ~
+                    \!
                     <fs' fqs'' dqf''' gef'''>2
                     _ \markup {
                         \override
@@ -107,7 +122,7 @@
                     % [Voice 13 measure 2] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs'' dqf''' gef'''>4
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -137,7 +152,7 @@
                     % [Voice 13 measure 4] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs'' dqf''' gef'''>2.
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -178,7 +193,7 @@
                 {
                     <fs' fqs'' dqf''' gef'''>2
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -214,7 +229,7 @@
                     % [Voice 13 measure 9] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs'' dqf''' gef'''>4
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -238,14 +253,14 @@
                     \times 4/3 {
                         gqf'16
                         \mf
-                        - \tenuto
+
                         \>
                         [
                         g'16
-                        - \tenuto
+                        - \portato
                         gqs'16
                         \pp
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -270,7 +285,7 @@
                 {
                     <fs' fqs'' dqf''' gef'''>4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -285,14 +300,14 @@
                     % [Voice 13 measure 13] %! COMMENT_MEASURE_NUMBERS
                     af'8
                     \mf
-                    - \tenuto
+
                     \>
                     [
                     gqs'16
-                    - \tenuto
+
                     g'16
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -312,7 +327,7 @@
                     % [Voice 13 measure 14] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs'' dqf''' gef'''>1
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -355,7 +370,7 @@
                 {
                     <fs' fqs'' dqf''' gef'''>4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -369,7 +384,7 @@
                     % [Voice 13 measure 18] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs'' dqf''' gef'''>2.
                     \f
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -392,28 +407,28 @@
                     \times 4/5 {
                         gqf'16
                         \mf
-                        - \tenuto
+                        - \portato
                         \>
                         [
                         fs'8
-                        - \tenuto
+
                         ~
                         fs'16
                         gqf'16
-                        - \tenuto
+
                     }
                 }
                 {
                     % [Voice 13 measure 20] %! COMMENT_MEASURE_NUMBERS
                     fs'16
-                    - \tenuto
+
                     gqf'16
-                    - \tenuto
+
                     fs'16
-                    - \tenuto
+                    - \portato
                     fqs'16
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -433,7 +448,7 @@
                     % [Voice 13 measure 21] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs'' dqf''' gef'''>1
                     \mp
-                    - \tenuto
+                    - \espressivo
                     _ \markup {
                         \override
                             #'(size . 0.3)
@@ -444,10 +459,7 @@
                     - \tweak stencil #constante-hairpin
                     \<
                 }
-                {
-                    r8
-                    \!
-                }
             }
         }
     >>
+} %! LilyPondFile

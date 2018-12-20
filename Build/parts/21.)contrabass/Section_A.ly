@@ -1,4 +1,18 @@
+\version "2.19.82"  %! LilyPondFile
+\language "english" %! LilyPondFile
 
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+
+\header { %! LilyPondFile
+    tagline = ##f
+} %! LilyPondFile
+
+\layout {}
+
+\paper {}
+
+\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -70,8 +84,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 9/8
-            s1 * 9/8
+            \time 4/4
+            s1 * 1
         }
         \context Staff = "Staff 21"
         {
@@ -85,9 +99,10 @@
                     \markup { Contrabass }
                     bf1
                     \mp
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
+                    \!
                 }
                 {
                     r4
@@ -110,16 +125,16 @@
                     \!
                 }
                 {
-                    bf2
+                    d'2
                     \mp
-                    - \tenuto
+                    - \espressivo
                     \<
                 }
                 {
                     % [Voice 21 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    bf1
+                    g'1
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -143,7 +158,7 @@
                     % [Voice 21 measure 7] %! COMMENT_MEASURE_NUMBERS
                     bf2
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -168,9 +183,9 @@
                     r2
                 }
                 {
-                    bf2
+                    g'2
                     \mp
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -182,22 +197,22 @@
                 {
                     bqs8
                     \mf
-                    - \tenuto
+
                     \>
                     [
                     c'16
-                    - \tenuto
+
                     cqs'16
-                    - \tenuto
+                    - \portato
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         c'16
-                        - \tenuto
+
                         bqs16
-                        - \tenuto
+
                         c'16
                         \pp
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -221,9 +236,9 @@
                     r2
                 }
                 {
-                    bf2
+                    d'2
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -231,21 +246,21 @@
                     % [Voice 21 measure 14] %! COMMENT_MEASURE_NUMBERS
                     cqs'8
                     \mf
-                    - \tenuto
+
                     \>
                     [
                     cs'8
-                    - \tenuto
+                    - \portato
                     \times 4/5 {
                         dqf'16
-                        - \tenuto
+
                         cs'8
-                        - \tenuto
+
                         cqs'16
-                        - \tenuto
+
                         c'16
                         \pp
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -286,14 +301,14 @@
                 {
                     bf2
                     \mp
-                    - \tenuto
+                    - \espressivo
                     \<
                 }
                 {
                     % [Voice 21 measure 18] %! COMMENT_MEASURE_NUMBERS
-                    bf1
+                    d'1
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -309,13 +324,13 @@
                 {
                     cqs'8
                     \mf
-                    - \tenuto
+                    - \portato
                     \>
                     [
                     c'8
-                    - \tenuto
+
                     cqs'8
-                    - \tenuto
+
                     c'8
                     ~
                 }
@@ -325,24 +340,24 @@
                         % [Voice 21 measure 21] %! COMMENT_MEASURE_NUMBERS
                         c'16
                         bqs8
-                        - \tenuto
+
                         b16
-                        - \tenuto
+
                         bqs16
-                        - \tenuto
+                        - \portato
                         c'8
                         \pp
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                 }
                 {
-                    r4.
+                    r2
                     \!
-                    r4
                 }
             }
         }
     >>
+} %! LilyPondFile

@@ -1,4 +1,18 @@
+\version "2.19.82"  %! LilyPondFile
+\language "english" %! LilyPondFile
 
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+
+\header { %! LilyPondFile
+    tagline = ##f
+} %! LilyPondFile
+
+\layout {}
+
+\paper {}
+
+\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -43,8 +57,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
-            \time 5/4
-            s1 * 5/4
+            \time 9/8
+            s1 * 9/8
         }
         \context Staff = "Staff 10"
         {
@@ -258,10 +272,10 @@
                     ]
                 }
                 {
-                    r2.
+                    r1
                     \!
-                    r4.
                 }
             }
         }
     >>
+} %! LilyPondFile

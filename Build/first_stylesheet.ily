@@ -41,7 +41,7 @@
 		%\override BarNumber.font-name = "Didot"
 		%{ \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print) %}
 		\override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
-		\override BarNumber.font-size = 3
+		\override BarNumber.font-size = 5
 		\override BarNumber.padding = 4
 		\override MetronomeMark.X-extent = #'(0 . 0)
 		\override MetronomeMark.Y-extent = #'(0 . 0)
@@ -114,8 +114,8 @@
 
 	top-margin = 0.7\cm
 	bottom-margin = 0.4\cm
-	left-margin = 1.6\cm
-	right-margin = 1.4\cm
+	left-margin = 1.5\cm
+	right-margin = 1.3\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""

@@ -1,4 +1,18 @@
+\version "2.19.82"  %! LilyPondFile
+\language "english" %! LilyPondFile
 
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+
+\header { %! LilyPondFile
+    tagline = ##f
+} %! LilyPondFile
+
+\layout {}
+
+\paper {}
+
+\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -70,8 +84,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
-            \time 9/8
-            s1 * 9/8
+            \time 4/4
+            s1 * 1
         }
         \context Staff = "Staff 19"
         {
@@ -86,6 +100,7 @@
                     b'2.
                     \mp
                     ~
+                    \!
                     b'2
                     \<
                 }
@@ -106,16 +121,16 @@
                     r2
                 }
                 {
-                    b'4
+                    a'4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     \<
                 }
                 {
                     % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    b'2.
+                    fs''2.
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -138,7 +153,7 @@
                     % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS
                     b'4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -176,9 +191,9 @@
                 }
                 {
                     % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
-                    b'4
+                    a'4
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -193,16 +208,16 @@
                 {
                     dqs'16
                     \mf
-                    - \tenuto
+
                     \>
                     [
                     ef'16
-                    - \tenuto
+
                     eqf'16
-                    - \tenuto
+
                     e'16
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -224,9 +239,9 @@
                     r2
                 }
                 {
-                    b'4
+                    fs''4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -235,14 +250,14 @@
                         % [Voice 19 measure 13] %! COMMENT_MEASURE_NUMBERS
                         eqf'16
                         \mf
-                        - \tenuto
+                        - \portato
                         \>
                         [
                         e'8
-                        - \tenuto
+
                         eqf'8
                         \pp
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -263,7 +278,7 @@
                     % [Voice 19 measure 14] %! COMMENT_MEASURE_NUMBERS
                     b'1
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -297,16 +312,16 @@
                     r2
                 }
                 {
-                    b'4
+                    a'4
                     \mp
-                    - \tenuto
+                    - \espressivo
                     \<
                 }
                 {
                     % [Voice 19 measure 18] %! COMMENT_MEASURE_NUMBERS
-                    b'2.
+                    fs''2.
                     \f
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -321,20 +336,20 @@
                 {
                     ef'16
                     \mf
-                    - \tenuto
+
                     \>
                     [
                     dqs'8
-                    - \tenuto
+
                     d'16
-                    - \tenuto
+                    - \portato
                     ]
                 }
                 {
                     % [Voice 19 measure 20] %! COMMENT_MEASURE_NUMBERS
                     dqf'4
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -353,14 +368,11 @@
                     % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
                     b'1
                     \mp
-                    - \tenuto
+                    - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
-                }
-                {
-                    r8
-                    \!
                 }
             }
         }
     >>
+} %! LilyPondFile

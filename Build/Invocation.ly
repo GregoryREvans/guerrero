@@ -43,8 +43,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
-            \time 5/4
-            s1 * 5/4
+            \time 9/8
+            s1 * 9/8
         }
         \context StaffGroup = "Staff Group"
         <<
@@ -81,10 +81,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -106,14 +104,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
@@ -131,10 +127,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -165,7 +159,6 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
@@ -180,7 +173,6 @@
                     {
                         % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -190,10 +182,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             c'''4
                             \f
 
@@ -203,10 +193,8 @@
                     }
                     {
                         % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -226,14 +214,12 @@
                     }
                     {
                         % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
                     }
                     {
                         % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         dqf'''16
@@ -258,13 +244,11 @@
                     }
                     {
                         % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         r4
-                        \stopStaff \startStaff
                         e''8
                         \mp
 
@@ -278,13 +262,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
                         \bar "||"
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -298,9 +276,7 @@
                         \markup { spr.1 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 1" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
-                        \stopStaff \startStaff
                     }
                     {
                         ef''4
@@ -313,10 +289,8 @@
                         eqf''2
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -342,13 +316,11 @@
                     }
                     {
                         % [Voice 2 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
                     }
                     {
                         r8
-                        \stopStaff \startStaff
                         g''8
                         \mp
                         \<
@@ -366,10 +338,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -412,10 +382,8 @@
                     }
                     {
                         % [Voice 2 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         cs'''8
@@ -435,13 +403,11 @@
                         \<
                         [
                         ]
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
                     }
                     {
                         r1
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -473,10 +439,8 @@
                     }
                     {
                         % [Voice 2 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         f''4
@@ -499,11 +463,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r1
                         \!
-                        r4.
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -517,9 +478,7 @@
                         \markup { spr.2 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 2" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -544,10 +503,8 @@
                     }
                     {
                         % [Voice 3 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 3 measure 3] %! COMMENT_MEASURE_NUMBERS
@@ -559,14 +516,12 @@
                     }
                     {
                         % [Voice 3 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         \times 2/3 {
                             r8
-                            \stopStaff \startStaff
                             eqf''4
                             \mp
                             - \tenuto
@@ -582,10 +537,8 @@
                     }
                     {
                         % [Voice 3 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -615,14 +568,12 @@
                         g''2
                         \mp
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         % [Voice 3 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r1
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 3 measure 9] %! COMMENT_MEASURE_NUMBERS
@@ -650,10 +601,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 3 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -672,10 +621,8 @@
                     }
                     {
                         % [Voice 3 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -692,11 +639,8 @@
                         dqf''4.
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4.
+                        r2
                         \!
-                        r4
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -710,9 +654,7 @@
                         \markup { spr.3 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 3" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         b'4.
@@ -726,10 +668,8 @@
                             \<
                             [
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
                             bqs'8
@@ -742,14 +682,12 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 4 measure 2] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         c''8
@@ -769,14 +707,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 4 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         cs''8
@@ -798,14 +734,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 4 measure 5] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         ef''4
@@ -819,10 +753,8 @@
                             \<
                             [
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                         }
                     }
                     {
@@ -834,14 +766,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 4 measure 7] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -871,14 +801,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 4 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -904,10 +832,8 @@
                     }
                     {
                         % [Voice 4 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         a''4
@@ -920,14 +846,12 @@
                         a''2
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 4 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -946,12 +870,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -989,10 +907,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1018,14 +934,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         % [Voice 5 measure 3] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 5 measure 4] %! COMMENT_MEASURE_NUMBERS
@@ -1034,10 +948,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         gqs''4.
@@ -1045,10 +957,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1074,7 +984,6 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
@@ -1089,7 +998,6 @@
                     {
                         % [Voice 5 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         b''2
@@ -1109,10 +1017,8 @@
                     }
                     {
                         % [Voice 5 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \set stemLeftBeamCount = 0
@@ -1124,10 +1030,8 @@
                         \<
                         [
                         ]
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         cqs'''4.
                         \mp
                         \<
@@ -1141,14 +1045,12 @@
                     }
                     {
                         % [Voice 5 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
                     }
                     {
                         % [Voice 5 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1172,10 +1074,8 @@
                     }
                     {
                         % [Voice 5 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         eqf''4
@@ -1194,12 +1094,6 @@
                         \<
                         ]
                     }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
-                    }
                 }
             }
             \context Staff = "Staff 6"
@@ -1212,9 +1106,7 @@
                         \markup { alt.2 }
                         \set Staff.instrumentName =
                         \markup { "Alto 2" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
-                        \stopStaff \startStaff
                     }
                     {
                         bf'4
@@ -1225,10 +1117,8 @@
                     }
                     {
                         % [Voice 6 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         bqf'4.
@@ -1236,10 +1126,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1264,10 +1152,8 @@
                     }
                     {
                         % [Voice 6 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         d''4
@@ -1283,10 +1169,8 @@
                         dqs''4.
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1330,10 +1214,8 @@
                     }
                     {
                         % [Voice 6 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \set stemLeftBeamCount = 0
@@ -1345,10 +1227,8 @@
                         \<
                         [
                         ]
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         aqf''4
                         \mp
                         \<
@@ -1368,10 +1248,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1398,10 +1276,8 @@
                     }
                     {
                         % [Voice 6 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         cqs''4
@@ -1421,11 +1297,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r1
                         \!
-                        r4.
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -1439,9 +1312,7 @@
                         \markup { alt.3 }
                         \set Staff.instrumentName =
                         \markup { "Alto 3" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1466,10 +1337,8 @@
                     }
                     {
                         % [Voice 7 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 7 measure 3] %! COMMENT_MEASURE_NUMBERS
@@ -1479,10 +1348,8 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         \times 2/3 {
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             aqs'4
                             \mp
                             - \tenuto
@@ -1498,10 +1365,8 @@
                     }
                     {
                         % [Voice 7 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         bqf'4.
@@ -1511,10 +1376,8 @@
                     }
                     {
                         % [Voice 7 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1552,10 +1415,8 @@
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             ef''8
                             \mp
                             \<
@@ -1568,10 +1429,8 @@
                     }
                     {
                         % [Voice 7 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1601,10 +1460,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1632,10 +1489,8 @@
                     }
                     {
                         % [Voice 7 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 7 measure 12] %! COMMENT_MEASURE_NUMBERS
@@ -1646,11 +1501,8 @@
                         bf'4.
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4.
+                        r2
                         \!
-                        r4
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -1664,9 +1516,7 @@
                         \markup { alt.4 }
                         \set Staff.instrumentName =
                         \markup { "Alto 4" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         \set stemLeftBeamCount = 0
@@ -1678,10 +1528,8 @@
                         \<
                         [
                         ]
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         d'8
                         \mp
                         - \tenuto
@@ -1697,14 +1545,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 8 measure 2] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         ef'2
@@ -1721,14 +1567,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 8 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -1755,14 +1599,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 8 measure 5] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         gqf'4
@@ -1771,10 +1613,8 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         \times 2/3 {
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             g'4
                             \mp
                             - \tenuto
@@ -1792,14 +1632,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 8 measure 7] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1831,14 +1669,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 8 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1848,7 +1684,7 @@
                             \<
                             [
                             b'16
-                            dqf'16
+                            bqs'16
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
@@ -1865,10 +1701,8 @@
                     }
                     {
                         % [Voice 8 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         dqf'4
@@ -1884,14 +1718,12 @@
                         d'4.
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 8 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -1915,12 +1747,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -1960,10 +1786,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 9 measure 2] %! COMMENT_MEASURE_NUMBERS
@@ -1987,14 +1811,12 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         % [Voice 9 measure 3] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -2008,10 +1830,8 @@
                             \<
                             [
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             g'8
                             \mp
                             \<
@@ -2027,10 +1847,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2056,7 +1874,6 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
@@ -2071,10 +1888,9 @@
                     {
                         % [Voice 9 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
-                        dqf'4
+                        bqs'4
                         \mp
 
                         \<
@@ -2083,14 +1899,12 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
                     }
                     {
                         % [Voice 9 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2111,14 +1925,12 @@
                     }
                     {
                         % [Voice 9 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
                     }
                     {
                         % [Voice 9 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -2145,22 +1957,15 @@
                     }
                     {
                         % [Voice 9 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         eqf'2
                         \mp
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                    }
-                    {
-                        r8
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -2174,9 +1979,7 @@
                         \markup { alt.6 }
                         \set Staff.instrumentName =
                         \markup { "Alto 6" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
-                        \stopStaff \startStaff
                     }
                     {
                         c'4
@@ -2198,10 +2001,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -2226,10 +2027,8 @@
                     }
                     {
                         % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         e'4
@@ -2247,10 +2046,8 @@
                             \<
                             [
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
                             eqs'8
@@ -2263,10 +2060,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 10 measure 6] %! COMMENT_MEASURE_NUMBERS
@@ -2309,10 +2104,8 @@
                     }
                     {
                         % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         bf'8
@@ -2332,10 +2125,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -2364,10 +2155,8 @@
                     }
                     {
                         % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         dqf'4
@@ -2375,10 +2164,8 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         d'8
                         \mp
                         \<
@@ -2394,11 +2181,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r1
                         \!
-                        r4.
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -2412,9 +2196,7 @@
                         \markup { ten.1 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 1" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         g'4
@@ -2438,10 +2220,8 @@
                     }
                     {
                         % [Voice 11 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 11 measure 3] %! COMMENT_MEASURE_NUMBERS
@@ -2463,10 +2243,8 @@
                     }
                     {
                         % [Voice 11 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -2477,10 +2255,8 @@
                             \<
                             [
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             bqs'4
                             \mp
 
@@ -2496,10 +2272,8 @@
                     }
                     {
                         % [Voice 11 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2534,10 +2308,8 @@
                     }
                     {
                         % [Voice 11 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -2566,10 +2338,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 11 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -2594,10 +2364,8 @@
                     }
                     {
                         % [Voice 11 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -2611,10 +2379,8 @@
                             \<
                             [
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             bf'8
                             \mp
 
@@ -2632,11 +2398,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4.
+                        r2
                         \!
-                        r4
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -2650,9 +2413,7 @@
                         \markup { ten.2 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 2" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         ef'4.
@@ -2666,14 +2427,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 12 measure 2] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         e'4
@@ -2682,10 +2441,8 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         \times 2/3 {
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             eqs'4
                             \mp
                             - \tenuto
@@ -2703,14 +2460,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2733,14 +2488,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 12 measure 5] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         af'4.
@@ -2759,14 +2512,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 12 measure 7] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -2792,14 +2543,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 12 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -2826,10 +2575,8 @@
                     }
                     {
                         % [Voice 12 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -2842,10 +2589,8 @@
                             \<
                             [
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             dqs''8
                             \mp
                             \<
@@ -2860,14 +2605,12 @@
                         ef'4.
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 12 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         eqf'16
@@ -2891,12 +2634,6 @@
                             \<
                             ]
                         }
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -2926,10 +2663,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -2956,14 +2691,12 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         % [Voice 13 measure 3] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 13 measure 4] %! COMMENT_MEASURE_NUMBERS
@@ -2978,10 +2711,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 13 measure 5] %! COMMENT_MEASURE_NUMBERS
@@ -3008,7 +2739,6 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
@@ -3027,7 +2757,6 @@
                     {
                         \times 2/3 {
                             r8
-                            \stopStaff \startStaff
                             aqf'4
                             \mp
                             - \tenuto
@@ -3043,10 +2772,8 @@
                     }
                     {
                         % [Voice 13 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         aqs'2
@@ -3054,10 +2781,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
                         bf'8
@@ -3070,14 +2795,12 @@
                     }
                     {
                         % [Voice 13 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
                     }
                     {
                         % [Voice 13 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3100,10 +2823,8 @@
                     }
                     {
                         % [Voice 13 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         cqs'4
@@ -3111,12 +2832,6 @@
 
                         \<
                         cs'4.
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -3130,9 +2845,7 @@
                         \markup { ten.4 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 4" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
-                        \stopStaff \startStaff
                     }
                     {
                         cqs'4
@@ -3146,13 +2859,11 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -3179,10 +2890,8 @@
                     }
                     {
                         % [Voice 14 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -3201,10 +2910,8 @@
                         eqs'2
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -3247,10 +2954,8 @@
                     }
                     {
                         % [Voice 14 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         b'2
@@ -3260,10 +2965,8 @@
                     {
                         \times 2/3 {
                             % [Voice 14 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             bqs'4
                             \f
 
@@ -3274,10 +2977,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3305,10 +3006,8 @@
                     }
                     {
                         % [Voice 14 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         d'2
@@ -3326,11 +3025,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r1
                         \!
-                        r4.
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -3344,9 +3040,7 @@
                         \markup { ten.5 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 5" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -3373,10 +3067,8 @@
                     }
                     {
                         % [Voice 15 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 15 measure 3] %! COMMENT_MEASURE_NUMBERS
@@ -3386,10 +3078,8 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         \times 2/3 {
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             eqf'4
                             \f
 
@@ -3401,10 +3091,8 @@
                     }
                     {
                         % [Voice 15 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         e'4
@@ -3425,10 +3113,8 @@
                     }
                     {
                         % [Voice 15 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 15 measure 6] %! COMMENT_MEASURE_NUMBERS
@@ -3459,10 +3145,8 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         a'4.
@@ -3471,10 +3155,8 @@
                     }
                     {
                         % [Voice 15 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 15 measure 9] %! COMMENT_MEASURE_NUMBERS
@@ -3494,10 +3176,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -3522,10 +3202,8 @@
                     }
                     {
                         % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 15 measure 12] %! COMMENT_MEASURE_NUMBERS
@@ -3535,11 +3213,8 @@
                         ef'4
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4.
+                        r2
                         \!
-                        r4
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -3553,9 +3228,7 @@
                         \markup { bar.1 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 1" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         \set stemLeftBeamCount = 0
@@ -3567,10 +3240,8 @@
                         \<
                         [
                         ]
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         dqs'4.
@@ -3578,14 +3249,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 16 measure 2] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         ef'4.
@@ -3604,14 +3273,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 16 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         e'8
@@ -3632,14 +3299,12 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 16 measure 5] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \set stemLeftBeamCount = 0
@@ -3651,10 +3316,8 @@
                         \<
                         [
                         ]
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         gqs'4
                         \mp
 
@@ -3669,14 +3332,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 16 measure 7] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         aqf'4
@@ -3698,14 +3359,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 16 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -3729,10 +3388,8 @@
                     }
                     {
                         % [Voice 16 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         dqf''4
@@ -3747,7 +3404,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
                     }
@@ -3757,7 +3413,6 @@
                     {
                         % [Voice 16 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         dqs'8
@@ -3778,12 +3433,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -3813,10 +3462,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 17 measure 2] %! COMMENT_MEASURE_NUMBERS
@@ -3843,14 +3490,12 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         % [Voice 17 measure 3] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3871,10 +3516,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3899,7 +3542,6 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
@@ -3914,7 +3556,6 @@
                     {
                         % [Voice 17 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3935,10 +3576,8 @@
                             \<
                             [
                             ]
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 0
                             aqf'8
@@ -3952,10 +3591,8 @@
                     }
                     {
                         % [Voice 17 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         a'8
@@ -3973,14 +3610,12 @@
                     }
                     {
                         % [Voice 17 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
                     }
                     {
                         % [Voice 17 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -4010,10 +3645,8 @@
                     }
                     {
                         % [Voice 17 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         cqs'4.
@@ -4021,10 +3654,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         cs'8
@@ -4034,12 +3665,6 @@
                         \<
                         [
                         ]
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -4053,9 +3678,7 @@
                         \markup { bar.3 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 3" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -4079,10 +3702,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS
@@ -4111,10 +3732,8 @@
                     }
                     {
                         % [Voice 18 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         ef'4
@@ -4125,10 +3744,8 @@
                     }
                     {
                         % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
                         \!
-                        \stopStaff \startStaff
                         eqf'4
                         \mp
 
@@ -4142,10 +3759,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -4188,10 +3803,8 @@
                     }
                     {
                         % [Voice 18 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         bf'2
@@ -4208,10 +3821,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -4236,13 +3847,11 @@
                     }
                     {
                         % [Voice 18 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         r8
-                        \stopStaff \startStaff
                         cs'4
                         \mp
                         - \tenuto
@@ -4260,11 +3869,8 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r2.
+                        r1
                         \!
-                        r4.
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -4278,9 +3884,7 @@
                         \markup { bs.1 }
                         \set Staff.instrumentName =
                         \markup { "Bass 1" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -4305,10 +3909,8 @@
                     }
                     {
                         % [Voice 19 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 19 measure 3] %! COMMENT_MEASURE_NUMBERS
@@ -4320,14 +3922,12 @@
                     }
                     {
                         % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         \times 2/3 {
                             r8
-                            \stopStaff \startStaff
                             eqf'4
                             \mp
 
@@ -4343,10 +3943,8 @@
                     }
                     {
                         % [Voice 19 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -4378,14 +3976,12 @@
                         af'2
                         \mp
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r1
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
@@ -4408,10 +4004,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -4438,10 +4032,8 @@
                     }
                     {
                         % [Voice 19 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r1
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -4461,11 +4053,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r4.
+                        r2
                         \!
-                        r4
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -4479,9 +4068,7 @@
                         \markup { bs.2 }
                         \set Staff.instrumentName =
                         \markup { "Bass 2" }
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         \set stemLeftBeamCount = 1
@@ -4489,7 +4076,6 @@
                         b4.
                         \mp
                         \<
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
@@ -4499,7 +4085,6 @@
                     {
                         % [Voice 20 measure 2] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -4523,14 +4108,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        \stopStaff \startStaff
                     }
                     {
                         \times 2/3 {
@@ -4556,14 +4139,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 20 measure 5] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         eqf'2
@@ -4573,10 +4154,8 @@
                     {
                         \times 2/3 {
                             % [Voice 20 measure 6] %! COMMENT_MEASURE_NUMBERS
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                             e'4
                             \f
 
@@ -4587,14 +4166,12 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 20 measure 7] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -4621,14 +4198,12 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 20 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -4654,10 +4229,8 @@
                     }
                     {
                         % [Voice 20 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         aqs'4
@@ -4677,14 +4250,12 @@
                         ]
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
                     {
                         % [Voice 20 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r2
-                        \stopStaff \startStaff
                     }
                     {
                         \times 4/5 {
@@ -4706,12 +4277,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
@@ -4743,10 +4308,8 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 21 measure 2] %! COMMENT_MEASURE_NUMBERS
@@ -4772,14 +4335,12 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
                     {
                         % [Voice 21 measure 3] %! COMMENT_MEASURE_NUMBERS
                         r2.
-                        \stopStaff \startStaff
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -4790,10 +4351,8 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                             r8
                             \!
-                            \stopStaff \startStaff
                         }
                         \times 2/3 {
                             bqs'4
@@ -4810,10 +4369,8 @@
                         }
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         % [Voice 21 measure 5] %! COMMENT_MEASURE_NUMBERS
@@ -4834,7 +4391,6 @@
                         \<
                     }
                     {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r4
                         \!
                     }
@@ -4849,7 +4405,6 @@
                     {
                         % [Voice 21 measure 8] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         ef''4.
@@ -4864,7 +4419,6 @@
                     }
                     {
                         % [Voice 21 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
                     }
@@ -4872,7 +4426,6 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             r8
-                            \stopStaff \startStaff
                             e''4
                             \mp
 
@@ -4886,14 +4439,12 @@
                     }
                     {
                         % [Voice 21 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2.
                         \!
                     }
                     {
                         % [Voice 21 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r4
-                        \stopStaff \startStaff
                     }
                     {
                         \times 8/9 {
@@ -4922,10 +4473,8 @@
                     }
                     {
                         % [Voice 21 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
                         r2
                         \!
-                        \stopStaff \startStaff
                     }
                     {
                         af'4
@@ -4943,12 +4492,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff
-                        r8
-                        \!
-                        \stopStaff \startStaff
                     }
                 }
             }
