@@ -96,671 +96,955 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 25] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
+            \time 7/8
+            s1 * 7/8
         }
         \context Staff = "Staff 19"
         {
             \context Voice = "Voice 19"
             {
                 {
-                    \times 4/5 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
                         % [Voice 19 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
                         \markup { bs.1 }
                         \set Staff.instrumentName =
                         \markup { "Bass 1" }
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         ates'16
-                        \mp
+                        \ppp
                         - \flageolet
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        ]
+                        \!
+                        r16
+                        \!
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        b'16
+                        \mp
+                        - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        ]
+                    }
+                }
+                {
+                    r4
+                    \!
+                }
+                {
+                    \times 4/5 {
+                        bes'8
+                        \mp
+                        - \halfopen
                         \>
                         [
-                        b'4
-                        - \flageolet
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bes'16
-                        - \stopped
-                        b'8
+                        b'16
+                        - \halfopen
                         ~
+                        b'16
+                        ates'16
+                        \ppp
+                        - \flageolet
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
-                    \times 4/5 {
-                        b'8.
-                        ates'8
-                        - \stopped
-                    }
-                    b'16
-
-                    ates'8.
-
+                }
+                {
+                    ates'8
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r8
+                    \!
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 19 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        aqs'16
+                        r8
+                        b'16
+                        \mp
 
-                        aes'16
-
-                        a'16
-                        - \flageolet
+                        \>
+                        [
                     }
-                    btes'8.
-                    - \halfopen
-                    a'16
-                    ~
-                    a'16
-                    aes'16
-                    - \halfopen
-                    aqs'8
-                    - \halfopen
-                    \times 4/5 {
-                        ates'4
-                        - \flageolet
-                        aqs'16
+                    ates'8.
+                    \ppp
 
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    r16
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 0
+                    aqs'8.
+                    \ppp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    ]
+                }
+                {
+                    r4
+                    \!
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 19 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        aes'8
+                        \mp
+
+                        \>
+                        [
+                        a'16
+
+                        btes'8
+                        ~
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        btes'8
+                        \ppp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                    }
+                    \times 4/5 {
+                        a'8.
+                        \mp
+                        ~
+                        [
+                        a'8
+                        \>
+                    }
+                }
+                {
+                    b'8
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    \set stemLeftBeamCount = 2
+                    \set stemRightBeamCount = 0
+                    bes'16
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    ]
+                }
+                {
+                    % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                    \!
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        aes'8
+                        \mp
+
+                        \>
+                        [
+                        aqs'16
+                        - \halfopen
+                    }
+                    ates'16
+                    \ppp
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    aqs'8
+                    \mp
+                    - \halfopen
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                }
+                {
+                    b'16
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ates'8
+                    - \stopped
+                    b'16
+                    - \stopped
+                    ]
+                }
+                {
+                    % [Voice 19 measure 5] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                    \!
+                }
+                {
+                    \times 4/5 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        aes'8
+                        \ppp
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        ]
+                        r8.
+                        \!
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        r16
+                        a'16
+                        \mp
+                        - \stopped
+                        \>
+                        [
+                        aes'16
+                        \ppp
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
                     }
                 }
                 {
-                    % [Voice 19 measure 3] %! COMMENT_MEASURE_NUMBERS
-                    aes'4
-
-                    \times 4/5 {
-                        a'8
-
-                        [
-                        aes'8.
-
-                    }
-                    a'8
-
-                    btes'16
-
-                    a'16
-                    ~
-                    ]
-                    a'4
-                }
-                {
-                    % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    btes'16
-                    - \halfopen
-                    [
-                    a'8.
-                    ~
-                    a'8
-                    aes'8
-                    - \flageolet
-                    \times 4/5 {
-                        aqs'16
-                        - \halfopen
-                        ates'8
-                        - \stopped
-                        ~
-                        ates'16
-                        aqs'16
-                        - \stopped
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        ates'16
-                        - \stopped
-                        aqs'16
-                        - \stopped
-                        aes'16
-                        ~
-                    }
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 19 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        aes'8
-                        a'16
-                        - \stopped
-                        ~
-                        a'16
-                        btes'16
-                        - \stopped
-                    }
-                    bqs'8
-                    - \stopped
-                    bes'8
-                    ~
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bes'8
-                        b'16
-                        - \stopped
-                    }
-                    bes'8.
-                    - \stopped
-                    bqs'16
-                    ~
+                    r4
+                    \!
                 }
                 {
                     % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS
-                    bqs'16
-                    bes'8.
-                    - \stopped
-                    \times 4/5 {
-                        b'8
-
-                        ates'16
-                        - \flageolet
-                        aqs'8
-                        ~
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        aqs'8
-                        aes'16
-                        - \flageolet
-                    }
-                    \times 4/5 {
-                        aqs'8.
-                        ~
-                        aqs'8
-                    }
+                    r1
                 }
                 {
                     % [Voice 19 measure 7] %! COMMENT_MEASURE_NUMBERS
-                    ates'8
-                    - \flageolet
-                    aqs'16
-                    - \flageolet
-                    aes'16
-                    ~
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        aes'8
-                        a'16
-                        - \stopped
-                    }
-                    btes'16
-                    - \stopped
-                    bqs'16
-
-                    bes'8
-                    ~
-                    bes'16
-                    b'16
-
-                    ~
-                    b'16
-                    bes'16
-
+                    r4
                 }
                 {
                     \times 4/5 {
-                        % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        bqs'8
-
-                        btes'8.
-                        ~
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        ates'8
+                        \p
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        ]
+                        r16
+                        \!
+                        r16
+                        aqs'16
+                        \p
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
                     }
+                }
+                {
+                    a'8
+                    \mp
+                    - \stopped
+                    \>
+                    btes'8
+                    - \stopped
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        btes'16
-                        bqs'16
-                        - \flageolet
-                        btes'16
-                        ~
-                    }
-                    \times 4/5 {
+                        a'16
+                        - \stopped
                         btes'8
-                        bqs'16
-                        - \halfopen
-                        ~
-                        bqs'16
-                        bes'16
-                        ~
+                        \ppp
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
-                    bes'8
-                    b'8
-                    - \halfopen
+                }
+                {
+                    % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS
+                    aes'8
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    \set stemLeftBeamCount = 2
+                    \set stemRightBeamCount = 0
+                    a'16
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    ]
+                }
+                {
+                    r4
+                    \!
+                }
+                {
+                    a'4
+                    \mp
+                    - \stopped
+                    \>
+                    \times 4/5 {
+                        aes'8
+                        \ppp
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        ]
+                        r16
+                        \!
+                        aqs'8
+                        \mp
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                    }
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/7 {
                         % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        bes'16
-                        - \halfopen
-                        ]
-                        b'4
-                        - \flageolet
-                        bes'16
-
-                        [
-                        bqs'16
-                        ~
-                        ]
-                    }
-                    bqs'4
-                    btes'8
-
-                    [
-                    bqs'16
-
-                    bes'16
-                    ~
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 19 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        bes'8
-                        bqs'16
-
                         btes'16
-
+                        \p
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
                         a'16
-
-                        ]
-                    }
-                    btes'4
-                    - \halfopen
-                    \times 4/5 {
-                        a'8
-                        - \flageolet
-                        [
+                        - \stopped
                         aes'16
-                        - \halfopen
-                        a'8
                         - \stopped
                         ]
-                    }
-                    btes'4
-                    - \stopped
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 19 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        a'16
-                        - \stopped
-                        [
-                        aes'8
-                        ~
-                    }
-                    aes'16
-                    a'16
-                    - \stopped
-                    ~
-                    a'16
-                    btes'16
-                    ~
-                    btes'8
-                    bqs'8
-                    - \stopped
-                    \times 4/5 {
-                        bes'16
-                        - \stopped
-                        b'4
-                        - \stopped
-                    }
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 19 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        ates'16
-                        - \stopped
-                        aqs'8
-                        ~
-                    }
-                    \times 4/5 {
+                        r16
+                        \!
                         aqs'8.
-                        ates'8
+                        \p
                         - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
                     }
-                    b'16
-                    - \stopped
-                    bes'8.
+                }
+                {
+                    \times 4/5 {
+                        ates'8
+                        \mp
 
+                        \>
+                        aqs'16
+                        - \flageolet
+                        ates'8
+                        \ppp
+                        - \flageolet
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                }
+                {
+                    r4
+                    \!
+                }
+                {
+                    % [Voice 19 measure 10] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                }
+                {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        b'16
-                        - \flageolet
-                        bes'16
-                        - \flageolet
-                        b'16
-                        - \flageolet
+                        ates'16
+                        \p
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        aqs'8
+                        - \stopped
                     }
+                }
+                {
+                    aes'16
+                    \ppp
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    r16
+                    a'8.
+                    \mp
+                    \>
+                    [
+                    btes'8
+                    - \flageolet
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 19 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        bqs'16
+                        - \stopped
+                        bes'4
+                        \ppp
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        r16
+                        \!
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        aes'8
+                        \p
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        ]
+                    }
+                }
+                {
+                    r2
+                    \!
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 19 measure 12] %! COMMENT_MEASURE_NUMBERS
+                        b'8.
+                        \mp
+
+                        \>
+                        [
+                        bes'8
+                        \ppp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                }
+                {
+                    r16
+                    \!
+                    a'8.
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        bqs'16
+                        \mp
+
+                        \>
+                        bes'16
+                        \ppp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                    }
+                    b'8.
+                    \mp
+                    - \flageolet
+                    \>
+                    [
+                    ates'16
+                    ~
                 }
                 {
                     % [Voice 19 measure 13] %! COMMENT_MEASURE_NUMBERS
-                    ates'8.
-                    - \flageolet
+                    ates'16
                     aqs'16
-                    ~
-                    aqs'16
-                    aes'16
-                    - \stopped
-                    a'8
-                    - \stopped
+                    - \halfopen
+                    aes'8
+                    \ppp
+                    - \halfopen
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                }
+                {
+                    r4
+                    \!
+                }
+                {
                     \times 4/5 {
-                        btes'4
-
-                        bqs'16
-
+                        r4
+                        aqs'16
+                        \mp
+                        - \halfopen
+                        \>
+                        [
                         ]
                     }
-                    bes'4
-
+                    ates'4
+                    \ppp
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
                     \times 4/5 {
                         % [Voice 19 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        bqs'8
+                        r8
+                        \!
+                        aqs'8.
+                        \mp
 
+                        - \tweak stencil #constante-hairpin
+                        \<
                         [
-                        btes'8.
-                        - \flageolet
                     }
-                    a'8
-                    - \halfopen
-                    aes'16
-                    - \halfopen
-                    aqs'16
-                    ~
+                }
+                {
+                    aes'8
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    a'16
+                    - \stopped
+                    btes'16
+                    - \stopped
                     ]
-                    aqs'4
-                    aes'16
-                    - \halfopen
-                    [
+                }
+                {
+                    aes'4
+                    \ppp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 0
                     a'8.
-                    ~
+                    \mp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    ]
                 }
                 {
                     % [Voice 19 measure 15] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                    \!
+                }
+                {
                     a'8
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
                     btes'8
-                    - \flageolet
+                    - \stopped
+                    ]
+                }
+                {
                     \times 4/5 {
-                        a'16
-
+                        r16
+                        \!
                         btes'8
+                        \mp
 
                         ~
+                        [
                         btes'16
-                        a'16
-
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        btes'16
-
+                        \>
                         bqs'16
 
-                        btes'16
-                        ~
-                    }
-                    \times 4/5 {
-                        btes'8
-                        a'16
-
-                        ~
-                        a'16
-                        btes'16
-                        - \halfopen
-                    }
-                }
-                {
-                    % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS
-                    bqs'8
-                    - \flageolet
-                    bes'8
-                    ~
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bes'8
-                        bqs'16
-                        - \halfopen
-                    }
-                    btes'8.
-                    - \stopped
-                    a'16
-                    ~
-                    a'16
-                    aes'8.
-                    - \stopped
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 19 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        aqs'8
-                        - \stopped
-                        aes'16
-                        - \stopped
-                        a'8
-                        ~
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        a'8
-                        btes'16
-                        - \stopped
-                    }
-                    \times 4/5 {
-                        a'8.
-                        ~
-                        a'8
-                    }
-                    aes'8
-                    - \stopped
-                    aqs'16
-                    - \stopped
-                    ates'16
-                    ~
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 19 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        ates'8
-                        b'16
-                        - \stopped
-                    }
-                    ates'16
-                    - \stopped
-                    b'16
-                    - \stopped
-                    bes'8
-                    ~
-                    bes'16
-                    b'16
-
-                    ~
-                    b'16
-                    bes'16
-                    - \flageolet
-                    \times 4/5 {
-                        b'8
-                        - \flageolet
-                        ates'8.
-                        ~
-                    }
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 19 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        ates'16
-                        b'16
-                        - \flageolet
                         bes'16
+                        \ppp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        b'16
+                        \mp
+                        \>
                         ~
+                        [
                     }
+                }
+                {
                     \times 4/5 {
-                        bes'8
-                        b'16
+                        % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        b'8
+                        bes'16
+                        - \halfopen
+                        ~
+                        bes'16
+                        bqs'16
+                        \ppp
                         - \flageolet
-                        ~
-                        b'16
-                        ates'16
-                        ~
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
-                    ates'8
-                    b'8
+                }
+                {
+                    a'8
+                    \p
                     - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r8
+                    \!
+                }
+                {
+                    r2
+                }
+                {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        ates'16
+                        % [Voice 19 measure 17] %! COMMENT_MEASURE_NUMBERS
+                        r8
+                        btes'16
+                        \ppp
+                        - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                    }
+                }
+                {
+                    aes'8.
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                }
+                {
+                    r16
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 0
+                    bqs'8.
+                    \mp
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    ]
+                }
+                {
+                    r4
+                    \!
+                }
+                {
+                    % [Voice 19 measure 18] %! COMMENT_MEASURE_NUMBERS
+                    r2
+                }
+                {
+                    \times 4/5 {
+                        btes'8
+                        \mp
                         - \stopped
-                        b'8
+                        \>
+                        [
+                        bqs'16
+                        - \stopped
+                        bes'8
                         ~
                     }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        bes'8
+                        \ppp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                    }
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 19 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        b'8.
+                        \mp
+                        ~
+                        [
+                        b'8
+                        \>
+                    }
+                }
+                {
+                    aqs'8
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    ates'16
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        bes'8
+                        \mp
+                        - \stopped
+                        \>
+                        b'16
+                        - \stopped
+                    }
+                    bes'16
+                    \ppp
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 0
+                    bqs'8
+                    \ppp
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    ]
                 }
                 {
                     % [Voice 19 measure 20] %! COMMENT_MEASURE_NUMBERS
-                    b'8
-                    ates'16
-
-                    b'16
-                    ~
-                    ]
-                    b'4
-                    \times 4/5 {
-                        bes'8
-
-                        [
-                        b'16
-
-                        ates'8
-                        ~
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        ates'16
-                        b'16
-
-                        ates'16
-                        - \flageolet
-                    }
+                    r4
+                    \!
+                }
+                {
+                    aqs'16
+                    \p
+                    - \stopped
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    ates'8
+                    - \stopped
+                    aqs'16
+                    - \stopped
                 }
                 {
                     \times 4/5 {
-                        % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        aqs'16
-                        - \halfopen
-                        ates'8
-                        - \halfopen
-                        ~
-                        ates'16
-                        b'16
-                        ~
+                        btes'8
+                        \mp
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8.
+                        \!
                     }
-                    b'16
-                    ates'16
-                    - \halfopen
-                    aqs'8
-                    - \flageolet
-                    ]
+                }
+                {
+                    r4
+                }
+                {
+                    % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                }
+                {
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 8/7 {
-                        aes'4
-
-                        aqs'16
-
+                    \times 4/3 {
+                        r16
+                        aes'16
+                        \p
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
                         [
-                        aes'8
+                        a'16
+                        - \stopped
+                    }
+                }
+                {
+                    \times 8/9 {
+                        bqs'8
+                        \ppp
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        r16
+                        bes'8
+                        \mp
+                        - \stopped
                         ~
+                        [
+                        bes'16
+                        \>
+                        bqs'8
+
                     }
                 }
                 {
                     % [Voice 19 measure 22] %! COMMENT_MEASURE_NUMBERS
-                    aes'16
-                    aqs'16
-
+                    btes'16
+                    - \flageolet
+                    a'8.
                     ~
-                    aqs'16
-                    ates'16
-                    ~
-                    ates'8
-                    b'8
-
-                    \times 4/5 {
-                        bes'16
-
-                        b'4
-
-                    }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        ates'16
-                        - \halfopen
-                        aqs'8
-                        ~
+                        a'16
+                        \ppp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        btes'16
+                        \mp
+                        - \flageolet
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        ]
                     }
                 }
                 {
-                    \times 4/5 {
-                        % [Voice 19 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        aqs'8.
-                        aes'8
-                        - \flageolet
-                    }
-                    aqs'16
-                    - \halfopen
-                    ates'8.
+                    r2
+                    \!
+                }
+                {
+                    % [Voice 19 measure 23] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                }
+                {
+                    a'4
+                    \ppp
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    btes'8
+                    \p
                     - \stopped
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        aqs'16
-                        - \stopped
-                        ates'16
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    ]
+                    r16
+                    \!
+                    bqs'16
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ~
+                    [
+                    \times 4/5 {
+                        bqs'8
+                        bes'16
                         - \stopped
                         b'16
                         - \stopped
+                        ]
+                        r16
+                        \!
                     }
-                    bes'8.
-                    - \stopped
-                    b'16
-                    ~
                 }
                 {
                     % [Voice 19 measure 24] %! COMMENT_MEASURE_NUMBERS
-                    b'16
-                    bes'16
-                    - \stopped
-                    b'8
-                    - \stopped
+                    r4
+                }
+                {
+                    aes'4
+                    \mp
+                    - \flageolet
+                    \>
                     \times 4/5 {
-                        bes'4
+                        a'8
                         - \stopped
-                        bqs'16
+                        [
+                        btes'16
                         - \stopped
+                        a'8
+                        \ppp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
                     }
-                    bes'4
-                    - \stopped
-                    \times 4/5 {
-                        bqs'8
-
-                        [
-                        btes'8.
-                        - \flageolet
-                    }
+                    r4
+                    \!
                 }
                 {
                     % [Voice 19 measure 25] %! COMMENT_MEASURE_NUMBERS
-                    bqs'8
-                    - \flageolet
-                    btes'16
-                    - \flageolet
-                    bqs'8.
-                    ~
-                    bqs'8
-                    bes'16
-                    - \flageolet
-                    b'16
-                    ~
-                    ]
-                    b'4
+                    r4
                 }
                 {
-                    r8
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        bes'16
+                        \p
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        bqs'8
+                        - \stopped
+                        ]
+                    }
+                }
+                {
+                    r4.
                     \!
                 }
             }

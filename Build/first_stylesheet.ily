@@ -13,7 +13,7 @@
 	dedication = \markup \override #'(font-name . "Didot") \fontsize #5.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
 	title =  \markup \override #'(font-name . "Didot") \fontsize #17 \bold\center-column {"GUERRERO" }
 	subtitle = \markup \override #'(font-name . "Didot") \fontsize #8 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #5 \center-column {"b       o       c       e       t       o       s               d       e               m       a       r       t       e"}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #5 \center-column {" "}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #4.3 {"Gregory Rowland Evans"}
 }
 
