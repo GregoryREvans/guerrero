@@ -96,150 +96,44 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 25] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
+            \time 7/8
+            s1 * 7/8
         }
         \context Staff = "Staff 18"
         {
             \context Voice = "Voice 18"
             {
                 {
-                    \times 4/5 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
                         % [Voice 18 measure 1] %! COMMENT_MEASURE_NUMBERS
                         \set Staff.shortInstrumentName =
                         \markup { bar.3 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 3" }
-                        e'8
-                        \mf
-                        - \tenuto
-                        - \tweak circled-tip ##t
-                        \>
-                        [
-                        <gtes' ftes'' dqf''' bf'''>16
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ~
-                        <gtes' ftes'' dqf''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ftes''16
-                        ~
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        ftes''8
-                        <gtes' ftes'' dqf''' bf'''>16
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                    }
-                    gtes'8
-                    - \portato
-                    <gtes' ftes'' dqf''' bf'''>8
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    ~
-                    \times 4/5 {
-                        <gtes' ftes'' dqf''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        dqf'''8
-
                         e'16
-
-                        <gtes' ftes'' dqf''' bf'''>16
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ]
-                    }
-                }
-                {
-                    % [Voice 18 measure 2] %! COMMENT_MEASURE_NUMBERS
-                    <gtes' ftes'' dqf''' bf'''>4
-                    \mf
-                    - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    \times 4/5 {
-                        cqs'8.
-                        \p
-                        - \flageolet
-                        \<
-                        [
-                        c'8
-                        - \halfopen
-                    }
-                    bqs16
-                    - \halfopen
-                    b16
-                    - \halfopen
-                    bqs8
-
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        c'16
-
-                        bqs16
-
-                        b16
-                        \mp
-
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        ftes''16
                         \mf
                         - \accent
                         - \tweak circled-tip ##t
                         \>
-                        <gtes' ftes'' dqf''' bf'''>8
+                        [
+                        \!
+                        <gtes' ftes'' dqf''' bf'''>16
 
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ftes''16
+                        ~
+                    }
+                    \times 4/5 {
+                        ftes''16
+                        <gtes' ftes'' dqf''' bf'''>8
+                        - \tenuto
                         _ \markup {
                             \override
                                 #'(size . 0.4)
@@ -257,9 +151,10 @@
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
                         gtes'16
-                        - \tenuto
+
+                        ]
                     }
-                    <gtes' ftes'' dqf''' bf'''>8.
+                    <gtes' ftes'' dqf''' bf'''>4
 
                     _ \markup {
                         \override
@@ -268,16 +163,104 @@
                             #'baritone-saxophone
                             #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                         }
-                    dqf'''16
-                    ~
+                    dqf'''8
+                    - \portato
+                    [
+                    e'8
+
+                    ]
+                }
+                {
+                    % [Voice 18 measure 2] %! COMMENT_MEASURE_NUMBERS
+                    <gtes' ftes'' dqf''' bf'''>4
+                    \mp
+                    - \espressivo
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    \times 4/5 {
+                        cqs'8
+                        \f
+
+                        \>
+                        [
+                        c'16
+
+                        bqs16
+
+                        b16
+                        ~
+                    }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        dqf'''16
-                        e'8
+                        b16
+                        bqs16
+
+                        c'16
+
+                    }
+                    \times 4/5 {
+                        bqs16
+                        - \stopped
+                        b8
+                        - \stopped
+                        ~
+                        b16
+                        bqf16
+                        \p
+                        - \stopped
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        <gtes' ftes'' dqf''' bf'''>16
+                        \mf
+
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        - \tweak circled-tip ##t
+                        \>
+                        ftes''16
+
+                        <gtes' ftes'' dqf''' bf'''>16
+                        - \accent
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ~
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        gtes'16
                         ~
                     }
                     \times 4/5 {
-                        e'16
+                        gtes'8
                         <gtes' ftes'' dqf''' bf'''>16
 
                         _ \markup {
@@ -287,12 +270,43 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
-                        ftes''16
-                        - \portato
                         ~
-                        ftes''16
                         <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        dqf'''16
+                        - \tenuto
+                    }
+                    e'8
 
+                    <gtes' ftes'' dqf''' bf'''>8
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    ~
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ftes''16
+
+                        <gtes' ftes'' dqf''' bf'''>16
+                        - \portato
                         _ \markup {
                             \override
                                 #'(size . 0.4)
@@ -319,38 +333,35 @@
                     \<
                 }
                 {
-                    bqf8.
-                    \p
-                    - \halfopen
-                    \<
-                    [
                     b16
-                    - \flageolet
-                    \times 4/5 {
-                        bqf16
+                    \f
 
-                        b16
+                    \>
+                    [
+                    bqf16
 
-                        bqf16
+                    b16
 
-                        bf16
-                        - \stopped
+                    bqf16
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        bf8
+                        - \flageolet
                         bqf16
                         ~
                     }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bqf16
-                        b8
-                        \mp
-                        - \stopped
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
+                    bqf16
+                    b16
+                    - \flageolet
+                    bqf8
+                    \p
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
+                    \times 4/5 {
                         % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS
                         gtes'8
                         \mf
@@ -358,6 +369,7 @@
                         - \tweak circled-tip ##t
                         \>
                         <gtes' ftes'' dqf''' bf'''>16
+
                         _ \markup {
                             \override
                                 #'(size . 0.4)
@@ -366,31 +378,6 @@
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
                         ~
-                    }
-                    <gtes' ftes'' dqf''' bf'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    dqf'''16
-
-                    e'8
-                    - \accent
-                    \times 4/5 {
-                        <gtes' ftes'' dqf''' bf'''>8.
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ftes''16
-                        - \tenuto
                         <gtes' ftes'' dqf''' bf'''>16
                         _ \markup {
                             \override
@@ -399,10 +386,30 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
+                        dqf'''16
                         ~
                     }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        dqf'''8
+                        e'16
+
+                    }
+                    <gtes' ftes'' dqf''' bf'''>8
+                    - \accent
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    ftes''8
+                    ~
                     \times 4/5 {
+                        ftes''16
                         <gtes' ftes'' dqf''' bf'''>8
+
                         _ \markup {
                             \override
                                 #'(size . 0.4)
@@ -411,9 +418,7 @@
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
                         gtes'16
-
-                        ~
-                        gtes'16
+                        - \tenuto
                         <gtes' ftes'' dqf''' bf'''>16
 
                         _ \markup {
@@ -429,7 +434,7 @@
                 {
                     % [Voice 18 measure 6] %! COMMENT_MEASURE_NUMBERS
                     <gtes' ftes'' dqf''' bf'''>4
-                    \mf
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -443,40 +448,57 @@
                 }
                 {
                     \times 4/5 {
-                        bqf16
-                        \p
-                        - \stopped
-                        \<
+                        bf16
+                        \f
+                        - \flageolet
+                        \>
                         [
-                        bf8
-                        - \stopped
+                        bqf8
+                        - \flageolet
+                        ~
                         bqf16
-
                         bf16
                         ~
                     }
-                    bf8
-                    bqf8
-                    - \halfopen
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        bf8
-                        - \flageolet
-                        bqf16
-                        \mp
+                        bf16
+                        bqf8
+                        - \halfopen
+                    }
+                    \times 4/5 {
+                        bf8.
+                        - \halfopen
+                        bqf8
+                        \p
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                 }
                 {
-                    % [Voice 18 measure 7] %! COMMENT_MEASURE_NUMBERS
-                    dqf'''8
-                    \mf
-                    - \portato
-                    - \tweak circled-tip ##t
-                    \>
-                    e'16
+                    \times 4/5 {
+                        % [Voice 18 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        dqf'''16
+                        \mf
+
+                        - \tweak circled-tip ##t
+                        \>
+                        e'8
+                        - \portato
+                        ~
+                        e'16
+                        <gtes' ftes'' dqf''' bf'''>16
+
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                    }
+                    ftes''8.
 
                     <gtes' ftes'' dqf''' bf'''>16
                     _ \markup {
@@ -497,23 +519,13 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
-                        ftes''8
+                        gtes'8
                         ~
                     }
                     \times 4/5 {
-                        ftes''16
-                        <gtes' ftes'' dqf''' bf'''>8
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
                         gtes'16
+                        <gtes' ftes'' dqf''' bf'''>16
 
-                        <gtes' ftes'' dqf''' bf'''>16
                         _ \markup {
                             \override
                                 #'(size . 0.4)
@@ -521,20 +533,12 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
-                        ~
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        <gtes' ftes'' dqf''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        dqf'''8
+                        dqf'''16
                         - \accent
+                        ~
+                        dqf'''16
+                        e'16
+
                         ]
                     }
                 }
@@ -554,60 +558,39 @@
                     \<
                 }
                 {
-                    b8
-                    \p
-                    - \halfopen
-                    \<
+                    b16
+                    \f
+
+                    \>
                     [
-                    bqs8
-                    - \halfopen
-                    \times 4/5 {
-                        b16
+                    bqs16
 
-                        bqs16
+                    b8
 
-                        c'16
-
-                        ~
-                        c'16
-                        bqs16
-
-                    }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        b16
+                        bqs16
 
-                        bqf16
-
-                        bf16
-                        \mp
-
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        c'16
+                        - \halfopen
+                        bqs16
+                        - \flageolet
                     }
+                    b8.
+
+                    bqf16
+                    \p
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
-                    % [Voice 18 measure 9] %! COMMENT_MEASURE_NUMBERS
-                    e'16
-                    \mf
-
-                    - \tweak circled-tip ##t
-                    \>
-                    <gtes' ftes'' dqf''' bf'''>16
-                    - \tenuto
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    ftes''8
-                    ~
-                    \times 4/5 {
-                        ftes''16
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        % [Voice 18 measure 9] %! COMMENT_MEASURE_NUMBERS
                         <gtes' ftes'' dqf''' bf'''>8
-
+                        \mf
+                        - \tenuto
                         _ \markup {
                             \override
                                 #'(size . 0.4)
@@ -615,11 +598,40 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
-                        gtes'8
+                        - \tweak circled-tip ##t
+                        \>
+                        ftes''16
+                        ~
+                    }
+                    ftes''16
+                    <gtes' ftes'' dqf''' bf'''>16
+
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    gtes'8
+
+                    \times 4/5 {
+                        <gtes' ftes'' dqf''' bf'''>8.
+                        - \portato
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        dqf'''16
+
+                        e'16
                         ~
                     }
                     \times 4/5 {
-                        gtes'16
+                        e'8
                         <gtes' ftes'' dqf''' bf'''>16
 
                         _ \markup {
@@ -629,29 +641,24 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
-                        dqf'''16
-                        - \portato
                         ~
-                        dqf'''16
-                        e'16
-                        ~
-                    }
-                    e'8
-                    <gtes' ftes'' dqf''' bf'''>8
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ftes''16
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    ]
+                        ]
+                    }
                 }
                 {
                     % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS
                     <gtes' ftes'' dqf''' bf'''>4
-                    \mf
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -665,46 +672,68 @@
                 }
                 {
                     \times 4/5 {
-                        bqf8
-                        \p
+                        bf16
+                        \f
 
-                        \<
+                        \>
                         [
+                        bqf16
+                        - \stopped
                         b16
-                        - \flageolet
+                        - \stopped
                         bqs16
-                        - \flageolet
+                        - \stopped
                         b16
-                        - \flageolet
+                        ~
                     }
-                    bqf16
-                    - \flageolet
-                    bf16
-                    - \flageolet
-                    bqf8
-                    - \halfopen
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        b8
+                        b16
+                        bqf8
+                        - \stopped
+                    }
+                    \times 4/5 {
+                        bf16
+
+                        bqf8
                         - \halfopen
+                        b16
+                        - \flageolet
                         bqf16
-                        \mp
+                        \p
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                 }
                 {
+                    % [Voice 18 measure 11] %! COMMENT_MEASURE_NUMBERS
+                    <gtes' ftes'' dqf''' bf'''>8
+                    \mf
+                    - \accent
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    - \tweak circled-tip ##t
+                    \>
+                    gtes'16
+
+                    <gtes' ftes'' dqf''' bf'''>16
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    ~
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        % [Voice 18 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        ftes''16
-                        \mf
-
-                        - \tweak circled-tip ##t
-                        \>
-                        <gtes' ftes'' dqf''' bf'''>8
-
+                        <gtes' ftes'' dqf''' bf'''>16
                         _ \markup {
                             \override
                                 #'(size . 0.4)
@@ -712,10 +741,13 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
+                        dqf'''8
+                        ~
                     }
                     \times 4/5 {
-                        gtes'8.
-                        - \accent
+                        dqf'''16
+                        e'8
+                        - \tenuto
                         <gtes' ftes'' dqf''' bf'''>16
 
                         _ \markup {
@@ -725,26 +757,23 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
-                        dqf'''16
+                        ftes''16
                         ~
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        dqf'''8
-                        e'16
-                        ~
+                        ftes''16
+                        <gtes' ftes'' dqf''' bf'''>8
+
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ]
                     }
-                    e'16
-                    <gtes' ftes'' dqf''' bf'''>8.
-                    - \tenuto
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    ]
                 }
                 {
                     % [Voice 18 measure 12] %! COMMENT_MEASURE_NUMBERS
@@ -763,39 +792,569 @@
                 }
                 {
                     bf8
+                    \f
+                    - \halfopen
+                    \>
+                    [
+                    bqf8
+                    - \halfopen
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        bf8
+
+                        bqf16
+                        ~
+                    }
+                    bqf8
+                    bf8
                     \p
 
+                    - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    bqf16
+                }
+                {
+                    % [Voice 18 measure 13] %! COMMENT_MEASURE_NUMBERS
+                    gtes'16
+                    \mf
+                    - \portato
+                    - \tweak circled-tip ##t
+                    \>
+                    <gtes' ftes'' dqf''' bf'''>16
 
-                    bf16
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    dqf'''8
                     ~
                     \times 4/5 {
-                        bf8
+                        dqf'''16
+                        e'8
+
+                        <gtes' ftes'' dqf''' bf'''>8
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ~
+                    }
+                    \times 4/5 {
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ftes''16
+
+                        <gtes' ftes'' dqf''' bf'''>16
+                        - \accent
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ~
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        gtes'16
+                        ~
+                    }
+                    gtes'8
+                    <gtes' ftes'' dqf''' bf'''>8
+
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    ]
+                }
+                {
+                    % [Voice 18 measure 14] %! COMMENT_MEASURE_NUMBERS
+                    <gtes' ftes'' dqf''' bf'''>4
+                    \mp
+                    - \espressivo
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    \times 4/5 {
+                        bqf16
+                        \f
+
+                        \>
+                        [
+                        b16
+
                         bqf16
 
                         ~
                         bqf16
-                        bf16
-                        ~
+                        b16
+                        - \stopped
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
+                        bqf16
+                        - \stopped
                         bf16
+                        - \stopped
+                        bqf16
+                        ~
+                    }
+                    \times 4/5 {
                         bqf8
-                        \mp
+                        b16
+
+                        bqf16
+
+                        b16
+                        \p
 
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                 }
                 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        % [Voice 18 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        dqf'''16
+                        \mf
+                        - \tenuto
+                        - \tweak circled-tip ##t
+                        \>
+                        e'8
+
+                    }
                     \times 4/5 {
-                        % [Voice 18 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        <gtes' ftes'' dqf''' bf'''>8.
+
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ftes''16
+                        - \portato
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ~
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        <gtes' ftes'' dqf''' bf'''>8
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        gtes'16
+                        ~
+                    }
+                    gtes'16
+                    <gtes' ftes'' dqf''' bf'''>8.
+
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 18 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        dqf'''16
+
+                        e'8
+
+                        <gtes' ftes'' dqf''' bf'''>8
+                        - \accent
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ]
+                    }
+                }
+                {
+                    <gtes' ftes'' dqf''' bf'''>4
+                    \pp
+                    - \espressivo
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    bqs16
+                    \f
+
+                    \>
+                    [
+                    b16
+                    - \flageolet
+                    bqf8
+                    - \flageolet
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        b8
+                        - \flageolet
+                        bqs16
+                        - \flageolet
+                    }
+                }
+                {
+                    % [Voice 18 measure 17] %! COMMENT_MEASURE_NUMBERS
+                    c'8
+                    - \flageolet
+                    bqs16
+                    - \halfopen
+                    c'16
+                    ~
+                    \times 4/5 {
+                        c'8
+                        cqs'16
+                        - \halfopen
+                        ~
+                        cqs'16
+                        cs'16
+                        \p
+                        - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                }
+                {
+                    \times 4/5 {
                         ftes''16
                         \mf
 
+                        - \tweak circled-tip ##t
+                        \>
+                        <gtes' ftes'' dqf''' bf'''>8
+                        - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        gtes'16
+
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ~
+                    }
+                    <gtes' ftes'' dqf''' bf'''>16
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    dqf'''8.
+
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        % [Voice 18 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        e'16
+                        - \portato
+                        <gtes' ftes'' dqf''' bf'''>8
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ~
+                    }
+                    \times 4/5 {
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ftes''8
+
+                        <gtes' ftes'' dqf''' bf'''>8
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ~
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        <gtes' ftes'' dqf''' bf'''>16
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        gtes'16
+
+                        <gtes' ftes'' dqf''' bf'''>16
+
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ]
+                    }
+                }
+                {
+                    <gtes' ftes'' dqf''' bf'''>4
+                    \mp
+                    - \espressivo
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        % [Voice 18 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        dqf'16
+                        \f
+
+                        \>
+                        [
+                        cs'8
+                        ~
+                    }
+                    \times 4/5 {
+                        cs'16
+                        dqf'8
+
+                        d'16
+
+                        dqf'16
+
+                    }
+                    cs'8
+                    - \halfopen
+                    dqf'16
+                    - \flageolet
+                    cs'16
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        dqf'16
+
+                        d'8
+                        \p
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                }
+                {
+                    % [Voice 18 measure 20] %! COMMENT_MEASURE_NUMBERS
+                    dqf'''16
+                    \mf
+                    - \accent
+                    - \tweak circled-tip ##t
+                    \>
+                    e'8.
+
+                    \times 4/5 {
+                        <gtes' ftes'' dqf''' bf'''>8
+                        - \tenuto
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        ftes''16
+
+                        <gtes' ftes'' dqf''' bf'''>8
+
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                    }
+                    \times 4/5 {
+                        gtes'8.
+                        - \portato
+                        <gtes' ftes'' dqf''' bf'''>16
+
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        dqf'''16
+                        ~
+                    }
+                    dqf'''8
+                    e'8
+
+                    ]
+                }
+                {
+                    % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
+                    <gtes' ftes'' dqf''' bf'''>4
+
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                }
+                {
+                    <gtes' ftes'' dqf''' bf'''>4
+                    \pp
+                    - \espressivo
+                    _ \markup {
+                        \override
+                            #'(size . 0.4)
+                        \woodwind-diagram
+                            #'baritone-saxophone
+                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                        }
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    dqf'16
+                    \f
+                    - \stopped
+                    \>
+                    [
+                    d'16
+                    - \stopped
+                    dqf'16
+                    - \stopped
+                    d'16
+                    - \stopped
+                    \times 4/5 {
+                        dqf'16
+
+                        d'16
+                        - \halfopen
+                        dqf'16
+                        - \flageolet
+                        ~
+                        dqf'16
+                        d'16
+                        ~
+                    }
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        % [Voice 18 measure 22] %! COMMENT_MEASURE_NUMBERS
+                        d'16
+                        dqf'16
+                        - \halfopen
+                        cs'16
+                        ~
+                    }
+                    \times 4/5 {
+                        cs'16
+                        cqs'16
+                        - \halfopen
+                        c'8.
+                        - \halfopen
+                    }
+                    bqs8
+
+                    b8
+                    \p
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    \times 4/5 {
+                        ftes''16
+                        \mf
+                        - \accent
                         - \tweak circled-tip ##t
                         \>
                         <gtes' ftes'' dqf''' bf'''>8
@@ -810,10 +1369,14 @@
                         gtes'8
                         ~
                     }
-                    \times 4/5 {
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        % [Voice 18 measure 23] %! COMMENT_MEASURE_NUMBERS
                         gtes'16
                         <gtes' ftes'' dqf''' bf'''>8
-                        - \portato
+                        - \tenuto
                         _ \markup {
                             \override
                                 #'(size . 0.4)
@@ -821,386 +1384,13 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
-                        dqf'''16
-
-                        e'16
-                        ~
                     }
+                    dqf'''16
+
                     e'16
-                    <gtes' ftes'' dqf''' bf'''>8.
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        ftes''16
-
-                        <gtes' ftes'' dqf''' bf'''>8
-                        - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ]
-                    }
-                }
-                {
-                    % [Voice 18 measure 14] %! COMMENT_MEASURE_NUMBERS
-                    <gtes' ftes'' dqf''' bf'''>4
-                    \mf
-                    - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    \times 4/5 {
-                        b16
-                        \p
-                        - \halfopen
-                        \<
-                        [
-                        bqf8
-                        - \flageolet
-                        b16
-
-                        bqf16
-
-                    }
-                    bf8
-
-                    bqf16
-                    - \stopped
-                    b16
-                    - \stopped
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bqf16
-                        - \stopped
-                        b8
-                        \mp
-                        - \stopped
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 18 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        gtes'16
-                        \mf
-
-                        - \tweak circled-tip ##t
-                        \>
-                        <gtes' ftes'' dqf''' bf'''>8
-                        - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        dqf'''8
-                        ~
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        dqf'''16
-                        e'16
-
-                        <gtes' ftes'' dqf''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ~
-                    }
-                    <gtes' ftes'' dqf''' bf'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    ftes''8.
-
-                    \times 4/5 {
-                        <gtes' ftes'' dqf''' bf'''>8
-                        - \portato
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        gtes'16
-
-                        <gtes' ftes'' dqf''' bf'''>8
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                    }
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 18 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        dqf'''8.
-
-                        e'16
-                        - \accent
-                        <gtes' ftes'' dqf''' bf'''>16
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ]
-                    }
-                }
-                {
-                    <gtes' ftes'' dqf''' bf'''>4
-                    \pp
-                    - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    bqs16
-                    \p
-
-                    \<
-                    [
-                    b16
-                    - \halfopen
-                    bqf16
-                    - \flageolet
-                    b16
-                    - \halfopen
-                    \times 4/5 {
-                        bqs16
-                        - \halfopen
-                        c'16
-                        - \halfopen
-                        bqs16
-
-                        ~
-                        bqs16
-                        c'16
-                        ~
-                    }
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 18 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        c'16
-                        cqs'16
-
-                        cs'16
-                        ~
-                    }
-                    \times 4/5 {
-                        cs'16
-                        dqf'16
-
-                        cs'8.
-                        \mp
-
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    ftes''8
-                    \mf
-                    - \tenuto
-                    - \tweak circled-tip ##t
-                    \>
-                    <gtes' ftes'' dqf''' bf'''>8
-
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    ]
-                    gtes'4
-
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 18 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        <gtes' ftes'' dqf''' bf'''>16
-                        - \portato
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        [
-                        dqf'''8
-
-                        e'8
-                        ~
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        e'16
-                        <gtes' ftes'' dqf''' bf'''>8
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                    }
-                    ftes''16
-
-                    <gtes' ftes'' dqf''' bf'''>16
-                    - \accent
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
                     ~
-                    <gtes' ftes'' dqf''' bf'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    gtes'16
-
-                    ]
-                }
-                {
-                    <gtes' ftes'' dqf''' bf'''>4
-                    \mf
-                    - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    % [Voice 18 measure 19] %! COMMENT_MEASURE_NUMBERS
-                    dqf'8
-                    \p
-
-                    \<
-                    [
-                    d'8
-
-                    ]
-                    dqf'4
-
-                    cs'8
-
-                    [
-                    dqf'16
-                    - \flageolet
-                    cs'16
-                    - \flageolet
-                    \times 4/5 {
-                        dqf'8
-                        - \flageolet
-                        d'16
-                        - \flageolet
-                        dqf'16
-                        - \flageolet
-                        d'16
-                        \mp
-                        - \halfopen
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 18 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        <gtes' ftes'' dqf''' bf'''>8
-                        \mf
-                        - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        - \tweak circled-tip ##t
-                        \>
-                        dqf'''16
-
-                        e'8
-                        ~
-                    }
-                    \times 4/5 {
-                        e'16
-                        <gtes' ftes'' dqf''' bf'''>8
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ftes''8
-                        ~
-                    }
-                    ftes''16
+                    e'16
                     <gtes' ftes'' dqf''' bf'''>16
                     - \portato
                     _ \markup {
@@ -1210,27 +1400,40 @@
                             #'baritone-saxophone
                             #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                         }
-                    gtes'8
-
                     ]
-                    <gtes' ftes'' dqf''' bf'''>4
+                }
+                {
+                    bqs4
+                    \p
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
                     \times 4/5 {
-                        % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        dqf'''8
+                        ftes''8
+                        \mf
 
+                        - \tweak circled-tip ##t
+                        \>
                         [
-                        e'16
-                        - \accent
+                        <gtes' ftes'' dqf''' bf'''>16
+
+                        _ \markup {
+                            \override
+                                #'(size . 0.4)
+                            \woodwind-diagram
+                                #'baritone-saxophone
+                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
+                            }
+                        gtes'8
+                        ~
+                    }
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 18 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        gtes'16
                         <gtes' ftes'' dqf''' bf'''>8
 
                         _ \markup {
@@ -1240,12 +1443,14 @@
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                             }
+                        dqf'''8
+                        - \accent
                         ]
                     }
                 }
                 {
                     <gtes' ftes'' dqf''' bf'''>4
-                    \pp
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -1258,139 +1463,60 @@
                     \<
                 }
                 {
-                    dqf'4
-                    \p
-                    - \halfopen
-                    \<
-                    \times 4/5 {
-                        d'16
-                        - \halfopen
-                        [
-                        dqf'16
+                    c'8
+                    \f
 
-                        d'16
-
-                        dqf'16
-
-                        d'16
-
-                    }
-                }
-                {
-                    % [Voice 18 measure 22] %! COMMENT_MEASURE_NUMBERS
-                    dqf'8
-                    - \halfopen
-                    cs'8
-                    - \flageolet
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        cqs'16
-
-                        c'8
-
-                    }
+                    \>
+                    [
                     bqs16
 
-                    b8.
-                    \mp
+                    b16
                     - \stopped
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                }
-                {
-                    ftes''4
-                    \mf
-                    - \tenuto
-                    - \tweak circled-tip ##t
-                    \>
-                }
-                {
-                    % [Voice 18 measure 23] %! COMMENT_MEASURE_NUMBERS
-                    <gtes' ftes'' dqf''' bf'''>16
-
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    [
-                    gtes'8.
-
                     \times 4/5 {
-                        <gtes' ftes'' dqf''' bf'''>8
-                        - \portato
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        dqf'''8.
+                        bqf8
+                        - \stopped
+                        b16
+                        - \stopped
+                        bqf16
 
-                    }
-                    \times 4/5 {
-                        e'16
-
-                        <gtes' ftes'' dqf''' bf'''>8
-
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        ftes''8
-                        ~
-                    }
-                    ftes''16
-                    <gtes' ftes'' dqf''' bf'''>16
-                    - \accent
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    ~
-                    <gtes' ftes'' dqf''' bf'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                        }
-                    gtes'16
-
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 18 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        <gtes' ftes'' dqf''' bf'''>8
-                        - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'baritone-saxophone
-                                #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
-                            }
-                        dqf'''16
+                        bf16
 
                         ]
                     }
                 }
                 {
-                    <gtes' ftes'' dqf''' bf'''>4
+                    % [Voice 18 measure 25] %! COMMENT_MEASURE_NUMBERS
+                    bqf4
+
+                    \times 4/5 {
+                        bf16
+
+                        [
+                        bqf16
+                        - \flageolet
+                        bf16
+                        - \flageolet
+                        bqf16
+                        - \flageolet
+                        bf16
+                        - \flageolet
+                    }
+                    bqf8
+                    - \flageolet
+                    bf8
+                    \p
+                    - \halfopen
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    e'16
                     \mf
-                    - \espressivo
+
+                    - \tweak circled-tip ##t
+                    \>
+                    <gtes' ftes'' dqf''' bf'''>16
+                    - \tenuto
                     _ \markup {
                         \override
                             #'(size . 0.4)
@@ -1398,67 +1524,7 @@
                             #'baritone-saxophone
                             #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))
                         }
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    \times 4/5 {
-                        bqs8
-                        \p
-                        - \stopped
-                        \<
-                        [
-                        c'16
-                        - \stopped
-                        ~
-                        c'16
-                        bqs16
-                        ~
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bqs8
-                        b16
-                        ~
-                    }
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 18 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        b16
-                        bqf16
-                        - \stopped
-                        b16
-
-                        bqf8
-                        - \halfopen
-                    }
-                    bf16
-                    - \flageolet
-                    bqf16
-                    - \halfopen
-                    bf16
-                    - \halfopen
-                    bqf16
-                    ~
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bqf8
-                        bf16
-                        - \halfopen
-                    }
-                    bqf16
-
-                    bf16
-                    \mp
-
-                    - \tweak stencil #constante-hairpin
-                    \<
                     ]
-                }
-                {
-                    r8
-                    \!
                 }
             }
         }

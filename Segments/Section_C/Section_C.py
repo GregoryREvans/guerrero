@@ -19,7 +19,7 @@ time_signatures = [
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
-        (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
+        (4, 4), (4, 4), (4, 4), (4, 4), (7, 8),
     ]
 ]
 
@@ -70,7 +70,7 @@ contrabass_note = [-2, 2, 7, -2, 2, 7, 2, -2, ]
 
 
 # -3 at bottom of chord for completion
-sopranino_chord = [27, ]
+sopranino_chord = [17, 27, 11, 0, 8,]
 soprano_1_chord = [22, [13.25, 16, 26.25, ], 16, [13.25, 16, 26.25, ], 13.25, [13.25, 16, 26.25, ], ]
 soprano_2_chord = [16, [13, 14.75, 26.25, ], 13.25, [13, 14.75, 26.25, ], 14.75, [13, 14.75, 26.25, ], 13, [13, 14.75, 26.25, ], ] #maybe it's 13.25?
 soprano_3_chord = [13, [12.75, 15.5, 26, ], 13, 12.75, [12.75, 15.5, 26, ], 15.5, [12.75, 15.5, 26, ], 26 ]
@@ -384,14 +384,14 @@ attachment_handler_one = AttachmentHandler(
 )
 
 attachment_handler_two = AttachmentHandler(
-    starting_dynamic='p',
-    ending_dynamic='mp',
-    hairpin='<',
-    articulation_list=['flageolet', 'flageolet', 'flageolet', 'flageolet', 'flageolet', 'halfopen', 'halfopen', 'halfopen', '', '', '', '', 'halfopen', 'flageolet', '', '', '', 'stopped', 'stopped', 'stopped', 'stopped',  '', 'halfopen', 'flageolet', 'halfopen', 'halfopen', 'halfopen', '', '', '', '', '', '', '', '',],
+    starting_dynamic='f',
+    ending_dynamic='p',
+    hairpin='>',
+    articulation_list=['flageolet', 'flageolet', 'flageolet', 'flageolet', 'flageolet', 'halfopen', 'halfopen', 'halfopen', '', '', '', '', 'halfopen', 'flageolet', '', '', '', 'stopped', 'stopped', 'stopped', 'stopped',  '', 'halfopen', 'flageolet', 'halfopen', 'halfopen', 'halfopen', '', '', '', '', '', 'stopped', 'stopped', 'stopped', '', '', '', '',],
 )
 
 attachment_handler_three = AttachmentHandler(
-    starting_dynamic='mf',
+    starting_dynamic='mp',
     ending_dynamic='pp',
     hairpin='--',
     articulation_list=['espressivo'],
@@ -934,7 +934,7 @@ voice_1_timespan_list = abjad.TimespanList([
         [(194, 8), (196, 8), sopranino_musicmaker_one],
         [(196, 8), (198, 8), sopranino_musicmaker_one],
         [(198, 8), (199, 8), sopranino_musicmaker_two],
-        [(199, 8), (200, 8), silence_maker],
+        # [(199, 8), (200, 8), silence_maker],
     ]
 ])
 
@@ -1025,7 +1025,7 @@ voice_2_timespan_list = abjad.TimespanList([
         [(148, 8), (150, 8), soprano_one_musicmaker_two],
         [(150, 8), (152, 8), soprano_one_musicmaker_two],
         [(152, 8), (154, 8), soprano_one_musicmaker_two],
-        [(154, 8), (156, 8), soprano_one_musicmaker_two],
+        [(154, 8), (156, 8), soprano_one_musicmaker_three],
         [(156, 8), (158, 8), soprano_one_musicmaker_two],
         [(158, 8), (160, 8), soprano_one_musicmaker_one],
         [(160, 8), (162, 8), soprano_one_musicmaker_one],
@@ -1037,7 +1037,7 @@ voice_2_timespan_list = abjad.TimespanList([
         [(172, 8), (174, 8), soprano_one_musicmaker_two],
         [(174, 8), (176, 8), soprano_one_musicmaker_two],
         [(176, 8), (178, 8), soprano_one_musicmaker_two],
-        [(178, 8), (180, 8), soprano_one_musicmaker_two],
+        [(178, 8), (180, 8), soprano_one_musicmaker_three],
         [(180, 8), (182, 8), soprano_one_musicmaker_two],
         [(182, 8), (184, 8), soprano_one_musicmaker_two],
         [(184, 8), (186, 8), soprano_one_musicmaker_one],
@@ -1066,7 +1066,7 @@ voice_3_timespan_list = abjad.TimespanList([
         [(4, 8), (6, 8), soprano_two_musicmaker_one],
         [(6, 8), (8, 8), soprano_two_musicmaker_one],
         [(8, 8), (10, 8), soprano_two_musicmaker_one],
-        [(10, 8), (12, 8), soprano_two_musicmaker_one],
+        [(10, 8), (12, 8), soprano_two_musicmaker_three],
         [(12, 8), (14, 8), soprano_two_musicmaker_one],
         [(14, 8), (16, 8), soprano_two_musicmaker_one],
         [(16, 8), (18, 8), soprano_two_musicmaker_two],
@@ -1079,7 +1079,7 @@ voice_3_timespan_list = abjad.TimespanList([
         [(30, 8), (32, 8), soprano_two_musicmaker_one],
         [(32, 8), (34, 8), soprano_two_musicmaker_one],
         [(34, 8), (36, 8), soprano_two_musicmaker_one],
-        [(36, 8), (38, 8), soprano_two_musicmaker_one],
+        [(36, 8), (38, 8), soprano_two_musicmaker_three],
         [(38, 8), (40, 8), soprano_two_musicmaker_one],
         [(40, 8), (42, 8), soprano_two_musicmaker_one],
         [(42, 8), (44, 8), soprano_two_musicmaker_two],
@@ -1551,7 +1551,7 @@ voice_7_timespan_list = abjad.TimespanList([
         [(70, 8), (72, 8), alto_three_musicmaker_three],
         [(72, 8), (74, 8), alto_three_musicmaker_two],
         [(74, 8), (76, 8), alto_three_musicmaker_one],
-        [(76, 8), (78, 8), alto_three_musicmaker_one],
+        [(76, 8), (78, 8), alto_three_musicmaker_three],
         [(78, 8), (80, 8), alto_three_musicmaker_one],
         [(80, 8), (82, 8), alto_three_musicmaker_one],
         [(82, 8), (84, 8), alto_three_musicmaker_one],
@@ -1588,7 +1588,7 @@ voice_7_timespan_list = abjad.TimespanList([
         [(144, 8), (146, 8), alto_three_musicmaker_one],
         [(146, 8), (148, 8), alto_three_musicmaker_two],
         [(148, 8), (150, 8), alto_three_musicmaker_two],
-        [(150, 8), (152, 8), alto_three_musicmaker_two],
+        [(150, 8), (152, 8), alto_three_musicmaker_three],
         [(152, 8), (154, 8), alto_three_musicmaker_two],
         [(154, 8), (156, 8), alto_three_musicmaker_two],
         [(156, 8), (158, 8), alto_three_musicmaker_two],
@@ -1663,7 +1663,7 @@ voice_8_timespan_list = abjad.TimespanList([
         [(68, 8), (70, 8), alto_four_musicmaker_two],
         [(70, 8), (72, 8), alto_four_musicmaker_two],
         [(72, 8), (74, 8), alto_four_musicmaker_two],
-        [(74, 8), (76, 8), alto_four_musicmaker_two],
+        [(74, 8), (76, 8), alto_four_musicmaker_three],
         [(76, 8), (78, 8), alto_four_musicmaker_two],
         [(78, 8), (80, 8), alto_four_musicmaker_one],
         [(80, 8), (82, 8), alto_four_musicmaker_one],
@@ -1677,13 +1677,13 @@ voice_8_timespan_list = abjad.TimespanList([
         [(96, 8), (98, 8), alto_four_musicmaker_two],
         [(98, 8), (100, 8), alto_four_musicmaker_two],
         [(100, 8), (102, 8), alto_four_musicmaker_two],
-        [(102, 8), (104, 8), alto_four_musicmaker_two],
+        [(102, 8), (104, 8), alto_four_musicmaker_three],
         [(104, 8), (106, 8), alto_four_musicmaker_two],
         [(106, 8), (108, 8), alto_four_musicmaker_one],
         [(108, 8), (110, 8), alto_four_musicmaker_three],
         [(110, 8), (112, 8), alto_four_musicmaker_one],
         [(112, 8), (114, 8), alto_four_musicmaker_one],
-        [(114, 8), (116, 8), alto_four_musicmaker_one],
+        [(114, 8), (116, 8), alto_four_musicmaker_three],
         [(116, 8), (118, 8), alto_four_musicmaker_one],
         [(118, 8), (120, 8), alto_four_musicmaker_one],
         [(120, 8), (122, 8), alto_four_musicmaker_one],
@@ -1699,7 +1699,7 @@ voice_8_timespan_list = abjad.TimespanList([
         [(140, 8), (142, 8), alto_four_musicmaker_one],
         [(142, 8), (144, 8), alto_four_musicmaker_one],
         [(144, 8), (146, 8), alto_four_musicmaker_one],
-        [(146, 8), (148, 8), alto_four_musicmaker_one],
+        [(146, 8), (148, 8), alto_four_musicmaker_two],
         [(148, 8), (150, 8), alto_four_musicmaker_two],
         [(150, 8), (152, 8), alto_four_musicmaker_two],
         [(152, 8), (154, 8), alto_four_musicmaker_three],
@@ -2016,7 +2016,7 @@ voice_11_timespan_list = abjad.TimespanList([
         [(96, 8), (98, 8), tenor_one_musicmaker_two],
         [(98, 8), (100, 8), tenor_one_musicmaker_one],
         [(100, 8), (102, 8), tenor_one_musicmaker_one],
-        [(102, 8), (104, 8), tenor_one_musicmaker_one],
+        [(102, 8), (104, 8), tenor_one_musicmaker_two],
         [(104, 8), (106, 8), tenor_one_musicmaker_one],
         [(106, 8), (108, 8), tenor_one_musicmaker_one],
         [(108, 8), (110, 8), tenor_one_musicmaker_one],
@@ -2031,7 +2031,7 @@ voice_11_timespan_list = abjad.TimespanList([
         [(126, 8), (128, 8), tenor_one_musicmaker_one],
         [(128, 8), (130, 8), tenor_one_musicmaker_one],
         [(130, 8), (132, 8), tenor_one_musicmaker_one],
-        [(132, 8), (134, 8), tenor_one_musicmaker_one],
+        [(132, 8), (134, 8), tenor_one_musicmaker_two],
         [(134, 8), (136, 8), tenor_one_musicmaker_two],
         [(136, 8), (138, 8), tenor_one_musicmaker_two],
         [(138, 8), (140, 8), tenor_one_musicmaker_three],
@@ -2082,11 +2082,11 @@ voice_12_timespan_list = abjad.TimespanList([
         [(2, 8), (4, 8), tenor_two_musicmaker_one],
         [(4, 8), (6, 8), tenor_two_musicmaker_one],
         [(6, 8), (8, 8), tenor_two_musicmaker_one],
-        [(8, 8), (10, 8), tenor_two_musicmaker_one],
+        [(8, 8), (10, 8), tenor_two_musicmaker_two],
         [(10, 8), (12, 8), tenor_two_musicmaker_one],
         [(12, 8), (14, 8), tenor_two_musicmaker_one],
         [(14, 8), (16, 8), tenor_two_musicmaker_two],
-        [(16, 8), (18, 8), tenor_two_musicmaker_two],
+        [(16, 8), (18, 8), tenor_two_musicmaker_three],
         [(18, 8), (20, 8), tenor_two_musicmaker_two],
         [(20, 8), (22, 8), tenor_two_musicmaker_two],
         [(22, 8), (24, 8), tenor_two_musicmaker_two],
@@ -2119,7 +2119,7 @@ voice_12_timespan_list = abjad.TimespanList([
         [(76, 8), (78, 8), tenor_two_musicmaker_two],
         [(78, 8), (80, 8), tenor_two_musicmaker_two],
         [(80, 8), (82, 8), tenor_two_musicmaker_two],
-        [(82, 8), (84, 8), tenor_two_musicmaker_two],
+        [(82, 8), (84, 8), tenor_two_musicmaker_one],
         [(84, 8), (86, 8), tenor_two_musicmaker_two],
         [(86, 8), (88, 8), tenor_two_musicmaker_one],
         [(88, 8), (90, 8), tenor_two_musicmaker_one],
@@ -2144,7 +2144,7 @@ voice_12_timespan_list = abjad.TimespanList([
         [(126, 8), (128, 8), tenor_two_musicmaker_one],
         [(128, 8), (130, 8), tenor_two_musicmaker_two],
         [(130, 8), (132, 8), tenor_two_musicmaker_two],
-        [(132, 8), (134, 8), tenor_two_musicmaker_two],
+        [(132, 8), (134, 8), tenor_two_musicmaker_three],
         [(134, 8), (136, 8), tenor_two_musicmaker_two],
         [(136, 8), (138, 8), tenor_two_musicmaker_two],
         [(138, 8), (140, 8), tenor_two_musicmaker_two],
@@ -2309,21 +2309,21 @@ voice_14_timespan_list = abjad.TimespanList([
         [(4, 8), (6, 8), tenor_four_musicmaker_two],
         [(6, 8), (8, 8), tenor_four_musicmaker_two],
         [(8, 8), (10, 8), tenor_four_musicmaker_two],
-        [(10, 8), (12, 8), tenor_four_musicmaker_two],
+        [(10, 8), (12, 8), tenor_four_musicmaker_one],
         [(12, 8), (14, 8), tenor_four_musicmaker_two],
         [(14, 8), (16, 8), tenor_four_musicmaker_two],
         [(16, 8), (18, 8), tenor_four_musicmaker_one],
         [(18, 8), (20, 8), tenor_four_musicmaker_three],
         [(20, 8), (22, 8), tenor_four_musicmaker_one],
         [(22, 8), (24, 8), tenor_four_musicmaker_one],
-        [(24, 8), (26, 8), tenor_four_musicmaker_one],
+        [(24, 8), (26, 8), tenor_four_musicmaker_three],
         [(26, 8), (28, 8), tenor_four_musicmaker_one],
         [(28, 8), (30, 8), tenor_four_musicmaker_one],
         [(30, 8), (32, 8), tenor_four_musicmaker_one],
         [(32, 8), (34, 8), tenor_four_musicmaker_two],
         [(34, 8), (36, 8), tenor_four_musicmaker_two],
         [(36, 8), (38, 8), tenor_four_musicmaker_two],
-        [(38, 8), (40, 8), tenor_four_musicmaker_two],
+        [(38, 8), (40, 8), tenor_four_musicmaker_three],
         [(40, 8), (42, 8), tenor_four_musicmaker_two],
         [(42, 8), (44, 8), tenor_four_musicmaker_two],
         [(44, 8), (46, 8), tenor_four_musicmaker_two],
@@ -2337,7 +2337,7 @@ voice_14_timespan_list = abjad.TimespanList([
         [(60, 8), (62, 8), tenor_four_musicmaker_one],
         [(62, 8), (64, 8), tenor_four_musicmaker_two],
         [(64, 8), (66, 8), tenor_four_musicmaker_two],
-        [(66, 8), (68, 8), tenor_four_musicmaker_two],
+        [(66, 8), (68, 8), tenor_four_musicmaker_one],
         [(68, 8), (70, 8), tenor_four_musicmaker_two],
         [(70, 8), (72, 8), tenor_four_musicmaker_two],
         [(72, 8), (74, 8), tenor_four_musicmaker_two],
@@ -2367,7 +2367,7 @@ voice_14_timespan_list = abjad.TimespanList([
         [(120, 8), (122, 8), tenor_four_musicmaker_one],
         [(122, 8), (124, 8), tenor_four_musicmaker_one],
         [(124, 8), (126, 8), tenor_four_musicmaker_two],
-        [(126, 8), (128, 8), tenor_four_musicmaker_two],
+        [(126, 8), (128, 8), tenor_four_musicmaker_three],
         [(128, 8), (130, 8), tenor_four_musicmaker_two],
         [(130, 8), (132, 8), tenor_four_musicmaker_two],
         [(132, 8), (134, 8), tenor_four_musicmaker_two],
@@ -2379,7 +2379,7 @@ voice_14_timespan_list = abjad.TimespanList([
         [(144, 8), (146, 8), tenor_four_musicmaker_one],
         [(146, 8), (148, 8), tenor_four_musicmaker_two],
         [(148, 8), (150, 8), tenor_four_musicmaker_two],
-        [(150, 8), (152, 8), tenor_four_musicmaker_two],
+        [(150, 8), (152, 8), tenor_four_musicmaker_one],
         [(152, 8), (154, 8), tenor_four_musicmaker_two],
         [(154, 8), (156, 8), tenor_four_musicmaker_two],
         [(156, 8), (158, 8), tenor_four_musicmaker_two],
@@ -2388,7 +2388,7 @@ voice_14_timespan_list = abjad.TimespanList([
         [(162, 8), (164, 8), tenor_four_musicmaker_three],
         [(164, 8), (166, 8), tenor_four_musicmaker_one],
         [(166, 8), (168, 8), tenor_four_musicmaker_one],
-        [(168, 8), (170, 8), tenor_four_musicmaker_one],
+        [(168, 8), (170, 8), tenor_four_musicmaker_two],
         [(170, 8), (172, 8), tenor_four_musicmaker_one],
         [(172, 8), (174, 8), tenor_four_musicmaker_one],
         [(174, 8), (176, 8), tenor_four_musicmaker_one],
@@ -2398,7 +2398,7 @@ voice_14_timespan_list = abjad.TimespanList([
         [(182, 8), (184, 8), tenor_four_musicmaker_two],
         [(184, 8), (186, 8), tenor_four_musicmaker_two],
         [(186, 8), (188, 8), tenor_four_musicmaker_two],
-        [(188, 8), (190, 8), tenor_four_musicmaker_two],
+        [(188, 8), (190, 8), tenor_four_musicmaker_three],
         [(190, 8), (192, 8), tenor_four_musicmaker_two],
         [(192, 8), (194, 8), tenor_four_musicmaker_one],
         [(194, 8), (196, 8), tenor_four_musicmaker_three],
@@ -2666,19 +2666,19 @@ voice_17_timespan_list = abjad.TimespanList([
         [(40, 8), (42, 8), baritone_two_musicmaker_two],
         [(42, 8), (44, 8), baritone_two_musicmaker_two],
         [(44, 8), (46, 8), baritone_two_musicmaker_two],
-        [(46, 8), (48, 8), baritone_two_musicmaker_two],
+        [(46, 8), (48, 8), baritone_two_musicmaker_one],
         [(48, 8), (50, 8), baritone_two_musicmaker_two],
         [(50, 8), (52, 8), baritone_two_musicmaker_two],
         [(52, 8), (54, 8), baritone_two_musicmaker_two],
         [(54, 8), (56, 8), baritone_two_musicmaker_three],
         [(56, 8), (58, 8), baritone_two_musicmaker_one],
-        [(58, 8), (60, 8), baritone_two_musicmaker_one],
+        [(58, 8), (60, 8), baritone_two_musicmaker_two],
         [(60, 8), (62, 8), baritone_two_musicmaker_one],
         [(62, 8), (64, 8), baritone_two_musicmaker_one],
         [(64, 8), (66, 8), baritone_two_musicmaker_one],
         [(66, 8), (68, 8), baritone_two_musicmaker_one],
         [(68, 8), (70, 8), baritone_two_musicmaker_two],
-        [(70, 8), (72, 8), baritone_two_musicmaker_two],
+        [(70, 8), (72, 8), baritone_two_musicmaker_three],
         [(72, 8), (74, 8), baritone_two_musicmaker_two],
         [(74, 8), (76, 8), baritone_two_musicmaker_two],
         [(76, 8), (78, 8), baritone_two_musicmaker_two],
@@ -2709,7 +2709,7 @@ voice_17_timespan_list = abjad.TimespanList([
         [(126, 8), (128, 8), baritone_two_musicmaker_three],
         [(128, 8), (130, 8), baritone_two_musicmaker_one],
         [(130, 8), (132, 8), baritone_two_musicmaker_one],
-        [(132, 8), (134, 8), baritone_two_musicmaker_one],
+        [(132, 8), (134, 8), baritone_two_musicmaker_two],
         [(134, 8), (136, 8), baritone_two_musicmaker_one],
         [(136, 8), (138, 8), baritone_two_musicmaker_two],
         [(138, 8), (140, 8), baritone_two_musicmaker_two],
@@ -2719,7 +2719,7 @@ voice_17_timespan_list = abjad.TimespanList([
         [(146, 8), (148, 8), baritone_two_musicmaker_three],
         [(148, 8), (150, 8), baritone_two_musicmaker_one],
         [(150, 8), (152, 8), baritone_two_musicmaker_one],
-        [(152, 8), (154, 8), baritone_two_musicmaker_one],
+        [(152, 8), (154, 8), baritone_two_musicmaker_two],
         [(154, 8), (156, 8), baritone_two_musicmaker_one],
         [(156, 8), (158, 8), baritone_two_musicmaker_two],
         [(158, 8), (160, 8), baritone_two_musicmaker_two],
@@ -2846,7 +2846,7 @@ voice_18_timespan_list = abjad.TimespanList([
         [(174, 8), (176, 8), baritone_three_musicmaker_one],
         [(176, 8), (178, 8), baritone_three_musicmaker_one],
         [(178, 8), (180, 8), baritone_three_musicmaker_one],
-        [(180, 8), (182, 8), baritone_three_musicmaker_one],
+        [(180, 8), (182, 8), baritone_three_musicmaker_two],
         [(182, 8), (184, 8), baritone_three_musicmaker_one],
         [(184, 8), (186, 8), baritone_three_musicmaker_one],
         [(186, 8), (188, 8), baritone_three_musicmaker_three],
@@ -2855,7 +2855,7 @@ voice_18_timespan_list = abjad.TimespanList([
         [(192, 8), (194, 8), baritone_three_musicmaker_two],
         [(194, 8), (196, 8), baritone_three_musicmaker_two],
         [(196, 8), (198, 8), baritone_three_musicmaker_two],
-        [(198, 8), (199, 8), baritone_three_musicmaker_two],
+        [(198, 8), (199, 8), baritone_three_musicmaker_one],
     ]
 ])
 
@@ -2883,14 +2883,14 @@ voice_19_timespan_list = abjad.TimespanList([
         [(22, 8), (24, 8), bass_one_musicmaker_two],
         [(24, 8), (26, 8), bass_one_musicmaker_two],
         [(26, 8), (28, 8), bass_one_musicmaker_two],
-        [(28, 8), (30, 8), bass_one_musicmaker_two],
+        [(28, 8), (30, 8), bass_one_musicmaker_three],
         [(30, 8), (32, 8), bass_one_musicmaker_one],
         [(32, 8), (34, 8), bass_one_musicmaker_one],
         [(34, 8), (36, 8), bass_one_musicmaker_three],
         [(36, 8), (38, 8), bass_one_musicmaker_one],
         [(38, 8), (40, 8), bass_one_musicmaker_one],
-        [(40, 8), (42, 8), bass_one_musicmaker_one],
-        [(42, 8), (44, 8), bass_one_musicmaker_one],
+        [(40, 8), (42, 8), bass_one_musicmaker_two],
+        [(42, 8), (44, 8), bass_one_musicmaker_two],
         [(44, 8), (46, 8), bass_one_musicmaker_one],
         [(46, 8), (48, 8), bass_one_musicmaker_two],
         [(48, 8), (50, 8), bass_one_musicmaker_two],
@@ -2899,7 +2899,7 @@ voice_19_timespan_list = abjad.TimespanList([
         [(54, 8), (56, 8), bass_one_musicmaker_two],
         [(56, 8), (58, 8), bass_one_musicmaker_two],
         [(58, 8), (60, 8), bass_one_musicmaker_one],
-        [(60, 8), (62, 8), bass_one_musicmaker_one],
+        [(60, 8), (62, 8), bass_one_musicmaker_three],
         [(62, 8), (64, 8), bass_one_musicmaker_one],
         [(64, 8), (68, 8), bass_one_musicmaker_one],
         [(68, 8), (70, 8), bass_one_musicmaker_one],
@@ -2909,7 +2909,7 @@ voice_19_timespan_list = abjad.TimespanList([
         [(76, 8), (78, 8), bass_one_musicmaker_two],
         [(78, 8), (80, 8), bass_one_musicmaker_two],
         [(80, 8), (82, 8), bass_one_musicmaker_two],
-        [(82, 8), (84, 8), bass_one_musicmaker_two],
+        [(82, 8), (84, 8), bass_one_musicmaker_three],
         [(84, 8), (86, 8), bass_one_musicmaker_two],
         [(86, 8), (88, 8), bass_one_musicmaker_two],
         [(88, 8), (90, 8), bass_one_musicmaker_one],
@@ -2997,8 +2997,8 @@ voice_20_timespan_list = abjad.TimespanList([
         [(28, 8), (30, 8), bass_two_musicmaker_two],
         [(30, 8), (32, 8), bass_two_musicmaker_three],
         [(32, 8), (34, 8), bass_two_musicmaker_one],
-        [(34, 8), (36, 8), bass_two_musicmaker_one],
-        [(36, 8), (38, 8), bass_two_musicmaker_one],
+        [(34, 8), (36, 8), bass_two_musicmaker_two],
+        [(36, 8), (38, 8), bass_two_musicmaker_two],
         [(38, 8), (40, 8), bass_two_musicmaker_one],
         [(40, 8), (42, 8), bass_two_musicmaker_one],
         [(42, 8), (44, 8), bass_two_musicmaker_one],
@@ -3015,7 +3015,7 @@ voice_20_timespan_list = abjad.TimespanList([
         [(64, 8), (68, 8), bass_two_musicmaker_one],
         [(68, 8), (70, 8), bass_two_musicmaker_one],
         [(70, 8), (72, 8), bass_two_musicmaker_one],
-        [(72, 8), (74, 8), bass_two_musicmaker_one],
+        [(72, 8), (74, 8), bass_two_musicmaker_three],
         [(74, 8), (76, 8), bass_two_musicmaker_two],
         [(76, 8), (78, 8), bass_two_musicmaker_two],
         [(78, 8), (80, 8), bass_two_musicmaker_two],
@@ -3024,7 +3024,7 @@ voice_20_timespan_list = abjad.TimespanList([
         [(84, 8), (86, 8), bass_two_musicmaker_two],
         [(86, 8), (88, 8), bass_two_musicmaker_two],
         [(88, 8), (90, 8), bass_two_musicmaker_one],
-        [(90, 8), (92, 8), bass_two_musicmaker_one],
+        [(90, 8), (92, 8), bass_two_musicmaker_two],
         [(92, 8), (94, 8), bass_two_musicmaker_one],
         [(94, 8), (96, 8), bass_two_musicmaker_one],
         [(96, 8), (98, 8), bass_two_musicmaker_one],
@@ -3040,7 +3040,7 @@ voice_20_timespan_list = abjad.TimespanList([
         [(116, 8), (118, 8), bass_two_musicmaker_one],
         [(118, 8), (120, 8), bass_two_musicmaker_one],
         [(120, 8), (122, 8), bass_two_musicmaker_one],
-        [(122, 8), (124, 8), bass_two_musicmaker_one],
+        [(122, 8), (124, 8), bass_two_musicmaker_two],
         [(124, 8), (126, 8), bass_two_musicmaker_one],
         [(126, 8), (128, 8), bass_two_musicmaker_two],
         [(128, 8), (130, 8), bass_two_musicmaker_one],
@@ -3068,7 +3068,7 @@ voice_20_timespan_list = abjad.TimespanList([
         [(174, 8), (176, 8), bass_two_musicmaker_two],
         [(176, 8), (178, 8), bass_two_musicmaker_two],
         [(178, 8), (180, 8), bass_two_musicmaker_one],
-        [(180, 8), (182, 8), bass_two_musicmaker_one],
+        [(180, 8), (182, 8), bass_two_musicmaker_two],
         [(182, 8), (184, 8), bass_two_musicmaker_one],
         [(184, 8), (186, 8), bass_two_musicmaker_one],
         [(186, 8), (188, 8), bass_two_musicmaker_one],
@@ -3799,7 +3799,6 @@ for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -3833,7 +3832,6 @@ for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/2.)soprano1'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -3867,7 +3865,6 @@ for staff in abjad.iterate(score['Staff 3']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/3.)soprano2'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -3901,7 +3898,6 @@ for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/4.)soprano3'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -3935,7 +3931,6 @@ for staff in abjad.iterate(score['Staff 5']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/5.)alto1'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -3969,7 +3964,6 @@ for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/6.)alto2'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4003,7 +3997,6 @@ for staff in abjad.iterate(score['Staff 7']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/7.)alto3'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4037,7 +4030,6 @@ for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/8.)alto4'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4071,7 +4063,6 @@ for staff in abjad.iterate(score['Staff 9']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/9.)alto5'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4105,7 +4096,6 @@ for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/10.)alto6'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4139,7 +4129,6 @@ for staff in abjad.iterate(score['Staff 11']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/11.)tenor1'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4173,7 +4162,6 @@ for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/12.)tenor2'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4207,7 +4195,6 @@ for staff in abjad.iterate(score['Staff 13']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/13.)tenor3'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4241,7 +4228,6 @@ for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/14.)tenor4'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4275,7 +4261,6 @@ for staff in abjad.iterate(score['Staff 15']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/15.)tenor5'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4309,7 +4294,6 @@ for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/16.)baritone1'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4343,7 +4327,6 @@ for staff in abjad.iterate(score['Staff 17']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/17.)baritone2'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4377,7 +4360,6 @@ for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/18.)baritone3'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4411,7 +4393,6 @@ for staff in abjad.iterate(score['Staff 19']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/19.)bass1'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4445,7 +4426,6 @@ for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/20.)bass2'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
@@ -4479,7 +4459,6 @@ for staff in abjad.iterate(score['Staff 21']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/21.)contrabass'
     pdf_path = f'{directory}/Section_C.pdf'
     path = pathlib.Path('Section_C.pdf')
