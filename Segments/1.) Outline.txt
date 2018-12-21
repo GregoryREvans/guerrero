@@ -25,11 +25,11 @@ Section_C: random-walks continue, multiphonics return, tone color shifts with ai
     dynamic profile: medium, getting quieter (random walks = loud, fast chords = moderate, slow chords = quiet)
     notes: maybe try including other pitches in sopranino and contrabass / reconsider articulations
 
-Section_D: tone color changes to be more airy, emphasize tongue slaps
+Section_D: quarter = 108? tone color changes to be more airy, emphasize tongue slaps
     dynamic profile: quiet, not yet a whisper
     notes:
 
-Section_E: repeated notes and tremolo-trills underscored by long tones (*no* multiphonics)
+Section_E: quarter = 90, repeated notes and tremolo-trills underscored by long tones (*no* multiphonics)
     dynamic profile: suddenly loud again for repetitions but still subdued for long tones
     notes:
 

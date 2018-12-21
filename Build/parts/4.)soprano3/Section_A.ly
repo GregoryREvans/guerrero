@@ -98,7 +98,7 @@
                     \set Staff.instrumentName =
                     \markup { "Soprano 3" }
                     cs''2.
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -149,7 +149,7 @@
                 {
                     % [Voice 4 measure 5] %! COMMENT_MEASURE_NUMBERS
                     cs''4
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -179,7 +179,7 @@
                 {
                     % [Voice 4 measure 7] %! COMMENT_MEASURE_NUMBERS
                     cs''4
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -190,7 +190,7 @@
                 }
                 {
                     cs''4
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -202,7 +202,7 @@
                 {
                     % [Voice 4 measure 8] %! COMMENT_MEASURE_NUMBERS
                     cs''2.
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -238,40 +238,39 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 4 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        eqf''16
+                        eqf''8
                         \mf
 
                         \>
                         [
                         ef''16
                         - \portato
-                        dqs''16
-
                     }
-                    d''8.
+                    dqs''16
+
+                    d''16
 
                     dqf''16
 
-                    \times 4/5 {
-                        cs''16
+                    cs''16
 
-                        dqf''16
+                    \times 4/5 {
+                        dqf''8
                         - \portato
                         d''16
 
+                        ~
+                        d''16
                         dqs''16
 
-                        d''16
-                        ~
                     }
-                    d''16
+                    d''8
+
                     dqs''16
 
-                    ~
-                    dqs''16
                     d''16
                     \pp
-
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -279,7 +278,7 @@
                 {
                     % [Voice 4 measure 12] %! COMMENT_MEASURE_NUMBERS
                     cs''4
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -312,7 +311,7 @@
                         % [Voice 4 measure 14] %! COMMENT_MEASURE_NUMBERS
                         dqf''8
                         \mf
-                        - \portato
+
                         \>
                         [
                         cs''16
@@ -329,7 +328,7 @@
                 }
                 {
                     cs''4
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -341,7 +340,7 @@
                 {
                     % [Voice 4 measure 15] %! COMMENT_MEASURE_NUMBERS
                     cs''2.
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -353,7 +352,7 @@
                 {
                     % [Voice 4 measure 16] %! COMMENT_MEASURE_NUMBERS
                     cs''4
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -404,7 +403,7 @@
                     r2
                 }
                 {
-                    cqs''8.
+                    cqs''16
                     \mf
 
                     \>
@@ -413,24 +412,25 @@
 
                     ~
                     cs''16
-                    dqf''16
+                    dqf''8.
+                    - \portato
+                    d''8
 
-                    ~
-                    dqf''16
-                    d''16
-                    ~
                 }
                 {
                     \times 4/5 {
                         % [Voice 4 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        d''8
                         dqs''16
-                        - \portato
+
+                        d''16
+
+                        dqf''16
+
                         ~
-                        dqs''16
+                        dqf''16
                         d''16
                         \pp
-
+                        - \portato
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -442,7 +442,7 @@
                 }
                 {
                     cs''4
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<

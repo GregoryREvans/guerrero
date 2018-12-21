@@ -126,7 +126,7 @@
                 {
                     % [Voice 14 measure 3] %! COMMENT_MEASURE_NUMBERS
                     fs'2.
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -138,7 +138,7 @@
                 }
                 {
                     <fs' fqs''>4
-                    \f
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -198,7 +198,7 @@
                 {
                     % [Voice 14 measure 10] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs''>2.
-                    \mp
+                    \f
                     - \espressivo
                     _ \markup {
                         \override
@@ -216,20 +216,19 @@
                     \!
                 }
                 {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        fqs'8
-                        \mf
+                    fqs'16
+                    \mf
 
-                        \>
-                        [
-                        fs'16
-                        \pp
+                    \>
+                    [
+                    fs'8
+                    - \portato
+                    gqf'16
+                    \pp
 
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
                 }
                 {
                     r4
@@ -245,7 +244,7 @@
                 }
                 {
                     fs'2
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -253,7 +252,7 @@
                 {
                     % [Voice 14 measure 14] %! COMMENT_MEASURE_NUMBERS
                     <fs' fqs''>2.
-                    \f
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -286,7 +285,7 @@
                 {
                     % [Voice 14 measure 17] %! COMMENT_MEASURE_NUMBERS
                     fs'2.
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -298,7 +297,7 @@
                 }
                 {
                     <fs' fqs''>4
-                    \mp
+                    \f
                     - \espressivo
                     _ \markup {
                         \override
@@ -324,7 +323,7 @@
                 }
                 {
                     <fs' fqs''>2
-                    \f
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -337,28 +336,27 @@
                     \<
                 }
                 {
-                    % [Voice 14 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    gqf'16
-                    \mf
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/11 {
+                        % [Voice 14 measure 21] %! COMMENT_MEASURE_NUMBERS
+                        g'8.
+                        \mf
 
-                    \>
-                    [
-                    g'16
-                    - \portato
-                    gqf'8
+                        \>
+                        [
+                        gqf'8
 
-                    fs'16
+                        fs'8
 
-                    gqf'8.
+                        gqf'8.
+                        - \portato
+                        g'16
+                        \pp
 
-                    g'8
-
-                    gqf'8
-                    \pp
-                    - \portato
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
                 }
                 {
                     r4

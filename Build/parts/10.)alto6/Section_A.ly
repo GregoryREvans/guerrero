@@ -98,7 +98,7 @@
                     \set Staff.instrumentName =
                     \markup { "Alto 6" }
                     cs'2.
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -111,7 +111,7 @@
                 {
                     % [Voice 10 measure 2] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>4
-                    \mp
+                    \f
                     - \espressivo
                     _ \markup {
                         \override
@@ -134,7 +134,7 @@
                 {
                     % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS
                     cs'1
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -142,7 +142,7 @@
                 {
                     % [Voice 10 measure 5] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>4
-                    \f
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -164,7 +164,7 @@
                 }
                 {
                     <cqs'' g'' eef''' bf'''>2
-                    \mp
+                    \f
                     - \espressivo
                     _ \markup {
                         \override
@@ -179,7 +179,7 @@
                 {
                     % [Voice 10 measure 7] %! COMMENT_MEASURE_NUMBERS
                     cs'4
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -189,8 +189,8 @@
                     \!
                 }
                 {
-                    <cqs'' g'' eef''' bf'''>4
-                    \f
+                    <cqs'' g'' eef''' bf'''>2
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -203,13 +203,9 @@
                     \<
                 }
                 {
-                    r4
-                    \!
-                }
-                {
                     % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS
                     cs'2.
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -221,7 +217,7 @@
                 {
                     % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>4
-                    \mp
+                    \f
                     - \espressivo
                     _ \markup {
                         \override
@@ -243,33 +239,35 @@
                 }
                 {
                     % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    bqf'16
+                    bqf'8
                     \mf
 
                     \>
                     [
                     bf'16
-                    - \portato
+
+                    bqf'16
                     ~
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        bqf'8
+                        bf'16
+                        ~
+                    }
                     bf'16
                     bqf'16
 
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bf'8
-
-                        bqf'16
-
-                    }
-                    b'8.
-
-                    bqs'16
+                    ~
+                    bqf'16
+                    b'16
                     ~
                     \times 4/5 {
-                        bqs'16
                         b'8
+                        bqs'16
                         - \portato
-                        bqs'8
+                        ~
+                        bqs'16
+                        b'16
                         \pp
 
                         - \tweak stencil #constante-hairpin
@@ -280,7 +278,7 @@
                 {
                     % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS
                     cs'4
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -291,11 +289,11 @@
                 }
                 {
                     % [Voice 10 measure 13] %! COMMENT_MEASURE_NUMBERS
-                    r2
+                    r4
                 }
                 {
                     <cqs'' g'' eef''' bf'''>2
-                    \f
+                    \mp
                     - \espressivo
                     _ \markup {
                         \override
@@ -308,15 +306,19 @@
                     \<
                 }
                 {
+                    r4
+                    \!
+                }
+                {
                     % [Voice 10 measure 14] %! COMMENT_MEASURE_NUMBERS
-                    b'16
+                    bqs'16
                     \mf
 
                     \>
                     [
-                    bqf'8
+                    b'8
 
-                    b'16
+                    bqf'16
                     \pp
 
                     - \tweak stencil #constante-hairpin
@@ -329,7 +331,7 @@
                 }
                 {
                     cs'4
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -341,7 +343,7 @@
                 {
                     % [Voice 10 measure 15] %! COMMENT_MEASURE_NUMBERS
                     cs'2.
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -353,7 +355,7 @@
                 {
                     % [Voice 10 measure 16] %! COMMENT_MEASURE_NUMBERS
                     cs'4
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -401,47 +403,46 @@
                 }
                 {
                     % [Voice 10 measure 20] %! COMMENT_MEASURE_NUMBERS
-                    r2
+                    r4
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 8/7 {
-                        bqs'16
+                    \times 12/11 {
+                        b'16
                         \mf
                         - \portato
                         \>
                         [
-                        b'8
+                        bqs'16
+
+                        b'8.
 
                         bqs'16
 
                         c''16
 
                         bqs'16
+                        - \portato
+                        b'16
+
+                        bqs'16
 
                         b'16
-                        ~
+                        \pp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                 }
                 {
                     % [Voice 10 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    b'8
-                    bqs'16
-                    - \portato
-                    b'16
-                    \pp
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                }
-                {
-                    r2
+                    r2.
                     \!
                 }
                 {
                     cs'4
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<

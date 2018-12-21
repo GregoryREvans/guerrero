@@ -19,7 +19,7 @@ time_signatures = [
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
-        (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
+        (4, 4), (4, 4), (4, 4), (4, 4), (7, 8),
     ]
 ]
 
@@ -786,103 +786,128 @@ voice_1_timespan_list = abjad.TimespanList([
         [(2, 8), (4, 8), sopranino_musicmaker_three],
         [(4, 8), (6, 8), sopranino_musicmaker_two],
         [(6, 8), (8, 8), sopranino_musicmaker_two],
+
         [(8, 8), (10, 8), sopranino_musicmaker_three],
         [(10, 8), (12, 8), sopranino_musicmaker_two],
         [(12, 8), (14, 8), sopranino_musicmaker_two],
         [(14, 8), (16, 8), sopranino_musicmaker_two],
+
         [(16, 8), (18, 8), sopranino_musicmaker_three],
         [(18, 8), (20, 8), sopranino_musicmaker_two],
         [(20, 8), (22, 8), sopranino_musicmaker_two],
         [(22, 8), (24, 8), sopranino_musicmaker_two],
+
         [(24, 8), (26, 8), sopranino_musicmaker_two],
         [(26, 8), (28, 8), sopranino_musicmaker_three],
         [(28, 8), (30, 8), sopranino_musicmaker_two],
         [(30, 8), (32, 8), sopranino_musicmaker_two],
+
         [(32, 8), (34, 8), sopranino_musicmaker_two],
         [(34, 8), (36, 8), sopranino_musicmaker_two],
         [(36, 8), (38, 8), sopranino_musicmaker_three],
         [(38, 8), (40, 8), sopranino_musicmaker_three],
+
         [(40, 8), (42, 8), sopranino_musicmaker_two],
         [(42, 8), (44, 8), sopranino_musicmaker_two],
         [(44, 8), (46, 8), sopranino_musicmaker_two],
         [(46, 8), (48, 8), sopranino_musicmaker_three],
+
         [(48, 8), (50, 8), sopranino_musicmaker_three],
         [(50, 8), (52, 8), sopranino_musicmaker_three],
         [(52, 8), (54, 8), sopranino_musicmaker_two],
         [(54, 8), (56, 8), sopranino_musicmaker_two],
+
         [(56, 8), (58, 8), sopranino_musicmaker_three],
         [(58, 8), (60, 8), sopranino_musicmaker_three],
         [(60, 8), (62, 8), sopranino_musicmaker_three],
         [(62, 8), (64, 8), sopranino_musicmaker_two],
+
         [(64, 8), (66, 8), sopranino_musicmaker_two],
         [(66, 8), (68, 8), sopranino_musicmaker_three],
         [(68, 8), (70, 8), sopranino_musicmaker_three],
         [(70, 8), (72, 8), sopranino_musicmaker_two],
+
         [(72, 8), (74, 8), sopranino_musicmaker_three],
         [(74, 8), (76, 8), sopranino_musicmaker_three],
         [(76, 8), (78, 8), sopranino_musicmaker_two],
         [(78, 8), (80, 8), sopranino_musicmaker_three],
+
         [(80, 8), (82, 8), sopranino_musicmaker_three],
         [(82, 8), (84, 8), sopranino_musicmaker_three],
         [(84, 8), (86, 8), sopranino_musicmaker_three],
         [(86, 8), (88, 8), sopranino_musicmaker_two],
+
         [(88, 8), (90, 8), sopranino_musicmaker_two],
         [(90, 8), (92, 8), sopranino_musicmaker_two],
         [(92, 8), (94, 8), sopranino_musicmaker_two],
-        [(94, 8), (96, 8), sopranino_musicmaker_two],
+        [(94, 8), (96, 8), sopranino_musicmaker_three],
+
         [(96, 8), (98, 8), sopranino_musicmaker_three],
         [(98, 8), (100, 8), sopranino_musicmaker_three],
         [(100, 8), (102, 8), sopranino_musicmaker_three],
         [(102, 8), (104, 8), sopranino_musicmaker_two],
+
         [(104, 8), (106, 8), sopranino_musicmaker_two],
         [(106, 8), (108, 8), sopranino_musicmaker_two],
         [(108, 8), (110, 8), sopranino_musicmaker_three],
         [(110, 8), (112, 8), sopranino_musicmaker_two],
+
         [(112, 8), (114, 8), sopranino_musicmaker_two],
         [(114, 8), (116, 8), sopranino_musicmaker_three],
         [(116, 8), (118, 8), sopranino_musicmaker_three],
-        [(118, 8), (120, 8), sopranino_musicmaker_three],
+        [(118, 8), (120, 8), sopranino_musicmaker_two],
+
         [(120, 8), (122, 8), sopranino_musicmaker_two],
-        [(122, 8), (124, 8), sopranino_musicmaker_two],
+        [(122, 8), (124, 8), sopranino_musicmaker_three],
         [(124, 8), (126, 8), sopranino_musicmaker_two],
         [(126, 8), (128, 8), sopranino_musicmaker_two],
+
         [(128, 8), (130, 8), sopranino_musicmaker_two],
-        [(130, 8), (132, 8), sopranino_musicmaker_two],
+        [(130, 8), (132, 8), sopranino_musicmaker_three],
         [(132, 8), (134, 8), sopranino_musicmaker_two],
         [(134, 8), (136, 8), sopranino_musicmaker_three],
+
         [(136, 8), (138, 8), sopranino_musicmaker_three],
         [(138, 8), (140, 8), sopranino_musicmaker_three],
-        [(140, 8), (142, 8), sopranino_musicmaker_three],
-        [(142, 8), (144, 8), sopranino_musicmaker_three],
-        [(144, 8), (146, 8), sopranino_musicmaker_two],
-        [(146, 8), (148, 8), sopranino_musicmaker_two],
-        [(148, 8), (150, 8), sopranino_musicmaker_two],
+        [(140, 8), (142, 8), sopranino_musicmaker_two],
+        [(142, 8), (144, 8), sopranino_musicmaker_two],
+
+        [(144, 8), (146, 8), sopranino_musicmaker_three],
+        [(146, 8), (148, 8), sopranino_musicmaker_three],
+        [(148, 8), (150, 8), sopranino_musicmaker_three],
         [(150, 8), (152, 8), sopranino_musicmaker_two],
+
         [(152, 8), (154, 8), sopranino_musicmaker_two],
         [(154, 8), (156, 8), sopranino_musicmaker_three],
         [(156, 8), (158, 8), sopranino_musicmaker_three],
         [(158, 8), (160, 8), sopranino_musicmaker_three],
+
         [(160, 8), (162, 8), sopranino_musicmaker_two],
         [(162, 8), (164, 8), sopranino_musicmaker_two],
         [(164, 8), (166, 8), sopranino_musicmaker_two],
         [(166, 8), (168, 8), sopranino_musicmaker_three],
+
         [(168, 8), (170, 8), sopranino_musicmaker_two],
         [(170, 8), (172, 8), sopranino_musicmaker_three],
         [(172, 8), (174, 8), sopranino_musicmaker_three],
-        [(174, 8), (176, 8), sopranino_musicmaker_three],
-        [(176, 8), (178, 8), sopranino_musicmaker_three],
-        [(178, 8), (180, 8), sopranino_musicmaker_three],
+        [(174, 8), (176, 8), sopranino_musicmaker_two],
+
+        [(176, 8), (178, 8), sopranino_musicmaker_two],
+        [(178, 8), (180, 8), sopranino_musicmaker_two],
         [(180, 8), (182, 8), sopranino_musicmaker_three],
         [(182, 8), (184, 8), sopranino_musicmaker_three],
+
         [(184, 8), (186, 8), sopranino_musicmaker_two],
-        [(186, 8), (188, 8), sopranino_musicmaker_two],
+        [(186, 8), (188, 8), sopranino_musicmaker_three],
         [(188, 8), (190, 8), sopranino_musicmaker_two],
         [(190, 8), (192, 8), sopranino_musicmaker_two],
+
         [(192, 8), (194, 8), sopranino_musicmaker_two],
         [(194, 8), (196, 8), sopranino_musicmaker_three],
         [(196, 8), (198, 8), sopranino_musicmaker_three],
         [(198, 8), (199, 8), sopranino_musicmaker_three],
-        [(199, 8), (200, 8), silence_maker],
+
+        # [(199, 8), (200, 8), silence_maker],
     ]
 ])
 
@@ -900,98 +925,122 @@ voice_2_timespan_list = abjad.TimespanList([
         [(2, 8), (4, 8), soprano_one_musicmaker_two],
         [(4, 8), (6, 8), soprano_one_musicmaker_two],
         [(6, 8), (8, 8), soprano_one_musicmaker_two],
+
         [(8, 8), (10, 8), soprano_one_musicmaker_two],
-        [(10, 8), (12, 8), soprano_one_musicmaker_two],
+        [(10, 8), (12, 8), soprano_one_musicmaker_three],
         [(12, 8), (14, 8), soprano_one_musicmaker_two],
         [(14, 8), (16, 8), soprano_one_musicmaker_three],
+
         [(16, 8), (18, 8), soprano_one_musicmaker_three],
         [(18, 8), (20, 8), soprano_one_musicmaker_three],
-        [(20, 8), (22, 8), soprano_one_musicmaker_three],
+        [(20, 8), (22, 8), soprano_one_musicmaker_two],
         [(22, 8), (24, 8), soprano_one_musicmaker_three],
+
         [(24, 8), (26, 8), soprano_one_musicmaker_three],
         [(26, 8), (28, 8), soprano_one_musicmaker_three],
         [(28, 8), (30, 8), soprano_one_musicmaker_two],
         [(30, 8), (32, 8), soprano_one_musicmaker_two],
+
         [(32, 8), (34, 8), soprano_one_musicmaker_two],
         [(34, 8), (36, 8), soprano_one_musicmaker_two],
         [(36, 8), (38, 8), soprano_one_musicmaker_two],
         [(38, 8), (40, 8), soprano_one_musicmaker_three],
+
         [(40, 8), (42, 8), soprano_one_musicmaker_three],
         [(42, 8), (44, 8), soprano_one_musicmaker_three],
         [(44, 8), (46, 8), soprano_one_musicmaker_three],
-        [(46, 8), (48, 8), soprano_one_musicmaker_three],
+        [(46, 8), (48, 8), soprano_one_musicmaker_two],
+
         [(48, 8), (50, 8), soprano_one_musicmaker_two],
         [(50, 8), (52, 8), soprano_one_musicmaker_two],
         [(52, 8), (54, 8), soprano_one_musicmaker_two],
         [(54, 8), (56, 8), soprano_one_musicmaker_three],
+
         [(56, 8), (58, 8), soprano_one_musicmaker_three],
         [(58, 8), (60, 8), soprano_one_musicmaker_three],
         [(60, 8), (62, 8), soprano_one_musicmaker_two],
         [(62, 8), (64, 8), soprano_one_musicmaker_three],
-        [(64, 8), (66, 8), soprano_one_musicmaker_two],
-        [(66, 8), (68, 8), soprano_one_musicmaker_two],
+
+        [(64, 8), (66, 8), soprano_one_musicmaker_three],
+        [(66, 8), (68, 8), soprano_one_musicmaker_three],
         [(68, 8), (70, 8), soprano_one_musicmaker_two],
         [(70, 8), (72, 8), soprano_one_musicmaker_two],
+
         [(72, 8), (74, 8), soprano_one_musicmaker_two],
         [(74, 8), (76, 8), soprano_one_musicmaker_two],
         [(76, 8), (78, 8), soprano_one_musicmaker_three],
         [(78, 8), (80, 8), soprano_one_musicmaker_three],
+
         [(80, 8), (82, 8), soprano_one_musicmaker_three],
-        [(82, 8), (84, 8), soprano_one_musicmaker_three],
-        [(84, 8), (86, 8), soprano_one_musicmaker_three],
+        [(82, 8), (84, 8), soprano_one_musicmaker_two],
+        [(84, 8), (86, 8), soprano_one_musicmaker_two],
         [(86, 8), (88, 8), soprano_one_musicmaker_three],
+
         [(88, 8), (90, 8), soprano_one_musicmaker_two],
         [(90, 8), (92, 8), soprano_one_musicmaker_two],
         [(92, 8), (94, 8), soprano_one_musicmaker_two],
-        [(94, 8), (96, 8), soprano_one_musicmaker_two],
+        [(94, 8), (96, 8), soprano_one_musicmaker_three],
+
         [(96, 8), (98, 8), soprano_one_musicmaker_three],
         [(98, 8), (100, 8), soprano_one_musicmaker_three],
-        [(100, 8), (102, 8), soprano_one_musicmaker_three],
-        [(102, 8), (104, 8), soprano_one_musicmaker_three],
+        [(100, 8), (102, 8), soprano_one_musicmaker_two],
+        [(102, 8), (104, 8), soprano_one_musicmaker_two],
+
         [(104, 8), (106, 8), soprano_one_musicmaker_two],
         [(106, 8), (108, 8), soprano_one_musicmaker_two],
         [(108, 8), (110, 8), soprano_one_musicmaker_three],
         [(110, 8), (112, 8), soprano_one_musicmaker_three],
+
         [(112, 8), (114, 8), soprano_one_musicmaker_two],
         [(114, 8), (116, 8), soprano_one_musicmaker_two],
         [(116, 8), (118, 8), soprano_one_musicmaker_two],
         [(118, 8), (120, 8), soprano_one_musicmaker_three],
+
         [(120, 8), (122, 8), soprano_one_musicmaker_three],
         [(122, 8), (124, 8), soprano_one_musicmaker_three],
         [(124, 8), (126, 8), soprano_one_musicmaker_two],
         [(126, 8), (128, 8), soprano_one_musicmaker_two],
+
         [(128, 8), (130, 8), soprano_one_musicmaker_two],
         [(130, 8), (132, 8), soprano_one_musicmaker_two],
         [(132, 8), (134, 8), soprano_one_musicmaker_three],
         [(134, 8), (136, 8), soprano_one_musicmaker_three],
+
         [(136, 8), (138, 8), soprano_one_musicmaker_three],
-        [(138, 8), (140, 8), soprano_one_musicmaker_three],
-        [(140, 8), (142, 8), soprano_one_musicmaker_three],
+        [(138, 8), (140, 8), soprano_one_musicmaker_two],
+        [(140, 8), (142, 8), soprano_one_musicmaker_two],
         [(142, 8), (144, 8), soprano_one_musicmaker_three],
+
         [(144, 8), (146, 8), soprano_one_musicmaker_two],
-        [(146, 8), (148, 8), soprano_one_musicmaker_two],
-        [(148, 8), (150, 8), soprano_one_musicmaker_two],
+        [(146, 8), (148, 8), soprano_one_musicmaker_three],
+        [(148, 8), (150, 8), soprano_one_musicmaker_three],
         [(150, 8), (152, 8), soprano_one_musicmaker_two],
+
         [(152, 8), (154, 8), soprano_one_musicmaker_two],
         [(154, 8), (156, 8), soprano_one_musicmaker_two],
         [(156, 8), (158, 8), soprano_one_musicmaker_two],
         [(158, 8), (160, 8), soprano_one_musicmaker_three],
+
         [(160, 8), (162, 8), soprano_one_musicmaker_three],
         [(162, 8), (164, 8), soprano_one_musicmaker_three],
         [(164, 8), (166, 8), soprano_one_musicmaker_three],
         [(166, 8), (168, 8), soprano_one_musicmaker_three],
-        [(168, 8), (170, 8), soprano_one_musicmaker_three],
+
+        [(168, 8), (170, 8), soprano_one_musicmaker_two],
         [(170, 8), (172, 8), soprano_one_musicmaker_three],
         [(172, 8), (174, 8), soprano_one_musicmaker_two],
         [(174, 8), (176, 8), soprano_one_musicmaker_two],
+
         [(176, 8), (178, 8), soprano_one_musicmaker_two],
-        [(178, 8), (180, 8), soprano_one_musicmaker_two],
+        [(178, 8), (180, 8), soprano_one_musicmaker_three],
         [(180, 8), (182, 8), soprano_one_musicmaker_two],
         [(182, 8), (184, 8), soprano_one_musicmaker_two],
+
         [(184, 8), (186, 8), soprano_one_musicmaker_three],
-        [(186, 8), (188, 8), soprano_one_musicmaker_three],
+        [(186, 8), (188, 8), soprano_one_musicmaker_two],
         [(188, 8), (190, 8), soprano_one_musicmaker_three],
         [(190, 8), (192, 8), soprano_one_musicmaker_three],
+
         [(192, 8), (194, 8), soprano_one_musicmaker_three],
         [(194, 8), (196, 8), soprano_one_musicmaker_two],
         [(196, 8), (198, 8), soprano_one_musicmaker_two],
@@ -1011,100 +1060,124 @@ voice_3_timespan_list = abjad.TimespanList([
     for start_offset, stop_offset, music_maker in [
         [(0, 8), (2, 8), soprano_two_musicmaker_three],
         [(2, 8), (4, 8), soprano_two_musicmaker_three],
-        [(4, 8), (6, 8), soprano_two_musicmaker_three],
-        [(6, 8), (8, 8), soprano_two_musicmaker_three],
+        [(4, 8), (6, 8), soprano_two_musicmaker_two],
+        [(6, 8), (8, 8), soprano_two_musicmaker_two],
+
         [(8, 8), (10, 8), soprano_two_musicmaker_three],
         [(10, 8), (12, 8), soprano_two_musicmaker_three],
-        [(12, 8), (14, 8), soprano_two_musicmaker_three],
+        [(12, 8), (14, 8), soprano_two_musicmaker_two],
         [(14, 8), (16, 8), soprano_two_musicmaker_three],
+
         [(16, 8), (18, 8), soprano_two_musicmaker_two],
-        [(18, 8), (20, 8), soprano_two_musicmaker_two],
+        [(18, 8), (20, 8), soprano_two_musicmaker_three],
         [(20, 8), (22, 8), soprano_two_musicmaker_two],
         [(22, 8), (24, 8), soprano_two_musicmaker_two],
-        [(24, 8), (26, 8), soprano_two_musicmaker_two],
-        [(26, 8), (28, 8), soprano_two_musicmaker_two],
+
+        [(24, 8), (26, 8), soprano_two_musicmaker_three],
+        [(26, 8), (28, 8), soprano_two_musicmaker_three],
         [(28, 8), (30, 8), soprano_two_musicmaker_two],
         [(30, 8), (32, 8), soprano_two_musicmaker_three],
+
         [(32, 8), (34, 8), soprano_two_musicmaker_three],
         [(34, 8), (36, 8), soprano_two_musicmaker_three],
         [(36, 8), (38, 8), soprano_two_musicmaker_three],
-        [(38, 8), (40, 8), soprano_two_musicmaker_three],
+        [(38, 8), (40, 8), soprano_two_musicmaker_two],
+
         [(40, 8), (42, 8), soprano_two_musicmaker_three],
         [(42, 8), (44, 8), soprano_two_musicmaker_two],
         [(44, 8), (46, 8), soprano_two_musicmaker_two],
-        [(46, 8), (48, 8), soprano_two_musicmaker_two],
+        [(46, 8), (48, 8), soprano_two_musicmaker_three],
+
         [(48, 8), (50, 8), soprano_two_musicmaker_two],
         [(50, 8), (52, 8), soprano_two_musicmaker_three],
         [(52, 8), (54, 8), soprano_two_musicmaker_three],
-        [(54, 8), (56, 8), soprano_two_musicmaker_three],
+        [(54, 8), (56, 8), soprano_two_musicmaker_two],
+
         [(56, 8), (58, 8), soprano_two_musicmaker_three],
         [(58, 8), (60, 8), soprano_two_musicmaker_two],
-        [(60, 8), (62, 8), soprano_two_musicmaker_two],
+        [(60, 8), (62, 8), soprano_two_musicmaker_three],
         [(62, 8), (64, 8), soprano_two_musicmaker_two],
+
         [(64, 8), (66, 8), soprano_two_musicmaker_three],
         [(66, 8), (68, 8), soprano_two_musicmaker_three],
         [(68, 8), (70, 8), soprano_two_musicmaker_two],
         [(70, 8), (72, 8), soprano_two_musicmaker_three],
+
         [(72, 8), (74, 8), soprano_two_musicmaker_two],
         [(74, 8), (76, 8), soprano_two_musicmaker_two],
         [(76, 8), (78, 8), soprano_two_musicmaker_three],
         [(78, 8), (80, 8), soprano_two_musicmaker_three],
+
         [(80, 8), (82, 8), soprano_two_musicmaker_three],
         [(82, 8), (84, 8), soprano_two_musicmaker_two],
         [(84, 8), (86, 8), soprano_two_musicmaker_two],
         [(86, 8), (88, 8), soprano_two_musicmaker_two],
+
         [(88, 8), (90, 8), soprano_two_musicmaker_two],
         [(90, 8), (92, 8), soprano_two_musicmaker_three],
         [(92, 8), (94, 8), soprano_two_musicmaker_three],
         [(94, 8), (96, 8), soprano_two_musicmaker_three],
+
         [(96, 8), (98, 8), soprano_two_musicmaker_three],
         [(98, 8), (100, 8), soprano_two_musicmaker_two],
         [(100, 8), (102, 8), soprano_two_musicmaker_two],
         [(102, 8), (104, 8), soprano_two_musicmaker_two],
+
         [(104, 8), (106, 8), soprano_two_musicmaker_two],
-        [(106, 8), (108, 8), soprano_two_musicmaker_two],
+        [(106, 8), (108, 8), soprano_two_musicmaker_three],
         [(108, 8), (110, 8), soprano_two_musicmaker_three],
         [(110, 8), (112, 8), soprano_two_musicmaker_three],
+
         [(112, 8), (114, 8), soprano_two_musicmaker_three],
-        [(114, 8), (116, 8), soprano_two_musicmaker_three],
+        [(114, 8), (116, 8), soprano_two_musicmaker_two],
         [(116, 8), (118, 8), soprano_two_musicmaker_three],
         [(118, 8), (120, 8), soprano_two_musicmaker_three],
+
         [(120, 8), (122, 8), soprano_two_musicmaker_two],
-        [(122, 8), (124, 8), soprano_two_musicmaker_two],
+        [(122, 8), (124, 8), soprano_two_musicmaker_three],
         [(124, 8), (126, 8), soprano_two_musicmaker_two],
         [(126, 8), (128, 8), soprano_two_musicmaker_two],
-        [(128, 8), (130, 8), soprano_two_musicmaker_two],
+
+        [(128, 8), (130, 8), soprano_two_musicmaker_three],
         [(130, 8), (132, 8), soprano_two_musicmaker_two],
         [(132, 8), (134, 8), soprano_two_musicmaker_two],
         [(134, 8), (136, 8), soprano_two_musicmaker_three],
+
         [(136, 8), (138, 8), soprano_two_musicmaker_three],
         [(138, 8), (140, 8), soprano_two_musicmaker_three],
         [(140, 8), (142, 8), soprano_two_musicmaker_three],
-        [(142, 8), (144, 8), soprano_two_musicmaker_three],
+        [(142, 8), (144, 8), soprano_two_musicmaker_two],
+
         [(144, 8), (146, 8), soprano_two_musicmaker_three],
         [(146, 8), (148, 8), soprano_two_musicmaker_three],
         [(148, 8), (150, 8), soprano_two_musicmaker_three],
         [(150, 8), (152, 8), soprano_two_musicmaker_two],
+
         [(152, 8), (154, 8), soprano_two_musicmaker_two],
         [(154, 8), (156, 8), soprano_two_musicmaker_two],
         [(156, 8), (158, 8), soprano_two_musicmaker_three],
         [(158, 8), (160, 8), soprano_two_musicmaker_three],
-        [(160, 8), (162, 8), soprano_two_musicmaker_three],
+
+        [(160, 8), (162, 8), soprano_two_musicmaker_two],
         [(162, 8), (164, 8), soprano_two_musicmaker_three],
         [(164, 8), (166, 8), soprano_two_musicmaker_three],
         [(166, 8), (168, 8), soprano_two_musicmaker_two],
+
         [(168, 8), (170, 8), soprano_two_musicmaker_two],
-        [(170, 8), (172, 8), soprano_two_musicmaker_two],
-        [(172, 8), (174, 8), soprano_two_musicmaker_two],
+        [(170, 8), (172, 8), soprano_two_musicmaker_three],
+        [(172, 8), (174, 8), soprano_two_musicmaker_three],
         [(174, 8), (176, 8), soprano_two_musicmaker_two],
+
         [(176, 8), (178, 8), soprano_two_musicmaker_two],
         [(178, 8), (180, 8), soprano_two_musicmaker_two],
         [(180, 8), (182, 8), soprano_two_musicmaker_three],
         [(182, 8), (184, 8), soprano_two_musicmaker_three],
+
         [(184, 8), (186, 8), soprano_two_musicmaker_two],
-        [(186, 8), (188, 8), soprano_two_musicmaker_two],
+        [(186, 8), (188, 8), soprano_two_musicmaker_three],
         [(188, 8), (190, 8), soprano_two_musicmaker_two],
         [(190, 8), (192, 8), soprano_two_musicmaker_two],
+
         [(192, 8), (194, 8), soprano_two_musicmaker_three],
         [(194, 8), (196, 8), soprano_two_musicmaker_three],
         [(196, 8), (198, 8), soprano_two_musicmaker_three],
@@ -1122,105 +1195,129 @@ voice_4_timespan_list = abjad.TimespanList([
         ),
     )
     for start_offset, stop_offset, music_maker in [
-        [(0, 8), (2, 8), soprano_three_musicmaker_two],
+        [(0, 8), (2, 8), soprano_three_musicmaker_three],
         [(2, 8), (4, 8), soprano_three_musicmaker_two],
         [(4, 8), (6, 8), soprano_three_musicmaker_two],
         [(6, 8), (8, 8), soprano_three_musicmaker_two],
+
         [(8, 8), (10, 8), soprano_three_musicmaker_three],
         [(10, 8), (12, 8), soprano_three_musicmaker_three],
         [(12, 8), (14, 8), soprano_three_musicmaker_three],
         [(14, 8), (16, 8), soprano_three_musicmaker_three],
+
         [(16, 8), (18, 8), soprano_three_musicmaker_two],
         [(18, 8), (20, 8), soprano_three_musicmaker_two],
         [(20, 8), (22, 8), soprano_three_musicmaker_two],
         [(22, 8), (24, 8), soprano_three_musicmaker_two],
+
         [(24, 8), (26, 8), soprano_three_musicmaker_two],
-        [(26, 8), (28, 8), soprano_three_musicmaker_two],
+        [(26, 8), (28, 8), soprano_three_musicmaker_three],
         [(28, 8), (30, 8), soprano_three_musicmaker_two],
         [(30, 8), (32, 8), soprano_three_musicmaker_three],
+
         [(32, 8), (34, 8), soprano_three_musicmaker_three],
-        [(34, 8), (36, 8), soprano_three_musicmaker_three],
-        [(36, 8), (38, 8), soprano_three_musicmaker_three],
+        [(34, 8), (36, 8), soprano_three_musicmaker_two],
+        [(36, 8), (38, 8), soprano_three_musicmaker_two],
         [(38, 8), (40, 8), soprano_three_musicmaker_three],
+
         [(40, 8), (42, 8), soprano_three_musicmaker_three],
         [(42, 8), (44, 8), soprano_three_musicmaker_three],
         [(44, 8), (46, 8), soprano_three_musicmaker_two],
         [(46, 8), (48, 8), soprano_three_musicmaker_two],
+
         [(48, 8), (50, 8), soprano_three_musicmaker_two],
         [(50, 8), (52, 8), soprano_three_musicmaker_two],
         [(52, 8), (54, 8), soprano_three_musicmaker_two],
-        [(54, 8), (56, 8), soprano_three_musicmaker_two],
+        [(54, 8), (56, 8), soprano_three_musicmaker_three],
+
         [(56, 8), (58, 8), soprano_three_musicmaker_two],
         [(58, 8), (60, 8), soprano_three_musicmaker_three],
         [(60, 8), (62, 8), soprano_three_musicmaker_three],
         [(62, 8), (64, 8), soprano_three_musicmaker_three],
+
         [(64, 8), (66, 8), soprano_three_musicmaker_three],
         [(66, 8), (68, 8), soprano_three_musicmaker_three],
-        [(68, 8), (70, 8), soprano_three_musicmaker_three],
+        [(68, 8), (70, 8), soprano_three_musicmaker_two],
         [(70, 8), (72, 8), soprano_three_musicmaker_three],
+
         [(72, 8), (74, 8), soprano_three_musicmaker_two],
-        [(74, 8), (76, 8), soprano_three_musicmaker_two],
+        [(74, 8), (76, 8), soprano_three_musicmaker_three],
         [(76, 8), (78, 8), soprano_three_musicmaker_two],
         [(78, 8), (80, 8), soprano_three_musicmaker_two],
+
         [(80, 8), (82, 8), soprano_three_musicmaker_two],
         [(82, 8), (84, 8), soprano_three_musicmaker_two],
-        [(84, 8), (86, 8), soprano_three_musicmaker_two],
+        [(84, 8), (86, 8), soprano_three_musicmaker_three],
         [(86, 8), (88, 8), soprano_three_musicmaker_three],
+
         [(88, 8), (90, 8), soprano_three_musicmaker_three],
         [(90, 8), (92, 8), soprano_three_musicmaker_three],
         [(92, 8), (94, 8), soprano_three_musicmaker_three],
-        [(94, 8), (96, 8), soprano_three_musicmaker_three],
+        [(94, 8), (96, 8), soprano_three_musicmaker_two],
+
         [(96, 8), (98, 8), soprano_three_musicmaker_three],
         [(98, 8), (100, 8), soprano_three_musicmaker_three],
         [(100, 8), (102, 8), soprano_three_musicmaker_two],
-        [(102, 8), (104, 8), soprano_three_musicmaker_two],
-        [(104, 8), (106, 8), soprano_three_musicmaker_two],
+        [(102, 8), (104, 8), soprano_three_musicmaker_three],
+
+        [(104, 8), (106, 8), soprano_three_musicmaker_three],
         [(106, 8), (108, 8), soprano_three_musicmaker_two],
         [(108, 8), (110, 8), soprano_three_musicmaker_two],
         [(110, 8), (112, 8), soprano_three_musicmaker_two],
+
         [(112, 8), (114, 8), soprano_three_musicmaker_two],
         [(114, 8), (116, 8), soprano_three_musicmaker_three],
         [(116, 8), (118, 8), soprano_three_musicmaker_three],
         [(118, 8), (120, 8), soprano_three_musicmaker_three],
+
         [(120, 8), (122, 8), soprano_three_musicmaker_three],
-        [(122, 8), (124, 8), soprano_three_musicmaker_three],
-        [(124, 8), (126, 8), soprano_three_musicmaker_three],
+        [(122, 8), (124, 8), soprano_three_musicmaker_two],
+        [(124, 8), (126, 8), soprano_three_musicmaker_two],
         [(126, 8), (128, 8), soprano_three_musicmaker_three],
+
         [(128, 8), (130, 8), soprano_three_musicmaker_two],
         [(130, 8), (132, 8), soprano_three_musicmaker_two],
-        [(132, 8), (134, 8), soprano_three_musicmaker_two],
+        [(132, 8), (134, 8), soprano_three_musicmaker_three],
         [(134, 8), (136, 8), soprano_three_musicmaker_two],
+
         [(136, 8), (138, 8), soprano_three_musicmaker_two],
         [(138, 8), (140, 8), soprano_three_musicmaker_two],
-        [(140, 8), (142, 8), soprano_three_musicmaker_two],
+        [(140, 8), (142, 8), soprano_three_musicmaker_three],
         [(142, 8), (144, 8), soprano_three_musicmaker_three],
+
         [(144, 8), (146, 8), soprano_three_musicmaker_three],
-        [(146, 8), (148, 8), soprano_three_musicmaker_three],
+        [(146, 8), (148, 8), soprano_three_musicmaker_two],
         [(148, 8), (150, 8), soprano_three_musicmaker_three],
-        [(150, 8), (152, 8), soprano_three_musicmaker_three],
+        [(150, 8), (152, 8), soprano_three_musicmaker_two],
+
         [(152, 8), (154, 8), soprano_three_musicmaker_three],
         [(154, 8), (156, 8), soprano_three_musicmaker_three],
         [(156, 8), (158, 8), soprano_three_musicmaker_two],
         [(158, 8), (160, 8), soprano_three_musicmaker_two],
+
         [(160, 8), (162, 8), soprano_three_musicmaker_two],
         [(162, 8), (164, 8), soprano_three_musicmaker_two],
         [(164, 8), (166, 8), soprano_three_musicmaker_two],
-        [(166, 8), (168, 8), soprano_three_musicmaker_two],
+        [(166, 8), (168, 8), soprano_three_musicmaker_three],
+
         [(168, 8), (170, 8), soprano_three_musicmaker_two],
         [(170, 8), (172, 8), soprano_three_musicmaker_three],
         [(172, 8), (174, 8), soprano_three_musicmaker_three],
-        [(174, 8), (176, 8), soprano_three_musicmaker_three],
-        [(176, 8), (178, 8), soprano_three_musicmaker_three],
+        [(174, 8), (176, 8), soprano_three_musicmaker_two],
+
+        [(176, 8), (178, 8), soprano_three_musicmaker_two],
         [(178, 8), (180, 8), soprano_three_musicmaker_three],
         [(180, 8), (182, 8), soprano_three_musicmaker_three],
         [(182, 8), (184, 8), soprano_three_musicmaker_three],
+
         [(184, 8), (186, 8), soprano_three_musicmaker_two],
         [(186, 8), (188, 8), soprano_three_musicmaker_two],
-        [(188, 8), (190, 8), soprano_three_musicmaker_two],
+        [(188, 8), (190, 8), soprano_three_musicmaker_three],
         [(190, 8), (192, 8), soprano_three_musicmaker_two],
+
         [(192, 8), (194, 8), soprano_three_musicmaker_two],
         [(194, 8), (196, 8), soprano_three_musicmaker_two],
-        [(196, 8), (198, 8), soprano_three_musicmaker_two],
+        [(196, 8), (198, 8), soprano_three_musicmaker_three],
         [(198, 8), (199, 8), soprano_three_musicmaker_three],
     ]
 ])
@@ -1239,98 +1336,122 @@ voice_5_timespan_list = abjad.TimespanList([
         [(2, 8), (4, 8), alto_one_musicmaker_three],
         [(4, 8), (6, 8), alto_one_musicmaker_two],
         [(6, 8), (8, 8), alto_one_musicmaker_two],
+
         [(8, 8), (10, 8), alto_one_musicmaker_two],
-        [(10, 8), (12, 8), alto_one_musicmaker_two],
+        [(10, 8), (12, 8), alto_one_musicmaker_three],
         [(12, 8), (14, 8), alto_one_musicmaker_two],
         [(14, 8), (16, 8), alto_one_musicmaker_three],
+
         [(16, 8), (18, 8), alto_one_musicmaker_three],
         [(18, 8), (20, 8), alto_one_musicmaker_three],
         [(20, 8), (22, 8), alto_one_musicmaker_three],
         [(22, 8), (24, 8), alto_one_musicmaker_three],
+
         [(24, 8), (26, 8), alto_one_musicmaker_two],
         [(26, 8), (28, 8), alto_one_musicmaker_two],
         [(28, 8), (30, 8), alto_one_musicmaker_two],
         [(30, 8), (32, 8), alto_one_musicmaker_two],
+
         [(32, 8), (34, 8), alto_one_musicmaker_two],
         [(34, 8), (36, 8), alto_one_musicmaker_three],
         [(36, 8), (38, 8), alto_one_musicmaker_three],
         [(38, 8), (40, 8), alto_one_musicmaker_three],
-        [(40, 8), (42, 8), alto_one_musicmaker_three],
+
+        [(40, 8), (42, 8), alto_one_musicmaker_two],
         [(42, 8), (44, 8), alto_one_musicmaker_three],
         [(44, 8), (46, 8), alto_one_musicmaker_two],
         [(46, 8), (48, 8), alto_one_musicmaker_two],
+
         [(48, 8), (50, 8), alto_one_musicmaker_two],
-        [(50, 8), (52, 8), alto_one_musicmaker_two],
+        [(50, 8), (52, 8), alto_one_musicmaker_three],
         [(52, 8), (54, 8), alto_one_musicmaker_two],
         [(54, 8), (56, 8), alto_one_musicmaker_three],
+
         [(56, 8), (58, 8), alto_one_musicmaker_three],
         [(58, 8), (60, 8), alto_one_musicmaker_three],
-        [(60, 8), (62, 8), alto_one_musicmaker_three],
+        [(60, 8), (62, 8), alto_one_musicmaker_two],
         [(62, 8), (64, 8), alto_one_musicmaker_three],
+
         [(64, 8), (66, 8), alto_one_musicmaker_two],
-        [(66, 8), (68, 8), alto_one_musicmaker_two],
-        [(68, 8), (70, 8), alto_one_musicmaker_two],
+        [(66, 8), (68, 8), alto_one_musicmaker_three],
+        [(68, 8), (70, 8), alto_one_musicmaker_three],
         [(70, 8), (72, 8), alto_one_musicmaker_two],
+
         [(72, 8), (74, 8), alto_one_musicmaker_two],
         [(74, 8), (76, 8), alto_one_musicmaker_three],
         [(76, 8), (78, 8), alto_one_musicmaker_three],
         [(78, 8), (80, 8), alto_one_musicmaker_three],
+
         [(80, 8), (82, 8), alto_one_musicmaker_three],
-        [(82, 8), (84, 8), alto_one_musicmaker_three],
+        [(82, 8), (84, 8), alto_one_musicmaker_two],
         [(84, 8), (86, 8), alto_one_musicmaker_two],
         [(86, 8), (88, 8), alto_one_musicmaker_two],
+
         [(88, 8), (90, 8), alto_one_musicmaker_two],
-        [(90, 8), (92, 8), alto_one_musicmaker_two],
+        [(90, 8), (92, 8), alto_one_musicmaker_three],
         [(92, 8), (94, 8), alto_one_musicmaker_two],
         [(94, 8), (96, 8), alto_one_musicmaker_three],
+
         [(96, 8), (98, 8), alto_one_musicmaker_three],
-        [(98, 8), (100, 8), alto_one_musicmaker_three],
-        [(100, 8), (102, 8), alto_one_musicmaker_three],
+        [(98, 8), (100, 8), alto_one_musicmaker_two],
+        [(100, 8), (102, 8), alto_one_musicmaker_two],
         [(102, 8), (104, 8), alto_one_musicmaker_three],
-        [(104, 8), (106, 8), alto_one_musicmaker_two],
-        [(106, 8), (108, 8), alto_one_musicmaker_two],
+
+        [(104, 8), (106, 8), alto_one_musicmaker_three],
+        [(106, 8), (108, 8), alto_one_musicmaker_three],
         [(108, 8), (110, 8), alto_one_musicmaker_two],
         [(110, 8), (112, 8), alto_one_musicmaker_two],
+
         [(112, 8), (114, 8), alto_one_musicmaker_two],
-        [(114, 8), (116, 8), alto_one_musicmaker_three],
+        [(114, 8), (116, 8), alto_one_musicmaker_two],
         [(116, 8), (118, 8), alto_one_musicmaker_three],
         [(118, 8), (120, 8), alto_one_musicmaker_three],
+
         [(120, 8), (122, 8), alto_one_musicmaker_three],
         [(122, 8), (124, 8), alto_one_musicmaker_three],
         [(124, 8), (126, 8), alto_one_musicmaker_two],
         [(126, 8), (128, 8), alto_one_musicmaker_two],
+
         [(128, 8), (130, 8), alto_one_musicmaker_two],
         [(130, 8), (132, 8), alto_one_musicmaker_two],
         [(132, 8), (134, 8), alto_one_musicmaker_two],
         [(134, 8), (136, 8), alto_one_musicmaker_three],
+
         [(136, 8), (138, 8), alto_one_musicmaker_three],
         [(138, 8), (140, 8), alto_one_musicmaker_three],
         [(140, 8), (142, 8), alto_one_musicmaker_three],
         [(142, 8), (144, 8), alto_one_musicmaker_three],
+
         [(144, 8), (146, 8), alto_one_musicmaker_two],
         [(146, 8), (148, 8), alto_one_musicmaker_two],
         [(148, 8), (150, 8), alto_one_musicmaker_two],
         [(150, 8), (152, 8), alto_one_musicmaker_two],
+
         [(152, 8), (154, 8), alto_one_musicmaker_two],
         [(154, 8), (156, 8), alto_one_musicmaker_three],
         [(156, 8), (158, 8), alto_one_musicmaker_three],
         [(158, 8), (160, 8), alto_one_musicmaker_three],
+
         [(160, 8), (162, 8), alto_one_musicmaker_three],
         [(162, 8), (164, 8), alto_one_musicmaker_three],
         [(164, 8), (166, 8), alto_one_musicmaker_two],
         [(166, 8), (168, 8), alto_one_musicmaker_two],
+
         [(168, 8), (170, 8), alto_one_musicmaker_two],
         [(170, 8), (172, 8), alto_one_musicmaker_two],
         [(172, 8), (174, 8), alto_one_musicmaker_two],
         [(174, 8), (176, 8), alto_one_musicmaker_three],
+
         [(176, 8), (178, 8), alto_one_musicmaker_three],
         [(178, 8), (180, 8), alto_one_musicmaker_three],
         [(180, 8), (182, 8), alto_one_musicmaker_three],
         [(182, 8), (184, 8), alto_one_musicmaker_three],
+
         [(184, 8), (186, 8), alto_one_musicmaker_two],
         [(186, 8), (188, 8), alto_one_musicmaker_two],
         [(188, 8), (190, 8), alto_one_musicmaker_two],
         [(190, 8), (192, 8), alto_one_musicmaker_two],
+
         [(192, 8), (194, 8), alto_one_musicmaker_two],
         [(194, 8), (196, 8), alto_one_musicmaker_three],
         [(196, 8), (198, 8), alto_one_musicmaker_three],
@@ -1352,101 +1473,125 @@ voice_6_timespan_list = abjad.TimespanList([
         [(2, 8), (4, 8), alto_two_musicmaker_three],
         [(4, 8), (6, 8), alto_two_musicmaker_three],
         [(6, 8), (8, 8), alto_two_musicmaker_three],
+
         [(8, 8), (10, 8), alto_two_musicmaker_two],
         [(10, 8), (12, 8), alto_two_musicmaker_two],
         [(12, 8), (14, 8), alto_two_musicmaker_two],
         [(14, 8), (16, 8), alto_two_musicmaker_two],
+
         [(16, 8), (18, 8), alto_two_musicmaker_two],
-        [(18, 8), (20, 8), alto_two_musicmaker_two],
+        [(18, 8), (20, 8), alto_two_musicmaker_three],
         [(20, 8), (22, 8), alto_two_musicmaker_three],
         [(22, 8), (24, 8), alto_two_musicmaker_three],
-        [(24, 8), (26, 8), alto_two_musicmaker_three],
+
+        [(24, 8), (26, 8), alto_two_musicmaker_two],
         [(26, 8), (28, 8), alto_two_musicmaker_three],
         [(28, 8), (30, 8), alto_two_musicmaker_three],
         [(30, 8), (32, 8), alto_two_musicmaker_two],
+
         [(32, 8), (34, 8), alto_two_musicmaker_two],
         [(34, 8), (36, 8), alto_two_musicmaker_two],
         [(36, 8), (38, 8), alto_two_musicmaker_two],
         [(38, 8), (40, 8), alto_two_musicmaker_three],
+
         [(40, 8), (42, 8), alto_two_musicmaker_three],
         [(42, 8), (44, 8), alto_two_musicmaker_three],
         [(44, 8), (46, 8), alto_two_musicmaker_two],
         [(46, 8), (48, 8), alto_two_musicmaker_two],
+
         [(48, 8), (50, 8), alto_two_musicmaker_three],
         [(50, 8), (52, 8), alto_two_musicmaker_two],
         [(52, 8), (54, 8), alto_two_musicmaker_three],
         [(54, 8), (56, 8), alto_two_musicmaker_two],
+
         [(56, 8), (58, 8), alto_two_musicmaker_two],
         [(58, 8), (60, 8), alto_two_musicmaker_three],
         [(60, 8), (62, 8), alto_two_musicmaker_three],
         [(62, 8), (64, 8), alto_two_musicmaker_two],
+
         [(64, 8), (66, 8), alto_two_musicmaker_two],
         [(66, 8), (68, 8), alto_two_musicmaker_two],
         [(68, 8), (70, 8), alto_two_musicmaker_three],
         [(70, 8), (72, 8), alto_two_musicmaker_three],
+
         [(72, 8), (74, 8), alto_two_musicmaker_three],
         [(74, 8), (76, 8), alto_two_musicmaker_two],
         [(76, 8), (78, 8), alto_two_musicmaker_two],
         [(78, 8), (80, 8), alto_two_musicmaker_two],
+
         [(80, 8), (82, 8), alto_two_musicmaker_two],
         [(82, 8), (84, 8), alto_two_musicmaker_three],
         [(84, 8), (86, 8), alto_two_musicmaker_three],
         [(86, 8), (88, 8), alto_two_musicmaker_three],
+
         [(88, 8), (90, 8), alto_two_musicmaker_three],
         [(90, 8), (92, 8), alto_two_musicmaker_two],
         [(92, 8), (94, 8), alto_two_musicmaker_two],
-        [(94, 8), (96, 8), alto_two_musicmaker_two],
+        [(94, 8), (96, 8), alto_two_musicmaker_three],
+
         [(96, 8), (98, 8), alto_two_musicmaker_two],
         [(98, 8), (100, 8), alto_two_musicmaker_two],
         [(100, 8), (102, 8), alto_two_musicmaker_three],
-        [(102, 8), (104, 8), alto_two_musicmaker_three],
+        [(102, 8), (104, 8), alto_two_musicmaker_two],
+
         [(104, 8), (106, 8), alto_two_musicmaker_three],
-        [(106, 8), (108, 8), alto_two_musicmaker_three],
+        [(106, 8), (108, 8), alto_two_musicmaker_two],
         [(108, 8), (110, 8), alto_two_musicmaker_three],
         [(110, 8), (112, 8), alto_two_musicmaker_two],
+
         [(112, 8), (114, 8), alto_two_musicmaker_two],
         [(114, 8), (116, 8), alto_two_musicmaker_two],
-        [(116, 8), (118, 8), alto_two_musicmaker_two],
+        [(116, 8), (118, 8), alto_two_musicmaker_three],
         [(118, 8), (120, 8), alto_two_musicmaker_two],
+
         [(120, 8), (122, 8), alto_two_musicmaker_two],
         [(122, 8), (124, 8), alto_two_musicmaker_three],
         [(124, 8), (126, 8), alto_two_musicmaker_three],
         [(126, 8), (128, 8), alto_two_musicmaker_three],
-        [(128, 8), (130, 8), alto_two_musicmaker_three],
+
+        [(128, 8), (130, 8), alto_two_musicmaker_two],
         [(130, 8), (132, 8), alto_two_musicmaker_three],
         [(132, 8), (134, 8), alto_two_musicmaker_three],
         [(134, 8), (136, 8), alto_two_musicmaker_two],
+
         [(136, 8), (138, 8), alto_two_musicmaker_two],
-        [(138, 8), (140, 8), alto_two_musicmaker_two],
+        [(138, 8), (140, 8), alto_two_musicmaker_three],
         [(140, 8), (142, 8), alto_two_musicmaker_two],
-        [(142, 8), (144, 8), alto_two_musicmaker_two],
+        [(142, 8), (144, 8), alto_two_musicmaker_three],
+
         [(144, 8), (146, 8), alto_two_musicmaker_two],
         [(146, 8), (148, 8), alto_two_musicmaker_two],
         [(148, 8), (150, 8), alto_two_musicmaker_three],
         [(150, 8), (152, 8), alto_two_musicmaker_three],
-        [(152, 8), (154, 8), alto_two_musicmaker_three],
+
+        [(152, 8), (154, 8), alto_two_musicmaker_two],
         [(154, 8), (156, 8), alto_two_musicmaker_three],
-        [(156, 8), (158, 8), alto_two_musicmaker_three],
+        [(156, 8), (158, 8), alto_two_musicmaker_two],
         [(158, 8), (160, 8), alto_two_musicmaker_three],
+
         [(160, 8), (162, 8), alto_two_musicmaker_three],
         [(162, 8), (164, 8), alto_two_musicmaker_two],
-        [(164, 8), (166, 8), alto_two_musicmaker_two],
+        [(164, 8), (166, 8), alto_two_musicmaker_three],
         [(166, 8), (168, 8), alto_two_musicmaker_two],
+
         [(168, 8), (170, 8), alto_two_musicmaker_two],
-        [(170, 8), (172, 8), alto_two_musicmaker_two],
+        [(170, 8), (172, 8), alto_two_musicmaker_three],
         [(172, 8), (174, 8), alto_two_musicmaker_two],
         [(174, 8), (176, 8), alto_two_musicmaker_two],
+
         [(176, 8), (178, 8), alto_two_musicmaker_two],
         [(178, 8), (180, 8), alto_two_musicmaker_three],
-        [(180, 8), (182, 8), alto_two_musicmaker_three],
+        [(180, 8), (182, 8), alto_two_musicmaker_two],
         [(182, 8), (184, 8), alto_two_musicmaker_three],
+
         [(184, 8), (186, 8), alto_two_musicmaker_three],
         [(186, 8), (188, 8), alto_two_musicmaker_three],
-        [(188, 8), (190, 8), alto_two_musicmaker_three],
+        [(188, 8), (190, 8), alto_two_musicmaker_two],
         [(190, 8), (192, 8), alto_two_musicmaker_three],
+
         [(192, 8), (194, 8), alto_two_musicmaker_three],
         [(194, 8), (196, 8), alto_two_musicmaker_two],
-        [(196, 8), (198, 8), alto_two_musicmaker_two],
+        [(196, 8), (198, 8), alto_two_musicmaker_three],
         [(198, 8), (199, 8), alto_two_musicmaker_two],
     ]
 ])
@@ -1463,104 +1608,128 @@ voice_7_timespan_list = abjad.TimespanList([
     for start_offset, stop_offset, music_maker in [
         [(0, 8), (2, 8), alto_three_musicmaker_two],
         [(2, 8), (4, 8), alto_three_musicmaker_two],
-        [(4, 8), (6, 8), alto_three_musicmaker_two],
+        [(4, 8), (6, 8), alto_three_musicmaker_three],
         [(6, 8), (8, 8), alto_three_musicmaker_two],
+
         [(8, 8), (10, 8), alto_three_musicmaker_two],
         [(10, 8), (12, 8), alto_three_musicmaker_three],
         [(12, 8), (14, 8), alto_three_musicmaker_two],
         [(14, 8), (16, 8), alto_three_musicmaker_three],
+
         [(16, 8), (18, 8), alto_three_musicmaker_three],
         [(18, 8), (20, 8), alto_three_musicmaker_three],
         [(20, 8), (22, 8), alto_three_musicmaker_two],
         [(22, 8), (24, 8), alto_three_musicmaker_two],
+
         [(24, 8), (26, 8), alto_three_musicmaker_two],
-        [(26, 8), (28, 8), alto_three_musicmaker_two],
+        [(26, 8), (28, 8), alto_three_musicmaker_three],
         [(28, 8), (30, 8), alto_three_musicmaker_two],
         [(30, 8), (32, 8), alto_three_musicmaker_three],
+
         [(32, 8), (34, 8), alto_three_musicmaker_three],
         [(34, 8), (36, 8), alto_three_musicmaker_three],
-        [(36, 8), (38, 8), alto_three_musicmaker_three],
+        [(36, 8), (38, 8), alto_three_musicmaker_two],
         [(38, 8), (40, 8), alto_three_musicmaker_three],
+
         [(40, 8), (42, 8), alto_three_musicmaker_three],
         [(42, 8), (44, 8), alto_three_musicmaker_two],
-        [(44, 8), (46, 8), alto_three_musicmaker_two],
-        [(46, 8), (48, 8), alto_three_musicmaker_two],
-        [(48, 8), (50, 8), alto_three_musicmaker_two],
+        [(44, 8), (46, 8), alto_three_musicmaker_three],
+        [(46, 8), (48, 8), alto_three_musicmaker_three],
+
+        [(48, 8), (50, 8), alto_three_musicmaker_three],
         [(50, 8), (52, 8), alto_three_musicmaker_two],
-        [(52, 8), (54, 8), alto_three_musicmaker_two],
+        [(52, 8), (54, 8), alto_three_musicmaker_three],
         [(54, 8), (56, 8), alto_three_musicmaker_two],
-        [(56, 8), (58, 8), alto_three_musicmaker_three],
+
+        [(56, 8), (58, 8), alto_three_musicmaker_two],
         [(58, 8), (60, 8), alto_three_musicmaker_three],
         [(60, 8), (62, 8), alto_three_musicmaker_three],
         [(62, 8), (64, 8), alto_three_musicmaker_three],
+
         [(64, 8), (66, 8), alto_three_musicmaker_two],
         [(66, 8), (68, 8), alto_three_musicmaker_two],
         [(68, 8), (70, 8), alto_three_musicmaker_two],
         [(70, 8), (72, 8), alto_three_musicmaker_two],
+
         [(72, 8), (74, 8), alto_three_musicmaker_two],
         [(74, 8), (76, 8), alto_three_musicmaker_three],
         [(76, 8), (78, 8), alto_three_musicmaker_three],
         [(78, 8), (80, 8), alto_three_musicmaker_three],
+
         [(80, 8), (82, 8), alto_three_musicmaker_three],
-        [(82, 8), (84, 8), alto_three_musicmaker_three],
+        [(82, 8), (84, 8), alto_three_musicmaker_two],
         [(84, 8), (86, 8), alto_three_musicmaker_three],
         [(86, 8), (88, 8), alto_three_musicmaker_two],
+
         [(88, 8), (90, 8), alto_three_musicmaker_two],
         [(90, 8), (92, 8), alto_three_musicmaker_two],
-        [(92, 8), (94, 8), alto_three_musicmaker_two],
+        [(92, 8), (94, 8), alto_three_musicmaker_three],
         [(94, 8), (96, 8), alto_three_musicmaker_two],
+
         [(96, 8), (98, 8), alto_three_musicmaker_two],
         [(98, 8), (100, 8), alto_three_musicmaker_three],
         [(100, 8), (102, 8), alto_three_musicmaker_three],
         [(102, 8), (104, 8), alto_three_musicmaker_three],
+
         [(104, 8), (106, 8), alto_three_musicmaker_two],
-        [(106, 8), (108, 8), alto_three_musicmaker_two],
+        [(106, 8), (108, 8), alto_three_musicmaker_three],
         [(108, 8), (110, 8), alto_three_musicmaker_two],
         [(110, 8), (112, 8), alto_three_musicmaker_two],
+
         [(112, 8), (114, 8), alto_three_musicmaker_three],
         [(114, 8), (116, 8), alto_three_musicmaker_three],
         [(116, 8), (118, 8), alto_three_musicmaker_three],
-        [(118, 8), (120, 8), alto_three_musicmaker_three],
+        [(118, 8), (120, 8), alto_three_musicmaker_two],
+
         [(120, 8), (122, 8), alto_three_musicmaker_three],
         [(122, 8), (124, 8), alto_three_musicmaker_two],
         [(124, 8), (126, 8), alto_three_musicmaker_two],
-        [(126, 8), (128, 8), alto_three_musicmaker_two],
-        [(128, 8), (130, 8), alto_three_musicmaker_two],
+        [(126, 8), (128, 8), alto_three_musicmaker_three],
+
+        [(128, 8), (130, 8), alto_three_musicmaker_three],
         [(130, 8), (132, 8), alto_three_musicmaker_two],
         [(132, 8), (134, 8), alto_three_musicmaker_two],
         [(134, 8), (136, 8), alto_three_musicmaker_three],
-        [(136, 8), (138, 8), alto_three_musicmaker_three],
+
+        [(136, 8), (138, 8), alto_three_musicmaker_two],
         [(138, 8), (140, 8), alto_three_musicmaker_three],
         [(140, 8), (142, 8), alto_three_musicmaker_three],
         [(142, 8), (144, 8), alto_three_musicmaker_three],
+
         [(144, 8), (146, 8), alto_three_musicmaker_three],
         [(146, 8), (148, 8), alto_three_musicmaker_two],
         [(148, 8), (150, 8), alto_three_musicmaker_two],
         [(150, 8), (152, 8), alto_three_musicmaker_two],
+
         [(152, 8), (154, 8), alto_three_musicmaker_two],
-        [(154, 8), (156, 8), alto_three_musicmaker_two],
+        [(154, 8), (156, 8), alto_three_musicmaker_three],
         [(156, 8), (158, 8), alto_three_musicmaker_two],
         [(158, 8), (160, 8), alto_three_musicmaker_three],
+
         [(160, 8), (162, 8), alto_three_musicmaker_three],
         [(162, 8), (164, 8), alto_three_musicmaker_three],
-        [(164, 8), (166, 8), alto_three_musicmaker_three],
+        [(164, 8), (166, 8), alto_three_musicmaker_two],
         [(166, 8), (168, 8), alto_three_musicmaker_three],
+
         [(168, 8), (170, 8), alto_three_musicmaker_three],
         [(170, 8), (172, 8), alto_three_musicmaker_two],
-        [(172, 8), (174, 8), alto_three_musicmaker_two],
+        [(172, 8), (174, 8), alto_three_musicmaker_three],
         [(174, 8), (176, 8), alto_three_musicmaker_two],
+
         [(176, 8), (178, 8), alto_three_musicmaker_two],
         [(178, 8), (180, 8), alto_three_musicmaker_two],
         [(180, 8), (182, 8), alto_three_musicmaker_three],
         [(182, 8), (184, 8), alto_three_musicmaker_three],
+
         [(184, 8), (186, 8), alto_three_musicmaker_three],
-        [(186, 8), (188, 8), alto_three_musicmaker_three],
+        [(186, 8), (188, 8), alto_three_musicmaker_two],
         [(188, 8), (190, 8), alto_three_musicmaker_three],
         [(190, 8), (192, 8), alto_three_musicmaker_two],
+
         [(192, 8), (194, 8), alto_three_musicmaker_two],
         [(194, 8), (196, 8), alto_three_musicmaker_two],
         [(196, 8), (198, 8), alto_three_musicmaker_two],
-        [(198, 8), (199, 8), alto_three_musicmaker_two],
+        [(198, 8), (199, 8), alto_three_musicmaker_three],
     ]
 ])
 
@@ -1578,102 +1747,126 @@ voice_8_timespan_list = abjad.TimespanList([
         [(2, 8), (4, 8), alto_four_musicmaker_two],
         [(4, 8), (6, 8), alto_four_musicmaker_two],
         [(6, 8), (8, 8), alto_four_musicmaker_three],
+
         [(8, 8), (10, 8), alto_four_musicmaker_three],
         [(10, 8), (12, 8), alto_four_musicmaker_three],
         [(12, 8), (14, 8), alto_four_musicmaker_two],
         [(14, 8), (16, 8), alto_four_musicmaker_two],
+
         [(16, 8), (18, 8), alto_four_musicmaker_two],
         [(18, 8), (20, 8), alto_four_musicmaker_three],
         [(20, 8), (22, 8), alto_four_musicmaker_three],
         [(22, 8), (24, 8), alto_four_musicmaker_three],
+
         [(24, 8), (26, 8), alto_four_musicmaker_three],
         [(26, 8), (28, 8), alto_four_musicmaker_two],
         [(28, 8), (30, 8), alto_four_musicmaker_two],
         [(30, 8), (32, 8), alto_four_musicmaker_two],
+
         [(32, 8), (34, 8), alto_four_musicmaker_two],
         [(34, 8), (36, 8), alto_four_musicmaker_three],
         [(36, 8), (38, 8), alto_four_musicmaker_three],
         [(38, 8), (40, 8), alto_four_musicmaker_three],
+
         [(40, 8), (42, 8), alto_four_musicmaker_three],
         [(42, 8), (44, 8), alto_four_musicmaker_three],
         [(44, 8), (46, 8), alto_four_musicmaker_two],
         [(46, 8), (48, 8), alto_four_musicmaker_two],
+
         [(48, 8), (50, 8), alto_four_musicmaker_two],
         [(50, 8), (52, 8), alto_four_musicmaker_two],
-        [(52, 8), (54, 8), alto_four_musicmaker_two],
+        [(52, 8), (54, 8), alto_four_musicmaker_three],
         [(54, 8), (56, 8), alto_four_musicmaker_three],
+
         [(56, 8), (58, 8), alto_four_musicmaker_three],
-        [(58, 8), (60, 8), alto_four_musicmaker_three],
+        [(58, 8), (60, 8), alto_four_musicmaker_two],
         [(60, 8), (62, 8), alto_four_musicmaker_three],
-        [(62, 8), (64, 8), alto_four_musicmaker_three],
+        [(62, 8), (64, 8), alto_four_musicmaker_two],
+
         [(64, 8), (66, 8), alto_four_musicmaker_three],
         [(66, 8), (68, 8), alto_four_musicmaker_two],
-        [(68, 8), (70, 8), alto_four_musicmaker_two],
+        [(68, 8), (70, 8), alto_four_musicmaker_three],
         [(70, 8), (72, 8), alto_four_musicmaker_two],
+
         [(72, 8), (74, 8), alto_four_musicmaker_two],
         [(74, 8), (76, 8), alto_four_musicmaker_two],
-        [(76, 8), (78, 8), alto_four_musicmaker_two],
+        [(76, 8), (78, 8), alto_four_musicmaker_three],
         [(78, 8), (80, 8), alto_four_musicmaker_three],
+
         [(80, 8), (82, 8), alto_four_musicmaker_three],
-        [(82, 8), (84, 8), alto_four_musicmaker_three],
+        [(82, 8), (84, 8), alto_four_musicmaker_two],
         [(84, 8), (86, 8), alto_four_musicmaker_three],
-        [(86, 8), (88, 8), alto_four_musicmaker_three],
+        [(86, 8), (88, 8), alto_four_musicmaker_two],
+
         [(88, 8), (90, 8), alto_four_musicmaker_three],
         [(90, 8), (92, 8), alto_four_musicmaker_three],
         [(92, 8), (94, 8), alto_four_musicmaker_two],
         [(94, 8), (96, 8), alto_four_musicmaker_two],
+
         [(96, 8), (98, 8), alto_four_musicmaker_two],
         [(98, 8), (100, 8), alto_four_musicmaker_two],
         [(100, 8), (102, 8), alto_four_musicmaker_two],
-        [(102, 8), (104, 8), alto_four_musicmaker_two],
+        [(102, 8), (104, 8), alto_four_musicmaker_three],
+
         [(104, 8), (106, 8), alto_four_musicmaker_two],
         [(106, 8), (108, 8), alto_four_musicmaker_three],
-        [(108, 8), (110, 8), alto_four_musicmaker_three],
+        [(108, 8), (110, 8), alto_four_musicmaker_two],
         [(110, 8), (112, 8), alto_four_musicmaker_three],
+
         [(112, 8), (114, 8), alto_four_musicmaker_three],
         [(114, 8), (116, 8), alto_four_musicmaker_three],
-        [(116, 8), (118, 8), alto_four_musicmaker_three],
+        [(116, 8), (118, 8), alto_four_musicmaker_two],
         [(118, 8), (120, 8), alto_four_musicmaker_three],
+
         [(120, 8), (122, 8), alto_four_musicmaker_three],
         [(122, 8), (124, 8), alto_four_musicmaker_two],
-        [(124, 8), (126, 8), alto_four_musicmaker_two],
+        [(124, 8), (126, 8), alto_four_musicmaker_three],
         [(126, 8), (128, 8), alto_four_musicmaker_two],
+
         [(128, 8), (130, 8), alto_four_musicmaker_two],
         [(130, 8), (132, 8), alto_four_musicmaker_two],
-        [(132, 8), (134, 8), alto_four_musicmaker_two],
+        [(132, 8), (134, 8), alto_four_musicmaker_three],
         [(134, 8), (136, 8), alto_four_musicmaker_two],
+
         [(136, 8), (138, 8), alto_four_musicmaker_three],
         [(138, 8), (140, 8), alto_four_musicmaker_three],
         [(140, 8), (142, 8), alto_four_musicmaker_three],
-        [(142, 8), (144, 8), alto_four_musicmaker_three],
+        [(142, 8), (144, 8), alto_four_musicmaker_two],
+
         [(144, 8), (146, 8), alto_four_musicmaker_three],
         [(146, 8), (148, 8), alto_four_musicmaker_three],
         [(148, 8), (150, 8), alto_four_musicmaker_two],
         [(150, 8), (152, 8), alto_four_musicmaker_two],
+
         [(152, 8), (154, 8), alto_four_musicmaker_two],
         [(154, 8), (156, 8), alto_four_musicmaker_two],
         [(156, 8), (158, 8), alto_four_musicmaker_two],
         [(158, 8), (160, 8), alto_four_musicmaker_three],
+
         [(160, 8), (162, 8), alto_four_musicmaker_three],
-        [(162, 8), (164, 8), alto_four_musicmaker_three],
+        [(162, 8), (164, 8), alto_four_musicmaker_two],
         [(164, 8), (166, 8), alto_four_musicmaker_three],
         [(166, 8), (168, 8), alto_four_musicmaker_two],
+
         [(168, 8), (170, 8), alto_four_musicmaker_two],
         [(170, 8), (172, 8), alto_four_musicmaker_two],
         [(172, 8), (174, 8), alto_four_musicmaker_three],
         [(174, 8), (176, 8), alto_four_musicmaker_three],
+
         [(176, 8), (178, 8), alto_four_musicmaker_two],
         [(178, 8), (180, 8), alto_four_musicmaker_three],
         [(180, 8), (182, 8), alto_four_musicmaker_three],
-        [(182, 8), (184, 8), alto_four_musicmaker_three],
+        [(182, 8), (184, 8), alto_four_musicmaker_two],
+
         [(184, 8), (186, 8), alto_four_musicmaker_two],
         [(186, 8), (188, 8), alto_four_musicmaker_two],
-        [(188, 8), (190, 8), alto_four_musicmaker_two],
+        [(188, 8), (190, 8), alto_four_musicmaker_three],
         [(190, 8), (192, 8), alto_four_musicmaker_two],
+
         [(192, 8), (194, 8), alto_four_musicmaker_three],
         [(194, 8), (196, 8), alto_four_musicmaker_three],
         [(196, 8), (198, 8), alto_four_musicmaker_three],
-        [(198, 8), (199, 8), alto_four_musicmaker_three],
+        [(198, 8), (199, 8), alto_four_musicmaker_two],
     ]
 ])
 
@@ -1691,99 +1884,123 @@ voice_9_timespan_list = abjad.TimespanList([
         [(2, 8), (4, 8), alto_five_musicmaker_three],
         [(4, 8), (6, 8), alto_five_musicmaker_three],
         [(6, 8), (8, 8), alto_five_musicmaker_two],
+
         [(8, 8), (10, 8), alto_five_musicmaker_two],
         [(10, 8), (12, 8), alto_five_musicmaker_two],
         [(12, 8), (14, 8), alto_five_musicmaker_three],
-        [(14, 8), (16, 8), alto_five_musicmaker_three],
+        [(14, 8), (16, 8), alto_five_musicmaker_two],
+
         [(16, 8), (18, 8), alto_five_musicmaker_three],
         [(18, 8), (20, 8), alto_five_musicmaker_three],
         [(20, 8), (22, 8), alto_five_musicmaker_two],
-        [(22, 8), (24, 8), alto_five_musicmaker_two],
+        [(22, 8), (24, 8), alto_five_musicmaker_three],
+
         [(24, 8), (26, 8), alto_five_musicmaker_two],
         [(26, 8), (28, 8), alto_five_musicmaker_two],
-        [(28, 8), (30, 8), alto_five_musicmaker_two],
-        [(30, 8), (32, 8), alto_five_musicmaker_three],
+        [(28, 8), (30, 8), alto_five_musicmaker_three],
+        [(30, 8), (32, 8), alto_five_musicmaker_two],
+
         [(32, 8), (34, 8), alto_five_musicmaker_three],
         [(34, 8), (36, 8), alto_five_musicmaker_three],
-        [(36, 8), (38, 8), alto_five_musicmaker_three],
+        [(36, 8), (38, 8), alto_five_musicmaker_two],
         [(38, 8), (40, 8), alto_five_musicmaker_three],
+
         [(40, 8), (42, 8), alto_five_musicmaker_three],
         [(42, 8), (44, 8), alto_five_musicmaker_two],
-        [(44, 8), (46, 8), alto_five_musicmaker_two],
+        [(44, 8), (46, 8), alto_five_musicmaker_three],
         [(46, 8), (48, 8), alto_five_musicmaker_two],
+
         [(48, 8), (50, 8), alto_five_musicmaker_two],
         [(50, 8), (52, 8), alto_five_musicmaker_two],
-        [(52, 8), (54, 8), alto_five_musicmaker_two],
+        [(52, 8), (54, 8), alto_five_musicmaker_three],
         [(54, 8), (56, 8), alto_five_musicmaker_two],
+
         [(56, 8), (58, 8), alto_five_musicmaker_three],
         [(58, 8), (60, 8), alto_five_musicmaker_three],
         [(60, 8), (62, 8), alto_five_musicmaker_three],
-        [(62, 8), (64, 8), alto_five_musicmaker_three],
-        [(64, 8), (66, 8), alto_five_musicmaker_three],
+        [(62, 8), (64, 8), alto_five_musicmaker_two],
+
+        [(64, 8), (66, 8), alto_five_musicmaker_two],
         [(66, 8), (68, 8), alto_five_musicmaker_three],
         [(68, 8), (70, 8), alto_five_musicmaker_three],
         [(70, 8), (72, 8), alto_five_musicmaker_three],
+
         [(72, 8), (74, 8), alto_five_musicmaker_two],
         [(74, 8), (76, 8), alto_five_musicmaker_two],
-        [(76, 8), (78, 8), alto_five_musicmaker_two],
-        [(78, 8), (80, 8), alto_five_musicmaker_two],
+        [(76, 8), (78, 8), alto_five_musicmaker_three],
+        [(78, 8), (80, 8), alto_five_musicmaker_three],
+
         [(80, 8), (82, 8), alto_five_musicmaker_two],
-        [(82, 8), (84, 8), alto_five_musicmaker_two],
+        [(82, 8), (84, 8), alto_five_musicmaker_three],
         [(84, 8), (86, 8), alto_five_musicmaker_two],
-        [(86, 8), (88, 8), alto_five_musicmaker_two],
-        [(88, 8), (90, 8), alto_five_musicmaker_three],
+        [(86, 8), (88, 8), alto_five_musicmaker_three],
+
+        [(88, 8), (90, 8), alto_five_musicmaker_two],
         [(90, 8), (92, 8), alto_five_musicmaker_three],
-        [(92, 8), (94, 8), alto_five_musicmaker_three],
+        [(92, 8), (94, 8), alto_five_musicmaker_two],
         [(94, 8), (96, 8), alto_five_musicmaker_three],
+
         [(96, 8), (98, 8), alto_five_musicmaker_three],
         [(98, 8), (100, 8), alto_five_musicmaker_three],
-        [(100, 8), (102, 8), alto_five_musicmaker_three],
+        [(100, 8), (102, 8), alto_five_musicmaker_two],
         [(102, 8), (104, 8), alto_five_musicmaker_two],
+
         [(104, 8), (106, 8), alto_five_musicmaker_two],
-        [(106, 8), (108, 8), alto_five_musicmaker_two],
+        [(106, 8), (108, 8), alto_five_musicmaker_three],
         [(108, 8), (110, 8), alto_five_musicmaker_two],
-        [(110, 8), (112, 8), alto_five_musicmaker_two],
+        [(110, 8), (112, 8), alto_five_musicmaker_three],
+
         [(112, 8), (114, 8), alto_five_musicmaker_two],
         [(114, 8), (116, 8), alto_five_musicmaker_three],
         [(116, 8), (118, 8), alto_five_musicmaker_three],
-        [(118, 8), (120, 8), alto_five_musicmaker_three],
+        [(118, 8), (120, 8), alto_five_musicmaker_two],
+
         [(120, 8), (122, 8), alto_five_musicmaker_three],
         [(122, 8), (124, 8), alto_five_musicmaker_three],
         [(124, 8), (126, 8), alto_five_musicmaker_two],
         [(126, 8), (128, 8), alto_five_musicmaker_two],
+
         [(128, 8), (130, 8), alto_five_musicmaker_two],
         [(130, 8), (132, 8), alto_five_musicmaker_two],
         [(132, 8), (134, 8), alto_five_musicmaker_three],
         [(134, 8), (136, 8), alto_five_musicmaker_three],
+
         [(136, 8), (138, 8), alto_five_musicmaker_three],
         [(138, 8), (140, 8), alto_five_musicmaker_two],
         [(140, 8), (142, 8), alto_five_musicmaker_two],
         [(142, 8), (144, 8), alto_five_musicmaker_three],
+
         [(144, 8), (146, 8), alto_five_musicmaker_two],
-        [(146, 8), (148, 8), alto_five_musicmaker_two],
+        [(146, 8), (148, 8), alto_five_musicmaker_three],
         [(148, 8), (150, 8), alto_five_musicmaker_two],
-        [(150, 8), (152, 8), alto_five_musicmaker_two],
+        [(150, 8), (152, 8), alto_five_musicmaker_three],
+
         [(152, 8), (154, 8), alto_five_musicmaker_two],
         [(154, 8), (156, 8), alto_five_musicmaker_two],
         [(156, 8), (158, 8), alto_five_musicmaker_two],
         [(158, 8), (160, 8), alto_five_musicmaker_three],
+
         [(160, 8), (162, 8), alto_five_musicmaker_three],
-        [(162, 8), (164, 8), alto_five_musicmaker_three],
+        [(162, 8), (164, 8), alto_five_musicmaker_two],
         [(164, 8), (166, 8), alto_five_musicmaker_three],
         [(166, 8), (168, 8), alto_five_musicmaker_three],
+
         [(168, 8), (170, 8), alto_five_musicmaker_three],
-        [(170, 8), (172, 8), alto_five_musicmaker_three],
+        [(170, 8), (172, 8), alto_five_musicmaker_two],
         [(172, 8), (174, 8), alto_five_musicmaker_two],
         [(174, 8), (176, 8), alto_five_musicmaker_two],
+
         [(176, 8), (178, 8), alto_five_musicmaker_two],
-        [(178, 8), (180, 8), alto_five_musicmaker_two],
+        [(178, 8), (180, 8), alto_five_musicmaker_three],
         [(180, 8), (182, 8), alto_five_musicmaker_two],
         [(182, 8), (184, 8), alto_five_musicmaker_two],
+
         [(184, 8), (186, 8), alto_five_musicmaker_three],
-        [(186, 8), (188, 8), alto_five_musicmaker_three],
+        [(186, 8), (188, 8), alto_five_musicmaker_two],
         [(188, 8), (190, 8), alto_five_musicmaker_three],
         [(190, 8), (192, 8), alto_five_musicmaker_three],
-        [(192, 8), (194, 8), alto_five_musicmaker_three],
+
+        [(192, 8), (194, 8), alto_five_musicmaker_two],
         [(194, 8), (196, 8), alto_five_musicmaker_three],
         [(196, 8), (198, 8), alto_five_musicmaker_two],
         [(198, 8), (199, 8), alto_five_musicmaker_two],
@@ -1802,103 +2019,127 @@ voice_10_timespan_list = abjad.TimespanList([
     for start_offset, stop_offset, music_maker in [
         [(0, 8), (2, 8), alto_six_musicmaker_three],
         [(2, 8), (4, 8), alto_six_musicmaker_three],
-        [(4, 8), (6, 8), alto_six_musicmaker_three],
+        [(4, 8), (6, 8), alto_six_musicmaker_two],
         [(6, 8), (8, 8), alto_six_musicmaker_three],
+
         [(8, 8), (10, 8), alto_six_musicmaker_two],
         [(10, 8), (12, 8), alto_six_musicmaker_two],
-        [(12, 8), (14, 8), alto_six_musicmaker_two],
+        [(12, 8), (14, 8), alto_six_musicmaker_three],
         [(14, 8), (16, 8), alto_six_musicmaker_two],
+
         [(16, 8), (18, 8), alto_six_musicmaker_three],
-        [(18, 8), (20, 8), alto_six_musicmaker_three],
+        [(18, 8), (20, 8), alto_six_musicmaker_two],
         [(20, 8), (22, 8), alto_six_musicmaker_three],
-        [(22, 8), (24, 8), alto_six_musicmaker_three],
+        [(22, 8), (24, 8), alto_six_musicmaker_two],
+
         [(24, 8), (26, 8), alto_six_musicmaker_three],
         [(26, 8), (28, 8), alto_six_musicmaker_two],
-        [(28, 8), (30, 8), alto_six_musicmaker_two],
+        [(28, 8), (30, 8), alto_six_musicmaker_three],
         [(30, 8), (32, 8), alto_six_musicmaker_two],
+
         [(32, 8), (34, 8), alto_six_musicmaker_two],
         [(34, 8), (36, 8), alto_six_musicmaker_two],
-        [(36, 8), (38, 8), alto_six_musicmaker_two],
+        [(36, 8), (38, 8), alto_six_musicmaker_three],
         [(38, 8), (40, 8), alto_six_musicmaker_three],
+
         [(40, 8), (42, 8), alto_six_musicmaker_three],
-        [(42, 8), (44, 8), alto_six_musicmaker_three],
+        [(42, 8), (44, 8), alto_six_musicmaker_two],
         [(44, 8), (46, 8), alto_six_musicmaker_three],
         [(46, 8), (48, 8), alto_six_musicmaker_three],
+
         [(48, 8), (50, 8), alto_six_musicmaker_three],
-        [(50, 8), (52, 8), alto_six_musicmaker_three],
+        [(50, 8), (52, 8), alto_six_musicmaker_two],
         [(52, 8), (54, 8), alto_six_musicmaker_two],
         [(54, 8), (56, 8), alto_six_musicmaker_two],
+
         [(56, 8), (58, 8), alto_six_musicmaker_two],
         [(58, 8), (60, 8), alto_six_musicmaker_two],
-        [(60, 8), (62, 8), alto_six_musicmaker_two],
+        [(60, 8), (62, 8), alto_six_musicmaker_three],
         [(62, 8), (64, 8), alto_six_musicmaker_two],
+
         [(64, 8), (66, 8), alto_six_musicmaker_two],
         [(66, 8), (68, 8), alto_six_musicmaker_three],
-        [(68, 8), (70, 8), alto_six_musicmaker_three],
+        [(68, 8), (70, 8), alto_six_musicmaker_two],
         [(70, 8), (72, 8), alto_six_musicmaker_three],
+
         [(72, 8), (74, 8), alto_six_musicmaker_three],
-        [(74, 8), (76, 8), alto_six_musicmaker_three],
+        [(74, 8), (76, 8), alto_six_musicmaker_two],
         [(76, 8), (78, 8), alto_six_musicmaker_three],
         [(78, 8), (80, 8), alto_six_musicmaker_two],
+
         [(80, 8), (82, 8), alto_six_musicmaker_two],
         [(82, 8), (84, 8), alto_six_musicmaker_two],
-        [(84, 8), (86, 8), alto_six_musicmaker_two],
+        [(84, 8), (86, 8), alto_six_musicmaker_three],
         [(86, 8), (88, 8), alto_six_musicmaker_two],
+
         [(88, 8), (90, 8), alto_six_musicmaker_three],
         [(90, 8), (92, 8), alto_six_musicmaker_three],
-        [(92, 8), (94, 8), alto_six_musicmaker_three],
+        [(92, 8), (94, 8), alto_six_musicmaker_two],
         [(94, 8), (96, 8), alto_six_musicmaker_three],
+
         [(96, 8), (98, 8), alto_six_musicmaker_two],
         [(98, 8), (100, 8), alto_six_musicmaker_two],
         [(100, 8), (102, 8), alto_six_musicmaker_two],
         [(102, 8), (104, 8), alto_six_musicmaker_three],
+
         [(104, 8), (106, 8), alto_six_musicmaker_three],
         [(106, 8), (108, 8), alto_six_musicmaker_three],
         [(108, 8), (110, 8), alto_six_musicmaker_two],
         [(110, 8), (112, 8), alto_six_musicmaker_two],
+
         [(112, 8), (114, 8), alto_six_musicmaker_three],
         [(114, 8), (116, 8), alto_six_musicmaker_three],
         [(116, 8), (118, 8), alto_six_musicmaker_two],
         [(118, 8), (120, 8), alto_six_musicmaker_two],
+
         [(120, 8), (122, 8), alto_six_musicmaker_two],
-        [(122, 8), (124, 8), alto_six_musicmaker_two],
+        [(122, 8), (124, 8), alto_six_musicmaker_three],
         [(124, 8), (126, 8), alto_six_musicmaker_two],
         [(126, 8), (128, 8), alto_six_musicmaker_three],
+
         [(128, 8), (130, 8), alto_six_musicmaker_three],
-        [(130, 8), (132, 8), alto_six_musicmaker_three],
+        [(130, 8), (132, 8), alto_six_musicmaker_two],
         [(132, 8), (134, 8), alto_six_musicmaker_three],
-        [(134, 8), (136, 8), alto_six_musicmaker_three],
+        [(134, 8), (136, 8), alto_six_musicmaker_two],
+
         [(136, 8), (138, 8), alto_six_musicmaker_two],
-        [(138, 8), (140, 8), alto_six_musicmaker_two],
+        [(138, 8), (140, 8), alto_six_musicmaker_three],
         [(140, 8), (142, 8), alto_six_musicmaker_two],
         [(142, 8), (144, 8), alto_six_musicmaker_two],
-        [(144, 8), (146, 8), alto_six_musicmaker_two],
+
+        [(144, 8), (146, 8), alto_six_musicmaker_three],
         [(146, 8), (148, 8), alto_six_musicmaker_two],
         [(148, 8), (150, 8), alto_six_musicmaker_two],
         [(150, 8), (152, 8), alto_six_musicmaker_three],
-        [(152, 8), (154, 8), alto_six_musicmaker_three],
+
+        [(152, 8), (154, 8), alto_six_musicmaker_two],
         [(154, 8), (156, 8), alto_six_musicmaker_three],
-        [(156, 8), (158, 8), alto_six_musicmaker_three],
+        [(156, 8), (158, 8), alto_six_musicmaker_two],
         [(158, 8), (160, 8), alto_six_musicmaker_three],
+
         [(160, 8), (162, 8), alto_six_musicmaker_two],
         [(162, 8), (164, 8), alto_six_musicmaker_two],
-        [(164, 8), (166, 8), alto_six_musicmaker_two],
+        [(164, 8), (166, 8), alto_six_musicmaker_three],
         [(166, 8), (168, 8), alto_six_musicmaker_three],
+
         [(168, 8), (170, 8), alto_six_musicmaker_two],
         [(170, 8), (172, 8), alto_six_musicmaker_two],
         [(172, 8), (174, 8), alto_six_musicmaker_three],
         [(174, 8), (176, 8), alto_six_musicmaker_three],
+
         [(176, 8), (178, 8), alto_six_musicmaker_three],
         [(178, 8), (180, 8), alto_six_musicmaker_two],
-        [(180, 8), (182, 8), alto_six_musicmaker_two],
+        [(180, 8), (182, 8), alto_six_musicmaker_three],
         [(182, 8), (184, 8), alto_six_musicmaker_two],
+
         [(184, 8), (186, 8), alto_six_musicmaker_two],
         [(186, 8), (188, 8), alto_six_musicmaker_two],
         [(188, 8), (190, 8), alto_six_musicmaker_three],
         [(190, 8), (192, 8), alto_six_musicmaker_three],
+
         [(192, 8), (194, 8), alto_six_musicmaker_three],
         [(194, 8), (196, 8), alto_six_musicmaker_three],
-        [(196, 8), (198, 8), alto_six_musicmaker_three],
+        [(196, 8), (198, 8), alto_six_musicmaker_two],
         [(198, 8), (199, 8), alto_six_musicmaker_two],
     ]
 ])
@@ -3790,7 +4031,6 @@ for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -3824,7 +4064,6 @@ for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/2.)soprano1'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -3858,7 +4097,6 @@ for staff in abjad.iterate(score['Staff 3']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/3.)soprano2'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -3892,7 +4130,6 @@ for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/4.)soprano3'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -3926,7 +4163,6 @@ for staff in abjad.iterate(score['Staff 5']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/5.)alto1'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -3960,7 +4196,6 @@ for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/6.)alto2'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -3994,7 +4229,6 @@ for staff in abjad.iterate(score['Staff 7']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/7.)alto3'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4028,7 +4262,6 @@ for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/8.)alto4'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4062,7 +4295,6 @@ for staff in abjad.iterate(score['Staff 9']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/9.)alto5'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4096,7 +4328,6 @@ for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/10.)alto6'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4130,7 +4361,6 @@ for staff in abjad.iterate(score['Staff 11']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/11.)tenor1'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4164,7 +4394,6 @@ for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/12.)tenor2'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4198,7 +4427,6 @@ for staff in abjad.iterate(score['Staff 13']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/13.)tenor3'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4232,7 +4460,6 @@ for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/14.)tenor4'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4266,7 +4493,6 @@ for staff in abjad.iterate(score['Staff 15']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/15.)tenor5'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4300,7 +4526,6 @@ for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/16.)baritone1'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4334,7 +4559,6 @@ for staff in abjad.iterate(score['Staff 17']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/17.)baritone2'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4368,7 +4592,6 @@ for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/18.)baritone3'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4402,7 +4625,6 @@ for staff in abjad.iterate(score['Staff 19']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/19.)bass1'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4436,7 +4658,6 @@ for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/20.)bass2'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')
@@ -4470,7 +4691,6 @@ for staff in abjad.iterate(score['Staff 21']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/21.)contrabass'
     pdf_path = f'{directory}/Section_B.pdf'
     path = pathlib.Path('Section_B.pdf')

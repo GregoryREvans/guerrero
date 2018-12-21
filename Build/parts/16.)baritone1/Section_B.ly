@@ -1,4 +1,18 @@
+\version "2.19.82"  %! LilyPondFile
+\language "english" %! LilyPondFile
 
+\include "first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+
+\header { %! LilyPondFile
+    tagline = ##f
+} %! LilyPondFile
+
+\layout {}
+
+\paper {}
+
+\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -82,8 +96,8 @@
             \time 4/4
             s1 * 1
             % [Global Context measure 25] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
+            \time 7/8
+            s1 * 7/8
         }
         \context Staff = "Staff 16"
         {
@@ -99,6 +113,7 @@
                     \mp
                     \<
                     \glissando
+                    \!
                     d'8
                     [
                     \glissando
@@ -1165,12 +1180,8 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
-                    \glissando
-                }
-                {
-                    r8
-                    \!
                 }
             }
         }
     >>
+} %! LilyPondFile

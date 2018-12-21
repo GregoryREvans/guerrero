@@ -121,7 +121,7 @@
                 }
                 {
                     e''2
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -170,7 +170,7 @@
                 }
                 {
                     e''2
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -197,7 +197,7 @@
                 {
                     % [Voice 3 measure 8] %! COMMENT_MEASURE_NUMBERS
                     e''1
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -236,20 +236,18 @@
 
                         \>
                         [
-                        f''8
-
-                        ~
                         f''16
+
                         eqs''16
 
+                        f''16
+                        - \portato
+                        fqs''16
+
                     }
-                    f''16
+                    f''8
 
-                    fqs''16
-                    - \portato
-                    f''16
-
-                    eqs''16
+                    eqs''8
                     \pp
 
                     - \tweak stencil #constante-hairpin
@@ -259,7 +257,7 @@
                 {
                     % [Voice 3 measure 11] %! COMMENT_MEASURE_NUMBERS
                     e''1
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -291,20 +289,19 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 3 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        f''8
+                        f''16
                         \mf
 
                         \>
                         [
-                        eqs''16
-                        ~
+                        eqs''8
+                        - \portato
                     }
-                    eqs''16
                     e''16
 
-                    eqs''8
+                    eqs''8.
                     \pp
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -316,7 +313,7 @@
                 {
                     % [Voice 3 measure 15] %! COMMENT_MEASURE_NUMBERS
                     e''1
-                    \p
+                    \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -331,7 +328,7 @@
                 }
                 {
                     e''2
-                    \mp
+                    \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
@@ -380,33 +377,38 @@
                 }
                 {
                     \times 8/9 {
-                        e''16
+                        e''8
                         \mf
 
                         \>
                         [
-                        eqs''8
+                        eqs''16
 
                         ~
                         eqs''16
                         e''8
-
+                        - \portato
+                        ~
+                        e''16
                         eqs''8
 
-                        e''16
-                        ~
                     }
                 }
                 {
                     % [Voice 3 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    e''8
-                    eqs''8
-                    - \portato
-                    f''16
+                    e''16
+
+                    eqs''16
+
+                    f''8
 
                     fqs''16
+                    - \portato
+                    fs''16
 
-                    fs''8
+                    gqf''16
+
+                    fs''16
                     \pp
 
                     - \tweak stencil #constante-hairpin

@@ -52,7 +52,7 @@
 		\override RehearsalMark.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print)
 		\override RehearsalMark.X-extent = #'(0 . 0)
 		\override RehearsalMark.X-offset = 6
-		\override RehearsalMark.Y-offset = -2.25
+		\override RehearsalMark.Y-offset = -2.5
 		\override RehearsalMark.break-align-symbols = #'(time-signature)
 		\override RehearsalMark.break-visibility = #end-of-line-invisible
 		\override RehearsalMark.font-name = "Didot"
@@ -113,9 +113,9 @@
 \paper {
 
 	top-margin = 0.7\cm
-	bottom-margin = 0.4\cm
-	left-margin = 1.5\cm
-	right-margin = 1.3\cm
+	bottom-margin = 0.3\cm
+	left-margin = 1.3\cm
+	right-margin = 1.1\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""
