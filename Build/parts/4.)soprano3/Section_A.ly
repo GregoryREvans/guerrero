@@ -136,13 +136,6 @@
                     <ctes'' eqf'' d'''>1
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -166,13 +159,6 @@
                     <ctes'' eqf'' d'''>2
                     \f
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -216,13 +202,6 @@
                     <ctes'' eqf'' d'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -295,13 +274,6 @@
                     <ctes'' eqf'' d'''>2
                     \f
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -370,13 +342,6 @@
                     <ctes'' eqf'' d'''>1
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     \<
                 }
                 {
@@ -384,13 +349,6 @@
                     <ctes'' eqf'' d'''>4
                     \f
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }

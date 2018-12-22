@@ -144,13 +144,6 @@
                     <dtef'' eqf''' ates'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -174,13 +167,6 @@
                     <dtef'' eqf''' ates'''>4
                     \f
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -192,13 +178,6 @@
                     <dtef'' eqf''' ates'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -223,13 +202,6 @@
                     <dtef'' eqf''' ates'''>4
                     \f
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -303,13 +275,6 @@
                     <dtef'' eqf''' ates'''>2
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -377,13 +342,6 @@
                     <dtef'' eqf''' ates'''>1
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
-                        }
                     \<
                 }
                 {
@@ -391,13 +349,6 @@
                     <dtef'' eqf''' ates'''>4
                     \f
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.3)
-                        \woodwind-diagram
-                            #'baritone-saxophone
-                            #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }

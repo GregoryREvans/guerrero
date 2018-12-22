@@ -117,34 +117,13 @@
                     [
                     \!
                     <cqs'' g'' eef''' bf'''>8
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     ~
                     \times 4/5 {
                         <cqs'' g'' eef''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''16
 
                         <cqs'' g'' eef''' bf'''>8.
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                     }
                 }
                 {
@@ -172,13 +151,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -218,37 +190,16 @@
                     % [Voice 5 measure 3] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>16
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     g''8
 
                     <cqs'' g'' eef''' bf'''>16
                     - \accent
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     ]
                 }
                 {
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -268,26 +219,12 @@
                         af''16
                         <cqs'' g'' eef''' bf'''>16
                         - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''16
 
                         ~
                         g''16
                         <cqs'' g'' eef''' bf'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                     }
                 }
                 {
@@ -322,13 +259,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -368,13 +298,6 @@
                     }
                     <cqs'' g'' eef''' bf'''>8.
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     g''16
 
                     ]
@@ -383,13 +306,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -399,13 +315,6 @@
                         <cqs'' g'' eef''' bf'''>16
                         \mf
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         [
@@ -419,13 +328,6 @@
                     \times 4/5 {
                         <cqs'' g'' eef''' bf'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''8.
 
                     }
@@ -453,13 +355,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -493,13 +388,6 @@
                     <cqs'' g'' eef''' bf'''>8
                     \mf
                     - \portato
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak circled-tip ##t
                     \>
                     cqs''16
@@ -514,13 +402,6 @@
                         af''16
                         <cqs'' g'' eef''' bf'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         ]
                     }
                 }
@@ -528,13 +409,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -548,13 +422,6 @@
                         [
                         <cqs'' g'' eef''' bf'''>16
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         cqs''8.
 
                     }
@@ -564,13 +431,6 @@
                         - \tenuto
                         <cqs'' g'' eef''' bf'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                     }
                 }
                 {
@@ -604,13 +464,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -645,13 +498,6 @@
                     \>
                     <cqs'' g'' eef''' bf'''>16
                     - \portato
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     cqs''16
                     ~
                     \times 4/5 {
@@ -662,13 +508,6 @@
                         af''16
                         <cqs'' g'' eef''' bf'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         ]
                     }
                 }
@@ -676,13 +515,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -697,13 +529,6 @@
                         [
                         <cqs'' g'' eef''' bf'''>16
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         cqs''16
 
                         ~
@@ -714,13 +539,6 @@
                     af''8
                     <cqs'' g'' eef''' bf'''>16
                     - \tenuto
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     g''16
 
                 }
@@ -753,13 +571,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -789,13 +600,6 @@
                         <cqs'' g'' eef''' bf'''>8
                         \mf
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         cqs''16
@@ -812,13 +616,6 @@
                         af''16
                         <cqs'' g'' eef''' bf'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         ]
                     }
                 }
@@ -826,13 +623,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -846,23 +636,9 @@
                         \>
                         [
                         <cqs'' g'' eef''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         ~
                     }
                     <cqs'' g'' eef''' bf'''>8
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     cqs''8
 
                 }
@@ -892,13 +668,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -940,13 +709,6 @@
                         \>
                         <cqs'' g'' eef''' bf'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''8
                         ~
                     }
@@ -954,13 +716,6 @@
                         g''16
                         <cqs'' g'' eef''' bf'''>16
                         - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         cqs''8.
 
                         ]
@@ -970,13 +725,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -989,35 +737,14 @@
                     \>
                     [
                     <cqs'' g'' eef''' bf'''>8
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     ~
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         <cqs'' g'' eef''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''16
                         - \portato
                         <cqs'' g'' eef''' bf'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                     }
                 }
                 {
@@ -1046,13 +773,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1086,13 +806,6 @@
                         ~
                         af''16
                         <cqs'' g'' eef''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         ~
                     }
                 }
@@ -1101,24 +814,10 @@
                     \times 4/3 {
                         % [Voice 5 measure 18] %! COMMENT_MEASURE_NUMBERS
                         <cqs'' g'' eef''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''16
                         - \accent
                         <cqs'' g'' eef''' bf'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         ]
                     }
                 }
@@ -1126,13 +825,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1148,26 +840,12 @@
                     \times 4/5 {
                         <cqs'' g'' eef''' bf'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''8
                         - \portato
                         ~
                         g''16
                         <cqs'' g'' eef''' bf'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                     }
                 }
                 {
@@ -1204,13 +882,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1254,38 +925,17 @@
                         af''16
                         <cqs'' g'' eef''' bf'''>16
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                     }
                     g''8
 
                     <cqs'' g'' eef''' bf'''>8
                     - \tenuto
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     ]
                 }
                 {
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1305,24 +955,10 @@
                     \times 4/5 {
                         <cqs'' g'' eef''' bf'''>16
                         - \portato
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''8
 
                         <cqs'' g'' eef''' bf'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                     }
                 }
                 {
@@ -1351,13 +987,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1396,26 +1025,12 @@
                         af''16
                         - \accent
                         <cqs'' g'' eef''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         ~
                     }
                 }
                 {
                     % [Voice 5 measure 23] %! COMMENT_MEASURE_NUMBERS
                     <cqs'' g'' eef''' bf'''>8
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     g''8
 
                     ]
@@ -1424,13 +1039,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1439,13 +1047,6 @@
                         <cqs'' g'' eef''' bf'''>8.
                         \mf
                         - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         [
@@ -1458,22 +1059,8 @@
                         af''16
                         <cqs'' g'' eef''' bf'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         ~
                         <cqs'' g'' eef''' bf'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                            }
                         g''16
                         - \portato
                     }
@@ -1507,13 +1094,6 @@
                     <cqs'' g'' eef''' bf'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1546,13 +1126,6 @@
                     <cqs'' g'' eef''' bf'''>16
                     \mf
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak circled-tip ##t
                     \>
                     cqs''16
@@ -1562,25 +1135,11 @@
                     ]
                     <cqs'' g'' eef''' bf'''>4
                     - \accent
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                 }
                 {
                     <cqs'' g'' eef''' bf'''>8
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'alto-saxophone
-                            #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                     [

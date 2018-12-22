@@ -1807,8 +1807,8 @@ fingering_1 = abjad.WoodwindFingering( #[13.5, 16, 26.5]
     )
 command_1 = fingering_1()
 soprano_1_fingering = abjad.Markup(contents=[size, command_1], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 2']).components(abjad.Chord):
-    abjad.attach(soprano_1_fingering, chord)
+soprano_1_multiphonic = [x for x in abjad.iterate(score['Voice 2']).components(abjad.Chord)]
+abjad.attach(soprano_1_fingering, soprano_1_multiphonic[0])
 
 fingering_2 = abjad.WoodwindFingering( #[13, 16, 26]
     name='soprano-saxophone',
@@ -1818,8 +1818,8 @@ fingering_2 = abjad.WoodwindFingering( #[13, 16, 26]
     )
 command_2 = fingering_2()
 soprano_2_fingering = abjad.Markup(contents=[size, command_2], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 3']).components(abjad.Chord):
-    abjad.attach(soprano_2_fingering, chord)
+soprano_2_multiphonic = [x for x in abjad.iterate(score['Voice 3']).components(abjad.Chord)]
+abjad.attach(soprano_2_fingering, soprano_2_multiphonic[0])
 
 fingering_3 = abjad.WoodwindFingering( #[12.5, 14.5, 26]
     name='soprano-saxophone',
@@ -1829,8 +1829,8 @@ fingering_3 = abjad.WoodwindFingering( #[12.5, 14.5, 26]
     )
 command_3 = fingering_3()
 soprano_3_fingering = abjad.Markup(contents=[size, command_3], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 4']).components(abjad.Chord):
-    abjad.attach(soprano_3_fingering, chord)
+soprano_3_multiphonic = [x for x in abjad.iterate(score['Voice 4']).components(abjad.Chord)]
+abjad.attach(soprano_3_fingering, soprano_3_multiphonic[0])
 
 fingering_4 = abjad.WoodwindFingering( #[12.5, 19, 27.5, 34]
     name='alto-saxophone',
@@ -1840,10 +1840,10 @@ fingering_4 = abjad.WoodwindFingering( #[12.5, 19, 27.5, 34]
     )
 command_4 = fingering_4()
 alto_1_fingering = abjad.Markup(contents=[size, command_4], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 5']).components(abjad.Chord):
-    abjad.attach(alto_1_fingering, chord)
-for chord in abjad.iterate(score['Voice 10']).components(abjad.Chord):
-    abjad.attach(alto_1_fingering, chord)
+alto_1_multiphonic = [x for x in abjad.iterate(score['Voice 5']).components(abjad.Chord)]
+abjad.attach(alto_1_fingering, alto_1_multiphonic[0])
+alto_6_multiphonic = [x for x in abjad.iterate(score['Voice 10']).components(abjad.Chord)]
+abjad.attach(alto_1_fingering, alto_6_multiphonic[0])
 
 fingering_5 = abjad.WoodwindFingering( #[12.5, 15.5, 25.5]
     name='alto-saxophone',
@@ -1853,8 +1853,8 @@ fingering_5 = abjad.WoodwindFingering( #[12.5, 15.5, 25.5]
     )
 command_5 = fingering_5()
 alto_2_fingering = abjad.Markup(contents=[size, command_5], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 6']).components(abjad.Chord):
-    abjad.attach(alto_2_fingering, chord)
+alto_2_multiphonic = [x for x in abjad.iterate(score['Voice 6']).components(abjad.Chord)]
+abjad.attach(alto_2_fingering, alto_2_multiphonic[0])
 
 fingering_6 = abjad.WoodwindFingering( #[1.5, 13.5, 22.5, 27, 30]
     name='alto-saxophone',
@@ -1864,8 +1864,8 @@ fingering_6 = abjad.WoodwindFingering( #[1.5, 13.5, 22.5, 27, 30]
     )
 command_6 = fingering_6()
 alto_3_fingering = abjad.Markup(contents=[size, command_6], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 7']).components(abjad.Chord):
-    abjad.attach(alto_3_fingering, chord)
+alto_3_multiphonic = [x for x in abjad.iterate(score['Voice 7']).components(abjad.Chord)]
+abjad.attach(alto_3_fingering, alto_3_multiphonic[0])
 
 fingering_7 = abjad.WoodwindFingering( #[12.5, 15.5, 25.5]
     name='alto-saxophone',
@@ -1875,8 +1875,8 @@ fingering_7 = abjad.WoodwindFingering( #[12.5, 15.5, 25.5]
     )
 command_7 = fingering_7()
 alto_4_fingering = abjad.Markup(contents=[size, command_7], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 8']).components(abjad.Chord):
-    abjad.attach(alto_4_fingering, chord)
+alto_4_multiphonic = [x for x in abjad.iterate(score['Voice 8']).components(abjad.Chord)]
+abjad.attach(alto_4_fingering, alto_4_multiphonic[0])
 
 fingering_8 = abjad.WoodwindFingering( #[1.5, 13.5, 22.5, 27, 30]
     name='alto-saxophone',
@@ -1886,8 +1886,8 @@ fingering_8 = abjad.WoodwindFingering( #[1.5, 13.5, 22.5, 27, 30]
     )
 command_8 = fingering_8()
 alto_5_fingering = abjad.Markup(contents=[size, command_8], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 9']).components(abjad.Chord):
-    abjad.attach(alto_5_fingering, chord)
+alto_5_multiphonic = [x for x in abjad.iterate(score['Voice 9']).components(abjad.Chord)]
+abjad.attach(alto_5_fingering, alto_5_multiphonic[0])
 
 fingering_9 = abjad.WoodwindFingering( #[6, 17.5]
     name='tenor-saxophone',
@@ -1897,10 +1897,10 @@ fingering_9 = abjad.WoodwindFingering( #[6, 17.5]
     )
 command_9 = fingering_9()
 tenor_1_fingering = abjad.Markup(contents=[size, command_9], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 11']).components(abjad.Chord):
-    abjad.attach(tenor_1_fingering, chord)
-for chord in abjad.iterate(score['Voice 14']).components(abjad.Chord):
-    abjad.attach(tenor_1_fingering, chord)
+tenor_1_multiphonic = [x for x in abjad.iterate(score['Voice 11']).components(abjad.Chord)]
+abjad.attach(tenor_1_fingering, tenor_1_multiphonic[0])
+tenor_4_multiphonic = [x for x in abjad.iterate(score['Voice 14']).components(abjad.Chord)]
+abjad.attach(tenor_1_fingering, tenor_4_multiphonic[0])
 
 fingering_10 = abjad.WoodwindFingering( #[6, 17.5, 25.5, 30]
     name='tenor-saxophone',
@@ -1910,8 +1910,8 @@ fingering_10 = abjad.WoodwindFingering( #[6, 17.5, 25.5, 30]
     )
 command_10 = fingering_10()
 tenor_2_fingering = abjad.Markup(contents=[size, command_10], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 12']).components(abjad.Chord):
-    abjad.attach(tenor_2_fingering, chord)
+tenor_2_multiphonic = [x for x in abjad.iterate(score['Voice 12']).components(abjad.Chord)]
+abjad.attach(tenor_2_fingering, tenor_2_multiphonic[0])
 
 fingering_11 = abjad.WoodwindFingering( #[6, 17.5, 25.5, 30.5]
     name='tenor-saxophone',
@@ -1921,8 +1921,8 @@ fingering_11 = abjad.WoodwindFingering( #[6, 17.5, 25.5, 30.5]
     )
 command_11 = fingering_11()
 tenor_3_fingering = abjad.Markup(contents=[size, command_11], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 13']).components(abjad.Chord):
-    abjad.attach(tenor_3_fingering, chord)
+tenor_3_multiphonic = [x for x in abjad.iterate(score['Voice 13']).components(abjad.Chord)]
+abjad.attach(tenor_3_fingering, tenor_3_multiphonic[0])
 
 fingering_12 = abjad.WoodwindFingering( #[6, 17.5, 25.5, 30.5]
     name='tenor-saxophone',
@@ -1931,9 +1931,9 @@ fingering_12 = abjad.WoodwindFingering( #[6, 17.5, 25.5, 30.5]
     right_hand=(),
     )
 command_12 = fingering_12()
-tenor_4_fingering = abjad.Markup(contents=[size, command_12], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 15']).components(abjad.Chord):
-    abjad.attach(tenor_4_fingering, chord)
+tenor_5_fingering = abjad.Markup(contents=[size, command_12], direction=abjad.Down)
+tenor_5_multiphonic = [x for x in abjad.iterate(score['Voice 15']).components(abjad.Chord)]
+abjad.attach(tenor_5_fingering, tenor_5_multiphonic[0])
 
 fingering_13 = abjad.WoodwindFingering( #[13.5, 27.5, 33.5]
     name='baritone-saxophone',
@@ -1943,8 +1943,8 @@ fingering_13 = abjad.WoodwindFingering( #[13.5, 27.5, 33.5]
     )
 command_13 = fingering_13()
 baritone_1_fingering = abjad.Markup(contents=[size, command_13], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 16']).components(abjad.Chord):
-    abjad.attach(baritone_1_fingering, chord)
+baritone_1_multiphonic = [x for x in abjad.iterate(score['Voice 16']).components(abjad.Chord)]
+abjad.attach(baritone_1_fingering, baritone_1_multiphonic[0])
 
 fingering_14 = abjad.WoodwindFingering( #[4, 16.5, 23.5]
     name='baritone-saxophone',
@@ -1954,8 +1954,8 @@ fingering_14 = abjad.WoodwindFingering( #[4, 16.5, 23.5]
     )
 command_14 = fingering_14()
 baritone_2_fingering = abjad.Markup(contents=[size, command_14], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 17']).components(abjad.Chord):
-    abjad.attach(baritone_2_fingering, chord)
+baritone_2_multiphonic = [x for x in abjad.iterate(score['Voice 17']).components(abjad.Chord)]
+abjad.attach(baritone_2_fingering, baritone_2_multiphonic[0])
 
 fingering_15 = abjad.WoodwindFingering( #[6.5, 17.5, 25.5, 34]
     name='baritone-saxophone',
@@ -1965,8 +1965,8 @@ fingering_15 = abjad.WoodwindFingering( #[6.5, 17.5, 25.5, 34]
     )
 command_15 = fingering_15()
 baritone_3_fingering = abjad.Markup(contents=[size, command_15], direction=abjad.Down)
-for chord in abjad.iterate(score['Voice 18']).components(abjad.Chord):
-    abjad.attach(baritone_3_fingering, chord)
+baritone_3_multiphonic = [x for x in abjad.iterate(score['Voice 18']).components(abjad.Chord)]
+abjad.attach(baritone_3_fingering, baritone_3_multiphonic[0])
 
 instruments = cyc([
     abjad.SopraninoSaxophone(),

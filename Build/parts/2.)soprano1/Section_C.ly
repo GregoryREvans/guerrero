@@ -126,13 +126,6 @@
                     <dtef'' e'' des'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -167,13 +160,6 @@
                     <dtef'' e'' des'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -209,13 +195,6 @@
                     \>
                     <dtef'' e'' des'''>8
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     ]
                 }
                 {
@@ -223,13 +202,6 @@
                     <dtef'' e'' des'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -243,58 +215,23 @@
                         [
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         dtef''16
                         - \tenuto
                         <dtef'' e'' des'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         ~
                     }
                     \times 4/5 {
                         <dtef'' e'' des'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         bf''8
 
                         ~
                         bf''16
                         <dtef'' e'' des'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                     }
                     e''8.
                     - \portato
                     <dtef'' e'' des'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     ~
                 }
                 {
@@ -302,13 +239,6 @@
                     \times 4/3 {
                         % [Voice 2 measure 4] %! COMMENT_MEASURE_NUMBERS
                         <dtef'' e'' des'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         dtef''8
 
                         ]
@@ -318,13 +248,6 @@
                     <dtef'' e'' des'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -371,13 +294,6 @@
                     <dtef'' e'' des'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -386,13 +302,6 @@
                         <dtef'' e'' des'''>16
                         \mf
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         [
@@ -400,22 +309,8 @@
 
                         <dtef'' e'' des'''>16
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         ~
                         <dtef'' e'' des'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         e''16
                         ~
                     }
@@ -426,46 +321,18 @@
                         % [Voice 2 measure 6] %! COMMENT_MEASURE_NUMBERS
                         e''8
                         <dtef'' e'' des'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         ~
                     }
                     <dtef'' e'' des'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     dtef''16
 
                     <dtef'' e'' des'''>8
                     - \tenuto
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     \times 4/5 {
                         bf''8.
 
                         <dtef'' e'' des'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         e''16
                         ~
                     }
@@ -473,22 +340,8 @@
                         e''8
                         <dtef'' e'' des'''>16
                         - \portato
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         ~
                         <dtef'' e'' des'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         dtef''16
 
                     }
@@ -516,13 +369,6 @@
                     <dtef'' e'' des'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -546,25 +392,11 @@
                     <dtef'' e'' des'''>8
                     \mf
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak circled-tip ##t
                     \>
                     bf''16
 
                     <dtef'' e'' des'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     ~
                 }
                 {
@@ -572,13 +404,6 @@
                     \times 4/3 {
                         % [Voice 2 measure 8] %! COMMENT_MEASURE_NUMBERS
                         <dtef'' e'' des'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         e''8
                         ~
                     }
@@ -586,24 +411,10 @@
                         e''16
                         <dtef'' e'' des'''>8
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         dtef''16
 
                         <dtef'' e'' des'''>16
                         - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                     }
                 }
                 {
@@ -632,13 +443,6 @@
                         \>
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         ]
                     }
                 }
@@ -647,13 +451,6 @@
                     <dtef'' e'' des'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -714,26 +511,12 @@
                     \>
                     <dtef'' e'' des'''>16
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     dtef''8
                     ~
                     \times 4/5 {
                         dtef''16
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         bf''8
 
                         ]
@@ -744,13 +527,6 @@
                     <dtef'' e'' des'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -759,13 +535,6 @@
                         <dtef'' e'' des'''>16
                         \mf
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         [
@@ -773,48 +542,20 @@
 
                         <dtef'' e'' des'''>16
                         - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         ~
                         <dtef'' e'' des'''>16
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         dtef''16
                         ~
                     }
                     dtef''8
                     <dtef'' e'' des'''>8
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         bf''16
 
                         <dtef'' e'' des'''>8
                         - \portato
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                     }
                 }
                 {
@@ -864,13 +605,6 @@
                         \>
                         <dtef'' e'' des'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         dtef''16
 
                         ]
@@ -880,13 +614,6 @@
                     <dtef'' e'' des'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -896,13 +623,6 @@
                         <dtef'' e'' des'''>8
                         \mf
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         [
@@ -912,13 +632,6 @@
                     bf''16
                     <dtef'' e'' des'''>8.
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                 }
                 {
                     \times 4/5 {
@@ -953,13 +666,6 @@
                         \>
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         dtef''8
                         ~
                     }
@@ -967,24 +673,10 @@
                         dtef''16
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         bf''16
                         - \portato
                         <dtef'' e'' des'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                     }
                 }
                 {
@@ -1021,13 +713,6 @@
                     <dtef'' e'' des'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1041,26 +726,12 @@
                     [
                     <dtef'' e'' des'''>8.
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         dtef''16
                         - \accent
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                     }
                 }
                 {
@@ -1115,13 +786,6 @@
                         \>
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         e''8
                         ~
                     }
@@ -1130,13 +794,6 @@
                         e''16
                         <dtef'' e'' des'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         dtef''16
                         ~
                     }
@@ -1146,25 +803,11 @@
                     dtef''16
                     <dtef'' e'' des'''>8.
                     - \portato
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     \times 4/5 {
                         bf''8
 
                         <dtef'' e'' des'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         e''8
 
                         ]
@@ -1174,13 +817,6 @@
                     <dtef'' e'' des'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1189,13 +825,6 @@
                         <dtef'' e'' des'''>8.
                         \mf
                         - \accent
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         [
@@ -1203,13 +832,6 @@
 
                         <dtef'' e'' des'''>16
                         - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                     }
                 }
                 {
@@ -1264,13 +886,6 @@
                     <dtef'' e'' des'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1297,13 +912,6 @@
                     \>
                     <dtef'' e'' des'''>8
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     ]
                 }
                 {
@@ -1313,25 +921,11 @@
                     \times 4/5 {
                         <dtef'' e'' des'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         [
                         dtef''8
 
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         ]
                     }
                 }
@@ -1339,13 +933,6 @@
                     <dtef'' e'' des'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1360,13 +947,6 @@
                         [
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                     }
                 }
                 {
@@ -1375,35 +955,14 @@
                     - \tenuto
                     <dtef'' e'' des'''>16
 
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     ~
                     <dtef'' e'' des'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     dtef''16
                     ~
                     \times 4/5 {
                         dtef''8
                         <dtef'' e'' des'''>16
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         bf''8
                         - \portato
                     }
@@ -1448,13 +1007,6 @@
                     <dtef'' e'' des'''>4
                     \pp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1492,46 +1044,18 @@
                         <dtef'' e'' des'''>16
                         \mf
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         e''8
 
                         <dtef'' e'' des'''>8
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         ~
                     }
                     <dtef'' e'' des'''>16
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     dtef''16
 
                     <dtef'' e'' des'''>8
                     - \accent
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     ]
                     bf''4
 
@@ -1540,13 +1064,6 @@
                     <dtef'' e'' des'''>4
                     \mp
                     - \espressivo
-                    _ \markup {
-                        \override
-                            #'(size . 0.4)
-                        \woodwind-diagram
-                            #'soprano-saxophone
-                            #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                        }
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -1556,13 +1073,6 @@
                         <dtef'' e'' des'''>8
                         \mf
                         - \tenuto
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                         - \tweak circled-tip ##t
                         \>
                         [
@@ -1570,13 +1080,6 @@
 
                         <dtef'' e'' des'''>8
 
-                        _ \markup {
-                            \override
-                                #'(size . 0.4)
-                            \woodwind-diagram
-                                #'soprano-saxophone
-                                #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
-                            }
                     }
                 }
                 {
