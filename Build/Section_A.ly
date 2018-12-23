@@ -1,4 +1,3 @@
-
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -154,8 +153,6 @@
                         - \espressivo
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        ]
                     }
                     {
                         r4.

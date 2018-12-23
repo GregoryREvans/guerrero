@@ -1,18 +1,3 @@
-\version "2.19.82"  %! LilyPondFile
-\language "english" %! LilyPondFile
-
-\include "first_stylesheet.ily"                                      %! LilyPondFile
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
-
-\header { %! LilyPondFile
-    tagline = ##f
-} %! LilyPondFile
-
-\layout {}
-
-\paper {}
-
-\score { %! LilyPondFile
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
@@ -132,7 +117,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
@@ -143,7 +127,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -164,7 +147,6 @@
                     [
                     g'16
 
-                    ]
                     r16
                     \!
                 }
@@ -174,7 +156,6 @@
                         \f
 
                         \>
-                        [
                         b16
                         - \halfopen
                         bqs8
@@ -200,7 +181,6 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -213,7 +193,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -251,17 +230,13 @@
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         r16
                         \!
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 0
                         bqf16
                         \p
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -272,11 +247,11 @@
                 {
                     \times 4/5 {
                         r16
+                        [
                         d'8
                         \mf
 
                         ~
-                        [
                         d'16
                         - \tweak circled-tip ##t
                         \>
@@ -291,7 +266,6 @@
                         - \accent
                         fs''8
 
-                        ]
                     }
                     r8.
                     \!
@@ -300,7 +274,6 @@
                     - \tenuto
                     - \tweak circled-tip ##t
                     \>
-                    [
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         cs'''8
@@ -332,7 +305,6 @@
                         g'16
                         d'16
 
-                        ]
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
@@ -343,7 +315,6 @@
                         - \tweak circled-tip ##t
                         \>
                         ~
-                        [
                     }
                     e''8
                     g'16
@@ -383,7 +354,6 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                     r16
                     \!
                     \tweak text #tuplet-number::calc-fraction-text
@@ -392,7 +362,6 @@
                         \f
 
                         \>
-                        [
                         bqs16
                         ~
                     }
@@ -414,9 +383,9 @@
                         bqf16
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         r16
                         \!
+                        ]
                     }
                 }
                 {
@@ -438,9 +407,9 @@
                         - \tenuto
                         ~
                         cs'''16
-                        ]
                         r16
                         \!
+                        ]
                     }
                 }
                 {
@@ -450,12 +419,12 @@
                     \times 8/9 {
                         % [Voice 21 measure 9] %! COMMENT_MEASURE_NUMBERS
                         r8
+                        [
                         e''16
                         \mf
 
                         - \tweak circled-tip ##t
                         \>
-                        [
                         bf8
 
                         g'16
@@ -483,9 +452,9 @@
                     [
                     g'16
 
-                    ]
                     r8
                     \!
+                    ]
                 }
                 {
                     % [Voice 21 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -500,11 +469,11 @@
                     \times 4/3 {
                         r16
                         \!
+                        [
                         b8
                         \f
                         - \stopped
                         \>
-                        [
                     }
                     \times 4/5 {
                         bqf8.
@@ -536,11 +505,11 @@
                     \times 4/3 {
                         r16
                         \!
+                        [
                         cs'16
                         \f
                         - \flageolet
                         \>
-                        [
                         dqf'16
                         - \flageolet
                     }
@@ -579,7 +548,6 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         e''16
-                        ]
                         r8
                         \!
                     }
@@ -589,7 +557,6 @@
 
                     - \tweak circled-tip ##t
                     \>
-                    [
                     g'8
 
                 }
@@ -604,7 +571,6 @@
                     \times 4/5 {
                         g'16
 
-                        ]
                         r8
                         \!
                         fs''8
@@ -612,7 +578,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -637,14 +602,12 @@
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         r16
                         \!
                         bqf16
                         \f
                         \>
                         ~
-                        [
                     }
                 }
                 {
@@ -684,7 +647,6 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     [
-                    ]
                     r8
                     \!
                 }
@@ -696,7 +658,6 @@
                         \f
 
                         \>
-                        [
                         bqf16
                         \p
 
@@ -740,12 +701,12 @@
                     \times 4/5 {
                         r8.
                         \!
+                        [
                         g'16
                         \mf
 
                         - \tweak circled-tip ##t
                         \>
-                        [
                         d'16
                         ~
                     }
@@ -789,7 +750,6 @@
                     fs''16
                     e''16
 
-                    ]
                     \times 4/5 {
                         r8
                         \!
@@ -798,7 +758,6 @@
 
                         - \tweak circled-tip ##t
                         \>
-                        [
                     }
                     \times 4/5 {
                         e''16
@@ -827,7 +786,6 @@
                         b16
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         r16
                         \!
                     }
@@ -837,7 +795,6 @@
                         \f
 
                         \>
-                        [
                         bf16
                         - \halfopen
                         bqf16
@@ -862,7 +819,6 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     [
-                    ]
                     r8.
                     \!
                 }
@@ -875,7 +831,6 @@
 
                         - \tweak circled-tip ##t
                         \>
-                        [
                         g'8
                         - \portato
                     }
@@ -912,17 +867,13 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     [
-                    ]
                     r16
                     \!
-                    \set stemLeftBeamCount = 1
-                    \set stemRightBeamCount = 0
                     bqf8
                     \f
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     ]
                 }
                 {
@@ -979,7 +930,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        ]
                         r16
                         \!
                         r16
@@ -988,7 +938,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                     }
                 }
                 {
@@ -999,7 +948,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         r8
                         \!
                         e''8.
@@ -1007,7 +955,6 @@
                         - \accent
                         - \tweak circled-tip ##t
                         \>
-                        [
                         bf16
 
                     }
@@ -1054,17 +1001,13 @@
                     - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                     r16
                     \!
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 0
                     bf16
                     \p
                     - \halfopen
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     ]
                 }
                 {
@@ -1083,7 +1026,6 @@
                     ~
                     \times 4/5 {
                         d'16
-                        ]
                         r8
                         \!
                         r16
@@ -1092,7 +1034,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -1119,7 +1060,6 @@
 
                     cs'''16
 
-                    ]
                     r16
                     \!
                     \tweak text #tuplet-number::calc-fraction-text
@@ -1130,7 +1070,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -1179,21 +1118,16 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         r16
                         \!
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 0
                         bqs16
                         \f
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
             }
         }
     >>
-} %! LilyPondFile

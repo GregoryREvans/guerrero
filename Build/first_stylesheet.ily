@@ -3,6 +3,7 @@
 \version "2.19.82"
 \language "english"
 #(set-default-paper-size "arch c")
+%{ #(set-default-paper-size "ansi c") %}
 #(set-global-staff-size 11)
 \include "ekmel.ily"
 \ekmelicStyle evans
@@ -84,7 +85,7 @@
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
         \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 21) (minimum-distance . 21) (padding . 0))
-		\override Stem.stemlet-length = #1.5
+		\override Stem.stemlet-length = #1.15
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2

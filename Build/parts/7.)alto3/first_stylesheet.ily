@@ -10,11 +10,11 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Didot") \fontsize #3.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
-	title =  \markup \override #'(font-name . "Didot") \fontsize #15 \bold\center-column {"GUERRERO" }
-	subtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"b       o       c       e       t       o       s               d       e               m       a       r       t       e"}
-	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.3 {"Gregory Rowland Evans"}
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #1.7 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
+	title =  \markup \override #'(font-name . "Didot") \fontsize #13 \bold\center-column {"GUERRERO" }
+	subtitle = \markup \override #'(font-name . "Didot") \fontsize #4 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
+	%{ subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #3 \center-column {"b       o       c       e       t       o       s               d       e               m       a       r       t       e"} %}
+	arranger = \markup \override #'(font-name . "Didot") \fontsize #2 {"Gregory Rowland Evans"}
 }
 
 \layout {
@@ -83,6 +83,7 @@
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
         \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 17) (minimum-distance . 17) (padding . 0))
+		\override Stem.stemlet-length = #1.15
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
@@ -111,8 +112,10 @@
 
 \paper {
 
-	top-margin = 1.5\cm
-	bottom-margin = 1.5\cm
+	top-margin = 1\cm
+	bottom-margin = 0.4\cm
+	left-margin = 1.3\cm
+	right-margin = 1\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""

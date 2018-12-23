@@ -1,4 +1,3 @@
-
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"

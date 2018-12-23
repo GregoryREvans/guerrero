@@ -3561,9 +3561,9 @@ print(f'Total time: {total_time} seconds')
 if path.exists():
     print(f'Opening {pdf_path} ...')
     os.system(f'open {pdf_path}')
+score_lines = open('/Users/evansdsg2/Scores/guerrero/Segments/Section_J/Section_J.ly').readlines()
+open('/Users/evansdsg2/Scores/guerrero/Build/Section_J.ly', 'w').writelines(score_lines[15:-1])
 
-# for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-#     abjad.show(staff)
 # abjad.show(score)
 # abjad.play(score)
 for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
@@ -3577,7 +3577,6 @@ for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3599,6 +3598,8 @@ for staff in abjad.iterate(score['Staff 1']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/1.)sopranino/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3611,7 +3612,6 @@ for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/2.)soprano1'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3633,6 +3633,8 @@ for staff in abjad.iterate(score['Staff 2']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/2.)soprano1/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/2.)soprano1/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 3']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3645,7 +3647,6 @@ for staff in abjad.iterate(score['Staff 3']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/3.)soprano2'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3667,6 +3668,8 @@ for staff in abjad.iterate(score['Staff 3']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/3.)soprano2/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/3.)soprano2/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3679,7 +3682,6 @@ for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/4.)soprano3'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3701,6 +3703,8 @@ for staff in abjad.iterate(score['Staff 4']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/4.)soprano3/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/4.)soprano3/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 5']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3713,7 +3717,6 @@ for staff in abjad.iterate(score['Staff 5']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/5.)alto1'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3735,6 +3738,8 @@ for staff in abjad.iterate(score['Staff 5']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/5.)alto1/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/5.)alto1/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3747,7 +3752,6 @@ for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/6.)alto2'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3769,6 +3773,8 @@ for staff in abjad.iterate(score['Staff 6']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/6.)alto2/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/6.)alto2/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 7']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3781,7 +3787,6 @@ for staff in abjad.iterate(score['Staff 7']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/7.)alto3'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3803,6 +3808,8 @@ for staff in abjad.iterate(score['Staff 7']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/7.)alto3/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/7.)alto3/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3815,7 +3822,6 @@ for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/8.)alto4'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3837,6 +3843,8 @@ for staff in abjad.iterate(score['Staff 8']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/8.)alto4/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/8.)alto4/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 9']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3849,7 +3857,6 @@ for staff in abjad.iterate(score['Staff 9']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/9.)alto5'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3871,6 +3878,8 @@ for staff in abjad.iterate(score['Staff 9']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/9.)alto5/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/9.)alto5/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3883,7 +3892,6 @@ for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/10.)alto6'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3905,6 +3913,8 @@ for staff in abjad.iterate(score['Staff 10']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/10.)alto6/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/10.)alto6/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 11']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3917,7 +3927,6 @@ for staff in abjad.iterate(score['Staff 11']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/11.)tenor1'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3939,6 +3948,8 @@ for staff in abjad.iterate(score['Staff 11']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/11.)tenor1/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/11.)tenor1/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3951,7 +3962,6 @@ for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/12.)tenor2'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -3973,6 +3983,8 @@ for staff in abjad.iterate(score['Staff 12']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/12.)tenor2/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/12.)tenor2/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 13']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -3985,7 +3997,6 @@ for staff in abjad.iterate(score['Staff 13']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/13.)tenor3'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4007,6 +4018,8 @@ for staff in abjad.iterate(score['Staff 13']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/13.)tenor3/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/13.)tenor3/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -4019,7 +4032,6 @@ for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/14.)tenor4'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4041,6 +4053,8 @@ for staff in abjad.iterate(score['Staff 14']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/14.)tenor4/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/14.)tenor4/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 15']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -4053,7 +4067,6 @@ for staff in abjad.iterate(score['Staff 15']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/15.)tenor5'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4075,6 +4088,8 @@ for staff in abjad.iterate(score['Staff 15']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/15.)tenor5/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/15.)tenor5/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -4087,7 +4102,6 @@ for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/16.)baritone1'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4109,6 +4123,8 @@ for staff in abjad.iterate(score['Staff 16']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/16.)baritone1/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/16.)baritone1/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 17']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -4121,7 +4137,6 @@ for staff in abjad.iterate(score['Staff 17']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/17.)baritone2'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4143,6 +4158,8 @@ for staff in abjad.iterate(score['Staff 17']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/17.)baritone2/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/17.)baritone2/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -4155,7 +4172,6 @@ for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/18.)baritone3'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4177,6 +4193,8 @@ for staff in abjad.iterate(score['Staff 18']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/18.)baritone3/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/18.)baritone3/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 19']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -4189,7 +4207,6 @@ for staff in abjad.iterate(score['Staff 19']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/19.)bass1'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4211,6 +4228,8 @@ for staff in abjad.iterate(score['Staff 19']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/19.)bass1/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/19.)bass1/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -4223,7 +4242,6 @@ for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/20.)bass2'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4245,6 +4263,8 @@ for staff in abjad.iterate(score['Staff 20']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/20.)bass2/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/20.)bass2/Section_J.ly', 'w').writelines(part_lines[15:-1])
 
 for staff in abjad.iterate(score['Staff 21']).components(abjad.Staff):
     signatures = abjad.select(score['Global Context']).components(abjad.Staff)
@@ -4257,7 +4277,6 @@ for staff in abjad.iterate(score['Staff 21']).components(abjad.Staff):
         part,
         includes=['first_stylesheet.ily', '/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily'],
         )
-    abjad.show(part_file)
     directory = '/Users/evansdsg2/Scores/guerrero/Build/parts/21.)contrabass'
     pdf_path = f'{directory}/Section_J.pdf'
     path = pathlib.Path('Section_J.pdf')
@@ -4279,3 +4298,5 @@ for staff in abjad.iterate(score['Staff 21']).components(abjad.Staff):
     if path.exists():
         print(f'Opening {pdf_path} ...')
         os.system(f'open {pdf_path}')
+    part_lines = open('/Users/evansdsg2/Scores/guerrero/Build/parts/21.)contrabass/Section_J.ly').readlines()
+    open('/Users/evansdsg2/Scores/guerrero/Build/parts/21.)contrabass/Section_J.ly', 'w').writelines(part_lines[15:-1])
