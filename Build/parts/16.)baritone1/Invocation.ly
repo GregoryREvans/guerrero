@@ -71,21 +71,17 @@
                     \set Staff.instrumentName =
                     \markup { "Baritone 1" }
                     r8
+                    [
                 }
                 {
-                    \set stemLeftBeamCount = 0
-                    \set stemRightBeamCount = 1
                     d'8
                     \f
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    ]
                     r8
                     \!
-                    \set stemLeftBeamCount = 1
-                    \set stemRightBeamCount = 1
+                    ]
                     dqs'4.
                     \mp
                     \<
@@ -104,8 +100,6 @@
                     \<
                     eqf'8
                     ~
-                    [
-                    ]
                 }
                 {
                     % [Voice 16 measure 3] %! COMMENT_MEASURE_NUMBERS
@@ -121,16 +115,18 @@
                 {
                     % [Voice 16 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
+                    [
                 }
                 {
                     e'8
                     \mf
                     - \tweak stencil #abjad-flared-hairpin
                     \<
-                    [
+                    ]
                     \times 8/9 {
                         eqs'4
                         f'16
+                        [
                         fqs'16
                         fs'16
                         gqf'8
@@ -149,17 +145,15 @@
                     r2
                 }
                 {
-                    \set stemLeftBeamCount = 0
-                    \set stemRightBeamCount = 1
                     g'8
                     \mp
 
                     - \tweak stencil #constante-hairpin
                     \<
                     [
-                    ]
                     r8
                     \!
+                    ]
                     gqs'4
                     \mp
 

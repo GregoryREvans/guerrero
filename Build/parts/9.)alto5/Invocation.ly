@@ -75,13 +75,13 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         dqf'4
                         ~
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/7 {
                         dqf'16
+                        [
                         d'8
                         ~
                         d'16
@@ -131,22 +131,18 @@
                 {
                     \times 2/3 {
                         % [Voice 9 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \set stemLeftBeamCount = 0
-                        \set stemRightBeamCount = 1
                         gqf'8
                         \mp
 
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        ]
                         r8
                         \!
                         g'8
                         \mp
                         \<
                         ~
-                        [
                     }
                     g'8
                     ]
@@ -225,8 +221,6 @@
                         \<
                         cs'8
                         ~
-                        [
-                        ]
                     }
                     cs'4
                     \f
@@ -248,9 +242,9 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         d'16
                         ~
+                        [
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {

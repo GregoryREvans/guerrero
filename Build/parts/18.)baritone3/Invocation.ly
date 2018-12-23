@@ -78,10 +78,8 @@
                         \mp
 
                         \<
-                        [
                         b4
                         ~
-                        ]
                     }
                 }
                 {
@@ -147,8 +145,6 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    ]
                 }
                 {
                     r2

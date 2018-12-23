@@ -100,12 +100,14 @@
                         dqf'16
                         d'16
                         dqs'16
+                        ]
                         ef'4
                         ~
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         ef'16
+                        [
                         eqf'8
                         \ff
                         - \tweak stencil #constante-hairpin
@@ -184,8 +186,6 @@
                         \mp
                         - \tenuto
                         \<
-                        [
-                        ]
                     }
                     a'2
                     \f
@@ -206,14 +206,12 @@
                     \<
                     r8
                     \!
-                    \set stemLeftBeamCount = 1
-                    \set stemRightBeamCount = 0
+                    [
                     bf'8
                     \mp
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     ]
                 }
                 {

@@ -111,7 +111,7 @@
                     \!
                 }
                 {
-                    ef'''4
+                    b'4
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -139,7 +139,7 @@
                 }
                 {
                     % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    ef'''2.
+                    f''2.
                     \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -174,7 +174,7 @@
                     \!
                 }
                 {
-                    ef'''2
+                    af'2
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -194,10 +194,10 @@
                 }
                 {
                     % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    ef'''2.
+                    c'2.
                     \p
                     ~
-                    ef'''2
+                    c'2
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -242,7 +242,7 @@
                 }
                 {
                     % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    ef'''2.
+                    f''2.
                     \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -284,7 +284,7 @@
                     \!
                 }
                 {
-                    ef'''2
+                    b'2
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -304,10 +304,10 @@
                 }
                 {
                     % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    ef'''2.
+                    af'2.
                     \p
                     ~
-                    ef'''2
+                    af'2
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -378,7 +378,7 @@
                     ]
                 }
                 {
-                    ef'''2
+                    b'2
                     \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin

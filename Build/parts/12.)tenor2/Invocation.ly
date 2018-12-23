@@ -104,8 +104,6 @@
                         \mp
                         - \tenuto
                         \<
-                        [
-                        ]
                     }
                 }
                 {
@@ -123,6 +121,7 @@
                 {
                     % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
+                    [
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -131,7 +130,6 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         fs'8.
                         ~
                     }
@@ -158,8 +156,6 @@
                     \<
                     aqf'8
                     ~
-                    [
-                    ]
                 }
                 {
                     % [Voice 12 measure 6] %! COMMENT_MEASURE_NUMBERS
@@ -237,22 +233,18 @@
                 }
                 {
                     \times 2/3 {
-                        \set stemLeftBeamCount = 0
-                        \set stemRightBeamCount = 1
                         d''8
                         \mp
 
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        ]
                         r8
                         \!
                         dqs''8
                         \mp
                         \<
                         ~
-                        [
                     }
                 }
                 {

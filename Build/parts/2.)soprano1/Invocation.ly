@@ -115,11 +115,11 @@
                 }
                 {
                     r8
+                    [
                     g''8
                     \mp
                     \<
                     ~
-                    [
                     ]
                 }
                 {
@@ -167,11 +167,11 @@
                         bqs''8.
                         [
                         c'''8
+                        ]
                         cqs'''4
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -184,8 +184,6 @@
                     \mp
 
                     \<
-                    [
-                    ]
                     dqf'''4.
                     ~
                 }
@@ -196,9 +194,9 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     [
-                    ]
                     r8
                     \!
+                    ]
                 }
                 {
                     r1
@@ -243,7 +241,6 @@
                     ~
                     \times 2/3 {
                         f''8
-                        [
                         fqs''4
                         ~
                     }
@@ -254,7 +251,6 @@
                     \f
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                 }
                 {
                     r1

@@ -44,27 +44,27 @@ def grouper(lst1, lst2):
 def reduceMod(list_length, rw):
     return [(x % list_length) for x in rw]
 
-sopranino_note = [27, ]
-soprano_1_note = [22, ]
-soprano_2_note = [16, ]
-soprano_3_note = [13, ]
-alto_1_note = [20, ]
-alto_2_note = [12, ]
-alto_3_note = [1, ]
-alto_4_note = [20, ]
-alto_5_note = [12, ]
-alto_6_note = [1, ]
-tenor_1_note = [17, ]
-tenor_2_note = [6, ]
-tenor_3_note = [-1, ]
-tenor_4_note = [6, ]
-tenor_5_note = [-1, ]
-baritone_1_note = [13, ]
-baritone_2_note = [6, ]
-baritone_3_note = [4, ]
-bass_1_note = [11, ]
-bass_2_note = [9, ]
-contrabass_note = [-2, 2, 7, -2, 2, 7, 2, -2]
+sopranino_note = [27, 11, 17, 8, 0, 17, 11, 8, ]
+soprano_1_note = [22, 5, 16, 13, ]
+soprano_2_note = [16, 22, 13, 5, ]
+soprano_3_note = [13, 16, 5, 13, 22, ]
+alto_1_note = [20, 23, 1, 12, ]
+alto_2_note = [12, 1, 23, 20, ]
+alto_3_note = [1, 23, 12, 20, ]
+alto_4_note = [20, 12, 23, 1, ]
+alto_5_note = [12, 20, 1, 23, ]
+alto_6_note = [1, 20, 23, 12, ]
+tenor_1_note = [17, 25, 6, -1, ]
+tenor_2_note = [6, -1, 25, 17, ]
+tenor_3_note = [-1, 6, 25, 17, ]
+tenor_4_note = [6, 17, 25, -1, ]
+tenor_5_note = [-1, 17, 6, 25, ]
+baritone_1_note = [13, 24, 6, 4, ]
+baritone_2_note = [6, 4, 24, 13, ]
+baritone_3_note = [4, 6, 13, 24, ]
+bass_1_note = [11, 18, 9, 0, ]
+bass_2_note = [9, 11, 0, 18, ]
+contrabass_note = [-2, 7, 16, 2, 18, 25, ]
 # -3 at bottom of chord for completion
 sopranino_chord = [17, 27, 11, 0, 8,]
 soprano_1_chord = [[13.25, 16, 26.25, ], ]
@@ -1694,65 +1694,28 @@ for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
 print('Beaming runs ...')
 for voice in abjad.select(score).components(abjad.Voice):
     for run in abjad.select(voice).runs():
-        if 1 < len(run):
-            # use a beam_specifier to remove beam indicators from run
-            specifier = abjadext.rmakers.BeamSpecifier(
-                beam_each_division=False,
-                )
-            specifier(run)
-        # for leaf in run:
-        #     # continue if leaf can't be beamed
-        #     if abjad.Duration(1, 4) <= leaf.written_duration:
-        #         continue
-        #     previous_leaf = abjad.inspect(leaf).leaf(-1)
-        #     next_leaf = abjad.inspect(leaf).leaf(1)
-        #     # if next leaf is quarter note (or greater) ...
-        #     if (isinstance(next_leaf, (abjad.Chord, abjad.Note)) and
-        #         abjad.Duration(1, 4) <= next_leaf.written_duration):
-        #         left = previous_leaf.written_duration.flag_count
-        #         right = leaf.written_duration.flag_count # right-pointing nib
-        #         beam_count = abjad.BeamCount(
-        #             left=left,
-        #             right=right,
-        #             )
-        #         abjad.attach(beam_count, leaf)
-        #         continue
-        #     # if previous leaf is quarter note (or greater) ...
-        #     if (isinstance(previous_leaf, (abjad.Chord, abjad.Note)) and
-        #         abjad.Duration(1, 4) <= previous_leaf.written_duration):
-        #         left = leaf.written_duration.flag_count # left-pointing nib
-        #         right = next_leaf.written_duration.flag_count
-        #         beam_count = abjad.BeamCount(
-        #             left=left,
-        #             right=right,
-        #             )
-        #         abjad.attach(beam_count, leaf)
-            # then attach new indicators at the 0 and -1 of run
-            #only on notes smaller than 1/4
-    for note in abjad.select(voice).leaves(pitched=True):
-        if abjad.inspect(note).duration() < abjad.Duration(1, 4):
-            pre_leaf = abjad.inspect(note).leaf(-1)
-            next_leaf = abjad.inspect(note).leaf(1)
-            if isinstance(pre_leaf, abjad.Note):
-                if abjad.inspect(pre_leaf).duration() >= abjad.Duration(1, 4):
-                    abjad.attach(abjad.StartBeam(), note)
-            if isinstance(pre_leaf, abjad.Chord):
-                if abjad.inspect(pre_leaf).duration() >= abjad.Duration(1, 4):
-                    abjad.attach(abjad.StartBeam(), note)
-            if isinstance(pre_leaf, abjad.Rest):
-                abjad.attach(abjad.StartBeam(), note)
-            if pre_leaf == None:
-                abjad.attach(abjad.StartBeam(), note)
-            if isinstance(next_leaf, abjad.Note):
-                if abjad.inspect(next_leaf).duration() >= abjad.Duration(1, 4):
-                    abjad.attach(abjad.StopBeam(), note)
-            if isinstance(next_leaf, abjad.Chord):
-                if abjad.inspect(next_leaf).duration() >= abjad.Duration(1, 4):
-                    abjad.attach(abjad.StopBeam(), note)
-            if isinstance(next_leaf, abjad.Rest):
-                abjad.attach(abjad.StopBeam(), note)
-            if next_leaf == None:
-                abjad.attach(abjad.StopBeam(), note)
+        # use a beam_specifier to remove beam indicators from run
+        specifier = abjadext.rmakers.BeamSpecifier(
+            beam_each_division=False,
+            )
+        specifier(run)
+    for leaf in abjad.select(voice).leaves():
+        if leaf.written_duration <= abjad.Duration(7, 32):
+            previous_leaf = abjad.inspect(leaf).leaf(-1)
+            next_leaf = abjad.inspect(leaf).leaf(1)
+            prev_dur = 100
+            next_dur = 100
+            if hasattr(previous_leaf, 'written_duration'):
+                prev_dur = previous_leaf.written_duration
+            if hasattr(next_leaf, 'written_duration'):
+                next_dur = next_leaf.written_duration
+            if all(dur >= abjad.Duration(1, 4) for dur in (prev_dur, next_dur)):
+                continue
+            if prev_dur >= abjad.Duration(1, 4):
+                abjad.attach(abjad.StartBeam(), leaf)
+            if next_dur >= abjad.Duration(1, 4):
+                abjad.attach(abjad.StopBeam(), leaf)
+
 
 print('Beautifying score ...')
 # # cutaway score

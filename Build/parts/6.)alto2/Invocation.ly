@@ -83,8 +83,6 @@
                     % [Voice 6 measure 2] %! COMMENT_MEASURE_NUMBERS
                     r8
                     \!
-                    \set stemLeftBeamCount = 1
-                    \set stemRightBeamCount = 1
                     bqf'4.
                     \mp
                     \<
@@ -111,8 +109,6 @@
                     \ff
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    ]
                 }
                 {
                     % [Voice 6 measure 4] %! COMMENT_MEASURE_NUMBERS
@@ -128,8 +124,6 @@
                 {
                     % [Voice 6 measure 5] %! COMMENT_MEASURE_NUMBERS
                     d''8
-                    [
-                    ]
                     dqs''4.
                 }
                 {
@@ -182,17 +176,15 @@
                     \!
                 }
                 {
-                    \set stemLeftBeamCount = 0
-                    \set stemRightBeamCount = 1
                     af''8
                     \f
 
                     - \tweak stencil #constante-hairpin
                     \<
                     [
-                    ]
                     r8
                     \!
+                    ]
                     aqf''4
                     \mp
                     \<
@@ -202,13 +194,11 @@
                     \times 2/3 {
                         % [Voice 6 measure 9] %! COMMENT_MEASURE_NUMBERS
                         aqf''8
-                        [
                         a''4
                         \f
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -257,8 +247,6 @@
                     \f
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    ]
                 }
                 {
                     r1

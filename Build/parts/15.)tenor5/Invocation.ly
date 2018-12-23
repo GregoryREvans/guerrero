@@ -115,8 +115,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        ]
                     }
                 }
                 {
@@ -137,8 +135,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        ]
                     }
                 }
                 {
@@ -177,8 +173,6 @@
                     \<
                     r8
                     \!
-                    \set stemLeftBeamCount = 1
-                    \set stemRightBeamCount = 1
                     a'4.
                     \mp
                     \<

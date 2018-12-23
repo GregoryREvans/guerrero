@@ -71,24 +71,20 @@
                     \set Staff.instrumentName =
                     \markup { "Alto 4" }
                     r8
+                    [
                 }
                 {
-                    \set stemLeftBeamCount = 0
-                    \set stemRightBeamCount = 1
                     dqf'8
                     \mp
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    ]
                     r8
                     \!
                     d'8
                     \mp
                     - \tenuto
                     ~
-                    [
                     d'8
                     \<
                     dqs'8
@@ -127,6 +123,7 @@
                 {
                     % [Voice 8 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
+                    [
                 }
                 {
                     \times 2/3 {
@@ -134,7 +131,6 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         eqs'16
                         ~
                     }
@@ -173,8 +169,6 @@
                         \mp
                         - \tenuto
                         \<
-                        [
-                        ]
                     }
                 }
                 {
@@ -199,7 +193,6 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         aqf'4
                         ~
                     }
@@ -209,6 +202,7 @@
                     \times 4/3 {
                         % [Voice 8 measure 8] %! COMMENT_MEASURE_NUMBERS
                         aqf'16
+                        [
                         a'8
                         ~
                     }
@@ -267,8 +261,6 @@
                 {
                     % [Voice 8 measure 11] %! COMMENT_MEASURE_NUMBERS
                     dqf'8
-                    [
-                    ]
                     d'4.
                 }
                 {

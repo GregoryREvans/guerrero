@@ -118,8 +118,6 @@
                         \mp
 
                         \<
-                        [
-                        ]
                     }
                     e'2
                     \f
@@ -180,13 +178,13 @@
                     ~
                     a'8
                     aqs'8
+                    ]
                     \times 4/5 {
                         bf'4
                         bqf'16
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -228,10 +226,8 @@
                         \mp
 
                         \<
-                        [
                         d'8
                         ~
-                        ]
                     }
                     d'4.
                     \f

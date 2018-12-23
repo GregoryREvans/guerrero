@@ -139,13 +139,11 @@
                         \mp
 
                         \<
-                        [
                         c''8
                         \f
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -263,7 +261,6 @@
                     ~
                     \times 2/3 {
                         af'8
-                        [
                         aqf'4
                         ~
                     }
@@ -271,7 +268,6 @@
                     \f
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                 }
             }
         }

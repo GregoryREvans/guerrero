@@ -104,8 +104,8 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         f''16
+                        [
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
@@ -137,8 +137,6 @@
                     \<
                     r8
                     \!
-                    \set stemLeftBeamCount = 1
-                    \set stemRightBeamCount = 1
                     gqs''4.
                     \mp
                     \<
@@ -193,13 +191,11 @@
                     ~
                     \times 2/3 {
                         b''8
-                        [
                         bqs''4
                         \f
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -208,17 +204,15 @@
                     \!
                 }
                 {
-                    \set stemLeftBeamCount = 0
-                    \set stemRightBeamCount = 1
                     c'''8
                     \f
 
                     - \tweak stencil #constante-hairpin
                     \<
                     [
-                    ]
                     r8
                     \!
+                    ]
                     cqs'''4.
                     \mp
                     \<
@@ -227,8 +221,6 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    ]
                 }
                 {
                     % [Voice 5 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -271,9 +263,9 @@
                     ~
                     \times 2/3 {
                         eqf''4
-                        [
                         e''8
                         ~
+                        [
                     }
                     e''8
                     \f

@@ -140,7 +140,7 @@
                 }
                 {
                     % [Voice 12 measure 5] %! COMMENT_MEASURE_NUMBERS
-                    fs'2.
+                    b2.
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -169,7 +169,7 @@
                 }
                 {
                     % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    fs'4
+                    cs'''4
                     \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -225,7 +225,7 @@
                 }
                 {
                     % [Voice 12 measure 12] %! COMMENT_MEASURE_NUMBERS
-                    fs'2.
+                    f''2.
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -269,7 +269,7 @@
                     r2
                 }
                 {
-                    fs'2
+                    b2
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin

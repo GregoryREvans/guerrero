@@ -141,7 +141,7 @@
                 }
                 {
                     % [Voice 4 measure 5] %! COMMENT_MEASURE_NUMBERS
-                    cs''4
+                    e''4
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -164,7 +164,7 @@
                 }
                 {
                     % [Voice 4 measure 7] %! COMMENT_MEASURE_NUMBERS
-                    cs''4
+                    f'4
                     \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -187,7 +187,7 @@
                 }
                 {
                     % [Voice 4 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    cs''2.
+                    bf''2.
                     \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -299,7 +299,7 @@
                     \!
                 }
                 {
-                    cs''4
+                    e''4
                     \mp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -311,7 +311,7 @@
                 }
                 {
                     % [Voice 4 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    cs''2.
+                    f'2.
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -399,7 +399,7 @@
                     \!
                 }
                 {
-                    cs''4
+                    bf''4
                     \p
                     - \tenuto
                     - \tweak stencil #constante-hairpin

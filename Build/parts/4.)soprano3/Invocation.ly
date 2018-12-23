@@ -83,17 +83,13 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        ]
                         r8
                         \!
-                        \set stemLeftBeamCount = 1
-                        \set stemRightBeamCount = 0
                         bqs'8
                         \mp
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -110,8 +106,6 @@
                     \mp
 
                     \<
-                    [
-                    ]
                     cqs''4.
                     ~
                 }
@@ -129,13 +123,13 @@
                 {
                     % [Voice 4 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
+                    [
                 }
                 {
                     cs''8
                     \mf
                     - \tweak stencil #abjad-flared-hairpin
                     \<
-                    [
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         dqf''8
@@ -167,8 +161,6 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        ]
                         r8
                         \!
                     }
@@ -230,8 +222,8 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         g''16
+                        [
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {

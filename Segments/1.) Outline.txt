@@ -3,30 +3,25 @@ GUERRERO for 21 saxophones
 
 c. 1' per section
 
-CHANGE WOODWIND FINGERING ALGORITHM TO LOOK AT LOGICAL TIES, ASSESS IF IT IS A CHORD, THEN ATTACH
 FIX ERRONEOUS SOPRANO 1 REFERENCES
 FIX abjad.show CALLS IN PERSIST PASSAGES
 
 Invocation: quarter = 60, 1/4 tone scale that doesn't reach octave, shepard tone orchestration
     dynamic profile: crescendi that are occasionally sudden
-    notes: double check scales on final render
 
 Section_A: multiphonics and noodling gestures along with long tones from chord
     dynamic profile: intermittently loud and soft with a few crescendi / diminuendi
-    notes: maybe try including other pitches in sopranino and contrabass / consider shifting some attacks by an eighth note
 
 Section_B: quarter = 90, 1/4 tone random-walk glissandi
     dynamic profile: uncoordinated swells
-    notes: reconsider crescendo points
 
 Section_C: random-walks continue, multiphonics return, tone color shifts with airy tone and occasional tongue slaps
     dynamic profile: medium, getting quieter (random walks = loud, fast chords = moderate, slow chords = quiet)
 
-Section_D: quarter = 108? tone color changes to be more airy, emphasize tongue slaps
+Section_D: quarter = 108 tone color changes to be more airy, emphasize tongue slaps
     dynamic profile: quiet, not yet a whisper
-    notes:
 
-Section_E: quarter = 90, repeated notes and tremolo-trills underscored by long tones (*no* multiphonics)
+Section_E: quarter = 90, repeated notes and tremolo-trills underscored by long tones are microtones (*no* multiphonics)
     dynamic profile: suddenly loud again for repetitions but still subdued for long tones
     notes:
 

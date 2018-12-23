@@ -78,12 +78,12 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         gqf'4
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         g'16
+                        [
                         gqs'16
                         af'16
                         ]
@@ -112,8 +112,6 @@
                         \mp
                         - \tenuto
                         \<
-                        [
-                        ]
                     }
                     bf'4
                     \f
@@ -172,14 +170,12 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         r8
                         \!
                         ef''8
                         \mp
                         \<
                         ~
-                        [
                     }
                     ef''8
                     ]
@@ -197,13 +193,13 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         eqs''4
                         ~
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         eqs''16
+                        [
                         f''8
                         ~
                     }

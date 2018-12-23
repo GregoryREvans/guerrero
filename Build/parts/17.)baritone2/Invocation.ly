@@ -131,8 +131,6 @@
                         \<
                         e'8
                         ~
-                        [
-                        ]
                     }
                     e'4
                     \f
@@ -188,8 +186,6 @@
                         \mp
 
                         \<
-                        [
-                        ]
                         af'4
                         ~
                     }
@@ -199,17 +195,13 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        ]
                         r8
                         \!
-                        \set stemLeftBeamCount = 1
-                        \set stemRightBeamCount = 0
                         aqf'8
                         \f
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -280,14 +272,12 @@
                     \<
                     r8
                     \!
-                    \set stemLeftBeamCount = 1
-                    \set stemRightBeamCount = 1
+                    [
                     cs'8
                     \f
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     ]
                 }
             }

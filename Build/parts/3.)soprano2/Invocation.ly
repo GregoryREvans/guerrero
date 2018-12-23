@@ -79,8 +79,6 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
-                        ]
                         c''4
                         cqs''16
                         [
@@ -118,8 +116,6 @@
                         \mp
                         - \tenuto
                         \<
-                        [
-                        ]
                     }
                     e''2
                     \f
@@ -223,10 +219,8 @@
                         \mp
 
                         \<
-                        [
                         dqf''8
                         ~
-                        ]
                     }
                     dqf''4.
                 }

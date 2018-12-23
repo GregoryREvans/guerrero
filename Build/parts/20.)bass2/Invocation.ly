@@ -73,8 +73,6 @@
                     r8
                 }
                 {
-                    \set stemLeftBeamCount = 1
-                    \set stemRightBeamCount = 1
                     b4.
                     \mp
                     \<
@@ -94,10 +92,8 @@
                         \mp
                         - \tenuto
                         \<
-                        [
                         c'8
                         ~
-                        ]
                     }
                     c'4
                     ~
@@ -116,6 +112,7 @@
                 {
                     % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
+                    [
                 }
                 {
                     \times 2/3 {
@@ -123,7 +120,6 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         cs'8
                         ~
                     }
@@ -163,8 +159,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        ]
                     }
                 }
                 {
@@ -248,8 +242,6 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    ]
                 }
                 {
                     r2
@@ -265,12 +257,12 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        [
                         b4
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         bqs16
+                        [
                         c'16
                         cqs'16
                     }

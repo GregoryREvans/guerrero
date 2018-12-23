@@ -82,8 +82,6 @@
                     \times 4/5 {
                         % [Voice 10 measure 2] %! COMMENT_MEASURE_NUMBERS
                         c'8
-                        [
-                        ]
                         cqs'2
                         \f
 
@@ -136,17 +134,13 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        ]
                         r8
                         \!
-                        \set stemLeftBeamCount = 1
-                        \set stemRightBeamCount = 0
                         eqs'8
                         \f
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         ]
                     }
                 }
@@ -168,6 +162,7 @@
                     gqf'16
                     \times 4/5 {
                         g'16
+                        ]
                         gqs'4
                         ~
                     }
@@ -177,6 +172,7 @@
                     \times 8/7 {
                         % [Voice 10 measure 7] %! COMMENT_MEASURE_NUMBERS
                         gqs'16
+                        [
                         af'8
                         ~
                         af'16
@@ -203,8 +199,6 @@
                     \mp
 
                     \<
-                    [
-                    ]
                     bqf'4.
                     ~
                 }
@@ -230,9 +224,11 @@
                         bqs'16
                         c'16
                         ~
+                        ]
                         c'4
                         cqs'8
                         ~
+                        [
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
@@ -257,11 +253,11 @@
                     \<
                     r8
                     \!
+                    [
                     d'8
                     \mp
                     \<
                     ~
-                    [
                 }
                 {
                     % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS

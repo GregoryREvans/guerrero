@@ -2,8 +2,8 @@
 
 \version "2.19.82"
 \language "english"
-#(set-default-paper-size "11x17portrait")
-#(set-global-staff-size 8)
+#(set-default-paper-size "arch c")
+#(set-global-staff-size 11)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
@@ -76,15 +76,16 @@
 		\override BarLine.bar-extent = #'(-2 . 2)
         \override Beam.breakable = ##t
 		\override Beam.concaveness = #10000
-		\override DynamicText.font-size = #-3
+		\override DynamicText.font-size = #-2
 		\override Glissando.breakable = ##t
 		\override Glissando.thickness = #2
 		\override MetronomeMark.font-size = 3
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 20) (minimum-distance . 20) (padding . 0))
-        \override TupletBracket.bracket-visibility = ##t
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 21) (minimum-distance . 21) (padding . 0))
+		\override Stem.stemlet-length = #1.5
+		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
@@ -112,10 +113,10 @@
 
 \paper {
 
-	top-margin = 0.7\cm
-	bottom-margin = 0.3\cm
-	left-margin = 1.3\cm
-	right-margin = 1.1\cm
+	top-margin = 1\cm
+	bottom-margin = 0.4\cm
+	left-margin = 1.2\cm
+	right-margin = 1\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""

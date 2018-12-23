@@ -83,13 +83,13 @@
                     aqf'16
                     a'16
                     ~
+                    ]
                     \times 4/5 {
                         a'4
                         aqs'16
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -111,8 +111,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        ]
                     }
                 }
                 {
@@ -127,16 +125,12 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
-                        ]
                         r8
                         \!
                         bqs'4
                         \mp
 
                         \<
-                        [
-                        ]
                     }
                     c''4
                     \f
@@ -244,22 +238,18 @@
                 {
                     \times 4/5 {
                         % [Voice 11 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        \set stemLeftBeamCount = 0
-                        \set stemRightBeamCount = 1
                         aqs'8
                         \mp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        ]
                         r8
                         \!
                         bf'8
                         \mp
 
                         ~
-                        [
                         bf'8
                         \<
                         bqf'8
