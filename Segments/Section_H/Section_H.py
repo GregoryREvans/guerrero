@@ -3335,6 +3335,7 @@ for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
 
 print('Beaming runs ...')
 for voice in abjad.select(score).components(abjad.Voice):
+    for run in abjad.select(voice).runs():
         specifier = abjadext.rmakers.BeamSpecifier(
             beam_each_division=False,
             )

@@ -166,8 +166,6 @@
                     - \espressivo
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
-                    ]
                 }
                 {
                     r4.
