@@ -98,7 +98,6 @@
                         \markup { "Baritone 3" }
                         etes'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -111,11 +110,9 @@
                     r8
                     etes'16
                     \mp
-                    - \stopped
                     \>
                     g'16
                     \ppp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -127,13 +124,11 @@
                 {
                     etes'8
                     \ppp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     r8
                     \!
-                    ]
                 }
                 {
                     % [Voice 18 measure 2] %! COMMENT_MEASURE_NUMBERS
@@ -143,12 +138,10 @@
                     \times 4/5 {
                         g'8.
                         \mp
-                        - \stopped
                         \>
                         [
                         etes'8
                         \ppp
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -158,7 +151,6 @@
                     \times 4/3 {
                         g'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         etes'8
@@ -170,7 +162,6 @@
                         \!
                         g'8
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -184,12 +175,10 @@
                 {
                     eqs'8.
                     \mp
-                    - \stopped
                     \>
                     [
                     etes'16
                     \ppp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -198,14 +187,12 @@
                     \times 4/3 {
                         etes'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
                         eqs'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -214,13 +201,10 @@
                     % [Voice 18 measure 4] %! COMMENT_MEASURE_NUMBERS
                     g'8
                     \mp
-
                     \>
                     ges'16
-                    - \flageolet
                     gqs'16
                     \ppp
-                    - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -232,19 +216,14 @@
                 {
                     % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r16
-                    [
                     etes'8.
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     \times 4/5 {
                         g'8
-                        - \stopped
                         ges'16
-                        - \stopped
                         gqs'8
-                        - \stopped
                         ]
                     }
                 }
@@ -262,14 +241,11 @@
                 {
                     \times 4/5 {
                         r16
-                        [
                         ges'16
                         \mp
-                        - \flageolet
                         \>
                         g'8.
                         \ppp
-                        - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -279,7 +255,6 @@
                     \!
                     g'8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -294,29 +269,23 @@
                         % [Voice 18 measure 7] %! COMMENT_MEASURE_NUMBERS
                         etes'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         [
                         g'8
-                        - \stopped
                     }
                     etes'16
-                    - \stopped
                     g'8.
-                    - \stopped
                 }
                 {
                     etes'16
                     \mp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
                     g'8
                     \ppp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -330,12 +299,10 @@
                         % [Voice 18 measure 8] %! COMMENT_MEASURE_NUMBERS
                         etes'8.
                         \mp
-
                         \>
                         [
                         g'8
                         \ppp
-
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -349,7 +316,6 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         r16
-                        [
                         etes'8
                         \p
                         - \tweak stencil #constante-hairpin
@@ -359,14 +325,11 @@
                     \times 4/5 {
                         etes'16
                         eqs'16
-                        - \stopped
                         etes'16
-                        - \stopped
                         r16
                         \!
                         g'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -375,17 +338,13 @@
                     % [Voice 18 measure 9] %! COMMENT_MEASURE_NUMBERS
                     etes'8
                     \mp
-
                     \>
                     eqs'8
-
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         etes'16
-                        - \flageolet
                         g'8
                         \ppp
-                        - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -402,12 +361,10 @@
                     % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS
                     gqs'16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     gtes'8.
-                    - \stopped
                 }
                 {
                     \times 4/5 {
@@ -415,7 +372,6 @@
                         \!
                         ges'8.
                         \mp
-                        - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -430,12 +386,10 @@
                     \times 4/3 {
                         f''8
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         [
                         gtes'16
-                        - \stopped
                         ]
                     }
                 }
@@ -443,7 +397,6 @@
                     \times 4/5 {
                         % [Voice 18 measure 11] %! COMMENT_MEASURE_NUMBERS
                         gqs'4
-                        - \stopped
                         r16
                         \!
                     }
@@ -459,7 +412,6 @@
                         [
                         gtes'8
                         \ppp
-                        - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -467,7 +419,6 @@
                     \!
                     f''8.
                     \ppp
-                    - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -480,17 +431,14 @@
                 {
                     ges'16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     gqs'16
-                    - \stopped
                     r16
                     \!
                     ges'16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -503,15 +451,12 @@
                     \times 4/5 {
                         gtes'8
                         \mp
-
                         \>
                         [
                         gqs'16
-
                         ~
                         gqs'16
                         ges'16
-
                     }
                 }
                 {
@@ -520,7 +465,6 @@
                         % [Voice 18 measure 13] %! COMMENT_MEASURE_NUMBERS
                         gqs'8
                         \ppp
-
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
@@ -532,7 +476,6 @@
                         r8.
                         g'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         etes'16
@@ -541,7 +484,6 @@
                     etes'8
                     r8
                     \!
-                    ]
                 }
                 {
                     r4
@@ -553,21 +495,17 @@
                 {
                     ges'4
                     \mp
-
                     - \tweak stencil #constante-hairpin
                     \<
                 }
                 {
                     g'8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     etes'16
-                    - \stopped
                     g'16
-                    - \stopped
                     ]
                 }
                 {
@@ -578,7 +516,6 @@
                     % [Voice 18 measure 15] %! COMMENT_MEASURE_NUMBERS
                     g'8.
                     \ppp
-
                     - \tweak stencil #constante-hairpin
                     \<
                     [
@@ -597,7 +534,6 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         g'8
-                        - \stopped
                         r16
                         \!
                     }
@@ -606,13 +542,10 @@
                     \times 4/5 {
                         etes'8.
                         \mp
-                        - \halfopen
                         \>
                         g'16
-                        - \flageolet
                         etes'16
                         \ppp
-                        - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -625,10 +558,8 @@
                 }
                 {
                     r16
-                    [
                     g'8.
                     \mp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -637,11 +568,9 @@
                     \times 4/3 {
                         ges'8
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         g'16
-                        - \stopped
                         ]
                     }
                 }
@@ -653,19 +582,16 @@
                     % [Voice 18 measure 17] %! COMMENT_MEASURE_NUMBERS
                     ges'8
                     \ppp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     r4
                     \!
                     g'16
                     \mp
-                    - \stopped
                     \>
                     [
                     ges'16
                     \ppp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -673,7 +599,6 @@
                     \times 4/5 {
                         ges'8
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
@@ -681,7 +606,6 @@
                         r16
                         g'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -691,7 +615,6 @@
                     \times 4/3 {
                         g'8
                         \mp
-                        - \stopped
                         \>
                         ges'16
                         ~
@@ -702,10 +625,8 @@
                         % [Voice 18 measure 18] %! COMMENT_MEASURE_NUMBERS
                         ges'16
                         g'16
-                        - \stopped
                         etes'8.
                         \ppp
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -718,13 +639,11 @@
                 {
                     eqs'16
                     \mp
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     r16
                     \!
-                    ]
                     ees'4.
                     \mp
                     \>
@@ -737,7 +656,6 @@
                 {
                     etes'8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
@@ -745,7 +663,6 @@
                     \!
                     eqs'16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -757,14 +674,11 @@
                 {
                     ees'8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     eqs'16
-                    - \stopped
                     etes'16
-                    - \stopped
                 }
                 {
                     \times 4/5 {
@@ -773,7 +687,6 @@
                         \!
                         eqs'8
                         \p
-                        - \stopped
                         ~
                         eqs'16
                         - \tweak stencil #constante-hairpin
@@ -785,7 +698,6 @@
                     \times 4/3 {
                         etes'16
                         eqs'16
-                        - \stopped
                         ees'16
                         ~
                     }
@@ -803,12 +715,10 @@
                     % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
                     e'16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     def'''8.
-                    - \stopped
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         r8
@@ -821,9 +731,7 @@
                     }
                     e'8
                     ees'8
-                    - \stopped
                     eqs'16
-                    - \stopped
                     etes'8.
                     ~
                 }
@@ -835,7 +743,6 @@
                         \!
                         g'8.
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -854,7 +761,6 @@
                     \times 4/3 {
                         etes'8
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -867,7 +773,6 @@
                         \!
                         ges'8.
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -875,9 +780,7 @@
                 {
                     % [Voice 18 measure 24] %! COMMENT_MEASURE_NUMBERS
                     gqs'16
-                    - \stopped
                     gtes'16
-                    - \stopped
                     r16
                     \!
                     f''16
@@ -889,7 +792,6 @@
                     \times 4/3 {
                         f''8
                         gtes'16
-                        - \stopped
                         ]
                     }
                 }
@@ -900,14 +802,11 @@
                 {
                     gqs'16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     gtes'16
-                    - \stopped
                     gqs'8
-                    - \stopped
                     ]
                 }
                 {
@@ -917,17 +816,14 @@
                     \times 4/5 {
                         gtes'16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         [
                         gqs'8
-                        - \stopped
                         ~
                         gqs'16
                         r16
                         \!
-                        ]
                     }
                 }
                 {

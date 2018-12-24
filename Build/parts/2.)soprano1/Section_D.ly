@@ -97,13 +97,11 @@
                         \markup { "Soprano 1" }
                         bef''8.
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         [
                         \!
                         cs''8
-                        - \stopped
                     }
                 }
                 {
@@ -125,12 +123,10 @@
                 {
                     bef''16
                     \mp
-                    - \flageolet
                     \>
                     [
                     cs''16
                     \ppp
-                    - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -142,14 +138,12 @@
                 {
                     cs''16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
                     bef''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -178,7 +172,6 @@
                 {
                     dtef''8
                     \mp
-                    - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
                     [
@@ -191,13 +184,10 @@
                     \times 2/3 {
                         cs''16
                         \mp
-                        - \flageolet
                         \>
                         bef''16
-                        - \stopped
                         bqf''16
                         \ppp
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -209,12 +199,10 @@
                 {
                     bqf''16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
-                    ]
                 }
                 {
                     % [Voice 2 measure 7] %! COMMENT_MEASURE_NUMBERS
@@ -226,7 +214,6 @@
                 }
                 {
                     r8
-                    [
                 }
                 {
                     % [Voice 2 measure 9] %! COMMENT_MEASURE_NUMBERS
@@ -241,11 +228,9 @@
                 {
                     btef''16
                     \mp
-
                     \>
                     bf''16
                     \ppp
-
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -257,7 +242,6 @@
                     \times 2/3 {
                         etes''8
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
@@ -277,7 +261,6 @@
                 {
                     bf''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -289,7 +272,6 @@
                 {
                     btef''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
@@ -301,7 +283,6 @@
                 {
                     bf''8
                     \ppp
-
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -313,7 +294,6 @@
                     % [Voice 2 measure 11] %! COMMENT_MEASURE_NUMBERS
                     btef''8
                     \mp
-
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -326,7 +306,6 @@
                     % [Voice 2 measure 12] %! COMMENT_MEASURE_NUMBERS
                     bqf''8
                     \ppp
-                    - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
                     [
@@ -341,7 +320,6 @@
                         btef''4
                         bf''16
                         \ppp
-                        - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -352,14 +330,12 @@
                     \times 4/3 {
                         bqf''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
                         btef''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -368,13 +344,10 @@
                     \times 4/5 {
                         btef''8
                         \mp
-                        - \halfopen
                         \>
                         bf''16
-                        - \halfopen
                         etes''16
                         \ppp
-                        - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
@@ -385,11 +358,9 @@
                     % [Voice 2 measure 13] %! COMMENT_MEASURE_NUMBERS
                     bf''8.
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     btef''16
-                    - \stopped
                     ]
                 }
                 {
@@ -399,7 +370,6 @@
                 {
                     bf''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
@@ -411,11 +381,9 @@
                 {
                     etes''16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     bf''16
-                    - \stopped
                 }
                 {
                     % [Voice 2 measure 14] %! COMMENT_MEASURE_NUMBERS
@@ -425,19 +393,16 @@
                 {
                     bf''16
                     \mp
-
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
-                    ]
                 }
                 {
                     r2
                 }
                 {
                     r8
-                    [
                 }
                 {
                     r8
@@ -446,7 +411,6 @@
                     % [Voice 2 measure 15] %! COMMENT_MEASURE_NUMBERS
                     bf''8
                     \ppp
-
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -457,7 +421,6 @@
                 {
                     btef''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -474,14 +437,12 @@
                 {
                     eqs''8
                     \mp
-
                     - \tweak stencil #constante-hairpin
                     \<
                 }
                 {
                     r8
                     \!
-                    ]
                 }
                 {
                     % [Voice 2 measure 16] %! COMMENT_MEASURE_NUMBERS
@@ -490,7 +451,6 @@
                 {
                     bf''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
@@ -503,7 +463,6 @@
                 {
                     etes''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -515,11 +474,9 @@
                     \times 2/3 {
                         etes''16
                         \mp
-
                         \>
                         eqs''8
                         \ppp
-
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -531,7 +488,6 @@
                 {
                     eqs''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -543,20 +499,17 @@
                 {
                     % [Voice 2 measure 18] %! COMMENT_MEASURE_NUMBERS
                     r8
-                    [
                 }
                 {
                     \times 2/3 {
                         etes''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
                         eqs''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -568,7 +521,6 @@
                 {
                     etes''8
                     \ppp
-
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -583,7 +535,6 @@
                         % [Voice 2 measure 19] %! COMMENT_MEASURE_NUMBERS
                         etes''8
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -595,7 +546,6 @@
                     \!
                     etes''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -612,12 +562,10 @@
                     % [Voice 2 measure 21] %! COMMENT_MEASURE_NUMBERS
                     eqs''16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
                     ees''16
-                    - \stopped
                 }
                 {
                     r8
@@ -627,14 +575,12 @@
                     \times 2/3 {
                         eqs''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
                         ees''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -646,7 +592,6 @@
                 {
                     e''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -658,11 +603,9 @@
                     \times 2/3 {
                         def''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         dqf''8
-                        - \stopped
                     }
                 }
                 {
@@ -673,11 +616,9 @@
                     % [Voice 2 measure 22] %! COMMENT_MEASURE_NUMBERS
                     def''16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     e''16
-                    - \stopped
                     ]
                 }
                 {
@@ -687,7 +628,6 @@
                 {
                     def''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     [
@@ -713,11 +653,9 @@
                     \times 2/3 {
                         e''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                         ees''8
-                        - \stopped
                     }
                 }
                 {
@@ -727,7 +665,6 @@
                 {
                     e''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -740,7 +677,6 @@
                         r8
                         ees''16
                         \p
-                        - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -753,7 +689,6 @@
                 {
                     eqs''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -764,7 +699,6 @@
                 {
                     etes''8
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -775,11 +709,9 @@
                 {
                     bf''16
                     \p
-                    - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
                     etes''16
-                    - \stopped
                     ]
                 }
                 {
