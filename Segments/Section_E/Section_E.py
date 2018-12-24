@@ -234,7 +234,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_3_random_walk[i-1] + movement
     tenor_3_random_walk.append(value)
-tenor_3_walk_chord = [17, 17, 6, 6, 28, 28, -1, -1, 17, 17, 25, 25, ]
+tenor_3_walk_chord = [17, 17, 6, 6, -1, -1, 17, 17, 25, 25, ]
 l = len(tenor_3_walk_chord)
 tenor_3_random_walk_notes = [tenor_3_walk_chord[x] for x in reduceMod(l, tenor_3_random_walk)]
 
@@ -328,11 +328,16 @@ contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, c
 
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
-rmaker_one = abjadext.rmakers.NoteRhythmMaker()
-
-rmaker_two = abjadext.rmakers.EvenDivisionRhythmMaker(
-    denominators=[16, 16, 8, 16, 4, 8, 4, 16, 8, ],
-    extra_counts_per_division=[0, 1, -1, 0, 1, 0, -1, ],
+rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
+    talea=abjadext.rmakers.Talea(
+        counts=[12, 7, 11, 8, 10, 9, ],
+        denominator=16,
+        ),
+    beam_specifier=abjadext.rmakers.BeamSpecifier(
+        beam_divisions_together=True,
+        beam_rests=False,
+        ),
+    extra_counts_per_division=[0, 1, -1, 1, 0, -1, 0, ],
     burnish_specifier=abjadext.rmakers.BurnishSpecifier(
         left_classes=[abjad.Rest],
         left_counts=[1],
@@ -343,6 +348,32 @@ rmaker_two = abjadext.rmakers.EvenDivisionRhythmMaker(
     division_masks=[
         abjadext.rmakers.sustain([0], 4),
         ],
+    logical_tie_masks=[
+        abjadext.rmakers.silence([2], 7),
+        ],
+    tuplet_specifier=abjadext.rmakers.TupletSpecifier(
+        trivialize=True,
+        extract_trivial=True,
+        rewrite_rest_filled=True,
+        rewrite_dots=True,
+        rewrite_sustained=True,
+        denominator='divisions',
+        ),
+    )
+
+rmaker_two = abjadext.rmakers.EvenDivisionRhythmMaker(
+    denominators=[16, 16, 8, 16, 4, 8, 4, 16, 8, ],
+    extra_counts_per_division=[0, 1, -1, 0, 1, 0, -1, ],
+    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+    #     left_classes=[abjad.Rest],
+    #     left_counts=[1],
+    #     right_classes=[abjad.Rest],
+    #     right_counts=[2],
+    #     outer_divisions_only=True,
+    #     ),
+    # division_masks=[
+    #     abjadext.rmakers.sustain([0], 4),
+    #     ],
     logical_tie_masks=[
         abjadext.rmakers.silence([2], 7),
         ],

@@ -95,141 +95,154 @@
                     \set Staff.instrumentName =
                     \markup { "Tenor 2" }
                     dtef'''4
-                    \p
+                    \pp
                     - \tweak stencil #constante-hairpin
                     \<
                     \!
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 8/7 {
-                        r32
-                        \!
+                    \times 4/3 {
+                        fs'16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
                         [
-                        e'''32
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        b32
-                        b32
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r32
-                        \!
-                        b32
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        e'''32
-                        ]
+                        b16
+                        b16
                     }
-                    e'''4
+                    b8
+                    fs'8
                     \times 4/5 {
                         fs'16
-                        [
-                        e'''16
-                        e'''16
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        b16
+                        f''16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        fs'16
+                        fs'16
                         ]
                     }
                 }
                 {
                     % [Voice 12 measure 2] %! COMMENT_MEASURE_NUMBERS
                     b4
-                    f''8
-                    [
                     b8
-                    ]
-                    b4
+                    [
+                    f''8
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
-                }
-                {
-                    gqf'4
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    % [Voice 12 measure 3] %! COMMENT_MEASURE_NUMBERS
+                    ]
                     r4
                     \!
                 }
                 {
-                    ftes''4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
+                    r4
                 }
                 {
-                    r8
-                    \!
-                    [
-                    b8
+                    % [Voice 12 measure 3] %! COMMENT_MEASURE_NUMBERS
+                    b16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
-                    e'''16
+                    [
+                    b16
+                    fs'16
                     b16
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
-                    r8
-                    \!
                     ]
                 }
                 {
-                    % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    bqf'''4
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
+                    r4
+                    \!
                 }
                 {
-                    e'''4
+                    fs'8
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
-                    b8
                     [
-                    e'''8
-                    e'''16
-                    e'''16
+                    b8
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
-                    e'''16
+                    fs'16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    b16
+                    fs'16
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                }
+                {
+                    % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                    \!
+                }
+                {
+                    \times 4/5 {
+                        fs'16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        [
+                        fs'16
+                        fs'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        f''16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                    }
+                    fs'8
+                    fs'8
+                    fs'16
+                    fs'16
+                    b16
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
                     ]
                 }
                 {
                     % [Voice 12 measure 5] %! COMMENT_MEASURE_NUMBERS
                     fs'4
-                    e'''4
-                    e'''4
-                    e'''16
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    fs'8
                     [
-                    e'''16
+                    f''8
+                    ]
+                    f''4
+                    f''16
+                    [
+                    f''16
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
-                    b16
+                    f''16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
@@ -237,24 +250,154 @@
                 {
                     \times 2/3 {
                         % [Voice 12 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        e'''8
+                        f''8
+                        cs'''8
+                        f''8
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r4
-                        \!
                     }
                 }
                 {
-                    ees'''4
+                    dtef'''4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
                 }
                 {
-                    e'''4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        cs'''16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        [
+                        cs'''16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        ]
+                    }
+                }
+                {
+                    r4
+                }
+                {
+                    % [Voice 12 measure 7] %! COMMENT_MEASURE_NUMBERS
+                    cs'''16
                     \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    [
+                    cs'''16
+                    f''16
+                    f''16
+                    \times 2/3 {
+                        f''8
+                        cs'''8
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                    }
+                    cs'''16
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    f''16
+                    cs'''16
+                    cs'''16
+                    ]
+                    cs'''4
+                }
+                {
+                    % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
+                    f''8
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    [
+                    r8
+                    \!
+                    ]
+                }
+                {
+                    r4
+                }
+                {
+                    cs'''4
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        cs'''16
+                        [
+                        f''16
+                        cs'''16
+                    }
+                }
+                {
+                    % [Voice 12 measure 9] %! COMMENT_MEASURE_NUMBERS
+                    cs'''8
+                    f''8
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \times 4/5 {
+                        r16
+                        \!
+                        cs'''16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        f''16
+                        cs'''16
+                        f''16
+                    }
+                    cs'''16
+                    cs'''16
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    f''16
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    cs'''8
+                    f''8
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                }
+                {
+                    % [Voice 12 measure 10] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                    \!
+                }
+                {
+                    cs'''16
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    [
+                    f''16
+                    cs'''16
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    ]
+                    f''4
+                    \mf
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -265,356 +408,255 @@
                     \<
                 }
                 {
-                    % [Voice 12 measure 7] %! COMMENT_MEASURE_NUMBERS
-                    r16
+                    % [Voice 12 measure 11] %! COMMENT_MEASURE_NUMBERS
+                    r4
                     \!
-                    [
-                    fs'32
+                }
+                {
+                    f''8
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
-                    fs'32
-                    fs'32
-                    fs'32
-                    fs'32
-                    fs'32
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \times 2/3 {
-                        r8
-                        \!
-                        f''8
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        fs'8
-                    }
-                    f''16
-                    f''16
-                    f''16
-                    f''16
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
+                    [
+                    b8
                     ]
-                    r4
-                    \!
-                }
-                {
-                    % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    r4
-                }
-                {
-                    gqf'4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    r4
-                    \!
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        cs'''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        [
-                        cs'''16
-                        cs'''16
-                        ]
-                    }
-                }
-                {
-                    % [Voice 12 measure 9] %! COMMENT_MEASURE_NUMBERS
                     f''4
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
                     \times 4/5 {
+                        b16
+                        [
+                        b16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
                         r16
                         \!
-                        [
-                        f''16
+                        fs'16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
                         fs'16
-                        f''16
-                        f''16
                     }
-                    f''32
-                    fs'32
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    r32
-                    \!
-                    f''32
+                }
+                {
+                    % [Voice 12 measure 12] %! COMMENT_MEASURE_NUMBERS
+                    f''8
+                    fs'8
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        f''16
+                        fs'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                    }
+                    f''16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
-                    f''32
-                    cs'''32
-                    f''32
-                    f''32
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
+                    fs'16
+                    f''16
+                    f''16
+                    \times 2/3 {
+                        f''8
+                        fs'8
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                    }
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        % [Voice 12 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        f''16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        f''16
+                        f''16
+                        ]
+                    }
+                    f''4
+                    \times 2/3 {
+                        cs'''8
+                        [
+                        cs'''8
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                    }
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        r8
+                        gqf'16
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                }
+                {
+                    % [Voice 12 measure 14] %! COMMENT_MEASURE_NUMBERS
                     r4
                     \!
                 }
                 {
-                    % [Voice 12 measure 10] %! COMMENT_MEASURE_NUMBERS
+                    f''4
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        cs'''16
+                        [
+                        cs'''16
+                        f''16
+                    }
+                    f''8
+                    f''8
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 12 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        r16
+                        \!
+                        cs'''16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        f''16
+                        f''16
+                        fs'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                }
+                {
                     ftes''4
                     \pp
                     - \tweak stencil #constante-hairpin
                     \<
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        f''16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        [
+                        fs'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                    }
+                    f''8
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    fs'8
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 12 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        f''16
+                        fs'16
+                        fs'16
+                        fs'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        ]
+                    }
+                    f''4
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    fs'8
+                    [
+                    f''8
+                    ]
+                    fs'4
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 12 measure 17] %! COMMENT_MEASURE_NUMBERS
+                        fs'16
+                        [
+                        b16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        b16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        b16
+                    }
+                    fs'8
+                    fs'8
+                    fs'16
+                    b16
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    fs'16
+                    \ff
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                }
+                {
+                    r4
+                    \!
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 12 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        b16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        [
+                        fs'16
+                        fs'16
+                        f''16
+                        fs'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
                 }
                 {
                     r2
                     \!
                 }
                 {
-                    bqf'''4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    % [Voice 12 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    ees'''4
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
                     r8
-                    \!
                     [
-                    f''8
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
-                    \>
-                    ]
-                    fs'4
-                    f''4
-                }
-                {
-                    % [Voice 12 measure 12] %! COMMENT_MEASURE_NUMBERS
                     fs'8
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    [
-                    r8
-                    \!
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        f''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        f''16
-                        cs'''16
-                    }
-                    f''32
-                    cs'''32
-                    f''32
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    r32
-                    \!
-                    cs'''32
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
-                    \>
-                    f''32
-                    cs'''32
-                    cs'''32
-                    ]
-                    f''4
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 12 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        cs'''16
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        [
-                        r16
-                        \!
-                        f''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        ]
-                    }
-                    f''4
-                    \times 2/3 {
-                        b8
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r4
-                        \!
-                    }
-                }
-                {
-                    dtef'''4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    % [Voice 12 measure 14] %! COMMENT_MEASURE_NUMBERS
-                    gqf'4
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    b4
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        r16
-                        \!
-                        [
-                        e'''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        b16
-                    }
-                    e'''8
-                    b8
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 12 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        e'''16
-                        b16
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r8.
-                        \!
-                        ]
-                    }
-                }
-                {
-                    ftes''4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    e'''4
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
-                    \>
-                    e'''8
-                    [
-                    e'''8
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 12 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        b16
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                        e'''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        e'''16
-                        e'''16
-                        ]
-                    }
-                    e'''4
-                    fs'4
-                    fs'4
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 12 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        r16
-                        \!
-                        [
-                        f''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        fs'16
-                        fs'16
-                        e'''16
-                    }
-                    e'''8
-                    e'''8
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                    r4
-                    \!
-                }
-                {
-                    bqf'''4
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    \times 8/9 {
-                        % [Voice 12 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        r32
-                        \!
-                        [
-                        fs'32
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        e'''32
-                        e'''32
-                        b32
-                        e'''32
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16.
-                        \!
-                        ]
-                    }
-                }
-                {
-                    ees'''4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    dtef'''4
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    r8
-                    \!
-                    [
-                    b8
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
@@ -623,47 +665,51 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 12 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        e'''16
                         b16
+                        b16
+                        f''16
+                        ]
+                    }
+                    f''4
+                    \times 2/3 {
+                        f''8
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
-                        r16
-                        \!
-                        ]
-                    }
-                    e'''4
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
-                    \>
-                    \times 2/3 {
-                        b8
                         [
-                        b8
-                        b8
+                        r8
+                        \!
+                        f''8
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
                         ]
                     }
-                    e'''4
+                    cs'''4
                 }
                 {
                     % [Voice 12 measure 20] %! COMMENT_MEASURE_NUMBERS
-                    b16
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
+                    cs'''16
                     [
-                    r16
-                    \!
-                    e'''16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
-                    \>
-                    b16
-                    ]
-                    b4
+                    f''16
+                    cs'''16
+                    cs'''16
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    \times 2/3 {
+                        r8
+                        \!
+                        cs'''8
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        f''8
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
                 }
                 {
                     gqf'4
@@ -672,165 +718,172 @@
                     \<
                 }
                 {
-                    r16
-                    \!
-                    [
-                    f''16
+                    cs'''16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     f''16
+                    f''16
+                    fs'16
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
-                    r16
-                    \!
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
-                    \times 8/7 {
+                    \times 4/3 {
                         % [Voice 12 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        f''32
+                        r16
+                        \!
+                        fs'16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
-                        b32
-                        b32
-                        b32
-                        f''32
-                        b32
+                        b16
+                    }
+                    b8
+                    f''8
+                    \times 4/5 {
+                        b16
+                        b16
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
-                        r32
+                        r16
                         \!
+                        fs'16
+                        \ff
+                        - \tweak stencil #abjad-flared-hairpin
+                        \>
+                        fs'16
+                        ]
                     }
-                    f''8
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
-                    \>
-                    b8
-                    ]
-                    b4
-                    e'''4
+                    fs'4
                 }
                 {
                     % [Voice 12 measure 22] %! COMMENT_MEASURE_NUMBERS
                     b8
                     [
                     b8
+                    ]
+                    f''4
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    [
+                    b16
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    f''16
+                    f''16
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
-                    r4
-                    \!
-                    f''4
-                    \ff
-                    - \tweak stencil #constante-hairpin
-                    \<
                 }
                 {
-                    ftes''4
+                    r4
+                    \!
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 12 measure 23] %! COMMENT_MEASURE_NUMBERS
+                        r8
+                        [
+                        ftes''8.
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                    r4
+                    \!
+                }
+                {
+                    f''8
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    [
+                    b8
+                    b16
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    fs'16
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    b16
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 12 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        fs'16
+                        fs'16
+                        f''16
+                        fs'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                    }
+                    fs'8
+                    \ff
+                    - \tweak stencil #abjad-flared-hairpin
+                    \>
+                    b8
+                    \mf
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                }
+                {
+                    bqf'''4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
                 }
                 {
-                    % [Voice 12 measure 23] %! COMMENT_MEASURE_NUMBERS
-                    bqf'''4
-                    ees'''4
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    r8
-                    \!
-                    [
-                    f''8
+                    b16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
-                    cs'''16
-                    cs'''16
-                    cs'''16
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    r16
-                    \!
-                }
-                {
-                    \times 8/9 {
-                        % [Voice 12 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        cs'''32
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        f''32
-                        f''32
-                        fs'32
-                        f''32
-                        f''32
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r32
-                        \!
-                        f''32
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
-                        \>
-                        fs'32
-                        ]
-                    }
-                    f''4
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    dtef'''4
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    r16
-                    \!
                     [
+                    b16
                     fs'16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
-                    \>
                     fs'16
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
-                    r16
-                    \!
                     ]
                 }
                 {
                     % [Voice 12 measure 25] %! COMMENT_MEASURE_NUMBERS
-                    e'''4
+                    r4
+                    \!
+                    f''8
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
-                    e'''8
                     [
-                    b8
+                    f''8
                     ]
-                    b4
+                    f''4
                     f''16
                     [
-                    b16
+                    cs'''16
+                    cs'''8
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
-                    r8
-                    \!
                     ]
                 }
             }
