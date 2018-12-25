@@ -56,7 +56,6 @@
                     \set Staff.instrumentName =
                     \markup { "Baritone 1" }
                     r8
-                    [
                 }
                 {
                     d'8
@@ -66,7 +65,6 @@
                     \<
                     r8
                     \!
-                    ]
                     dqs'4.
                     \mp
                     \<
@@ -100,14 +98,12 @@
                 {
                     % [Voice 16 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
-                    [
                 }
                 {
                     e'8
                     \mf
                     - \tweak stencil #abjad-flared-hairpin
                     \<
-                    ]
                     \times 8/9 {
                         eqs'4
                         f'16
@@ -135,10 +131,8 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     r8
                     \!
-                    ]
                     gqs'4
                     \mp
 

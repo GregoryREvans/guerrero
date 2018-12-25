@@ -106,7 +106,6 @@
                 {
                     % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
-                    [
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -115,6 +114,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         fs'8.
                         ~
                     }
@@ -223,13 +223,13 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
                         dqs''8
                         \mp
                         \<
                         ~
+                        [
                     }
                 }
                 {

@@ -67,7 +67,6 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
                         bqs'8
@@ -75,7 +74,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -108,13 +106,13 @@
                 {
                     % [Voice 4 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
-                    [
                 }
                 {
                     cs''8
                     \mf
                     - \tweak stencil #abjad-flared-hairpin
                     \<
+                    [
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         dqf''8

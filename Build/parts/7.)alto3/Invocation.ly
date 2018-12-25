@@ -155,12 +155,14 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r8
                         \!
                         ef''8
                         \mp
                         \<
                         ~
+                        [
                     }
                     ef''8
                     ]

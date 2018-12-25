@@ -166,10 +166,8 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     r8
                     \!
-                    ]
                     aqf''4
                     \mp
                     \<

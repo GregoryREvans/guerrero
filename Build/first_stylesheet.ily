@@ -57,7 +57,7 @@
 		\override RehearsalMark.break-align-symbols = #'(time-signature)
 		\override RehearsalMark.break-visibility = #end-of-line-invisible
 		\override RehearsalMark.font-name = "Didot"
-		\override RehearsalMark.font-size = 10
+		\override RehearsalMark.font-size = 9.5
 		\override RehearsalMark.outside-staff-priority = 500
 		\override RehearsalMark.self-alignment-X = #center
         \override TimeSignature.X-extent = #'(0 . 0)

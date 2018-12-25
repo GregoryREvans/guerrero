@@ -100,12 +100,10 @@
                 }
                 {
                     r8
-                    [
                     g''8
                     \mp
                     \<
                     ~
-                    ]
                 }
                 {
                     % [Voice 2 measure 5] %! COMMENT_MEASURE_NUMBERS
@@ -178,10 +176,8 @@
                     \f
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     r8
                     \!
-                    ]
                 }
                 {
                     r1

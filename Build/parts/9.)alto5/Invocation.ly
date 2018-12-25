@@ -121,13 +121,13 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
                         g'8
                         \mp
                         \<
                         ~
+                        [
                     }
                     g'8
                     ]

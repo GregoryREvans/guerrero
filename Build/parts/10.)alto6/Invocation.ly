@@ -118,7 +118,6 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
                         eqs'8
@@ -126,7 +125,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -238,11 +236,11 @@
                     \<
                     r8
                     \!
-                    [
                     d'8
                     \mp
                     \<
                     ~
+                    [
                 }
                 {
                     % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS

@@ -115,6 +115,7 @@
                     }
                     dtes''16
                     - \accent
+                    ]
                     r16
                     \!
                     r16
@@ -123,6 +124,7 @@
                     - \tweak circled-tip ##t
                     \>
                     ~
+                    [
                     \times 4/5 {
                         <cs'' dtes'' des'''>8
                         cs''16
@@ -137,9 +139,9 @@
                         <cs'' dtes'' des'''>16
                         e''8
                         - \tenuto
+                        ]
                         r8
                         \!
-                        ]
                     }
                 }
                 {
@@ -152,12 +154,12 @@
                 {
                     r16
                     \!
-                    [
                     <cs'' dtes'' des'''>16
                     \mf
 
                     - \tweak circled-tip ##t
                     \>
+                    [
                     cs''8
 
                     ]
@@ -171,10 +173,8 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     r16
                     \!
-                    ]
                 }
                 {
                     r4
@@ -183,13 +183,11 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         r16
-                        [
                         f''8
                         \f
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -219,6 +217,7 @@
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
@@ -228,6 +227,7 @@
                         \f
 
                         \>
+                        [
                         eqs''16
                         \p
 
@@ -244,9 +244,9 @@
                         \>
                         <cs'' dtes'' des'''>16
 
+                        ]
                         r8
                         \!
-                        ]
                     }
                 }
                 {
@@ -277,7 +277,6 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8.
                         \!
                     }
@@ -290,6 +289,7 @@
 
                         - \tweak circled-tip ##t
                         \>
+                        [
                         <cs'' dtes'' des'''>8
 
                         dtes''8
@@ -330,12 +330,14 @@
                     - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     gqf''16
                     \f
                     \>
                     ~
+                    [
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -369,12 +371,12 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         r8
-                        [
                         e''16
                         \mf
                         - \tweak circled-tip ##t
                         \>
                         ~
+                        [
                     }
                 }
                 {
@@ -404,6 +406,7 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r8
                         \!
                     }
@@ -413,6 +416,7 @@
                         \f
                         - \flageolet
                         \>
+                        [
                         g''16
                         \p
                         - \flageolet
@@ -457,6 +461,7 @@
                         - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                 }
                 {
@@ -467,6 +472,7 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    [
                 }
                 {
                     % [Voice 3 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -481,6 +487,7 @@
                     gqf''16
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     \tweak text #tuplet-number::calc-fraction-text
@@ -489,6 +496,7 @@
                         \f
                         - \halfopen
                         \>
+                        [
                         gqf''16
 
                         fs''16
@@ -513,6 +521,7 @@
 
                         <cs'' dtes'' des'''>16
 
+                        ]
                         r8
                         \!
                     }
@@ -524,6 +533,7 @@
                     - \accent
                     - \tweak circled-tip ##t
                     \>
+                    [
                     <cs'' dtes'' des'''>16
 
                     ]
@@ -553,12 +563,14 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
                         fs''8
                         \f
 
                         \>
+                        [
                     }
                 }
                 {
@@ -584,7 +596,6 @@
                     \times 4/5 {
                         <cs'' dtes'' des'''>8
 
-                        [
                         r8.
                         \!
                     }
@@ -595,6 +606,7 @@
 
                         - \tweak circled-tip ##t
                         \>
+                        [
                         <cs'' dtes'' des'''>8
                         - \portato
                     }
@@ -630,6 +642,7 @@
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     r16
@@ -637,6 +650,7 @@
                     \f
                     \>
                     ~
+                    [
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -665,6 +679,7 @@
                         [
                         <cs'' dtes'' des'''>16
                         - \accent
+                        ]
                         r16
                         \!
                         r16
@@ -673,6 +688,7 @@
                         - \tweak circled-tip ##t
                         \>
                         ~
+                        [
                     }
                     \times 4/5 {
                         dtes''8
@@ -702,6 +718,7 @@
 
                     ~
                     e''16
+                    ]
                     r16
                     \!
                     \tweak text #tuplet-number::calc-fraction-text
@@ -712,6 +729,7 @@
                         - \portato
                         - \tweak circled-tip ##t
                         \>
+                        [
                     }
                     \times 4/5 {
                         cs''8
@@ -740,6 +758,7 @@
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
                         gqf''16
@@ -747,7 +766,6 @@
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -784,6 +802,7 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     r16
                     \!
@@ -791,6 +810,7 @@
                     \f
                     - \stopped
                     ~
+                    [
                     a''16
                     \>
                     aqf''16
@@ -827,6 +847,7 @@
                         [
                         <cs'' dtes'' des'''>16
                         - \accent
+                        ]
                     }
                     r8
                     \!
@@ -835,6 +856,7 @@
                     - \tweak circled-tip ##t
                     \>
                     ~
+                    [
                     \times 4/5 {
                         cs''16
                         <cs'' dtes'' des'''>16
@@ -859,7 +881,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8.
                         \!
                     }
@@ -868,6 +889,7 @@
 
                     - \tweak circled-tip ##t
                     \>
+                    [
                     <cs'' dtes'' des'''>16
                     - \portato
                     ~
@@ -943,6 +965,7 @@
                         [
                         e''16
 
+                        ]
                         r16
                         \!
                         r16
@@ -951,6 +974,7 @@
                         - \tweak circled-tip ##t
                         \>
                         ~
+                        [
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
@@ -966,6 +990,7 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r8
                         \!
                         a''8
@@ -973,7 +998,6 @@
                         - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -1016,12 +1040,14 @@
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     af''16
                     \f
                     - \halfopen
                     \>
+                    [
                     aqf''16
                     \p
                     - \halfopen
@@ -1069,6 +1095,7 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     \times 4/5 {
                         r16
                         \!
@@ -1076,6 +1103,7 @@
                         \f
                         - \halfopen
                         \>
+                        [
                         fs''8
                         \p
                         - \flageolet
@@ -1099,7 +1127,6 @@
                         - \portato
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
                         r16
@@ -1108,7 +1135,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {

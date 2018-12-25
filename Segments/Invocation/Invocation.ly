@@ -333,12 +333,10 @@
                     }
                     {
                         r8
-                        [
                         g''8
                         \mp
                         \<
                         ~
-                        ]
                     }
                     {
                         % [Voice 2 measure 5] %! COMMENT_MEASURE_NUMBERS
@@ -411,10 +409,8 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
-                        ]
                     }
                     {
                         r1
@@ -668,7 +664,6 @@
                             \f
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
                             r8
                             \!
                             bqs'8
@@ -676,7 +671,6 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                         }
                     }
                     {
@@ -709,13 +703,13 @@
                     {
                         % [Voice 4 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        [
                     }
                     {
                         cs''8
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             dqf''8
@@ -1016,10 +1010,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
-                        ]
                         cqs'''4.
                         \mp
                         \<
@@ -1203,10 +1195,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
-                        ]
                         aqf''4
                         \mp
                         \<
@@ -1386,12 +1376,14 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             r8
                             \!
                             ef''8
                             \mp
                             \<
                             ~
+                            [
                         }
                         ef''8
                         ]
@@ -1487,7 +1479,6 @@
                         \set Staff.instrumentName =
                         \markup { "Alto 4" }
                         r8
-                        [
                     }
                     {
                         dqf'8
@@ -1501,6 +1492,7 @@
                         \mp
                         - \tenuto
                         ~
+                        [
                         d'8
                         \<
                         dqs'8
@@ -1539,7 +1531,6 @@
                     {
                         % [Voice 8 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        [
                     }
                     {
                         \times 2/3 {
@@ -1547,6 +1538,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             eqs'16
                             ~
                         }
@@ -1788,13 +1780,13 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
                             r8
                             \!
                             g'8
                             \mp
                             \<
                             ~
+                            [
                         }
                         g'8
                         ]
@@ -1998,7 +1990,6 @@
                             \f
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
                             r8
                             \!
                             eqs'8
@@ -2006,7 +1997,6 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                         }
                     }
                     {
@@ -2118,11 +2108,11 @@
                         \<
                         r8
                         \!
-                        [
                         d'8
                         \mp
                         \<
                         ~
+                        [
                     }
                     {
                         % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS
@@ -2321,13 +2311,13 @@
                             - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
                             r8
                             \!
                             bf'8
                             \mp
 
                             ~
+                            [
                             bf'8
                             \<
                             bqf'8
@@ -2406,7 +2396,6 @@
                     {
                         % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        [
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -2415,6 +2404,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             fs'8.
                             ~
                         }
@@ -2523,13 +2513,13 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
                             r8
                             \!
                             dqs''8
                             \mp
                             \<
                             ~
+                            [
                         }
                     }
                     {
@@ -2717,13 +2707,11 @@
                         \<
                         r8
                         \!
-                        [
                         bf'8
                         \mp
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     {
                         % [Voice 13 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -3149,7 +3137,6 @@
                         \set Staff.instrumentName =
                         \markup { "Baritone 1" }
                         r8
-                        [
                     }
                     {
                         d'8
@@ -3159,7 +3146,6 @@
                         \<
                         r8
                         \!
-                        ]
                         dqs'4.
                         \mp
                         \<
@@ -3193,14 +3179,12 @@
                     {
                         % [Voice 16 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        [
                     }
                     {
                         e'8
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
-                        ]
                         \times 8/9 {
                             eqs'4
                             f'16
@@ -3228,10 +3212,8 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
-                        ]
                         gqs'4
                         \mp
 
@@ -3484,7 +3466,6 @@
                             \f
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
                             r8
                             \!
                             aqf'8
@@ -3492,7 +3473,6 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                         }
                     }
                     {
@@ -3562,13 +3542,11 @@
                         \<
                         r8
                         \!
-                        [
                         cs'8
                         \f
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
             }
@@ -4006,7 +3984,6 @@
                     {
                         % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        [
                     }
                     {
                         \times 2/3 {
@@ -4014,6 +3991,7 @@
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            [
                             cs'8
                             ~
                         }

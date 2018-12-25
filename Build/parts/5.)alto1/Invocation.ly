@@ -194,10 +194,8 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     r8
                     \!
-                    ]
                     cqs'''4.
                     \mp
                     \<

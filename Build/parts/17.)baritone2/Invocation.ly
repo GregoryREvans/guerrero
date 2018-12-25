@@ -179,7 +179,6 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
                         aqf'8
@@ -187,7 +186,6 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                 }
                 {
@@ -257,13 +255,11 @@
                     \<
                     r8
                     \!
-                    [
                     cs'8
                     \f
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                 }
             }
         }

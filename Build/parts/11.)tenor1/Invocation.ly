@@ -228,13 +228,13 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         r8
                         \!
                         bf'8
                         \mp
 
                         ~
+                        [
                         bf'8
                         \<
                         bqf'8

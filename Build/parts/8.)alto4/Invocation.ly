@@ -56,7 +56,6 @@
                     \set Staff.instrumentName =
                     \markup { "Alto 4" }
                     r8
-                    [
                 }
                 {
                     dqf'8
@@ -70,6 +69,7 @@
                     \mp
                     - \tenuto
                     ~
+                    [
                     d'8
                     \<
                     dqs'8
@@ -108,7 +108,6 @@
                 {
                     % [Voice 8 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
-                    [
                 }
                 {
                     \times 2/3 {
@@ -116,6 +115,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         eqs'16
                         ~
                     }

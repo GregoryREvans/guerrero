@@ -114,12 +114,14 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
                         fs''16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         fs''16
                         ]
                     }
@@ -156,11 +158,11 @@
                     \times 4/5 {
                         r16
                         \!
-                        [
                         g'16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         g'16
                         fs''16
                         fs''16
@@ -179,11 +181,11 @@
                 {
                     % [Voice 21 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r16
-                    [
                     fs''16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     fs''16
                     cs'''16
                     \mf
@@ -207,12 +209,14 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
                         fs''16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                     }
                 }
                 {
@@ -251,12 +255,14 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     e''16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     \times 2/3 {
                         cs'''8
                         e''8
@@ -267,13 +273,13 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     bf16
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                 }
                 {
                     % [Voice 21 measure 7] %! COMMENT_MEASURE_NUMBERS
@@ -318,6 +324,7 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     \times 4/5 {
                         r16
                         \!
@@ -325,6 +332,7 @@
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         cs'''16
                         cs'''16
                         fs''16
@@ -338,13 +346,13 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
                     r8
                     \!
                     cs'''8
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     cs'''8
                     ]
                     cs'''4
@@ -355,6 +363,7 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                 }
@@ -364,6 +373,7 @@
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     e''8
                     \mf
                     - \tweak stencil #constante-hairpin
@@ -390,13 +400,13 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                 }
                 {
                     \times 4/5 {
                         % [Voice 21 measure 11] %! COMMENT_MEASURE_NUMBERS
                         r16
                         \!
-                        ]
                         gtes'4
                         \p
                         - \tweak stencil #constante-hairpin
@@ -415,11 +425,11 @@
                     \times 4/5 {
                         % [Voice 21 measure 12] %! COMMENT_MEASURE_NUMBERS
                         r16
-                        [
                         bf16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         e''16
                         bf16
                         bf16
@@ -429,12 +439,14 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     bf16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     e''16
                     e''16
                     ]
@@ -465,6 +477,7 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r8
                         \!
                     }
@@ -477,6 +490,7 @@
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         bf16
                         bf16
                         \mf
@@ -500,6 +514,7 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     \times 2/3 {
@@ -507,11 +522,13 @@
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         cs'''8
                         e''8
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                 }
                 {
@@ -523,7 +540,6 @@
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     r4
                     \!
@@ -539,9 +555,9 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
-                    ]
                     fs''4
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
@@ -562,6 +578,7 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
                     }
@@ -569,6 +586,7 @@
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     cs'''8
                 }
                 {
@@ -581,6 +599,7 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
                     }
@@ -588,6 +607,7 @@
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     e''16
                     bf16
                     bf16
@@ -596,12 +616,14 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     d'16
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
+                    [
                     bf16
                     bf16
                     ]
@@ -636,6 +658,7 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r8
                     \!
                     \tweak text #tuplet-number::calc-fraction-text
@@ -644,6 +667,7 @@
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         cs'''16
                         e''16
                     }
@@ -653,6 +677,7 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r16
                     \!
                     \times 2/3 {
@@ -660,6 +685,7 @@
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         cs'''8
                         cs'''8
                     }
@@ -723,11 +749,11 @@
                     \times 4/3 {
                         r16
                         \!
-                        [
                         fs''16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         g'16
                         \mf
                         - \tweak stencil #constante-hairpin
@@ -753,12 +779,14 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
                         cs'''16
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         cs'''16
                     }
                     \tweak text #tuplet-number::calc-fraction-text
@@ -771,6 +799,7 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     r8
                     \!
                 }
@@ -781,6 +810,7 @@
                         \ff
                         - \tweak stencil #abjad-flared-hairpin
                         \>
+                        [
                         cs'''16
                         e''16
                         e''16
@@ -793,12 +823,10 @@
                     \<
                     r8
                     \!
-                    [
                     d'8
                     \ff
                     - \tweak stencil #abjad-flared-hairpin
                     \>
-                    ]
                     bf4
                 }
                 {
@@ -812,9 +840,9 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
-                        ]
                     }
                 }
                 {
@@ -835,9 +863,9 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
-                        ]
                     }
                 }
             }

@@ -191,13 +191,11 @@
                     \<
                     r8
                     \!
-                    [
                     bf'8
                     \mp
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                 }
                 {
                     % [Voice 13 measure 10] %! COMMENT_MEASURE_NUMBERS

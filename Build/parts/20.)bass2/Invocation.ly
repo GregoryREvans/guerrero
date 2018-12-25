@@ -97,7 +97,6 @@
                 {
                     % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8
-                    [
                 }
                 {
                     \times 2/3 {
@@ -105,6 +104,7 @@
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        [
                         cs'8
                         ~
                     }
