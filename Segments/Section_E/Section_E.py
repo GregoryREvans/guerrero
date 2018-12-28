@@ -56,10 +56,10 @@ alto_3_note = [23.25, 20.5, 12.75, 0.5, ]
 alto_4_note = [23.5, 20.75, 12.5, 0.25, ]
 alto_5_note = [23.75, 20.5, 12.25, 0.5, ]
 alto_6_note = [23.5, 20.25, 12.5, 0.75, ]
-tenor_1_note = [25.5, 6.25, 17.5, 34.75, ]
-tenor_2_note = [25.25, 6.5, 17.75, 34.5, ]
-tenor_3_note = [25.5, 6.75, 17.5, 34.25, ]
-tenor_4_note = [25.75, 6.5, 17.25, 34.5, ]
+tenor_1_note = [25.5, 6.25, 17.5, ]
+tenor_2_note = [25.25, 6.5, 17.75, ]
+tenor_3_note = [25.5, 6.75, 17.5, ]
+tenor_4_note = [25.75, 6.5, 17.25, ]
 tenor_5_note = [25.5, 6.25, 17.5, ]
 baritone_1_note = [13.25, 24.5, 4.75, 6.5, ]
 baritone_2_note = [13.25, 24.5, 4.75, 6.5, ]
@@ -338,19 +338,19 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         beam_rests=False,
         ),
     extra_counts_per_division=[0, 1, -1, 1, 0, -1, 0, ],
-    burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-        left_classes=[abjad.Rest],
-        left_counts=[1],
-        right_classes=[abjad.Rest],
-        right_counts=[2],
-        outer_divisions_only=True,
-        ),
-    division_masks=[
-        abjadext.rmakers.sustain([0], 4),
-        ],
-    logical_tie_masks=[
-        abjadext.rmakers.silence([2], 7),
-        ],
+    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+    #     left_classes=[abjad.Rest],
+    #     left_counts=[1],
+    #     right_classes=[abjad.Rest],
+    #     right_counts=[2],
+    #     outer_divisions_only=True,
+    #     ),
+    # division_masks=[
+    #     abjadext.rmakers.sustain([0], 4),
+    #     ],
+    # logical_tie_masks=[
+    #     abjadext.rmakers.silence([2], 7),
+    #     ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
