@@ -20,9 +20,9 @@
     \include "Section_C.ly"
     \include "Section_D.ly"
     \include "Section_E.ly"
-    %{ \include "Section_F.ly"
+    \include "Section_F.ly"
     \include "Section_G.ly"
-    \include "Section_H.ly"
+    %{ \include "Section_H.ly"
     \include "Section_I.ly"
     \include "Section_J.ly" %}
 	}

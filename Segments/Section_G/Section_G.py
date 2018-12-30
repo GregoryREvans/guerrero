@@ -71,7 +71,7 @@ contrabass_chord = [-2, 2, 7, -2, 2, 7, 2, -2]
 def reduceMod(x, rw):
     return [(y % x) for y in rw]
 
-seed(1)
+seed(101)
 sopranino_random_walk = []
 sopranino_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -82,7 +82,7 @@ for i in range(1, 1000):
 l = len(sopranino_walk_chord)
 sopranino_random_walk_notes = [sopranino_walk_chord[x] for x in reduceMod(l, sopranino_random_walk)]
 
-seed(2)
+seed(102)
 soprano_1_random_walk = []
 soprano_1_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -93,7 +93,7 @@ soprano_1_walk_chord = [17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22
 l = len(soprano_1_walk_chord)
 soprano_1_random_walk_notes = [soprano_1_walk_chord[x] for x in reduceMod(l, soprano_1_random_walk)]
 
-seed(3)
+seed(103)
 soprano_2_random_walk = []
 soprano_2_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -105,7 +105,7 @@ soprano_2_walk_chord = [16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21
 l = len(soprano_2_walk_chord)
 soprano_2_random_walk_notes = [soprano_2_walk_chord[x] for x in reduceMod(l, soprano_2_random_walk)]
 
-seed(4)
+seed(104)
 soprano_3_random_walk = []
 soprano_3_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -117,7 +117,7 @@ soprano_3_walk_chord = [15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20
 l = len(soprano_3_walk_chord)
 soprano_3_random_walk_notes = [soprano_3_walk_chord[x] for x in reduceMod(l, soprano_3_random_walk)]
 
-seed(5)
+seed(105)
 alto_1_random_walk = []
 alto_1_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -128,7 +128,7 @@ alto_1_walk_chord = [14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5,
 l = len(alto_1_walk_chord)
 alto_1_random_walk_notes = [alto_1_walk_chord[x] for x in reduceMod(l, alto_1_random_walk)]
 
-seed(6)
+seed(106)
 alto_2_random_walk = []
 alto_2_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -139,7 +139,7 @@ alto_2_walk_chord = [13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5,
 l = len(alto_2_walk_chord)
 alto_2_random_walk_notes = [alto_2_walk_chord[x] for x in reduceMod(l, alto_2_random_walk)]
 
-seed(7)
+seed(107)
 alto_3_random_walk = []
 alto_3_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -150,7 +150,7 @@ alto_3_walk_chord = [12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5,
 l = len(alto_3_walk_chord)
 alto_3_random_walk_notes = [alto_3_walk_chord[x] for x in reduceMod(l, alto_3_random_walk)]
 
-seed(8)
+seed(108)
 alto_4_random_walk = []
 alto_4_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -161,7 +161,7 @@ alto_4_walk_chord = [11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5,
 l = len(alto_4_walk_chord)
 alto_4_random_walk_notes = [alto_4_walk_chord[x] for x in reduceMod(l, alto_4_random_walk)]
 
-seed(9)
+seed(109)
 alto_5_random_walk = []
 alto_5_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -172,7 +172,7 @@ alto_5_walk_chord = [10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5,
 l = len(alto_5_walk_chord)
 alto_5_random_walk_notes = [alto_5_walk_chord[x] for x in reduceMod(l, alto_5_random_walk)]
 
-seed(10)
+seed(110)
 alto_6_random_walk = []
 alto_6_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -183,7 +183,7 @@ alto_6_walk_chord = [9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 1
 l = len(alto_6_walk_chord)
 alto_6_random_walk_notes = [alto_6_walk_chord[x] for x in reduceMod(l, alto_6_random_walk)]
 
-seed(11)
+seed(111)
 tenor_1_random_walk = []
 tenor_1_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -194,7 +194,7 @@ tenor_1_walk_chord = [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14
 l = len(tenor_1_walk_chord)
 tenor_1_random_walk_notes = [tenor_1_walk_chord[x] for x in reduceMod(l, tenor_1_random_walk)]
 
-seed(12)
+seed(112)
 tenor_2_random_walk = []
 tenor_2_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -205,7 +205,7 @@ tenor_2_walk_chord = [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 
 l = len(tenor_2_walk_chord)
 tenor_2_random_walk_notes = [tenor_2_walk_chord[x] for x in reduceMod(l, tenor_2_random_walk)]
 
-seed(13)
+seed(113)
 tenor_3_random_walk = []
 tenor_3_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -216,7 +216,7 @@ tenor_3_walk_chord = [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12
 l = len(tenor_3_walk_chord)
 tenor_3_random_walk_notes = [tenor_3_walk_chord[x] for x in reduceMod(l, tenor_3_random_walk)]
 
-seed(14)
+seed(114)
 tenor_4_random_walk = []
 tenor_4_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -227,7 +227,7 @@ tenor_4_walk_chord = [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5
 l = len(tenor_4_walk_chord)
 tenor_4_random_walk_notes = [tenor_4_walk_chord[x] for x in reduceMod(l, tenor_4_random_walk)]
 
-seed(15)
+seed(115)
 tenor_5_random_walk = []
 tenor_5_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -238,7 +238,7 @@ tenor_5_walk_chord = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 
 l = len(tenor_5_walk_chord)
 tenor_5_random_walk_notes = [tenor_5_walk_chord[x] for x in reduceMod(l, tenor_5_random_walk)]
 
-seed(16)
+seed(116)
 baritone_1_random_walk = []
 baritone_1_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -249,7 +249,7 @@ baritone_1_walk_chord = [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5,
 l = len(baritone_1_walk_chord)
 baritone_1_random_walk_notes = [baritone_1_walk_chord[x] for x in reduceMod(l, baritone_1_random_walk)]
 
-seed(17)
+seed(117)
 baritone_2_random_walk = []
 baritone_2_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -260,7 +260,7 @@ baritone_2_walk_chord = [2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5,
 l = len(baritone_2_walk_chord)
 baritone_2_random_walk_notes = [baritone_2_walk_chord[x] for x in reduceMod(l, baritone_2_random_walk)]
 
-seed(18)
+seed(118)
 baritone_3_random_walk = []
 baritone_3_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -271,7 +271,7 @@ baritone_3_walk_chord = [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5,
 l = len(baritone_3_walk_chord)
 baritone_3_random_walk_notes = [baritone_3_walk_chord[x] for x in reduceMod(l, baritone_3_random_walk)]
 
-seed(19)
+seed(119)
 bass_1_random_walk = []
 bass_1_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -282,7 +282,7 @@ bass_1_walk_chord = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 
 l = len(bass_1_walk_chord)
 bass_1_random_walk_notes = [bass_1_walk_chord[x] for x in reduceMod(l, bass_1_random_walk)]
 
-seed(20)
+seed(120)
 bass_2_random_walk = []
 bass_2_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -293,7 +293,7 @@ bass_2_walk_chord = [-1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6
 l = len(bass_2_walk_chord)
 bass_2_random_walk_notes = [bass_2_walk_chord[x] for x in reduceMod(l, bass_2_random_walk)]
 
-seed(21)
+seed(121)
 contrabass_random_walk = []
 contrabass_random_walk.append(-1 if random() < 0.5 else 1)
 for i in range(1, 1000):
@@ -332,17 +332,17 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
 # Initialize AttachmentHandler
 
 attachment_handler_one = AttachmentHandler(
-    starting_dynamic='mp',
-    ending_dynamic='f',
-    hairpin='<',
-    # articulation_list=['tenuto'],
+    starting_dynamic='mf',
+    ending_dynamic='ppp',
+    hairpin='>',
+    articulation_list=['flageolet', 'halfopen', '', 'flageolet', 'flageolet', 'halfopen', '', 'halfopen', 'halfopen', '', '', '', 'flageolet', 'flageolet', 'halfopen', ],
 )
 
 attachment_handler_two = AttachmentHandler(
-    starting_dynamic='mf',
-    ending_dynamic='pp',
-    hairpin='>',
-    # articulation_list=['tenuto'],
+    starting_dynamic='pp',
+    ending_dynamic='mp',
+    hairpin='<',
+    articulation_list=['halfopen', 'halfopen', 'halfopen', 'halfopen', 'halfopen', '', 'halfopen', '', ],
 )
 
 # Initialize MusicMakers with the rhythm-makers.
