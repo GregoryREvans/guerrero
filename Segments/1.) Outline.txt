@@ -34,12 +34,12 @@ Section_G: Imitate Section_B
     dynamic profile:
     notes:
 
-Section_H: Imitate Section_D
-    dynamic profile:
+Section_H: quarter = 60, Imitate Invocation.
+    dynamic profile: diminishing
     notes:
 
-Section_I: quarter = 60,
-    dynamic profile: diminishing
+Section_I: Imitate Section_D
+    dynamic profile:
     notes:
 
 Section_J: quarter = 90, Imitate Section_A
