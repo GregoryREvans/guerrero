@@ -11,6 +11,7 @@ Invocation: quarter = 60, 1/4 tone scale that doesn't reach octave, shepard tone
 
 Section_A: multiphonics and noodling gestures along with long tones from chord
     dynamic profile: intermittently loud and soft with a few crescendi / diminuendi
+    TODO: Reconfigure with Talea long tones to keep things interesting
 
 Section_B: quarter = 90, 1/4 tone random-walk glissandi
     dynamic profile: uncoordinated swells
@@ -29,11 +30,11 @@ Section_F: melodies with rhythms like the 1/4 tone random-walk but mapped to ran
     dynamic profile: moderate yet increasing
     notes:
 
-Section_G:
+Section_G: Imitate Section_B
     dynamic profile:
     notes:
 
-Section_H:
+Section_H: Imitate Section_D
     dynamic profile:
     notes:
 
@@ -41,7 +42,7 @@ Section_I: quarter = 60,
     dynamic profile: diminishing
     notes:
 
-Section_J: quarter = 90,
+Section_J: quarter = 90, Imitate Section_A
     dynamic profile: final swell
     notes:
 
