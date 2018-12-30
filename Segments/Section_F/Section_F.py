@@ -381,6 +381,7 @@ rmaker_two = abjadext.rmakers.EvenDivisionRhythmMaker(
         trivialize=True,
         extract_trivial=True,
         rewrite_rest_filled=True,
+        rewrite_sustained=True,
         denominator='divisions',
         ),
     )

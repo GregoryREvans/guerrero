@@ -84,7 +84,6 @@
                     \markup { "Alto 5" }
                     c''1
                     \p
-                    - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
                     \!
@@ -117,48 +116,36 @@
                     \!
                 }
                 {
-                    \times 8/9 {
-                        <def' dqf'' btef'' ef''' fs'''>4.
-                        \mp
-                        _ \markup {
-                            \override
-                                #'(size . 0.3)
-                            \woodwind-diagram
-                                #'alto-saxophone
-                                #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
-                            }
-                        ~
-                        <def' dqf'' btef'' ef''' fs'''>8.
-                        \<
-                    }
+                    <def' dqf'' btef'' ef''' fs'''>2
+                    \mp
+                    _ \markup {
+                        \override
+                            #'(size . 0.3)
+                        \woodwind-diagram
+                            #'alto-saxophone
+                            #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
+                        }
+                    \<
                 }
                 {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 16/15 {
-                        % [Voice 9 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        b''4
-                        \mp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                        c''8.
-                        \p
-                        ~
-                        [
-                        c''8
-                        ~
-                        c''8.
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        c''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
+                    % [Voice 9 measure 4] %! COMMENT_MEASURE_NUMBERS
+                    b''4
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ~
+                    b''16
+                    \mp
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    c''8
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ~
+                    c''2
                 }
                 {
                     % [Voice 9 measure 5] %! COMMENT_MEASURE_NUMBERS
@@ -188,46 +175,37 @@
                 {
                     % [Voice 9 measure 7] %! COMMENT_MEASURE_NUMBERS
                     <def' dqf'' btef'' ef''' fs'''>2
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
                 }
                 {
                     r2.
                     \!
                 }
                 {
-                    \times 16/17 {
-                        % [Voice 9 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        af''8.
-                        \p
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                        cs'16
-                        \p
-                        ~
-                        cs'2
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                    % [Voice 9 measure 8] %! COMMENT_MEASURE_NUMBERS
+                    af''8.
+                    \mp
+                    - \tenuto
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    cs'2
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ~
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
                         cs'8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        b''16
-                        \mp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
                     }
                 }
                 {
                     r4
-                    \!
                 }
                 {
                     % [Voice 9 measure 9] %! COMMENT_MEASURE_NUMBERS
@@ -236,8 +214,6 @@
                 {
                     <def' dqf'' btef'' ef''' fs'''>2
                     \mp
-                    - \espressivo
-                    - \tweak stencil #constante-hairpin
                     \<
                 }
                 {
@@ -246,21 +222,17 @@
                     \!
                 }
                 {
-                    aqs'16
+                    aqs'8.
                     \mf
 
                     \>
                     [
-                    a'8.
-                    - \portato
-                    \times 4/5 {
+                    a'16
+                    ~
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        a'16
                         aqf'8
-
-                        a'16
-
-                        ~
-                        a'16
-                        aqf'16
                         \pp
 
                         - \tweak stencil #constante-hairpin
@@ -268,29 +240,32 @@
                     }
                 }
                 {
-                    % [Voice 9 measure 11] %! COMMENT_MEASURE_NUMBERS
+                    \times 4/5 {
+                        % [Voice 9 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        b''16
+                        \p
+                        - \tenuto
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        c''8.
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ~
+                    }
+                    c''4
+                    ~
                     c''16
-                    \p
-                    - \tenuto
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                    r16
-                    \!
-                    af''8
                     \mp
-                    - \tenuto
-                    ~
-                    af''4
-                    ~
-                    af''16
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
-                    cs'4.
+                    af''4.
                     \p
-                    - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -305,27 +280,25 @@
                 }
                 {
                     <def' dqf'' btef'' ef''' fs'''>2
-                    \f
-                    - \espressivo
-                    - \tweak stencil #constante-hairpin
+                    \mp
                     \<
                 }
                 {
                     % [Voice 9 measure 14] %! COMMENT_MEASURE_NUMBERS
-                    a'8
+                    a'8.
                     \mf
-
+                    - \portato
                     \>
                     [
-                    aqs'8
-                    - \portato
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
+                    aqf'16
+                    ~
+                    \times 4/5 {
+                        aqf'16
                         a'16
 
                         aqs'16
 
-                        bf'16
+                        a'8
                         \pp
 
                         - \tweak stencil #constante-hairpin
@@ -338,29 +311,24 @@
                     \!
                 }
                 {
-                    \times 16/17 {
-                        % [Voice 9 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        b''8.
-                        \p
-                        ~
-                        [
-                        b''8
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        c''16
-                        \p
-                        ~
-                        c''2
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        c''8
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
+                    % [Voice 9 measure 15] %! COMMENT_MEASURE_NUMBERS
+                    cs'4
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ~
+                    cs'16
+                    \mp
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    b''8
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ~
+                    b''2
                 }
                 {
                     r4
@@ -371,16 +339,12 @@
                     r2
                 }
                 {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 8/7 {
-                        af''4.
-                        \mp
-                        - \tenuto
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                    }
+                    c''4..
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
                 }
                 {
                     % [Voice 9 measure 17] %! COMMENT_MEASURE_NUMBERS
@@ -395,15 +359,10 @@
                 {
                     % [Voice 9 measure 18] %! COMMENT_MEASURE_NUMBERS
                     <def' dqf'' btef'' ef''' fs'''>4..
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
                     r16
                     \!
                     <def' dqf'' btef'' ef''' fs'''>2
                     \mp
-                    - \espressivo
-                    - \tweak stencil #constante-hairpin
                     \<
                 }
                 {
@@ -421,39 +380,36 @@
 
                     \>
                     [
-                    a'16
+                    bf'16
                     - \portato
                     aqs'16
 
-                    a'16
+                    a'8.
 
-                    aqs'8.
+                    aqs'16
 
                     a'16
 
                 }
                 {
-                    \times 8/9 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
                         % [Voice 9 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        aqf'16
+                        aqs'16
                         - \portato
-                        af'16
-
-                        aqf'16
-
                         a'16
 
-                        aqs'8
+                        aqf'16
 
-                        bf'8
-                        - \portato
-                        aqs'16
-                        \pp
-
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
                     }
+                    af'8
+
+                    aqf'8
+                    \pp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
                 }
                 {
                     r2

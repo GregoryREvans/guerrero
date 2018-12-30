@@ -348,6 +348,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         trivialize=True,
         extract_trivial=True,
         rewrite_rest_filled=True,
+        rewrite_sustained=True,
         ),
     )
 
@@ -369,6 +370,7 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         trivialize=True,
         extract_trivial=True,
         rewrite_rest_filled=True,
+        rewrite_sustained=True,
         ),
     )
 

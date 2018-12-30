@@ -310,8 +310,8 @@ rmaker_one = abjadext.rmakers.NoteRhythmMaker()
 
 rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 3, 2, 2, 3, 2, 1, 1, 2, 1, 1, 1, 3, ],
-        denominator=16,
+        counts=[1, 1, 2, 2, 1, 2, 1, 3, 2, 5, 3, 2, 1, 1, 2, 1, 5, 1, 3, ],
+        denominator=8,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
         beam_divisions_together=True,
@@ -326,6 +326,7 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         trivialize=True,
         extract_trivial=True,
         rewrite_rest_filled=True,
+        rewrite_sustained=True,
         ),
     )
 
