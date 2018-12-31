@@ -3753,7 +3753,7 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     abjad.attach(next(abbreviations), leaf1)
     abjad.attach(next(names), leaf1)
 
-for staff in abjad.select(score['Staff Group']).components(abjad.Staff)[0]:
+for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     last_leaf = abjad.select(staff).leaves()[-1]
     abjad.attach(metro, leaf1)
