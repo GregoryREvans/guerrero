@@ -54,7 +54,7 @@ alto_1_chord = [12.5, 19, 20,]
 alto_2_chord = [12.5, 15.25, 25.5, 12,]
 alto_3_chord = [1.75, 13.5, 22.25, 1,]
 alto_4_chord = [12.5, 15.25, 25.5, 20,]
-alto_5_chord = [1.75, 13.5, 22.25, 27, 12,]
+alto_5_chord = [1.75, 13.5, 22.25, 12,]
 alto_6_chord = [12.5, 19, 1,]
 tenor_1_chord = [6, 17.5, 17,]
 tenor_2_chord = [6, 17.5, 25.5, 6,]
@@ -168,7 +168,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_5_random_walk[i-1] + movement
     alto_5_random_walk.append(value)
-alto_5_walk_chord = [1, 1.25, 1.5, 1.75, 13, 13.25, 13.5, 13.75, 22, 22.25, 22.5, 22.75, 27, 27.25, 27.5, 27.75, 12, 12.25, 12.5, 12.75, ]
+alto_5_walk_chord = [1, 1.25, 1.5, 1.75, 13, 13.25, 13.5, 13.75, 22, 22.25, 22.5, 22.75, 12, 12.25, 12.5, 12.75, ]
 l = len(alto_5_walk_chord)
 alto_5_random_walk_notes = [alto_5_walk_chord[x] for x in reduceMod(l, alto_5_random_walk)]
 
@@ -310,7 +310,7 @@ rmaker_two = abjadext.rmakers.NoteRhythmMaker()
 
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[1, 1, -1, 3, 2, 1, 2, -4, 1, 3, -2, 3, 2, 1, 4, -1, 5, 2, -1, 3, ],
+        counts=[1, 1, 1, 3, 2, 1, 2, 4, 1, 3, 2, 3, 2, 1, 4, 1, 5, 2, 1, 3, ],
         denominator=16,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
@@ -318,10 +318,14 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         beam_rests=False,
         ),
     extra_counts_per_division=[0, 1, -1, 1, 0, -1, 0, ],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Note, abjad.Rest],
-    #     left_counts=[1, 0, 1],
-    #     ),
+    logical_tie_masks=[
+        abjadext.rmakers.silence([6], 11),
+        ],
+    division_masks=[
+        abjadext.rmakers.SilenceMask(
+            pattern=abjad.index([6], 15),
+            ),
+        ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -336,7 +340,7 @@ attachment_handler_one = AttachmentHandler(
     starting_dynamic='mp',
     ending_dynamic='ppp', #alt+o = ø
     hairpin='>',
-    articulation_list=['flageolet', 'flageolet', 'flageolet', 'flageolet',   'stopped',  'stopped', '',  '',  '',  '', 'flageolet', 'halfopen',  'halfopen',  'halfopen',  'flageolet',  '',  '',  '',  '',  '',  '', 'halfopen',   'flageolet', 'halfopen',  'stopped',   'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped', '', ],
+    articulation_list=['flageolet', 'flageolet', 'flageolet', 'flageolet',   'stopped',  'stopped', '',  '', 'flageolet', 'halfopen',  'halfopen',  'halfopen',  'flageolet',  '',  '',  '', 'halfopen',   'flageolet', 'halfopen',  'stopped',   'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped', '', ],
 )
 
 attachment_handler_two = AttachmentHandler(
@@ -2950,7 +2954,7 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 #attach instruments and clefs
 
 print('Adding attachments ...')
-bar_line = abjad.BarLine('||')
+# bar_line = abjad.BarLine('||')
 metro = abjad.MetronomeMark((1, 4), 108)
 markup = abjad.Markup(r'\bold { D }')
 mark = abjad.RehearsalMark(markup=markup)
@@ -3037,7 +3041,7 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     last_leaf = abjad.select(staff).leaves()[-1]
     abjad.attach(metro, leaf1)
-    abjad.attach(bar_line, last_leaf)
+    # abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]

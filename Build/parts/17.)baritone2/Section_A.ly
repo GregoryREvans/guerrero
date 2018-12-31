@@ -247,7 +247,7 @@
                         % [Voice 17 measure 9] %! COMMENT_MEASURE_NUMBERS
                         eqs'16
                         \mf
-                        - \portato
+
                         \>
                         [
                         f'8
@@ -255,26 +255,40 @@
                     }
                     f'16
                     fqs'16
-
+                    \pp
+                    - \portato
                     ~
                     fqs'16
-                    f'16
-
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
                     \times 4/5 {
-                        fqs'16
+                        f'16
+                        \mf
 
-                        fs'8
+                        \>
+                        [
+                        fqs'8
 
-                        gqf'16
-                        - \portato
                         fs'16
+                        \pp
 
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                     }
-                    fqs'16
+                    gqf'16
+                    \mf
 
-                    f'8.
+                    \>
+                    [
+                    fs'8.
                     \pp
-
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -331,20 +345,23 @@
                         \>
                         [
                         f'16
-                        - \portato
+
                         fqs'16
 
                     }
                     f'16
-
-                    fqs'16
-
-                    fs'8
                     \pp
 
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    r16
+                    \!
+                    fqs'8
+                    \pp
+                    - \portato
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
                     % [Voice 17 measure 14] %! COMMENT_MEASURE_NUMBERS
@@ -442,19 +459,26 @@
                 {
                     \times 4/5 {
                         % [Voice 17 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        fqs'8
+                        f'8
                         \mf
-                        - \portato
+
                         \>
                         [
-                        fs'16
+                        fqs'16
+                        \pp
 
-                        fqs'8
-
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
                     }
                     fs'16
+                    \mf
 
-                    gqf'8.
+                    \>
+                    [
+                    fqs'8.
                     \pp
 
                     - \tweak stencil #constante-hairpin
@@ -477,11 +501,11 @@
                         - \portato
                         \>
                         [
-                        gqf'16
+                        fqs'16
                         ~
                     }
-                    gqf'16
-                    g'8.
+                    fqs'16
+                    fs'8.
                     \pp
 
                     - \tweak stencil #constante-hairpin

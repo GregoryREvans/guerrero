@@ -274,7 +274,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \bar "||"
                     }
                 }
             }
@@ -288,6 +287,7 @@
                         \markup { spr.1 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 1" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -482,6 +482,7 @@
                         \markup { spr.2 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 2" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -652,6 +653,7 @@
                         \markup { spr.3 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 3" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -872,6 +874,7 @@
                             \markup { alt.1 }
                             \set Staff.instrumentName =
                             \markup { "Alto 1" }
+                            \tempo 4=60
                             d''16
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
@@ -1031,20 +1034,13 @@
                         r4
                     }
                     {
-                        \times 4/5 {
-                            dqf'''8.
-                            \mf
-                            ~
-                            [
-                            dqf'''8
-                            - \tweak stencil #abjad-flared-hairpin
-                            \<
-                            ]
-                        }
-                        d''4
-                        dqs''8
+                        dqf'''2
+                        \mf
+                        - \tweak stencil #abjad-flared-hairpin
+                        \<
+                        d''8
                         [
-                        ef''8
+                        dqs''8
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1056,17 +1052,17 @@
                         \!
                     }
                     {
-                        eqf''4
+                        ef''4
                         \mp
                         \<
                         ~
                         \times 2/3 {
-                            eqf''4
-                            e''8
+                            ef''4
+                            eqf''8
                             ~
                             [
                         }
-                        e''8
+                        eqf''8
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1084,6 +1080,7 @@
                         \markup { alt.2 }
                         \set Staff.instrumentName =
                         \markup { "Alto 2" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -1276,6 +1273,7 @@
                         \markup { alt.3 }
                         \set Staff.instrumentName =
                         \markup { "Alto 3" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -1478,6 +1476,7 @@
                         \markup { alt.4 }
                         \set Staff.instrumentName =
                         \markup { "Alto 4" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -1715,6 +1714,7 @@
                             \markup { alt.5 }
                             \set Staff.instrumentName =
                             \markup { "Alto 5" }
+                            \tempo 4=60
                             cs'16
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
@@ -1927,6 +1927,7 @@
                         \markup { alt.6 }
                         \set Staff.instrumentName =
                         \markup { "Alto 6" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -2138,6 +2139,7 @@
                         \markup { ten.1 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 1" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -2345,6 +2347,7 @@
                         \markup { ten.2 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 2" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -2448,23 +2451,18 @@
                         r2
                     }
                     {
-                        \times 4/5 {
-                            a'8.
-                            \mf
-                            ~
-                            [
-                            a'8
-                            - \tweak stencil #abjad-flared-hairpin
-                            \<
-                            ]
-                        }
+                        a'4
+                        \mf
+                        - \tweak stencil #abjad-flared-hairpin
+                        \<
+                        ~
                     }
                     {
                         % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        aqs'4
-                        bf'8
+                        a'4
+                        aqs'8
                         [
-                        bqf'8
+                        bf'8
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2480,21 +2478,21 @@
                     }
                     {
                         \times 4/5 {
-                            b'8
+                            bqf'8
                             \mf
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             [
+                            b'16
                             bqs'16
                             c''16
-                            cqs''16
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            cs''8.
+                            cqs''8.
                             ~
+                            cqs''8
                             cs''8
-                            dqf''8
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2508,14 +2506,14 @@
                     }
                     {
                         \times 2/3 {
-                            d''8
+                            dqf''8
                             \mp
 
                             - \tweak stencil #constante-hairpin
                             \<
                             r8
                             \!
-                            dqs''8
+                            d''8
                             \mp
                             \<
                             ~
@@ -2524,9 +2522,9 @@
                     }
                     {
                         % [Voice 12 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        dqs''8
+                        d''8
                         ]
-                        ef'4.
+                        dqs''4.
                     }
                     {
                         r2
@@ -2537,22 +2535,22 @@
                         r2
                     }
                     {
-                        eqf'16
+                        ef'16
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         [
-                        e'16
+                        eqf'16
+                        ~
+                        eqf'16
+                        e'8.
                         ~
                         e'16
-                        eqs'8.
-                        ~
                         eqs'16
-                        f'16
                         \times 2/3 {
+                            f'16
                             fqs'16
                             fs'16
-                            gqf'16
                             \ff
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2571,6 +2569,7 @@
                         \markup { ten.3 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 3" }
+                        \tempo 4=60
                         b4
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
@@ -2765,6 +2764,7 @@
                         \markup { ten.4 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 4" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -2954,6 +2954,7 @@
                         \markup { ten.5 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 5" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -3136,6 +3137,7 @@
                         \markup { bar.1 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 1" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -3342,6 +3344,7 @@
                         \markup { bar.2 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 2" }
+                        \tempo 4=60
                         bf4
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
@@ -3560,6 +3563,7 @@
                         \markup { bar.3 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 3" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -3762,6 +3766,7 @@
                         \markup { bs.1 }
                         \set Staff.instrumentName =
                         \markup { "Bass 1" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -3942,6 +3947,7 @@
                         \markup { bs.2 }
                         \set Staff.instrumentName =
                         \markup { "Bass 2" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -4157,6 +4163,7 @@
                             \markup { cbs. }
                             \set Staff.instrumentName =
                             \markup { Contrabass }
+                            \tempo 4=60
                             fs'8.
                             \mf
                             - \tweak stencil #abjad-flared-hairpin

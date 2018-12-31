@@ -95,6 +95,7 @@
                         \markup { cbs. }
                         \set Staff.instrumentName =
                         \markup { Contrabass }
+                        \tempo 4=90
                         bqf8
                         \mp
                         - \tweak stencil #constante-hairpin

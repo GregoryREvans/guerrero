@@ -56,6 +56,7 @@
                         \markup { alt.1 }
                         \set Staff.instrumentName =
                         \markup { "Alto 1" }
+                        \tempo 4=60
                         d''16
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
@@ -215,20 +216,13 @@
                     r4
                 }
                 {
-                    \times 4/5 {
-                        dqf'''8.
-                        \mf
-                        ~
-                        [
-                        dqf'''8
-                        - \tweak stencil #abjad-flared-hairpin
-                        \<
-                        ]
-                    }
-                    d''4
-                    dqs''8
+                    dqf'''2
+                    \mf
+                    - \tweak stencil #abjad-flared-hairpin
+                    \<
+                    d''8
                     [
-                    ef''8
+                    dqs''8
                     \ff
                     - \tweak stencil #constante-hairpin
                     \<
@@ -240,17 +234,17 @@
                     \!
                 }
                 {
-                    eqf''4
+                    ef''4
                     \mp
                     \<
                     ~
                     \times 2/3 {
-                        eqf''4
-                        e''8
+                        ef''4
+                        eqf''8
                         ~
                         [
                     }
-                    e''8
+                    eqf''8
                     \f
                     - \tweak stencil #constante-hairpin
                     \<

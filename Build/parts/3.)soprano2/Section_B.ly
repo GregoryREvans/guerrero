@@ -94,6 +94,7 @@
                     \markup { spr.2 }
                     \set Staff.instrumentName =
                     \markup { "Soprano 2" }
+                    \tempo 4=90
                     r4
                     \!
                     \tweak text #tuplet-number::calc-fraction-text

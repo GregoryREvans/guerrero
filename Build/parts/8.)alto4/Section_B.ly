@@ -95,6 +95,7 @@
                         \markup { alt.4 }
                         \set Staff.instrumentName =
                         \markup { "Alto 4" }
+                        \tempo 4=90
                         bqf'8.
                         \mp
                         \<

@@ -56,6 +56,7 @@
                         \markup { alt.5 }
                         \set Staff.instrumentName =
                         \markup { "Alto 5" }
+                        \tempo 4=60
                         cs'16
                         \mf
                         - \tweak stencil #abjad-flared-hairpin

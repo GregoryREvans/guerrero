@@ -380,25 +380,33 @@
                         % [Voice 2 measure 21] %! COMMENT_MEASURE_NUMBERS
                         gqf''8
                         \mf
-                        - \portato
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        fs''16
+                        \mf
+
                         \>
                         [
-                        fs''16
-
                         gqf''16
-
-                        g''16
                         ~
                     }
+                    gqf''16
                     g''16
-                    gqs''16
-
-                    g''16
-
-                    gqs''16
+                    \pp
                     - \portato
+                    - \tweak stencil #constante-hairpin
+                    \<
                     ]
-                    af''4
+                    r16
+                    \!
+                    gqs''16
+                    \mf
+
+                    \>
+                    g''4
                     \pp
 
                     - \tweak stencil #constante-hairpin

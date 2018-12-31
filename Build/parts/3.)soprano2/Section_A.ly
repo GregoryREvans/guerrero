@@ -254,15 +254,22 @@
                     f''16
 
                     eqs''16
-
-                    f''16
                     - \portato
+                    f''16
+                    \pp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
                     \times 4/5 {
-                        fqs''16
+                        r16
+                        \!
+                        fqs''8
+                        \mf
 
+                        \>
+                        [
                         f''8
-
-                        eqs''8
                         \pp
 
                         - \tweak stencil #constante-hairpin
@@ -323,17 +330,19 @@
                 }
                 {
                     % [Voice 3 measure 14] %! COMMENT_MEASURE_NUMBERS
+                    eqs''16
+                    \pp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    r16
                     f''16
                     \mf
-
-                    \>
-                    eqs''16
                     - \portato
-                    ~
-                    eqs''16
-                    e''16
-
-                    ]
+                    \>
                     eqs''4
                     \pp
 
@@ -433,31 +442,41 @@
 
                     \times 4/5 {
                         e''8.
-                        - \portato
-                        eqs''8
 
+                        eqs''8
+                        \pp
+                        - \portato
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                 }
                 {
                     % [Voice 3 measure 21] %! COMMENT_MEASURE_NUMBERS
+                    r16
+                    \!
                     e''16
+                    \mf
 
-                    eqs''16
-
-                    f''8
+                    \>
+                    [
+                    eqs''8
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        fqs''16
-                        - \portato
-                        fs''16
-
-                        gqf''16
+                        e''16
                         \pp
 
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        eqs''16
+                        \mf
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                 }
                 {

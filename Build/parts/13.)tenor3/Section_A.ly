@@ -272,13 +272,13 @@
                         \>
                         [
                         g'16
-                        - \portato
-                        gqs'16
                         \pp
-
+                        - \portato
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
                     }
                 }
                 {
@@ -320,12 +320,12 @@
                 }
                 {
                     % [Voice 13 measure 13] %! COMMENT_MEASURE_NUMBERS
-                    af'16
+                    gqs'16
                     \mf
 
                     \>
                     [
-                    gqs'8.
+                    af'8.
                     \pp
 
                     - \tweak stencil #constante-hairpin
@@ -451,28 +451,35 @@
                 }
                 {
                     \times 4/5 {
-                        g'16
+                        gqs'16
                         \mf
 
                         \>
                         [
+                        g'16
+
                         gqf'16
                         - \portato
                         fs'16
+                        \pp
 
-                        gqf'16
-
-                        fs'16
-
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                     }
                 }
                 {
                     % [Voice 13 measure 20] %! COMMENT_MEASURE_NUMBERS
                     gqf'8
+                    \mf
 
+                    \>
+                    [
                     fs'8
                     \pp
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]

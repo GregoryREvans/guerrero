@@ -350,29 +350,36 @@
                 }
                 {
                     % [Voice 20 measure 21] %! COMMENT_MEASURE_NUMBERS
+                    r16
+                    \!
                     dqs'16
                     \mf
-
+                    - \portato
                     \>
                     [
-                    ef'16
-                    - \portato
-                    dqs'8
+                    ef'8
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
+                        dqs'16
+                        \pp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         ef'16
+                        \mf
 
-                        eqf'16
-
-                        e'16
-
+                        \>
+                        [
                     }
-                    eqs'8.
-                    - \portato
+                    eqf'8.
+
                     e'16
                     \pp
-
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]

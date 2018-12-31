@@ -314,16 +314,15 @@
                     g''16
                     \mf
 
-                    \>
-                    [
-                    gqf''16
-
-                    fs''8
-                    \pp
-                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
+                    r16
+                    \!
+                    gqf''8
+                    \pp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
                     r4
@@ -453,30 +452,37 @@
                 }
                 {
                     \times 4/5 {
-                        gqf''8
+                        fs''8
                         \mf
-
+                        - \portato
                         \>
                         [
-                        g''16
+                        gqf''16
+                        \pp
 
-                        gqf''8
-
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
                     }
                 }
                 {
                     % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
-                    fs''16
+                    g''16
+                    \mf
 
+                    \>
+                    [
                     gqf''8.
-                    - \portato
+
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         fs''8
 
                         gqf''16
                         \pp
-
+                        - \portato
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -511,7 +517,6 @@
                     ef'''2.
                     \mp
                     \<
-                    \bar "||"
                 }
             }
         }

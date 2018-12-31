@@ -251,20 +251,27 @@
                         c'16
 
                         cqs'16
+                        \pp
 
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         c'16
-                        - \portato
-                        bqs16
+                        \mf
+                        \>
                         ~
+                        [
                     }
-                    bqs16
                     c'16
+                    bqs16
 
                     ~
+                    bqs16
                     c'16
-                    cqs'16
                     \pp
-
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -323,17 +330,16 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 21 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        cs'8
+                        r8
+                        cqs'16
                         \mf
 
                         \>
                         [
-                        dqf'16
-
                     }
                     cs'8.
-                    - \portato
-                    cqs'16
+
+                    dqf'16
                     \pp
 
                     - \tweak stencil #constante-hairpin
@@ -440,6 +446,29 @@
                 }
                 {
                     \times 4/5 {
+                        cs'16
+                        \mf
+
+                        \>
+                        [
+                        cqs'8
+                        - \portato
+                        c'8
+                        ~
+                    }
+                    c'16
+                    cqs'16
+                    \pp
+
+                    ~
+                    cqs'16
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
                         c'16
                         \mf
 
@@ -447,33 +476,24 @@
                         [
                         cqs'8
 
-                        c'8
-                        ~
-                    }
-                    c'16
-                    cqs'16
-
-                    ~
-                    cqs'16
-                    c'16
-                    - \portato
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        bqs16
-
-                        b8
-
                     }
                 }
                 {
                     % [Voice 21 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    bqs16
-
                     c'16
+                    \pp
 
-                    cqs'16
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    bqs16
+                    \mf
                     - \portato
-                    cs'16
+                    \>
+                    [
+                    b16
                     \pp
 
                     - \tweak stencil #constante-hairpin

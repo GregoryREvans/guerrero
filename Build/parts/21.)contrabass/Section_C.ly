@@ -139,17 +139,16 @@
                 }
                 {
                     % [Voice 21 measure 2] %! COMMENT_MEASURE_NUMBERS
-                    bf8
+                    r8
+                    \!
+                    bf16
                     \mf
-                    - \portato
+                    - \tenuto
                     - \tweak circled-tip ##t
                     \>
                     [
                     g'16
 
-                    ]
-                    r16
-                    \!
                 }
                 {
                     \times 4/5 {
@@ -157,7 +156,6 @@
                         \f
 
                         \>
-                        [
                         b16
                         - \halfopen
                         bqs8
@@ -248,40 +246,39 @@
                 }
                 {
                     \times 4/5 {
-                        r16
-                        d'8
+                        d'16
                         \mf
 
-                        ~
-                        [
-                        d'16
                         - \tweak circled-tip ##t
                         \>
+                        [
+                        e''8
+                        - \portato
+                        ~
                         e''16
+                        g'16
 
                     }
                 }
                 {
                     \times 4/5 {
                         % [Voice 21 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        g'8.
-                        - \accent
-                        fs''8
+                        fs''8.
+
+                        e''8
 
                         ]
                     }
-                    r8.
+                    r4
                     \!
-                    e''16
-                    \mf
-                    - \tenuto
-                    - \tweak circled-tip ##t
-                    \>
-                    [
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         cs'''8
-
+                        \mf
+                        - \accent
+                        - \tweak circled-tip ##t
+                        \>
+                        [
                         e''16
 
                         ]
@@ -299,7 +296,7 @@
                         % [Voice 21 measure 6] %! COMMENT_MEASURE_NUMBERS
                         bf8
                         \mf
-                        - \portato
+                        - \tenuto
                         - \tweak circled-tip ##t
                         \>
                         [
@@ -309,25 +306,23 @@
                         g'16
                         d'16
 
-                        ]
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        r8
-                        \!
-                        e''16
-                        \mf
-                        - \tweak circled-tip ##t
-                        \>
+                        e''8
+                        - \portato
+                        g'16
                         ~
-                        [
                     }
-                    e''8
-                    g'16
-
-                    fs''16
-                    - \accent
+                    g'8
                     ]
+                    r16
+                    \!
+                    fs''16
+                    \mf
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
                     bf4
@@ -412,36 +407,38 @@
                         \>
                         [
                         cs'''16
-                        - \tenuto
+
                         ~
                         cs'''16
+                        e''16
+                        - \accent
                         ]
-                        r16
-                        \!
                     }
                 }
                 {
                     r4
+                    \!
                 }
                 {
                     \times 8/9 {
                         % [Voice 21 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        e''16
+                        bf8
                         \mf
 
                         - \tweak circled-tip ##t
                         \>
                         [
-                        bf8
-
                         g'16
-                        - \portato
-                        ~
-                        g'8
-                        d'16
+                        - \tenuto
+                        d'8
 
+                        e''16
+
+                        ~
+                        e''8
                         ]
+                        r16
+                        \!
                     }
                 }
                 {
@@ -452,25 +449,22 @@
                     \<
                 }
                 {
-                    e''16
+                    r16
+                    \!
+                    g'16
                     \mf
-
+                    - \portato
                     - \tweak circled-tip ##t
                     \>
                     [
-                    g'16
+                    fs''8
 
                     ]
-                    r8
-                    \!
                 }
                 {
                     % [Voice 21 measure 10] %! COMMENT_MEASURE_NUMBERS
-                    fs''4
-                    \mf
-                    - \accent
-                    - \tweak stencil #constante-hairpin
-                    \<
+                    e''4
+
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -539,56 +533,45 @@
                     r4
                 }
                 {
-                    \times 4/5 {
-                        e''16
+                    r4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        cs'''16
                         \mf
 
                         - \tweak circled-tip ##t
                         \>
                         [
-                        cs'''8
-                        - \tenuto
-                        ~
-                        cs'''16
-                        e''16
+                        e''8
                         ~
                     }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        e''16
-                        ]
-                        r8
-                        \!
-                    }
-                    r16
+                    e''16
                     bf16
-                    \mf
-
-                    - \tweak circled-tip ##t
-                    \>
-                    [
-                    g'8
-
+                    - \accent
+                    ]
+                    r8
+                    \!
                 }
                 {
                     \times 4/5 {
                         % [Voice 21 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        d'8.
-                        - \portato
-                        e''8
-
-                    }
-                    \times 4/5 {
-                        g'16
-
-                        ]
-                        r8
-                        \!
-                        fs''8
+                        g'8.
                         \mf
 
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        - \tweak circled-tip ##t
+                        \>
+                        [
+                        d'8
+                        - \tenuto
+                    }
+                    \times 4/5 {
+                        e''16
+
+                        g'8
+
+                        fs''8
+                        - \portato
+                        ]
                     }
                 }
                 {
@@ -685,20 +668,23 @@
                 {
                     e''16
                     \mf
-                    - \accent
+
                     - \tweak circled-tip ##t
                     \>
                     [
                     cs'''16
 
-                    e''8
-                    ~
+                    ]
+                    r8
+                    \!
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        e''16
-                        bf8
-                        - \tenuto
-                        ]
+                        r16
+                        e''8
+                        \mf
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                 }
                 {
@@ -711,14 +697,14 @@
                 }
                 {
                     \times 4/5 {
-                        r8.
-                        \!
-                        g'16
+                        bf8.
                         \mf
-
+                        - \accent
                         - \tweak circled-tip ##t
                         \>
                         [
+                        g'16
+
                         d'16
                         ~
                     }
@@ -726,7 +712,7 @@
                     \times 4/3 {
                         d'16
                         e''8
-
+                        - \tenuto
                     }
                 }
                 {
@@ -750,38 +736,32 @@
                     \<
                 }
                 {
-                    g'16
-                    \mf
-                    - \portato
-                    - \tweak circled-tip ##t
-                    \>
-                    [
-                    fs''16
-
-                    ~
-                    fs''16
-                    e''16
-
-                    ]
+                    r4
+                    \!
                     \times 4/5 {
-                        r8
-                        \!
-                        cs'''8.
+                        g'8
                         \mf
 
                         - \tweak circled-tip ##t
                         \>
                         [
+                        fs''8.
+
+                        ]
                     }
                     \times 4/5 {
-                        e''16
-                        - \accent
-                        bf8
-
+                        r16
+                        \!
+                        e''8
+                        \mf
+                        - \portato
                         ~
-                        bf16
-                        g'16
-                        - \tenuto
+                        [
+                        e''16
+                        - \tweak circled-tip ##t
+                        \>
+                        cs'''16
+
                     }
                 }
                 {
@@ -829,26 +809,23 @@
                     \<
                 }
                 {
-                    d'16
+                    e''16
                     \mf
 
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    r8.
-                    \!
+                    - \tweak circled-tip ##t
+                    \>
+                    [
+                    bf8.
+
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 21 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        e''16
-                        \mf
+                        g'16
+                        - \accent
+                        d'8
 
-                        - \tweak circled-tip ##t
-                        \>
-                        [
-                        g'8
-                        - \portato
                     }
                 }
                 {
@@ -897,13 +874,13 @@
                 }
                 {
                     \times 4/5 {
-                        fs''8.
+                        e''8.
                         \mf
-
+                        - \tenuto
                         - \tweak circled-tip ##t
                         \>
                         [
-                        e''8
+                        g'8
 
                     }
                 }
@@ -957,7 +934,7 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/7 {
-                        cs'''16
+                        fs''16
                         \mf
 
                         - \tweak stencil #constante-hairpin
@@ -967,11 +944,11 @@
                         \!
                         e''8.
                         \mf
-                        - \accent
+                        - \portato
                         - \tweak circled-tip ##t
                         \>
                         [
-                        bf16
+                        cs'''16
 
                     }
                 }
@@ -1032,25 +1009,23 @@
                     \!
                 }
                 {
-                    g'8.
+                    e''8.
                     \mf
-                    - \tenuto
+
                     - \tweak circled-tip ##t
                     \>
                     [
-                    d'16
+                    bf16
                     ~
                     \times 4/5 {
-                        d'16
-                        ]
-                        r8
-                        \!
-                        r16
-                        e''16
-                        \mf
+                        bf16
+                        g'8
 
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        ~
+                        g'16
+                        d'16
+                        - \accent
+                        ]
                     }
                 }
                 {
@@ -1061,32 +1036,28 @@
                     \<
                 }
                 {
-                    \times 4/5 {
-                        % [Voice 21 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        g'8
-                        \mf
-
-                        - \tweak circled-tip ##t
-                        \>
-                        [
-                        fs''8.
-                        - \portato
-                    }
+                    % [Voice 21 measure 24] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                    \!
                     e''8
+                    \mf
 
-                    cs'''16
-
-                    ]
+                    - \tweak stencil #constante-hairpin
+                    \<
                     r16
                     \!
+                    g'16
+                    \mf
+                    - \tweak circled-tip ##t
+                    \>
+                    ~
+                    [
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        r16
-                        e''8
-                        \mf
-
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        g'16
+                        fs''8
+                        - \tenuto
+                        ]
                     }
                 }
                 {
@@ -1099,16 +1070,16 @@
                 {
                     \times 4/5 {
                         % [Voice 21 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        bf16
+                        e''16
                         \mf
-                        - \accent
+
                         - \tweak circled-tip ##t
                         \>
                         [
-                        g'16
+                        cs'''16
 
-                        d'8.
-                        - \tenuto
+                        e''8.
+                        - \portato
                     }
                 }
                 {

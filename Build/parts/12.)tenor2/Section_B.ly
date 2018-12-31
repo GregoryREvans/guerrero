@@ -95,6 +95,7 @@
                         \markup { ten.2 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 2" }
+                        \tempo 4=90
                         gqf'16
                         \f
                         - \tweak stencil #constante-hairpin

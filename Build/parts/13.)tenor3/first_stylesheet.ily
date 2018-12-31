@@ -23,8 +23,8 @@
 	%\accidentalStyle modern-cautionary
 	%\accidentalStyle modern
     indent = #5
-	%ragged-last = ##t
-    %ragged-right = ##t
+	ragged-last = ##t
+    ragged-right = ##t
     %left-margin = #15
 	\context {
         \name TimeSignatureContext
@@ -100,6 +100,8 @@
     \context {
         \Staff
         \remove Time_signature_engraver
+		\consists Page_turn_engraver
+		minimumPageTurnLength = #(ly:make-moment 1 4)
     }
     \context {
         \RhythmicStaff
@@ -111,10 +113,12 @@
 }
 
 \paper {
+	page-breaking = #ly:page-turn-breaking
+	system-system-spacing #'basic-distance = #15
 
 	top-margin = 1\cm
 	bottom-margin = 0.4\cm
-	left-margin = 1.3\cm
+	left-margin = 2\cm
 	right-margin = 1\cm
 
 	%top-margin = .90\in

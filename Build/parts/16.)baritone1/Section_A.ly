@@ -250,32 +250,46 @@
                         \>
                         [
                         e'8
-                        - \portato
+                        \pp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
+                    r16
+                    \!
                     eqf'16
+                    \mf
 
-                    ef'16
-
-                    dqs'8
-
+                    \>
+                    [
+                    ef'8
+                    - \portato
                     \times 4/5 {
-                        ef'16
-
                         dqs'16
-                        - \portato
-                        ef'16
+                        \pp
 
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        ef'16
+                        \mf
+
+                        \>
+                        [
                         dqs'8
                         ~
                     }
                     dqs'16
+                    ef'16
+
+                    dqs'16
+
                     d'16
-
-                    dqf'16
-
-                    cs'16
                     \pp
-
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -306,18 +320,17 @@
                     \times 4/3 {
                         % [Voice 16 measure 14] %! COMMENT_MEASURE_NUMBERS
                         dqf'16
-                        \mf
-                        - \portato
-                        \>
-                        [
-                        cs'16
-
-                        dqf'16
                         \pp
 
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
+                        r16
+                        \!
+                        cs'16
+                        \mf
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                 }
                 {
@@ -422,29 +435,36 @@
                     r2
                 }
                 {
-                    d'16
+                    dqf'16
                     \mf
 
                     \>
                     [
-                    dqf'16
+                    cs'16
 
                     ~
+                    cs'16
                     dqf'16
-                    d'16
+                    \pp
                     - \portato
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
                     \times 4/5 {
-                        dqs'8
+                        r8
+                        \!
+                        d'16
+                        \mf
 
-                        ef'16
-
-                        dqs'8
+                        \>
+                        [
+                        dqf'8
                         ~
                     }
                 }
                 {
                     % [Voice 16 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    dqs'16
+                    dqf'16
                     d'8
 
                     dqs'16

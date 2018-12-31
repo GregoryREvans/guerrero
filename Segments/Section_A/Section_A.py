@@ -299,7 +299,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
 
 rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 3, 2, 2, 3, 2, 1, 1, 2, 1, 1, 1, 3, ],
+        counts=[1, 1, 1, 1, -1, 2, 2, 1, -2, 1, 3, 2, 2, 3, 2, -1, 1, 2, 1, -1, 1, 3, ],
         denominator=16,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
@@ -2264,7 +2264,7 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 #attach instruments and clefs
 
 print('Adding attachments ...')
-bar_line = abjad.BarLine('||')
+# bar_line = abjad.BarLine('||')
 # metro = abjad.MetronomeMark((1, 4), 90)
 markup = abjad.Markup(r'\bold { A }')
 mark = abjad.RehearsalMark(markup=markup)
@@ -2525,7 +2525,7 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     last_leaf = abjad.select(staff).leaves()[-1]
     # abjad.attach(metro, leaf1)
-    abjad.attach(bar_line, last_leaf)
+    # abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]

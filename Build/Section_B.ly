@@ -1406,7 +1406,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \bar "||"
                     }
                 }
             }
@@ -1421,6 +1420,7 @@
                             \markup { spr.1 }
                             \set Staff.instrumentName =
                             \markup { "Soprano 1" }
+                            \tempo 4=90
                             fqs''16
                             \mp
                             \<
@@ -2735,6 +2735,7 @@
                         \markup { spr.2 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 2" }
+                        \tempo 4=90
                         r4
                         \!
                         \tweak text #tuplet-number::calc-fraction-text
@@ -4047,6 +4048,7 @@
                             \markup { spr.3 }
                             \set Staff.instrumentName =
                             \markup { "Soprano 3" }
+                            \tempo 4=90
                             dqs''16
                             \mf
                             \>
@@ -5386,6 +5388,7 @@
                             \markup { alt.1 }
                             \set Staff.instrumentName =
                             \markup { "Alto 1" }
+                            \tempo 4=90
                             dqs''8
                             \mf
                             \>
@@ -6669,6 +6672,7 @@
                             \markup { alt.2 }
                             \set Staff.instrumentName =
                             \markup { "Alto 2" }
+                            \tempo 4=90
                             dqf''16
                             \mf
                             \>
@@ -8039,6 +8043,7 @@
                             \markup { alt.3 }
                             \set Staff.instrumentName =
                             \markup { "Alto 3" }
+                            \tempo 4=90
                             bqs'16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -9431,6 +9436,7 @@
                             \markup { alt.4 }
                             \set Staff.instrumentName =
                             \markup { "Alto 4" }
+                            \tempo 4=90
                             bqf'8.
                             \mp
                             \<
@@ -10706,6 +10712,7 @@
                             \markup { alt.5 }
                             \set Staff.instrumentName =
                             \markup { "Alto 5" }
+                            \tempo 4=90
                             aqs'8
                             \mp
                             \<
@@ -12141,6 +12148,7 @@
                             \markup { alt.6 }
                             \set Staff.instrumentName =
                             \markup { "Alto 6" }
+                            \tempo 4=90
                             aqs'16
                             \pp
                             - \tweak stencil #constante-hairpin
@@ -13497,6 +13505,7 @@
                             \markup { ten.1 }
                             \set Staff.instrumentName =
                             \markup { "Tenor 1" }
+                            \tempo 4=90
                             gqs'16
                             \mf
                             \>
@@ -14776,6 +14785,7 @@
                             \markup { ten.2 }
                             \set Staff.instrumentName =
                             \markup { "Tenor 2" }
+                            \tempo 4=90
                             gqf'16
                             \f
                             - \tweak stencil #constante-hairpin
@@ -16074,6 +16084,7 @@
                             \markup { ten.3 }
                             \set Staff.instrumentName =
                             \markup { "Tenor 3" }
+                            \tempo 4=90
                             fqs'8
                             \mf
                             \>
@@ -17326,6 +17337,7 @@
                         \markup { ten.4 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 4" }
+                        \tempo 4=90
                         r4
                         \!
                         eqs'8
@@ -18595,6 +18607,7 @@
                             \markup { ten.5 }
                             \set Staff.instrumentName =
                             \markup { "Tenor 5" }
+                            \tempo 4=90
                             eqs'16
                             \mp
                             \<
@@ -19904,6 +19917,7 @@
                         \markup { bar.1 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 1" }
+                        \tempo 4=90
                         dqs'4
                         \mp
                         \<
@@ -21169,6 +21183,7 @@
                             \markup { bar.2 }
                             \set Staff.instrumentName =
                             \markup { "Baritone 2" }
+                            \tempo 4=90
                             dqs'8.
                             \pp
                             - \tweak stencil #constante-hairpin
@@ -22458,6 +22473,7 @@
                             \markup { bar.3 }
                             \set Staff.instrumentName =
                             \markup { "Baritone 3" }
+                            \tempo 4=90
                             cqs'8
                             \mf
                             \>
@@ -23690,6 +23706,7 @@
                             \markup { bs.1 }
                             \set Staff.instrumentName =
                             \markup { "Bass 1" }
+                            \tempo 4=90
                             cqs'16
                             \mp
                             \<
@@ -24990,6 +25007,7 @@
                             \markup { bs.2 }
                             \set Staff.instrumentName =
                             \markup { "Bass 2" }
+                            \tempo 4=90
                             bqs16
                             \mp
                             \<
@@ -26241,6 +26259,7 @@
                             \markup { cbs. }
                             \set Staff.instrumentName =
                             \markup { Contrabass }
+                            \tempo 4=90
                             bqf8
                             \mp
                             - \tweak stencil #constante-hairpin

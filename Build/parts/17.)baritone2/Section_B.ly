@@ -95,6 +95,7 @@
                         \markup { bar.2 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 2" }
+                        \tempo 4=90
                         dqs'8.
                         \pp
                         - \tweak stencil #constante-hairpin

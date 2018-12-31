@@ -56,6 +56,7 @@
                         \markup { cbs. }
                         \set Staff.instrumentName =
                         \markup { Contrabass }
+                        \tempo 4=60
                         fs'8.
                         \mf
                         - \tweak stencil #abjad-flared-hairpin

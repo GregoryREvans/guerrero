@@ -55,6 +55,7 @@
                     \markup { ten.4 }
                     \set Staff.instrumentName =
                     \markup { "Tenor 4" }
+                    \tempo 4=60
                     r1
                 }
                 {

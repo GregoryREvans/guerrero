@@ -55,6 +55,7 @@
                     \markup { spr.1 }
                     \set Staff.instrumentName =
                     \markup { "Soprano 1" }
+                    \tempo 4=60
                     r1
                 }
                 {

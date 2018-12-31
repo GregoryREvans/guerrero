@@ -378,36 +378,45 @@
                         % [Voice 8 measure 21] %! COMMENT_MEASURE_NUMBERS
                         bqf'16
                         \mf
-                        - \portato
+
                         \>
                         [
                         b'16
-
-                        bqf'16
-
-                    }
-                    bf'16
-
-                    bqf'16
-
-                    ~
-                    bqf'16
-                    bf'16
-                    ~
-                    \times 4/5 {
-                        bf'16
-                        bqf'16
                         - \portato
-                        bf'16
-
-                        ~
-                        bf'16
-                        aqs'16
+                        bqf'16
                         \pp
 
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                    }
+                    r16
+                    \!
+                    bf'16
+                    \mf
+
+                    ~
+                    [
+                    bf'16
+                    \>
+                    bqf'16
+                    ~
+                    \times 4/5 {
+                        bqf'16
+                        bf'16
+                        \pp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        r16
+                        bqf'16
+                        \mf
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                 }
                 {

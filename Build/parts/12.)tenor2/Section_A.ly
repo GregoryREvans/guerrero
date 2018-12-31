@@ -234,7 +234,7 @@
                         gqs'16
                         g'16
                         \pp
-
+                        - \portato
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -354,15 +354,18 @@
                 }
                 {
                     gqf'16
+                    \pp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
+                    g'16
                     \mf
-                    - \portato
+
                     \>
                     [
-                    g'16
-
                     gqs'16
-
-                    af'16
                     \pp
 
                     - \tweak stencil #constante-hairpin

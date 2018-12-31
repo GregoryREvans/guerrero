@@ -222,7 +222,7 @@
                     % [Voice 6 measure 10] %! COMMENT_MEASURE_NUMBERS
                     eqs''16
                     \mf
-
+                    - \portato
                     \>
                     [
                     f''16
@@ -230,29 +230,35 @@
                     eqs''16
 
                     f''16
+                    \pp
 
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        fqs''16
-                        - \portato
-                        f''8
+                        r16
+                        \!
+                        fqs''8
+                        \mf
 
+                        \>
+                        [
                     }
-                    eqs''8
-
-                    f''16
-
+                    f''8
+                    - \portato
                     eqs''16
                     \pp
 
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    r16
+                    \!
                 }
                 {
                     % [Voice 6 measure 11] %! COMMENT_MEASURE_NUMBERS
                     r1
-                    \!
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -363,14 +369,13 @@
                 }
                 {
                     \times 4/5 {
-                        e''16
+                        r16
+                        f''16
                         \mf
-                        - \portato
+
                         \>
                         [
-                        eqs''16
-
-                        e''8.
+                        eqs''8.
                         \pp
 
                         - \tweak stencil #constante-hairpin

@@ -210,24 +210,32 @@
                         dqs'8
                         \mf
 
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        ef'16
+                        \mf
+
                         \>
                         [
-                        ef'16
-
                         dqs'16
-
-                        d'16
                         ~
                     }
+                    dqs'16
                     d'16
-                    dqf'16
-                    - \portato
-                    cs'16
+                    \pp
 
-                    cqs'16
-
+                    - \tweak stencil #constante-hairpin
+                    \<
                     ]
-                    c'4
+                    r16
+                    \!
+                    dqf'16
+                    \mf
+                    - \portato
+                    \>
+                    cs'4
                     \pp
 
                     - \tweak stencil #constante-hairpin
@@ -362,18 +370,18 @@
                     \!
                 }
                 {
-                    bqs16
+                    cqs'16
                     \mf
 
                     \>
                     [
-                    b16
-                    - \portato
+                    c'16
+
                     bqs16
 
                     b16
                     \pp
-
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]

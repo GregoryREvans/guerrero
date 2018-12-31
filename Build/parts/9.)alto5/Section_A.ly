@@ -224,7 +224,7 @@
                 {
                     aqs'8.
                     \mf
-
+                    - \portato
                     \>
                     [
                     a'16
@@ -287,18 +287,25 @@
                     % [Voice 9 measure 14] %! COMMENT_MEASURE_NUMBERS
                     a'8.
                     \mf
-                    - \portato
+
                     \>
                     [
                     aqf'16
                     ~
                     \times 4/5 {
                         aqf'16
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         a'16
+                        \mf
 
-                        aqs'16
-
-                        a'8
+                        \>
+                        [
+                        aqs'8
                         \pp
 
                         - \tweak stencil #constante-hairpin
@@ -375,16 +382,19 @@
                     r2
                 }
                 {
+                    a'16
+                    \pp
+                    - \portato
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    r16
+                    \!
                     aqs'16
                     \mf
 
                     \>
                     [
-                    bf'16
-                    - \portato
-                    aqs'16
-
-                    a'8.
+                    bf'8.
 
                     aqs'16
 
@@ -398,13 +408,20 @@
                         aqs'16
                         - \portato
                         a'16
+                        \pp
 
-                        aqf'16
-
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                     }
-                    af'8
+                    aqs'8
+                    \mf
 
-                    aqf'8
+                    \>
+                    [
+                    a'8
                     \pp
 
                     - \tweak stencil #constante-hairpin

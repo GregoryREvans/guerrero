@@ -73,7 +73,7 @@ contrabass_note = [-2, 2, 7, -2, 2, 7, 2, -2, ]
 sopranino_chord = [17, 27, 11, 0, 8,]
 soprano_1_chord = [22, [13.25, 16, 26.25, ], 16, [13.25, 16, 26.25, ], 13.25, [13.25, 16, 26.25, ], ]
 soprano_2_chord = [16, [13, 14.75, 26.25, ], 13, [13, 14.75, 26.25, ], 14.75, [13, 14.75, 26.25, ], 13, [13, 14.75, 26.25, ], ] #maybe it's 13.25?
-soprano_3_chord = [13, [12.75, 15.5, 26, ], 13, 12.75, [12.75, 15.5, 26, ], 16, [12.75, 15.5, 26, ], 26 ]
+soprano_3_chord = [13, [12.75, 15.5, 26, ], 13, 12.75, [12.75, 15.5, 26, ], 16, [12.75, 15.5, 26, ], 12, ]
 alto_1_chord = [20, [12.5, 19, 27.75, 34, ], 12, [12.5, 19, 27.75, 34, ], 23, ]
 alto_2_chord = [12, [12.5, 15.25, 25.5, ], 1, [12.5, 15.25, 25.5, ], 12, [12.5, 15.25, 25.5, ], 23, ]
 alto_3_chord = [1, [1.75, 13.5, 22.25, 27, 30, ], 23, [1.75, 13.5, 22.25, 27, 30, ], 1, [1.75, 13.5, 22.25, 27, 30, ], 12, [1.75, 13.5, 22.25, 27, 30, ], ]
@@ -332,7 +332,7 @@ contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, c
 
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[3, 2, 1, -2, 3, 1, 3, 2, -3, 1, 2, ],
+        counts=[3, 2, 1, 2, 3, 1, 3, 2, 3, 1, 2, ],
         denominator=16,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
@@ -340,10 +340,14 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         beam_rests=False,
         ),
     extra_counts_per_division=[1, 0, -1, 1, -1, 0, 1, ],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Note, abjad.Rest],
-    #     left_counts=[1, 0, 1],
-    #     ),
+    logical_tie_masks=[
+        abjadext.rmakers.silence([5], 7),
+        ],
+    division_masks=[
+        abjadext.rmakers.SilenceMask(
+            pattern=abjad.index([4], 9),
+            ),
+        ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -362,10 +366,14 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         beam_rests=False,
         ),
     extra_counts_per_division=[-1, 0, 1, -1, 1, 0, ],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Note, abjad.Rest],
-    #     left_counts=[1, 0, 1],
-    #     ),
+    # logical_tie_masks=[
+    #     abjadext.rmakers.silence([6], 10),
+    #     ],
+    # division_masks=[
+    #     abjadext.rmakers.SilenceMask(
+    #         pattern=abjad.index([4], 9),
+    #         ),
+    #     ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -3406,7 +3414,7 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 #attach instruments and clefs
 
 print('Adding attachments ...')
-bar_line = abjad.BarLine('||')
+# bar_line = abjad.BarLine('||')
 # metro = abjad.MetronomeMark((1, 4), 90)
 markup = abjad.Markup(r'\bold { C }')
 mark = abjad.RehearsalMark(markup=markup)
@@ -3493,7 +3501,7 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     last_leaf = abjad.select(staff).leaves()[-1]
     # abjad.attach(metro, leaf1)
-    abjad.attach(bar_line, last_leaf)
+    # abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]

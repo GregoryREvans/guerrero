@@ -96,6 +96,7 @@
                         \markup { alt.6 }
                         \set Staff.instrumentName =
                         \markup { "Alto 6" }
+                        \tempo 4=90
                         aqs'16
                         \pp
                         - \tweak stencil #constante-hairpin

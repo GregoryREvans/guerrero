@@ -55,6 +55,7 @@
                     \markup { ten.2 }
                     \set Staff.instrumentName =
                     \markup { "Tenor 2" }
+                    \tempo 4=60
                     r8
                 }
                 {
@@ -158,23 +159,18 @@
                     r2
                 }
                 {
-                    \times 4/5 {
-                        a'8.
-                        \mf
-                        ~
-                        [
-                        a'8
-                        - \tweak stencil #abjad-flared-hairpin
-                        \<
-                        ]
-                    }
+                    a'4
+                    \mf
+                    - \tweak stencil #abjad-flared-hairpin
+                    \<
+                    ~
                 }
                 {
                     % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    aqs'4
-                    bf'8
+                    a'4
+                    aqs'8
                     [
-                    bqf'8
+                    bf'8
                     \ff
                     - \tweak stencil #constante-hairpin
                     \<
@@ -190,21 +186,21 @@
                 }
                 {
                     \times 4/5 {
-                        b'8
+                        bqf'8
                         \mf
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         [
+                        b'16
                         bqs'16
                         c''16
-                        cqs''16
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/7 {
-                        cs''8.
+                        cqs''8.
                         ~
+                        cqs''8
                         cs''8
-                        dqf''8
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
@@ -218,14 +214,14 @@
                 }
                 {
                     \times 2/3 {
-                        d''8
+                        dqf''8
                         \mp
 
                         - \tweak stencil #constante-hairpin
                         \<
                         r8
                         \!
-                        dqs''8
+                        d''8
                         \mp
                         \<
                         ~
@@ -234,9 +230,9 @@
                 }
                 {
                     % [Voice 12 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    dqs''8
+                    d''8
                     ]
-                    ef'4.
+                    dqs''4.
                 }
                 {
                     r2
@@ -247,22 +243,22 @@
                     r2
                 }
                 {
-                    eqf'16
+                    ef'16
                     \mf
                     - \tweak stencil #abjad-flared-hairpin
                     \<
                     [
-                    e'16
+                    eqf'16
+                    ~
+                    eqf'16
+                    e'8.
                     ~
                     e'16
-                    eqs'8.
-                    ~
                     eqs'16
-                    f'16
                     \times 2/3 {
+                        f'16
                         fqs'16
                         fs'16
-                        gqf'16
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<

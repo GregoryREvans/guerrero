@@ -95,6 +95,7 @@
                         \markup { bs.2 }
                         \set Staff.instrumentName =
                         \markup { "Bass 2" }
+                        \tempo 4=90
                         bqs16
                         \mp
                         \<

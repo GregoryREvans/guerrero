@@ -234,40 +234,50 @@
                     % [Voice 4 measure 11] %! COMMENT_MEASURE_NUMBERS
                     eqf''8.
                     \mf
-
+                    - \portato
                     \>
                     [
                     ef''16
 
                     \times 4/5 {
                         dqs''16
-                        - \portato
+
                         d''16
 
                         dqf''16
-
-                        cs''16
-
-                        dqf''16
-                        ~
-                    }
-                    dqf''16
-                    d''16
-
-                    ~
-                    d''16
-                    dqs''16
-                    - \portato
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        d''8
-
-                        dqs''16
                         \pp
 
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        cs''16
+                        \mf
+                        \>
+                        ~
+                        [
+                    }
+                    cs''16
+                    dqf''16
+                    - \portato
+                    ~
+                    dqf''16
+                    d''16
+                    \pp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        r8
+                        \!
+                        dqs''16
+                        \pp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                 }
                 {
@@ -299,7 +309,7 @@
 
                     \>
                     [
-                    dqf''16
+                    dqs''16
                     \pp
 
                     - \tweak stencil #constante-hairpin
@@ -392,33 +402,40 @@
                 }
                 {
                     \times 4/5 {
-                        cs''16
+                        d''16
                         \mf
                         - \portato
                         \>
                         [
-                        cqs''8
+                        dqf''8
 
                         cs''8
                         ~
                     }
                     cs''16
-                    dqf''16
+                    cqs''16
+                    \pp
 
                     ~
-                    dqf''16
-                    d''16
-
+                    cqs''16
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 4 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        dqs''16
+                        cs''16
+                        \mf
 
-                        d''8
+                        \>
+                        [
+                        dqf''8
                         \pp
-                        - \portato
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]

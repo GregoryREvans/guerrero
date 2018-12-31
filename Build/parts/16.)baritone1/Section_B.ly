@@ -94,6 +94,7 @@
                     \markup { bar.1 }
                     \set Staff.instrumentName =
                     \markup { "Baritone 1" }
+                    \tempo 4=90
                     dqs'4
                     \mp
                     \<

@@ -219,27 +219,29 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
+                        r16
                         gqf'16
                         \mf
-
+                        - \portato
                         \>
                         [
                         fs'16
-
-                        gqf'16
                         ~
                     }
-                    gqf'16
                     fs'16
-                    - \portato
                     gqf'16
-
-                    fs'16
                     \pp
 
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    r16
+                    \!
+                    fs'16
+                    \pp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
                     % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS
@@ -276,15 +278,11 @@
 
                         \>
                         [
-                        g'16
+                        fs'16
 
-                        gqs'16
+                        gqf'16
                         - \portato
                     }
-                    af'16
-
-                    gqs'16
-
                     g'16
 
                     gqs'16
@@ -293,6 +291,13 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    r16
+                    \!
+                    af'16
+                    \mf
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
                 {
                     r2.
@@ -386,34 +391,40 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        g'16
+                        gqs'16
                         \mf
-                        - \portato
+
                         \>
                         [
-                        gqf'8
-
+                        g'8
+                        - \portato
                     }
-                    fs'16
+                    gqs'16
+                    \pp
 
-                    gqf'16
-
-                    ~
-                    gqf'16
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    r16
+                    \!
+                    r16
                     g'16
+                    \mf
 
+                    \>
+                    [
                 }
                 {
                     \times 4/5 {
                         % [Voice 15 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        gqs'8.
-                        - \portato
-                        g'8
+                        gqf'8.
+
+                        fs'8
 
                     }
-                    gqs'8
-
-                    af'8
+                    gqf'8
+                    - \portato
+                    g'8
                     \pp
 
                     - \tweak stencil #constante-hairpin
