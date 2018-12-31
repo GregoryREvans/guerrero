@@ -345,12 +345,14 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     #     right_counts=[2],
     #     outer_divisions_only=True,
     #     ),
-    # division_masks=[
-    #     abjadext.rmakers.sustain([0], 4),
-    #     ],
-    # logical_tie_masks=[
-    #     abjadext.rmakers.silence([2], 7),
-    #     ],
+    logical_tie_masks=[
+        abjadext.rmakers.silence([8], 11),
+        ],
+    division_masks=[
+        abjadext.rmakers.SilenceMask(
+            pattern=abjad.index([7], 17),
+            ),
+        ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,

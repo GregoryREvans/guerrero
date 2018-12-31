@@ -66,19 +66,21 @@ contrabass_notes = [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
         counts=[1, 1, 1, 5, 3, 2, 4],
-        denominator=16,
+        denominator=8,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
         beam_divisions_together=True,
         beam_rests=False,
         ),
     extra_counts_per_division=[0, 1, -1, ],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Rest, abjad.Note],
-    #     right_classes=[abjad.Rest, abjad.Note],
-    #     left_counts=[1, 0, 1],
-    #     right_counts=[1, 0],
-    #     ),
+    logical_tie_masks=[
+        abjadext.rmakers.silence([8], 5),
+        ],
+    division_masks=[
+        abjadext.rmakers.SilenceMask(
+            pattern=abjad.index([2], 11),
+            ),
+        ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -89,7 +91,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
 
 rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[4, 3, -1, 2],
+        counts=[4, 3, 1, 5, 2],
         denominator=8,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
@@ -97,12 +99,14 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         beam_rests=False,
         ),
     extra_counts_per_division=[-1, 0, -1, 1, 0, ],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Rest, abjad.Note],
-    #     right_classes=[abjad.Rest, abjad.Note],
-    #     left_counts=[1, 0, 0, 1],
-    #     right_counts=[1, 0],
-    #     ),
+    logical_tie_masks=[
+        abjadext.rmakers.silence([8], 5),
+        ],
+    division_masks=[
+        abjadext.rmakers.SilenceMask(
+            pattern=abjad.index([2], 11),
+            ),
+        ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -114,17 +118,17 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
 # Initialize AttachmentHandler
 
 attachment_handler_one = AttachmentHandler(
-    starting_dynamic='mf',
-    ending_dynamic='ff',
-    hairpin='<|',
-    # articulation_list=['tenuto'],
+    starting_dynamic='mp',
+    ending_dynamic='mf',
+    hairpin='<',
+    articulation_list=['halfopen', '', 'stopped', 'halfopen', 'stopped', ],
 )
 
 attachment_handler_two = AttachmentHandler(
-    starting_dynamic='mp',
-    ending_dynamic='f',
-    hairpin='<',
-    articulation_list=['tenuto', '', '', '', '', ],
+    starting_dynamic='mf',
+    ending_dynamic='p',
+    hairpin='>',
+    articulation_list=['flageolet', 'flageolet', '', 'flageolet', 'stopped', ],
 )
 
 # Initialize MusicMakers with the rhythm-makers.
@@ -1312,20 +1316,20 @@ for voice in abjad.select(score).components(abjad.Voice):
         specifier(run)
     abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False,)
 
-print('Beautifying score ...')
-# cutaway score
-for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-    for selection in abjad.select(staff).components(abjad.Rest).group_by_contiguity():
-        start_command = abjad.LilyPondLiteral(
-            r'\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff',
-            format_slot='before',
-            )
-        stop_command = abjad.LilyPondLiteral(
-            r'\stopStaff \startStaff',
-            format_slot='after',
-            )
-        abjad.attach(start_command, selection[0])
-        abjad.attach(stop_command, selection[-1])
+# print('Beautifying score ...')
+# # cutaway score
+# for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+#     for selection in abjad.select(staff).components(abjad.Rest).group_by_contiguity():
+#         start_command = abjad.LilyPondLiteral(
+#             r'\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff',
+#             format_slot='before',
+#             )
+#         stop_command = abjad.LilyPondLiteral(
+#             r'\stopStaff \startStaff',
+#             format_slot='after',
+#             )
+#         abjad.attach(start_command, selection[0])
+#         abjad.attach(stop_command, selection[-1])
 
 print('Stopping Hairpins ...')
 for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
@@ -1338,10 +1342,10 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
         elif isinstance(previous_leaf, abjad.Rest):
             pass
 
-for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-    first_leaf = abjad.select(staff).leaves()[0]
-    stop = abjad.LilyPondLiteral(r'\!', format_slot='after',)
-    abjad.attach(stop, first_leaf)
+# for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+#     first_leaf = abjad.select(staff).leaves()[0]
+#     stop = abjad.LilyPondLiteral(r'\!', format_slot='after',)
+#     abjad.attach(stop, first_leaf)
 
 scales = [
     sopranino_notes,

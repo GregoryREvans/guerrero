@@ -318,10 +318,14 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         beam_rests=False,
         ),
     extra_counts_per_division=[-1, 0, 1, -1, 1, 0, ],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Note, abjad.Rest],
-    #     left_counts=[1, 0, 1],
-    #     ),
+    logical_tie_masks=[
+        abjadext.rmakers.silence([8], 5),
+        ],
+    division_masks=[
+        abjadext.rmakers.SilenceMask(
+            pattern=abjad.index([2], 11),
+            ),
+        ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,

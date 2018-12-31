@@ -96,7 +96,7 @@
                     \markup { "Bass 1" }
                     cqs'4
                     \mf
-                    - \flageolet
+
                     \>
                     \glissando
                     \!
@@ -114,7 +114,7 @@
                         \glissando
                         cs'4
                         \ppp
-
+                        - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                         \glissando
@@ -124,16 +124,16 @@
                     dqf'4
                     \pp
                     - \halfopen
+                    - \tweak stencil #constante-hairpin
                     \<
                     \glissando
                 }
                 {
                     \times 2/3 {
                         % [Voice 19 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        d'4
-
-                        \glissando
-                        dqf'8
+                        r4
+                        \!
+                        d'8
                         \mp
                         - \halfopen
                         - \tweak stencil #constante-hairpin
@@ -142,25 +142,31 @@
                     }
                 }
                 {
-                    cs'2
+                    dqf'4
                     \mf
-                    \>
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                     \glissando
-                    cqs'4
-                    - \flageolet
+                    r4
+                    \!
+                    cs'4
+                    \mf
+
+                    \>
                     \glissando
                 }
                 {
                     % [Voice 19 measure 3] %! COMMENT_MEASURE_NUMBERS
-                    cs'4
+                    cqs'4
                     \ppp
-                    - \flageolet
+
                     - \tweak stencil #constante-hairpin
                     \<
                     \glissando
                 }
                 {
-                    dqf'4
+                    cs'4
                     \pp
 
                     - \tweak stencil #constante-hairpin
@@ -169,22 +175,20 @@
                 }
                 {
                     \times 2/3 {
-                        cs'8
-                        \mf
-                        - \halfopen
-                        \>
+                        dqf'8
+                        \ppp
+                        - \flageolet
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \glissando
-                        dqf'4
-                        ~
-                        \glissando
+                        r4
+                        \!
                     }
-                    \parenthesize
-                    dqf'8
-                    [
-                    \glissando
+                    r8
                     cs'8
+                    \mf
+                    \>
                     ~
-                    ]
                     \glissando
                 }
                 {
@@ -193,7 +197,7 @@
                     cs'4
                     \glissando
                     dqf'8
-
+                    - \flageolet
                     [
                     \glissando
                     cs'8
@@ -201,58 +205,52 @@
                     ]
                     \glissando
                     \times 2/3 {
-                        cqs'4
-                        - \halfopen
-                        \glissando
-                        c'8
+                        dqf'4
                         \ppp
-
+                        - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                         \glissando
+                        r8
+                        \!
                     }
                 }
                 {
-                    cqs'4
-                    \pp
-                    \<
-                    ~
-                    \glissando
+                    r4
                 }
                 {
                     % [Voice 19 measure 5] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
-                    cqs'4.
-                    \glissando
-                    cs'8
-                    - \halfopen
-                    \glissando
-                    cqs'2
+                    r2
+                    cs'2
+                    \pp
+                    \<
                     \glissando
                 }
                 {
                     \times 2/3 {
                         % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        c'8
+                        cqs'8
                         - \halfopen
                         [
                         \glissando
-                        bqs8
-                        - \halfopen
-                        \glissando
                         c'8
-                        ~
+                        \mp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
                         \glissando
+                        r8
+                        \!
                     }
-                    \parenthesize
-                    c'4
-                    \glissando
+                    r4
                     \times 2/3 {
                         cqs'4
+                        \pp
                         - \halfopen
+                        \<
                         \glissando
-                        c'8
+                        cs'8
                         \mp
                         - \halfopen
                         - \tweak stencil #constante-hairpin
@@ -261,56 +259,57 @@
                     }
                 }
                 {
-                    bqs4
+                    cqs'4
                     \mf
-
+                    - \halfopen
                     \>
                     \glissando
                 }
                 {
                     % [Voice 19 measure 7] %! COMMENT_MEASURE_NUMBERS
-                    b4
+                    c'4
 
                     \glissando
-                    bqf4
+                    bqs4
                     ~
                     \glissando
                     \times 2/3 {
                         \parenthesize
-                        bqf8
+                        bqs8
+                        \ppp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \glissando
-                        b4
-                        - \flageolet
-                        \glissando
+                        r4
+                        \!
                     }
-                    bqf4
-                    ~
-                    \glissando
-                }
-                {
-                    % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
-                    bqf4
-                    \ppp
+                    c'4
+                    \mf
+                    - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
                     \glissando
                 }
                 {
-                    b8
+                    % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                    \!
+                }
+                {
+                    cqs'8
                     \pp
-
+                    - \halfopen
                     \<
                     [
                     \glissando
-                    bqs8
+                    c'8
                     ~
                     ]
                     \glissando
                     \parenthesize
-                    bqs4.
+                    c'4.
                     \glissando
-                    c'8
+                    bqs8
                     ~
                     [
                     \glissando
@@ -319,21 +318,25 @@
                     \times 4/5 {
                         % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
                         \parenthesize
-                        c'8
-                        \glissando
                         bqs8
-                        - \halfopen
-                        \glissando
-                        b8
-
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
+                        \glissando
+                        r8
+                        \!
+                        b8
+                        \pp
+                        - \halfopen
+                        \<
                         \glissando
                         bqf4
                         - \halfopen
                         \glissando
                     }
-                    bf4
-                    - \halfopen
+                    b4
+
                     \glissando
                     bqf4
                     ~
@@ -350,269 +353,269 @@
                 }
                 {
                     b4
-                    \mf
+                    \ppp
                     - \flageolet
-                    \>
+                    - \tweak stencil #constante-hairpin
+                    \<
                     \glissando
-                    bqs4
-                    ~
-                    \glissando
+                    r4
+                    \!
                     \times 2/3 {
-                        \parenthesize
+                        r8
                         bqs8
+                        \mf
+                        - \halfopen
+                        \>
                         [
                         \glissando
                         c'8
-                        - \halfopen
-                        \glissando
-                        cqs'8
-                        - \flageolet
+                        \ppp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
                         \glissando
                     }
                 }
                 {
                     % [Voice 19 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    cs'4
-                    ~
-                    \glissando
+                    r4
+                    \!
                     \times 2/3 {
-                        \parenthesize
-                        cs'8
-                        \glissando
-                        cqs'4
+                        bqs8
+                        \mf
                         - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \glissando
+                        r4
+                        \!
                     }
-                    cs'8
-
+                    b8
+                    \mf
+                    - \halfopen
+                    \>
                     \glissando
-                    cqs'4.
+                    bqf4.
                     \glissando
                 }
                 {
                     % [Voice 19 measure 12] %! COMMENT_MEASURE_NUMBERS
-                    cs'8
+                    bf8
                     \pp
                     - \halfopen
                     \<
                     [
                     \glissando
-                    cqs'8
+                    bqf8
                     ~
                     ]
                     \glissando
                     \times 2/3 {
                         \parenthesize
-                        cqs'4
+                        bqf4
                         \glissando
-                        cs'8
+                        b8
                         ~
                         \glissando
                     }
                     \parenthesize
-                    cs'4
+                    b4
+                    \mp
+                    - \tweak stencil #constante-hairpin
+                    \<
                     \glissando
-                    cqs'4
-                    ~
-                    \glissando
+                    r4
+                    \!
                 }
                 {
                     % [Voice 19 measure 13] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
-                    cqs'4
-                    \glissando
-                    cs'4
+                    r4
+                    bqs4
                     \mp
-                    - \halfopen
+
                     - \tweak stencil #constante-hairpin
                     \<
                     \glissando
                 }
                 {
-                    cqs'4
-                    \mf
-                    - \flageolet
-                    \>
+                    c'4
+                    \ppp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                     \glissando
-                    \times 2/3 {
-                        c'4
-                        - \flageolet
-                        \glissando
-                        cqs'8
-                        - \halfopen
-                        \glissando
-                    }
+                    r4
+                    \!
                 }
                 {
                     % [Voice 19 measure 14] %! COMMENT_MEASURE_NUMBERS
-                    cs'4
+                    cqs'4
+                    \mf
 
+                    \>
                     \glissando
                     \times 2/3 {
-                        cqs'4
-                        - \halfopen
+                        cs'4
+                        \ppp
+
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \glissando
-                        c'8
-                        - \halfopen
-                        \glissando
+                        r8
+                        \!
                     }
-                    bqs2
+                    cqs'2
+                    \mf
+                    \>
                     ~
                     \glissando
                 }
                 {
                     % [Voice 19 measure 15] %! COMMENT_MEASURE_NUMBERS
                     \parenthesize
-                    bqs4
+                    cqs'4
                     \glissando
                     \times 2/3 {
-                        b8
-
+                        cs'8
+                        - \flageolet
                         \glissando
-                        bqs4
+                        cqs'4
                         \ppp
-
+                        - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                         \glissando
                     }
                 }
                 {
-                    b4
+                    cs'4
                     \pp
                     - \halfopen
                     \<
                     \glissando
                     \times 2/3 {
-                        bqs8
-
-                        [
-                        \glissando
-                        c'8
+                        cqs'8
+                        \mp
                         - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \glissando
-                        bqs8
+                        r8
+                        \!
+                        cs'8
+                        \pp
+                        \<
                         ~
+                        [
                         \glissando
                     }
                 }
                 {
                     % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS
                     \parenthesize
-                    bqs8
+                    cs'8
                     ]
                     \glissando
-                    c'4.
+                    cqs'4.
                     \glissando
-                    bqs8
-
-                    [
-                    \glissando
-                    b8
-                    \mp
-                    - \halfopen
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
+                    r4
+                    \!
                 }
                 {
                     \times 2/3 {
-                        bqs8
+                        cs'8
                         \mf
-
+                        - \halfopen
                         \>
+                        [
                         \glissando
-                        b8
-                        - \flageolet
-                        \glissando
-                        bqf8
+                        cqs'8
                         \ppp
                         - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         \glissando
+                        r8
+                        \!
                     }
                 }
                 {
                     % [Voice 19 measure 17] %! COMMENT_MEASURE_NUMBERS
-                    bf4
-                    \pp
-                    \<
-                    ~
-                    \glissando
+                    r4
                     \times 2/3 {
-                        \parenthesize
-                        bf8
-                        \glissando
-                        bqf4
+                        r8
+                        c'4
+                        \pp
                         - \halfopen
+                        \<
                         \glissando
                     }
-                    bf2
+                    cqs'2
                     \glissando
                 }
                 {
                     % [Voice 19 measure 18] %! COMMENT_MEASURE_NUMBERS
-                    bqf4
+                    cs'4
                     \mf
                     - \halfopen
                     \>
                     \glissando
-                    b4
+                    cqs'4
                     \ppp
-                    - \flageolet
+
                     - \tweak stencil #constante-hairpin
                     \<
                     \glissando
                 }
                 {
-                    bqf4
+                    c'4
                     \pp
                     \<
                     ~
                     \glissando
                     \times 2/3 {
                         \parenthesize
-                        bqf8
+                        c'8
                         [
                         \glissando
-                        b8
-                        - \halfopen
-                        \glissando
                         bqs8
+                        \mp
                         - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
                         \glissando
+                        r8
+                        \!
                     }
                 }
                 {
                     % [Voice 19 measure 19] %! COMMENT_MEASURE_NUMBERS
                     b4
-                    \mp
+                    \pp
                     - \halfopen
                     - \tweak stencil #constante-hairpin
                     \<
                     \glissando
                 }
                 {
-                    bqs4
+                    r4
+                    \!
+                    bqs2
                     \mf
-                    - \halfopen
                     \>
-                    \glissando
-                    b2
                     \glissando
                 }
                 {
                     % [Voice 19 measure 20] %! COMMENT_MEASURE_NUMBERS
-                    bqf4
+                    b4
                     \pp
 
                     \<
                     \glissando
-                    b4
+                    bqs4
                     \mp
                     - \halfopen
                     - \tweak stencil #constante-hairpin
@@ -620,39 +623,41 @@
                     \glissando
                 }
                 {
-                    bqf8
+                    c'8
                     \mf
-
+                    - \flageolet
                     \>
                     [
                     \glissando
-                    bf8
+                    bqs8
+                    \ppp
                     - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
                     ]
                     \glissando
-                    bqf4
-                    ~
-                    \glissando
+                    r4
+                    \!
                 }
                 {
                     % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
-                    bqf8
-                    [
-                    \glissando
-                    b8
+                    r8
+                    c'8
+                    \mf
+                    \>
                     ~
+                    [
                     \glissando
                     \times 2/3 {
                         \parenthesize
-                        b8
+                        c'8
                         \glissando
                         bqs8
-                        - \flageolet
-                        \glissando
-                        c'8
-                        \ppp
                         - \halfopen
+                        \glissando
+                        b8
+                        \ppp
+
                         - \tweak stencil #constante-hairpin
                         \<
                         \glissando
@@ -666,40 +671,33 @@
 
                         \<
                         \glissando
-                        c'8
-                        - \halfopen
-                        \glissando
-                        cqs'8
+                        b8
                         \mp
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         \glissando
+                        r8
+                        \!
                     }
                 }
                 {
                     \times 2/3 {
                         % [Voice 19 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        cs'4
+                        r4
+                        bqf8
                         \mf
-
-                        \>
-                        \glissando
-                        cqs'8
-                        ~
-                        [
+                        - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \glissando
                     }
-                    \parenthesize
-                    cqs'8
-                    \glissando
-                    c'8
-                    ~
-                    ]
-                    \glissando
-                    \parenthesize
-                    c'2
+                    r4
+                    \!
+                    bf2
+                    \mf
+                    \>
                     ~
                     \glissando
                 }
@@ -707,9 +705,9 @@
                     \times 2/3 {
                         % [Voice 19 measure 23] %! COMMENT_MEASURE_NUMBERS
                         \parenthesize
-                        c'8
+                        bf8
                         \glissando
-                        cqs'4
+                        bqf4
                         \ppp
                         - \halfopen
                         - \tweak stencil #constante-hairpin
@@ -718,24 +716,26 @@
                     }
                 }
                 {
-                    cs'4
-                    \pp
+                    bf4
+                    \mp
                     - \halfopen
+                    - \tweak stencil #constante-hairpin
                     \<
                     \glissando
                     \times 2/3 {
-                        dqf'4
+                        r4
+                        \!
+                        bqf8
+                        \pp
                         - \halfopen
-                        \glissando
-                        cs'8
-                        - \halfopen
+                        \<
                         [
                         \glissando
                     }
-                    cqs'8
-
+                    b8
+                    - \halfopen
                     \glissando
-                    cs'8
+                    bqf8
                     ~
                     ]
                     \glissando
@@ -743,54 +743,42 @@
                 {
                     % [Voice 19 measure 24] %! COMMENT_MEASURE_NUMBERS
                     \parenthesize
-                    cs'4
+                    bqf4
                     \glissando
-                    cqs'8
+                    b8
+                    \mp
                     - \halfopen
-                    [
+                    - \tweak stencil #constante-hairpin
+                    \<
                     \glissando
-                    c'8
-                    ~
-                    ]
-                    \glissando
-                    \parenthesize
-                    c'2
-                    \glissando
+                    r8
+                    \!
+                    r2
                 }
                 {
-                    \times 2/3 {
-                        % [Voice 19 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        cqs'8
-
-                        \glissando
-                        c'4
-                        \mp
-                        - \halfopen
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \glissando
-                    }
+                    % [Voice 19 measure 25] %! COMMENT_MEASURE_NUMBERS
+                    r4
                 }
                 {
-                    cqs'8
+                    bqs8
                     \mf
-                    - \halfopen
+
                     \>
                     [
                     \glissando
-                    cs'8
+                    b8
 
                     \glissando
-                    cqs'8
+                    bqs8
 
                     ~
                     \glissando
                     \parenthesize
-                    cqs'8
+                    bqs8
                     \glissando
-                    c'8
+                    b8
                     \ppp
-
+                    - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
