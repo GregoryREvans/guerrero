@@ -102,7 +102,7 @@
                 {
                     <f'' ef'''>4
                     \ff
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -164,7 +164,7 @@
                     [
                     eef'''8.
                     \f
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -312,7 +312,7 @@
                         [
                         <af' f''>8
                         \p
-                        - \portato
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -370,7 +370,7 @@
                     % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS
                     fes''4
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -515,7 +515,7 @@
                         aqf'16
                         ctes'4
                         \f
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -565,7 +565,7 @@
                         \>
                         <c' b'>4
                         \p
-                        - \portato
+
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -723,7 +723,6 @@
                     aqf'4
                     \pp
                     \<
-                    \bar "||"
                 }
             }
         }

@@ -191,7 +191,7 @@
                         [
                         <b' fs''>8.
                         \p
-                        - \portato
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -229,7 +229,7 @@
                 {
                     bes'8
                     \pp
-                    - \tenuto
+
                     \<
                     gqf''4.
                 }
@@ -364,7 +364,7 @@
                 {
                     <b' fs''>4
                     \ff
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                     r4
@@ -479,7 +479,7 @@
                         % [Voice 20 measure 17] %! COMMENT_MEASURE_NUMBERS
                         ates'8
                         \pp
-                        - \tenuto
+
                         \<
                         [
                         cqs'8.
@@ -620,7 +620,7 @@
                     % [Voice 20 measure 24] %! COMMENT_MEASURE_NUMBERS
                     <c' b'>4
                     \ff
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }

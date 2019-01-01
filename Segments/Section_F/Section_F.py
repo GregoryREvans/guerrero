@@ -69,20 +69,20 @@ bass_2_note = [11.25, 18.5, 9.75, 0.5, ]
 contrabass_note = [2.25, -2.5, 7.75, 18.5, 16.25, 25.5, ]
 
 sopranino_trill = [[17, 27, ], [8, 11, ], [0, 11, ], [17, 8, ]]
-soprano_1_trill = [[5, 13, ], [22, 16, ], [32, 22, ], [16, 5, ]]
-soprano_2_trill = [[22, 16, ], [32, 22, ], [5, 13, ], [16, 5, ]]
-soprano_3_trill = [[5, 13, ], [22, 16, ], [32, 22, ], [16, 5, ]]
-alto_1_trill = [[23, 20, ], [1, 12, ], [39, 29, ], [12, 20], [29, 23, ]]
-alto_2_trill = [[23, 20, ], [39, 29, ], [12, 20], [1, 12, ], [29, 23, ]]
-alto_3_trill = [[1, 12, ], [23, 20, ], [39, 29, ], [12, 20], [29, 23, ]]
-alto_4_trill = [[39, 29, ], [12, 20], [1, 12, ], [23, 20, ], [29, 23, ]]
-alto_5_trill = [[39, 29, ], [1, 12, ], [23, 20, ], [29, 23, ], [12, 20]]
-alto_6_trill = [[23, 20, ], [29, 23, ], [39, 29, ], [1, 12, ], [12, 20]]
-tenor_1_trill = [[-1, 6, ], [28, 25, ], [6, 17, ], [28, 34, ]]
-tenor_2_trill = [[6, 17, ], [28, 34, ], [-1, 6, ], [28, 25, ]]
-tenor_3_trill = [[6, 17, ], [28, 25, ], [28, 34, ], [-1, 6, ]]
-tenor_4_trill = [[6, 17, ], [28, 34, ], [28, 25, ], [-1, 6, ]]
-tenor_5_trill = [[-1, 6, ], [6, 17, ], [28, 34, ], [28, 25, ]]
+soprano_1_trill = [[5, 13, ], [22, 16, ], [16, 5, ]]
+soprano_2_trill = [[22, 16, ], [5, 13, ], [16, 5, ]]
+soprano_3_trill = [[5, 13, ], [22, 16, ], [16, 5, ]]
+alto_1_trill = [[23, 20, ], [1, 12, ], [12, 20], [12, 23, ]]
+alto_2_trill = [[23, 20, ], [12, 20], [1, 12, ], [12, 23, ]]
+alto_3_trill = [[1, 12, ], [23, 20, ], [12, 20], [12, 23, ]]
+alto_4_trill = [[12, 20], [1, 12, ], [23, 20, ], [12, 23, ]]
+alto_5_trill = [[1, 12, ], [23, 20, ], [12, 23, ], [12, 20]]
+alto_6_trill = [[23, 20, ], [12, 23, ], [1, 12, ], [12, 20]]
+tenor_1_trill = [[-1, 6, ], [17, 25, ], [6, 17, ],]
+tenor_2_trill = [[6, 17, ], [-1, 6, ], [17, 25, ]]
+tenor_3_trill = [[6, 17, ], [17, 25, ], [-1, 6, ]]
+tenor_4_trill = [[6, 17, ], [17, 25, ], [-1, 6, ]]
+tenor_5_trill = [[-1, 6, ], [6, 17, ], [17, 25, ]]
 baritone_1_trill = [[4, 6, ], [24, 13, ], [6, 13, ]]
 baritone_2_trill = [[4, 6, ], [6, 13, ], [24, 13, ]]
 baritone_3_trill = [[24, 13, ], [6, 13, ], [4, 6, ]]
@@ -100,7 +100,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = sopranino_random_walk[i-1] + movement
     sopranino_random_walk.append(value)
-    sopranino_walk_chord = [11, 11, 27, 27, 17, 17, 0, 0, 8, 8, ]
+    sopranino_walk_chord = [11, 27, 17, 0, 8, ]
 l = len(sopranino_walk_chord)
 sopranino_random_walk_notes = [sopranino_walk_chord[x] for x in reduceMod(l, sopranino_random_walk)]
 
@@ -111,7 +111,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_1_random_walk[i-1] + movement
     soprano_1_random_walk.append(value)
-soprano_1_walk_chord = [13, 13, 5, 5, 16, 16, 22, 22, ]
+soprano_1_walk_chord = [13, 5, 16, 22, ]
 l = len(soprano_1_walk_chord)
 soprano_1_random_walk_notes = [soprano_1_walk_chord[x] for x in reduceMod(l, soprano_1_random_walk)]
 
@@ -123,7 +123,7 @@ for i in range(1, 1000):
     value = soprano_2_random_walk[i-1] + movement
     soprano_2_random_walk.append(value)
 soprano_2_random_walk.append(value)
-soprano_2_walk_chord = [16, 16, 22, 22, 13, 13, 5, 5, ]
+soprano_2_walk_chord = [16, 22, 13, 5, ]
 l = len(soprano_2_walk_chord)
 soprano_2_random_walk_notes = [soprano_2_walk_chord[x] for x in reduceMod(l, soprano_2_random_walk)]
 
@@ -135,7 +135,7 @@ for i in range(1, 1000):
     value = soprano_3_random_walk[i-1] + movement
     soprano_3_random_walk.append(value)
 soprano_3_random_walk.append(value)
-soprano_3_walk_chord = [16, 16, 5, 5, 22, 22, 13, 13, ]
+soprano_3_walk_chord = [16, 5, 22, 13, ]
 l = len(soprano_3_walk_chord)
 soprano_3_random_walk_notes = [soprano_3_walk_chord[x] for x in reduceMod(l, soprano_3_random_walk)]
 
@@ -146,7 +146,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_1_random_walk[i-1] + movement
     alto_1_random_walk.append(value)
-alto_1_walk_chord = [12, 12, 23, 23, 20, 20, 1, 1, 12, 12, 20, 20, ]
+alto_1_walk_chord = [12, 23, 20, 1, 12, 20, ]
 l = len(alto_1_walk_chord)
 alto_1_random_walk_notes = [alto_1_walk_chord[x] for x in reduceMod(l, alto_1_random_walk)]
 
@@ -157,7 +157,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_2_random_walk[i-1] + movement
     alto_2_random_walk.append(value)
-alto_2_walk_chord = [23, 20, 20, 12, 12, 23, 23, 23, 1, 1, 12, 12, 20, 20, ]
+alto_2_walk_chord = [23, 20, 12, 23, 1, 12, 20, ]
 l = len(alto_2_walk_chord)
 alto_2_random_walk_notes = [alto_2_walk_chord[x] for x in reduceMod(l, alto_2_random_walk)]
 
@@ -168,7 +168,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_3_random_walk[i-1] + movement
     alto_3_random_walk.append(value)
-alto_3_walk_chord = [23, 23, 23, 23, 20, 20, 12, 12, 1, 1, 12, 12, 20, 20, ]
+alto_3_walk_chord = [23, 20, 12, 1, 12, 20, ]
 l = len(alto_3_walk_chord)
 alto_3_random_walk_notes = [alto_3_walk_chord[x] for x in reduceMod(l, alto_3_random_walk)]
 
@@ -179,7 +179,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_4_random_walk[i-1] + movement
     alto_4_random_walk.append(value)
-alto_4_walk_chord = [23, 1, 1, 12, 12, 20, 20, 23, 23, 20, 20, 12, 12, ]
+alto_4_walk_chord = [23, 1, 12, 20, 23, 20, 12, ]
 l = len(alto_4_walk_chord)
 alto_4_random_walk_notes = [alto_4_walk_chord[x] for x in reduceMod(l, alto_4_random_walk)]
 
@@ -190,7 +190,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_5_random_walk[i-1] + movement
     alto_5_random_walk.append(value)
-alto_5_walk_chord = [23, 1, 1, 12, 12, 20, 20, 23, 23, 20, 20, 12, 12, ]
+alto_5_walk_chord = [23, 1, 12, 20, 23, 20, 12, ]
 l = len(alto_5_walk_chord)
 alto_5_random_walk_notes = [alto_5_walk_chord[x] for x in reduceMod(l, alto_5_random_walk)]
 
@@ -201,7 +201,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_6_random_walk[i-1] + movement
     alto_6_random_walk.append(value)
-alto_6_walk_chord = [23, 23, 20, 20, 12, 12, 1, 1, 12, 12, 20, 20, 23, 23, ]
+alto_6_walk_chord = [23, 20, 12, 1, 12, 20, 23, ]
 l = len(alto_6_walk_chord)
 alto_6_random_walk_notes = [alto_6_walk_chord[x] for x in reduceMod(l, alto_6_random_walk)]
 
@@ -212,7 +212,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_1_random_walk[i-1] + movement
     tenor_1_random_walk.append(value)
-tenor_1_walk_chord = [-1, -1, 17, 17, 25, 25, 17, 17, 6, 6, ]
+tenor_1_walk_chord = [-1, 17, 25, 17, 6, ]
 l = len(tenor_1_walk_chord)
 tenor_1_random_walk_notes = [tenor_1_walk_chord[x] for x in reduceMod(l, tenor_1_random_walk)]
 
@@ -223,7 +223,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_2_random_walk[i-1] + movement
     tenor_2_random_walk.append(value)
-tenor_2_walk_chord = [-1, -1, 17, 17, 25, 25, 17, 17, 6, 6, ]
+tenor_2_walk_chord = [-1, 17, 25, 17, 6, ]
 l = len(tenor_2_walk_chord)
 tenor_2_random_walk_notes = [tenor_2_walk_chord[x] for x in reduceMod(l, tenor_2_random_walk)]
 
@@ -234,7 +234,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_3_random_walk[i-1] + movement
     tenor_3_random_walk.append(value)
-tenor_3_walk_chord = [17, 17, 6, 6, -1, -1, 17, 17, 25, 25, ]
+tenor_3_walk_chord = [17, 6, -1, 17, 25, ]
 l = len(tenor_3_walk_chord)
 tenor_3_random_walk_notes = [tenor_3_walk_chord[x] for x in reduceMod(l, tenor_3_random_walk)]
 
@@ -245,7 +245,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_4_random_walk[i-1] + movement
     tenor_4_random_walk.append(value)
-tenor_4_walk_chord = [17, 17, 6, 6, -1, -1, 17, 17, 25, 25, ]
+tenor_4_walk_chord = [17, 6, -1, 17, 25, ]
 l = len(tenor_4_walk_chord)
 tenor_4_random_walk_notes = [tenor_4_walk_chord[x] for x in reduceMod(l, tenor_4_random_walk)]
 
@@ -256,7 +256,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_5_random_walk[i-1] + movement
     tenor_5_random_walk.append(value)
-tenor_5_walk_chord = [25, 25, 17, 17, 6, 6, -1, -1, 17, 17, ]
+tenor_5_walk_chord = [25, 17, 6, -1, 17, ]
 l = len(tenor_5_walk_chord)
 tenor_5_random_walk_notes = [tenor_5_walk_chord[x] for x in reduceMod(l, tenor_5_random_walk)]
 
@@ -267,7 +267,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_1_random_walk[i-1] + movement
     baritone_1_random_walk.append(value)
-baritone_1_walk_chord = [6, 6, 4, 4, 13, 13, 24, 24, 13, 13, ]
+baritone_1_walk_chord = [6, 4, 13, 24, 13, ]
 l = len(baritone_1_walk_chord)
 baritone_1_random_walk_notes = [baritone_1_walk_chord[x] for x in reduceMod(l, baritone_1_random_walk)]
 
@@ -278,7 +278,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_2_random_walk[i-1] + movement
     baritone_2_random_walk.append(value)
-baritone_2_walk_chord = [6, 6, 13, 13, 4, 4, 13, 13, 24, 24, ]
+baritone_2_walk_chord = [6, 13, 4, 13, 24, ]
 l = len(baritone_2_walk_chord)
 baritone_2_random_walk_notes = [baritone_2_walk_chord[x] for x in reduceMod(l, baritone_2_random_walk)]
 
@@ -289,7 +289,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_3_random_walk[i-1] + movement
     baritone_3_random_walk.append(value)
-baritone_3_walk_chord = [6, 6, 13, 13, 24, 24, 13, 13, 4, 4, ]
+baritone_3_walk_chord = [6, 13, 24, 13, 4, ]
 l = len(baritone_3_walk_chord)
 baritone_3_random_walk_notes = [baritone_3_walk_chord[x] for x in reduceMod(l, baritone_3_random_walk)]
 
@@ -300,7 +300,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = bass_1_random_walk[i-1] + movement
     bass_1_random_walk.append(value)
-bass_1_walk_chord = [11, 11, 9, 9, 0, 0, 18, 18, ]
+bass_1_walk_chord = [11, 9, 0, 18, ]
 l = len(bass_1_walk_chord)
 bass_1_random_walk_notes = [bass_1_walk_chord[x] for x in reduceMod(l, bass_1_random_walk)]
 
@@ -311,7 +311,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = bass_2_random_walk[i-1] + movement
     bass_2_random_walk.append(value)
-bass_2_walk_chord = [0, 0, 9, 9, 18, 18, 11, 11, ]
+bass_2_walk_chord = [0, 9, 18, 11, ]
 l = len(bass_2_walk_chord)
 bass_2_random_walk_notes = [bass_2_walk_chord[x] for x in reduceMod(l, bass_2_random_walk)]
 
@@ -322,7 +322,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = contrabass_random_walk[i-1] + movement
     contrabass_random_walk.append(value)
-contrabass_walk_chord = [18, 18, 7, 7, 16, 16, 2, 2, -2, -2, 16, 16, 25, 25, ]
+contrabass_walk_chord = [18, 7, 16, 2, -2, 16, 25, ]
 l = len(contrabass_walk_chord)
 contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, contrabass_random_walk)]
 
@@ -394,14 +394,14 @@ attachment_handler_one = AttachmentHandler(
     starting_dynamic='pp',
     ending_dynamic='f',
     hairpin='<',
-    articulation_list=['tenuto', 'tenuto', 'tenuto', 'halfopen', 'flageolet', 'halfopen', '', 'tenuto', '', ],
+    articulation_list=['tenuto', '', 'tenuto', 'halfopen', 'flageolet', 'halfopen', '', 'tenuto', '', ],
 )
 
 attachment_handler_two = AttachmentHandler(
     starting_dynamic='ff',
     ending_dynamic='p',
     hairpin='>',
-    articulation_list=['portato', 'portato', '', 'flageolet', 'halfopen', '', 'portato', 'flageolet', ],
+    articulation_list=['', 'portato', '', 'flageolet', 'halfopen', '', 'portato', 'flageolet', ],
 )
 
 attachment_handler_three = AttachmentHandler(

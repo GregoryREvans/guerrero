@@ -232,7 +232,7 @@
                     % [Voice 16 measure 9] %! COMMENT_MEASURE_NUMBERS
                     <fs' cs''>8
                     \ff
-                    - \portato
+
                     \>
                     <e' fs'>4.
                 }
@@ -384,7 +384,7 @@
                 {
                     etes'4
                     \pp
-                    - \tenuto
+
                     \<
                     gqf'4
                     ~
@@ -518,7 +518,7 @@
                     [
                     <e' fs'>16
                     \p
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]

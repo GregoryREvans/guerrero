@@ -183,7 +183,7 @@
                     \<
                     etes'8
                     \f
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -342,7 +342,7 @@
                     \times 4/5 {
                         dtef''8
                         \pp
-                        - \tenuto
+
                         \<
                         [
                         cqs'''8.
@@ -358,7 +358,7 @@
                 {
                     <fs' cs''>8.
                     \ff
-                    - \portato
+
                     \>
                     [
                     <e' fs'>16
@@ -586,7 +586,7 @@
                         \<
                         etes'4
                         \f
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -594,7 +594,7 @@
                 {
                     <cs'' c'''>4
                     \p
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }

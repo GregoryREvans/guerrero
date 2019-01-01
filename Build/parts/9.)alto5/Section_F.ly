@@ -104,16 +104,16 @@
                     ~
                 }
                 {
-                    <f''' ef''''>4
-                    \ff
-                    - \portato
-                    \>
                     <cs' c''>4
+                    \ff
+
+                    \>
+                    <af'' b''>4
                     ~
                 }
                 {
                     % [Voice 9 measure 2] %! COMMENT_MEASURE_NUMBERS
-                    <cs' c''>4
+                    <af'' b''>4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
@@ -121,7 +121,7 @@
                 {
                     aqf''4
                     \pp
-                    - \tenuto
+
                     \<
                     ces''4
                     \f
@@ -130,12 +130,12 @@
                     \<
                 }
                 {
-                    <af'' b''>8.
+                    <c'' b''>8.
                     \ff
                     - \portato
                     \>
                     [
-                    <b'' f'''>16
+                    <c'' af''>16
                     \p
 
                     - \tweak stencil #constante-hairpin
@@ -152,16 +152,16 @@
                     ~
                 }
                 {
-                    <c'' af''>4
+                    <cs' c''>4
                     \ff
                     \>
                     ~
                     \times 4/5 {
-                        <c'' af''>16
-                        <f''' ef''''>4
+                        <cs' c''>16
+                        <af'' b''>4
                         ~
                     }
-                    <f''' ef''''>4
+                    <af'' b''>4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
@@ -184,7 +184,7 @@
                     }
                 }
                 {
-                    <cs' c''>4
+                    <c'' b''>4
                     \ff
                     - \flageolet
                     - \tweak stencil #constante-hairpin
@@ -217,16 +217,16 @@
                     }
                 }
                 {
-                    <b'' f'''>2
+                    <cs' c''>2
                     \ff
                     \>
                     ~
                 }
                 {
                     % [Voice 9 measure 6] %! COMMENT_MEASURE_NUMBERS
-                    <b'' f'''>16
+                    <cs' c''>16
                     [
-                    <c'' af''>8.
+                    <af'' b''>8.
                     \p
                     - \halfopen
                     - \tweak stencil #constante-hairpin
@@ -243,20 +243,20 @@
                 {
                     \times 4/5 {
                         % [Voice 9 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        <f''' ef''''>8
+                        <c'' b''>8
                         \ff
 
                         \>
                         [
-                        <cs' c''>8.
+                        <c'' af''>8.
                         ~
                         ]
                     }
-                    <cs' c''>4
+                    <c'' af''>4
                     ~
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <cs' c''>8
+                        <c'' af''>8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -278,7 +278,7 @@
                     }
                 }
                 {
-                    <af'' b''>4
+                    <cs' c''>4
                     \p
                     - \portato
                     - \tweak stencil #constante-hairpin
@@ -288,7 +288,7 @@
                     \times 4/5 {
                         btes''8
                         \pp
-                        - \tenuto
+
                         \<
                         [
                         aqf''8.
@@ -305,7 +305,7 @@
                     \!
                 }
                 {
-                    <b'' f'''>4
+                    <af'' b''>4
                     \ff
                     - \flageolet
                     - \tweak stencil #constante-hairpin
@@ -325,7 +325,7 @@
                     ]
                 }
                 {
-                    <c'' af''>4
+                    <c'' b''>4
                     \ff
                     \>
                     ~
@@ -333,14 +333,14 @@
                 {
                     \times 4/5 {
                         % [Voice 9 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        <c'' af''>16
-                        <f''' ef''''>4
+                        <c'' b''>16
+                        <c'' af''>4
                         ~
                     }
-                    <f''' ef''''>4
+                    <c'' af''>4
                     ~
                     \times 4/5 {
-                        <f''' ef''''>8.
+                        <c'' af''>8.
                         [
                         <cs' c''>8
                         ~
@@ -379,9 +379,9 @@
                     \times 4/5 {
                         <af'' b''>8.
                         [
-                        <b'' f'''>8
+                        <c'' b''>8
                         \p
-                        - \portato
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -399,7 +399,7 @@
                     - \portato
                     \>
                     [
-                    <f''' ef''''>16
+                    <cs' c''>16
                     \p
 
                     - \tweak stencil #constante-hairpin
@@ -408,12 +408,12 @@
                     r4
                     \!
                     \times 4/5 {
-                        <cs' c''>8
+                        <af'' b''>8
                         \ff
                         - \flageolet
                         \>
                         [
-                        <af'' b''>8.
+                        <c'' b''>8.
                         \p
                         - \halfopen
                         - \tweak stencil #constante-hairpin
@@ -440,26 +440,26 @@
                     \<
                 }
                 {
-                    <b'' f'''>4
+                    <c'' af''>4
                     \ff
                     \>
                     ~
-                    <b'' f'''>16
+                    <c'' af''>16
                     [
-                    <c'' af''>8.
+                    <cs' c''>8.
                     ~
                     ]
                 }
                 {
                     % [Voice 9 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    <c'' af''>4
+                    <cs' c''>4
                     ~
                     \times 4/5 {
-                        <c'' af''>4
-                        <f''' ef''''>16
+                        <cs' c''>4
+                        <af'' b''>16
                         ~
                     }
-                    <f''' ef''''>4
+                    <af'' b''>4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
@@ -486,16 +486,16 @@
                 {
                     \times 4/5 {
                         % [Voice 9 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        <cs' c''>8.
+                        <c'' b''>8.
                         \ff
 
                         \>
                         [
-                        <af'' b''>8
+                        <c'' af''>8
                         ~
                         ]
                     }
-                    <af'' b''>4
+                    <c'' af''>4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
@@ -518,7 +518,7 @@
                     \<
                 }
                 {
-                    <b'' f'''>4
+                    <cs' c''>4
                     \p
                     - \portato
                     - \tweak stencil #constante-hairpin
@@ -527,14 +527,14 @@
                 {
                     cqs'4
                     \pp
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ~
                 }
                 {
                     % [Voice 9 measure 19] %! COMMENT_MEASURE_NUMBERS
-                    <c'' af''>2.
+                    <af'' b''>2.
                     \ff
                     \>
                 }
@@ -558,20 +558,20 @@
                 {
                     \times 4/5 {
                         r4
-                        <f''' ef''''>16
+                        <c'' b''>16
                         \ff
                         \>
                         ~
                     }
-                    <f''' ef''''>4
+                    <c'' b''>4
                     ~
                 }
                 {
                     % [Voice 9 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    <f''' ef''''>4
+                    <c'' b''>4
                     ~
-                    <f''' ef''''>16
-                    <cs' c''>4..
+                    <c'' b''>16
+                    <c'' af''>4..
                 }
                 {
                     r4
@@ -599,14 +599,14 @@
                 }
                 {
                     % [Voice 9 measure 23] %! COMMENT_MEASURE_NUMBERS
-                    <af'' b''>16
+                    <cs' c''>16
                     \ff
                     - \flageolet
                     \>
                     [
-                    <b'' f'''>8.
+                    <af'' b''>8.
                     \p
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -619,15 +619,15 @@
                     \<
                 }
                 {
-                    <c'' af''>4.
+                    <c'' b''>4.
                     \ff
                     \>
-                    <f''' ef''''>8
+                    <c'' af''>8
                     ~
                 }
                 {
                     % [Voice 9 measure 24] %! COMMENT_MEASURE_NUMBERS
-                    <f''' ef''''>4
+                    <c'' af''>4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<

@@ -157,7 +157,7 @@
                     \times 4/3 {
                         <c' a'>8
                         \ff
-                        - \portato
+
                         \>
                         [
                         <b' fs''>16
@@ -256,7 +256,7 @@
                     [
                     cqs'8
                     \f
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -308,7 +308,7 @@
                     - \flageolet
                     <b' fs''>16
                     \p
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -536,7 +536,7 @@
                     [
                     ates'8
                     \f
-                    - \tenuto
+
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -593,7 +593,7 @@
                     <a' fs''>4..
                     <c' b'>16
                     \p
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }

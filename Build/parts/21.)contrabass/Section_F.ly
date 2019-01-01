@@ -337,7 +337,7 @@
                     % [Voice 21 measure 14] %! COMMENT_MEASURE_NUMBERS
                     dqf'''16
                     \pp
-                    - \tenuto
+
                     \<
                     des'4..
                     ~
@@ -356,7 +356,7 @@
                         % [Voice 21 measure 15] %! COMMENT_MEASURE_NUMBERS
                         <bf g'>4
                         \ff
-                        - \portato
+
                         \>
                         <d' fs''>16
                         ~
@@ -540,7 +540,7 @@
                         [
                         gtes'8
                         \f
-                        - \tenuto
+
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -549,7 +549,7 @@
                 {
                     <d' fs''>4
                     \p
-                    - \portato
+
                     - \tweak stencil #constante-hairpin
                     \<
                 }

@@ -85,7 +85,7 @@
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 25) (minimum-distance . 25) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 27) (minimum-distance . 27) (padding . 0))
 		\override Stem.stemlet-length = #1.15
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
