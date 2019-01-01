@@ -55,6 +55,7 @@
                     \markup { bar.2 }
                     \set Staff.instrumentName =
                     \markup { "Baritone 2" }
+                    \tempo 4=60
                     bf8
                     \mp
                     - \halfopen

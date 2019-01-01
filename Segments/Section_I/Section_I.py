@@ -310,7 +310,7 @@ rmaker_two = abjadext.rmakers.NoteRhythmMaker()
 
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[5, 2, 4, 1, 3, ],
+        counts=[7, -1, 5, 6, -1, 3, 4, 1, -1, 2, ],
         denominator=8,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
@@ -318,14 +318,14 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         beam_rests=False,
         ),
     extra_counts_per_division=[0, 1, -1, 1, 0, -1, 0, ],
-    logical_tie_masks=[
-        abjadext.rmakers.silence([8], 21),
-        ],
-    division_masks=[
-        abjadext.rmakers.SilenceMask(
-            pattern=abjad.index([4], 11),
-            ),
-        ],
+    # logical_tie_masks=[
+    #     abjadext.rmakers.silence([2], 7),
+    #     ],
+    # division_masks=[
+    #     abjadext.rmakers.SilenceMask(
+    #         pattern=abjad.index([3], 5),
+    #         ),
+    #     ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -337,17 +337,17 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
 # Initialize AttachmentHandler
 
 attachment_handler_one = AttachmentHandler(
-    starting_dynamic='mp',
-    ending_dynamic='ppp', #alt+o = ø
+    starting_dynamic='mf',
+    ending_dynamic='mp', #alt+o = ø
     hairpin='>',
-    articulation_list=['flageolet', 'flageolet', 'flageolet', 'flageolet',   'stopped',  'stopped', '',  '',  '',  '', 'flageolet', 'halfopen',  'halfopen',  'halfopen',  'flageolet',  '',  '',  '',  '',  '',  '', 'halfopen',   'flageolet', 'halfopen',  'stopped',   'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped',  'stopped', '', ],
+    # articulation_list=['flageolet', ],
 )
 
 attachment_handler_two = AttachmentHandler(
     starting_dynamic='p',
     # ending_dynamic='pp',
     hairpin='--',
-    articulation_list=['stopped', ],
+    # articulation_list=['stopped', ],
 )
 
 # Initialize MusicMakers with the rhythm-makers.

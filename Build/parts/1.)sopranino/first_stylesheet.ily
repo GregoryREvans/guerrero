@@ -114,7 +114,7 @@
 
 \paper {
 	page-breaking = #ly:page-turn-breaking
-	system-system-spacing #'basic-distance = #15
+	system-system-spacing = #'((basic-distance . 15) (padding . 0))
 
 	top-margin = 1\cm
 	bottom-margin = 0.4\cm

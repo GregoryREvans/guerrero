@@ -55,6 +55,7 @@
                     \markup { alt.6 }
                     \set Staff.instrumentName =
                     \markup { "Alto 6" }
+                    \tempo 4=60
                     r1
                 }
                 {

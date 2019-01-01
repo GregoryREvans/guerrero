@@ -332,7 +332,7 @@ contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, c
 
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[3, 2, 1, 2, 3, 1, 3, 2, 3, 1, 2, ],
+        counts=[3, 2, 5, 2, 3, 1, 3, 2, 3, 1, 2, ],
         denominator=8,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
@@ -345,7 +345,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         ],
     division_masks=[
         abjadext.rmakers.SilenceMask(
-            pattern=abjad.index([1], 13),
+            pattern=abjad.index([1], 5),
             ),
         ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
@@ -358,7 +358,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
 
 rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[1, 1, 1, 1, 2, 2, 1, 2, 1, 3, 2, 3, 2, 1, 1, 2, 1, 1, 3, ],
+        counts=[1, 1, 1, 5, 2, 2, 1, 2, 1, 3, 4, 3, 2, 7, 1, 2, 6, 1, 3, ],
         denominator=8,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
@@ -367,11 +367,11 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         ),
     extra_counts_per_division=[-1, 0, 1, -1, 1, 0, ],
     logical_tie_masks=[
-        abjadext.rmakers.silence([8], 21),
+        abjadext.rmakers.silence([3], 8),
         ],
     division_masks=[
         abjadext.rmakers.SilenceMask(
-            pattern=abjad.index([4], 11),
+            pattern=abjad.index([1], 3),
             ),
         ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
@@ -387,24 +387,24 @@ rmaker_three = abjadext.rmakers.NoteRhythmMaker()
 # Initialize AttachmentHandler
 
 attachment_handler_one = AttachmentHandler(
-    starting_dynamic='p',
-    ending_dynamic='mf',
+    starting_dynamic='f',
+    ending_dynamic='ff',
     hairpin='<',
-    articulation_list=['accent', '', 'tenuto', '', '', 'portato', '', '', '', ],
+    # articulation_list=['accent', '', 'tenuto', '', '', 'portato', '', '', '', ],
 )
 
 attachment_handler_two = AttachmentHandler(
-    starting_dynamic='mf',
-    ending_dynamic='f',
+    starting_dynamic='p',
+    ending_dynamic='mp',
     hairpin='<',
-    articulation_list=['flageolet', 'flageolet', 'flageolet', 'flageolet', 'flageolet', 'halfopen', 'halfopen', 'halfopen', '', '', '', '', 'halfopen', 'flageolet', '', '', '', 'stopped', 'stopped', 'stopped', 'stopped',  '', 'halfopen', 'flageolet', 'halfopen', 'halfopen', 'halfopen', '', '', '', '', '', 'stopped', 'stopped', 'stopped', '', '', '', '',],
+    articulation_list=['flageolet', 'flageolet', 'flageolet', 'flageolet', 'flageolet', 'halfopen', 'halfopen', 'halfopen', 'flageolet', 'stopped', 'stopped', 'stopped', 'stopped', 'halfopen', 'flageolet', 'halfopen', 'halfopen', 'halfopen', 'stopped', 'stopped', 'stopped', ],
 )
 
 attachment_handler_three = AttachmentHandler(
     starting_dynamic='mf',
-    ending_dynamic='p',
+    ending_dynamic='mp',
     hairpin='>',
-    articulation_list=['espressivo'],
+    # articulation_list=['espressivo'],
 )
 
 # Initialize MusicMakers with the rhythm-makers.

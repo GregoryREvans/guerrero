@@ -226,7 +226,6 @@
                     {
                         r8
                         \!
-                        \bar "||"
                     }
                 }
             }
@@ -240,6 +239,7 @@
                         \markup { spr.1 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 1" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -409,6 +409,7 @@
                         \markup { spr.2 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 2" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -548,6 +549,7 @@
                         \markup { spr.3 }
                         \set Staff.instrumentName =
                         \markup { "Soprano 3" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -750,6 +752,7 @@
                         \markup { alt.1 }
                         \set Staff.instrumentName =
                         \markup { "Alto 1" }
+                        \tempo 4=60
                         d''4
                         \mp
                         - \stopped
@@ -915,6 +918,7 @@
                         \markup { alt.2 }
                         \set Staff.instrumentName =
                         \markup { "Alto 2" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -1089,6 +1093,7 @@
                         \markup { alt.3 }
                         \set Staff.instrumentName =
                         \markup { "Alto 3" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -1236,6 +1241,7 @@
                         \markup { alt.4 }
                         \set Staff.instrumentName =
                         \markup { "Alto 4" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -1407,6 +1413,7 @@
                             \markup { alt.5 }
                             \set Staff.instrumentName =
                             \markup { "Alto 5" }
+                            \tempo 4=60
                             cs'8
                             \mp
 
@@ -1588,6 +1595,7 @@
                         \markup { alt.6 }
                         \set Staff.instrumentName =
                         \markup { "Alto 6" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -1767,6 +1775,7 @@
                         \markup { ten.1 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 1" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -1942,6 +1951,7 @@
                         \markup { ten.2 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 2" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -2104,6 +2114,7 @@
                         \markup { ten.3 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 3" }
+                        \tempo 4=60
                         b2
                         \mp
                         \<
@@ -2288,6 +2299,7 @@
                         \markup { ten.4 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 4" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -2457,6 +2469,7 @@
                         \markup { ten.5 }
                         \set Staff.instrumentName =
                         \markup { "Tenor 5" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -2617,6 +2630,7 @@
                         \markup { bar.1 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 1" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -2785,6 +2799,7 @@
                         \markup { bar.2 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 2" }
+                        \tempo 4=60
                         bf8
                         \mp
                         - \halfopen
@@ -2956,6 +2971,7 @@
                         \markup { bar.3 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 3" }
+                        \tempo 4=60
                         r1
                     }
                     {
@@ -3133,6 +3149,7 @@
                         \markup { bs.1 }
                         \set Staff.instrumentName =
                         \markup { "Bass 1" }
+                        \tempo 4=60
                         r2
                     }
                     {
@@ -3300,6 +3317,7 @@
                         \markup { bs.2 }
                         \set Staff.instrumentName =
                         \markup { "Bass 2" }
+                        \tempo 4=60
                         r8
                     }
                     {
@@ -3471,6 +3489,7 @@
                             \markup { cbs. }
                             \set Staff.instrumentName =
                             \markup { Contrabass }
+                            \tempo 4=60
                             fs'4.
                             \mp
                             - \halfopen

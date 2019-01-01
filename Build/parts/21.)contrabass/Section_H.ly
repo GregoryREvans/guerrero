@@ -56,6 +56,7 @@
                         \markup { cbs. }
                         \set Staff.instrumentName =
                         \markup { Contrabass }
+                        \tempo 4=60
                         fs'4.
                         \mp
                         - \halfopen
