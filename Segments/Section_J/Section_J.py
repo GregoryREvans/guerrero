@@ -47,23 +47,23 @@ def reduceMod(list_length, rw):
 
 
 sopranino_note = [27, 17, 8, 0, 11, ]
-soprano_1_note = [[13.25, 16, 26.25, ], ]
-soprano_2_note = [[13, 14.75, 26.25, ], ]
-soprano_3_note = [[12.75, 15.5, 26, ], ]
-alto_1_note = [[12.5, 19, 27.75, 34, ], ]
-alto_2_note = [[12.5, 15.25, 25.5, ], ]
-alto_3_note = [[1.75, 13.5, 22.25, 27, 30, ], ]
-alto_4_note = [[12.5, 15.25, 25.5, ], ]
-alto_5_note = [[1.75, 13.5, 22.25, 27, 30, ], ]
-alto_6_note = [[12.5, 19, 27.75, 34, ], ]
-tenor_1_note = [[6, 17.5, ], ]
-tenor_2_note = [[6, 17.5, 25.5, 30, ], ]
-tenor_3_note = [[6, 17.5, 25.5, 30.75, ], ]
-tenor_4_note = [[6, 17.5, ], ]
-tenor_5_note = [[6, 17.5, 25.5, 30.75, ], ]
-baritone_1_note = [[13.25, 27.5, 33.75, ], ]
-baritone_2_note = [[4, 16.5, 23.5, ], ]
-baritone_3_note = [[7.75, 17.75, 25.5, 34, ], ]
+soprano_1_note = [22, 16, 13.25, ]
+soprano_2_note = [16, 13, 14.75, 13, ]
+soprano_3_note = [13, 12.75, 13, 16, 26 ]
+alto_1_note = [20, 12, 23, ]
+alto_2_note = [12, 1, 12, 23, ]
+alto_3_note = [1, 23, 1, 12, ]
+alto_4_note = [20, 12, 20, 23, ]
+alto_5_note = [12, 20, 1, 23, ]
+alto_6_note = [1, 20, 12, ]
+tenor_1_note = [17, -1, 25, 6,]
+tenor_2_note = [6, 25, 17,]
+tenor_3_note = [-1, 6, 17, 25, ]
+tenor_4_note = [17, -1, 6, ]
+tenor_5_note = [6, 25, 17, ]
+baritone_1_note = [13, 24, 13, 6, ]
+baritone_2_note = [6, 24, 13, 4, ]
+baritone_3_note = [4, 13, 6, 24, ]
 bass_1_note = [9, 11, 11, 9, 11, ]
 bass_2_note = [11, 9, 9, 11, 9, ]
 contrabass_note = [-2, 2, 7, -2, 2, 7, 2, -2, ]
@@ -341,13 +341,13 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         ),
     extra_counts_per_division=[1, 0, -1, 1, -1, 0, 1, ],
     logical_tie_masks=[
-        abjadext.rmakers.silence([3], 7),
+        abjadext.rmakers.silence([3], 6),
         ],
-    division_masks=[
-        abjadext.rmakers.SilenceMask(
-            pattern=abjad.index([1], 5),
-            ),
-        ],
+    # division_masks=[
+    #     abjadext.rmakers.SilenceMask(
+    #         pattern=abjad.index([1], 5),
+    #         ),
+    #     ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -367,13 +367,13 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         ),
     extra_counts_per_division=[-1, 0, 1, -1, 1, 0, ],
     logical_tie_masks=[
-        abjadext.rmakers.silence([3], 8),
+        abjadext.rmakers.silence([2], 5),
         ],
-    division_masks=[
-        abjadext.rmakers.SilenceMask(
-            pattern=abjad.index([1], 3),
-            ),
-        ],
+    # division_masks=[
+    #     abjadext.rmakers.SilenceMask(
+    #         pattern=abjad.index([0], 3),
+    #         ),
+    #     ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,
@@ -381,8 +381,6 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         rewrite_sustained=True,
         ),
     )
-
-rmaker_three = abjadext.rmakers.NoteRhythmMaker()
 
 # Initialize AttachmentHandler
 
@@ -422,7 +420,7 @@ sopranino_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 sopranino_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=sopranino_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -441,7 +439,7 @@ soprano_one_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 soprano_one_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=soprano_1_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -460,7 +458,7 @@ soprano_two_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 soprano_two_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=soprano_2_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -479,7 +477,7 @@ soprano_three_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 soprano_three_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=soprano_3_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -498,7 +496,7 @@ alto_one_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 alto_one_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=alto_1_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -517,7 +515,7 @@ alto_two_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 alto_two_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=alto_2_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -536,7 +534,7 @@ alto_three_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 alto_three_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=alto_3_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -555,7 +553,7 @@ alto_four_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 alto_four_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=alto_4_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -574,7 +572,7 @@ alto_five_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 alto_five_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=alto_5_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -593,7 +591,7 @@ alto_six_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 alto_six_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=alto_6_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -612,7 +610,7 @@ tenor_one_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 tenor_one_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=tenor_1_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -631,7 +629,7 @@ tenor_two_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 tenor_two_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=tenor_2_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -650,7 +648,7 @@ tenor_three_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 tenor_three_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=tenor_3_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -669,7 +667,7 @@ tenor_four_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 tenor_four_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=tenor_4_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -688,7 +686,7 @@ tenor_five_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 tenor_five_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=tenor_5_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -707,7 +705,7 @@ baritone_one_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 baritone_one_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=baritone_1_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -726,7 +724,7 @@ baritone_two_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 baritone_two_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=baritone_2_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -745,7 +743,7 @@ baritone_three_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 baritone_three_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=baritone_3_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -764,7 +762,7 @@ bass_one_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 bass_one_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=bass_1_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -783,7 +781,7 @@ bass_two_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 bass_two_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=bass_2_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -802,7 +800,7 @@ contrabass_musicmaker_two = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 contrabass_musicmaker_three = MusicMaker(
-    rmaker=rmaker_three,
+    rmaker=rmaker_two,
     pitches=contrabass_note,
     continuous=True,
     attachment_handler=attachment_handler_three,
@@ -942,7 +940,7 @@ voice_1_timespan_list = abjad.TimespanList([
 
         [(194, 8), (196, 8), sopranino_musicmaker_one],
         [(196, 8), (198, 8), sopranino_musicmaker_one],
-        [(198, 8), (199, 8), sopranino_musicmaker_two],
+        [(198, 8), (199, 8), sopranino_musicmaker_one],
         [(199, 8), (200, 8), silence_maker],
     ]
 ])
@@ -1053,9 +1051,9 @@ voice_2_timespan_list = abjad.TimespanList([
         [(188, 8), (190, 8), soprano_one_musicmaker_one],
         [(190, 8), (192, 8), soprano_one_musicmaker_three],
         [(192, 8), (194, 8), soprano_one_musicmaker_one],
-        [(194, 8), (196, 8), soprano_one_musicmaker_two],
-        [(196, 8), (198, 8), soprano_one_musicmaker_two],
-        [(198, 8), (199, 8), soprano_one_musicmaker_two],
+        [(194, 8), (196, 8), soprano_one_musicmaker_one],
+        [(196, 8), (198, 8), soprano_one_musicmaker_one],
+        [(198, 8), (199, 8), soprano_one_musicmaker_one],
     ]
 ])
 
@@ -1273,12 +1271,12 @@ voice_4_timespan_list = abjad.TimespanList([
         [(182, 8), (184, 8), soprano_three_musicmaker_three],
         [(184, 8), (186, 8), soprano_three_musicmaker_two],
         [(186, 8), (188, 8), soprano_three_musicmaker_two],
-        [(188, 8), (190, 8), soprano_three_musicmaker_two],
+        [(188, 8), (190, 8), soprano_three_musicmaker_one],
 
-        [(192, 8), (194, 8), soprano_three_musicmaker_two],
-        [(194, 8), (196, 8), soprano_three_musicmaker_two],
-        [(196, 8), (198, 8), soprano_three_musicmaker_two],
-        [(198, 8), (199, 8), soprano_three_musicmaker_three],
+        [(192, 8), (194, 8), soprano_three_musicmaker_one],
+        [(194, 8), (196, 8), soprano_three_musicmaker_one],
+        [(196, 8), (198, 8), soprano_three_musicmaker_one],
+        [(198, 8), (199, 8), soprano_three_musicmaker_one],
     ]
 ])
 
@@ -1386,11 +1384,11 @@ voice_5_timespan_list = abjad.TimespanList([
         [(184, 8), (186, 8), alto_one_musicmaker_two],
 
         [(188, 8), (190, 8), alto_one_musicmaker_three],
-        [(190, 8), (192, 8), alto_one_musicmaker_two],
-        [(192, 8), (194, 8), alto_one_musicmaker_two],
+        [(190, 8), (192, 8), alto_one_musicmaker_one],
+        [(192, 8), (194, 8), alto_one_musicmaker_one],
 
         [(196, 8), (198, 8), alto_one_musicmaker_one],
-        [(198, 8), (199, 8), alto_one_musicmaker_three],
+        [(198, 8), (199, 8), alto_one_musicmaker_one],
     ]
 ])
 
@@ -1500,9 +1498,9 @@ voice_6_timespan_list = abjad.TimespanList([
         [(188, 8), (190, 8), alto_two_musicmaker_one],
 
         [(192, 8), (194, 8), alto_two_musicmaker_one],
-        [(194, 8), (196, 8), alto_two_musicmaker_two],
-        [(196, 8), (198, 8), alto_two_musicmaker_two],
-        [(198, 8), (199, 8), alto_two_musicmaker_two],
+        [(194, 8), (196, 8), alto_two_musicmaker_one],
+        [(196, 8), (198, 8), alto_two_musicmaker_one],
+        [(198, 8), (199, 8), alto_two_musicmaker_one],
     ]
 ])
 
@@ -1610,10 +1608,10 @@ voice_7_timespan_list = abjad.TimespanList([
 
         [(188, 8), (190, 8), alto_three_musicmaker_one],
         [(190, 8), (192, 8), alto_three_musicmaker_two],
-        [(192, 8), (194, 8), alto_three_musicmaker_two],
-        [(194, 8), (196, 8), alto_three_musicmaker_two],
-        [(196, 8), (198, 8), alto_three_musicmaker_three],
-        [(198, 8), (199, 8), alto_three_musicmaker_two],
+        [(192, 8), (194, 8), alto_three_musicmaker_one],
+        [(194, 8), (196, 8), alto_three_musicmaker_one],
+        [(196, 8), (198, 8), alto_three_musicmaker_one],
+        [(198, 8), (199, 8), alto_three_musicmaker_one],
     ]
 ])
 
@@ -1723,7 +1721,7 @@ voice_8_timespan_list = abjad.TimespanList([
         [(190, 8), (192, 8), alto_four_musicmaker_two],
         [(192, 8), (194, 8), alto_four_musicmaker_one],
         [(194, 8), (196, 8), alto_four_musicmaker_one],
-        [(196, 8), (198, 8), alto_four_musicmaker_three],
+        [(196, 8), (198, 8), alto_four_musicmaker_one],
         [(198, 8), (199, 8), alto_four_musicmaker_one],
     ]
 ])
@@ -1836,8 +1834,8 @@ voice_9_timespan_list = abjad.TimespanList([
         [(190, 8), (192, 8), alto_five_musicmaker_one],
         [(192, 8), (194, 8), alto_five_musicmaker_one],
         [(194, 8), (196, 8), alto_five_musicmaker_one],
-        [(196, 8), (198, 8), alto_five_musicmaker_two],
-        [(198, 8), (199, 8), alto_five_musicmaker_two],
+        [(196, 8), (198, 8), alto_five_musicmaker_one],
+        [(198, 8), (199, 8), alto_five_musicmaker_one],
     ]
 ])
 
@@ -1946,10 +1944,10 @@ voice_10_timespan_list = abjad.TimespanList([
         [(186, 8), (188, 8), alto_six_musicmaker_two],
         [(188, 8), (190, 8), alto_six_musicmaker_one],
         [(190, 8), (192, 8), alto_six_musicmaker_one],
-        [(192, 8), (194, 8), alto_six_musicmaker_three],
+        [(192, 8), (194, 8), alto_six_musicmaker_one],
         [(194, 8), (196, 8), alto_six_musicmaker_one],
 
-        [(198, 8), (199, 8), alto_six_musicmaker_two],
+        [(198, 8), (199, 8), alto_six_musicmaker_one],
     ]
 ])
 
@@ -2062,7 +2060,7 @@ voice_11_timespan_list = abjad.TimespanList([
         [(192, 8), (194, 8), tenor_one_musicmaker_one],
         [(194, 8), (196, 8), tenor_one_musicmaker_one],
         [(196, 8), (198, 8), tenor_one_musicmaker_one],
-        [(198, 8), (199, 8), tenor_one_musicmaker_two],
+        [(198, 8), (199, 8), tenor_one_musicmaker_one],
     ]
 ])
 
@@ -2174,7 +2172,7 @@ voice_12_timespan_list = abjad.TimespanList([
         [(190, 8), (192, 8), tenor_two_musicmaker_two],
         [(192, 8), (194, 8), tenor_two_musicmaker_one],
         [(194, 8), (196, 8), tenor_two_musicmaker_one],
-        [(196, 8), (198, 8), tenor_two_musicmaker_three],
+        [(196, 8), (198, 8), tenor_two_musicmaker_one],
         [(198, 8), (199, 8), tenor_two_musicmaker_one],
     ]
 ])
@@ -2286,9 +2284,9 @@ voice_13_timespan_list = abjad.TimespanList([
         [(188, 8), (190, 8), tenor_three_musicmaker_one],
         [(190, 8), (192, 8), tenor_three_musicmaker_two],
 
-        [(194, 8), (196, 8), tenor_three_musicmaker_two],
-        [(196, 8), (198, 8), tenor_three_musicmaker_two],
-        [(198, 8), (199, 8), tenor_three_musicmaker_two],
+        [(194, 8), (196, 8), tenor_three_musicmaker_one],
+        [(196, 8), (198, 8), tenor_three_musicmaker_one],
+        [(198, 8), (199, 8), tenor_three_musicmaker_one],
     ]
 ])
 
@@ -2395,9 +2393,9 @@ voice_14_timespan_list = abjad.TimespanList([
         [(188, 8), (190, 8), tenor_four_musicmaker_three],
         [(190, 8), (192, 8), tenor_four_musicmaker_two],
         [(192, 8), (194, 8), tenor_four_musicmaker_one],
-        [(194, 8), (196, 8), tenor_four_musicmaker_three],
-        [(196, 8), (198, 8), tenor_four_musicmaker_two],
-        [(198, 8), (199, 8), tenor_four_musicmaker_two],
+        [(194, 8), (196, 8), tenor_four_musicmaker_one],
+        [(196, 8), (198, 8), tenor_four_musicmaker_one],
+        [(198, 8), (199, 8), tenor_four_musicmaker_one],
     ]
 ])
 
@@ -2504,12 +2502,12 @@ voice_15_timespan_list = abjad.TimespanList([
         [(182, 8), (184, 8), tenor_five_musicmaker_two],
         [(184, 8), (186, 8), tenor_five_musicmaker_two],
         [(186, 8), (188, 8), tenor_five_musicmaker_two],
-        [(188, 8), (190, 8), tenor_five_musicmaker_three],
+        [(188, 8), (190, 8), tenor_five_musicmaker_one],
 
         [(192, 8), (194, 8), tenor_five_musicmaker_one],
         [(194, 8), (196, 8), tenor_five_musicmaker_one],
         [(196, 8), (198, 8), tenor_five_musicmaker_one],
-        [(198, 8), (199, 8), tenor_five_musicmaker_three],
+        [(198, 8), (199, 8), tenor_five_musicmaker_one],
     ]
 ])
 
@@ -2619,9 +2617,9 @@ voice_16_timespan_list = abjad.TimespanList([
 
         [(190, 8), (192, 8), baritone_one_musicmaker_one],
         [(192, 8), (194, 8), baritone_one_musicmaker_one],
-        [(194, 8), (196, 8), baritone_one_musicmaker_three],
+        [(194, 8), (196, 8), baritone_one_musicmaker_one],
         [(196, 8), (198, 8), baritone_one_musicmaker_one],
-        [(198, 8), (199, 8), baritone_one_musicmaker_two],
+        [(198, 8), (199, 8), baritone_one_musicmaker_one],
     ]
 ])
 
@@ -2730,9 +2728,9 @@ voice_17_timespan_list = abjad.TimespanList([
 
         [(190, 8), (192, 8), baritone_two_musicmaker_one],
         [(192, 8), (194, 8), baritone_two_musicmaker_two],
-        [(194, 8), (196, 8), baritone_two_musicmaker_two],
-        [(196, 8), (198, 8), baritone_two_musicmaker_two],
-        [(198, 8), (199, 8), baritone_two_musicmaker_three],
+        [(194, 8), (196, 8), baritone_two_musicmaker_one],
+        [(196, 8), (198, 8), baritone_two_musicmaker_one],
+        [(198, 8), (199, 8), baritone_two_musicmaker_one],
     ]
 ])
 
@@ -2839,10 +2837,10 @@ voice_18_timespan_list = abjad.TimespanList([
         [(184, 8), (186, 8), baritone_three_musicmaker_one],
         [(186, 8), (188, 8), baritone_three_musicmaker_three],
         [(188, 8), (190, 8), baritone_three_musicmaker_two],
-        [(190, 8), (192, 8), baritone_three_musicmaker_two],
-        [(192, 8), (194, 8), baritone_three_musicmaker_two],
+        [(190, 8), (192, 8), baritone_three_musicmaker_one],
+        [(192, 8), (194, 8), baritone_three_musicmaker_one],
         [(194, 8), (196, 8), baritone_three_musicmaker_two],
-        [(196, 8), (198, 8), baritone_three_musicmaker_two],
+        [(196, 8), (198, 8), baritone_three_musicmaker_one],
         [(198, 8), (199, 8), baritone_three_musicmaker_one],
     ]
 ])
@@ -2949,12 +2947,12 @@ voice_19_timespan_list = abjad.TimespanList([
         [(182, 8), (184, 8), bass_one_musicmaker_three],
         [(184, 8), (186, 8), bass_one_musicmaker_one],
         [(186, 8), (188, 8), bass_one_musicmaker_one],
-        [(188, 8), (190, 8), bass_one_musicmaker_one],
-        [(190, 8), (192, 8), bass_one_musicmaker_one],
+        [(188, 8), (190, 8), bass_one_musicmaker_two],
+        [(190, 8), (192, 8), bass_one_musicmaker_two],
         [(192, 8), (194, 8), bass_one_musicmaker_one],
-        [(194, 8), (196, 8), bass_one_musicmaker_two],
-        [(196, 8), (198, 8), bass_one_musicmaker_two],
-        [(198, 8), (199, 8), bass_one_musicmaker_two],
+        [(194, 8), (196, 8), bass_one_musicmaker_one],
+        [(196, 8), (198, 8), bass_one_musicmaker_one],
+        [(198, 8), (199, 8), bass_one_musicmaker_one],
     ]
 ])
 
@@ -3064,8 +3062,8 @@ voice_20_timespan_list = abjad.TimespanList([
         [(190, 8), (192, 8), bass_two_musicmaker_three],
         [(192, 8), (194, 8), bass_two_musicmaker_one],
         [(194, 8), (196, 8), bass_two_musicmaker_two],
-        [(196, 8), (198, 8), bass_two_musicmaker_two],
-        [(198, 8), (199, 8), bass_two_musicmaker_two],
+        [(196, 8), (198, 8), bass_two_musicmaker_one],
+        [(198, 8), (199, 8), bass_two_musicmaker_one],
     ]
 ])
 
@@ -3172,9 +3170,9 @@ voice_21_timespan_list = abjad.TimespanList([
         [(188, 8), (190, 8), contrabass_musicmaker_one],
         [(190, 8), (192, 8), contrabass_musicmaker_three],
         [(192, 8), (194, 8), contrabass_musicmaker_one],
-        [(194, 8), (196, 8), contrabass_musicmaker_two],
-        [(196, 8), (198, 8), contrabass_musicmaker_two],
-        [(198, 8), (199, 8), contrabass_musicmaker_two],
+        [(194, 8), (196, 8), contrabass_musicmaker_one],
+        [(196, 8), (198, 8), contrabass_musicmaker_one],
+        [(198, 8), (199, 8), contrabass_musicmaker_one],
     ]
 ])
 

@@ -306,12 +306,12 @@ contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, c
 
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
-rmaker_two = abjadext.rmakers.NoteRhythmMaker()
+# rmaker_two = abjadext.rmakers.NoteRhythmMaker()
 
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(
-        counts=[7, 5, 6, 3, 4, 1, 2, ],
-        denominator=8,
+        counts=[3, 5, 4, 6, 2, 7, ],
+        denominator=16,
         ),
     beam_specifier=abjadext.rmakers.BeamSpecifier(
         beam_divisions_together=True,
@@ -323,7 +323,7 @@ rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
         ],
     division_masks=[
         abjadext.rmakers.SilenceMask(
-            pattern=abjad.index([1], 4),
+            pattern=abjad.index([1], 7),
             ),
         ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(

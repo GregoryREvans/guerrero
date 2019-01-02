@@ -1,4 +1,4 @@
-Add trills in E, F,
-Fix Rhythms in I
-Thin texture in C?
+Fix trills in E, F? If any isinstance?
+
+
 Compose J
