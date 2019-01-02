@@ -96,6 +96,7 @@
                     \markup { "Soprano 2" }
                     r4
                     \!
+                    \stopTrillSpan
                     f''4
                     \pp
                     \<
@@ -762,6 +763,7 @@
                 }
                 {
                     r8
+                    \bar "||"
                 }
             }
         }

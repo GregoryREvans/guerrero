@@ -8,6 +8,7 @@ from MusicMaker import MusicMaker
 from AttachmentHandler import AttachmentHandler
 from random import random
 from random import seed
+from TrillHandler import TrillHandler
 
 print('Interpreting file ...')
 
@@ -3418,6 +3419,9 @@ for voice in abjad.iterate(score['Staff Group']).components(abjad.Voice):
         time_signature = time_signatures[i]
         abjad.mutate(shard).rewrite_meter(time_signature)
 
+trill = TrillHandler()
+trill(score)
+
 print('Beaming runs ...')
 for voice in abjad.select(score).components(abjad.Voice):
     for run in abjad.select(voice).runs():
@@ -3456,7 +3460,9 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     first_leaf = abjad.select(staff).leaves()[0]
     stop = abjad.LilyPondLiteral(r'\!', format_slot='after',)
+    stop_trill = abjad.LilyPondLiteral(r'\stopTrillSpan', format_slot='after')
     abjad.attach(stop, first_leaf)
+    abjad.attach(stop_trill, first_leaf)
 
 # for chord in abjad.iterate(score['Staff Group']).components(abjad.Chord):
 #     tremolo = abjad.Tremolo(beam_count=3, is_slurred=True,)
@@ -3465,7 +3471,7 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
 #attach instruments and clefs
 
 print('Adding attachments ...')
-# bar_line = abjad.BarLine('||')
+bar_line = abjad.LilyPondLiteral(r'\bar "||"', format_slot='after')
 # metro = abjad.MetronomeMark((1, 4), 90)
 markup = abjad.Markup(r'\bold { F }')
 mark = abjad.RehearsalMark(markup=markup)
@@ -3552,7 +3558,7 @@ for staff in abjad.select(score['Staff Group']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]
     last_leaf = abjad.select(staff).leaves()[-1]
     # abjad.attach(metro, leaf1)
-    # abjad.attach(bar_line, last_leaf)
+    abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score['Global Context']).components(abjad.Staff):
     leaf1 = abjad.select(staff).leaves()[0]

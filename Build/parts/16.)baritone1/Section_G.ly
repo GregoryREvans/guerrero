@@ -96,6 +96,7 @@
                     \markup { "Baritone 1" }
                     r4
                     \!
+                    \stopTrillSpan
                     e'4
                     \mf
 
@@ -796,6 +797,7 @@
                 {
                     r8
                     \!
+                    \bar "||"
                 }
             }
         }

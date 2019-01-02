@@ -101,6 +101,7 @@
                     \<
                     \glissando
                     \!
+                    \stopTrillSpan
                     r8
                     \!
                     a'8
@@ -748,6 +749,7 @@
                 }
                 {
                     r8
+                    \bar "||"
                 }
             }
         }

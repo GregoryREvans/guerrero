@@ -97,6 +97,7 @@
                         \markup { "Tenor 1" }
                         r4
                         \!
+                        \stopTrillSpan
                         a'8
                         \pp
                         - \halfopen
@@ -771,6 +772,7 @@
                 }
                 {
                     r8
+                    \bar "||"
                 }
             }
         }

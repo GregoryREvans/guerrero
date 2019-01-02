@@ -96,6 +96,7 @@
                     \markup { "Alto 3" }
                     r4
                     \!
+                    \stopTrillSpan
                     b'4
                     \mf
                     - \halfopen
@@ -783,6 +784,7 @@
                 }
                 {
                     r8
+                    \bar "||"
                 }
             }
         }

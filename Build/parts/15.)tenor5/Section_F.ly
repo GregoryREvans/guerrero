@@ -94,27 +94,34 @@
                     \markup { ten.5 }
                     \set Staff.instrumentName =
                     \markup { "Tenor 5" }
-                    <b fs'>4
+                    \pitchedTrill
+                    b4
                     \ff
                     \>
                     ~
+                    \startTrillSpan fs'
                     \!
+                    \stopTrillSpan
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <b fs'>16
+                        b16
                         [
-                        <fs' f''>8
+                        \pitchedTrill
+                        fs'8
                         \p
                         - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \startTrillSpan f''
+                        \stopTrillSpan
                     }
                 }
                 {
                     dqf'''2
                     \pp
                     \<
+                    \stopTrillSpan
                 }
                 {
                     % [Voice 15 measure 2] %! COMMENT_MEASURE_NUMBERS
@@ -122,17 +129,20 @@
                     \!
                 }
                 {
-                    <f'' cs'''>4
+                    \pitchedTrill
+                    f''4
                     \ff
                     \>
                     ~
+                    \startTrillSpan cs'''
                     \times 4/5 {
-                        <f'' cs'''>16
+                        f''16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         r4
                         \!
+                        \stopTrillSpan
                     }
                     r4
                 }
@@ -141,12 +151,14 @@
                     \times 4/3 {
                         % [Voice 15 measure 3] %! COMMENT_MEASURE_NUMBERS
                         r8
-                        <b fs'>16
+                        \pitchedTrill
+                        b16
                         \ff
                         \>
                         ~
+                        \startTrillSpan fs'
                     }
-                    <b fs'>4
+                    b4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
@@ -156,6 +168,7 @@
                     \pp
                     - \halfopen
                     \<
+                    \stopTrillSpan
                     fqs''4
                     ~
                 }
@@ -168,27 +181,35 @@
                 }
                 {
                     \times 4/5 {
-                        <fs' f''>8.
+                        \pitchedTrill
+                        fs'8.
                         \ff
 
                         \>
                         [
-                        <f'' cs'''>8
+                        \startTrillSpan f''
+                        \pitchedTrill
+                        f''8
                         ~
                         ]
+                        \startTrillSpan cs'''
+                        \stopTrillSpan
                     }
-                    <f'' cs'''>4
+                    f''4
                     ~
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <f'' cs'''>8
+                        f''8
                         [
-                        <b fs'>16
+                        \pitchedTrill
+                        b16
                         \p
                         - \portato
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \startTrillSpan fs'
+                        \stopTrillSpan
                     }
                 }
                 {
@@ -196,37 +217,47 @@
                     dqf'''2
                     \pp
                     \<
+                    \stopTrillSpan
                 }
                 {
                     \times 4/5 {
-                        <fs' f''>8.
+                        \pitchedTrill
+                        fs'8.
                         \ff
 
                         \>
                         [
-                        <f'' cs'''>8
+                        \startTrillSpan f''
+                        \pitchedTrill
+                        f''8
                         ~
                         ]
+                        \startTrillSpan cs'''
+                        \stopTrillSpan
                     }
-                    <f'' cs'''>4
+                    f''4
                     ~
                 }
                 {
                     \times 4/5 {
                         % [Voice 15 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        <f'' cs'''>8
+                        f''8
                         [
-                        <b fs'>8.
+                        \pitchedTrill
+                        b8.
                         \p
                         - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \startTrillSpan fs'
+                        \stopTrillSpan
                     }
                 }
                 {
                     r4
                     \!
+                    \stopTrillSpan
                     gtef'4
                     \pp
 
@@ -234,11 +265,13 @@
                     \<
                 }
                 {
-                    <fs' f''>4
+                    \pitchedTrill
+                    fs'4
                     \p
                     - \halfopen
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan f''
                 }
                 {
                     % [Voice 15 measure 7] %! COMMENT_MEASURE_NUMBERS
@@ -246,6 +279,7 @@
                     \pp
                     \<
                     ~
+                    \stopTrillSpan
                     \times 4/5 {
                         fqs''16
                         dqf'''4
@@ -256,17 +290,22 @@
                     }
                 }
                 {
-                    <f'' cs'''>4
+                    \pitchedTrill
+                    f''4
                     \ff
                     \>
                     ~
+                    \startTrillSpan cs'''
                     \times 4/5 {
-                        <f'' cs'''>4
-                        <b fs'>16
+                        f''4
+                        \pitchedTrill
+                        b16
                         \p
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        \startTrillSpan fs'
+                        \stopTrillSpan
                     }
                 }
                 {
@@ -274,22 +313,28 @@
                     gtef'2
                     \pp
                     \<
+                    \stopTrillSpan
                 }
                 {
-                    <fs' f''>2
+                    \pitchedTrill
+                    fs'2
                     \ff
                     \>
                     ~
+                    \startTrillSpan f''
                 }
                 {
                     \times 4/5 {
                         % [Voice 15 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        <fs' f''>4
-                        <f'' cs'''>16
+                        fs'4
+                        \pitchedTrill
+                        f''16
                         \p
                         - \portato
                         - \tweak stencil #constante-hairpin
                         \<
+                        \startTrillSpan cs'''
+                        \stopTrillSpan
                     }
                 }
                 {
@@ -297,6 +342,7 @@
                     \pp
                     \<
                     ~
+                    \stopTrillSpan
                     \times 4/5 {
                         fqs''8.
                         \f
@@ -311,15 +357,18 @@
                     % [Voice 15 measure 10] %! COMMENT_MEASURE_NUMBERS
                     r4
                     r16
-                    <b fs'>8.
+                    \pitchedTrill
+                    b8.
                     \ff
                     - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan fs'
                 }
                 {
                     r4
                     \!
+                    \stopTrillSpan
                     \times 4/5 {
                         dqf'''8
                         \pp
@@ -339,15 +388,18 @@
                     \<
                 }
                 {
-                    <fs' f''>2
+                    \pitchedTrill
+                    fs'2
                     \ff
                     \>
+                    \startTrillSpan f''
                 }
                 {
                     fqs''4
                     \pp
                     \<
                     ~
+                    \stopTrillSpan
                 }
                 {
                     % [Voice 15 measure 12] %! COMMENT_MEASURE_NUMBERS
@@ -361,13 +413,15 @@
                     ]
                 }
                 {
-                    <f'' cs'''>2
+                    \pitchedTrill
+                    f''2
                     \ff
                     \>
                     ~
+                    \startTrillSpan cs'''
                 }
                 {
-                    gtef'4
+                    f''4
                     \pp
                     \<
                     ~
@@ -375,9 +429,10 @@
                 {
                     \times 4/5 {
                         % [Voice 15 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        gtef'4
+                        f''4
                         fqs''16
                         ~
+                        \stopTrillSpan
                     }
                     fqs''4
                     \f
@@ -385,15 +440,20 @@
                     \<
                 }
                 {
-                    <b fs'>4.
+                    \pitchedTrill
+                    b4.
                     \ff
                     \>
-                    <fs' f''>8
+                    \startTrillSpan fs'
+                    \pitchedTrill
+                    fs'8
                     ~
+                    \startTrillSpan f''
+                    \stopTrillSpan
                 }
                 {
                     % [Voice 15 measure 14] %! COMMENT_MEASURE_NUMBERS
-                    <fs' f''>4
+                    fs'4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
@@ -405,6 +465,7 @@
 
                         \<
                         [
+                        \stopTrillSpan
                         gtef'8
                         \f
                         - \tenuto
@@ -414,23 +475,31 @@
                     }
                 }
                 {
-                    <f'' cs'''>4
+                    \pitchedTrill
+                    f''4
                     \p
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan cs'''
                 }
                 {
                     r4
                     \!
+                    \stopTrillSpan
                 }
                 {
                     % [Voice 15 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    <b fs'>16
+                    \pitchedTrill
+                    b16
                     \ff
                     - \portato
                     \>
-                    <fs' f''>4..
+                    \startTrillSpan fs'
+                    \pitchedTrill
+                    fs'4..
+                    \startTrillSpan f''
+                    \stopTrillSpan
                 }
                 {
                     dqf'''8
@@ -438,6 +507,7 @@
                     - \halfopen
                     \<
                     [
+                    \stopTrillSpan
                     gtef'8
                     \f
                     - \flageolet
@@ -446,11 +516,13 @@
                     ]
                 }
                 {
-                    <f'' cs'''>4
+                    \pitchedTrill
+                    f''4
                     \ff
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan cs'''
                 }
                 {
                     % [Voice 15 measure 16] %! COMMENT_MEASURE_NUMBERS
@@ -460,6 +532,7 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     ~
+                    \stopTrillSpan
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -469,34 +542,42 @@
                         - \flageolet
                         \>
                         [
-                        <fs' f''>8
+                        \pitchedTrill
+                        fs'8
                         \p
                         - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \startTrillSpan f''
                     }
                 }
                 {
                     dqf'''2
                     \pp
                     \<
+                    \stopTrillSpan
                 }
                 {
                     % [Voice 15 measure 17] %! COMMENT_MEASURE_NUMBERS
-                    <f'' cs'''>4..
+                    \pitchedTrill
+                    f''4..
                     \ff
                     \>
+                    \startTrillSpan cs'''
                     r16
                     \!
+                    \stopTrillSpan
                     r4
                     \times 4/5 {
                         r4
-                        <b fs'>16
+                        \pitchedTrill
+                        b16
                         \p
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        \startTrillSpan fs'
                     }
                 }
                 {
@@ -505,6 +586,7 @@
                     \pp
                     \<
                     ~
+                    \stopTrillSpan
                     gtef'8
                     [
                     fqs''8
@@ -515,27 +597,33 @@
                     ]
                 }
                 {
-                    <fs' f''>4
+                    \pitchedTrill
+                    fs'4
                     \ff
                     - \portato
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan f''
                 }
                 {
                     % [Voice 15 measure 19] %! COMMENT_MEASURE_NUMBERS
                     r4
                     \!
-                    <f'' cs'''>4
+                    \stopTrillSpan
+                    \pitchedTrill
+                    f''4
                     \p
                     - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan cs'''
                 }
                 {
                     dqf'''4
                     \pp
                     \<
                     ~
+                    \stopTrillSpan
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         dqf'''8
@@ -550,15 +638,17 @@
                 }
                 {
                     % [Voice 15 measure 20] %! COMMENT_MEASURE_NUMBERS
-                    <b fs'>4
+                    \pitchedTrill
+                    b4
                     \ff
 
                     - \tweak stencil #constante-hairpin
                     \<
                     ~
+                    \startTrillSpan fs'
                 }
                 {
-                    fqs''16
+                    b16
                     \pp
 
                     \<
@@ -566,58 +656,71 @@
                     dqf'''8.
                     ~
                     ]
+                    \stopTrillSpan
                     dqf'''2
                 }
                 {
                     % [Voice 15 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    <fs' f''>2
+                    \pitchedTrill
+                    fs'2
                     \ff
                     \>
                     ~
+                    \startTrillSpan f''
                 }
                 {
-                    gtef'4
+                    fs'4
                     \pp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
                 }
                 {
-                    <f'' cs'''>4
+                    \pitchedTrill
+                    f''4
                     \ff
                     \>
                     ~
+                    \startTrillSpan cs'''
+                    \stopTrillSpan
                 }
                 {
                     % [Voice 15 measure 22] %! COMMENT_MEASURE_NUMBERS
-                    <f'' cs'''>8.
+                    f''8.
                     [
-                    <b fs'>16
+                    \pitchedTrill
+                    b16
                     \p
                     - \portato
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    \startTrillSpan fs'
+                    \stopTrillSpan
                 }
                 {
                     fqs''2
                     \pp
                     \<
+                    \stopTrillSpan
                 }
                 {
-                    <fs' f''>4
+                    \pitchedTrill
+                    fs'4
                     \ff
                     \>
                     ~
+                    \startTrillSpan f''
                 }
                 {
                     % [Voice 15 measure 23] %! COMMENT_MEASURE_NUMBERS
-                    <fs' f''>4
+                    fs'4
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
                     r4
                     \!
+                    \stopTrillSpan
                 }
                 {
                     dqf'''4.
@@ -634,18 +737,23 @@
                     \<
                 }
                 {
-                    <f'' cs'''>4
+                    \pitchedTrill
+                    f''4
                     \ff
                     \>
                     ~
-                    <f'' cs'''>16
+                    \startTrillSpan cs'''
+                    f''16
                     [
-                    <b fs'>8.
+                    \pitchedTrill
+                    b8.
                     \p
 
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    \startTrillSpan fs'
+                    \stopTrillSpan
                 }
                 {
                     fqs''4
@@ -654,6 +762,7 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     ~
+                    \stopTrillSpan
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -676,6 +785,7 @@
                 }
                 {
                     r4
+                    \bar "||"
                 }
             }
         }

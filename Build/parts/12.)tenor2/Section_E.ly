@@ -973,6 +973,7 @@
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }

@@ -102,6 +102,7 @@
                         [
                         \glissando
                         \!
+                        \stopTrillSpan
                         cs'8
                         \mp
                         - \halfopen
@@ -774,6 +775,7 @@
                 {
                     r8
                     \!
+                    \bar "||"
                 }
             }
         }

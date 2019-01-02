@@ -96,6 +96,7 @@
                     \markup { "Alto 4" }
                     r2
                     \!
+                    \stopTrillSpan
                     bf'4
                     \mf
 
@@ -732,6 +733,7 @@
                 {
                     r8
                     \!
+                    \bar "||"
                 }
             }
         }

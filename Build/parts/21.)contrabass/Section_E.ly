@@ -918,6 +918,7 @@
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    \bar "||"
                 }
             }
         }

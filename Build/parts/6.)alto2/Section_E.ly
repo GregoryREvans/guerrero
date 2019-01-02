@@ -133,10 +133,12 @@
                         % [Voice 6 measure 2] %! COMMENT_MEASURE_NUMBERS
                         r16
                         \!
-                        <f' cs''>8
+                        \pitchedTrill
+                        f'8
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        \startTrillSpan cs''
                     }
                 }
                 {
@@ -144,12 +146,15 @@
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
+                    \stopTrillSpan
                 }
                 {
-                    <f' e''>4
+                    \pitchedTrill
+                    f'4
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan e''
                 }
                 {
                     \times 4/5 {
@@ -158,6 +163,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         [
+                        \stopTrillSpan
                         ctes'8.
                         ~
                         ]
@@ -930,6 +936,7 @@
                     \ff
                     - \tweak stencil #constante-hairpin
                     \<
+                    \bar "||"
                 }
             }
         }

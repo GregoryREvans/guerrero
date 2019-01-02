@@ -103,6 +103,7 @@
                         \<
                         \glissando
                         \!
+                        \stopTrillSpan
                     }
                     {
                         fs''8
@@ -824,6 +825,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -844,6 +846,7 @@
                             \>
                             \glissando
                             \!
+                            \stopTrillSpan
                             f''8
                             \ppp
 
@@ -1504,6 +1507,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -1519,6 +1523,7 @@
                         \markup { "Soprano 2" }
                         r4
                         \!
+                        \stopTrillSpan
                         f''4
                         \pp
                         \<
@@ -2185,6 +2190,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -2203,6 +2209,7 @@
                         \>
                         \glissando
                         \!
+                        \stopTrillSpan
                         f''8
                         ~
                         \glissando
@@ -2849,6 +2856,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -2868,6 +2876,7 @@
                         \<
                         \glissando
                         \!
+                        \stopTrillSpan
                         d''4
                         \mp
                         - \halfopen
@@ -3539,6 +3548,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -3559,6 +3569,7 @@
                             \<
                             \glissando
                             \!
+                            \stopTrillSpan
                             ef''8
                             ~
                             \glissando
@@ -4228,6 +4239,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -4243,6 +4255,7 @@
                         \markup { "Alto 3" }
                         r4
                         \!
+                        \stopTrillSpan
                         b'4
                         \mf
                         - \halfopen
@@ -4930,6 +4943,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -4945,6 +4959,7 @@
                         \markup { "Alto 4" }
                         r2
                         \!
+                        \stopTrillSpan
                         bf'4
                         \mf
 
@@ -5581,6 +5596,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -5602,6 +5618,7 @@
                             [
                             \glissando
                             \!
+                            \stopTrillSpan
                             af'8
 
                             \glissando
@@ -6299,6 +6316,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -6319,6 +6337,7 @@
                         \<
                         \glissando
                         \!
+                        \stopTrillSpan
                         r8
                         \!
                         a'8
@@ -6966,6 +6985,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -6982,6 +7002,7 @@
                             \markup { "Tenor 1" }
                             r4
                             \!
+                            \stopTrillSpan
                             a'8
                             \pp
                             - \halfopen
@@ -7656,6 +7677,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -7672,6 +7694,7 @@
                             \markup { "Tenor 2" }
                             r8
                             \!
+                            \stopTrillSpan
                             fs'8
                             \mf
 
@@ -8350,6 +8373,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -8370,6 +8394,7 @@
                         \<
                         \glissando
                         \!
+                        \stopTrillSpan
                         r4
                         \!
                         fs'2
@@ -9047,6 +9072,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -9062,6 +9088,7 @@
                         \markup { "Tenor 4" }
                         r4
                         \!
+                        \stopTrillSpan
                         e'2
                         \mf
                         \>
@@ -9749,6 +9776,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -9769,6 +9797,7 @@
                             \>
                             \glissando
                             \!
+                            \stopTrillSpan
                             e'8
                             ~
                             \glissando
@@ -10458,6 +10487,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -10473,6 +10503,7 @@
                         \markup { "Baritone 1" }
                         r4
                         \!
+                        \stopTrillSpan
                         e'4
                         \mf
 
@@ -11173,6 +11204,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -11191,6 +11223,7 @@
                         \<
                         \glissando
                         \!
+                        \stopTrillSpan
                     }
                     {
                         c'4
@@ -11834,6 +11867,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -11855,6 +11889,7 @@
                             [
                             \glissando
                             \!
+                            \stopTrillSpan
                             cs'8
                             \mp
                             - \halfopen
@@ -12527,6 +12562,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -12546,6 +12582,7 @@
                         \>
                         \glissando
                         \!
+                        \stopTrillSpan
                         c'8
                         - \halfopen
                         [
@@ -13233,6 +13270,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -13254,6 +13292,7 @@
                             \<
                             \glissando
                             \!
+                            \stopTrillSpan
                             r4
                             \!
                         }
@@ -13917,6 +13956,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -13933,6 +13973,7 @@
                             \markup { Contrabass }
                             r8
                             \!
+                            \stopTrillSpan
                             b8
                             \mf
                             - \halfopen
@@ -14641,6 +14682,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }

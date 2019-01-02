@@ -97,6 +97,7 @@
                         \markup { "Tenor 2" }
                         r8
                         \!
+                        \stopTrillSpan
                         fs'8
                         \mf
 
@@ -775,6 +776,7 @@
                 {
                     r8
                     \!
+                    \bar "||"
                 }
             }
         }

@@ -97,6 +97,7 @@
                         \markup { Contrabass }
                         r8
                         \!
+                        \stopTrillSpan
                         b8
                         \mf
                         - \halfopen
@@ -805,6 +806,7 @@
                 {
                     r8
                     \!
+                    \bar "||"
                 }
             }
         }
