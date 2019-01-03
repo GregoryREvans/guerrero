@@ -126,8 +126,6 @@
                         \glissando
                         dqf'8
                         ~
-                        \glissando
-                        \parenthesize
                         dqf'16
                         \glissando
                         cs'16
@@ -248,9 +246,7 @@
                         \glissando
                         bqs16
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     bqs8
                     \glissando
                     b16
@@ -310,13 +306,11 @@
                         \glissando
                         b16
                         ~
-                        \glissando
                     }
                 }
                 {
                     \times 4/5 {
                         % [Voice 19 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         b16
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -358,12 +352,10 @@
                     \glissando
                     b16
                     ~
-                    \glissando
                 }
                 {
                     \times 4/5 {
                         % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         b8
                         \glissando
                         bqs16
@@ -388,10 +380,8 @@
                         \glissando
                         bqf16
                         ~
-                        \glissando
                     }
                     \times 4/5 {
-                        \parenthesize
                         bqf16
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -421,13 +411,11 @@
                     \glissando
                     bf8
                     ~
-                    \glissando
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 19 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         bf16
                         \f
                         - \tweak stencil #constante-hairpin
@@ -444,9 +432,7 @@
                     \glissando
                     bf8
                     ~
-                    \glissando
                     \times 4/5 {
-                        \parenthesize
                         bf16
                         \glissando
                         bqf8
@@ -519,27 +505,21 @@
                     \>
                     ~
                     [
-                    \glissando
                 }
                 {
                     \times 8/9 {
                         % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         dqf'16
                         \glissando
                         cs'16
                         \glissando
                         dqf'16
                         ~
-                        \glissando
-                        \parenthesize
                         dqf'8
                         \glissando
                         d'16
                         \pp
                         ~
-                        \glissando
-                        \parenthesize
                         d'16
                         - \tweak stencil #constante-hairpin
                         \<
@@ -628,15 +608,11 @@
                         \glissando
                         eqs'8
                         ~
-                        \glissando
-                        \parenthesize
                         eqs'16
                         \glissando
                         e'16
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     e'16
                     \f
                     - \tweak stencil #constante-hairpin
@@ -651,10 +627,8 @@
                     \<
                     ~
                     [
-                    \glissando
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        \parenthesize
                         eqf'8
                         \glissando
                         e'16
@@ -693,11 +667,9 @@
                         \glissando
                         dqs'16
                         ~
-                        \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        \parenthesize
                         dqs'8
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -734,8 +706,6 @@
                     \mf
                     ~
                     [
-                    \glissando
-                    \parenthesize
                     cs'16
                     \>
                     \glissando
@@ -788,8 +758,6 @@
                         \mp
                         ~
                         [
-                        \glissando
-                        \parenthesize
                         cs'16
                         \<
                         \glissando
@@ -835,9 +803,7 @@
                     \<
                     ~
                     [
-                    \glissando
                     \times 4/5 {
-                        \parenthesize
                         b16
                         \glissando
                         bqs8
@@ -867,26 +833,20 @@
                         \>
                         ~
                         [
-                        \glissando
                     }
                     \times 4/5 {
-                        \parenthesize
                         cqs'8
                         \glissando
                         c'16
                         ~
-                        \glissando
-                        \parenthesize
                         c'16
                         \glissando
                         cqs'16
                         ~
-                        \glissando
                     }
                 }
                 {
                     % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     cqs'16
                     \glissando
                     cs'8.
@@ -950,8 +910,6 @@
                         dqs'16
                         \pp
                         ~
-                        \glissando
-                        \parenthesize
                         dqs'16
                         - \tweak stencil #constante-hairpin
                         \<
@@ -995,15 +953,11 @@
                     \<
                     ~
                     [
-                    \glissando
                     \times 4/5 {
-                        \parenthesize
                         dqf'16
                         \glissando
                         d'8
                         ~
-                        \glissando
-                        \parenthesize
                         d'16
                         \glissando
                         dqs'16
@@ -1067,15 +1021,11 @@
                     \glissando
                     e'16
                     ~
-                    \glissando
-                    \parenthesize
                     e'16
                     \glissando
                     eqs'16
                     ~
-                    \glissando
                     \times 4/5 {
-                        \parenthesize
                         eqs'16
                         \f
                         - \tweak stencil #constante-hairpin
@@ -1088,8 +1038,6 @@
                         \mp
                         ~
                         [
-                        \glissando
-                        \parenthesize
                         e'16
                         \<
                         \glissando
@@ -1114,8 +1062,6 @@
                         d'16
                         \pp
                         ~
-                        \glissando
-                        \parenthesize
                         d'16
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1140,12 +1086,10 @@
                         \glissando
                         cs'16
                         ~
-                        \glissando
                     }
                 }
                 {
                     % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     cs'16
                     \f
                     - \tweak stencil #constante-hairpin
@@ -1246,8 +1190,6 @@
                         d'16
                         \f
                         ~
-                        \glissando
-                        \parenthesize
                         d'16
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1268,10 +1210,8 @@
                         \glissando
                         d'16
                         ~
-                        \glissando
                     }
                     \times 4/5 {
-                        \parenthesize
                         d'8
                         \glissando
                         dqs'16
@@ -1317,16 +1257,12 @@
                     \glissando
                     eqs'16
                     ~
-                    \glissando
                     \times 4/5 {
-                        \parenthesize
                         eqs'8
                         \glissando
                         e'16
                         \pp
                         ~
-                        \glissando
-                        \parenthesize
                         e'16
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1373,9 +1309,7 @@
                         \<
                         ~
                         [
-                        \glissando
                     }
-                    \parenthesize
                     eqs'16
                     \glissando
                     f'16
@@ -1383,6 +1317,7 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    \bar "||"
                 }
             }
         }

@@ -1167,6 +1167,7 @@
                     <fs' fqs'' dqf''' fs'''>16
                     - \portato
                     ]
+                    \bar "||"
                 }
             }
         }

@@ -534,6 +534,7 @@
                         ef'''2.
                         \mp
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -880,6 +881,7 @@
                     {
                         r4
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -1293,6 +1295,7 @@
                     {
                         r2
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -1682,6 +1685,7 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -2136,6 +2140,7 @@
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -2457,6 +2462,7 @@
                     {
                         % [Voice 6 measure 21] %! COMMENT_MEASURE_NUMBERS
                         r1
+                        \bar "||"
                     }
                 }
             }
@@ -2855,6 +2861,7 @@
                         <def' dqf'' btef'' ef''' fs'''>4.
                         \mp
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -3208,6 +3215,7 @@
                     {
                         r4
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -3570,6 +3578,7 @@
                     {
                         r2
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -3954,6 +3963,7 @@
                             - \tenuto
                             - \tweak stencil #constante-hairpin
                             \<
+                            \bar "||"
                         }
                     }
                 }
@@ -4419,6 +4429,7 @@
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -4729,6 +4740,7 @@
                     {
                         % [Voice 12 measure 21] %! COMMENT_MEASURE_NUMBERS
                         r1
+                        \bar "||"
                     }
                 }
             }
@@ -5166,6 +5178,7 @@
                         <fs' fqs'' dqf''' gef'''>2.
                         \mp
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -5509,6 +5522,7 @@
                     {
                         r4
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -5874,6 +5888,7 @@
                     {
                         r2
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -6289,6 +6304,7 @@
                         - \tenuto
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -6748,6 +6764,7 @@
                             ~
                         }
                         e'2
+                        \bar "||"
                     }
                 }
             }
@@ -7072,6 +7089,7 @@
                     {
                         % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
                         r1
+                        \bar "||"
                     }
                 }
             }
@@ -7467,6 +7485,7 @@
                         a'2
                         \mp
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -7785,6 +7804,7 @@
                     {
                         r4
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -8219,6 +8239,7 @@
                     {
                         r2.
                         \!
+                        \bar "||"
                     }
                 }
             }

@@ -69,16 +69,16 @@ bass_1_note = [11.25, 18.5, 9.75, 0.5, ]
 bass_2_note = [11.25, 18.5, 9.75, 0.5, ]
 contrabass_note = [2.25, -2.5, 7.75, 18.5, 16.25, 25.5, ]
 
-sopranino_trill = [[17, 27, ], [8, 11, ], [0, 11, ], [17, 8, ]]
-soprano_1_trill = [[5, 13, ], [22, 16, ], [16, 5, ]]
-soprano_2_trill = [[22, 16, ], [5, 13, ], [16, 5, ]]
-soprano_3_trill = [[5, 13, ], [22, 16, ], [16, 5, ]]
+sopranino_trill = [[17, 27, ], [8, 11, ], [0, 8, ], [8, 11, ], [0, 8, ], ]
+soprano_1_trill = [[5, 13, ], [22, 16, ], [16, 13, ]]
+soprano_2_trill = [[22, 16, ], [5, 13, ], [16, 13, ]]
+soprano_3_trill = [[5, 13, ], [22, 16, ], [16, 13, ]]
 alto_1_trill = [[23, 20, ], [1, 12, ], [12, 20], [12, 23, ]]
-alto_2_trill = [[23, 20, ], [12, 20], [1, 12, ], [12, 23, ]]
+alto_2_trill = [[23, 20, ], [12, 20], [1, 12, ], ]
 alto_3_trill = [[1, 12, ], [23, 20, ], [12, 20], [12, 23, ]]
-alto_4_trill = [[12, 20], [1, 12, ], [23, 20, ], [12, 23, ]]
+alto_4_trill = [[12, 20], [1, 12, ], [23, 20, ], ]
 alto_5_trill = [ [1, 12, ], [23, 20, ], [12, 23, ], [12, 20]]
-alto_6_trill = [[23, 20, ], [12, 23, ], [1, 12, ], [12, 20]]
+alto_6_trill = [[23, 20, ],  [1, 12, ], [12, 20]]
 tenor_1_trill = [[-1, 6, ], [17, 25, ], [6, 17, ],]
 tenor_2_trill = [[6, 17, ], [-1, 6, ], [17, 25, ]]
 tenor_3_trill = [[6, 17, ], [17, 25, ], [-1, 6, ]]
@@ -87,9 +87,9 @@ tenor_5_trill = [[-1, 6, ], [6, 17, ], [17, 25, ]]
 baritone_1_trill = [[4, 6, ], [24, 13, ], [6, 13, ]]
 baritone_2_trill = [[4, 6, ], [6, 13, ], [24, 13, ]]
 baritone_3_trill = [[24, 13, ], [6, 13, ], [4, 6, ]]
-bass_1_trill = [[0, 9, ], [18, 11, ], [18, 9, ], [11, 0, ]]
-bass_2_trill = [[18, 9, ], [0, 9, ], [18, 11, ], [11, 0, ]]
-contrabass_trill = [[-2, 2, ], [25, 18, ], [7, 16, ], [7, -2, ], [2, 18, ], [25, 16, ]]
+bass_1_trill = [[0, 9, ], [18, 11, ], [11, 9, ]]
+bass_2_trill = [[0, 9, ], [18, 11, ], [11, 9, ]]
+contrabass_trill = [[-2, 2, ], [25, 18, ], [7, 16, ], [2, 7, ], [18, 16, ]]
 
 def reduceMod(x, rw):
     return [(y % x) for y in rw]
@@ -397,9 +397,9 @@ attachment_handler_one = AttachmentHandler(
 )
 
 attachment_handler_two = AttachmentHandler(
-    starting_dynamic='ff',
-    ending_dynamic='mf',
-    hairpin='|>',
+    starting_dynamic='f',
+    ending_dynamic='mp',
+    hairpin='>',
     # articulation_list=['tenuto'],
 )
 

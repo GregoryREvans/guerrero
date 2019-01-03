@@ -1,4 +1,0 @@
-Fix trills in E, F? If any isinstance?
-
-
-Compose J

@@ -467,6 +467,7 @@
                     <def' dqf'' btef'' ef''' fs'''>4.
                     \mp
                     \<
+                    \bar "||"
                 }
             }
         }

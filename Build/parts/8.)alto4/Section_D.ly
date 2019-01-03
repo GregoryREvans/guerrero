@@ -951,6 +951,7 @@
                     - \stopped
                     - \tweak stencil #constante-hairpin
                     \<
+                    \bar "||"
                 }
             }
         }

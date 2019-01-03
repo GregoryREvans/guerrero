@@ -107,9 +107,7 @@
                     \glissando
                     cs'8
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         cs'8
                         ]
                         \glissando
@@ -190,11 +188,9 @@
                     \mf
                     \>
                     ~
-                    \glissando
                 }
                 {
                     % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     d'4
                     \glissando
                     ef'8
@@ -273,9 +269,7 @@
                     \glissando
                     b4
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         b8
                         \ppp
                         - \tweak stencil #constante-hairpin
@@ -306,19 +300,15 @@
                     c'8
                     ~
                     ]
-                    \glissando
-                    \parenthesize
                     c'4.
                     \glissando
                     b8
                     ~
                     [
-                    \glissando
                 }
                 {
                     \times 4/5 {
                         % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         b8
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -341,11 +331,9 @@
                     \glissando
                     b4
                     ~
-                    \glissando
                 }
                 {
                     % [Voice 19 measure 10] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     b4
                     \mp
                     - \tweak stencil #constante-hairpin
@@ -411,16 +399,12 @@
                     cs'8
                     ~
                     ]
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         cs'4
                         \glissando
                         d'8
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     d'4
                     \mp
                     - \tweak stencil #constante-hairpin
@@ -470,11 +454,9 @@
                     \mf
                     \>
                     ~
-                    \glissando
                 }
                 {
                     % [Voice 19 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     f'4
                     \glissando
                     \times 2/3 {
@@ -509,12 +491,10 @@
                         \<
                         ~
                         [
-                        \glissando
                     }
                 }
                 {
                     % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     fs'8
                     ]
                     \glissando
@@ -575,9 +555,7 @@
                     \pp
                     \<
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         e'8
                         [
                         \glissando
@@ -648,9 +626,7 @@
                     \>
                     ~
                     [
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         e'8
                         \glissando
                         ef'8
@@ -700,12 +676,10 @@
                     \mf
                     \>
                     ~
-                    \glissando
                 }
                 {
                     \times 2/3 {
                         % [Voice 19 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         c'8
                         \glissando
                         cs'4
@@ -739,11 +713,9 @@
                     cs'8
                     ~
                     ]
-                    \glissando
                 }
                 {
                     % [Voice 19 measure 24] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     cs'4
                     \glissando
                     d'8
@@ -773,8 +745,6 @@
                     ef'8
 
                     ~
-                    \glissando
-                    \parenthesize
                     ef'8
                     \glissando
                     d'8

@@ -96,8 +96,7 @@
                     \markup { "Tenor 1" }
                     \tempo 4=90
                     fs'4
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     \!
                     \tweak text #tuplet-number::calc-fraction-text
@@ -106,7 +105,7 @@
                         [
                         f''16
                         b16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -131,8 +130,7 @@
                     r8
                     \!
                     f''8
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     [
                     \times 4/5 {
@@ -141,7 +139,7 @@
                         cs'''16
                         f''16
                         fs'16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -149,8 +147,7 @@
                     r16
                     \!
                     f''16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     [
                     cs'''16
@@ -160,7 +157,7 @@
                     % [Voice 11 measure 3] %! COMMENT_MEASURE_NUMBERS
                     cs'''8
                     f''8
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -200,15 +197,14 @@
                 }
                 {
                     f''16
-                    \ff
+                    \f
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
                     \stopTrillSpan
                     f''16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     [
                     fs'16
@@ -222,7 +218,7 @@
                     b8
                     ]
                     fs'4
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -259,8 +255,7 @@
                         r16
                         \!
                         b16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         fs'16
@@ -269,7 +264,7 @@
                     }
                     f''8
                     b8
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -278,8 +273,7 @@
                         r16
                         \!
                         fs'16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         b16
@@ -291,7 +285,7 @@
                     cs'''16
                     f''16
                     cs'''16
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -299,12 +293,11 @@
                         r8
                         \!
                         f''8
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         b8
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -359,8 +352,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         b16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         cs'''16
@@ -369,7 +361,7 @@
                         ]
                     }
                     fs'4
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -385,15 +377,14 @@
                         r8
                         \!
                         f''8
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         cs'''8
                         ]
                     }
                     f''4
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -418,13 +409,12 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         b16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         f''16
                         b16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -432,8 +422,7 @@
                     r8
                     \!
                     f''8
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     [
                     \times 4/5 {
@@ -442,7 +431,7 @@
                         cs'''16
                         f''16
                         b16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -455,8 +444,7 @@
                         r16
                         \!
                         f''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         b16
@@ -466,19 +454,18 @@
                     \times 4/5 {
                         fs'16
                         b16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
                         f''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         b16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -523,8 +510,7 @@
                 {
                     % [Voice 11 measure 13] %! COMMENT_MEASURE_NUMBERS
                     fs'4
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     \stopTrillSpan
                     f''8
@@ -532,15 +518,14 @@
                     fs'8
                     ]
                     b4
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     \times 4/5 {
                         r16
                         \!
                         fs'16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         f''16
@@ -552,15 +537,14 @@
                     % [Voice 11 measure 14] %! COMMENT_MEASURE_NUMBERS
                     cs'''8
                     f''8
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
                     r16
                     \!
                     cs'''16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     [
                     f''16
@@ -569,14 +553,14 @@
                         f''16
                         b16
                         f''16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
                         b16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -649,8 +633,7 @@
                 }
                 {
                     fs'8
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     \stopTrillSpan
                     f''8
@@ -659,7 +642,7 @@
                         cs'''16
                         f''16
                         fs'16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -671,8 +654,7 @@
                     \times 2/3 {
                         % [Voice 11 measure 17] %! COMMENT_MEASURE_NUMBERS
                         f''8
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         fs'8
@@ -683,15 +665,14 @@
                     f''16
                     [
                     fs'16
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
                     r16
                     \!
                     f''16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     [
                     \times 2/3 {
@@ -704,14 +685,14 @@
                     % [Voice 11 measure 18] %! COMMENT_MEASURE_NUMBERS
                     f''16
                     cs'''16
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
                     r16
                     \!
                     f''16
-                    \ff
+                    \f
                     - \tweak stencil #constante-hairpin
                     \<
                 }
@@ -748,8 +729,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         b16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         \stopTrillSpan
@@ -758,7 +738,7 @@
                     }
                     fs'8
                     b8
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -766,8 +746,7 @@
                         r16
                         \!
                         fs'16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         f''16
@@ -780,7 +759,7 @@
                     % [Voice 11 measure 20] %! COMMENT_MEASURE_NUMBERS
                     fs'4
                     b8
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     r8
@@ -829,8 +808,7 @@
                 }
                 {
                     fs'4
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     \stopTrillSpan
                     f''16
@@ -842,21 +820,20 @@
                 {
                     % [Voice 11 measure 22] %! COMMENT_MEASURE_NUMBERS
                     f''8
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
                     r8
                     \!
                     fs'16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     [
                     b16
                     fs'16
                     b16
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -904,19 +881,17 @@
                 {
                     \times 4/5 {
                         f''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         cs'''16
-                        \mf
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
                         f''16
-                        \ff
-                        - \tweak stencil #abjad-flared-hairpin
+                        \f
                         \>
                         [
                         b16
@@ -928,15 +903,14 @@
                     b8
                     fs'16
                     b16
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
                     r16
                     \!
                     fs'16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     b4
                     f''8
@@ -948,18 +922,17 @@
                     % [Voice 11 measure 25] %! COMMENT_MEASURE_NUMBERS
                     fs'4
                     b16
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     r16
                     \!
                     fs'16
-                    \ff
-                    - \tweak stencil #abjad-flared-hairpin
+                    \f
                     \>
                     [
                     f''16
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
@@ -979,7 +952,7 @@
                 }
                 {
                     fs'8
-                    \mf
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     ]

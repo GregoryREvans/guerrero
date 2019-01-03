@@ -104,9 +104,7 @@
                         \stopTrillSpan
                         e'8
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     e'4
                     \glissando
                     \times 2/3 {
@@ -234,9 +232,7 @@
                     \pp
                     \<
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         b'4
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -285,9 +281,7 @@
                     % [Voice 15 measure 7] %! COMMENT_MEASURE_NUMBERS
                     d''2
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         d''8
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -299,9 +293,7 @@
                         \pp
                         \<
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     ef''4
                     \glissando
                 }
@@ -371,9 +363,7 @@
                     \mf
                     \>
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         bf''8
                         \ppp
                         - \tweak stencil #constante-hairpin
@@ -387,11 +377,9 @@
                     \mf
                     \>
                     ~
-                    \glissando
                 }
                 {
                     % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     a''4
                     \glissando
                     bf''8
@@ -451,9 +439,7 @@
                         bf''8
                         ~
                         ]
-                        \glissando
                     }
-                    \parenthesize
                     bf''4
                     \glissando
                     \times 2/3 {
@@ -485,11 +471,9 @@
                     \mf
                     \>
                     ~
-                    \glissando
                 }
                 {
                     % [Voice 15 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     fs''4.
                     \glissando
                     f''4.
@@ -522,9 +506,7 @@
                     }
                     f''4
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         f''8
                         [
                         \glissando
@@ -589,9 +571,7 @@
                         \glissando
                         fs''4
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     fs''4
                     \ppp
                     - \tweak stencil #constante-hairpin
@@ -627,9 +607,7 @@
                     f''8
                     ~
                     ]
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         f''4
                         \glissando
                         e''8
@@ -663,9 +641,7 @@
                         \>
                         ~
                         [
-                        \glissando
                     }
-                    \parenthesize
                     f''8
                     \glissando
                     e''8
@@ -696,9 +672,7 @@
                     }
                     fs''4
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         fs''4
                         \ppp
                         - \tweak stencil #constante-hairpin
@@ -762,25 +736,19 @@
                     \pp
                     \<
                     ~
-                    \glissando
                 }
                 {
                     \times 2/3 {
                         % [Voice 15 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         d''4
                         \glissando
                         cs''8
                         ~
                         [
-                        \glissando
                     }
-                    \parenthesize
                     cs''8
                     \mp
                     ~
-                    \glissando
-                    \parenthesize
                     cs''8
                     - \tweak stencil #constante-hairpin
                     \<

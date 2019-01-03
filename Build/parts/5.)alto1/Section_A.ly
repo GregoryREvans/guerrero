@@ -523,6 +523,7 @@
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
+                    \bar "||"
                 }
             }
         }

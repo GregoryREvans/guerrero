@@ -110,9 +110,7 @@
                         \<
                         ~
                         [
-                        \glissando
                     }
-                    \parenthesize
                     b'16
                     \glissando
                     bqs'16
@@ -232,15 +230,11 @@
                         \glissando
                         a'8
                         ~
-                        \glissando
-                        \parenthesize
                         a'16
                         \glissando
                         aqs'16
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     aqs'16
                     \f
                     - \tweak stencil #constante-hairpin
@@ -255,13 +249,11 @@
                     \<
                     ~
                     [
-                    \glissando
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 7 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         a'8
                         \glissando
                         aqs'16
@@ -345,8 +337,6 @@
                     \mf
                     ~
                     [
-                    \glissando
-                    \parenthesize
                     g'16
                     \>
                     \glissando
@@ -369,12 +359,10 @@
                     \glissando
                     gqf'16
                     ~
-                    \glissando
                 }
                 {
                     \times 4/5 {
                         % [Voice 7 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         gqf'16
                         \glissando
                         g'8
@@ -409,8 +397,6 @@
                         \glissando
                         g'16
                         ~
-                        \glissando
-                        \parenthesize
                         g'16
                         \glissando
                         gqf'16
@@ -429,13 +415,11 @@
                     \glissando
                     gqs'8
                     ~
-                    \glissando
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 7 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         gqs'16
                         \glissando
                         af'16
@@ -496,19 +480,15 @@
                         \glissando
                         gqf'16
                         ~
-                        \glissando
                     }
                 }
                 {
                     \times 4/5 {
                         % [Voice 7 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         gqf'8
                         \glissando
                         g'16
                         ~
-                        \glissando
-                        \parenthesize
                         g'16
                         \glissando
                         gqs'16
@@ -535,8 +515,6 @@
                     \glissando
                     af'16
                     ~
-                    \glissando
-                    \parenthesize
                     af'16
                     \glissando
                     aqf'16
@@ -585,15 +563,11 @@
                         \glissando
                         bf'16
                         ~
-                        \glissando
-                        \parenthesize
                         bf'16
                         \glissando
                         aqs'16
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     aqs'16
                     \glissando
                     bf'16
@@ -628,15 +602,11 @@
                     \glissando
                     b'16
                     ~
-                    \glissando
-                    \parenthesize
                     b'16
                     \glissando
                     bqf'16
                     ~
-                    \glissando
                     \times 4/5 {
-                        \parenthesize
                         bqf'16
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -651,11 +621,9 @@
                         \>
                         ~
                         [
-                        \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        \parenthesize
                         b'16
                         \glissando
                         bqf'16
@@ -707,12 +675,10 @@
                     \glissando
                     af'16
                     ~
-                    \glissando
                 }
                 {
                     \times 4/5 {
                         % [Voice 7 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         af'16
                         \f
                         - \tweak stencil #constante-hairpin
@@ -725,8 +691,6 @@
                         \mp
                         ~
                         [
-                        \glissando
-                        \parenthesize
                         gqs'16
                         \<
                         \glissando
@@ -750,8 +714,6 @@
                         gqs'16
                         \pp
                         ~
-                        \glissando
-                        \parenthesize
                         gqs'16
                         - \tweak stencil #constante-hairpin
                         \<
@@ -824,8 +786,6 @@
                         \glissando
                         g'16
                         ~
-                        \glissando
-                        \parenthesize
                         g'16
                         \glissando
                         gqf'16
@@ -858,15 +818,11 @@
                         \<
                         ~
                         [
-                        \glissando
                     }
-                    \parenthesize
                     fs'16
                     \glissando
                     fqs'16
                     ~
-                    \glissando
-                    \parenthesize
                     fqs'16
                     \glissando
                     f'16
@@ -885,8 +841,6 @@
                         f'16
                         \pp
                         ~
-                        \glissando
-                        \parenthesize
                         f'16
                         - \tweak stencil #constante-hairpin
                         \<
@@ -966,8 +920,6 @@
                     \glissando
                     gqs'16
                     ~
-                    \glissando
-                    \parenthesize
                     gqs'16
                     \glissando
                     af'16
@@ -1129,11 +1081,9 @@
                         \glissando
                         bqs16
                         ~
-                        \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        \parenthesize
                         bqs16
                         \f
                         - \tweak stencil #constante-hairpin
@@ -1156,8 +1106,6 @@
                         \glissando
                         b8
                         ~
-                        \glissando
-                        \parenthesize
                         b16
                         \glissando
                         bqf16
@@ -1225,17 +1173,13 @@
                         \glissando
                         cs'8
                         ~
-                        \glissando
-                        \parenthesize
                         cs'16
                         \glissando
                         cqs'16
                         ~
-                        \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        \parenthesize
                         cqs'16
                         \glissando
                         c'8
@@ -1341,9 +1285,7 @@
                         \glissando
                         ef'16
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     ef'8
                     \glissando
                     dqs'8
@@ -1381,8 +1323,6 @@
                         cs'16
                         \pp
                         ~
-                        \glissando
-                        \parenthesize
                         cs'16
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1457,8 +1397,6 @@
                         \mp
                         ~
                         [
-                        \glissando
-                        \parenthesize
                         c'16
                         \<
                         \glissando
@@ -1475,6 +1413,7 @@
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    \bar "||"
                 }
             }
         }

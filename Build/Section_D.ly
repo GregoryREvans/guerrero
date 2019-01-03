@@ -754,6 +754,7 @@
                     }
                     {
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -1488,6 +1489,7 @@
                     {
                         % [Voice 2 measure 25] %! COMMENT_MEASURE_NUMBERS
                         r2..
+                        \bar "||"
                     }
                 }
             }
@@ -2086,6 +2088,7 @@
                         e''8
                         - \stopped
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -2644,6 +2647,7 @@
                         dqf''16
                         - \stopped
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -3375,6 +3379,7 @@
                     {
                         % [Voice 5 measure 25] %! COMMENT_MEASURE_NUMBERS
                         r2..
+                        \bar "||"
                     }
                 }
             }
@@ -4144,6 +4149,7 @@
                             eqf''8
                             - \stopped
                             ]
+                            \bar "||"
                         }
                     }
                 }
@@ -4878,6 +4884,7 @@
                         % [Voice 7 measure 25] %! COMMENT_MEASURE_NUMBERS
                         r2..
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -5748,6 +5755,7 @@
                         - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -6266,6 +6274,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -7074,6 +7083,7 @@
                     {
                         r4.
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -7883,6 +7893,7 @@
                             fqs''8
                             - \stopped
                             ]
+                            \bar "||"
                         }
                     }
                 }
@@ -8773,6 +8784,7 @@
                         gqf'16
                         - \stopped
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -9267,6 +9279,7 @@
                             \!
                         }
                         r8
+                        \bar "||"
                     }
                 }
             }
@@ -10089,6 +10102,7 @@
                     {
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -10906,6 +10920,7 @@
                         \<
                         r16
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -11712,6 +11727,7 @@
                             def''8
                             - \stopped
                             ]
+                            \bar "||"
                         }
                     }
                 }
@@ -12592,6 +12608,7 @@
                         fs'16
                         - \stopped
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -13409,6 +13426,7 @@
                     {
                         r4.
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -14203,6 +14221,7 @@
                     }
                     {
                         r4.
+                        \bar "||"
                     }
                 }
             }
@@ -14792,6 +14811,7 @@
                         ]
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -15690,6 +15710,7 @@
                             - \stopped
                             - \tweak stencil #constante-hairpin
                             \<
+                            \bar "||"
                         }
                     }
                 }

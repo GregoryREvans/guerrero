@@ -141,11 +141,9 @@
                     \pp
                     \<
                     ~
-                    \glissando
                 }
                 {
                     % [Voice 11 measure 3] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     g'4
                     \mp
                     - \tweak stencil #constante-hairpin
@@ -161,9 +159,7 @@
                     \glissando
                     g'8
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         g'8
                         \glissando
                         fs'8
@@ -269,9 +265,7 @@
                         \glissando
                         ef'4
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     ef'4
                     \glissando
                 }
@@ -297,12 +291,10 @@
                     \mf
                     \>
                     ~
-                    \glissando
                 }
                 {
                     \times 2/3 {
                         % [Voice 11 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         d'4
                         \glissando
                         ef'8
@@ -426,9 +418,7 @@
                     \mf
                     \>
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         e'4
                         \glissando
                         ef'8
@@ -471,9 +461,7 @@
                     % [Voice 11 measure 14] %! COMMENT_MEASURE_NUMBERS
                     e'2
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         e'8
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -485,9 +473,7 @@
                         \pp
                         \<
                         ~
-                        \glissando
                     }
-                    \parenthesize
                     ef'4
                     \mp
                     - \tweak stencil #constante-hairpin
@@ -544,9 +530,7 @@
                     % [Voice 11 measure 17] %! COMMENT_MEASURE_NUMBERS
                     f'2
                     ~
-                    \glissando
                     \times 2/3 {
-                        \parenthesize
                         f'8
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -562,11 +546,9 @@
                     \mf
                     \>
                     ~
-                    \glissando
                 }
                 {
                     % [Voice 11 measure 18] %! COMMENT_MEASURE_NUMBERS
-                    \parenthesize
                     e'4
                     \ppp
                     - \tweak stencil #constante-hairpin
@@ -619,9 +601,7 @@
                         f'8
                         ~
                         ]
-                        \glissando
                     }
-                    \parenthesize
                     f'4
                     \mp
                     - \tweak stencil #constante-hairpin
@@ -691,12 +671,10 @@
                     \glissando
                     a'8
                     ~
-                    \glissando
                 }
                 {
                     \times 2/3 {
                         % [Voice 11 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        \parenthesize
                         a'8
                         \glissando
                         bf'8

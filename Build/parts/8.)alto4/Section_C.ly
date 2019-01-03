@@ -1088,6 +1088,7 @@
                     <cqs'' etef'' dqf'''>16
                     - \accent
                     ]
+                    \bar "||"
                 }
             }
         }

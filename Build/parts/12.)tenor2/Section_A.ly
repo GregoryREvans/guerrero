@@ -379,6 +379,7 @@
                 {
                     % [Voice 12 measure 21] %! COMMENT_MEASURE_NUMBERS
                     r1
+                    \bar "||"
                 }
             }
         }

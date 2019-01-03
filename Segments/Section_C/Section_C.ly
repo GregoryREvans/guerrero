@@ -1169,6 +1169,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -2181,6 +2182,7 @@
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            \bar "||"
                         }
                     }
                 }
@@ -3225,6 +3227,7 @@
                         dtes''8
 
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -4259,6 +4262,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -5282,6 +5286,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -6321,6 +6326,7 @@
                         - \stopped
                         d''8.
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -7298,6 +7304,7 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -8305,6 +8312,7 @@
                         <cqs'' etef'' dqf'''>16
                         - \accent
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -9324,6 +9332,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -10357,6 +10366,7 @@
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            \bar "||"
                         }
                     }
                 }
@@ -11423,6 +11433,7 @@
                         - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -12509,6 +12520,7 @@
                         <fs' fqs'' dqf''' fs'''>16
                         - \portato
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -13532,6 +13544,7 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -14558,6 +14571,7 @@
                         - \stopped
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -15572,6 +15586,7 @@
                         - \espressivo
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -16626,6 +16641,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -17617,6 +17633,7 @@
                         - \espressivo
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -18638,6 +18655,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -19674,6 +19692,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -20715,6 +20734,7 @@
                         ]
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -21747,6 +21767,7 @@
 
                             - \tweak stencil #constante-hairpin
                             \<
+                            \bar "||"
                         }
                     }
                 }

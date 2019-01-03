@@ -3419,8 +3419,8 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
     abjad.glissando(
         staff[:],
         allow_repeats=True,
-        parenthesize_repeats=True,
-        allow_ties=True,
+        # parenthesize_repeats=True,
+        # allow_ties=True,
         )
 
 #attach instruments and clefs

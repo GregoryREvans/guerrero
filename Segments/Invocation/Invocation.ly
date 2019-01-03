@@ -274,6 +274,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -469,6 +470,7 @@
                     {
                         r1
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -640,6 +642,7 @@
                     {
                         r2
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -860,6 +863,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -1067,6 +1071,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -1260,6 +1265,7 @@
                     {
                         r1
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -1463,6 +1469,7 @@
                     {
                         r2
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -1700,6 +1707,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -1914,6 +1922,7 @@
                         \<
                         r8
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -2126,6 +2135,7 @@
                     {
                         r1
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -2334,6 +2344,7 @@
                     {
                         r2
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -2555,6 +2566,7 @@
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            \bar "||"
                         }
                     }
                 }
@@ -2751,6 +2763,7 @@
 
                         \<
                         cs'4.
+                        \bar "||"
                     }
                 }
             }
@@ -2941,6 +2954,7 @@
                     {
                         r1
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -3124,6 +3138,7 @@
                     {
                         r2
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -3331,6 +3346,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -3550,6 +3566,7 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }
@@ -3753,6 +3770,7 @@
                     {
                         r1
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -3934,6 +3952,7 @@
                     {
                         r2
                         \!
+                        \bar "||"
                     }
                 }
             }
@@ -4149,6 +4168,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \bar "||"
                     }
                 }
             }
@@ -4361,6 +4381,7 @@
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
+                        \bar "||"
                     }
                 }
             }

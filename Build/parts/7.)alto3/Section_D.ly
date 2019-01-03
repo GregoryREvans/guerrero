@@ -814,6 +814,7 @@
                     % [Voice 7 measure 25] %! COMMENT_MEASURE_NUMBERS
                     r2..
                     \!
+                    \bar "||"
                 }
             }
         }

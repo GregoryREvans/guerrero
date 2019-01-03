@@ -812,6 +812,7 @@
                 {
                     % [Voice 5 measure 25] %! COMMENT_MEASURE_NUMBERS
                     r2..
+                    \bar "||"
                 }
             }
         }
