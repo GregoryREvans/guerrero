@@ -169,14 +169,9 @@
                     \!
                 }
                 {
-                    r4
+                    r2.
                 }
-                {
-                    r4
-                }
-                {
-                    r4
-                }
+                \pageBreak
                 {
                     % [Voice 4 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r4
@@ -578,6 +573,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 4 measure 21] %! COMMENT_MEASURE_NUMBERS
                     r4

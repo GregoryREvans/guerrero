@@ -492,6 +492,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 4 measure 18] %! COMMENT_MEASURE_NUMBERS
                     eqs''4

@@ -319,6 +319,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 4 measure 8] %! COMMENT_MEASURE_NUMBERS
                     eqs''2
@@ -759,6 +760,7 @@
                     \!
                     \stopTrillSpan
                 }
+                \pageBreak
                 {
                     % [Voice 4 measure 25] %! COMMENT_MEASURE_NUMBERS
                     eqs''8.

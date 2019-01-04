@@ -660,6 +660,7 @@
                         \glissando
                     }
                 }
+                \pageBreak
                 {
                     % [Voice 3 measure 12] %! COMMENT_MEASURE_NUMBERS
                     r4

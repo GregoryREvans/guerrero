@@ -142,6 +142,7 @@
                 {
                     r2
                 }
+                \pageBreak
                 {
                     % [Voice 4 measure 3] %! COMMENT_MEASURE_NUMBERS
                     r1
@@ -526,6 +527,7 @@
                     r2
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 4 measure 21] %! COMMENT_MEASURE_NUMBERS
                     r1

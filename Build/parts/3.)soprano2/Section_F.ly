@@ -203,11 +203,13 @@
                     \stopTrillSpan
                 }
                 {
-                    <f' cs''>4
+                    \pitchedTrill
+                    f'4
                     \p
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan cs''
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -218,6 +220,7 @@
                         - \tenuto
                         \<
                         [
+                        \stopTrillSpan
                         ftes'16
                         ~
                         ]
@@ -335,15 +338,18 @@
                     ~
                 }
                 {
-                    <e'' bf''>4
+                    \pitchedTrill
+                    e''4
                     \p
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan bf''
                 }
                 {
                     \times 4/5 {
                         etes''4
+                        \stopTrillSpan
                         \pp
                         - \tenuto
                         - \tweak stencil #constante-hairpin
@@ -477,14 +483,17 @@
                     \stopTrillSpan
                 }
                 {
-                    <f' e''>4
+                    \pitchedTrill
+                    f'4
                     \p
                     - \halfopen
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan e''
                 }
                 {
                     ftes'4
+                    \stopTrillSpan
                     \pp
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -588,6 +597,7 @@
                     \<
                     ]
                 }
+                \pageBreak
                 {
                     % [Voice 3 measure 16] %! COMMENT_MEASURE_NUMBERS
                     r4

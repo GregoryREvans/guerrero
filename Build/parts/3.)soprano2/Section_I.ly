@@ -372,6 +372,7 @@
                 {
                     r2
                 }
+                \pageBreak
                 {
                     % [Voice 3 measure 11] %! COMMENT_MEASURE_NUMBERS
                     etes''4
