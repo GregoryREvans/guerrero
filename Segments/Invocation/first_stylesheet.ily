@@ -76,6 +76,7 @@
 		\override Beam.concaveness = #10000
 		\override DynamicText.font-size = #-2
 		\override Glissando.breakable = ##t
+		\override Glissando.thickness = #2
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t

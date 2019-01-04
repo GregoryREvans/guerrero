@@ -367,13 +367,13 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
         ),
     extra_counts_per_division=[-1, 0, 1, -1, 1, 0, ],
     logical_tie_masks=[
-        abjadext.rmakers.silence([1], 5),
+        abjadext.rmakers.silence([4, 8, ], 9),
         ],
-    division_masks=[
-        abjadext.rmakers.SilenceMask(
-            pattern=abjad.index([0], 7),
-            ),
-        ],
+    # division_masks=[
+    #     abjadext.rmakers.SilenceMask(
+    #         pattern=abjad.index([0], 7),
+    #         ),
+    #     ],
     tuplet_specifier=abjadext.rmakers.TupletSpecifier(
         trivialize=True,
         extract_trivial=True,

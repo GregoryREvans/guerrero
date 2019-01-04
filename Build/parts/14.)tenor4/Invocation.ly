@@ -60,7 +60,7 @@
                 }
                 {
                     cqs'4
-                    \mp
+                    \mf
                     \<
                     ~
                 }
@@ -70,6 +70,7 @@
                     \f
                     - \tweak stencil #constante-hairpin
                     \<
+                    \glissando
                     r4
                     \!
                 }
@@ -80,24 +81,30 @@
                     \times 4/5 {
                         % [Voice 14 measure 3] %! COMMENT_MEASURE_NUMBERS
                         cs'16
-                        \mf
+                        \mp
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         [
+                        \glissando
                         dqf'16
+                        \glissando
                         d'16
+                        \glissando
                         dqs'8
                         ~
                         ]
                     }
                     dqs'4
+                    \glissando
                     ef'8.
                     [
+                    \glissando
                     eqf'16
                     \ff
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    \glissando
                 }
                 {
                     % [Voice 14 measure 4] %! COMMENT_MEASURE_NUMBERS
@@ -107,9 +114,10 @@
                 {
                     \times 2/3 {
                         e'4
-                        \mp
+                        \mf
                         - \tenuto
                         \<
+                        \glissando
                         eqs'8
                         ~
                     }
@@ -117,6 +125,7 @@
                 {
                     % [Voice 14 measure 5] %! COMMENT_MEASURE_NUMBERS
                     eqs'2
+                    \glissando
                 }
                 {
                     r2
@@ -126,18 +135,23 @@
                     \times 4/5 {
                         % [Voice 14 measure 6] %! COMMENT_MEASURE_NUMBERS
                         f'16
-                        \mf
+                        \mp
                         - \tweak stencil #abjad-flared-hairpin
                         \<
+                        \glissando
                         fqs'4
+                        \glissando
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 8/7 {
                         fs'16
                         [
+                        \glissando
                         gqf'16
+                        \glissando
                         g'16
                         ]
+                        \glissando
                         gqs'4
                         ~
                     }
@@ -146,19 +160,26 @@
                     % [Voice 14 measure 7] %! COMMENT_MEASURE_NUMBERS
                     gqs'16
                     [
+                    \glissando
                     af'8.
+                    \glissando
                     aqf'8
+                    \glissando
                     a'8
                     ~
                     \times 4/5 {
                         a'8
+                        \glissando
                         aqs'16
+                        \glissando
                         bf'16
+                        \glissando
                         bqf'16
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \glissando
                     }
                 }
                 {
@@ -168,8 +189,9 @@
                 }
                 {
                     b'2
-                    \mp
+                    \mf
                     \<
+                    \glissando
                 }
                 {
                     \times 2/3 {
@@ -181,6 +203,7 @@
 
                         - \tweak stencil #constante-hairpin
                         \<
+                        \glissando
                     }
                 }
                 {
@@ -192,7 +215,7 @@
                     \times 8/7 {
                         % [Voice 14 measure 10] %! COMMENT_MEASURE_NUMBERS
                         c''8.
-                        \mf
+                        \mp
                         ~
                         [
                         c''8
@@ -202,14 +225,17 @@
                         ~
                     }
                     cqs'16
+                    \glissando
                     cs'16
                     ~
                     cs'16
+                    \glissando
                     dqf'16
                     \ff
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    \glissando
                 }
                 {
                     % [Voice 14 measure 11] %! COMMENT_MEASURE_NUMBERS
@@ -218,7 +244,7 @@
                 }
                 {
                     d'2
-                    \mp
+                    \mf
                     \<
                     ~
                 }

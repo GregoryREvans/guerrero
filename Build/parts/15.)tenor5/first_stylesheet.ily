@@ -3,7 +3,7 @@
 \version "2.19.82"
 \language "english"
 #(set-default-paper-size "letterportrait")
-#(set-global-staff-size 11)
+#(set-global-staff-size 9.5)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
@@ -74,11 +74,12 @@
 		\remove Mark_engraver
         \accepts TimeSignatureContext
 		\override BarLine.bar-extent = #'(-2 . 2)
-        \override Beam.breakable = ##t
+        %{ \override Beam.breakable = ##t %}
 		\override Beam.concaveness = #10000
 		\override DynamicText.font-size = #-3
 		\override Glissando.breakable = ##t
-		\override Glissando.thickness = #2
+		\override Glissando.thickness = #2.5
+		\override Tie.breakable = ##f
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
@@ -100,8 +101,8 @@
     \context {
         \Staff
         \remove Time_signature_engraver
-		\consists Page_turn_engraver
-		minimumPageTurnLength = #(ly:make-moment 1 4)
+		%{ \consists Page_turn_engraver
+		minimumPageTurnLength = #(ly:make-moment 1 4) %}
     }
     \context {
         \RhythmicStaff
@@ -113,8 +114,8 @@
 }
 
 \paper {
-	page-breaking = #ly:page-turn-breaking
-	system-system-spacing #'basic-distance = #15
+	%{ page-breaking = #ly:page-turn-breaking %}
+	system-system-spacing = #'((basic-distance . 15) (padding . 0))
 
 	top-margin = 1\cm
 	bottom-margin = 0.4\cm

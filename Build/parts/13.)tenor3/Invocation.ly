@@ -57,19 +57,23 @@
                     \markup { "Tenor 3" }
                     \tempo 4=60
                     b4
-                    \mf
+                    \mp
                     - \tweak stencil #abjad-flared-hairpin
                     \<
                     ~
                     b16
                     [
+                    \glissando
                     bqs8.
+                    \glissando
                     c'8
+                    \glissando
                     cqs'8
                     \ff
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
+                    \glissando
                 }
                 {
                     r2
@@ -79,14 +83,18 @@
                     \times 8/9 {
                         % [Voice 13 measure 2] %! COMMENT_MEASURE_NUMBERS
                         cs'8
-                        \mf
+                        \mp
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         [
+                        \glissando
                         dqf'16
+                        \glissando
                         d'16
+                        \glissando
                         dqs'16
                         ]
+                        \glissando
                         ef'4
                         ~
                     }
@@ -94,11 +102,13 @@
                     \times 4/3 {
                         ef'16
                         [
+                        \glissando
                         eqf'8
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \glissando
                     }
                 }
                 {
@@ -112,14 +122,16 @@
                 {
                     % [Voice 13 measure 4] %! COMMENT_MEASURE_NUMBERS
                     e'4
-                    \mp
+                    \mf
 
                     \<
+                    \glissando
                     eqs'2
                     \f
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \glissando
                 }
                 {
                     r2
@@ -128,25 +140,32 @@
                 {
                     % [Voice 13 measure 5] %! COMMENT_MEASURE_NUMBERS
                     f'16
-                    \mf
+                    \mp
                     - \tweak stencil #abjad-flared-hairpin
                     \<
                     [
+                    \glissando
                     fqs'16
                     ~
                     fqs'16
+                    \glissando
                     fs'16
                     ~
                     fs'8.
+                    \glissando
                     gqf'16
+                    \glissando
                     \times 4/5 {
                         g'16
+                        \glissando
                         gqs'16
+                        \glissando
                         af'8.
                         \ff
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \glissando
                     }
                 }
                 {
@@ -169,15 +188,17 @@
                     \times 2/3 {
                         r8
                         aqf'4
-                        \mp
+                        \mf
                         - \tenuto
                         \<
+                        \glissando
                     }
                     a'2
                     \f
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \glissando
                 }
                 {
                     % [Voice 13 measure 9] %! COMMENT_MEASURE_NUMBERS
@@ -190,13 +211,15 @@
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \glissando
                     r8
                     \!
                     bf'8
-                    \mp
+                    \mf
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \glissando
                 }
                 {
                     % [Voice 13 measure 10] %! COMMENT_MEASURE_NUMBERS
@@ -211,7 +234,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         bqf'8
-                        \mf
+                        \mp
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         [
@@ -219,12 +242,15 @@
                         ~
                     }
                     b8
+                    \glissando
                     bqs8
                     ]
+                    \glissando
                     c'4
                     \ff
                     - \tweak stencil #constante-hairpin
                     \<
+                    \glissando
                 }
                 {
                     % [Voice 13 measure 12] %! COMMENT_MEASURE_NUMBERS
@@ -233,9 +259,10 @@
                 }
                 {
                     cqs'4
-                    \mp
+                    \mf
 
                     \<
+                    \glissando
                     cs'4.
                     \bar "||"
                 }

@@ -2,10 +2,10 @@
 
 \version "2.19.82"
 \language "english"
-%{ #(set-default-paper-size "arch c") %}
-#(set-default-paper-size "ansi c")
-%{ #(set-global-staff-size 11) %}
-#(set-global-staff-size 8)
+#(set-default-paper-size "11x17portrait")
+%{ #(set-default-paper-size "ansi c") %}
+#(set-global-staff-size 6)
+%{ #(set-global-staff-size 8) %}
 \include "ekmel.ily"
 \ekmelicStyle evans
 
@@ -68,7 +68,7 @@
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.font-size = #9
         \override TimeSignature.self-alignment-X = #center
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 13) (padding . 6) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 13) (padding . 7) (stretchability . 0))
     }
     \context {
         \Score
@@ -76,11 +76,15 @@
 		\remove Mark_engraver
         \accepts TimeSignatureContext
 		\override BarLine.bar-extent = #'(-2 . 2)
+		\override BarLine.thickness = #0.2
         \override Beam.breakable = ##t
 		\override Beam.concaveness = #10000
 		\override DynamicText.font-size = #-2
 		\override Glissando.breakable = ##t
-		\override Glissando.thickness = #2
+		%{ \override Glissando.thickness = #2 %}
+		\override Glissando.thickness = #1.6
+		\override Stem.thickness = #0.5
+		\override Saff.thickness = #0.3
 		\override MetronomeMark.font-size = 3
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
@@ -92,7 +96,8 @@
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 59)
+		%{ proportionalNotationDuration = #(ly:make-moment 1 59) %}
+		proportionalNotationDuration = #(ly:make-moment 1 65)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -103,6 +108,7 @@
     \context {
         \Staff
         \remove Time_signature_engraver
+		fontSize = #-1
     }
     \context {
         \RhythmicStaff
@@ -115,10 +121,15 @@
 
 \paper {
 
-	top-margin = 1\cm
+	%{ top-margin = 1\cm
 	bottom-margin = 0.4\cm
 	left-margin = 1.2\cm
-	right-margin = 1\cm
+	right-margin = 1\cm %}
+
+	top-margin = 0.5\cm
+	bottom-margin = 0.4\cm
+	left-margin = 1\cm
+	right-margin = 0.8\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""

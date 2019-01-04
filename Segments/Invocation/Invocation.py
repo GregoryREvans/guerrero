@@ -114,14 +114,14 @@ rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
 # Initialize AttachmentHandler
 
 attachment_handler_one = AttachmentHandler(
-    starting_dynamic='mf',
+    starting_dynamic='mp',
     ending_dynamic='ff',
     hairpin='<|',
     # articulation_list=['tenuto'],
 )
 
 attachment_handler_two = AttachmentHandler(
-    starting_dynamic='mp',
+    starting_dynamic='mf',
     ending_dynamic='f',
     hairpin='<',
     articulation_list=['tenuto', '', '', '', '', ],
@@ -1372,6 +1372,21 @@ for staff , scale in zip(staffs , scales):
             pitch = next(pitches)
             for note in logicl_tie:
                 note.written_pitch = pitch
+
+for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+    notes = abjad.select(staff).logical_ties(pitched=True)
+    abjad.glissando(
+        notes[0:24],
+        allow_repeats=True,
+        # parenthesize_repeats=True,
+        # allow_ties=True,
+        )
+    abjad.glissando(
+        notes[24:],
+        allow_repeats=True,
+        # parenthesize_repeats=True,
+        # allow_ties=True,
+        )
 
 #attach instruments and clefs
 
