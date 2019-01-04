@@ -182,17 +182,20 @@
                 }
                 {
                     % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    <af' b'>4
+                    \pitchedTrill
+                    af'4
                     \p
                     - \halfopen
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan b'
                 }
                 {
                     eef'''4
                     \pp
                     \<
                     ~
+                    \stopTrillSpan
                     eef'''16
                     [
                     bqs'8.
@@ -474,10 +477,12 @@
                     ~
                 }
                 {
-                    <b' f''>4
+                    \pitchedTrill
+                    b'4
                     \ff
 
                     \>
+                    \startTrillSpan f''
                     \pitchedTrill
                     f''4
                     \p
@@ -599,6 +604,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS

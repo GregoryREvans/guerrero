@@ -104,11 +104,13 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <f' cs''>8
+                        \pitchedTrill
+                        f'8
                         \ff
                         - \portato
                         \>
                         [
+                        \startTrillSpan cs''
                         \pitchedTrill
                         e''16
                         \p
@@ -504,6 +506,7 @@
                     \!
                     \stopTrillSpan
                 }
+                \pageBreak
                 {
                     % [Voice 2 measure 16] %! COMMENT_MEASURE_NUMBERS
                     dtef''4

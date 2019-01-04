@@ -565,6 +565,7 @@
                         \!
                     }
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS

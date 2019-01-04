@@ -162,6 +162,7 @@
                     \!
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 2 measure 3] %! COMMENT_MEASURE_NUMBERS
                     r1
@@ -817,6 +818,7 @@
                     r2..
                     \bar "||"
                 }
+                \pageBreak
             }
         }
     >>
