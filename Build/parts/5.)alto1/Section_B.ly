@@ -345,6 +345,7 @@
                     \<
                     \glissando
                 }
+                \pageBreak
                 {
                     % [Voice 5 measure 6] %! COMMENT_MEASURE_NUMBERS
                     r4
@@ -1046,6 +1047,7 @@
                     }
                     r4
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 5 measure 20] %! COMMENT_MEASURE_NUMBERS

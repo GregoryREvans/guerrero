@@ -737,6 +737,7 @@
                     r8
                     \!
                     \bar "||"
+                    \pageBreak
                 }
             }
         }

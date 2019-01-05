@@ -467,6 +467,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 9 measure 14] %! COMMENT_MEASURE_NUMBERS
@@ -588,13 +589,16 @@
                 }
                 {
                     % [Voice 9 measure 19] %! COMMENT_MEASURE_NUMBERS
-                    <cs' c''>2
+                    \pitchedTrill
+                    cs'2
                     \ff
                     \>
                     ~
+                    \startTrillSpan c''
                 }
                 {
                     btes''2
+                    \stopTrillSpan
                     \pp
                     \<
                     ~
@@ -662,11 +666,13 @@
                 }
                 {
                     % [Voice 9 measure 23] %! COMMENT_MEASURE_NUMBERS
-                    <c'' af''>16
+                    \pitchedTrill
+                    c''16
+                    [
                     \ff
 
                     \>
-                    [
+                    \startTrillSpan af''
                     \pitchedTrill
                     cs'8.
                     \p

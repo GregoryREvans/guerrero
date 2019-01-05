@@ -284,6 +284,7 @@
                     r2.
                     \!
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 5 measure 9] %! COMMENT_MEASURE_NUMBERS
@@ -813,6 +814,7 @@
                     % [Voice 5 measure 25] %! COMMENT_MEASURE_NUMBERS
                     r2..
                     \bar "||"
+                    \pageBreak
                 }
             }
         }

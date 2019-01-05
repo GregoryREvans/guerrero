@@ -220,6 +220,7 @@
                     r2
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 7 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r4
@@ -810,6 +811,7 @@
                         ]
                     }
                 }
+                \pageBreak
                 {
                     % [Voice 7 measure 25] %! COMMENT_MEASURE_NUMBERS
                     r2..

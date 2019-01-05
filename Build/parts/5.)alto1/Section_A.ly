@@ -288,6 +288,7 @@
                         ]
                     }
                 }
+                \pageBreak
                 {
                     % [Voice 5 measure 10] %! COMMENT_MEASURE_NUMBERS
                     r2.

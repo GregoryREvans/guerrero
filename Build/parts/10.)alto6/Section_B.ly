@@ -304,6 +304,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 10 measure 5] %! COMMENT_MEASURE_NUMBERS
@@ -889,6 +890,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {

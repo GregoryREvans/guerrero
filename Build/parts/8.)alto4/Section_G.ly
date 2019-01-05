@@ -220,6 +220,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 8 measure 6] %! COMMENT_MEASURE_NUMBERS
                     r2

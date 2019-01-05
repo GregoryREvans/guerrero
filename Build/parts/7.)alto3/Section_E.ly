@@ -219,14 +219,16 @@
                 }
                 {
                     % [Voice 7 measure 5] %! COMMENT_MEASURE_NUMBERS
-                    <e'' bf''>4
+                    \pitchedTrill
+                    e''4
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
                     ~
+                    \startTrillSpan bf''
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <e'' bf''>16
+                        e''16
                         [
                         \pitchedTrill
                         cs''8
@@ -802,12 +804,15 @@
                     \<
                     ~
                 }
+                \pageBreak
                 {
                     % [Voice 7 measure 22] %! COMMENT_MEASURE_NUMBERS
-                    <f' cs''>4
+                    \pitchedTrill
+                    f'4
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan cs''
                     \pitchedTrill
                     e''4
                     \startTrillSpan bf''
@@ -913,13 +918,16 @@
                 }
                 {
                     % [Voice 7 measure 25] %! COMMENT_MEASURE_NUMBERS
-                    <f' cs''>4
+                    \pitchedTrill
+                    f'4
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan cs''
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         r16
+                        \stopTrillSpan
                         \!
                         \pitchedTrill
                         e''8

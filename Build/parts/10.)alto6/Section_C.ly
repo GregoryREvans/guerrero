@@ -624,6 +624,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {

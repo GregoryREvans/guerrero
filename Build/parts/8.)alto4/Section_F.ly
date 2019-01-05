@@ -191,11 +191,13 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 8 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        <af'' b''>8
+                        \pitchedTrill
+                        af''8
+                        [
                         \ff
 
                         \>
-                        [
+                        \startTrillSpan b''
                         \pitchedTrill
                         c''16
                         ~
@@ -280,13 +282,15 @@
                 }
                 {
                     % [Voice 8 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    <af'' b''>4
+                    \pitchedTrill
+                    af''4
                     \ff
                     \>
                     ~
+                    \startTrillSpan b''
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <af'' b''>8
+                        af''8
                         [
                         \pitchedTrill
                         c''16
@@ -310,6 +314,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 8 measure 9] %! COMMENT_MEASURE_NUMBERS
                     aef''2

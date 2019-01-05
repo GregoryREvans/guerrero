@@ -935,13 +935,16 @@
                     ~
                 }
                 {
-                    <cs' c''>4
+                    \pitchedTrill
+                    cs'4
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan c''
                 }
                 {
                     af''8
+                    \stopTrillSpan
                     \f
                     \>
                     [

@@ -467,6 +467,7 @@
                     r2
                     \!
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 7 measure 11] %! COMMENT_MEASURE_NUMBERS

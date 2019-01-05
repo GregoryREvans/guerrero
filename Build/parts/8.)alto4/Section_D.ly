@@ -525,6 +525,7 @@
                     r2
                     \!
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 8 measure 13] %! COMMENT_MEASURE_NUMBERS
@@ -847,6 +848,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 8 measure 23] %! COMMENT_MEASURE_NUMBERS
                     r4

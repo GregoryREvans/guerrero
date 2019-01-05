@@ -218,6 +218,7 @@
                     - \tweak stencil #constante-hairpin
                     \<
                 }
+                \pageBreak
                 {
                     % [Voice 8 measure 9] %! COMMENT_MEASURE_NUMBERS
                     r1

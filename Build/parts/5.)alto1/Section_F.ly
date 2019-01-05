@@ -234,12 +234,15 @@
                 }
                 {
                     % [Voice 5 measure 5] %! COMMENT_MEASURE_NUMBERS
-                    <f' cs''>2
+                    \pitchedTrill
+                    f'2
                     \ff
                     \>
+                    \startTrillSpan cs''
                 }
                 {
                     ces''16
+                    \stopTrillSpan
                     \pp
                     - \flageolet
                     \<
@@ -255,12 +258,14 @@
                     ~
                 }
                 {
-                    <e'' bf''>4
+                    \pitchedTrill
+                    e''4
                     \ff
                     \>
                     ~
+                    \startTrillSpan bf''
                     \times 4/5 {
-                        <e'' bf''>4
+                        e''4
                         \pitchedTrill
                         f'16
                         \p
@@ -371,14 +376,17 @@
                     \stopTrillSpan
                 }
                 {
-                    <f' e''>4
+                    \pitchedTrill
+                    f'4
                     \p
                     - \portato
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan e''
                 }
                 {
                     aqf''4
+                    \stopTrillSpan
                     \f
                     - \tenuto
                     - \tweak stencil #constante-hairpin
@@ -499,17 +507,21 @@
                     ~
                 }
                 {
-                    <e'' bf''>8.
+                    \pitchedTrill
+                    e''8.
                     \p
                     - \halfopen
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan bf''
                     r16
+                    \stopTrillSpan
                     \!
                 }
                 {
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 5 measure 16] %! COMMENT_MEASURE_NUMBERS
                     r4

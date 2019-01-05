@@ -163,6 +163,7 @@
                     r2
                     \!
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS
@@ -395,11 +396,13 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 10 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        <af'' b''>16
+                        \pitchedTrill
+                        af''16
+                        [
                         \ff
                         - \halfopen
                         \>
-                        [
+                        \startTrillSpan b''
                         \pitchedTrill
                         c''8
                         ~
@@ -541,11 +544,13 @@
                     ~
                 }
                 {
-                    <af'' b''>8.
+                    \pitchedTrill
+                    af''8.
+                    [
                     \ff
                     - \portato
                     \>
-                    [
+                    \startTrillSpan b''
                     \pitchedTrill
                     c''16
                     \p

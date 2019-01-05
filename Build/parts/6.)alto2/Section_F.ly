@@ -237,11 +237,13 @@
                     ~
                 }
                 {
-                    <f' cs''>16
+                    \pitchedTrill
+                    f'16
+                    [
                     \ff
 
                     \>
-                    [
+                    \startTrillSpan cs''
                     \pitchedTrill
                     f'8.
                     ~
@@ -336,10 +338,12 @@
                     ~
                 }
                 {
-                    <e'' bf''>8
+                    \pitchedTrill
+                    e''8
                     \ff
                     - \halfopen
                     \>
+                    \startTrillSpan bf''
                     \pitchedTrill
                     f'4.
                     \startTrillSpan cs''
@@ -366,6 +370,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 6 measure 13] %! COMMENT_MEASURE_NUMBERS
                     r4
@@ -427,11 +432,13 @@
                     ~
                 }
                 {
-                    <f' e''>8.
+                    \pitchedTrill
+                    f'8.
+                    [
                     \ff
                     - \flageolet
                     \>
-                    [
+                    \startTrillSpan e''
                     \pitchedTrill
                     e''16
                     \p

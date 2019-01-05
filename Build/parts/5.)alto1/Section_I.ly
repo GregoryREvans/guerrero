@@ -137,6 +137,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 5 measure 3] %! COMMENT_MEASURE_NUMBERS
                     ces''4
@@ -602,6 +603,7 @@
                     r8.
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 5 measure 22] %! COMMENT_MEASURE_NUMBERS
                     r4
