@@ -493,11 +493,9 @@
                     \!
                 }
                 {
-                    r4
+                    r2
                 }
-                {
-                    r4
-                }
+                \pageBreak
                 {
                     % [Voice 20 measure 18] %! COMMENT_MEASURE_NUMBERS
                     r2

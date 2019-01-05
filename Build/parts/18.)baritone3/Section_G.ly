@@ -159,6 +159,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     \times 2/3 {
                         % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS
@@ -736,6 +737,7 @@
                     r8
                     \!
                     \bar "||"
+                    \pageBreak
                 }
             }
         }

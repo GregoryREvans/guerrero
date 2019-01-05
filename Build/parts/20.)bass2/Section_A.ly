@@ -157,6 +157,7 @@
                     % [Voice 20 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r2.
                 }
+                \pageBreak
                 {
                     % [Voice 20 measure 6] %! COMMENT_MEASURE_NUMBERS
                     r2

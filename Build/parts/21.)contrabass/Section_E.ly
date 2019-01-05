@@ -144,11 +144,14 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <bf d'>8
+                        \pitchedTrill
+                        bf8
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        \startTrillSpan d'
                         r16
+                        \stopTrillSpan
                         \!
                     }
                 }
@@ -908,6 +911,7 @@
                     \<
                     ]
                     \bar "||"
+                    \pageBreak
                 }
             }
         }

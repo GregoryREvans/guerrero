@@ -103,7 +103,7 @@
     \context {
         \Staff
         \remove Time_signature_engraver
-		fontsize = #-0.5
+		fontSize = #-0.5
 		%{ \consists Page_turn_engraver
 		minimumPageTurnLength = #(ly:make-moment 1 4) %}
     }

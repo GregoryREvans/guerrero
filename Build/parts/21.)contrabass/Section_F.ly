@@ -204,11 +204,13 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <bf d'>16
+                        \pitchedTrill
+                        bf16
+                        [
                         \ff
                         - \flageolet
                         \>
-                        [
+                        \startTrillSpan d'
                         \pitchedTrill
                         fs''8
                         ~
@@ -422,14 +424,17 @@
                 }
                 {
                     % [Voice 21 measure 17] %! COMMENT_MEASURE_NUMBERS
-                    <g' e''>4
+                    \pitchedTrill
+                    g'4
                     \ff
                     - \portato
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan e''
                 }
                 {
                     ees''4
+                    \stopTrillSpan
                     \f
 
                     - \tweak stencil #constante-hairpin

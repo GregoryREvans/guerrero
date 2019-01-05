@@ -246,6 +246,7 @@
                     \f
                     \>
                 }
+                \pageBreak
                 {
                     % [Voice 17 measure 5] %! COMMENT_MEASURE_NUMBERS
                     c'''8
@@ -829,6 +830,7 @@
                         \stopTrillSpan
                     }
                 }
+                \pageBreak
                 {
                     % [Voice 17 measure 22] %! COMMENT_MEASURE_NUMBERS
                     gqf'4

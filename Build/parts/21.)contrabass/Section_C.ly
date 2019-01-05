@@ -528,6 +528,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 21 measure 12] %! COMMENT_MEASURE_NUMBERS
                     r4

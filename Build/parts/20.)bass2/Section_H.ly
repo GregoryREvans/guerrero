@@ -103,15 +103,12 @@
                 }
                 {
                     % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    r8
-                }
-                {
-                    r4.
-                    r4
+                    r2.
                 }
                 {
                     r2
                 }
+                \pageBreak
                 {
                     % [Voice 20 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r2

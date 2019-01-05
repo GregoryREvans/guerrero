@@ -345,6 +345,7 @@
                     \<
                     \glissando
                 }
+                \pageBreak
                 {
                     \times 2/3 {
                         % [Voice 16 measure 11] %! COMMENT_MEASURE_NUMBERS

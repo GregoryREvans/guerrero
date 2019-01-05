@@ -228,6 +228,7 @@
                     ]
                     \glissando
                 }
+                \pageBreak
                 {
                     % [Voice 20 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r2.

@@ -465,11 +465,14 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <fs' f''>8
+                        \pitchedTrill
+                        fs'8
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        \startTrillSpan f''
                         r16
+                        \stopTrillSpan
                         \!
                     }
                     \pitchedTrill
@@ -783,6 +786,7 @@
                     [
                     fs'8
                 }
+                \pageBreak
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
@@ -906,11 +910,13 @@
                     ~
                 }
                 {
-                    <f'' cs'''>8
+                    \pitchedTrill
+                    f''8
+                    [
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
+                    \startTrillSpan cs'''
                     \pitchedTrill
                     b8
                     \startTrillSpan fs'

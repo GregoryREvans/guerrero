@@ -344,6 +344,7 @@
                     \!
                     r2
                 }
+                \pageBreak
                 {
                     % [Voice 20 measure 10] %! COMMENT_MEASURE_NUMBERS
                     bes'4
@@ -354,10 +355,12 @@
                     ~
                 }
                 {
-                    <b' fs''>4
+                    \pitchedTrill
+                    b'4
                     \ff
                     - \portato
                     \>
+                    \startTrillSpan fs''
                     \pitchedTrill
                     c'2
                     \startTrillSpan a'
@@ -411,15 +414,18 @@
                     ~
                 }
                 {
-                    <b' fs''>4
+                    \pitchedTrill
+                    b'4
                     \p
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan fs''
                 }
                 {
                     \times 4/5 {
                         ates'16
+                        \stopTrillSpan
                         \pp
 
                         \<
@@ -673,14 +679,17 @@
                 }
                 {
                     % [Voice 20 measure 24] %! COMMENT_MEASURE_NUMBERS
-                    <c' a'>4
+                    \pitchedTrill
+                    c'4
                     \ff
                     - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan a'
                 }
                 {
                     ates'4
+                    \stopTrillSpan
                     \pp
                     - \flageolet
                     - \tweak stencil #constante-hairpin
@@ -688,14 +697,17 @@
                     ~
                 }
                 {
-                    <a' b'>4
+                    \pitchedTrill
+                    a'4
                     \p
 
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan b'
                 }
                 {
                     cqs'4
+                    \stopTrillSpan
                     \pp
                     \<
                     ~

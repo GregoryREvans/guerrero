@@ -531,6 +531,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 18 measure 14] %! COMMENT_MEASURE_NUMBERS
                     r4
@@ -899,6 +900,7 @@
                     r4.
                     \!
                     \bar "||"
+                    \pageBreak
                 }
             }
         }

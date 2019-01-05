@@ -372,14 +372,17 @@
                     ~
                 }
                 {
-                    <fs' f''>4
+                    \pitchedTrill
+                    fs'4
                     \p
                     - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan f''
                 }
                 {
                     dqf'''4
+                    \stopTrillSpan
                     \pp
                     \<
                     ~
@@ -471,6 +474,7 @@
                     \!
                     \stopTrillSpan
                 }
+                \pageBreak
                 {
                     % [Voice 15 measure 15] %! COMMENT_MEASURE_NUMBERS
                     \pitchedTrill
@@ -514,11 +518,13 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <f'' cs'''>16
+                        \pitchedTrill
+                        f''16
+                        [
                         \ff
 
                         \>
-                        [
+                        \startTrillSpan cs'''
                         \pitchedTrill
                         b8
                         \p
@@ -746,11 +752,13 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 15 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        <b fs'>16
+                        \pitchedTrill
+                        b16
+                        [
                         \ff
                         - \portato
                         \>
-                        [
+                        \startTrillSpan fs'
                         \pitchedTrill
                         fs'8
                         \p
@@ -771,14 +779,17 @@
                     \stopTrillSpan
                 }
                 {
-                    <f'' cs'''>4
+                    \pitchedTrill
+                    f''4
                     \ff
                     - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan cs'''
                 }
                 {
                     gtef'4
+                    \stopTrillSpan
                     \pp
                     \<
                     \bar "||"

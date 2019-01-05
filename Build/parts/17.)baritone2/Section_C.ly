@@ -174,6 +174,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 17 measure 3] %! COMMENT_MEASURE_NUMBERS
                     <e' eqs'' bqs''>16
@@ -787,6 +788,7 @@
                     r2
                     \!
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 17 measure 19] %! COMMENT_MEASURE_NUMBERS

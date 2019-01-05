@@ -336,14 +336,17 @@
                     \stopTrillSpan
                 }
                 {
-                    <fs' cs''>2
+                    \pitchedTrill
+                    fs'2
                     \ff
                     \>
                     ~
+                    \startTrillSpan cs''
                 }
                 {
                     % [Voice 17 measure 10] %! COMMENT_MEASURE_NUMBERS
                     cqs'''8
+                    \stopTrillSpan
                     \pp
                     - \flageolet
                     \<
@@ -399,11 +402,13 @@
                     \stopTrillSpan
                 }
                 {
-                    <cs'' c'''>8
+                    \pitchedTrill
+                    cs''8
+                    [
                     \ff
                     - \halfopen
                     \>
-                    [
+                    \startTrillSpan c'''
                     \pitchedTrill
                     e'8
                     ~
@@ -434,11 +439,13 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
                         % [Voice 17 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        <fs' cs''>16
+                        \pitchedTrill
+                        fs'16
+                        [
                         \ff
 
                         \>
-                        [
+                        \startTrillSpan cs''
                         \pitchedTrill
                         cs''8
                         ~
@@ -494,6 +501,7 @@
                     \>
                     \startTrillSpan c'''
                 }
+                \pageBreak
                 {
                     % [Voice 17 measure 15] %! COMMENT_MEASURE_NUMBERS
                     etes'4
@@ -643,13 +651,15 @@
                     ~
                 }
                 {
-                    <fs' cs''>4
+                    \pitchedTrill
+                    fs'4
                     \ff
                     \>
                     ~
+                    \startTrillSpan cs''
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <fs' cs''>16
+                        fs'16
                         [
                         \pitchedTrill
                         cs''8
@@ -816,15 +826,18 @@
                     \stopTrillSpan
                 }
                 {
-                    <cs'' c'''>4
+                    \pitchedTrill
+                    cs''4
                     \p
                     - \portato
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan c'''
                 }
                 {
                     \times 4/5 {
                         etes'8.
+                        \stopTrillSpan
                         \pp
                         - \tenuto
                         \<

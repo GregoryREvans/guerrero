@@ -244,6 +244,7 @@
                         ]
                     }
                 }
+                \pageBreak
                 {
                     % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r2
@@ -825,6 +826,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 18 measure 20] %! COMMENT_MEASURE_NUMBERS

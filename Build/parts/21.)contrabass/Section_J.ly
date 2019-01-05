@@ -496,6 +496,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 21 measure 19] %! COMMENT_MEASURE_NUMBERS
                     d'4

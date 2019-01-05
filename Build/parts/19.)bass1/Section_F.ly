@@ -385,14 +385,17 @@
                 }
                 {
                     % [Voice 19 measure 10] %! COMMENT_MEASURE_NUMBERS
-                    <b' fs''>4
+                    \pitchedTrill
+                    b'4
                     \p
                     - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan fs''
                 }
                 {
                     ates'4
+                    \stopTrillSpan
                     \pp
                     \<
                     ~
@@ -470,6 +473,7 @@
                     }
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 19 measure 14] %! COMMENT_MEASURE_NUMBERS
                     r8
@@ -604,11 +608,13 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <a' b'>8
+                        \pitchedTrill
+                        a'8
+                        [
                         \ff
 
                         \>
-                        [
+                        \startTrillSpan b'
                         \pitchedTrill
                         c'16
                         ~
@@ -659,14 +665,17 @@
                 }
                 {
                     % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    <a' b'>4
+                    \pitchedTrill
+                    a'4
                     \p
                     - \portato
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan b'
                 }
                 {
                     ates'2.
+                    \stopTrillSpan
                     \pp
                     \<
                 }
