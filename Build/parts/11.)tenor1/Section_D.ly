@@ -316,6 +316,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 11 measure 8] %! COMMENT_MEASURE_NUMBERS
                     r2
@@ -871,6 +872,7 @@
                     r2.
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 11 measure 25] %! COMMENT_MEASURE_NUMBERS
                     r2

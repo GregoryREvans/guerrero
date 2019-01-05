@@ -180,11 +180,14 @@
                 }
                 {
                     % [Voice 13 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    <f'' cs'''>8
+                    \pitchedTrill
+                    f''8
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan cs'''
                     r16
+                    \stopTrillSpan
                     \!
                     \pitchedTrill
                     b16
@@ -824,6 +827,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 13 measure 23] %! COMMENT_MEASURE_NUMBERS
                     f''16

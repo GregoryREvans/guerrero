@@ -139,6 +139,7 @@
                     }
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 12 measure 3] %! COMMENT_MEASURE_NUMBERS
                     r4
@@ -341,11 +342,13 @@
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        <b fs'>8
+                        \pitchedTrill
+                        b8
+                        [
                         \ff
 
                         \>
-                        [
+                        \startTrillSpan fs'
                         \pitchedTrill
                         f''16
                         ~
@@ -367,12 +370,14 @@
                 }
                 {
                     % [Voice 12 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    <fs' f''>4
+                    \pitchedTrill
+                    fs'4
                     \ff
                     \>
                     ~
+                    \startTrillSpan f''
                     \times 4/5 {
-                        <fs' f''>16
+                        fs'16
                         \pitchedTrill
                         b4
                         ~
@@ -561,12 +566,14 @@
                 }
                 {
                     % [Voice 12 measure 22] %! COMMENT_MEASURE_NUMBERS
-                    <fs' f''>4
+                    \pitchedTrill
+                    fs'4
                     \ff
                     \>
                     ~
+                    \startTrillSpan f''
                     \times 4/5 {
-                        <fs' f''>8.
+                        fs'8.
                         [
                         \pitchedTrill
                         b8

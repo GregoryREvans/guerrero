@@ -600,6 +600,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     % [Voice 11 measure 23] %! COMMENT_MEASURE_NUMBERS
                     ftes''4

@@ -245,14 +245,17 @@
                 }
                 {
                     % [Voice 11 measure 6] %! COMMENT_MEASURE_NUMBERS
-                    <b fs'>4
+                    \pitchedTrill
+                    b4
                     \mf
                     - \tweak stencil #constante-hairpin
                     \<
+                    \startTrillSpan fs'
                 }
                 {
                     \times 4/5 {
                         r16
+                        \stopTrillSpan
                         \!
                         b16
                         \f
@@ -958,6 +961,7 @@
                     ]
                     \stopTrillSpan
                     \bar "||"
+                    \pageBreak
                 }
             }
         }

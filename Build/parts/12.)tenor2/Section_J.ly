@@ -264,17 +264,9 @@
                     }
                 }
                 {
-                    r8
+                    r2.
                 }
-                {
-                    r8
-                }
-                {
-                    r4
-                }
-                {
-                    r4
-                }
+                \pageBreak
                 {
                     % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
                     bqf'4

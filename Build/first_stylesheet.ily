@@ -76,7 +76,8 @@
 		\remove Mark_engraver
         \accepts TimeSignatureContext
 		\override BarLine.bar-extent = #'(-2 . 2)
-		\override BarLine.thickness = #0.2
+		\override BarLine.hair-thickness = #0.9
+		\override BarLine.thick-thickness = #2.7
         \override Beam.breakable = ##t
 		\override Beam.concaveness = #10000
 		\override DynamicText.font-size = #-2
@@ -84,7 +85,7 @@
 		%{ \override Glissando.thickness = #2 %}
 		\override Glissando.thickness = #1.6
 		\override Stem.thickness = #0.5
-		\override Saff.thickness = #0.3
+		\override Staff.thickness = #0.5
 		\override MetronomeMark.font-size = 3
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t

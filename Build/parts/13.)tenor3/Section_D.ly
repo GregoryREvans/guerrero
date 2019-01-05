@@ -179,6 +179,7 @@
                     r1
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 13 measure 5] %! COMMENT_MEASURE_NUMBERS
                     gef'16
@@ -556,6 +557,7 @@
                     % [Voice 13 measure 24] %! COMMENT_MEASURE_NUMBERS
                     r1
                 }
+                \pageBreak
                 {
                     % [Voice 13 measure 25] %! COMMENT_MEASURE_NUMBERS
                     r2

@@ -615,6 +615,7 @@
                     r16
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 14 measure 12] %! COMMENT_MEASURE_NUMBERS
                     r4

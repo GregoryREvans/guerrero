@@ -237,6 +237,7 @@
                     r4
                     \!
                 }
+                \pageBreak
                 {
                     % [Voice 14 measure 5] %! COMMENT_MEASURE_NUMBERS
                     gtef'8
@@ -815,6 +816,7 @@
                     r2.
                     \!
                 }
+                \pageBreak
                 {
                     \times 4/5 {
                         % [Voice 14 measure 23] %! COMMENT_MEASURE_NUMBERS

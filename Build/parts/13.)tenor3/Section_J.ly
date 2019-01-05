@@ -128,13 +128,11 @@
                         \<
                     }
                 }
+                \pageBreak
                 {
                     % [Voice 13 measure 2] %! COMMENT_MEASURE_NUMBERS
-                    r4
+                    r2
                     \!
-                }
-                {
-                    r4
                 }
                 {
                     r4

@@ -411,6 +411,7 @@
                     }
                     r4
                 }
+                \pageBreak
                 {
                     \times 2/3 {
                         % [Voice 13 measure 14] %! COMMENT_MEASURE_NUMBERS

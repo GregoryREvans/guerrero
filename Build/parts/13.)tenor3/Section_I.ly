@@ -160,6 +160,7 @@
                     ]
                     f''4.
                 }
+                \pageBreak
                 {
                     % [Voice 13 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r4

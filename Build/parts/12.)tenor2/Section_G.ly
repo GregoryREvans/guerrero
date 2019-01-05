@@ -137,6 +137,7 @@
                 {
                     r4
                 }
+                \pageBreak
                 {
                     \times 2/3 {
                         % [Voice 12 measure 3] %! COMMENT_MEASURE_NUMBERS

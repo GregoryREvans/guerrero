@@ -74,6 +74,8 @@
 		\remove Mark_engraver
         \accepts TimeSignatureContext
 		\override BarLine.bar-extent = #'(-2 . 2)
+		\override BarLine.hair-thickness = #1.2
+		\override BarLine.thick-thickness = #2.7
         \override Beam.breakable = ##t
 		\override Beam.concaveness = #10000
 		\override DynamicText.font-size = #-3
@@ -101,6 +103,7 @@
     \context {
         \Staff
         \remove Time_signature_engraver
+		fontsize = #-0.5
 		%{ \consists Page_turn_engraver
 		minimumPageTurnLength = #(ly:make-moment 1 4) %}
     }

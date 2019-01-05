@@ -14,7 +14,7 @@
 
 \score{
 	{
-	\include "Invocation.ly"
+	\include "Invocation.ly" 
 	\include "Section_A.ly"
     \include "Section_B.ly"
     \include "Section_C.ly"
