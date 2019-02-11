@@ -2,8 +2,10 @@
 
 \version "2.19.82"
 \language "english"
-#(set-default-paper-size "letterportrait")
-#(set-global-staff-size 9.5)
+%{ #(set-default-paper-size "letterportrait") %}
+#(set-default-paper-size "legalportrait")
+%{ #(set-global-staff-size 9.5) %}
+#(set-global-staff-size 12)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
@@ -118,12 +120,13 @@
 
 \paper {
 	%{ page-breaking = #ly:page-turn-breaking %}
-	system-system-spacing = #'((basic-distance . 15) (padding . 0))
+	%{ system-system-spacing = #'((basic-distance . 15) (padding . 0)) %}
+	system-system-spacing = #'((basic-distance . 20) (padding . 0))
 
 	top-margin = 1\cm
-	bottom-margin = 0.4\cm
-	left-margin = 2\cm
-	right-margin = 1\cm
+	bottom-margin = 0.6\cm
+	left-margin = 1.5\cm
+	right-margin = 0.6\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""

@@ -4,17 +4,17 @@
 \language "english"
 #(set-default-paper-size "11x17portrait")
 %{ #(set-default-paper-size "ansi c") %}
-#(set-global-staff-size 6)
-%{ #(set-global-staff-size 8) %}
+%{ #(set-global-staff-size 6) %}
+#(set-global-staff-size 11)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Didot") \fontsize #5.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
-	title =  \markup \override #'(font-name . "Didot") \fontsize #17 \bold\center-column {"GUERRERO" }
-	subtitle = \markup \override #'(font-name . "Didot") \fontsize #8 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #4.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
+	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"GUERRERO" }
+	subtitle = \markup \override #'(font-name . "Didot") \fontsize #7 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
 	%{ subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #5 \center-column {" "} %}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #4.3 {"Gregory Rowland Evans"}
 }
@@ -83,22 +83,22 @@
 		\override DynamicText.font-size = #-2
 		\override Glissando.breakable = ##t
 		%{ \override Glissando.thickness = #2 %}
-		\override Glissando.thickness = #1.6
+		\override Glissando.thickness = #1.8
 		\override Stem.thickness = #0.5
 		\override Staff.thickness = #0.5
 		\override MetronomeMark.font-size = 3
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 27) (minimum-distance . 27) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 22) (minimum-distance . 22) (padding . 0))
 		\override Stem.stemlet-length = #1.15
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		%{ proportionalNotationDuration = #(ly:make-moment 1 59) %}
-		proportionalNotationDuration = #(ly:make-moment 1 65)
+		proportionalNotationDuration = #(ly:make-moment 1 40)
+		%{ proportionalNotationDuration = #(ly:make-moment 1 65) %}
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -109,7 +109,7 @@
     \context {
         \Staff
         \remove Time_signature_engraver
-		fontSize = #-1
+		fontSize = #-2
     }
     \context {
         \RhythmicStaff
@@ -128,9 +128,9 @@
 	right-margin = 1\cm %}
 
 	top-margin = 0.5\cm
-	bottom-margin = 0.4\cm
-	left-margin = 1\cm
-	right-margin = 0.8\cm
+	bottom-margin = 0.15\cm
+	left-margin = 1.2\cm
+	right-margin = 0.2\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""

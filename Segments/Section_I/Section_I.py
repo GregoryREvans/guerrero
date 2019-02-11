@@ -18,8 +18,9 @@ time_signatures = [
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
-        (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
-        (4, 4), (4, 4), (4, 4), (4, 4), (7, 8),
+        (4, 4), (4, 4),
+        # (4, 4), (4, 4), (4, 4),
+        # (4, 4), (4, 4), (4, 4), (4, 4), (7, 8),
     ]
 ]
 
@@ -47,23 +48,23 @@ def reduceMod(list_length, rw):
 
 # -3 at bottom of chord for completion
 sopranino_chord = [27, ]
-soprano_1_chord = [13.25, 16, 22,]
-soprano_2_chord = [13, 14.75, 16,]
-soprano_3_chord = [12.75, 15.5, 13,]
-alto_1_chord = [12.5, 19, 20,]
-alto_2_chord = [12.5, 15.25, 25.5, 12,]
-alto_3_chord = [1.75, 13.5, 22.25, 1,]
-alto_4_chord = [12.5, 15.25, 25.5, 20,]
-alto_5_chord = [1.75, 13.5, 22.25, 27, 12,]
-alto_6_chord = [12.5, 19, 1,]
-tenor_1_chord = [6, 17.5, 17,]
-tenor_2_chord = [6, 17.5, 25.5, 6,]
-tenor_3_chord = [6, 17.5, 25.5, -1]
-tenor_4_chord = [6, 17.5, 17,]
-tenor_5_chord = [6, 17.5, 25.5, 6,]
-baritone_1_chord = [13.25, 13,]
-baritone_2_chord = [4, 16.5, 23.5, 6,]
-baritone_3_chord = [7.75, 17.75, 25.5, 4,]
+soprano_1_chord = [13, 16, 22,]
+soprano_2_chord = [13, 14, 16,]
+soprano_3_chord = [12, 15, 13,]
+alto_1_chord = [12, 19, 20,]
+alto_2_chord = [12, 15, 25, 12,]
+alto_3_chord = [1, 13, 22, 1,]
+alto_4_chord = [12, 15, 25, 20,]
+alto_5_chord = [1, 13, 22, 27, 12,]
+alto_6_chord = [12, 19, 1,]
+tenor_1_chord = [6, 17, 17,]
+tenor_2_chord = [6, 17, 25, 6,]
+tenor_3_chord = [6, 17, 25, -1]
+tenor_4_chord = [6, 17, 17,]
+tenor_5_chord = [6, 17, 25, 6,]
+baritone_1_chord = [13, 13,]
+baritone_2_chord = [4, 16, 23, 6,]
+baritone_3_chord = [7, 17, 25, 4,]
 bass_1_chord = [11, 9, 9, 11, 9, 11,]
 bass_2_chord = [9, 11, 11, 9, 11, 9,]
 contrabass_chord = [-2, 2, 7, -2, 2, 7, 2, -2]
@@ -78,7 +79,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = sopranino_random_walk[i-1] + movement
     sopranino_random_walk.append(value)
-    sopranino_walk_chord = [18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, ]
+    sopranino_walk_chord = [18, 19, 20, 21, 22, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, ]
 l = len(sopranino_walk_chord)
 sopranino_random_walk_notes = [sopranino_walk_chord[x] for x in reduceMod(l, sopranino_random_walk)]
 
@@ -89,7 +90,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_1_random_walk[i-1] + movement
     soprano_1_random_walk.append(value)
-soprano_1_walk_chord = [13, 13.25, 13.5, 13.75, 16, 16.25, 16.5, 16.75, 22, 22.25, 22.5, 22.75, ]
+soprano_1_walk_chord = [13, 14, 16, 17, 22, 23, ]
 l = len(soprano_1_walk_chord)
 soprano_1_random_walk_notes = [soprano_1_walk_chord[x] for x in reduceMod(l, soprano_1_random_walk)]
 
@@ -101,7 +102,7 @@ for i in range(1, 1000):
     value = soprano_2_random_walk[i-1] + movement
     soprano_2_random_walk.append(value)
 soprano_2_random_walk.append(value)
-soprano_2_walk_chord = [13, 13.25, 13.5, 13.75, 14, 14.25, 14.5, 14.75, 16, 16.25, 16.5, 16.75, ]
+soprano_2_walk_chord = [13, 14, 15, 16, 17, ]
 l = len(soprano_2_walk_chord)
 soprano_2_random_walk_notes = [soprano_2_walk_chord[x] for x in reduceMod(l, soprano_2_random_walk)]
 
@@ -113,7 +114,7 @@ for i in range(1, 1000):
     value = soprano_3_random_walk[i-1] + movement
     soprano_3_random_walk.append(value)
 soprano_3_random_walk.append(value)
-soprano_3_walk_chord = [12, 12.25, 12.5, 12.75, 15, 15.25, 15.5, 15.75, 13, 13.25, 13.5, 13.75, ]
+soprano_3_walk_chord = [12, 13, 15, 16, 13, 14, ]
 l = len(soprano_3_walk_chord)
 soprano_3_random_walk_notes = [soprano_3_walk_chord[x] for x in reduceMod(l, soprano_3_random_walk)]
 
@@ -124,7 +125,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_1_random_walk[i-1] + movement
     alto_1_random_walk.append(value)
-alto_1_walk_chord = [12, 12.25, 12.5, 12.75, 19, 19.25, 19.5, 19.75, 20, 20.25, 20.5, 20.75, ]
+alto_1_walk_chord = [12, 13, 19, 20, 21, ]
 l = len(alto_1_walk_chord)
 alto_1_random_walk_notes = [alto_1_walk_chord[x] for x in reduceMod(l, alto_1_random_walk)]
 
@@ -135,7 +136,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_2_random_walk[i-1] + movement
     alto_2_random_walk.append(value)
-alto_2_walk_chord = [12, 12.25, 12.5, 12.75, 15, 15.25, 15.5, 15.75, 25, 25.25, 25.5, 25.75, 12, 12.25, 12.5, 12.75, ]
+alto_2_walk_chord = [12, 13, 15, 16, 25, 26, 12, 13, ]
 l = len(alto_2_walk_chord)
 alto_2_random_walk_notes = [alto_2_walk_chord[x] for x in reduceMod(l, alto_2_random_walk)]
 
@@ -146,7 +147,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_3_random_walk[i-1] + movement
     alto_3_random_walk.append(value)
-alto_3_walk_chord = [1, 1.25, 1.5, 1.75, 13, 13.25, 13.5, 13.75, 22, 22.25, 22.5, 22.75, ]
+alto_3_walk_chord = [1, 2, 13, 14, 22, 23, ]
 l = len(alto_3_walk_chord)
 alto_3_random_walk_notes = [alto_3_walk_chord[x] for x in reduceMod(l, alto_3_random_walk)]
 
@@ -157,7 +158,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_4_random_walk[i-1] + movement
     alto_4_random_walk.append(value)
-alto_4_walk_chord = [12, 12.25, 12.5, 12.75, 15, 15.25, 15.5, 15.75, 25, 25.25, 25.5, 25.75, 20, 20.25, 20.5, 20.75, ]
+alto_4_walk_chord = [12, 13, 15, 16, 25, 26, 20, 21, ]
 l = len(alto_4_walk_chord)
 alto_4_random_walk_notes = [alto_4_walk_chord[x] for x in reduceMod(l, alto_4_random_walk)]
 
@@ -168,7 +169,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_5_random_walk[i-1] + movement
     alto_5_random_walk.append(value)
-alto_5_walk_chord = [1, 1.25, 1.5, 1.75, 13, 13.25, 13.5, 13.75, 22, 22.25, 22.5, 22.75, 27, 27.25, 27.5, 27.75, 12, 12.25, 12.5, 12.75, ]
+alto_5_walk_chord = [1, 2, 13, 14, 22, 23, 27, 28, 12, 13, ]
 l = len(alto_5_walk_chord)
 alto_5_random_walk_notes = [alto_5_walk_chord[x] for x in reduceMod(l, alto_5_random_walk)]
 
@@ -179,7 +180,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_6_random_walk[i-1] + movement
     alto_6_random_walk.append(value)
-alto_6_walk_chord = [12, 12.25, 12.5, 12.75, 19, 19.25, 19.5, 19.75, 1, 1.25, 1.5, 1.75, ]
+alto_6_walk_chord = [12, 13, 19, 20, 1, 2, ]
 l = len(alto_6_walk_chord)
 alto_6_random_walk_notes = [alto_6_walk_chord[x] for x in reduceMod(l, alto_6_random_walk)]
 
@@ -190,7 +191,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_1_random_walk[i-1] + movement
     tenor_1_random_walk.append(value)
-tenor_1_walk_chord = [6, 6.25, 6.5, 6.75, 17.75, 17.5, 17.25, 17,]
+tenor_1_walk_chord = [6, 7, 18, 17,]
 l = len(tenor_1_walk_chord)
 tenor_1_random_walk_notes = [tenor_1_walk_chord[x] for x in reduceMod(l, tenor_1_random_walk)]
 
@@ -201,7 +202,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_2_random_walk[i-1] + movement
     tenor_2_random_walk.append(value)
-tenor_2_walk_chord = [6, 6.25, 6.5, 6.75, 17, 17.25, 17.5, 17.75, 25, 25.25, 25.5, 25.75, ]
+tenor_2_walk_chord = [6, 7, 17, 18, 25, 26, ]
 l = len(tenor_2_walk_chord)
 tenor_2_random_walk_notes = [tenor_2_walk_chord[x] for x in reduceMod(l, tenor_2_random_walk)]
 
@@ -212,7 +213,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_3_random_walk[i-1] + movement
     tenor_3_random_walk.append(value)
-tenor_3_walk_chord = [6, 6.25, 6.5, 6.75, 17, 17.25, 17.5, 17.75, 25, 25.25, 25.5, 25.75, -1, -0.75, -0.5, -0.25, ]
+tenor_3_walk_chord = [6, 7, 17, 18, 25, 26, -1, -2, ]
 l = len(tenor_3_walk_chord)
 tenor_3_random_walk_notes = [tenor_3_walk_chord[x] for x in reduceMod(l, tenor_3_random_walk)]
 
@@ -223,7 +224,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_4_random_walk[i-1] + movement
     tenor_4_random_walk.append(value)
-tenor_4_walk_chord = [6, 6.25, 6.5, 6.75, 17, 17.25, 17.5, 17.75, ]
+tenor_4_walk_chord = [6, 7, 17, 18, ]
 l = len(tenor_4_walk_chord)
 tenor_4_random_walk_notes = [tenor_4_walk_chord[x] for x in reduceMod(l, tenor_4_random_walk)]
 
@@ -234,7 +235,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_5_random_walk[i-1] + movement
     tenor_5_random_walk.append(value)
-tenor_5_walk_chord = [6, 6.25, 6.5, 6.75, 17, 17.25, 17.5, 17.75, 25, 25.25, 25.5, 25.75, ]
+tenor_5_walk_chord = [6, 7, 17, 18, 25, 26, ]
 l = len(tenor_5_walk_chord)
 tenor_5_random_walk_notes = [tenor_5_walk_chord[x] for x in reduceMod(l, tenor_5_random_walk)]
 
@@ -245,7 +246,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_1_random_walk[i-1] + movement
     baritone_1_random_walk.append(value)
-baritone_1_walk_chord = [13, 13.25, 13.5, 13.75, 13.5, 13.25, ]
+baritone_1_walk_chord = [13, 14, ]
 l = len(baritone_1_walk_chord)
 baritone_1_random_walk_notes = [baritone_1_walk_chord[x] for x in reduceMod(l, baritone_1_random_walk)]
 
@@ -256,7 +257,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_2_random_walk[i-1] + movement
     baritone_2_random_walk.append(value)
-baritone_2_walk_chord = [4, 4.25, 4.5, 4.75, 16, 16.25, 16.5, 16.75, 23, 23.25, 23.5, 23.75, 6, 6.25, 6.5, 6.75, ]
+baritone_2_walk_chord = [4, 5, 16, 17, 23, 24, 6, 7, ]
 l = len(baritone_2_walk_chord)
 baritone_2_random_walk_notes = [baritone_2_walk_chord[x] for x in reduceMod(l, baritone_2_random_walk)]
 
@@ -267,7 +268,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_3_random_walk[i-1] + movement
     baritone_3_random_walk.append(value)
-baritone_3_walk_chord = [7, 7.25, 7.5, 7.75, 17, 17.25, 17.5, 17.75, 25, 25.25, 25.5, 25.75, 4, 4.25, 4.5, 4.75, ]
+baritone_3_walk_chord = [7, 8, 17, 18, 25, 26, 4, 5, ]
 l = len(baritone_3_walk_chord)
 baritone_3_random_walk_notes = [baritone_3_walk_chord[x] for x in reduceMod(l, baritone_3_random_walk)]
 
@@ -278,7 +279,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = bass_1_random_walk[i-1] + movement
     bass_1_random_walk.append(value)
-bass_1_walk_chord = [11, 11.25, 11.5, 11.75, 9, 9.25, 9.5, 9.75, ]
+bass_1_walk_chord = [11, 12, 9, 10, ]
 l = len(bass_1_walk_chord)
 bass_1_random_walk_notes = [bass_1_walk_chord[x] for x in reduceMod(l, bass_1_random_walk)]
 
@@ -289,7 +290,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = bass_2_random_walk[i-1] + movement
     bass_2_random_walk.append(value)
-bass_2_walk_chord = [9, 9.25, 9.5, 9.75, 11, 11.25, 11.5, 11.75, ]
+bass_2_walk_chord = [9, 10, 11, 12, ]
 l = len(bass_2_walk_chord)
 bass_2_random_walk_notes = [bass_2_walk_chord[x] for x in reduceMod(l, bass_2_random_walk)]
 
@@ -300,7 +301,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = contrabass_random_walk[i-1] + movement
     contrabass_random_walk.append(value)
-contrabass_walk_chord = [-2, -1.75, -1.5, -1.25, 2, 2.25, 2.5, 2.75, 7, 7.25, 7.5, 7.75, ]
+contrabass_walk_chord = [-2, -1, 2, 3, 7, 8, ]
 l = len(contrabass_walk_chord)
 contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, contrabass_random_walk)]
 
@@ -872,45 +873,45 @@ voice_1_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), sopranino_musicmaker_two],
         [(134, 8), (136, 8), sopranino_musicmaker_one],
 
-        [(136, 8), (138, 8), sopranino_musicmaker_one],
-        [(138, 8), (140, 8), sopranino_musicmaker_one],
-        [(140, 8), (142, 8), sopranino_musicmaker_two],
-        [(142, 8), (144, 8), sopranino_musicmaker_two],
+        # [(136, 8), (138, 8), sopranino_musicmaker_one],
+        # [(138, 8), (140, 8), sopranino_musicmaker_one],
+        # [(140, 8), (142, 8), sopranino_musicmaker_two],
+        # [(142, 8), (144, 8), sopranino_musicmaker_two],
 
-        [(144, 8), (146, 8), sopranino_musicmaker_one],
-        [(146, 8), (148, 8), sopranino_musicmaker_one],
-        [(148, 8), (150, 8), sopranino_musicmaker_one],
-        [(150, 8), (152, 8), sopranino_musicmaker_two],
+        # [(144, 8), (146, 8), sopranino_musicmaker_one],
+        # [(146, 8), (148, 8), sopranino_musicmaker_one],
+        # [(148, 8), (150, 8), sopranino_musicmaker_one],
+        # [(150, 8), (152, 8), sopranino_musicmaker_two],
+        #
+        # [(152, 8), (154, 8), sopranino_musicmaker_two],
+        # [(154, 8), (156, 8), sopranino_musicmaker_one],
+        # [(156, 8), (158, 8), sopranino_musicmaker_one],
+        # [(158, 8), (160, 8), sopranino_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), sopranino_musicmaker_two],
+        # [(162, 8), (164, 8), sopranino_musicmaker_two],
+        # [(164, 8), (166, 8), sopranino_musicmaker_two],
+        # [(166, 8), (168, 8), sopranino_musicmaker_one],
 
-        [(152, 8), (154, 8), sopranino_musicmaker_two],
-        [(154, 8), (156, 8), sopranino_musicmaker_one],
-        [(156, 8), (158, 8), sopranino_musicmaker_one],
-        [(158, 8), (160, 8), sopranino_musicmaker_one],
-
-        [(160, 8), (162, 8), sopranino_musicmaker_two],
-        [(162, 8), (164, 8), sopranino_musicmaker_two],
-        [(164, 8), (166, 8), sopranino_musicmaker_two],
-        [(166, 8), (168, 8), sopranino_musicmaker_one],
-
-        [(168, 8), (170, 8), sopranino_musicmaker_two],
-        [(170, 8), (172, 8), sopranino_musicmaker_one],
-        [(172, 8), (174, 8), sopranino_musicmaker_one],
-        [(174, 8), (176, 8), sopranino_musicmaker_two],
-
-        [(176, 8), (178, 8), sopranino_musicmaker_two],
-        [(178, 8), (180, 8), sopranino_musicmaker_two],
-        [(180, 8), (182, 8), sopranino_musicmaker_one],
-        [(182, 8), (184, 8), sopranino_musicmaker_one],
-
-        [(184, 8), (186, 8), sopranino_musicmaker_two],
-        [(186, 8), (188, 8), sopranino_musicmaker_one],
-        [(188, 8), (190, 8), sopranino_musicmaker_two],
-        [(190, 8), (192, 8), sopranino_musicmaker_two],
-
-        [(192, 8), (194, 8), sopranino_musicmaker_two],
-        [(194, 8), (196, 8), sopranino_musicmaker_one],
-        [(196, 8), (198, 8), sopranino_musicmaker_one],
-        [(198, 8), (199, 8), sopranino_musicmaker_one],
+        # [(168, 8), (170, 8), sopranino_musicmaker_two],
+        # [(170, 8), (172, 8), sopranino_musicmaker_one],
+        # [(172, 8), (174, 8), sopranino_musicmaker_one],
+        # [(174, 8), (176, 8), sopranino_musicmaker_two],
+        #
+        # [(176, 8), (178, 8), sopranino_musicmaker_two],
+        # [(178, 8), (180, 8), sopranino_musicmaker_two],
+        # [(180, 8), (182, 8), sopranino_musicmaker_one],
+        # [(182, 8), (184, 8), sopranino_musicmaker_one],
+        #
+        # [(184, 8), (186, 8), sopranino_musicmaker_two],
+        # [(186, 8), (188, 8), sopranino_musicmaker_one],
+        # [(188, 8), (190, 8), sopranino_musicmaker_two],
+        # [(190, 8), (192, 8), sopranino_musicmaker_two],
+        #
+        # [(192, 8), (194, 8), sopranino_musicmaker_two],
+        # [(194, 8), (196, 8), sopranino_musicmaker_one],
+        # [(196, 8), (198, 8), sopranino_musicmaker_one],
+        # [(198, 8), (199, 8), sopranino_musicmaker_one],
 
         # [(199, 8), (200, 8), silence_maker],
     ]
@@ -1011,45 +1012,45 @@ voice_2_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), soprano_one_musicmaker_one],
         [(134, 8), (136, 8), soprano_one_musicmaker_one],
 
-        [(136, 8), (138, 8), soprano_one_musicmaker_one],
-        [(138, 8), (140, 8), soprano_one_musicmaker_two],
-        [(140, 8), (142, 8), soprano_one_musicmaker_two],
-        [(142, 8), (144, 8), soprano_one_musicmaker_one],
+        # [(136, 8), (138, 8), soprano_one_musicmaker_one],
+        # [(138, 8), (140, 8), soprano_one_musicmaker_two],
+        # [(140, 8), (142, 8), soprano_one_musicmaker_two],
+        # [(142, 8), (144, 8), soprano_one_musicmaker_one],
+        #
+        # [(144, 8), (146, 8), soprano_one_musicmaker_two],
+        # [(146, 8), (148, 8), soprano_one_musicmaker_one],
+        # [(148, 8), (150, 8), soprano_one_musicmaker_one],
+        # [(150, 8), (152, 8), soprano_one_musicmaker_two],
+        #
+        # [(152, 8), (154, 8), soprano_one_musicmaker_two],
+        # [(154, 8), (156, 8), soprano_one_musicmaker_two],
+        # [(156, 8), (158, 8), soprano_one_musicmaker_two],
+        # [(158, 8), (160, 8), soprano_one_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), soprano_one_musicmaker_one],
+        # [(162, 8), (164, 8), soprano_one_musicmaker_one],
+        # [(164, 8), (166, 8), soprano_one_musicmaker_one],
+        # [(166, 8), (168, 8), soprano_one_musicmaker_one],
 
-        [(144, 8), (146, 8), soprano_one_musicmaker_two],
-        [(146, 8), (148, 8), soprano_one_musicmaker_one],
-        [(148, 8), (150, 8), soprano_one_musicmaker_one],
-        [(150, 8), (152, 8), soprano_one_musicmaker_two],
-
-        [(152, 8), (154, 8), soprano_one_musicmaker_two],
-        [(154, 8), (156, 8), soprano_one_musicmaker_two],
-        [(156, 8), (158, 8), soprano_one_musicmaker_two],
-        [(158, 8), (160, 8), soprano_one_musicmaker_one],
-
-        [(160, 8), (162, 8), soprano_one_musicmaker_one],
-        [(162, 8), (164, 8), soprano_one_musicmaker_one],
-        [(164, 8), (166, 8), soprano_one_musicmaker_one],
-        [(166, 8), (168, 8), soprano_one_musicmaker_one],
-
-        [(168, 8), (170, 8), soprano_one_musicmaker_two],
-        [(170, 8), (172, 8), soprano_one_musicmaker_one],
-        [(172, 8), (174, 8), soprano_one_musicmaker_two],
-        [(174, 8), (176, 8), soprano_one_musicmaker_two],
-
-        [(176, 8), (178, 8), soprano_one_musicmaker_two],
-        [(178, 8), (180, 8), soprano_one_musicmaker_one],
-        [(180, 8), (182, 8), soprano_one_musicmaker_two],
-        [(182, 8), (184, 8), soprano_one_musicmaker_two],
-
-        [(184, 8), (186, 8), soprano_one_musicmaker_one],
-        [(186, 8), (188, 8), soprano_one_musicmaker_two],
-        [(188, 8), (190, 8), soprano_one_musicmaker_one],
-        [(190, 8), (192, 8), soprano_one_musicmaker_one],
-
-        [(192, 8), (194, 8), soprano_one_musicmaker_one],
-        [(194, 8), (196, 8), soprano_one_musicmaker_two],
-        [(196, 8), (198, 8), soprano_one_musicmaker_two],
-        [(198, 8), (199, 8), soprano_one_musicmaker_two],
+        # [(168, 8), (170, 8), soprano_one_musicmaker_two],
+        # [(170, 8), (172, 8), soprano_one_musicmaker_one],
+        # [(172, 8), (174, 8), soprano_one_musicmaker_two],
+        # [(174, 8), (176, 8), soprano_one_musicmaker_two],
+        #
+        # [(176, 8), (178, 8), soprano_one_musicmaker_two],
+        # [(178, 8), (180, 8), soprano_one_musicmaker_one],
+        # [(180, 8), (182, 8), soprano_one_musicmaker_two],
+        # [(182, 8), (184, 8), soprano_one_musicmaker_two],
+        #
+        # [(184, 8), (186, 8), soprano_one_musicmaker_one],
+        # [(186, 8), (188, 8), soprano_one_musicmaker_two],
+        # [(188, 8), (190, 8), soprano_one_musicmaker_one],
+        # [(190, 8), (192, 8), soprano_one_musicmaker_one],
+        #
+        # [(192, 8), (194, 8), soprano_one_musicmaker_one],
+        # [(194, 8), (196, 8), soprano_one_musicmaker_two],
+        # [(196, 8), (198, 8), soprano_one_musicmaker_two],
+        # [(198, 8), (199, 8), soprano_one_musicmaker_two],
     ]
 ])
 
@@ -1148,45 +1149,45 @@ voice_3_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), soprano_two_musicmaker_two],
         [(134, 8), (136, 8), soprano_two_musicmaker_one],
 
-        [(136, 8), (138, 8), soprano_two_musicmaker_one],
-        [(138, 8), (140, 8), soprano_two_musicmaker_one],
-        [(140, 8), (142, 8), soprano_two_musicmaker_one],
-        [(142, 8), (144, 8), soprano_two_musicmaker_two],
+        # [(136, 8), (138, 8), soprano_two_musicmaker_one],
+        # [(138, 8), (140, 8), soprano_two_musicmaker_one],
+        # [(140, 8), (142, 8), soprano_two_musicmaker_one],
+        # [(142, 8), (144, 8), soprano_two_musicmaker_two],
+        #
+        # [(144, 8), (146, 8), soprano_two_musicmaker_one],
+        # [(146, 8), (148, 8), soprano_two_musicmaker_one],
+        # [(148, 8), (150, 8), soprano_two_musicmaker_one],
+        # [(150, 8), (152, 8), soprano_two_musicmaker_two],
+        #
+        # [(152, 8), (154, 8), soprano_two_musicmaker_two],
+        # [(154, 8), (156, 8), soprano_two_musicmaker_two],
+        # [(156, 8), (158, 8), soprano_two_musicmaker_one],
+        # [(158, 8), (160, 8), soprano_two_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), soprano_two_musicmaker_two],
+        # [(162, 8), (164, 8), soprano_two_musicmaker_one],
+        # [(164, 8), (166, 8), soprano_two_musicmaker_one],
+        # [(166, 8), (168, 8), soprano_two_musicmaker_two],
 
-        [(144, 8), (146, 8), soprano_two_musicmaker_one],
-        [(146, 8), (148, 8), soprano_two_musicmaker_one],
-        [(148, 8), (150, 8), soprano_two_musicmaker_one],
-        [(150, 8), (152, 8), soprano_two_musicmaker_two],
-
-        [(152, 8), (154, 8), soprano_two_musicmaker_two],
-        [(154, 8), (156, 8), soprano_two_musicmaker_two],
-        [(156, 8), (158, 8), soprano_two_musicmaker_one],
-        [(158, 8), (160, 8), soprano_two_musicmaker_one],
-
-        [(160, 8), (162, 8), soprano_two_musicmaker_two],
-        [(162, 8), (164, 8), soprano_two_musicmaker_one],
-        [(164, 8), (166, 8), soprano_two_musicmaker_one],
-        [(166, 8), (168, 8), soprano_two_musicmaker_two],
-
-        [(168, 8), (170, 8), soprano_two_musicmaker_two],
-        [(170, 8), (172, 8), soprano_two_musicmaker_one],
-        [(172, 8), (174, 8), soprano_two_musicmaker_one],
-        [(174, 8), (176, 8), soprano_two_musicmaker_two],
-
-        [(176, 8), (178, 8), soprano_two_musicmaker_two],
-        [(178, 8), (180, 8), soprano_two_musicmaker_two],
-        [(180, 8), (182, 8), soprano_two_musicmaker_one],
-        [(182, 8), (184, 8), soprano_two_musicmaker_one],
-
-        [(184, 8), (186, 8), soprano_two_musicmaker_two],
-        [(186, 8), (188, 8), soprano_two_musicmaker_one],
-        [(188, 8), (190, 8), soprano_two_musicmaker_two],
-        [(190, 8), (192, 8), soprano_two_musicmaker_two],
-
-        [(192, 8), (194, 8), soprano_two_musicmaker_one],
-        [(194, 8), (196, 8), soprano_two_musicmaker_one],
-        [(196, 8), (198, 8), soprano_two_musicmaker_one],
-        [(198, 8), (199, 8), soprano_two_musicmaker_one],
+        # [(168, 8), (170, 8), soprano_two_musicmaker_two],
+        # [(170, 8), (172, 8), soprano_two_musicmaker_one],
+        # [(172, 8), (174, 8), soprano_two_musicmaker_one],
+        # [(174, 8), (176, 8), soprano_two_musicmaker_two],
+        #
+        # [(176, 8), (178, 8), soprano_two_musicmaker_two],
+        # [(178, 8), (180, 8), soprano_two_musicmaker_two],
+        # [(180, 8), (182, 8), soprano_two_musicmaker_one],
+        # [(182, 8), (184, 8), soprano_two_musicmaker_one],
+        #
+        # [(184, 8), (186, 8), soprano_two_musicmaker_two],
+        # [(186, 8), (188, 8), soprano_two_musicmaker_one],
+        # [(188, 8), (190, 8), soprano_two_musicmaker_two],
+        # [(190, 8), (192, 8), soprano_two_musicmaker_two],
+        #
+        # [(192, 8), (194, 8), soprano_two_musicmaker_one],
+        # [(194, 8), (196, 8), soprano_two_musicmaker_one],
+        # [(196, 8), (198, 8), soprano_two_musicmaker_one],
+        # [(198, 8), (199, 8), soprano_two_musicmaker_one],
     ]
 ])
 
@@ -1285,45 +1286,45 @@ voice_4_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), soprano_three_musicmaker_one],
         [(134, 8), (136, 8), soprano_three_musicmaker_two],
 
-        [(136, 8), (138, 8), soprano_three_musicmaker_two],
-        [(138, 8), (140, 8), soprano_three_musicmaker_two],
-        [(140, 8), (142, 8), soprano_three_musicmaker_one],
-        [(142, 8), (144, 8), soprano_three_musicmaker_one],
+        # [(136, 8), (138, 8), soprano_three_musicmaker_two],
+        # [(138, 8), (140, 8), soprano_three_musicmaker_two],
+        # [(140, 8), (142, 8), soprano_three_musicmaker_one],
+        # [(142, 8), (144, 8), soprano_three_musicmaker_one],
 
-        [(144, 8), (146, 8), soprano_three_musicmaker_one],
-        [(146, 8), (148, 8), soprano_three_musicmaker_two],
-        [(148, 8), (150, 8), soprano_three_musicmaker_one],
-        [(150, 8), (152, 8), soprano_three_musicmaker_two],
+        # [(144, 8), (146, 8), soprano_three_musicmaker_one],
+        # [(146, 8), (148, 8), soprano_three_musicmaker_two],
+        # [(148, 8), (150, 8), soprano_three_musicmaker_one],
+        # [(150, 8), (152, 8), soprano_three_musicmaker_two],
+        #
+        # [(152, 8), (154, 8), soprano_three_musicmaker_one],
+        # [(154, 8), (156, 8), soprano_three_musicmaker_one],
+        # [(156, 8), (158, 8), soprano_three_musicmaker_two],
+        # [(158, 8), (160, 8), soprano_three_musicmaker_two],
+        #
+        # [(160, 8), (162, 8), soprano_three_musicmaker_two],
+        # [(162, 8), (164, 8), soprano_three_musicmaker_two],
+        # [(164, 8), (166, 8), soprano_three_musicmaker_two],
+        # [(166, 8), (168, 8), soprano_three_musicmaker_one],
 
-        [(152, 8), (154, 8), soprano_three_musicmaker_one],
-        [(154, 8), (156, 8), soprano_three_musicmaker_one],
-        [(156, 8), (158, 8), soprano_three_musicmaker_two],
-        [(158, 8), (160, 8), soprano_three_musicmaker_two],
-
-        [(160, 8), (162, 8), soprano_three_musicmaker_two],
-        [(162, 8), (164, 8), soprano_three_musicmaker_two],
-        [(164, 8), (166, 8), soprano_three_musicmaker_two],
-        [(166, 8), (168, 8), soprano_three_musicmaker_one],
-
-        [(168, 8), (170, 8), soprano_three_musicmaker_two],
-        [(170, 8), (172, 8), soprano_three_musicmaker_one],
-        [(172, 8), (174, 8), soprano_three_musicmaker_one],
-        [(174, 8), (176, 8), soprano_three_musicmaker_two],
-
-        [(176, 8), (178, 8), soprano_three_musicmaker_two],
-        [(178, 8), (180, 8), soprano_three_musicmaker_one],
-        [(180, 8), (182, 8), soprano_three_musicmaker_one],
-        [(182, 8), (184, 8), soprano_three_musicmaker_one],
-
-        [(184, 8), (186, 8), soprano_three_musicmaker_two],
-        [(186, 8), (188, 8), soprano_three_musicmaker_two],
-        [(188, 8), (190, 8), soprano_three_musicmaker_one],
-        [(190, 8), (192, 8), soprano_three_musicmaker_two],
-
-        [(192, 8), (194, 8), soprano_three_musicmaker_two],
-        [(194, 8), (196, 8), soprano_three_musicmaker_two],
-        [(196, 8), (198, 8), soprano_three_musicmaker_one],
-        [(198, 8), (199, 8), soprano_three_musicmaker_one],
+        # [(168, 8), (170, 8), soprano_three_musicmaker_two],
+        # [(170, 8), (172, 8), soprano_three_musicmaker_one],
+        # [(172, 8), (174, 8), soprano_three_musicmaker_one],
+        # [(174, 8), (176, 8), soprano_three_musicmaker_two],
+        #
+        # [(176, 8), (178, 8), soprano_three_musicmaker_two],
+        # [(178, 8), (180, 8), soprano_three_musicmaker_one],
+        # [(180, 8), (182, 8), soprano_three_musicmaker_one],
+        # [(182, 8), (184, 8), soprano_three_musicmaker_one],
+        #
+        # [(184, 8), (186, 8), soprano_three_musicmaker_two],
+        # [(186, 8), (188, 8), soprano_three_musicmaker_two],
+        # [(188, 8), (190, 8), soprano_three_musicmaker_one],
+        # [(190, 8), (192, 8), soprano_three_musicmaker_two],
+        #
+        # [(192, 8), (194, 8), soprano_three_musicmaker_two],
+        # [(194, 8), (196, 8), soprano_three_musicmaker_two],
+        # [(196, 8), (198, 8), soprano_three_musicmaker_one],
+        # [(198, 8), (199, 8), soprano_three_musicmaker_one],
     ]
 ])
 
@@ -1422,45 +1423,45 @@ voice_5_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), alto_one_musicmaker_two],
         [(134, 8), (136, 8), alto_one_musicmaker_one],
 
-        [(136, 8), (138, 8), alto_one_musicmaker_one],
-        [(138, 8), (140, 8), alto_one_musicmaker_one],
-        [(140, 8), (142, 8), alto_one_musicmaker_one],
-        [(142, 8), (144, 8), alto_one_musicmaker_one],
+        # [(136, 8), (138, 8), alto_one_musicmaker_one],
+        # [(138, 8), (140, 8), alto_one_musicmaker_one],
+        # [(140, 8), (142, 8), alto_one_musicmaker_one],
+        # [(142, 8), (144, 8), alto_one_musicmaker_one],
+        #
+        # [(144, 8), (146, 8), alto_one_musicmaker_two],
+        # [(146, 8), (148, 8), alto_one_musicmaker_two],
+        # [(148, 8), (150, 8), alto_one_musicmaker_two],
+        # [(150, 8), (152, 8), alto_one_musicmaker_two],
+        #
+        # [(152, 8), (154, 8), alto_one_musicmaker_two],
+        # [(154, 8), (156, 8), alto_one_musicmaker_one],
+        # [(156, 8), (158, 8), alto_one_musicmaker_one],
+        # [(158, 8), (160, 8), alto_one_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), alto_one_musicmaker_one],
+        # [(162, 8), (164, 8), alto_one_musicmaker_one],
+        # [(164, 8), (166, 8), alto_one_musicmaker_two],
+        # [(166, 8), (168, 8), alto_one_musicmaker_two],
 
-        [(144, 8), (146, 8), alto_one_musicmaker_two],
-        [(146, 8), (148, 8), alto_one_musicmaker_two],
-        [(148, 8), (150, 8), alto_one_musicmaker_two],
-        [(150, 8), (152, 8), alto_one_musicmaker_two],
-
-        [(152, 8), (154, 8), alto_one_musicmaker_two],
-        [(154, 8), (156, 8), alto_one_musicmaker_one],
-        [(156, 8), (158, 8), alto_one_musicmaker_one],
-        [(158, 8), (160, 8), alto_one_musicmaker_one],
-
-        [(160, 8), (162, 8), alto_one_musicmaker_one],
-        [(162, 8), (164, 8), alto_one_musicmaker_one],
-        [(164, 8), (166, 8), alto_one_musicmaker_two],
-        [(166, 8), (168, 8), alto_one_musicmaker_two],
-
-        [(168, 8), (170, 8), alto_one_musicmaker_two],
-        [(170, 8), (172, 8), alto_one_musicmaker_two],
-        [(172, 8), (174, 8), alto_one_musicmaker_two],
-        [(174, 8), (176, 8), alto_one_musicmaker_one],
-
-        [(176, 8), (178, 8), alto_one_musicmaker_one],
-        [(178, 8), (180, 8), alto_one_musicmaker_one],
-        [(180, 8), (182, 8), alto_one_musicmaker_one],
-        [(182, 8), (184, 8), alto_one_musicmaker_one],
-
-        [(184, 8), (186, 8), alto_one_musicmaker_two],
-        [(186, 8), (188, 8), alto_one_musicmaker_two],
-        [(188, 8), (190, 8), alto_one_musicmaker_two],
-        [(190, 8), (192, 8), alto_one_musicmaker_two],
-
-        [(192, 8), (194, 8), alto_one_musicmaker_two],
-        [(194, 8), (196, 8), alto_one_musicmaker_one],
-        [(196, 8), (198, 8), alto_one_musicmaker_one],
-        [(198, 8), (199, 8), alto_one_musicmaker_one],
+        # [(168, 8), (170, 8), alto_one_musicmaker_two],
+        # [(170, 8), (172, 8), alto_one_musicmaker_two],
+        # [(172, 8), (174, 8), alto_one_musicmaker_two],
+        # [(174, 8), (176, 8), alto_one_musicmaker_one],
+        #
+        # [(176, 8), (178, 8), alto_one_musicmaker_one],
+        # [(178, 8), (180, 8), alto_one_musicmaker_one],
+        # [(180, 8), (182, 8), alto_one_musicmaker_one],
+        # [(182, 8), (184, 8), alto_one_musicmaker_one],
+        #
+        # [(184, 8), (186, 8), alto_one_musicmaker_two],
+        # [(186, 8), (188, 8), alto_one_musicmaker_two],
+        # [(188, 8), (190, 8), alto_one_musicmaker_two],
+        # [(190, 8), (192, 8), alto_one_musicmaker_two],
+        #
+        # [(192, 8), (194, 8), alto_one_musicmaker_two],
+        # [(194, 8), (196, 8), alto_one_musicmaker_one],
+        # [(196, 8), (198, 8), alto_one_musicmaker_one],
+        # [(198, 8), (199, 8), alto_one_musicmaker_one],
     ]
 ])
 
@@ -1559,45 +1560,45 @@ voice_6_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), alto_two_musicmaker_one],
         [(134, 8), (136, 8), alto_two_musicmaker_two],
 
-        [(136, 8), (138, 8), alto_two_musicmaker_two],
-        [(138, 8), (140, 8), alto_two_musicmaker_one],
-        [(140, 8), (142, 8), alto_two_musicmaker_two],
-        [(142, 8), (144, 8), alto_two_musicmaker_one],
+        # [(136, 8), (138, 8), alto_two_musicmaker_two],
+        # [(138, 8), (140, 8), alto_two_musicmaker_one],
+        # [(140, 8), (142, 8), alto_two_musicmaker_two],
+        # [(142, 8), (144, 8), alto_two_musicmaker_one],
 
-        [(144, 8), (146, 8), alto_two_musicmaker_two],
-        [(146, 8), (148, 8), alto_two_musicmaker_two],
-        [(148, 8), (150, 8), alto_two_musicmaker_one],
-        [(150, 8), (152, 8), alto_two_musicmaker_one],
+        # [(144, 8), (146, 8), alto_two_musicmaker_two],
+        # [(146, 8), (148, 8), alto_two_musicmaker_two],
+        # [(148, 8), (150, 8), alto_two_musicmaker_one],
+        # [(150, 8), (152, 8), alto_two_musicmaker_one],
+        #
+        # [(152, 8), (154, 8), alto_two_musicmaker_two],
+        # [(154, 8), (156, 8), alto_two_musicmaker_one],
+        # [(156, 8), (158, 8), alto_two_musicmaker_two],
+        # [(158, 8), (160, 8), alto_two_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), alto_two_musicmaker_one],
+        # [(162, 8), (164, 8), alto_two_musicmaker_two],
+        # [(164, 8), (166, 8), alto_two_musicmaker_one],
+        # [(166, 8), (168, 8), alto_two_musicmaker_two],
 
-        [(152, 8), (154, 8), alto_two_musicmaker_two],
-        [(154, 8), (156, 8), alto_two_musicmaker_one],
-        [(156, 8), (158, 8), alto_two_musicmaker_two],
-        [(158, 8), (160, 8), alto_two_musicmaker_one],
-
-        [(160, 8), (162, 8), alto_two_musicmaker_one],
-        [(162, 8), (164, 8), alto_two_musicmaker_two],
-        [(164, 8), (166, 8), alto_two_musicmaker_one],
-        [(166, 8), (168, 8), alto_two_musicmaker_two],
-
-        [(168, 8), (170, 8), alto_two_musicmaker_two],
-        [(170, 8), (172, 8), alto_two_musicmaker_one],
-        [(172, 8), (174, 8), alto_two_musicmaker_two],
-        [(174, 8), (176, 8), alto_two_musicmaker_two],
-
-        [(176, 8), (178, 8), alto_two_musicmaker_two],
-        [(178, 8), (180, 8), alto_two_musicmaker_one],
-        [(180, 8), (182, 8), alto_two_musicmaker_two],
-        [(182, 8), (184, 8), alto_two_musicmaker_one],
-
-        [(184, 8), (186, 8), alto_two_musicmaker_one],
-        [(186, 8), (188, 8), alto_two_musicmaker_one],
-        [(188, 8), (190, 8), alto_two_musicmaker_two],
-        [(190, 8), (192, 8), alto_two_musicmaker_one],
-
-        [(192, 8), (194, 8), alto_two_musicmaker_one],
-        [(194, 8), (196, 8), alto_two_musicmaker_two],
-        [(196, 8), (198, 8), alto_two_musicmaker_one],
-        [(198, 8), (199, 8), alto_two_musicmaker_two],
+        # [(168, 8), (170, 8), alto_two_musicmaker_two],
+        # [(170, 8), (172, 8), alto_two_musicmaker_one],
+        # [(172, 8), (174, 8), alto_two_musicmaker_two],
+        # [(174, 8), (176, 8), alto_two_musicmaker_two],
+        #
+        # [(176, 8), (178, 8), alto_two_musicmaker_two],
+        # [(178, 8), (180, 8), alto_two_musicmaker_one],
+        # [(180, 8), (182, 8), alto_two_musicmaker_two],
+        # [(182, 8), (184, 8), alto_two_musicmaker_one],
+        #
+        # [(184, 8), (186, 8), alto_two_musicmaker_one],
+        # [(186, 8), (188, 8), alto_two_musicmaker_one],
+        # [(188, 8), (190, 8), alto_two_musicmaker_two],
+        # [(190, 8), (192, 8), alto_two_musicmaker_one],
+        #
+        # [(192, 8), (194, 8), alto_two_musicmaker_one],
+        # [(194, 8), (196, 8), alto_two_musicmaker_two],
+        # [(196, 8), (198, 8), alto_two_musicmaker_one],
+        # [(198, 8), (199, 8), alto_two_musicmaker_two],
     ]
 ])
 
@@ -1696,45 +1697,45 @@ voice_7_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), alto_three_musicmaker_two],
         [(134, 8), (136, 8), alto_three_musicmaker_one],
 
-        [(136, 8), (138, 8), alto_three_musicmaker_two],
-        [(138, 8), (140, 8), alto_three_musicmaker_one],
-        [(140, 8), (142, 8), alto_three_musicmaker_one],
-        [(142, 8), (144, 8), alto_three_musicmaker_one],
+        # [(136, 8), (138, 8), alto_three_musicmaker_two],
+        # [(138, 8), (140, 8), alto_three_musicmaker_one],
+        # [(140, 8), (142, 8), alto_three_musicmaker_one],
+        # [(142, 8), (144, 8), alto_three_musicmaker_one],
 
-        [(144, 8), (146, 8), alto_three_musicmaker_one],
-        [(146, 8), (148, 8), alto_three_musicmaker_two],
-        [(148, 8), (150, 8), alto_three_musicmaker_two],
-        [(150, 8), (152, 8), alto_three_musicmaker_two],
+        # [(144, 8), (146, 8), alto_three_musicmaker_one],
+        # [(146, 8), (148, 8), alto_three_musicmaker_two],
+        # [(148, 8), (150, 8), alto_three_musicmaker_two],
+        # [(150, 8), (152, 8), alto_three_musicmaker_two],
+        #
+        # [(152, 8), (154, 8), alto_three_musicmaker_two],
+        # [(154, 8), (156, 8), alto_three_musicmaker_one],
+        # [(156, 8), (158, 8), alto_three_musicmaker_two],
+        # [(158, 8), (160, 8), alto_three_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), alto_three_musicmaker_one],
+        # [(162, 8), (164, 8), alto_three_musicmaker_one],
+        # [(164, 8), (166, 8), alto_three_musicmaker_two],
+        # [(166, 8), (168, 8), alto_three_musicmaker_one],
 
-        [(152, 8), (154, 8), alto_three_musicmaker_two],
-        [(154, 8), (156, 8), alto_three_musicmaker_one],
-        [(156, 8), (158, 8), alto_three_musicmaker_two],
-        [(158, 8), (160, 8), alto_three_musicmaker_one],
-
-        [(160, 8), (162, 8), alto_three_musicmaker_one],
-        [(162, 8), (164, 8), alto_three_musicmaker_one],
-        [(164, 8), (166, 8), alto_three_musicmaker_two],
-        [(166, 8), (168, 8), alto_three_musicmaker_one],
-
-        [(168, 8), (170, 8), alto_three_musicmaker_one],
-        [(170, 8), (172, 8), alto_three_musicmaker_two],
-        [(172, 8), (174, 8), alto_three_musicmaker_one],
-        [(174, 8), (176, 8), alto_three_musicmaker_two],
-
-        [(176, 8), (178, 8), alto_three_musicmaker_two],
-        [(178, 8), (180, 8), alto_three_musicmaker_two],
-        [(180, 8), (182, 8), alto_three_musicmaker_one],
-        [(182, 8), (184, 8), alto_three_musicmaker_one],
-
-        [(184, 8), (186, 8), alto_three_musicmaker_one],
-        [(186, 8), (188, 8), alto_three_musicmaker_two],
-        [(188, 8), (190, 8), alto_three_musicmaker_one],
-        [(190, 8), (192, 8), alto_three_musicmaker_two],
-
-        [(192, 8), (194, 8), alto_three_musicmaker_two],
-        [(194, 8), (196, 8), alto_three_musicmaker_two],
-        [(196, 8), (198, 8), alto_three_musicmaker_two],
-        [(198, 8), (199, 8), alto_three_musicmaker_one],
+        # [(168, 8), (170, 8), alto_three_musicmaker_one],
+        # [(170, 8), (172, 8), alto_three_musicmaker_two],
+        # [(172, 8), (174, 8), alto_three_musicmaker_one],
+        # [(174, 8), (176, 8), alto_three_musicmaker_two],
+        #
+        # [(176, 8), (178, 8), alto_three_musicmaker_two],
+        # [(178, 8), (180, 8), alto_three_musicmaker_two],
+        # [(180, 8), (182, 8), alto_three_musicmaker_one],
+        # [(182, 8), (184, 8), alto_three_musicmaker_one],
+        #
+        # [(184, 8), (186, 8), alto_three_musicmaker_one],
+        # [(186, 8), (188, 8), alto_three_musicmaker_two],
+        # [(188, 8), (190, 8), alto_three_musicmaker_one],
+        # [(190, 8), (192, 8), alto_three_musicmaker_two],
+        #
+        # [(192, 8), (194, 8), alto_three_musicmaker_two],
+        # [(194, 8), (196, 8), alto_three_musicmaker_two],
+        # [(196, 8), (198, 8), alto_three_musicmaker_two],
+        # [(198, 8), (199, 8), alto_three_musicmaker_one],
     ]
 ])
 
@@ -1833,45 +1834,45 @@ voice_8_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), alto_four_musicmaker_one],
         [(134, 8), (136, 8), alto_four_musicmaker_two],
 
-        [(136, 8), (138, 8), alto_four_musicmaker_one],
-        [(138, 8), (140, 8), alto_four_musicmaker_one],
-        [(140, 8), (142, 8), alto_four_musicmaker_one],
-        [(142, 8), (144, 8), alto_four_musicmaker_two],
+        # [(136, 8), (138, 8), alto_four_musicmaker_one],
+        # [(138, 8), (140, 8), alto_four_musicmaker_one],
+        # [(140, 8), (142, 8), alto_four_musicmaker_one],
+        # [(142, 8), (144, 8), alto_four_musicmaker_two],
 
-        [(144, 8), (146, 8), alto_four_musicmaker_one],
-        [(146, 8), (148, 8), alto_four_musicmaker_one],
-        [(148, 8), (150, 8), alto_four_musicmaker_two],
-        [(150, 8), (152, 8), alto_four_musicmaker_two],
+        # [(144, 8), (146, 8), alto_four_musicmaker_one],
+        # [(146, 8), (148, 8), alto_four_musicmaker_one],
+        # [(148, 8), (150, 8), alto_four_musicmaker_two],
+        # [(150, 8), (152, 8), alto_four_musicmaker_two],
+        #
+        # [(152, 8), (154, 8), alto_four_musicmaker_two],
+        # [(154, 8), (156, 8), alto_four_musicmaker_two],
+        # [(156, 8), (158, 8), alto_four_musicmaker_two],
+        # [(158, 8), (160, 8), alto_four_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), alto_four_musicmaker_one],
+        # [(162, 8), (164, 8), alto_four_musicmaker_two],
+        # [(164, 8), (166, 8), alto_four_musicmaker_one],
+        # [(166, 8), (168, 8), alto_four_musicmaker_two],
 
-        [(152, 8), (154, 8), alto_four_musicmaker_two],
-        [(154, 8), (156, 8), alto_four_musicmaker_two],
-        [(156, 8), (158, 8), alto_four_musicmaker_two],
-        [(158, 8), (160, 8), alto_four_musicmaker_one],
-
-        [(160, 8), (162, 8), alto_four_musicmaker_one],
-        [(162, 8), (164, 8), alto_four_musicmaker_two],
-        [(164, 8), (166, 8), alto_four_musicmaker_one],
-        [(166, 8), (168, 8), alto_four_musicmaker_two],
-
-        [(168, 8), (170, 8), alto_four_musicmaker_two],
-        [(170, 8), (172, 8), alto_four_musicmaker_two],
-        [(172, 8), (174, 8), alto_four_musicmaker_one],
-        [(174, 8), (176, 8), alto_four_musicmaker_one],
-
-        [(176, 8), (178, 8), alto_four_musicmaker_two],
-        [(178, 8), (180, 8), alto_four_musicmaker_one],
-        [(180, 8), (182, 8), alto_four_musicmaker_one],
-        [(182, 8), (184, 8), alto_four_musicmaker_two],
-
-        [(184, 8), (186, 8), alto_four_musicmaker_two],
-        [(186, 8), (188, 8), alto_four_musicmaker_two],
-        [(188, 8), (190, 8), alto_four_musicmaker_one],
-        [(190, 8), (192, 8), alto_four_musicmaker_two],
-
-        [(192, 8), (194, 8), alto_four_musicmaker_one],
-        [(194, 8), (196, 8), alto_four_musicmaker_one],
-        [(196, 8), (198, 8), alto_four_musicmaker_one],
-        [(198, 8), (199, 8), alto_four_musicmaker_two],
+        # [(168, 8), (170, 8), alto_four_musicmaker_two],
+        # [(170, 8), (172, 8), alto_four_musicmaker_two],
+        # [(172, 8), (174, 8), alto_four_musicmaker_one],
+        # [(174, 8), (176, 8), alto_four_musicmaker_one],
+        #
+        # [(176, 8), (178, 8), alto_four_musicmaker_two],
+        # [(178, 8), (180, 8), alto_four_musicmaker_one],
+        # [(180, 8), (182, 8), alto_four_musicmaker_one],
+        # [(182, 8), (184, 8), alto_four_musicmaker_two],
+        #
+        # [(184, 8), (186, 8), alto_four_musicmaker_two],
+        # [(186, 8), (188, 8), alto_four_musicmaker_two],
+        # [(188, 8), (190, 8), alto_four_musicmaker_one],
+        # [(190, 8), (192, 8), alto_four_musicmaker_two],
+        #
+        # [(192, 8), (194, 8), alto_four_musicmaker_one],
+        # [(194, 8), (196, 8), alto_four_musicmaker_one],
+        # [(196, 8), (198, 8), alto_four_musicmaker_one],
+        # [(198, 8), (199, 8), alto_four_musicmaker_two],
     ]
 ])
 
@@ -1970,45 +1971,45 @@ voice_9_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), alto_five_musicmaker_one],
         [(134, 8), (136, 8), alto_five_musicmaker_one],
 
-        [(136, 8), (138, 8), alto_five_musicmaker_one],
-        [(138, 8), (140, 8), alto_five_musicmaker_two],
-        [(140, 8), (142, 8), alto_five_musicmaker_two],
-        [(142, 8), (144, 8), alto_five_musicmaker_one],
+        # [(136, 8), (138, 8), alto_five_musicmaker_one],
+        # [(138, 8), (140, 8), alto_five_musicmaker_two],
+        # [(140, 8), (142, 8), alto_five_musicmaker_two],
+        # [(142, 8), (144, 8), alto_five_musicmaker_one],
 
-        [(144, 8), (146, 8), alto_five_musicmaker_two],
-        [(146, 8), (148, 8), alto_five_musicmaker_one],
-        [(148, 8), (150, 8), alto_five_musicmaker_two],
-        [(150, 8), (152, 8), alto_five_musicmaker_one],
+        # [(144, 8), (146, 8), alto_five_musicmaker_two],
+        # [(146, 8), (148, 8), alto_five_musicmaker_one],
+        # [(148, 8), (150, 8), alto_five_musicmaker_two],
+        # [(150, 8), (152, 8), alto_five_musicmaker_one],
+        #
+        # [(152, 8), (154, 8), alto_five_musicmaker_two],
+        # [(154, 8), (156, 8), alto_five_musicmaker_two],
+        # [(156, 8), (158, 8), alto_five_musicmaker_two],
+        # [(158, 8), (160, 8), alto_five_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), alto_five_musicmaker_one],
+        # [(162, 8), (164, 8), alto_five_musicmaker_two],
+        # [(164, 8), (166, 8), alto_five_musicmaker_one],
+        # [(166, 8), (168, 8), alto_five_musicmaker_one],
 
-        [(152, 8), (154, 8), alto_five_musicmaker_two],
-        [(154, 8), (156, 8), alto_five_musicmaker_two],
-        [(156, 8), (158, 8), alto_five_musicmaker_two],
-        [(158, 8), (160, 8), alto_five_musicmaker_one],
-
-        [(160, 8), (162, 8), alto_five_musicmaker_one],
-        [(162, 8), (164, 8), alto_five_musicmaker_two],
-        [(164, 8), (166, 8), alto_five_musicmaker_one],
-        [(166, 8), (168, 8), alto_five_musicmaker_one],
-
-        [(168, 8), (170, 8), alto_five_musicmaker_one],
-        [(170, 8), (172, 8), alto_five_musicmaker_two],
-        [(172, 8), (174, 8), alto_five_musicmaker_two],
-        [(174, 8), (176, 8), alto_five_musicmaker_two],
-
-        [(176, 8), (178, 8), alto_five_musicmaker_two],
-        [(178, 8), (180, 8), alto_five_musicmaker_one],
-        [(180, 8), (182, 8), alto_five_musicmaker_two],
-        [(182, 8), (184, 8), alto_five_musicmaker_two],
-
-        [(184, 8), (186, 8), alto_five_musicmaker_one],
-        [(186, 8), (188, 8), alto_five_musicmaker_two],
-        [(188, 8), (190, 8), alto_five_musicmaker_one],
-        [(190, 8), (192, 8), alto_five_musicmaker_one],
-
-        [(192, 8), (194, 8), alto_five_musicmaker_two],
-        [(194, 8), (196, 8), alto_five_musicmaker_one],
-        [(196, 8), (198, 8), alto_five_musicmaker_two],
-        [(198, 8), (199, 8), alto_five_musicmaker_two],
+        # [(168, 8), (170, 8), alto_five_musicmaker_one],
+        # [(170, 8), (172, 8), alto_five_musicmaker_two],
+        # [(172, 8), (174, 8), alto_five_musicmaker_two],
+        # [(174, 8), (176, 8), alto_five_musicmaker_two],
+        #
+        # [(176, 8), (178, 8), alto_five_musicmaker_two],
+        # [(178, 8), (180, 8), alto_five_musicmaker_one],
+        # [(180, 8), (182, 8), alto_five_musicmaker_two],
+        # [(182, 8), (184, 8), alto_five_musicmaker_two],
+        #
+        # [(184, 8), (186, 8), alto_five_musicmaker_one],
+        # [(186, 8), (188, 8), alto_five_musicmaker_two],
+        # [(188, 8), (190, 8), alto_five_musicmaker_one],
+        # [(190, 8), (192, 8), alto_five_musicmaker_one],
+        #
+        # [(192, 8), (194, 8), alto_five_musicmaker_two],
+        # [(194, 8), (196, 8), alto_five_musicmaker_one],
+        # [(196, 8), (198, 8), alto_five_musicmaker_two],
+        # [(198, 8), (199, 8), alto_five_musicmaker_two],
     ]
 ])
 
@@ -2107,45 +2108,45 @@ voice_10_timespan_list = abjad.TimespanList([
         [(132, 8), (134, 8), alto_six_musicmaker_one],
         [(134, 8), (136, 8), alto_six_musicmaker_two],
 
-        [(136, 8), (138, 8), alto_six_musicmaker_two],
-        [(138, 8), (140, 8), alto_six_musicmaker_one],
-        [(140, 8), (142, 8), alto_six_musicmaker_two],
-        [(142, 8), (144, 8), alto_six_musicmaker_two],
+        # [(136, 8), (138, 8), alto_six_musicmaker_two],
+        # [(138, 8), (140, 8), alto_six_musicmaker_one],
+        # [(140, 8), (142, 8), alto_six_musicmaker_two],
+        # [(142, 8), (144, 8), alto_six_musicmaker_two],
 
-        [(144, 8), (146, 8), alto_six_musicmaker_one],
-        [(146, 8), (148, 8), alto_six_musicmaker_two],
-        [(148, 8), (150, 8), alto_six_musicmaker_two],
-        [(150, 8), (152, 8), alto_six_musicmaker_one],
+        # [(144, 8), (146, 8), alto_six_musicmaker_one],
+        # [(146, 8), (148, 8), alto_six_musicmaker_two],
+        # [(148, 8), (150, 8), alto_six_musicmaker_two],
+        # [(150, 8), (152, 8), alto_six_musicmaker_one],
+        #
+        # [(152, 8), (154, 8), alto_six_musicmaker_two],
+        # [(154, 8), (156, 8), alto_six_musicmaker_one],
+        # [(156, 8), (158, 8), alto_six_musicmaker_two],
+        # [(158, 8), (160, 8), alto_six_musicmaker_one],
+        #
+        # [(160, 8), (162, 8), alto_six_musicmaker_two],
+        # [(162, 8), (164, 8), alto_six_musicmaker_two],
+        # [(164, 8), (166, 8), alto_six_musicmaker_one],
+        # [(166, 8), (168, 8), alto_six_musicmaker_one],
 
-        [(152, 8), (154, 8), alto_six_musicmaker_two],
-        [(154, 8), (156, 8), alto_six_musicmaker_one],
-        [(156, 8), (158, 8), alto_six_musicmaker_two],
-        [(158, 8), (160, 8), alto_six_musicmaker_one],
-
-        [(160, 8), (162, 8), alto_six_musicmaker_two],
-        [(162, 8), (164, 8), alto_six_musicmaker_two],
-        [(164, 8), (166, 8), alto_six_musicmaker_one],
-        [(166, 8), (168, 8), alto_six_musicmaker_one],
-
-        [(168, 8), (170, 8), alto_six_musicmaker_two],
-        [(170, 8), (172, 8), alto_six_musicmaker_two],
-        [(172, 8), (174, 8), alto_six_musicmaker_one],
-        [(174, 8), (176, 8), alto_six_musicmaker_one],
-
-        [(176, 8), (178, 8), alto_six_musicmaker_one],
-        [(178, 8), (180, 8), alto_six_musicmaker_two],
-        [(180, 8), (182, 8), alto_six_musicmaker_one],
-        [(182, 8), (184, 8), alto_six_musicmaker_two],
-
-        [(184, 8), (186, 8), alto_six_musicmaker_two],
-        [(186, 8), (188, 8), alto_six_musicmaker_two],
-        [(188, 8), (190, 8), alto_six_musicmaker_one],
-        [(190, 8), (192, 8), alto_six_musicmaker_one],
-
-        [(192, 8), (194, 8), alto_six_musicmaker_one],
-        [(194, 8), (196, 8), alto_six_musicmaker_one],
-        [(196, 8), (198, 8), alto_six_musicmaker_two],
-        [(198, 8), (199, 8), alto_six_musicmaker_two],
+        # [(168, 8), (170, 8), alto_six_musicmaker_two],
+        # [(170, 8), (172, 8), alto_six_musicmaker_two],
+        # [(172, 8), (174, 8), alto_six_musicmaker_one],
+        # [(174, 8), (176, 8), alto_six_musicmaker_one],
+        #
+        # [(176, 8), (178, 8), alto_six_musicmaker_one],
+        # [(178, 8), (180, 8), alto_six_musicmaker_two],
+        # [(180, 8), (182, 8), alto_six_musicmaker_one],
+        # [(182, 8), (184, 8), alto_six_musicmaker_two],
+        #
+        # [(184, 8), (186, 8), alto_six_musicmaker_two],
+        # [(186, 8), (188, 8), alto_six_musicmaker_two],
+        # [(188, 8), (190, 8), alto_six_musicmaker_one],
+        # [(190, 8), (192, 8), alto_six_musicmaker_one],
+        #
+        # [(192, 8), (194, 8), alto_six_musicmaker_one],
+        # [(194, 8), (196, 8), alto_six_musicmaker_one],
+        # [(196, 8), (198, 8), alto_six_musicmaker_two],
+        # [(198, 8), (199, 8), alto_six_musicmaker_two],
     ]
 ])
 
@@ -2227,38 +2228,38 @@ voice_11_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), tenor_one_musicmaker_one],
         [(132, 8), (134, 8), tenor_one_musicmaker_one],
         [(134, 8), (136, 8), tenor_one_musicmaker_two],
-        [(136, 8), (138, 8), tenor_one_musicmaker_two],
-        [(138, 8), (140, 8), tenor_one_musicmaker_two],
-        [(140, 8), (142, 8), tenor_one_musicmaker_two],
-        [(142, 8), (144, 8), tenor_one_musicmaker_two],
-        [(144, 8), (146, 8), tenor_one_musicmaker_two],
-        [(146, 8), (148, 8), tenor_one_musicmaker_two],
-        [(148, 8), (150, 8), tenor_one_musicmaker_one],
-        [(150, 8), (152, 8), tenor_one_musicmaker_one],
-        [(152, 8), (154, 8), tenor_one_musicmaker_one],
-        [(154, 8), (156, 8), tenor_one_musicmaker_one],
-        [(156, 8), (158, 8), tenor_one_musicmaker_two],
-        [(158, 8), (160, 8), tenor_one_musicmaker_two],
-        [(160, 8), (162, 8), tenor_one_musicmaker_two],
-        [(162, 8), (164, 8), tenor_one_musicmaker_two],
-        [(164, 8), (166, 8), tenor_one_musicmaker_one],
-        [(166, 8), (168, 8), tenor_one_musicmaker_one],
-        [(168, 8), (170, 8), tenor_one_musicmaker_one],
-        [(170, 8), (172, 8), tenor_one_musicmaker_one],
-        [(172, 8), (174, 8), tenor_one_musicmaker_one],
-        [(174, 8), (176, 8), tenor_one_musicmaker_two],
-        [(176, 8), (178, 8), tenor_one_musicmaker_two],
-        [(178, 8), (180, 8), tenor_one_musicmaker_two],
-        [(180, 8), (182, 8), tenor_one_musicmaker_two],
-        [(182, 8), (184, 8), tenor_one_musicmaker_two],
-        [(184, 8), (186, 8), tenor_one_musicmaker_two],
-        [(186, 8), (188, 8), tenor_one_musicmaker_two],
-        [(188, 8), (190, 8), tenor_one_musicmaker_one],
-        [(190, 8), (192, 8), tenor_one_musicmaker_one],
-        [(192, 8), (194, 8), tenor_one_musicmaker_one],
-        [(194, 8), (196, 8), tenor_one_musicmaker_one],
-        [(196, 8), (198, 8), tenor_one_musicmaker_one],
-        [(198, 8), (199, 8), tenor_one_musicmaker_two],
+        # [(136, 8), (138, 8), tenor_one_musicmaker_two],
+        # [(138, 8), (140, 8), tenor_one_musicmaker_two],
+        # [(140, 8), (142, 8), tenor_one_musicmaker_two],
+        # [(142, 8), (144, 8), tenor_one_musicmaker_two],
+        # [(144, 8), (146, 8), tenor_one_musicmaker_two],
+        # [(146, 8), (148, 8), tenor_one_musicmaker_two],
+        # [(148, 8), (150, 8), tenor_one_musicmaker_one],
+        # [(150, 8), (152, 8), tenor_one_musicmaker_one],
+        # [(152, 8), (154, 8), tenor_one_musicmaker_one],
+        # [(154, 8), (156, 8), tenor_one_musicmaker_one],
+        # [(156, 8), (158, 8), tenor_one_musicmaker_two],
+        # [(158, 8), (160, 8), tenor_one_musicmaker_two],
+        # [(160, 8), (162, 8), tenor_one_musicmaker_two],
+        # [(162, 8), (164, 8), tenor_one_musicmaker_two],
+        # [(164, 8), (166, 8), tenor_one_musicmaker_one],
+        # [(166, 8), (168, 8), tenor_one_musicmaker_one],
+        # [(168, 8), (170, 8), tenor_one_musicmaker_one],
+        # [(170, 8), (172, 8), tenor_one_musicmaker_one],
+        # [(172, 8), (174, 8), tenor_one_musicmaker_one],
+        # [(174, 8), (176, 8), tenor_one_musicmaker_two],
+        # [(176, 8), (178, 8), tenor_one_musicmaker_two],
+        # [(178, 8), (180, 8), tenor_one_musicmaker_two],
+        # [(180, 8), (182, 8), tenor_one_musicmaker_two],
+        # [(182, 8), (184, 8), tenor_one_musicmaker_two],
+        # [(184, 8), (186, 8), tenor_one_musicmaker_two],
+        # [(186, 8), (188, 8), tenor_one_musicmaker_two],
+        # [(188, 8), (190, 8), tenor_one_musicmaker_one],
+        # [(190, 8), (192, 8), tenor_one_musicmaker_one],
+        # [(192, 8), (194, 8), tenor_one_musicmaker_one],
+        # [(194, 8), (196, 8), tenor_one_musicmaker_one],
+        # [(196, 8), (198, 8), tenor_one_musicmaker_one],
+        # [(198, 8), (199, 8), tenor_one_musicmaker_two],
     ]
 ])
 
@@ -2340,38 +2341,38 @@ voice_12_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), tenor_two_musicmaker_two],
         [(132, 8), (134, 8), tenor_two_musicmaker_two],
         [(134, 8), (136, 8), tenor_two_musicmaker_two],
-        [(136, 8), (138, 8), tenor_two_musicmaker_two],
-        [(138, 8), (140, 8), tenor_two_musicmaker_two],
-        [(140, 8), (142, 8), tenor_two_musicmaker_two],
-        [(142, 8), (144, 8), tenor_two_musicmaker_one],
-        [(144, 8), (146, 8), tenor_two_musicmaker_one],
-        [(146, 8), (148, 8), tenor_two_musicmaker_one],
-        [(148, 8), (150, 8), tenor_two_musicmaker_one],
-        [(150, 8), (152, 8), tenor_two_musicmaker_one],
-        [(152, 8), (154, 8), tenor_two_musicmaker_one],
-        [(154, 8), (156, 8), tenor_two_musicmaker_two],
-        [(156, 8), (158, 8), tenor_two_musicmaker_two],
-        [(158, 8), (160, 8), tenor_two_musicmaker_two],
-        [(160, 8), (162, 8), tenor_two_musicmaker_two],
-        [(162, 8), (164, 8), tenor_two_musicmaker_one],
-        [(164, 8), (166, 8), tenor_two_musicmaker_one],
-        [(166, 8), (168, 8), tenor_two_musicmaker_two],
-        [(168, 8), (170, 8), tenor_two_musicmaker_one],
-        [(170, 8), (172, 8), tenor_two_musicmaker_one],
-        [(172, 8), (174, 8), tenor_two_musicmaker_one],
-        [(174, 8), (176, 8), tenor_two_musicmaker_two],
-        [(176, 8), (178, 8), tenor_two_musicmaker_two],
-        [(178, 8), (180, 8), tenor_two_musicmaker_two],
-        [(180, 8), (182, 8), tenor_two_musicmaker_one],
-        [(182, 8), (184, 8), tenor_two_musicmaker_one],
-        [(184, 8), (186, 8), tenor_two_musicmaker_one],
-        [(186, 8), (188, 8), tenor_two_musicmaker_two],
-        [(188, 8), (190, 8), tenor_two_musicmaker_two],
-        [(190, 8), (192, 8), tenor_two_musicmaker_two],
-        [(192, 8), (194, 8), tenor_two_musicmaker_one],
-        [(194, 8), (196, 8), tenor_two_musicmaker_one],
-        [(196, 8), (198, 8), tenor_two_musicmaker_one],
-        [(198, 8), (199, 8), tenor_two_musicmaker_one],
+        # [(136, 8), (138, 8), tenor_two_musicmaker_two],
+        # [(138, 8), (140, 8), tenor_two_musicmaker_two],
+        # [(140, 8), (142, 8), tenor_two_musicmaker_two],
+        # [(142, 8), (144, 8), tenor_two_musicmaker_one],
+        # [(144, 8), (146, 8), tenor_two_musicmaker_one],
+        # [(146, 8), (148, 8), tenor_two_musicmaker_one],
+        # [(148, 8), (150, 8), tenor_two_musicmaker_one],
+        # [(150, 8), (152, 8), tenor_two_musicmaker_one],
+        # [(152, 8), (154, 8), tenor_two_musicmaker_one],
+        # [(154, 8), (156, 8), tenor_two_musicmaker_two],
+        # [(156, 8), (158, 8), tenor_two_musicmaker_two],
+        # [(158, 8), (160, 8), tenor_two_musicmaker_two],
+        # [(160, 8), (162, 8), tenor_two_musicmaker_two],
+        # [(162, 8), (164, 8), tenor_two_musicmaker_one],
+        # [(164, 8), (166, 8), tenor_two_musicmaker_one],
+        # [(166, 8), (168, 8), tenor_two_musicmaker_two],
+        # [(168, 8), (170, 8), tenor_two_musicmaker_one],
+        # [(170, 8), (172, 8), tenor_two_musicmaker_one],
+        # [(172, 8), (174, 8), tenor_two_musicmaker_one],
+        # [(174, 8), (176, 8), tenor_two_musicmaker_two],
+        # [(176, 8), (178, 8), tenor_two_musicmaker_two],
+        # [(178, 8), (180, 8), tenor_two_musicmaker_two],
+        # [(180, 8), (182, 8), tenor_two_musicmaker_one],
+        # [(182, 8), (184, 8), tenor_two_musicmaker_one],
+        # [(184, 8), (186, 8), tenor_two_musicmaker_one],
+        # [(186, 8), (188, 8), tenor_two_musicmaker_two],
+        # [(188, 8), (190, 8), tenor_two_musicmaker_two],
+        # [(190, 8), (192, 8), tenor_two_musicmaker_two],
+        # [(192, 8), (194, 8), tenor_two_musicmaker_one],
+        # [(194, 8), (196, 8), tenor_two_musicmaker_one],
+        # [(196, 8), (198, 8), tenor_two_musicmaker_one],
+        # [(198, 8), (199, 8), tenor_two_musicmaker_one],
     ]
 ])
 
@@ -2453,38 +2454,38 @@ voice_13_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), tenor_three_musicmaker_one],
         [(132, 8), (134, 8), tenor_three_musicmaker_one],
         [(134, 8), (136, 8), tenor_three_musicmaker_one],
-        [(136, 8), (138, 8), tenor_three_musicmaker_one],
-        [(138, 8), (140, 8), tenor_three_musicmaker_two],
-        [(140, 8), (142, 8), tenor_three_musicmaker_two],
-        [(142, 8), (144, 8), tenor_three_musicmaker_two],
-        [(144, 8), (146, 8), tenor_three_musicmaker_two],
-        [(146, 8), (148, 8), tenor_three_musicmaker_one],
-        [(148, 8), (150, 8), tenor_three_musicmaker_two],
-        [(150, 8), (152, 8), tenor_three_musicmaker_two],
-        [(152, 8), (154, 8), tenor_three_musicmaker_two],
-        [(154, 8), (156, 8), tenor_three_musicmaker_one],
-        [(156, 8), (158, 8), tenor_three_musicmaker_one],
-        [(158, 8), (160, 8), tenor_three_musicmaker_two],
-        [(160, 8), (162, 8), tenor_three_musicmaker_two],
-        [(162, 8), (164, 8), tenor_three_musicmaker_two],
-        [(164, 8), (166, 8), tenor_three_musicmaker_two],
-        [(166, 8), (168, 8), tenor_three_musicmaker_one],
-        [(168, 8), (170, 8), tenor_three_musicmaker_one],
-        [(170, 8), (172, 8), tenor_three_musicmaker_one],
-        [(172, 8), (174, 8), tenor_three_musicmaker_one],
-        [(174, 8), (176, 8), tenor_three_musicmaker_one],
-        [(176, 8), (178, 8), tenor_three_musicmaker_two],
-        [(178, 8), (180, 8), tenor_three_musicmaker_two],
-        [(180, 8), (182, 8), tenor_three_musicmaker_two],
-        [(182, 8), (184, 8), tenor_three_musicmaker_one],
-        [(184, 8), (186, 8), tenor_three_musicmaker_one],
-        [(186, 8), (188, 8), tenor_three_musicmaker_one],
-        [(188, 8), (190, 8), tenor_three_musicmaker_one],
-        [(190, 8), (192, 8), tenor_three_musicmaker_two],
-        [(192, 8), (194, 8), tenor_three_musicmaker_one],
-        [(194, 8), (196, 8), tenor_three_musicmaker_two],
-        [(196, 8), (198, 8), tenor_three_musicmaker_two],
-        [(198, 8), (199, 8), tenor_three_musicmaker_two],
+        # [(136, 8), (138, 8), tenor_three_musicmaker_one],
+        # [(138, 8), (140, 8), tenor_three_musicmaker_two],
+        # [(140, 8), (142, 8), tenor_three_musicmaker_two],
+        # [(142, 8), (144, 8), tenor_three_musicmaker_two],
+        # [(144, 8), (146, 8), tenor_three_musicmaker_two],
+        # [(146, 8), (148, 8), tenor_three_musicmaker_one],
+        # [(148, 8), (150, 8), tenor_three_musicmaker_two],
+        # [(150, 8), (152, 8), tenor_three_musicmaker_two],
+        # [(152, 8), (154, 8), tenor_three_musicmaker_two],
+        # [(154, 8), (156, 8), tenor_three_musicmaker_one],
+        # [(156, 8), (158, 8), tenor_three_musicmaker_one],
+        # [(158, 8), (160, 8), tenor_three_musicmaker_two],
+        # [(160, 8), (162, 8), tenor_three_musicmaker_two],
+        # [(162, 8), (164, 8), tenor_three_musicmaker_two],
+        # [(164, 8), (166, 8), tenor_three_musicmaker_two],
+        # [(166, 8), (168, 8), tenor_three_musicmaker_one],
+        # [(168, 8), (170, 8), tenor_three_musicmaker_one],
+        # [(170, 8), (172, 8), tenor_three_musicmaker_one],
+        # [(172, 8), (174, 8), tenor_three_musicmaker_one],
+        # [(174, 8), (176, 8), tenor_three_musicmaker_one],
+        # [(176, 8), (178, 8), tenor_three_musicmaker_two],
+        # [(178, 8), (180, 8), tenor_three_musicmaker_two],
+        # [(180, 8), (182, 8), tenor_three_musicmaker_two],
+        # [(182, 8), (184, 8), tenor_three_musicmaker_one],
+        # [(184, 8), (186, 8), tenor_three_musicmaker_one],
+        # [(186, 8), (188, 8), tenor_three_musicmaker_one],
+        # [(188, 8), (190, 8), tenor_three_musicmaker_one],
+        # [(190, 8), (192, 8), tenor_three_musicmaker_two],
+        # [(192, 8), (194, 8), tenor_three_musicmaker_one],
+        # [(194, 8), (196, 8), tenor_three_musicmaker_two],
+        # [(196, 8), (198, 8), tenor_three_musicmaker_two],
+        # [(198, 8), (199, 8), tenor_three_musicmaker_two],
     ]
 ])
 
@@ -2566,38 +2567,38 @@ voice_14_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), tenor_four_musicmaker_two],
         [(132, 8), (134, 8), tenor_four_musicmaker_two],
         [(134, 8), (136, 8), tenor_four_musicmaker_one],
-        [(136, 8), (138, 8), tenor_four_musicmaker_one],
-        [(138, 8), (140, 8), tenor_four_musicmaker_one],
-        [(140, 8), (142, 8), tenor_four_musicmaker_one],
-        [(142, 8), (144, 8), tenor_four_musicmaker_one],
-        [(144, 8), (146, 8), tenor_four_musicmaker_one],
-        [(146, 8), (148, 8), tenor_four_musicmaker_two],
-        [(148, 8), (150, 8), tenor_four_musicmaker_two],
-        [(150, 8), (152, 8), tenor_four_musicmaker_two],
-        [(152, 8), (154, 8), tenor_four_musicmaker_two],
-        [(154, 8), (156, 8), tenor_four_musicmaker_two],
-        [(156, 8), (158, 8), tenor_four_musicmaker_two],
-        [(158, 8), (160, 8), tenor_four_musicmaker_two],
-        [(160, 8), (162, 8), tenor_four_musicmaker_one],
-        [(162, 8), (164, 8), tenor_four_musicmaker_one],
-        [(164, 8), (166, 8), tenor_four_musicmaker_one],
-        [(166, 8), (168, 8), tenor_four_musicmaker_one],
-        [(168, 8), (170, 8), tenor_four_musicmaker_one],
-        [(170, 8), (172, 8), tenor_four_musicmaker_one],
-        [(172, 8), (174, 8), tenor_four_musicmaker_one],
-        [(174, 8), (176, 8), tenor_four_musicmaker_one],
-        [(176, 8), (178, 8), tenor_four_musicmaker_two],
-        [(178, 8), (180, 8), tenor_four_musicmaker_two],
-        [(180, 8), (182, 8), tenor_four_musicmaker_two],
-        [(182, 8), (184, 8), tenor_four_musicmaker_two],
-        [(184, 8), (186, 8), tenor_four_musicmaker_two],
-        [(186, 8), (188, 8), tenor_four_musicmaker_two],
-        [(188, 8), (190, 8), tenor_four_musicmaker_two],
-        [(190, 8), (192, 8), tenor_four_musicmaker_two],
-        [(192, 8), (194, 8), tenor_four_musicmaker_one],
-        [(194, 8), (196, 8), tenor_four_musicmaker_one],
-        [(196, 8), (198, 8), tenor_four_musicmaker_two],
-        [(198, 8), (199, 8), tenor_four_musicmaker_two],
+        # [(136, 8), (138, 8), tenor_four_musicmaker_one],
+        # [(138, 8), (140, 8), tenor_four_musicmaker_one],
+        # [(140, 8), (142, 8), tenor_four_musicmaker_one],
+        # [(142, 8), (144, 8), tenor_four_musicmaker_one],
+        # [(144, 8), (146, 8), tenor_four_musicmaker_one],
+        # [(146, 8), (148, 8), tenor_four_musicmaker_two],
+        # [(148, 8), (150, 8), tenor_four_musicmaker_two],
+        # [(150, 8), (152, 8), tenor_four_musicmaker_two],
+        # [(152, 8), (154, 8), tenor_four_musicmaker_two],
+        # [(154, 8), (156, 8), tenor_four_musicmaker_two],
+        # [(156, 8), (158, 8), tenor_four_musicmaker_two],
+        # [(158, 8), (160, 8), tenor_four_musicmaker_two],
+        # [(160, 8), (162, 8), tenor_four_musicmaker_one],
+        # [(162, 8), (164, 8), tenor_four_musicmaker_one],
+        # [(164, 8), (166, 8), tenor_four_musicmaker_one],
+        # [(166, 8), (168, 8), tenor_four_musicmaker_one],
+        # [(168, 8), (170, 8), tenor_four_musicmaker_one],
+        # [(170, 8), (172, 8), tenor_four_musicmaker_one],
+        # [(172, 8), (174, 8), tenor_four_musicmaker_one],
+        # [(174, 8), (176, 8), tenor_four_musicmaker_one],
+        # [(176, 8), (178, 8), tenor_four_musicmaker_two],
+        # [(178, 8), (180, 8), tenor_four_musicmaker_two],
+        # [(180, 8), (182, 8), tenor_four_musicmaker_two],
+        # [(182, 8), (184, 8), tenor_four_musicmaker_two],
+        # [(184, 8), (186, 8), tenor_four_musicmaker_two],
+        # [(186, 8), (188, 8), tenor_four_musicmaker_two],
+        # [(188, 8), (190, 8), tenor_four_musicmaker_two],
+        # [(190, 8), (192, 8), tenor_four_musicmaker_two],
+        # [(192, 8), (194, 8), tenor_four_musicmaker_one],
+        # [(194, 8), (196, 8), tenor_four_musicmaker_one],
+        # [(196, 8), (198, 8), tenor_four_musicmaker_two],
+        # [(198, 8), (199, 8), tenor_four_musicmaker_two],
     ]
 ])
 
@@ -2679,38 +2680,38 @@ voice_15_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), tenor_five_musicmaker_one],
         [(132, 8), (134, 8), tenor_five_musicmaker_one],
         [(134, 8), (136, 8), tenor_five_musicmaker_two],
-        [(136, 8), (138, 8), tenor_five_musicmaker_two],
-        [(138, 8), (140, 8), tenor_five_musicmaker_two],
-        [(140, 8), (142, 8), tenor_five_musicmaker_two],
-        [(142, 8), (144, 8), tenor_five_musicmaker_two],
-        [(144, 8), (146, 8), tenor_five_musicmaker_two],
-        [(146, 8), (148, 8), tenor_five_musicmaker_two],
-        [(148, 8), (150, 8), tenor_five_musicmaker_one],
-        [(150, 8), (152, 8), tenor_five_musicmaker_two],
-        [(152, 8), (154, 8), tenor_five_musicmaker_two],
-        [(154, 8), (156, 8), tenor_five_musicmaker_one],
-        [(156, 8), (158, 8), tenor_five_musicmaker_one],
-        [(158, 8), (160, 8), tenor_five_musicmaker_two],
-        [(160, 8), (162, 8), tenor_five_musicmaker_two],
-        [(162, 8), (164, 8), tenor_five_musicmaker_two],
-        [(164, 8), (166, 8), tenor_five_musicmaker_one],
-        [(166, 8), (168, 8), tenor_five_musicmaker_one],
-        [(168, 8), (170, 8), tenor_five_musicmaker_two],
-        [(170, 8), (172, 8), tenor_five_musicmaker_two],
-        [(172, 8), (174, 8), tenor_five_musicmaker_two],
-        [(174, 8), (176, 8), tenor_five_musicmaker_two],
-        [(176, 8), (178, 8), tenor_five_musicmaker_one],
-        [(178, 8), (180, 8), tenor_five_musicmaker_one],
-        [(180, 8), (182, 8), tenor_five_musicmaker_two],
-        [(182, 8), (184, 8), tenor_five_musicmaker_two],
-        [(184, 8), (186, 8), tenor_five_musicmaker_two],
-        [(186, 8), (188, 8), tenor_five_musicmaker_two],
-        [(188, 8), (190, 8), tenor_five_musicmaker_two],
-        [(190, 8), (192, 8), tenor_five_musicmaker_one],
-        [(192, 8), (194, 8), tenor_five_musicmaker_one],
-        [(194, 8), (196, 8), tenor_five_musicmaker_one],
-        [(196, 8), (198, 8), tenor_five_musicmaker_one],
-        [(198, 8), (199, 8), tenor_five_musicmaker_one],
+        # [(136, 8), (138, 8), tenor_five_musicmaker_two],
+        # [(138, 8), (140, 8), tenor_five_musicmaker_two],
+        # [(140, 8), (142, 8), tenor_five_musicmaker_two],
+        # [(142, 8), (144, 8), tenor_five_musicmaker_two],
+        # [(144, 8), (146, 8), tenor_five_musicmaker_two],
+        # [(146, 8), (148, 8), tenor_five_musicmaker_two],
+        # [(148, 8), (150, 8), tenor_five_musicmaker_one],
+        # [(150, 8), (152, 8), tenor_five_musicmaker_two],
+        # [(152, 8), (154, 8), tenor_five_musicmaker_two],
+        # [(154, 8), (156, 8), tenor_five_musicmaker_one],
+        # [(156, 8), (158, 8), tenor_five_musicmaker_one],
+        # [(158, 8), (160, 8), tenor_five_musicmaker_two],
+        # [(160, 8), (162, 8), tenor_five_musicmaker_two],
+        # [(162, 8), (164, 8), tenor_five_musicmaker_two],
+        # [(164, 8), (166, 8), tenor_five_musicmaker_one],
+        # [(166, 8), (168, 8), tenor_five_musicmaker_one],
+        # [(168, 8), (170, 8), tenor_five_musicmaker_two],
+        # [(170, 8), (172, 8), tenor_five_musicmaker_two],
+        # [(172, 8), (174, 8), tenor_five_musicmaker_two],
+        # [(174, 8), (176, 8), tenor_five_musicmaker_two],
+        # [(176, 8), (178, 8), tenor_five_musicmaker_one],
+        # [(178, 8), (180, 8), tenor_five_musicmaker_one],
+        # [(180, 8), (182, 8), tenor_five_musicmaker_two],
+        # [(182, 8), (184, 8), tenor_five_musicmaker_two],
+        # [(184, 8), (186, 8), tenor_five_musicmaker_two],
+        # [(186, 8), (188, 8), tenor_five_musicmaker_two],
+        # [(188, 8), (190, 8), tenor_five_musicmaker_two],
+        # [(190, 8), (192, 8), tenor_five_musicmaker_one],
+        # [(192, 8), (194, 8), tenor_five_musicmaker_one],
+        # [(194, 8), (196, 8), tenor_five_musicmaker_one],
+        # [(196, 8), (198, 8), tenor_five_musicmaker_one],
+        # [(198, 8), (199, 8), tenor_five_musicmaker_one],
     ]
 ])
 
@@ -2792,38 +2793,38 @@ voice_16_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), baritone_one_musicmaker_two],
         [(132, 8), (134, 8), baritone_one_musicmaker_two],
         [(134, 8), (136, 8), baritone_one_musicmaker_one],
-        [(136, 8), (138, 8), baritone_one_musicmaker_one],
-        [(138, 8), (140, 8), baritone_one_musicmaker_one],
-        [(140, 8), (142, 8), baritone_one_musicmaker_one],
-        [(142, 8), (144, 8), baritone_one_musicmaker_two],
-        [(144, 8), (146, 8), baritone_one_musicmaker_two],
-        [(146, 8), (148, 8), baritone_one_musicmaker_two],
-        [(148, 8), (150, 8), baritone_one_musicmaker_one],
-        [(150, 8), (152, 8), baritone_one_musicmaker_one],
-        [(152, 8), (154, 8), baritone_one_musicmaker_one],
-        [(154, 8), (156, 8), baritone_one_musicmaker_one],
-        [(156, 8), (158, 8), baritone_one_musicmaker_two],
-        [(158, 8), (160, 8), baritone_one_musicmaker_two],
-        [(160, 8), (162, 8), baritone_one_musicmaker_two],
-        [(162, 8), (164, 8), baritone_one_musicmaker_one],
-        [(164, 8), (166, 8), baritone_one_musicmaker_one],
-        [(166, 8), (168, 8), baritone_one_musicmaker_one],
-        [(168, 8), (170, 8), baritone_one_musicmaker_one],
-        [(170, 8), (172, 8), baritone_one_musicmaker_two],
-        [(172, 8), (174, 8), baritone_one_musicmaker_two],
-        [(174, 8), (176, 8), baritone_one_musicmaker_two],
-        [(176, 8), (178, 8), baritone_one_musicmaker_one],
-        [(178, 8), (180, 8), baritone_one_musicmaker_one],
-        [(180, 8), (182, 8), baritone_one_musicmaker_one],
-        [(182, 8), (184, 8), baritone_one_musicmaker_one],
-        [(184, 8), (186, 8), baritone_one_musicmaker_two],
-        [(186, 8), (188, 8), baritone_one_musicmaker_two],
-        [(188, 8), (190, 8), baritone_one_musicmaker_two],
-        [(190, 8), (192, 8), baritone_one_musicmaker_one],
-        [(192, 8), (194, 8), baritone_one_musicmaker_one],
-        [(194, 8), (196, 8), baritone_one_musicmaker_one],
-        [(196, 8), (198, 8), baritone_one_musicmaker_one],
-        [(198, 8), (199, 8), baritone_one_musicmaker_two],
+        # [(136, 8), (138, 8), baritone_one_musicmaker_one],
+        # [(138, 8), (140, 8), baritone_one_musicmaker_one],
+        # [(140, 8), (142, 8), baritone_one_musicmaker_one],
+        # [(142, 8), (144, 8), baritone_one_musicmaker_two],
+        # [(144, 8), (146, 8), baritone_one_musicmaker_two],
+        # [(146, 8), (148, 8), baritone_one_musicmaker_two],
+        # [(148, 8), (150, 8), baritone_one_musicmaker_one],
+        # [(150, 8), (152, 8), baritone_one_musicmaker_one],
+        # [(152, 8), (154, 8), baritone_one_musicmaker_one],
+        # [(154, 8), (156, 8), baritone_one_musicmaker_one],
+        # [(156, 8), (158, 8), baritone_one_musicmaker_two],
+        # [(158, 8), (160, 8), baritone_one_musicmaker_two],
+        # [(160, 8), (162, 8), baritone_one_musicmaker_two],
+        # [(162, 8), (164, 8), baritone_one_musicmaker_one],
+        # [(164, 8), (166, 8), baritone_one_musicmaker_one],
+        # [(166, 8), (168, 8), baritone_one_musicmaker_one],
+        # [(168, 8), (170, 8), baritone_one_musicmaker_one],
+        # [(170, 8), (172, 8), baritone_one_musicmaker_two],
+        # [(172, 8), (174, 8), baritone_one_musicmaker_two],
+        # [(174, 8), (176, 8), baritone_one_musicmaker_two],
+        # [(176, 8), (178, 8), baritone_one_musicmaker_one],
+        # [(178, 8), (180, 8), baritone_one_musicmaker_one],
+        # [(180, 8), (182, 8), baritone_one_musicmaker_one],
+        # [(182, 8), (184, 8), baritone_one_musicmaker_one],
+        # [(184, 8), (186, 8), baritone_one_musicmaker_two],
+        # [(186, 8), (188, 8), baritone_one_musicmaker_two],
+        # [(188, 8), (190, 8), baritone_one_musicmaker_two],
+        # [(190, 8), (192, 8), baritone_one_musicmaker_one],
+        # [(192, 8), (194, 8), baritone_one_musicmaker_one],
+        # [(194, 8), (196, 8), baritone_one_musicmaker_one],
+        # [(196, 8), (198, 8), baritone_one_musicmaker_one],
+        # [(198, 8), (199, 8), baritone_one_musicmaker_two],
     ]
 ])
 
@@ -2905,38 +2906,38 @@ voice_17_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), baritone_two_musicmaker_one],
         [(132, 8), (134, 8), baritone_two_musicmaker_one],
         [(134, 8), (136, 8), baritone_two_musicmaker_one],
-        [(136, 8), (138, 8), baritone_two_musicmaker_two],
-        [(138, 8), (140, 8), baritone_two_musicmaker_two],
-        [(140, 8), (142, 8), baritone_two_musicmaker_two],
-        [(142, 8), (144, 8), baritone_two_musicmaker_two],
-        [(144, 8), (146, 8), baritone_two_musicmaker_two],
-        [(146, 8), (148, 8), baritone_two_musicmaker_one],
-        [(148, 8), (150, 8), baritone_two_musicmaker_one],
-        [(150, 8), (152, 8), baritone_two_musicmaker_one],
-        [(152, 8), (154, 8), baritone_two_musicmaker_one],
-        [(154, 8), (156, 8), baritone_two_musicmaker_one],
-        [(156, 8), (158, 8), baritone_two_musicmaker_two],
-        [(158, 8), (160, 8), baritone_two_musicmaker_two],
-        [(160, 8), (162, 8), baritone_two_musicmaker_two],
-        [(162, 8), (164, 8), baritone_two_musicmaker_one],
-        [(164, 8), (166, 8), baritone_two_musicmaker_one],
-        [(166, 8), (168, 8), baritone_two_musicmaker_one],
-        [(168, 8), (170, 8), baritone_two_musicmaker_two],
-        [(170, 8), (172, 8), baritone_two_musicmaker_two],
-        [(172, 8), (174, 8), baritone_two_musicmaker_two],
-        [(174, 8), (176, 8), baritone_two_musicmaker_one],
-        [(176, 8), (178, 8), baritone_two_musicmaker_one],
-        [(178, 8), (180, 8), baritone_two_musicmaker_one],
-        [(180, 8), (182, 8), baritone_two_musicmaker_two],
-        [(182, 8), (184, 8), baritone_two_musicmaker_two],
-        [(184, 8), (186, 8), baritone_two_musicmaker_two],
-        [(186, 8), (188, 8), baritone_two_musicmaker_one],
-        [(188, 8), (190, 8), baritone_two_musicmaker_one],
-        [(190, 8), (192, 8), baritone_two_musicmaker_one],
-        [(192, 8), (194, 8), baritone_two_musicmaker_two],
-        [(194, 8), (196, 8), baritone_two_musicmaker_two],
-        [(196, 8), (198, 8), baritone_two_musicmaker_two],
-        [(198, 8), (199, 8), baritone_two_musicmaker_one],
+        # [(136, 8), (138, 8), baritone_two_musicmaker_two],
+        # [(138, 8), (140, 8), baritone_two_musicmaker_two],
+        # [(140, 8), (142, 8), baritone_two_musicmaker_two],
+        # [(142, 8), (144, 8), baritone_two_musicmaker_two],
+        # [(144, 8), (146, 8), baritone_two_musicmaker_two],
+        # [(146, 8), (148, 8), baritone_two_musicmaker_one],
+        # [(148, 8), (150, 8), baritone_two_musicmaker_one],
+        # [(150, 8), (152, 8), baritone_two_musicmaker_one],
+        # [(152, 8), (154, 8), baritone_two_musicmaker_one],
+        # [(154, 8), (156, 8), baritone_two_musicmaker_one],
+        # [(156, 8), (158, 8), baritone_two_musicmaker_two],
+        # [(158, 8), (160, 8), baritone_two_musicmaker_two],
+        # [(160, 8), (162, 8), baritone_two_musicmaker_two],
+        # [(162, 8), (164, 8), baritone_two_musicmaker_one],
+        # [(164, 8), (166, 8), baritone_two_musicmaker_one],
+        # [(166, 8), (168, 8), baritone_two_musicmaker_one],
+        # [(168, 8), (170, 8), baritone_two_musicmaker_two],
+        # [(170, 8), (172, 8), baritone_two_musicmaker_two],
+        # [(172, 8), (174, 8), baritone_two_musicmaker_two],
+        # [(174, 8), (176, 8), baritone_two_musicmaker_one],
+        # [(176, 8), (178, 8), baritone_two_musicmaker_one],
+        # [(178, 8), (180, 8), baritone_two_musicmaker_one],
+        # [(180, 8), (182, 8), baritone_two_musicmaker_two],
+        # [(182, 8), (184, 8), baritone_two_musicmaker_two],
+        # [(184, 8), (186, 8), baritone_two_musicmaker_two],
+        # [(186, 8), (188, 8), baritone_two_musicmaker_one],
+        # [(188, 8), (190, 8), baritone_two_musicmaker_one],
+        # [(190, 8), (192, 8), baritone_two_musicmaker_one],
+        # [(192, 8), (194, 8), baritone_two_musicmaker_two],
+        # [(194, 8), (196, 8), baritone_two_musicmaker_two],
+        # [(196, 8), (198, 8), baritone_two_musicmaker_two],
+        # [(198, 8), (199, 8), baritone_two_musicmaker_one],
     ]
 ])
 
@@ -3018,38 +3019,38 @@ voice_18_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), baritone_three_musicmaker_two],
         [(132, 8), (134, 8), baritone_three_musicmaker_one],
         [(134, 8), (136, 8), baritone_three_musicmaker_one],
-        [(136, 8), (138, 8), baritone_three_musicmaker_one],
-        [(138, 8), (140, 8), baritone_three_musicmaker_one],
-        [(140, 8), (142, 8), baritone_three_musicmaker_one],
-        [(142, 8), (144, 8), baritone_three_musicmaker_two],
-        [(144, 8), (146, 8), baritone_three_musicmaker_two],
-        [(146, 8), (148, 8), baritone_three_musicmaker_two],
-        [(148, 8), (150, 8), baritone_three_musicmaker_two],
-        [(150, 8), (152, 8), baritone_three_musicmaker_two],
-        [(152, 8), (154, 8), baritone_three_musicmaker_one],
-        [(154, 8), (156, 8), baritone_three_musicmaker_one],
-        [(156, 8), (158, 8), baritone_three_musicmaker_one],
-        [(158, 8), (160, 8), baritone_three_musicmaker_one],
-        [(160, 8), (162, 8), baritone_three_musicmaker_one],
-        [(162, 8), (164, 8), baritone_three_musicmaker_two],
-        [(164, 8), (166, 8), baritone_three_musicmaker_two],
-        [(166, 8), (168, 8), baritone_three_musicmaker_two],
-        [(168, 8), (170, 8), baritone_three_musicmaker_two],
-        [(170, 8), (172, 8), baritone_three_musicmaker_two],
-        [(172, 8), (174, 8), baritone_three_musicmaker_two],
-        [(174, 8), (176, 8), baritone_three_musicmaker_one],
-        [(176, 8), (178, 8), baritone_three_musicmaker_one],
-        [(178, 8), (180, 8), baritone_three_musicmaker_one],
-        [(180, 8), (182, 8), baritone_three_musicmaker_one],
-        [(182, 8), (184, 8), baritone_three_musicmaker_one],
-        [(184, 8), (186, 8), baritone_three_musicmaker_one],
-        [(186, 8), (188, 8), baritone_three_musicmaker_two],
-        [(188, 8), (190, 8), baritone_three_musicmaker_two],
-        [(190, 8), (192, 8), baritone_three_musicmaker_two],
-        [(192, 8), (194, 8), baritone_three_musicmaker_two],
-        [(194, 8), (196, 8), baritone_three_musicmaker_two],
-        [(196, 8), (198, 8), baritone_three_musicmaker_two],
-        [(198, 8), (199, 8), baritone_three_musicmaker_two],
+        # [(136, 8), (138, 8), baritone_three_musicmaker_one],
+        # [(138, 8), (140, 8), baritone_three_musicmaker_one],
+        # [(140, 8), (142, 8), baritone_three_musicmaker_one],
+        # [(142, 8), (144, 8), baritone_three_musicmaker_two],
+        # [(144, 8), (146, 8), baritone_three_musicmaker_two],
+        # [(146, 8), (148, 8), baritone_three_musicmaker_two],
+        # [(148, 8), (150, 8), baritone_three_musicmaker_two],
+        # [(150, 8), (152, 8), baritone_three_musicmaker_two],
+        # [(152, 8), (154, 8), baritone_three_musicmaker_one],
+        # [(154, 8), (156, 8), baritone_three_musicmaker_one],
+        # [(156, 8), (158, 8), baritone_three_musicmaker_one],
+        # [(158, 8), (160, 8), baritone_three_musicmaker_one],
+        # [(160, 8), (162, 8), baritone_three_musicmaker_one],
+        # [(162, 8), (164, 8), baritone_three_musicmaker_two],
+        # [(164, 8), (166, 8), baritone_three_musicmaker_two],
+        # [(166, 8), (168, 8), baritone_three_musicmaker_two],
+        # [(168, 8), (170, 8), baritone_three_musicmaker_two],
+        # [(170, 8), (172, 8), baritone_three_musicmaker_two],
+        # [(172, 8), (174, 8), baritone_three_musicmaker_two],
+        # [(174, 8), (176, 8), baritone_three_musicmaker_one],
+        # [(176, 8), (178, 8), baritone_three_musicmaker_one],
+        # [(178, 8), (180, 8), baritone_three_musicmaker_one],
+        # [(180, 8), (182, 8), baritone_three_musicmaker_one],
+        # [(182, 8), (184, 8), baritone_three_musicmaker_one],
+        # [(184, 8), (186, 8), baritone_three_musicmaker_one],
+        # [(186, 8), (188, 8), baritone_three_musicmaker_two],
+        # [(188, 8), (190, 8), baritone_three_musicmaker_two],
+        # [(190, 8), (192, 8), baritone_three_musicmaker_two],
+        # [(192, 8), (194, 8), baritone_three_musicmaker_two],
+        # [(194, 8), (196, 8), baritone_three_musicmaker_two],
+        # [(196, 8), (198, 8), baritone_three_musicmaker_two],
+        # [(198, 8), (199, 8), baritone_three_musicmaker_two],
     ]
 ])
 
@@ -3130,37 +3131,37 @@ voice_19_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), bass_one_musicmaker_one],
         [(132, 8), (134, 8), bass_one_musicmaker_one],
         [(134, 8), (136, 8), bass_one_musicmaker_one],
-        [(136, 8), (138, 8), bass_one_musicmaker_two],
-        [(138, 8), (140, 8), bass_one_musicmaker_two],
-        [(140, 8), (142, 8), bass_one_musicmaker_one],
-        [(142, 8), (144, 8), bass_one_musicmaker_one],
-        [(144, 8), (146, 8), bass_one_musicmaker_one],
-        [(146, 8), (148, 8), bass_one_musicmaker_two],
-        [(148, 8), (150, 8), bass_one_musicmaker_two],
-        [(150, 8), (152, 8), bass_one_musicmaker_two],
-        [(152, 8), (154, 8), bass_one_musicmaker_one],
-        [(154, 8), (156, 8), bass_one_musicmaker_one],
-        [(156, 8), (158, 8), bass_one_musicmaker_two],
-        [(158, 8), (160, 8), bass_one_musicmaker_two],
-        [(160, 8), (162, 8), bass_one_musicmaker_two],
-        [(162, 8), (164, 8), bass_one_musicmaker_two],
-        [(164, 8), (168, 8), bass_one_musicmaker_one],
-        [(168, 8), (170, 8), bass_one_musicmaker_two],
-        [(170, 8), (172, 8), bass_one_musicmaker_two],
-        [(172, 8), (174, 8), bass_one_musicmaker_two],
-        [(174, 8), (176, 8), bass_one_musicmaker_two],
-        [(176, 8), (178, 8), bass_one_musicmaker_two],
-        [(178, 8), (180, 8), bass_one_musicmaker_one],
-        [(180, 8), (182, 8), bass_one_musicmaker_one],
-        [(182, 8), (184, 8), bass_one_musicmaker_one],
-        [(184, 8), (186, 8), bass_one_musicmaker_one],
-        [(186, 8), (188, 8), bass_one_musicmaker_one],
-        [(188, 8), (190, 8), bass_one_musicmaker_one],
-        [(190, 8), (192, 8), bass_one_musicmaker_one],
-        [(192, 8), (194, 8), bass_one_musicmaker_one],
-        [(194, 8), (196, 8), bass_one_musicmaker_two],
-        [(196, 8), (198, 8), bass_one_musicmaker_two],
-        [(198, 8), (199, 8), bass_one_musicmaker_two],
+        # [(136, 8), (138, 8), bass_one_musicmaker_two],
+        # [(138, 8), (140, 8), bass_one_musicmaker_two],
+        # [(140, 8), (142, 8), bass_one_musicmaker_one],
+        # [(142, 8), (144, 8), bass_one_musicmaker_one],
+        # [(144, 8), (146, 8), bass_one_musicmaker_one],
+        # [(146, 8), (148, 8), bass_one_musicmaker_two],
+        # [(148, 8), (150, 8), bass_one_musicmaker_two],
+        # [(150, 8), (152, 8), bass_one_musicmaker_two],
+        # [(152, 8), (154, 8), bass_one_musicmaker_one],
+        # [(154, 8), (156, 8), bass_one_musicmaker_one],
+        # [(156, 8), (158, 8), bass_one_musicmaker_two],
+        # [(158, 8), (160, 8), bass_one_musicmaker_two],
+        # [(160, 8), (162, 8), bass_one_musicmaker_two],
+        # [(162, 8), (164, 8), bass_one_musicmaker_two],
+        # [(164, 8), (168, 8), bass_one_musicmaker_one],
+        # [(168, 8), (170, 8), bass_one_musicmaker_two],
+        # [(170, 8), (172, 8), bass_one_musicmaker_two],
+        # [(172, 8), (174, 8), bass_one_musicmaker_two],
+        # [(174, 8), (176, 8), bass_one_musicmaker_two],
+        # [(176, 8), (178, 8), bass_one_musicmaker_two],
+        # [(178, 8), (180, 8), bass_one_musicmaker_one],
+        # [(180, 8), (182, 8), bass_one_musicmaker_one],
+        # [(182, 8), (184, 8), bass_one_musicmaker_one],
+        # [(184, 8), (186, 8), bass_one_musicmaker_one],
+        # [(186, 8), (188, 8), bass_one_musicmaker_one],
+        # [(188, 8), (190, 8), bass_one_musicmaker_one],
+        # [(190, 8), (192, 8), bass_one_musicmaker_one],
+        # [(192, 8), (194, 8), bass_one_musicmaker_one],
+        # [(194, 8), (196, 8), bass_one_musicmaker_two],
+        # [(196, 8), (198, 8), bass_one_musicmaker_two],
+        # [(198, 8), (199, 8), bass_one_musicmaker_two],
     ]
 ])
 
@@ -3241,37 +3242,37 @@ voice_20_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), bass_two_musicmaker_one],
         [(132, 8), (134, 8), bass_two_musicmaker_one],
         [(134, 8), (136, 8), bass_two_musicmaker_one],
-        [(136, 8), (138, 8), bass_two_musicmaker_two],
-        [(138, 8), (140, 8), bass_two_musicmaker_two],
-        [(140, 8), (142, 8), bass_two_musicmaker_one],
-        [(142, 8), (144, 8), bass_two_musicmaker_one],
-        [(144, 8), (146, 8), bass_two_musicmaker_one],
-        [(146, 8), (148, 8), bass_two_musicmaker_two],
-        [(148, 8), (150, 8), bass_two_musicmaker_two],
-        [(150, 8), (152, 8), bass_two_musicmaker_two],
-        [(152, 8), (154, 8), bass_two_musicmaker_one],
-        [(154, 8), (156, 8), bass_two_musicmaker_one],
-        [(156, 8), (158, 8), bass_two_musicmaker_two],
-        [(158, 8), (160, 8), bass_two_musicmaker_two],
-        [(160, 8), (162, 8), bass_two_musicmaker_two],
-        [(162, 8), (164, 8), bass_two_musicmaker_two],
-        [(164, 8), (168, 8), bass_two_musicmaker_one],
-        [(168, 8), (170, 8), bass_two_musicmaker_two],
-        [(170, 8), (172, 8), bass_two_musicmaker_two],
-        [(172, 8), (174, 8), bass_two_musicmaker_two],
-        [(174, 8), (176, 8), bass_two_musicmaker_two],
-        [(176, 8), (178, 8), bass_two_musicmaker_two],
-        [(178, 8), (180, 8), bass_two_musicmaker_one],
-        [(180, 8), (182, 8), bass_two_musicmaker_one],
-        [(182, 8), (184, 8), bass_two_musicmaker_one],
-        [(184, 8), (186, 8), bass_two_musicmaker_one],
-        [(186, 8), (188, 8), bass_two_musicmaker_one],
-        [(188, 8), (190, 8), bass_two_musicmaker_one],
-        [(190, 8), (192, 8), bass_two_musicmaker_one],
-        [(192, 8), (194, 8), bass_two_musicmaker_one],
-        [(194, 8), (196, 8), bass_two_musicmaker_two],
-        [(196, 8), (198, 8), bass_two_musicmaker_two],
-        [(198, 8), (199, 8), bass_two_musicmaker_two],
+        # [(136, 8), (138, 8), bass_two_musicmaker_two],
+        # [(138, 8), (140, 8), bass_two_musicmaker_two],
+        # [(140, 8), (142, 8), bass_two_musicmaker_one],
+        # [(142, 8), (144, 8), bass_two_musicmaker_one],
+        # [(144, 8), (146, 8), bass_two_musicmaker_one],
+        # [(146, 8), (148, 8), bass_two_musicmaker_two],
+        # [(148, 8), (150, 8), bass_two_musicmaker_two],
+        # [(150, 8), (152, 8), bass_two_musicmaker_two],
+        # [(152, 8), (154, 8), bass_two_musicmaker_one],
+        # [(154, 8), (156, 8), bass_two_musicmaker_one],
+        # [(156, 8), (158, 8), bass_two_musicmaker_two],
+        # [(158, 8), (160, 8), bass_two_musicmaker_two],
+        # [(160, 8), (162, 8), bass_two_musicmaker_two],
+        # [(162, 8), (164, 8), bass_two_musicmaker_two],
+        # [(164, 8), (168, 8), bass_two_musicmaker_one],
+        # [(168, 8), (170, 8), bass_two_musicmaker_two],
+        # [(170, 8), (172, 8), bass_two_musicmaker_two],
+        # [(172, 8), (174, 8), bass_two_musicmaker_two],
+        # [(174, 8), (176, 8), bass_two_musicmaker_two],
+        # [(176, 8), (178, 8), bass_two_musicmaker_two],
+        # [(178, 8), (180, 8), bass_two_musicmaker_one],
+        # [(180, 8), (182, 8), bass_two_musicmaker_one],
+        # [(182, 8), (184, 8), bass_two_musicmaker_one],
+        # [(184, 8), (186, 8), bass_two_musicmaker_one],
+        # [(186, 8), (188, 8), bass_two_musicmaker_one],
+        # [(188, 8), (190, 8), bass_two_musicmaker_one],
+        # [(190, 8), (192, 8), bass_two_musicmaker_one],
+        # [(192, 8), (194, 8), bass_two_musicmaker_one],
+        # [(194, 8), (196, 8), bass_two_musicmaker_two],
+        # [(196, 8), (198, 8), bass_two_musicmaker_two],
+        # [(198, 8), (199, 8), bass_two_musicmaker_two],
     ]
 ])
 
@@ -3352,37 +3353,37 @@ voice_21_timespan_list = abjad.TimespanList([
         [(130, 8), (132, 8), contrabass_musicmaker_one],
         [(132, 8), (134, 8), contrabass_musicmaker_one],
         [(134, 8), (136, 8), contrabass_musicmaker_one],
-        [(136, 8), (138, 8), contrabass_musicmaker_two],
-        [(138, 8), (140, 8), contrabass_musicmaker_two],
-        [(140, 8), (142, 8), contrabass_musicmaker_one],
-        [(142, 8), (144, 8), contrabass_musicmaker_one],
-        [(144, 8), (146, 8), contrabass_musicmaker_one],
-        [(146, 8), (148, 8), contrabass_musicmaker_two],
-        [(148, 8), (150, 8), contrabass_musicmaker_two],
-        [(150, 8), (152, 8), contrabass_musicmaker_two],
-        [(152, 8), (154, 8), contrabass_musicmaker_one],
-        [(154, 8), (156, 8), contrabass_musicmaker_one],
-        [(156, 8), (158, 8), contrabass_musicmaker_two],
-        [(158, 8), (160, 8), contrabass_musicmaker_two],
-        [(160, 8), (162, 8), contrabass_musicmaker_two],
-        [(162, 8), (164, 8), contrabass_musicmaker_two],
-        [(164, 8), (168, 8), contrabass_musicmaker_one],
-        [(168, 8), (170, 8), contrabass_musicmaker_two],
-        [(170, 8), (172, 8), contrabass_musicmaker_two],
-        [(172, 8), (174, 8), contrabass_musicmaker_two],
-        [(174, 8), (176, 8), contrabass_musicmaker_two],
-        [(176, 8), (178, 8), contrabass_musicmaker_two],
-        [(178, 8), (180, 8), contrabass_musicmaker_one],
-        [(180, 8), (182, 8), contrabass_musicmaker_one],
-        [(182, 8), (184, 8), contrabass_musicmaker_one],
-        [(184, 8), (186, 8), contrabass_musicmaker_one],
-        [(186, 8), (188, 8), contrabass_musicmaker_one],
-        [(188, 8), (190, 8), contrabass_musicmaker_one],
-        [(190, 8), (192, 8), contrabass_musicmaker_one],
-        [(192, 8), (194, 8), contrabass_musicmaker_one],
-        [(194, 8), (196, 8), contrabass_musicmaker_two],
-        [(196, 8), (198, 8), contrabass_musicmaker_two],
-        [(198, 8), (199, 8), contrabass_musicmaker_two],
+        # [(136, 8), (138, 8), contrabass_musicmaker_two],
+        # [(138, 8), (140, 8), contrabass_musicmaker_two],
+        # [(140, 8), (142, 8), contrabass_musicmaker_one],
+        # [(142, 8), (144, 8), contrabass_musicmaker_one],
+        # [(144, 8), (146, 8), contrabass_musicmaker_one],
+        # [(146, 8), (148, 8), contrabass_musicmaker_two],
+        # [(148, 8), (150, 8), contrabass_musicmaker_two],
+        # [(150, 8), (152, 8), contrabass_musicmaker_two],
+        # [(152, 8), (154, 8), contrabass_musicmaker_one],
+        # [(154, 8), (156, 8), contrabass_musicmaker_one],
+        # [(156, 8), (158, 8), contrabass_musicmaker_two],
+        # [(158, 8), (160, 8), contrabass_musicmaker_two],
+        # [(160, 8), (162, 8), contrabass_musicmaker_two],
+        # [(162, 8), (164, 8), contrabass_musicmaker_two],
+        # [(164, 8), (168, 8), contrabass_musicmaker_one],
+        # [(168, 8), (170, 8), contrabass_musicmaker_two],
+        # [(170, 8), (172, 8), contrabass_musicmaker_two],
+        # [(172, 8), (174, 8), contrabass_musicmaker_two],
+        # [(174, 8), (176, 8), contrabass_musicmaker_two],
+        # [(176, 8), (178, 8), contrabass_musicmaker_two],
+        # [(178, 8), (180, 8), contrabass_musicmaker_one],
+        # [(180, 8), (182, 8), contrabass_musicmaker_one],
+        # [(182, 8), (184, 8), contrabass_musicmaker_one],
+        # [(184, 8), (186, 8), contrabass_musicmaker_one],
+        # [(186, 8), (188, 8), contrabass_musicmaker_one],
+        # [(188, 8), (190, 8), contrabass_musicmaker_one],
+        # [(190, 8), (192, 8), contrabass_musicmaker_one],
+        # [(192, 8), (194, 8), contrabass_musicmaker_one],
+        # [(194, 8), (196, 8), contrabass_musicmaker_two],
+        # [(196, 8), (198, 8), contrabass_musicmaker_two],
+        # [(198, 8), (199, 8), contrabass_musicmaker_two],
     ]
 ])
 
