@@ -90,7 +90,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -219,7 +219,6 @@
                     r4
                     \!
                 }
-                \pageBreak
                 {
                     % [Voice 3 measure 9] %! COMMENT_MEASURE_NUMBERS
                     r2

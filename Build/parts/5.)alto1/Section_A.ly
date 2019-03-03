@@ -86,7 +86,7 @@
                     \mp
                     _ \markup {
                         \override
-                            #'(size . 0.3)
+                            #'(size . 0.5)
                         \woodwind-diagram
                             #'alto-saxophone
                             #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -288,7 +288,6 @@
                         ]
                     }
                 }
-                \pageBreak
                 {
                     % [Voice 5 measure 10] %! COMMENT_MEASURE_NUMBERS
                     r2.

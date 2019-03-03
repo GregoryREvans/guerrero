@@ -57,6 +57,7 @@
                     \markup { "Tenor 2" }
                     \tempo 4=60
                     r8
+                    \!
                 }
                 {
                     r8.
@@ -95,7 +96,6 @@
                     r2
                     \!
                 }
-                \pageBreak
                 {
                     % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS
                     r8

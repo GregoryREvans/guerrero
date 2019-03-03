@@ -57,6 +57,7 @@
                     \markup { "Soprano 3" }
                     \tempo 4=60
                     r8
+                    \!
                 }
                 {
                     b'4.

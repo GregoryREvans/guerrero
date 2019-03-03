@@ -88,7 +88,7 @@
                         - \espressivo
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -197,7 +197,6 @@
                     - \tweak stencil #constante-hairpin
                     \<
                 }
-                \pageBreak
                 {
                     r1
                     \!

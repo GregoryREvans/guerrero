@@ -114,7 +114,7 @@
                     \mp
                     _ \markup {
                         \override
-                            #'(size . 0.3)
+                            #'(size . 0.5)
                         \woodwind-diagram
                             #'soprano-saxophone
                             #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -150,6 +150,7 @@
                     r4
                     \!
                 }
+                \break
                 {
                     % [Voice 2 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r2.
@@ -324,7 +325,6 @@
                     - \tweak stencil #constante-hairpin
                     \<
                 }
-                \pageBreak
                 {
                     % [Voice 2 measure 16] %! COMMENT_MEASURE_NUMBERS
                     r1

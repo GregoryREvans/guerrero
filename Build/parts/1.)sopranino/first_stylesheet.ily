@@ -5,7 +5,7 @@
 %{ #(set-default-paper-size "letterportrait") %}
 #(set-default-paper-size "legalportrait")
 %{ #(set-global-staff-size 9.5) %}
-#(set-global-staff-size 12)
+#(set-global-staff-size 13)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
@@ -94,7 +94,7 @@
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 37)
+		proportionalNotationDuration = #(ly:make-moment 1 30)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -121,7 +121,7 @@
 \paper {
 	%{ page-breaking = #ly:page-turn-breaking %}
 	%{ system-system-spacing = #'((basic-distance . 15) (padding . 0)) %}
-	system-system-spacing = #'((basic-distance . 20) (padding . 0))
+	system-system-spacing = #'((basic-distance . 17) (padding . 0))
 
 	top-margin = 1\cm
 	bottom-margin = 0.6\cm

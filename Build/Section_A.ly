@@ -565,7 +565,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c)))
@@ -888,7 +888,7 @@
                             \mp
                             _ \markup {
                                 \override
-                                    #'(size . 0.3)
+                                    #'(size . 0.5)
                                 \woodwind-diagram
                                     #'soprano-saxophone
                                     #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c)))
@@ -1318,7 +1318,7 @@
                         - \espressivo
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'soprano-saxophone
                                 #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c)))
@@ -1688,7 +1688,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -2145,7 +2145,7 @@
                             - \espressivo
                             _ \markup {
                                 \override
-                                    #'(size . 0.3)
+                                    #'(size . 0.5)
                                 \woodwind-diagram
                                     #'alto-saxophone
                                     #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -2487,7 +2487,7 @@
                         - \espressivo
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -2864,7 +2864,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c)))
@@ -3252,7 +3252,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -3606,7 +3606,7 @@
                         - \espressivo
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'alto-saxophone
                                 #'((cc . (one two three)) (lh . (d gis)) (rh . ()))
@@ -3967,7 +3967,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
@@ -4450,7 +4450,7 @@
                             - \espressivo
                             _ \markup {
                                 \override
-                                    #'(size . 0.3)
+                                    #'(size . 0.5)
                                 \woodwind-diagram
                                     #'tenor-saxophone
                                     #'((cc . (one two three five six)) (lh . (b)) (rh . ()))
@@ -4747,7 +4747,7 @@
                             \mp
                             _ \markup {
                                 \override
-                                    #'(size . 0.3)
+                                    #'(size . 0.5)
                                 \woodwind-diagram
                                     #'tenor-saxophone
                                     #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -5182,7 +5182,7 @@
                         - \espressivo
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
@@ -5541,7 +5541,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'tenor-saxophone
                                 #'((cc . (one two three five six)) (lh . ()) (rh . ()))
@@ -5891,7 +5891,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'baritone-saxophone
                                 #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
@@ -6339,7 +6339,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'baritone-saxophone
                                 #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c)))
@@ -6792,7 +6792,7 @@
                         \mp
                         _ \markup {
                             \override
-                                #'(size . 0.3)
+                                #'(size . 0.5)
                             \woodwind-diagram
                                 #'baritone-saxophone
                                 #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c)))

@@ -1342,10 +1342,10 @@ for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
         elif isinstance(previous_leaf, abjad.Rest):
             pass
 
-# for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-#     first_leaf = abjad.select(staff).leaves()[0]
-#     stop = abjad.LilyPondLiteral(r'\!', format_slot='after',)
-#     abjad.attach(stop, first_leaf)
+for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
+    first_leaf = abjad.select(staff).leaves()[0]
+    stop = abjad.LilyPondLiteral(r'\!', format_slot='after',)
+    abjad.attach(stop, first_leaf)
 
 scales = [
     sopranino_notes,

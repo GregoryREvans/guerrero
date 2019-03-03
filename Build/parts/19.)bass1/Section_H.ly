@@ -57,6 +57,7 @@
                     \markup { "Bass 1" }
                     \tempo 4=60
                     r2
+                    \!
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text
@@ -124,7 +125,6 @@
                     r1
                     \!
                 }
-                \pageBreak
                 {
                     % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS
                     ef'4

@@ -57,6 +57,7 @@
                     \markup { "Alto 2" }
                     \tempo 4=60
                     r1
+                    \!
                 }
                 {
                     bf'4
@@ -218,7 +219,6 @@
                     \!
                     r4.
                     \bar "||"
-                    \pageBreak
                 }
             }
         }

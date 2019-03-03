@@ -44,21 +44,6 @@
             % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
             \time 4/4
             s1 * 1
-            % [Global Context measure 13] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
         }
         \context Staff = "Staff 2"
         {
@@ -70,115 +55,175 @@
                     \markup { spr.1 }
                     \set Staff.instrumentName =
                     \markup { "Soprano 1" }
-                    r4
+                    r4.
                     \!
                     \stopTrillSpan
-                    e''4
+                    aqs''8
                     \mf
                     \>
                     ~
                     \times 2/3 {
-                        e''8
+                        aqs''4
+                        \glissando
+                        bf''8
+                        ~
+                    }
+                    bf''4
+                    \glissando
+                }
+                {
+                    \times 2/3 {
+                        % [Voice 2 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        aqs''8
+                        - \flageolet
+                        [
+                        \glissando
+                        bf''8
                         \ppp
+                        - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \glissando
+                        r8
+                        \!
+                    }
+                    r8
+                    bqf''8
+                    \mf
+
+                    \>
+                    \glissando
+                    bf''4
+                    \ppp
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \glissando
+                }
+                {
+                    bqf''4
+                    \pp
+                    \<
+                    ~
+                }
+                {
+                    \times 2/3 {
+                        % [Voice 2 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        bqf''4
+                        \glissando
+                        b''8
+                        \mp
+                        - \halfopen
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        \glissando
+                    }
+                    r4
+                    \!
+                    \times 2/3 {
+                        r4
+                        bqf''8
+                        \pp
+
+                        \<
+                        [
+                        \glissando
+                    }
+                    b''8
+                    - \halfopen
+                    \glissando
+                    bqs''8
+                    ~
+                    ]
+                }
+                {
+                    % [Voice 2 measure 4] %! COMMENT_MEASURE_NUMBERS
+                    bqs''4
+                    \glissando
+                    c'''4
+                    \mp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \glissando
+                }
+                {
+                    \times 2/3 {
+                        cqs'''8
+                        \mf
+                        - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                         \glissando
                         r4
                         \!
                     }
-                    f''8
+                    cs'''4
                     \mf
-                    - \flageolet
+                    - \halfopen
                     \>
-                    [
                     \glissando
-                    e''8
-                    - \flageolet
-                    ]
-                    \glissando
-                }
-                {
-                    % [Voice 2 measure 2] %! COMMENT_MEASURE_NUMBERS
-                    f''4.
-                    \glissando
-                    fs''8
-                    \ppp
-                    - \halfopen
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                    r4
-                    \!
-                }
-                {
-                    r4
-                }
-                {
-                    \times 2/3 {
-                        % [Voice 2 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        f''8
-                        \pp
-                        - \halfopen
-                        \<
-                        [
-                        \glissando
-                        fs''8
-                        ~
-                        ]
-                    }
-                    fs''4
-                    \glissando
-                    g''4
-                    \mp
-                    - \halfopen
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                    r4
-                    \!
-                }
-                {
-                    \times 2/3 {
-                        % [Voice 2 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        fs''4
-                        \pp
-                        - \halfopen
-                        \<
-                        \glissando
-                    }
-                    g''4
-                    \mp
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                }
-                {
-                    \times 2/3 {
-                        af''4
-                        \mf
-                        - \flageolet
-                        \>
-                        \glissando
-                        a''8
-                        - \halfopen
-                        \glissando
-                    }
-                    bf''4
-                    ~
                 }
                 {
                     % [Voice 2 measure 5] %! COMMENT_MEASURE_NUMBERS
-                    bf''4
+                    cqs'''4
+
+                    \glissando
+                    c'''4
+                    - \halfopen
+                    \glissando
+                    bqs''4
                     \ppp
+                    - \halfopen
                     - \tweak stencil #constante-hairpin
                     \<
                     \glissando
+                }
+                {
+                    c'''4
+                    \pp
+                    - \halfopen
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \glissando
+                }
+                {
+                    % [Voice 2 measure 6] %! COMMENT_MEASURE_NUMBERS
                     r4
                     \!
-                    a''4
+                    cqs'''4
+                    \pp
+                    \<
+                    ~
+                    \times 2/3 {
+                        cqs'''8
+                        \glissando
+                        cs'''4
+                        - \halfopen
+                        \glissando
+                    }
+                    cqs'''8
+                    - \halfopen
+                    [
+                    \glissando
+                    cs'''8
+                    \mp
+                    - \halfopen
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    \glissando
+                }
+                {
+                    % [Voice 2 measure 7] %! COMMENT_MEASURE_NUMBERS
+                    cqs'''4.
+                    \mf
+                    \>
+                    \glissando
+                    r8
+                    \!
+                    cs'''4
                     \ppp
 
                     - \tweak stencil #constante-hairpin
@@ -186,299 +231,148 @@
                     \glissando
                 }
                 {
-                    bf''4
+                    cqs'''4
                     \pp
                     \<
                     ~
                 }
                 {
                     \times 2/3 {
-                        % [Voice 2 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        bf''8
-                        \glissando
-                        a''4
-                        ~
-                    }
-                    a''8
-                    [
-                    \glissando
-                    af''8
-                    \mp
-                    - \halfopen
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                    \glissando
-                    r4.
-                    \!
-                    a''8
-                    \mp
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                }
-                {
-                    \times 2/3 {
-                        % [Voice 2 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        bf''4
-                        \mf
-                        - \flageolet
-                        \>
-                        \glissando
-                        a''8
-                        - \flageolet
-                        \glissando
-                    }
-                    bf''2
-                    \glissando
-                }
-                {
-                    a''8
-                    \pp
-                    - \halfopen
-                    \<
-                    [
-                    \glissando
-                    bf''8
-                    \mp
-                    - \halfopen
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                    \glissando
-                }
-                {
-                    % [Voice 2 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    r2
-                    \!
-                }
-                {
-                    \times 2/3 {
-                        r8
-                        a''8
-                        \mf
-                        - \halfopen
-                        \>
+                        % [Voice 2 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        cqs'''8
                         [
                         \glissando
-                        bf''8
-                        \ppp
-
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        cs'''8
+                        - \halfopen
                         \glissando
+                        dqf'''8
+                        ~
+                        ]
                     }
-                }
-                {
-                    a''4
-                    \pp
-                    - \halfopen
+                    dqf'''4
+                    \mp
                     - \tweak stencil #constante-hairpin
                     \<
                     \glissando
+                }
+                {
+                    d'''4
+                    \mf
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \glissando
+                }
+                {
+                    r4
+                    \!
                 }
                 {
                     \times 2/3 {
                         % [Voice 2 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        af''4
+                        dqf'''8
                         \mf
-                        - \halfopen
+
                         \>
                         \glissando
-                        g''8
+                        cs'''4
                         \ppp
-                        - \halfopen
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \glissando
-                    }
-                    r2
-                    \!
-                    af''4
-                    \mf
-                    \>
-                    ~
-                }
-                {
-                    \times 2/3 {
-                        % [Voice 2 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        af''8
-                        \glissando
-                        a''4
-
-                        \glissando
-                    }
-                    bf''4
-                    \ppp
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                }
-                {
-                    a''4.
-                    \pp
-                    \<
-                    \glissando
-                    af''8
-                    ~
-                }
-                {
-                    % [Voice 2 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    af''4.
-                    \glissando
-                    r8
-                    \!
-                    \times 2/3 {
-                        r8
-                        g''8
-                        \pp
-                        - \halfopen
-                        \<
-                        [
-                        \glissando
-                        af''8
-                        - \halfopen
-                        ]
-                        \glissando
-                    }
-                    a''4
-                    \mp
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                }
-                {
-                    % [Voice 2 measure 12] %! COMMENT_MEASURE_NUMBERS
-                    r4
-                    \!
-                    af''2
-                    \mf
-                    \>
-                    ~
-                    af''8
-                    \ppp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                    r8
-                    \!
-                }
-                {
-                    % [Voice 2 measure 13] %! COMMENT_MEASURE_NUMBERS
-                    r4
-                    a''4
-                    \pp
-                    - \halfopen
-                    \<
-                    \glissando
-                    \times 2/3 {
-                        bf''8
-
-                        \glissando
-                        a''4
-                        - \halfopen
-                        \glissando
-                    }
-                    af''4
-                    \mp
-                    - \halfopen
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                }
-                {
-                    % [Voice 2 measure 14] %! COMMENT_MEASURE_NUMBERS
-                    a''4
-                    \mf
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                    r4
-                    \!
-                }
-                {
-                    \times 2/3 {
-                        r8
-                        af''4
-                        \mp
-                        - \halfopen
+                        - \flageolet
                         - \tweak stencil #constante-hairpin
                         \<
                         \glissando
                     }
                     r4
                     \!
-                }
-                {
                     \times 2/3 {
-                        % [Voice 2 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        a''4
+                        cqs'''4
                         \mf
                         - \flageolet
                         \>
                         \glissando
-                        af''8
-                        ~
+                        cs'''8
+                        - \halfopen
+                        \glissando
                     }
-                    af''2
+                    dqf'''4
+                    ~
+                }
+                {
+                    % [Voice 2 measure 10] %! COMMENT_MEASURE_NUMBERS
+                    dqf'''4
+                    \glissando
+                    d'''4
+                    \ppp
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
                     \glissando
                 }
                 {
-                    g''8
+                    dqf'''2
+                    \pp
+                    \<
+                    ~
+                }
+                {
+                    \times 2/3 {
+                        % [Voice 2 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        dqf'''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        \glissando
+                        r4
+                        \!
+                    }
+                    r8
+                    cs'''8
+                    \mp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \glissando
+                    r4
+                    \!
+                    dqf'''8
                     \pp
                     - \halfopen
                     \<
                     [
                     \glissando
-                    fs''8
-                    ~
+                    cs'''8
+                    \mp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                     ]
+                    \glissando
                 }
                 {
                     \times 2/3 {
-                        % [Voice 2 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        fs''4
-                        \mp
+                        % [Voice 2 measure 12] %! COMMENT_MEASURE_NUMBERS
+                        cqs'''4
+                        \ppp
+                        - \halfopen
                         - \tweak stencil #constante-hairpin
                         \<
                         \glissando
                         r8
                         \!
                     }
-                    r4
-                }
-                {
-                    \times 2/3 {
-                        r8
-                        f''8
-                        \mf
-                        - \flageolet
-                        \>
-                        [
-                        \glissando
-                        fs''8
-                        ~
-                    }
-                    fs''8
+                    cs'''2
+                    \mf
+                    \>
+                    ~
+                    cs'''8
+                    [
                     \glissando
-                    f''8
-                    - \halfopen
+                    dqf'''8
+                    \ppp
+
+                    - \tweak stencil #constante-hairpin
+                    \<
                     ]
-                    \glissando
-                }
-                {
-                    % [Voice 2 measure 17] %! COMMENT_MEASURE_NUMBERS
-                    fs''2
-                    \glissando
-                }
-                {
-                    r2
-                    \!
                     \bar "||"
                 }
             }

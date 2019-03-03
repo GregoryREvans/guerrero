@@ -57,6 +57,7 @@
                     \markup { "Soprano 2" }
                     \tempo 4=60
                     r2
+                    \!
                 }
                 {
                     \tweak text #tuplet-number::calc-fraction-text

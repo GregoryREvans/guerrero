@@ -108,7 +108,7 @@
                     - \espressivo
                     _ \markup {
                         \override
-                            #'(size . 0.3)
+                            #'(size . 0.5)
                         \woodwind-diagram
                             #'alto-saxophone
                             #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -274,7 +274,6 @@
                     r4
                     \!
                 }
-                \pageBreak
                 {
                     % [Voice 7 measure 12] %! COMMENT_MEASURE_NUMBERS
                     r2

@@ -57,6 +57,7 @@
                     \markup { "Bass 2" }
                     \tempo 4=60
                     r8
+                    \!
                 }
                 {
                     b8
@@ -103,12 +104,15 @@
                 }
                 {
                     % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    r2.
+                    r8
+                }
+                {
+                    r4.
+                    r4
                 }
                 {
                     r2
                 }
-                \pageBreak
                 {
                     % [Voice 20 measure 5] %! COMMENT_MEASURE_NUMBERS
                     r2

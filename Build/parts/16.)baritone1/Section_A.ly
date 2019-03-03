@@ -86,7 +86,7 @@
                     \mp
                     _ \markup {
                         \override
-                            #'(size . 0.3)
+                            #'(size . 0.5)
                         \woodwind-diagram
                             #'baritone-saxophone
                             #'((cc . (one two three)) (lh . (ees d gis)) (rh . ()))
@@ -134,7 +134,6 @@
                     % [Voice 16 measure 3] %! COMMENT_MEASURE_NUMBERS
                     r2.
                 }
-                \pageBreak
                 {
                     % [Voice 16 measure 4] %! COMMENT_MEASURE_NUMBERS
                     fs'1

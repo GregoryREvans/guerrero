@@ -97,7 +97,7 @@
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 40)
+		proportionalNotationDuration = #(ly:make-moment 1 34)
 		%{ proportionalNotationDuration = #(ly:make-moment 1 65) %}
         autoBeaming = ##f
         tupletFullLength = ##t
@@ -109,7 +109,7 @@
     \context {
         \Staff
         \remove Time_signature_engraver
-		fontSize = #-2
+		fontSize = #-2.5
     }
     \context {
         \RhythmicStaff

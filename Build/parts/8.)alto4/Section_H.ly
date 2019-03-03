@@ -57,6 +57,7 @@
                     \markup { "Alto 4" }
                     \tempo 4=60
                     r8
+                    \!
                 }
                 {
                     r4.
@@ -161,7 +162,6 @@
                     r2
                     \!
                 }
-                \pageBreak
                 {
                     % [Voice 8 measure 9] %! COMMENT_MEASURE_NUMBERS
                     r2

@@ -60,6 +60,7 @@
                     \mp
                     - \stopped
                     \<
+                    \!
                     dqs''4.
                     r8
                     \!

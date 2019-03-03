@@ -2271,7 +2271,7 @@ mark = abjad.RehearsalMark(markup=markup)
 
 size = abjad.MarkupCommand(
     'override',
-    abjad.SchemePair(('size', .3)),
+    abjad.SchemePair(('size', .5)),
     )
 
 fingering_1 = abjad.WoodwindFingering( #[13.5, 16, 26.5]

@@ -17,9 +17,9 @@ time_signatures = [
     abjad.TimeSignature(pair) for pair in [
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
         (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
-        (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
-        (4, 4), (4, 4),
-        # (4, 4), (4, 4), (4, 4),
+        (4, 4), (4, 4), (4, 4),
+
+        # (4, 4), (4, 4), (4, 4), (4, 4), (4, 4), (4, 4), (4, 4),
         # (4, 4), (4, 4), (4, 4), (4, 4), (7, 8),
     ]
 ]
@@ -79,7 +79,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = sopranino_random_walk[i-1] + movement
     sopranino_random_walk.append(value)
-    sopranino_walk_chord = [18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, ]
+    sopranino_walk_chord = [x + 9 for x in [18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, ]]
 l = len(sopranino_walk_chord)
 sopranino_random_walk_notes = [sopranino_walk_chord[x] for x in reduceMod(l, sopranino_random_walk)]
 
@@ -90,7 +90,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = soprano_1_random_walk[i-1] + movement
     soprano_1_random_walk.append(value)
-soprano_1_walk_chord = [17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, ]
+soprano_1_walk_chord = [x + 5 for x in [17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, ]]
 l = len(soprano_1_walk_chord)
 soprano_1_random_walk_notes = [soprano_1_walk_chord[x] for x in reduceMod(l, soprano_1_random_walk)]
 
@@ -114,7 +114,7 @@ for i in range(1, 1000):
     value = soprano_3_random_walk[i-1] + movement
     soprano_3_random_walk.append(value)
 soprano_3_random_walk.append(value)
-soprano_3_walk_chord = [15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, ]
+soprano_3_walk_chord = [x - 2 for x in [15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, ]]
 l = len(soprano_3_walk_chord)
 soprano_3_random_walk_notes = [soprano_3_walk_chord[x] for x in reduceMod(l, soprano_3_random_walk)]
 
@@ -125,7 +125,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_1_random_walk[i-1] + movement
     alto_1_random_walk.append(value)
-alto_1_walk_chord = [14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, ]
+alto_1_walk_chord = [x + 6 for x in [14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, ]]
 l = len(alto_1_walk_chord)
 alto_1_random_walk_notes = [alto_1_walk_chord[x] for x in reduceMod(l, alto_1_random_walk)]
 
@@ -136,7 +136,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_2_random_walk[i-1] + movement
     alto_2_random_walk.append(value)
-alto_2_walk_chord = [13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, ]
+alto_2_walk_chord = [x - 1 for x in [13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, ]]
 l = len(alto_2_walk_chord)
 alto_2_random_walk_notes = [alto_2_walk_chord[x] for x in reduceMod(l, alto_2_random_walk)]
 
@@ -147,7 +147,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_3_random_walk[i-1] + movement
     alto_3_random_walk.append(value)
-alto_3_walk_chord = [12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, ]
+alto_3_walk_chord = [x - 11 for x in [12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, ]]
 l = len(alto_3_walk_chord)
 alto_3_random_walk_notes = [alto_3_walk_chord[x] for x in reduceMod(l, alto_3_random_walk)]
 
@@ -158,7 +158,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_4_random_walk[i-1] + movement
     alto_4_random_walk.append(value)
-alto_4_walk_chord = [11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, ]
+alto_4_walk_chord = [x + 9 for x in [11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, ]]
 l = len(alto_4_walk_chord)
 alto_4_random_walk_notes = [alto_4_walk_chord[x] for x in reduceMod(l, alto_4_random_walk)]
 
@@ -169,7 +169,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_5_random_walk[i-1] + movement
     alto_5_random_walk.append(value)
-alto_5_walk_chord = [10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, ]
+alto_5_walk_chord = [x + 2 for x in [10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, ]]
 l = len(alto_5_walk_chord)
 alto_5_random_walk_notes = [alto_5_walk_chord[x] for x in reduceMod(l, alto_5_random_walk)]
 
@@ -180,7 +180,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = alto_6_random_walk[i-1] + movement
     alto_6_random_walk.append(value)
-alto_6_walk_chord = [9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, ]
+alto_6_walk_chord = [x - 8 for x in [9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, ]]
 l = len(alto_6_walk_chord)
 alto_6_random_walk_notes = [alto_6_walk_chord[x] for x in reduceMod(l, alto_6_random_walk)]
 
@@ -191,7 +191,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_1_random_walk[i-1] + movement
     tenor_1_random_walk.append(value)
-tenor_1_walk_chord = [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, ]
+tenor_1_walk_chord = [x + 9 for x in [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, ]]
 l = len(tenor_1_walk_chord)
 tenor_1_random_walk_notes = [tenor_1_walk_chord[x] for x in reduceMod(l, tenor_1_random_walk)]
 
@@ -202,7 +202,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_2_random_walk[i-1] + movement
     tenor_2_random_walk.append(value)
-tenor_2_walk_chord = [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, ]
+tenor_2_walk_chord = [x - 1 for x in [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, ]]
 l = len(tenor_2_walk_chord)
 tenor_2_random_walk_notes = [tenor_2_walk_chord[x] for x in reduceMod(l, tenor_2_random_walk)]
 
@@ -213,7 +213,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_3_random_walk[i-1] + movement
     tenor_3_random_walk.append(value)
-tenor_3_walk_chord = [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, ]
+tenor_3_walk_chord = [x - 7 for x in [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, ]]
 l = len(tenor_3_walk_chord)
 tenor_3_random_walk_notes = [tenor_3_walk_chord[x] for x in reduceMod(l, tenor_3_random_walk)]
 
@@ -224,7 +224,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_4_random_walk[i-1] + movement
     tenor_4_random_walk.append(value)
-tenor_4_walk_chord = [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, ]
+tenor_4_walk_chord = [x + 12 for x in [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, ]]
 l = len(tenor_4_walk_chord)
 tenor_4_random_walk_notes = [tenor_4_walk_chord[x] for x in reduceMod(l, tenor_4_random_walk)]
 
@@ -235,7 +235,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = tenor_5_random_walk[i-1] + movement
     tenor_5_random_walk.append(value)
-tenor_5_walk_chord = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, ]
+tenor_5_walk_chord = [x + 2 for x in [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, ]]
 l = len(tenor_5_walk_chord)
 tenor_5_random_walk_notes = [tenor_5_walk_chord[x] for x in reduceMod(l, tenor_5_random_walk)]
 
@@ -246,7 +246,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_1_random_walk[i-1] + movement
     baritone_1_random_walk.append(value)
-baritone_1_walk_chord = [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, ]
+baritone_1_walk_chord = [x + 10 for x in [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, ]]
 l = len(baritone_1_walk_chord)
 baritone_1_random_walk_notes = [baritone_1_walk_chord[x] for x in reduceMod(l, baritone_1_random_walk)]
 
@@ -257,7 +257,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_2_random_walk[i-1] + movement
     baritone_2_random_walk.append(value)
-baritone_2_walk_chord = [2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, ]
+baritone_2_walk_chord = [x + 4 for x in [2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, ]]
 l = len(baritone_2_walk_chord)
 baritone_2_random_walk_notes = [baritone_2_walk_chord[x] for x in reduceMod(l, baritone_2_random_walk)]
 
@@ -268,7 +268,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = baritone_3_random_walk[i-1] + movement
     baritone_3_random_walk.append(value)
-baritone_3_walk_chord = [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, ]
+baritone_3_walk_chord = [x + 3 for x in [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, ]]
 l = len(baritone_3_walk_chord)
 baritone_3_random_walk_notes = [baritone_3_walk_chord[x] for x in reduceMod(l, baritone_3_random_walk)]
 
@@ -279,7 +279,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = bass_1_random_walk[i-1] + movement
     bass_1_random_walk.append(value)
-bass_1_walk_chord = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, ]
+bass_1_walk_chord = [x + 11 for x in [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, ]]
 l = len(bass_1_walk_chord)
 bass_1_random_walk_notes = [bass_1_walk_chord[x] for x in reduceMod(l, bass_1_random_walk)]
 
@@ -290,7 +290,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = bass_2_random_walk[i-1] + movement
     bass_2_random_walk.append(value)
-bass_2_walk_chord = [-1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, ]
+bass_2_walk_chord = [x + 10 for x in [-1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, ]]
 l = len(bass_2_walk_chord)
 bass_2_random_walk_notes = [bass_2_walk_chord[x] for x in reduceMod(l, bass_2_random_walk)]
 
@@ -301,7 +301,7 @@ for i in range(1, 1000):
     movement = -1 if random() < 0.5 else 1
     value = contrabass_random_walk[i-1] + movement
     contrabass_random_walk.append(value)
-contrabass_walk_chord = [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, ]
+contrabass_walk_chord = [x + 4 for x in [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, ]]
 l = len(contrabass_walk_chord)
 contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, contrabass_random_walk)]
 
@@ -857,25 +857,25 @@ voice_1_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), sopranino_musicmaker_three],
         [(102, 8), (104, 8), sopranino_musicmaker_two],
 
-        [(104, 8), (106, 8), sopranino_musicmaker_two],
-        [(106, 8), (108, 8), sopranino_musicmaker_two],
-        [(108, 8), (110, 8), sopranino_musicmaker_three],
-        [(110, 8), (112, 8), sopranino_musicmaker_two],
-
-        [(112, 8), (114, 8), sopranino_musicmaker_two],
-        [(114, 8), (116, 8), sopranino_musicmaker_three],
-        [(116, 8), (118, 8), sopranino_musicmaker_three],
-        [(118, 8), (120, 8), sopranino_musicmaker_two],
-
-        [(120, 8), (122, 8), sopranino_musicmaker_two],
-        [(122, 8), (124, 8), sopranino_musicmaker_three],
-        [(124, 8), (126, 8), sopranino_musicmaker_two],
-        [(126, 8), (128, 8), sopranino_musicmaker_two],
-
-        [(128, 8), (130, 8), sopranino_musicmaker_two],
-        [(130, 8), (132, 8), sopranino_musicmaker_three],
-        [(132, 8), (134, 8), sopranino_musicmaker_two],
-        [(134, 8), (136, 8), sopranino_musicmaker_three],
+        # [(104, 8), (106, 8), sopranino_musicmaker_two],
+        # [(106, 8), (108, 8), sopranino_musicmaker_two],
+        # [(108, 8), (110, 8), sopranino_musicmaker_three],
+        # [(110, 8), (112, 8), sopranino_musicmaker_two],
+        #
+        # [(112, 8), (114, 8), sopranino_musicmaker_two],
+        # [(114, 8), (116, 8), sopranino_musicmaker_three],
+        # [(116, 8), (118, 8), sopranino_musicmaker_three],
+        # [(118, 8), (120, 8), sopranino_musicmaker_two],
+        #
+        # [(120, 8), (122, 8), sopranino_musicmaker_two],
+        # [(122, 8), (124, 8), sopranino_musicmaker_three],
+        # [(124, 8), (126, 8), sopranino_musicmaker_two],
+        # [(126, 8), (128, 8), sopranino_musicmaker_two],
+        #
+        # [(128, 8), (130, 8), sopranino_musicmaker_two],
+        # [(130, 8), (132, 8), sopranino_musicmaker_three],
+        # [(132, 8), (134, 8), sopranino_musicmaker_two],
+        # [(134, 8), (136, 8), sopranino_musicmaker_three],
 
         # [(136, 8), (138, 8), sopranino_musicmaker_three],
         # [(138, 8), (140, 8), sopranino_musicmaker_three],
@@ -996,25 +996,25 @@ voice_2_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), soprano_one_musicmaker_two],
         [(102, 8), (104, 8), soprano_one_musicmaker_two],
 
-        [(104, 8), (106, 8), soprano_one_musicmaker_two],
-        [(106, 8), (108, 8), soprano_one_musicmaker_two],
-        [(108, 8), (110, 8), soprano_one_musicmaker_three],
-        [(110, 8), (112, 8), soprano_one_musicmaker_three],
-
-        [(112, 8), (114, 8), soprano_one_musicmaker_two],
-        [(114, 8), (116, 8), soprano_one_musicmaker_two],
-        [(116, 8), (118, 8), soprano_one_musicmaker_two],
-        [(118, 8), (120, 8), soprano_one_musicmaker_three],
-
-        [(120, 8), (122, 8), soprano_one_musicmaker_three],
-        [(122, 8), (124, 8), soprano_one_musicmaker_three],
-        [(124, 8), (126, 8), soprano_one_musicmaker_two],
-        [(126, 8), (128, 8), soprano_one_musicmaker_two],
-
-        [(128, 8), (130, 8), soprano_one_musicmaker_two],
-        [(130, 8), (132, 8), soprano_one_musicmaker_two],
-        [(132, 8), (134, 8), soprano_one_musicmaker_three],
-        [(134, 8), (136, 8), soprano_one_musicmaker_three],
+        # [(104, 8), (106, 8), soprano_one_musicmaker_two],
+        # [(106, 8), (108, 8), soprano_one_musicmaker_two],
+        # [(108, 8), (110, 8), soprano_one_musicmaker_three],
+        # [(110, 8), (112, 8), soprano_one_musicmaker_three],
+        #
+        # [(112, 8), (114, 8), soprano_one_musicmaker_two],
+        # [(114, 8), (116, 8), soprano_one_musicmaker_two],
+        # [(116, 8), (118, 8), soprano_one_musicmaker_two],
+        # [(118, 8), (120, 8), soprano_one_musicmaker_three],
+        #
+        # [(120, 8), (122, 8), soprano_one_musicmaker_three],
+        # [(122, 8), (124, 8), soprano_one_musicmaker_three],
+        # [(124, 8), (126, 8), soprano_one_musicmaker_two],
+        # [(126, 8), (128, 8), soprano_one_musicmaker_two],
+        #
+        # [(128, 8), (130, 8), soprano_one_musicmaker_two],
+        # [(130, 8), (132, 8), soprano_one_musicmaker_two],
+        # [(132, 8), (134, 8), soprano_one_musicmaker_three],
+        # [(134, 8), (136, 8), soprano_one_musicmaker_three],
 
         # [(136, 8), (138, 8), soprano_one_musicmaker_three],
         # [(138, 8), (140, 8), soprano_one_musicmaker_two],
@@ -1133,25 +1133,25 @@ voice_3_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), soprano_two_musicmaker_two],
         [(102, 8), (104, 8), soprano_two_musicmaker_two],
 
-        [(104, 8), (106, 8), soprano_two_musicmaker_two],
-        [(106, 8), (108, 8), soprano_two_musicmaker_three],
-        [(108, 8), (110, 8), soprano_two_musicmaker_three],
-        [(110, 8), (112, 8), soprano_two_musicmaker_three],
-
-        [(112, 8), (114, 8), soprano_two_musicmaker_three],
-        [(114, 8), (116, 8), soprano_two_musicmaker_two],
-        [(116, 8), (118, 8), soprano_two_musicmaker_three],
-        [(118, 8), (120, 8), soprano_two_musicmaker_three],
-
-        [(120, 8), (122, 8), soprano_two_musicmaker_two],
-        [(122, 8), (124, 8), soprano_two_musicmaker_three],
-        [(124, 8), (126, 8), soprano_two_musicmaker_two],
-        [(126, 8), (128, 8), soprano_two_musicmaker_two],
-
-        [(128, 8), (130, 8), soprano_two_musicmaker_three],
-        [(130, 8), (132, 8), soprano_two_musicmaker_two],
-        [(132, 8), (134, 8), soprano_two_musicmaker_two],
-        [(134, 8), (136, 8), soprano_two_musicmaker_three],
+        # [(104, 8), (106, 8), soprano_two_musicmaker_two],
+        # [(106, 8), (108, 8), soprano_two_musicmaker_three],
+        # [(108, 8), (110, 8), soprano_two_musicmaker_three],
+        # [(110, 8), (112, 8), soprano_two_musicmaker_three],
+        #
+        # [(112, 8), (114, 8), soprano_two_musicmaker_three],
+        # [(114, 8), (116, 8), soprano_two_musicmaker_two],
+        # [(116, 8), (118, 8), soprano_two_musicmaker_three],
+        # [(118, 8), (120, 8), soprano_two_musicmaker_three],
+        #
+        # [(120, 8), (122, 8), soprano_two_musicmaker_two],
+        # [(122, 8), (124, 8), soprano_two_musicmaker_three],
+        # [(124, 8), (126, 8), soprano_two_musicmaker_two],
+        # [(126, 8), (128, 8), soprano_two_musicmaker_two],
+        #
+        # [(128, 8), (130, 8), soprano_two_musicmaker_three],
+        # [(130, 8), (132, 8), soprano_two_musicmaker_two],
+        # [(132, 8), (134, 8), soprano_two_musicmaker_two],
+        # [(134, 8), (136, 8), soprano_two_musicmaker_three],
 
         # [(136, 8), (138, 8), soprano_two_musicmaker_three],
         # [(138, 8), (140, 8), soprano_two_musicmaker_three],
@@ -1270,25 +1270,25 @@ voice_4_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), soprano_three_musicmaker_two],
         [(102, 8), (104, 8), soprano_three_musicmaker_three],
 
-        [(104, 8), (106, 8), soprano_three_musicmaker_three],
-        [(106, 8), (108, 8), soprano_three_musicmaker_two],
-        [(108, 8), (110, 8), soprano_three_musicmaker_two],
-        [(110, 8), (112, 8), soprano_three_musicmaker_two],
-
-        [(112, 8), (114, 8), soprano_three_musicmaker_two],
-        [(114, 8), (116, 8), soprano_three_musicmaker_three],
-        [(116, 8), (118, 8), soprano_three_musicmaker_three],
-        [(118, 8), (120, 8), soprano_three_musicmaker_three],
-
-        [(120, 8), (122, 8), soprano_three_musicmaker_three],
-        [(122, 8), (124, 8), soprano_three_musicmaker_two],
-        [(124, 8), (126, 8), soprano_three_musicmaker_two],
-        [(126, 8), (128, 8), soprano_three_musicmaker_three],
-
-        [(128, 8), (130, 8), soprano_three_musicmaker_two],
-        [(130, 8), (132, 8), soprano_three_musicmaker_two],
-        [(132, 8), (134, 8), soprano_three_musicmaker_three],
-        [(134, 8), (136, 8), soprano_three_musicmaker_two],
+        # [(104, 8), (106, 8), soprano_three_musicmaker_three],
+        # [(106, 8), (108, 8), soprano_three_musicmaker_two],
+        # [(108, 8), (110, 8), soprano_three_musicmaker_two],
+        # [(110, 8), (112, 8), soprano_three_musicmaker_two],
+        #
+        # [(112, 8), (114, 8), soprano_three_musicmaker_two],
+        # [(114, 8), (116, 8), soprano_three_musicmaker_three],
+        # [(116, 8), (118, 8), soprano_three_musicmaker_three],
+        # [(118, 8), (120, 8), soprano_three_musicmaker_three],
+        #
+        # [(120, 8), (122, 8), soprano_three_musicmaker_three],
+        # [(122, 8), (124, 8), soprano_three_musicmaker_two],
+        # [(124, 8), (126, 8), soprano_three_musicmaker_two],
+        # [(126, 8), (128, 8), soprano_three_musicmaker_three],
+        #
+        # [(128, 8), (130, 8), soprano_three_musicmaker_two],
+        # [(130, 8), (132, 8), soprano_three_musicmaker_two],
+        # [(132, 8), (134, 8), soprano_three_musicmaker_three],
+        # [(134, 8), (136, 8), soprano_three_musicmaker_two],
 
         # [(136, 8), (138, 8), soprano_three_musicmaker_two],
         # [(138, 8), (140, 8), soprano_three_musicmaker_two],
@@ -1407,25 +1407,25 @@ voice_5_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), alto_one_musicmaker_two],
         [(102, 8), (104, 8), alto_one_musicmaker_three],
 
-        [(104, 8), (106, 8), alto_one_musicmaker_three],
-        [(106, 8), (108, 8), alto_one_musicmaker_three],
-        [(108, 8), (110, 8), alto_one_musicmaker_two],
-        [(110, 8), (112, 8), alto_one_musicmaker_two],
-
-        [(112, 8), (114, 8), alto_one_musicmaker_two],
-        [(114, 8), (116, 8), alto_one_musicmaker_two],
-        [(116, 8), (118, 8), alto_one_musicmaker_three],
-        [(118, 8), (120, 8), alto_one_musicmaker_three],
-
-        [(120, 8), (122, 8), alto_one_musicmaker_three],
-        [(122, 8), (124, 8), alto_one_musicmaker_three],
-        [(124, 8), (126, 8), alto_one_musicmaker_two],
-        [(126, 8), (128, 8), alto_one_musicmaker_two],
-
-        [(128, 8), (130, 8), alto_one_musicmaker_two],
-        [(130, 8), (132, 8), alto_one_musicmaker_two],
-        [(132, 8), (134, 8), alto_one_musicmaker_two],
-        [(134, 8), (136, 8), alto_one_musicmaker_three],
+        # [(104, 8), (106, 8), alto_one_musicmaker_three],
+        # [(106, 8), (108, 8), alto_one_musicmaker_three],
+        # [(108, 8), (110, 8), alto_one_musicmaker_two],
+        # [(110, 8), (112, 8), alto_one_musicmaker_two],
+        #
+        # [(112, 8), (114, 8), alto_one_musicmaker_two],
+        # [(114, 8), (116, 8), alto_one_musicmaker_two],
+        # [(116, 8), (118, 8), alto_one_musicmaker_three],
+        # [(118, 8), (120, 8), alto_one_musicmaker_three],
+        #
+        # [(120, 8), (122, 8), alto_one_musicmaker_three],
+        # [(122, 8), (124, 8), alto_one_musicmaker_three],
+        # [(124, 8), (126, 8), alto_one_musicmaker_two],
+        # [(126, 8), (128, 8), alto_one_musicmaker_two],
+        #
+        # [(128, 8), (130, 8), alto_one_musicmaker_two],
+        # [(130, 8), (132, 8), alto_one_musicmaker_two],
+        # [(132, 8), (134, 8), alto_one_musicmaker_two],
+        # [(134, 8), (136, 8), alto_one_musicmaker_three],
 
         # [(136, 8), (138, 8), alto_one_musicmaker_three],
         # [(138, 8), (140, 8), alto_one_musicmaker_three],
@@ -1544,25 +1544,25 @@ voice_6_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), alto_two_musicmaker_three],
         [(102, 8), (104, 8), alto_two_musicmaker_two],
 
-        [(104, 8), (106, 8), alto_two_musicmaker_three],
-        [(106, 8), (108, 8), alto_two_musicmaker_two],
-        [(108, 8), (110, 8), alto_two_musicmaker_three],
-        [(110, 8), (112, 8), alto_two_musicmaker_two],
-
-        [(112, 8), (114, 8), alto_two_musicmaker_two],
-        [(114, 8), (116, 8), alto_two_musicmaker_two],
-        [(116, 8), (118, 8), alto_two_musicmaker_three],
-        [(118, 8), (120, 8), alto_two_musicmaker_two],
-
-        [(120, 8), (122, 8), alto_two_musicmaker_two],
-        [(122, 8), (124, 8), alto_two_musicmaker_three],
-        [(124, 8), (126, 8), alto_two_musicmaker_three],
-        [(126, 8), (128, 8), alto_two_musicmaker_three],
-
-        [(128, 8), (130, 8), alto_two_musicmaker_two],
-        [(130, 8), (132, 8), alto_two_musicmaker_three],
-        [(132, 8), (134, 8), alto_two_musicmaker_three],
-        [(134, 8), (136, 8), alto_two_musicmaker_two],
+        # [(104, 8), (106, 8), alto_two_musicmaker_three],
+        # [(106, 8), (108, 8), alto_two_musicmaker_two],
+        # [(108, 8), (110, 8), alto_two_musicmaker_three],
+        # [(110, 8), (112, 8), alto_two_musicmaker_two],
+        #
+        # [(112, 8), (114, 8), alto_two_musicmaker_two],
+        # [(114, 8), (116, 8), alto_two_musicmaker_two],
+        # [(116, 8), (118, 8), alto_two_musicmaker_three],
+        # [(118, 8), (120, 8), alto_two_musicmaker_two],
+        #
+        # [(120, 8), (122, 8), alto_two_musicmaker_two],
+        # [(122, 8), (124, 8), alto_two_musicmaker_three],
+        # [(124, 8), (126, 8), alto_two_musicmaker_three],
+        # [(126, 8), (128, 8), alto_two_musicmaker_three],
+        #
+        # [(128, 8), (130, 8), alto_two_musicmaker_two],
+        # [(130, 8), (132, 8), alto_two_musicmaker_three],
+        # [(132, 8), (134, 8), alto_two_musicmaker_three],
+        # [(134, 8), (136, 8), alto_two_musicmaker_two],
 
         # [(136, 8), (138, 8), alto_two_musicmaker_two],
         # [(138, 8), (140, 8), alto_two_musicmaker_three],
@@ -1681,25 +1681,25 @@ voice_7_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), alto_three_musicmaker_three],
         [(102, 8), (104, 8), alto_three_musicmaker_three],
 
-        [(104, 8), (106, 8), alto_three_musicmaker_two],
-        [(106, 8), (108, 8), alto_three_musicmaker_three],
-        [(108, 8), (110, 8), alto_three_musicmaker_two],
-        [(110, 8), (112, 8), alto_three_musicmaker_two],
-
-        [(112, 8), (114, 8), alto_three_musicmaker_three],
-        [(114, 8), (116, 8), alto_three_musicmaker_three],
-        [(116, 8), (118, 8), alto_three_musicmaker_three],
-        [(118, 8), (120, 8), alto_three_musicmaker_two],
-
-        [(120, 8), (122, 8), alto_three_musicmaker_three],
-        [(122, 8), (124, 8), alto_three_musicmaker_two],
-        [(124, 8), (126, 8), alto_three_musicmaker_two],
-        [(126, 8), (128, 8), alto_three_musicmaker_three],
-
-        [(128, 8), (130, 8), alto_three_musicmaker_three],
-        [(130, 8), (132, 8), alto_three_musicmaker_two],
-        [(132, 8), (134, 8), alto_three_musicmaker_two],
-        [(134, 8), (136, 8), alto_three_musicmaker_three],
+        # [(104, 8), (106, 8), alto_three_musicmaker_two],
+        # [(106, 8), (108, 8), alto_three_musicmaker_three],
+        # [(108, 8), (110, 8), alto_three_musicmaker_two],
+        # [(110, 8), (112, 8), alto_three_musicmaker_two],
+        #
+        # [(112, 8), (114, 8), alto_three_musicmaker_three],
+        # [(114, 8), (116, 8), alto_three_musicmaker_three],
+        # [(116, 8), (118, 8), alto_three_musicmaker_three],
+        # [(118, 8), (120, 8), alto_three_musicmaker_two],
+        #
+        # [(120, 8), (122, 8), alto_three_musicmaker_three],
+        # [(122, 8), (124, 8), alto_three_musicmaker_two],
+        # [(124, 8), (126, 8), alto_three_musicmaker_two],
+        # [(126, 8), (128, 8), alto_three_musicmaker_three],
+        #
+        # [(128, 8), (130, 8), alto_three_musicmaker_three],
+        # [(130, 8), (132, 8), alto_three_musicmaker_two],
+        # [(132, 8), (134, 8), alto_three_musicmaker_two],
+        # [(134, 8), (136, 8), alto_three_musicmaker_three],
 
         # [(136, 8), (138, 8), alto_three_musicmaker_two],
         # [(138, 8), (140, 8), alto_three_musicmaker_three],
@@ -1818,25 +1818,25 @@ voice_8_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), alto_four_musicmaker_two],
         [(102, 8), (104, 8), alto_four_musicmaker_three],
 
-        [(104, 8), (106, 8), alto_four_musicmaker_two],
-        [(106, 8), (108, 8), alto_four_musicmaker_three],
-        [(108, 8), (110, 8), alto_four_musicmaker_two],
-        [(110, 8), (112, 8), alto_four_musicmaker_three],
-
-        [(112, 8), (114, 8), alto_four_musicmaker_three],
-        [(114, 8), (116, 8), alto_four_musicmaker_three],
-        [(116, 8), (118, 8), alto_four_musicmaker_two],
-        [(118, 8), (120, 8), alto_four_musicmaker_three],
-
-        [(120, 8), (122, 8), alto_four_musicmaker_three],
-        [(122, 8), (124, 8), alto_four_musicmaker_two],
-        [(124, 8), (126, 8), alto_four_musicmaker_three],
-        [(126, 8), (128, 8), alto_four_musicmaker_two],
-
-        [(128, 8), (130, 8), alto_four_musicmaker_two],
-        [(130, 8), (132, 8), alto_four_musicmaker_two],
-        [(132, 8), (134, 8), alto_four_musicmaker_three],
-        [(134, 8), (136, 8), alto_four_musicmaker_two],
+        # [(104, 8), (106, 8), alto_four_musicmaker_two],
+        # [(106, 8), (108, 8), alto_four_musicmaker_three],
+        # [(108, 8), (110, 8), alto_four_musicmaker_two],
+        # [(110, 8), (112, 8), alto_four_musicmaker_three],
+        #
+        # [(112, 8), (114, 8), alto_four_musicmaker_three],
+        # [(114, 8), (116, 8), alto_four_musicmaker_three],
+        # [(116, 8), (118, 8), alto_four_musicmaker_two],
+        # [(118, 8), (120, 8), alto_four_musicmaker_three],
+        #
+        # [(120, 8), (122, 8), alto_four_musicmaker_three],
+        # [(122, 8), (124, 8), alto_four_musicmaker_two],
+        # [(124, 8), (126, 8), alto_four_musicmaker_three],
+        # [(126, 8), (128, 8), alto_four_musicmaker_two],
+        #
+        # [(128, 8), (130, 8), alto_four_musicmaker_two],
+        # [(130, 8), (132, 8), alto_four_musicmaker_two],
+        # [(132, 8), (134, 8), alto_four_musicmaker_three],
+        # [(134, 8), (136, 8), alto_four_musicmaker_two],
 
         # [(136, 8), (138, 8), alto_four_musicmaker_three],
         # [(138, 8), (140, 8), alto_four_musicmaker_three],
@@ -1955,25 +1955,25 @@ voice_9_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), alto_five_musicmaker_two],
         [(102, 8), (104, 8), alto_five_musicmaker_two],
 
-        [(104, 8), (106, 8), alto_five_musicmaker_two],
-        [(106, 8), (108, 8), alto_five_musicmaker_three],
-        [(108, 8), (110, 8), alto_five_musicmaker_two],
-        [(110, 8), (112, 8), alto_five_musicmaker_three],
-
-        [(112, 8), (114, 8), alto_five_musicmaker_two],
-        [(114, 8), (116, 8), alto_five_musicmaker_three],
-        [(116, 8), (118, 8), alto_five_musicmaker_three],
-        [(118, 8), (120, 8), alto_five_musicmaker_two],
-
-        [(120, 8), (122, 8), alto_five_musicmaker_three],
-        [(122, 8), (124, 8), alto_five_musicmaker_three],
-        [(124, 8), (126, 8), alto_five_musicmaker_two],
-        [(126, 8), (128, 8), alto_five_musicmaker_two],
-
-        [(128, 8), (130, 8), alto_five_musicmaker_two],
-        [(130, 8), (132, 8), alto_five_musicmaker_two],
-        [(132, 8), (134, 8), alto_five_musicmaker_three],
-        [(134, 8), (136, 8), alto_five_musicmaker_three],
+        # [(104, 8), (106, 8), alto_five_musicmaker_two],
+        # [(106, 8), (108, 8), alto_five_musicmaker_three],
+        # [(108, 8), (110, 8), alto_five_musicmaker_two],
+        # [(110, 8), (112, 8), alto_five_musicmaker_three],
+        #
+        # [(112, 8), (114, 8), alto_five_musicmaker_two],
+        # [(114, 8), (116, 8), alto_five_musicmaker_three],
+        # [(116, 8), (118, 8), alto_five_musicmaker_three],
+        # [(118, 8), (120, 8), alto_five_musicmaker_two],
+        #
+        # [(120, 8), (122, 8), alto_five_musicmaker_three],
+        # [(122, 8), (124, 8), alto_five_musicmaker_three],
+        # [(124, 8), (126, 8), alto_five_musicmaker_two],
+        # [(126, 8), (128, 8), alto_five_musicmaker_two],
+        #
+        # [(128, 8), (130, 8), alto_five_musicmaker_two],
+        # [(130, 8), (132, 8), alto_five_musicmaker_two],
+        # [(132, 8), (134, 8), alto_five_musicmaker_three],
+        # [(134, 8), (136, 8), alto_five_musicmaker_three],
 
         # [(136, 8), (138, 8), alto_five_musicmaker_three],
         # [(138, 8), (140, 8), alto_five_musicmaker_two],
@@ -2092,25 +2092,25 @@ voice_10_timespan_list = abjad.TimespanList([
         [(100, 8), (102, 8), alto_six_musicmaker_two],
         [(102, 8), (104, 8), alto_six_musicmaker_three],
 
-        [(104, 8), (106, 8), alto_six_musicmaker_three],
-        [(106, 8), (108, 8), alto_six_musicmaker_three],
-        [(108, 8), (110, 8), alto_six_musicmaker_two],
-        [(110, 8), (112, 8), alto_six_musicmaker_two],
-
-        [(112, 8), (114, 8), alto_six_musicmaker_three],
-        [(114, 8), (116, 8), alto_six_musicmaker_three],
-        [(116, 8), (118, 8), alto_six_musicmaker_two],
-        [(118, 8), (120, 8), alto_six_musicmaker_two],
-
-        [(120, 8), (122, 8), alto_six_musicmaker_two],
-        [(122, 8), (124, 8), alto_six_musicmaker_three],
-        [(124, 8), (126, 8), alto_six_musicmaker_two],
-        [(126, 8), (128, 8), alto_six_musicmaker_three],
-
-        [(128, 8), (130, 8), alto_six_musicmaker_three],
-        [(130, 8), (132, 8), alto_six_musicmaker_two],
-        [(132, 8), (134, 8), alto_six_musicmaker_three],
-        [(134, 8), (136, 8), alto_six_musicmaker_two],
+        # [(104, 8), (106, 8), alto_six_musicmaker_three],
+        # [(106, 8), (108, 8), alto_six_musicmaker_three],
+        # [(108, 8), (110, 8), alto_six_musicmaker_two],
+        # [(110, 8), (112, 8), alto_six_musicmaker_two],
+        #
+        # [(112, 8), (114, 8), alto_six_musicmaker_three],
+        # [(114, 8), (116, 8), alto_six_musicmaker_three],
+        # [(116, 8), (118, 8), alto_six_musicmaker_two],
+        # [(118, 8), (120, 8), alto_six_musicmaker_two],
+        #
+        # [(120, 8), (122, 8), alto_six_musicmaker_two],
+        # [(122, 8), (124, 8), alto_six_musicmaker_three],
+        # [(124, 8), (126, 8), alto_six_musicmaker_two],
+        # [(126, 8), (128, 8), alto_six_musicmaker_three],
+        #
+        # [(128, 8), (130, 8), alto_six_musicmaker_three],
+        # [(130, 8), (132, 8), alto_six_musicmaker_two],
+        # [(132, 8), (134, 8), alto_six_musicmaker_three],
+        # [(134, 8), (136, 8), alto_six_musicmaker_two],
 
         # [(136, 8), (138, 8), alto_six_musicmaker_two],
         # [(138, 8), (140, 8), alto_six_musicmaker_three],
@@ -2216,22 +2216,22 @@ voice_11_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), tenor_one_musicmaker_three],
         [(100, 8), (102, 8), tenor_one_musicmaker_three],
         [(102, 8), (104, 8), tenor_one_musicmaker_three],
-        [(104, 8), (106, 8), tenor_one_musicmaker_three],
-        [(106, 8), (108, 8), tenor_one_musicmaker_three],
-        [(108, 8), (110, 8), tenor_one_musicmaker_three],
-        [(110, 8), (112, 8), tenor_one_musicmaker_three],
-        [(112, 8), (114, 8), tenor_one_musicmaker_two],
-        [(114, 8), (116, 8), tenor_one_musicmaker_two],
-        [(116, 8), (118, 8), tenor_one_musicmaker_two],
-        [(118, 8), (120, 8), tenor_one_musicmaker_two],
-        [(120, 8), (122, 8), tenor_one_musicmaker_two],
-        [(122, 8), (124, 8), tenor_one_musicmaker_three],
-        [(124, 8), (126, 8), tenor_one_musicmaker_three],
-        [(126, 8), (128, 8), tenor_one_musicmaker_three],
-        [(128, 8), (130, 8), tenor_one_musicmaker_three],
-        [(130, 8), (132, 8), tenor_one_musicmaker_three],
-        [(132, 8), (134, 8), tenor_one_musicmaker_three],
-        [(134, 8), (136, 8), tenor_one_musicmaker_two],
+        # [(104, 8), (106, 8), tenor_one_musicmaker_three],
+        # [(106, 8), (108, 8), tenor_one_musicmaker_three],
+        # [(108, 8), (110, 8), tenor_one_musicmaker_three],
+        # [(110, 8), (112, 8), tenor_one_musicmaker_three],
+        # [(112, 8), (114, 8), tenor_one_musicmaker_two],
+        # [(114, 8), (116, 8), tenor_one_musicmaker_two],
+        # [(116, 8), (118, 8), tenor_one_musicmaker_two],
+        # [(118, 8), (120, 8), tenor_one_musicmaker_two],
+        # [(120, 8), (122, 8), tenor_one_musicmaker_two],
+        # [(122, 8), (124, 8), tenor_one_musicmaker_three],
+        # [(124, 8), (126, 8), tenor_one_musicmaker_three],
+        # [(126, 8), (128, 8), tenor_one_musicmaker_three],
+        # [(128, 8), (130, 8), tenor_one_musicmaker_three],
+        # [(130, 8), (132, 8), tenor_one_musicmaker_three],
+        # [(132, 8), (134, 8), tenor_one_musicmaker_three],
+        # [(134, 8), (136, 8), tenor_one_musicmaker_two],
         # [(136, 8), (138, 8), tenor_one_musicmaker_two],
         # [(138, 8), (140, 8), tenor_one_musicmaker_two],
         # [(140, 8), (142, 8), tenor_one_musicmaker_two],
@@ -2329,22 +2329,22 @@ voice_12_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), tenor_two_musicmaker_two],
         [(100, 8), (102, 8), tenor_two_musicmaker_two],
         [(102, 8), (104, 8), tenor_two_musicmaker_two],
-        [(104, 8), (106, 8), tenor_two_musicmaker_two],
-        [(106, 8), (108, 8), tenor_two_musicmaker_three],
-        [(108, 8), (110, 8), tenor_two_musicmaker_three],
-        [(110, 8), (112, 8), tenor_two_musicmaker_three],
-        [(112, 8), (114, 8), tenor_two_musicmaker_three],
-        [(114, 8), (116, 8), tenor_two_musicmaker_two],
-        [(116, 8), (118, 8), tenor_two_musicmaker_two],
-        [(118, 8), (120, 8), tenor_two_musicmaker_two],
-        [(120, 8), (122, 8), tenor_two_musicmaker_three],
-        [(122, 8), (124, 8), tenor_two_musicmaker_three],
-        [(124, 8), (126, 8), tenor_two_musicmaker_three],
-        [(126, 8), (128, 8), tenor_two_musicmaker_three],
-        [(128, 8), (130, 8), tenor_two_musicmaker_two],
-        [(130, 8), (132, 8), tenor_two_musicmaker_two],
-        [(132, 8), (134, 8), tenor_two_musicmaker_two],
-        [(134, 8), (136, 8), tenor_two_musicmaker_two],
+        # [(104, 8), (106, 8), tenor_two_musicmaker_two],
+        # [(106, 8), (108, 8), tenor_two_musicmaker_three],
+        # [(108, 8), (110, 8), tenor_two_musicmaker_three],
+        # [(110, 8), (112, 8), tenor_two_musicmaker_three],
+        # [(112, 8), (114, 8), tenor_two_musicmaker_three],
+        # [(114, 8), (116, 8), tenor_two_musicmaker_two],
+        # [(116, 8), (118, 8), tenor_two_musicmaker_two],
+        # [(118, 8), (120, 8), tenor_two_musicmaker_two],
+        # [(120, 8), (122, 8), tenor_two_musicmaker_three],
+        # [(122, 8), (124, 8), tenor_two_musicmaker_three],
+        # [(124, 8), (126, 8), tenor_two_musicmaker_three],
+        # [(126, 8), (128, 8), tenor_two_musicmaker_three],
+        # [(128, 8), (130, 8), tenor_two_musicmaker_two],
+        # [(130, 8), (132, 8), tenor_two_musicmaker_two],
+        # [(132, 8), (134, 8), tenor_two_musicmaker_two],
+        # [(134, 8), (136, 8), tenor_two_musicmaker_two],
         # [(136, 8), (138, 8), tenor_two_musicmaker_two],
         # [(138, 8), (140, 8), tenor_two_musicmaker_two],
         # [(140, 8), (142, 8), tenor_two_musicmaker_two],
@@ -2442,22 +2442,22 @@ voice_13_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), tenor_three_musicmaker_two],
         [(100, 8), (102, 8), tenor_three_musicmaker_two],
         [(102, 8), (104, 8), tenor_three_musicmaker_two],
-        [(104, 8), (106, 8), tenor_three_musicmaker_three],
-        [(106, 8), (108, 8), tenor_three_musicmaker_three],
-        [(108, 8), (110, 8), tenor_three_musicmaker_three],
-        [(110, 8), (112, 8), tenor_three_musicmaker_three],
-        [(112, 8), (114, 8), tenor_three_musicmaker_two],
-        [(114, 8), (116, 8), tenor_three_musicmaker_two],
-        [(116, 8), (118, 8), tenor_three_musicmaker_two],
-        [(118, 8), (120, 8), tenor_three_musicmaker_two],
-        [(120, 8), (122, 8), tenor_three_musicmaker_two],
-        [(122, 8), (124, 8), tenor_three_musicmaker_two],
-        [(124, 8), (126, 8), tenor_three_musicmaker_three],
-        [(126, 8), (128, 8), tenor_three_musicmaker_three],
-        [(128, 8), (130, 8), tenor_three_musicmaker_three],
-        [(130, 8), (132, 8), tenor_three_musicmaker_three],
-        [(132, 8), (134, 8), tenor_three_musicmaker_three],
-        [(134, 8), (136, 8), tenor_three_musicmaker_three],
+        # [(104, 8), (106, 8), tenor_three_musicmaker_three],
+        # [(106, 8), (108, 8), tenor_three_musicmaker_three],
+        # [(108, 8), (110, 8), tenor_three_musicmaker_three],
+        # [(110, 8), (112, 8), tenor_three_musicmaker_three],
+        # [(112, 8), (114, 8), tenor_three_musicmaker_two],
+        # [(114, 8), (116, 8), tenor_three_musicmaker_two],
+        # [(116, 8), (118, 8), tenor_three_musicmaker_two],
+        # [(118, 8), (120, 8), tenor_three_musicmaker_two],
+        # [(120, 8), (122, 8), tenor_three_musicmaker_two],
+        # [(122, 8), (124, 8), tenor_three_musicmaker_two],
+        # [(124, 8), (126, 8), tenor_three_musicmaker_three],
+        # [(126, 8), (128, 8), tenor_three_musicmaker_three],
+        # [(128, 8), (130, 8), tenor_three_musicmaker_three],
+        # [(130, 8), (132, 8), tenor_three_musicmaker_three],
+        # [(132, 8), (134, 8), tenor_three_musicmaker_three],
+        # [(134, 8), (136, 8), tenor_three_musicmaker_three],
         # [(136, 8), (138, 8), tenor_three_musicmaker_three],
         # [(138, 8), (140, 8), tenor_three_musicmaker_two],
         # [(140, 8), (142, 8), tenor_three_musicmaker_two],
@@ -2555,22 +2555,22 @@ voice_14_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), tenor_four_musicmaker_two],
         [(100, 8), (102, 8), tenor_four_musicmaker_two],
         [(102, 8), (104, 8), tenor_four_musicmaker_three],
-        [(104, 8), (106, 8), tenor_four_musicmaker_two],
-        [(106, 8), (108, 8), tenor_four_musicmaker_three],
-        [(108, 8), (110, 8), tenor_four_musicmaker_three],
-        [(110, 8), (112, 8), tenor_four_musicmaker_two],
-        [(112, 8), (114, 8), tenor_four_musicmaker_two],
-        [(114, 8), (116, 8), tenor_four_musicmaker_two],
-        [(116, 8), (118, 8), tenor_four_musicmaker_three],
-        [(118, 8), (120, 8), tenor_four_musicmaker_three],
-        [(120, 8), (122, 8), tenor_four_musicmaker_three],
-        [(122, 8), (124, 8), tenor_four_musicmaker_three],
-        [(124, 8), (126, 8), tenor_four_musicmaker_two],
-        [(126, 8), (128, 8), tenor_four_musicmaker_two],
-        [(128, 8), (130, 8), tenor_four_musicmaker_two],
-        [(130, 8), (132, 8), tenor_four_musicmaker_two],
-        [(132, 8), (134, 8), tenor_four_musicmaker_two],
-        [(134, 8), (136, 8), tenor_four_musicmaker_three],
+        # [(104, 8), (106, 8), tenor_four_musicmaker_two],
+        # [(106, 8), (108, 8), tenor_four_musicmaker_three],
+        # [(108, 8), (110, 8), tenor_four_musicmaker_three],
+        # [(110, 8), (112, 8), tenor_four_musicmaker_two],
+        # [(112, 8), (114, 8), tenor_four_musicmaker_two],
+        # [(114, 8), (116, 8), tenor_four_musicmaker_two],
+        # [(116, 8), (118, 8), tenor_four_musicmaker_three],
+        # [(118, 8), (120, 8), tenor_four_musicmaker_three],
+        # [(120, 8), (122, 8), tenor_four_musicmaker_three],
+        # [(122, 8), (124, 8), tenor_four_musicmaker_three],
+        # [(124, 8), (126, 8), tenor_four_musicmaker_two],
+        # [(126, 8), (128, 8), tenor_four_musicmaker_two],
+        # [(128, 8), (130, 8), tenor_four_musicmaker_two],
+        # [(130, 8), (132, 8), tenor_four_musicmaker_two],
+        # [(132, 8), (134, 8), tenor_four_musicmaker_two],
+        # [(134, 8), (136, 8), tenor_four_musicmaker_three],
         # [(136, 8), (138, 8), tenor_four_musicmaker_three],
         # [(138, 8), (140, 8), tenor_four_musicmaker_three],
         # [(140, 8), (142, 8), tenor_four_musicmaker_three],
@@ -2668,22 +2668,22 @@ voice_15_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), tenor_five_musicmaker_three],
         [(100, 8), (102, 8), tenor_five_musicmaker_three],
         [(102, 8), (104, 8), tenor_five_musicmaker_three],
-        [(104, 8), (106, 8), tenor_five_musicmaker_two],
-        [(106, 8), (108, 8), tenor_five_musicmaker_two],
-        [(108, 8), (110, 8), tenor_five_musicmaker_two],
-        [(110, 8), (112, 8), tenor_five_musicmaker_two],
-        [(112, 8), (114, 8), tenor_five_musicmaker_two],
-        [(114, 8), (116, 8), tenor_five_musicmaker_two],
-        [(116, 8), (118, 8), tenor_five_musicmaker_two],
-        [(118, 8), (120, 8), tenor_five_musicmaker_three],
-        [(120, 8), (122, 8), tenor_five_musicmaker_three],
-        [(122, 8), (124, 8), tenor_five_musicmaker_three],
-        [(124, 8), (126, 8), tenor_five_musicmaker_three],
-        [(126, 8), (128, 8), tenor_five_musicmaker_three],
-        [(128, 8), (130, 8), tenor_five_musicmaker_three],
-        [(130, 8), (132, 8), tenor_five_musicmaker_three],
-        [(132, 8), (134, 8), tenor_five_musicmaker_three],
-        [(134, 8), (136, 8), tenor_five_musicmaker_two],
+        # [(104, 8), (106, 8), tenor_five_musicmaker_two],
+        # [(106, 8), (108, 8), tenor_five_musicmaker_two],
+        # [(108, 8), (110, 8), tenor_five_musicmaker_two],
+        # [(110, 8), (112, 8), tenor_five_musicmaker_two],
+        # [(112, 8), (114, 8), tenor_five_musicmaker_two],
+        # [(114, 8), (116, 8), tenor_five_musicmaker_two],
+        # [(116, 8), (118, 8), tenor_five_musicmaker_two],
+        # [(118, 8), (120, 8), tenor_five_musicmaker_three],
+        # [(120, 8), (122, 8), tenor_five_musicmaker_three],
+        # [(122, 8), (124, 8), tenor_five_musicmaker_three],
+        # [(124, 8), (126, 8), tenor_five_musicmaker_three],
+        # [(126, 8), (128, 8), tenor_five_musicmaker_three],
+        # [(128, 8), (130, 8), tenor_five_musicmaker_three],
+        # [(130, 8), (132, 8), tenor_five_musicmaker_three],
+        # [(132, 8), (134, 8), tenor_five_musicmaker_three],
+        # [(134, 8), (136, 8), tenor_five_musicmaker_two],
         # [(136, 8), (138, 8), tenor_five_musicmaker_two],
         # [(138, 8), (140, 8), tenor_five_musicmaker_two],
         # [(140, 8), (142, 8), tenor_five_musicmaker_two],
@@ -2781,22 +2781,22 @@ voice_16_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), baritone_one_musicmaker_two],
         [(100, 8), (102, 8), baritone_one_musicmaker_two],
         [(102, 8), (104, 8), baritone_one_musicmaker_two],
-        [(104, 8), (106, 8), baritone_one_musicmaker_two],
-        [(106, 8), (108, 8), baritone_one_musicmaker_three],
-        [(108, 8), (110, 8), baritone_one_musicmaker_three],
-        [(110, 8), (112, 8), baritone_one_musicmaker_three],
-        [(112, 8), (114, 8), baritone_one_musicmaker_three],
-        [(114, 8), (116, 8), baritone_one_musicmaker_two],
-        [(116, 8), (118, 8), baritone_one_musicmaker_two],
-        [(118, 8), (120, 8), baritone_one_musicmaker_two],
-        [(120, 8), (122, 8), baritone_one_musicmaker_three],
-        [(122, 8), (124, 8), baritone_one_musicmaker_three],
-        [(124, 8), (126, 8), baritone_one_musicmaker_three],
-        [(126, 8), (128, 8), baritone_one_musicmaker_three],
-        [(128, 8), (130, 8), baritone_one_musicmaker_two],
-        [(130, 8), (132, 8), baritone_one_musicmaker_two],
-        [(132, 8), (134, 8), baritone_one_musicmaker_two],
-        [(134, 8), (136, 8), baritone_one_musicmaker_three],
+        # [(104, 8), (106, 8), baritone_one_musicmaker_two],
+        # [(106, 8), (108, 8), baritone_one_musicmaker_three],
+        # [(108, 8), (110, 8), baritone_one_musicmaker_three],
+        # [(110, 8), (112, 8), baritone_one_musicmaker_three],
+        # [(112, 8), (114, 8), baritone_one_musicmaker_three],
+        # [(114, 8), (116, 8), baritone_one_musicmaker_two],
+        # [(116, 8), (118, 8), baritone_one_musicmaker_two],
+        # [(118, 8), (120, 8), baritone_one_musicmaker_two],
+        # [(120, 8), (122, 8), baritone_one_musicmaker_three],
+        # [(122, 8), (124, 8), baritone_one_musicmaker_three],
+        # [(124, 8), (126, 8), baritone_one_musicmaker_three],
+        # [(126, 8), (128, 8), baritone_one_musicmaker_three],
+        # [(128, 8), (130, 8), baritone_one_musicmaker_two],
+        # [(130, 8), (132, 8), baritone_one_musicmaker_two],
+        # [(132, 8), (134, 8), baritone_one_musicmaker_two],
+        # [(134, 8), (136, 8), baritone_one_musicmaker_three],
         # [(136, 8), (138, 8), baritone_one_musicmaker_three],
         # [(138, 8), (140, 8), baritone_one_musicmaker_three],
         # [(140, 8), (142, 8), baritone_one_musicmaker_three],
@@ -2894,22 +2894,22 @@ voice_17_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), baritone_two_musicmaker_two],
         [(100, 8), (102, 8), baritone_two_musicmaker_two],
         [(102, 8), (104, 8), baritone_two_musicmaker_two],
-        [(104, 8), (106, 8), baritone_two_musicmaker_two],
-        [(106, 8), (108, 8), baritone_two_musicmaker_three],
-        [(108, 8), (110, 8), baritone_two_musicmaker_three],
-        [(110, 8), (112, 8), baritone_two_musicmaker_three],
-        [(112, 8), (114, 8), baritone_two_musicmaker_three],
-        [(114, 8), (116, 8), baritone_two_musicmaker_three],
-        [(116, 8), (118, 8), baritone_two_musicmaker_two],
-        [(118, 8), (120, 8), baritone_two_musicmaker_two],
-        [(120, 8), (122, 8), baritone_two_musicmaker_two],
-        [(122, 8), (124, 8), baritone_two_musicmaker_two],
-        [(124, 8), (126, 8), baritone_two_musicmaker_two],
-        [(126, 8), (128, 8), baritone_two_musicmaker_three],
-        [(128, 8), (130, 8), baritone_two_musicmaker_three],
-        [(130, 8), (132, 8), baritone_two_musicmaker_three],
-        [(132, 8), (134, 8), baritone_two_musicmaker_three],
-        [(134, 8), (136, 8), baritone_two_musicmaker_three],
+        # [(104, 8), (106, 8), baritone_two_musicmaker_two],
+        # [(106, 8), (108, 8), baritone_two_musicmaker_three],
+        # [(108, 8), (110, 8), baritone_two_musicmaker_three],
+        # [(110, 8), (112, 8), baritone_two_musicmaker_three],
+        # [(112, 8), (114, 8), baritone_two_musicmaker_three],
+        # [(114, 8), (116, 8), baritone_two_musicmaker_three],
+        # [(116, 8), (118, 8), baritone_two_musicmaker_two],
+        # [(118, 8), (120, 8), baritone_two_musicmaker_two],
+        # [(120, 8), (122, 8), baritone_two_musicmaker_two],
+        # [(122, 8), (124, 8), baritone_two_musicmaker_two],
+        # [(124, 8), (126, 8), baritone_two_musicmaker_two],
+        # [(126, 8), (128, 8), baritone_two_musicmaker_three],
+        # [(128, 8), (130, 8), baritone_two_musicmaker_three],
+        # [(130, 8), (132, 8), baritone_two_musicmaker_three],
+        # [(132, 8), (134, 8), baritone_two_musicmaker_three],
+        # [(134, 8), (136, 8), baritone_two_musicmaker_three],
         # [(136, 8), (138, 8), baritone_two_musicmaker_two],
         # [(138, 8), (140, 8), baritone_two_musicmaker_two],
         # [(140, 8), (142, 8), baritone_two_musicmaker_two],
@@ -3007,22 +3007,22 @@ voice_18_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), baritone_three_musicmaker_three],
         [(100, 8), (102, 8), baritone_three_musicmaker_three],
         [(102, 8), (104, 8), baritone_three_musicmaker_three],
-        [(104, 8), (106, 8), baritone_three_musicmaker_two],
-        [(106, 8), (108, 8), baritone_three_musicmaker_two],
-        [(108, 8), (110, 8), baritone_three_musicmaker_two],
-        [(110, 8), (112, 8), baritone_three_musicmaker_two],
-        [(112, 8), (114, 8), baritone_three_musicmaker_three],
-        [(114, 8), (116, 8), baritone_three_musicmaker_three],
-        [(116, 8), (118, 8), baritone_three_musicmaker_three],
-        [(118, 8), (120, 8), baritone_three_musicmaker_three],
-        [(120, 8), (122, 8), baritone_three_musicmaker_three],
-        [(122, 8), (124, 8), baritone_three_musicmaker_two],
-        [(124, 8), (126, 8), baritone_three_musicmaker_two],
-        [(126, 8), (128, 8), baritone_three_musicmaker_two],
-        [(128, 8), (130, 8), baritone_three_musicmaker_two],
-        [(130, 8), (132, 8), baritone_three_musicmaker_two],
-        [(132, 8), (134, 8), baritone_three_musicmaker_three],
-        [(134, 8), (136, 8), baritone_three_musicmaker_three],
+        # [(104, 8), (106, 8), baritone_three_musicmaker_two],
+        # [(106, 8), (108, 8), baritone_three_musicmaker_two],
+        # [(108, 8), (110, 8), baritone_three_musicmaker_two],
+        # [(110, 8), (112, 8), baritone_three_musicmaker_two],
+        # [(112, 8), (114, 8), baritone_three_musicmaker_three],
+        # [(114, 8), (116, 8), baritone_three_musicmaker_three],
+        # [(116, 8), (118, 8), baritone_three_musicmaker_three],
+        # [(118, 8), (120, 8), baritone_three_musicmaker_three],
+        # [(120, 8), (122, 8), baritone_three_musicmaker_three],
+        # [(122, 8), (124, 8), baritone_three_musicmaker_two],
+        # [(124, 8), (126, 8), baritone_three_musicmaker_two],
+        # [(126, 8), (128, 8), baritone_three_musicmaker_two],
+        # [(128, 8), (130, 8), baritone_three_musicmaker_two],
+        # [(130, 8), (132, 8), baritone_three_musicmaker_two],
+        # [(132, 8), (134, 8), baritone_three_musicmaker_three],
+        # [(134, 8), (136, 8), baritone_three_musicmaker_three],
         # [(136, 8), (138, 8), baritone_three_musicmaker_three],
         # [(138, 8), (140, 8), baritone_three_musicmaker_three],
         # [(140, 8), (142, 8), baritone_three_musicmaker_three],
@@ -3119,22 +3119,22 @@ voice_19_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), bass_one_musicmaker_three],
         [(100, 8), (102, 8), bass_one_musicmaker_two],
         [(102, 8), (104, 8), bass_one_musicmaker_two],
-        [(104, 8), (106, 8), bass_one_musicmaker_two],
-        [(106, 8), (108, 8), bass_one_musicmaker_two],
-        [(108, 8), (110, 8), bass_one_musicmaker_two],
-        [(110, 8), (112, 8), bass_one_musicmaker_two],
-        [(112, 8), (114, 8), bass_one_musicmaker_two],
-        [(114, 8), (116, 8), bass_one_musicmaker_two],
-        [(116, 8), (118, 8), bass_one_musicmaker_three],
-        [(118, 8), (120, 8), bass_one_musicmaker_three],
-        [(120, 8), (122, 8), bass_one_musicmaker_three],
-        [(122, 8), (124, 8), bass_one_musicmaker_three],
-        [(124, 8), (126, 8), bass_one_musicmaker_three],
-        [(126, 8), (128, 8), bass_one_musicmaker_two],
-        [(128, 8), (130, 8), bass_one_musicmaker_three],
-        [(130, 8), (132, 8), bass_one_musicmaker_three],
-        [(132, 8), (134, 8), bass_one_musicmaker_three],
-        [(134, 8), (136, 8), bass_one_musicmaker_three],
+        # [(104, 8), (106, 8), bass_one_musicmaker_two],
+        # [(106, 8), (108, 8), bass_one_musicmaker_two],
+        # [(108, 8), (110, 8), bass_one_musicmaker_two],
+        # [(110, 8), (112, 8), bass_one_musicmaker_two],
+        # [(112, 8), (114, 8), bass_one_musicmaker_two],
+        # [(114, 8), (116, 8), bass_one_musicmaker_two],
+        # [(116, 8), (118, 8), bass_one_musicmaker_three],
+        # [(118, 8), (120, 8), bass_one_musicmaker_three],
+        # [(120, 8), (122, 8), bass_one_musicmaker_three],
+        # [(122, 8), (124, 8), bass_one_musicmaker_three],
+        # [(124, 8), (126, 8), bass_one_musicmaker_three],
+        # [(126, 8), (128, 8), bass_one_musicmaker_two],
+        # [(128, 8), (130, 8), bass_one_musicmaker_three],
+        # [(130, 8), (132, 8), bass_one_musicmaker_three],
+        # [(132, 8), (134, 8), bass_one_musicmaker_three],
+        # [(134, 8), (136, 8), bass_one_musicmaker_three],
         # [(136, 8), (138, 8), bass_one_musicmaker_two],
         # [(138, 8), (140, 8), bass_one_musicmaker_two],
         # [(140, 8), (142, 8), bass_one_musicmaker_three],
@@ -3230,22 +3230,22 @@ voice_20_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), bass_two_musicmaker_three],
         [(100, 8), (102, 8), bass_two_musicmaker_two],
         [(102, 8), (104, 8), bass_two_musicmaker_two],
-        [(104, 8), (106, 8), bass_two_musicmaker_two],
-        [(106, 8), (108, 8), bass_two_musicmaker_two],
-        [(108, 8), (110, 8), bass_two_musicmaker_two],
-        [(110, 8), (112, 8), bass_two_musicmaker_two],
-        [(112, 8), (114, 8), bass_two_musicmaker_two],
-        [(114, 8), (116, 8), bass_two_musicmaker_two],
-        [(116, 8), (118, 8), bass_two_musicmaker_three],
-        [(118, 8), (120, 8), bass_two_musicmaker_three],
-        [(120, 8), (122, 8), bass_two_musicmaker_three],
-        [(122, 8), (124, 8), bass_two_musicmaker_three],
-        [(124, 8), (126, 8), bass_two_musicmaker_three],
-        [(126, 8), (128, 8), bass_two_musicmaker_two],
-        [(128, 8), (130, 8), bass_two_musicmaker_three],
-        [(130, 8), (132, 8), bass_two_musicmaker_three],
-        [(132, 8), (134, 8), bass_two_musicmaker_three],
-        [(134, 8), (136, 8), bass_two_musicmaker_three],
+        # [(104, 8), (106, 8), bass_two_musicmaker_two],
+        # [(106, 8), (108, 8), bass_two_musicmaker_two],
+        # [(108, 8), (110, 8), bass_two_musicmaker_two],
+        # [(110, 8), (112, 8), bass_two_musicmaker_two],
+        # [(112, 8), (114, 8), bass_two_musicmaker_two],
+        # [(114, 8), (116, 8), bass_two_musicmaker_two],
+        # [(116, 8), (118, 8), bass_two_musicmaker_three],
+        # [(118, 8), (120, 8), bass_two_musicmaker_three],
+        # [(120, 8), (122, 8), bass_two_musicmaker_three],
+        # [(122, 8), (124, 8), bass_two_musicmaker_three],
+        # [(124, 8), (126, 8), bass_two_musicmaker_three],
+        # [(126, 8), (128, 8), bass_two_musicmaker_two],
+        # [(128, 8), (130, 8), bass_two_musicmaker_three],
+        # [(130, 8), (132, 8), bass_two_musicmaker_three],
+        # [(132, 8), (134, 8), bass_two_musicmaker_three],
+        # [(134, 8), (136, 8), bass_two_musicmaker_three],
         # [(136, 8), (138, 8), bass_two_musicmaker_two],
         # [(138, 8), (140, 8), bass_two_musicmaker_two],
         # [(140, 8), (142, 8), bass_two_musicmaker_three],
@@ -3341,22 +3341,22 @@ voice_21_timespan_list = abjad.TimespanList([
         [(98, 8), (100, 8), contrabass_musicmaker_three],
         [(100, 8), (102, 8), contrabass_musicmaker_two],
         [(102, 8), (104, 8), contrabass_musicmaker_two],
-        [(104, 8), (106, 8), contrabass_musicmaker_two],
-        [(106, 8), (108, 8), contrabass_musicmaker_two],
-        [(108, 8), (110, 8), contrabass_musicmaker_two],
-        [(110, 8), (112, 8), contrabass_musicmaker_two],
-        [(112, 8), (114, 8), contrabass_musicmaker_two],
-        [(114, 8), (116, 8), contrabass_musicmaker_two],
-        [(116, 8), (118, 8), contrabass_musicmaker_three],
-        [(118, 8), (120, 8), contrabass_musicmaker_three],
-        [(120, 8), (122, 8), contrabass_musicmaker_three],
-        [(122, 8), (124, 8), contrabass_musicmaker_three],
-        [(124, 8), (126, 8), contrabass_musicmaker_three],
-        [(126, 8), (128, 8), contrabass_musicmaker_two],
-        [(128, 8), (130, 8), contrabass_musicmaker_three],
-        [(130, 8), (132, 8), contrabass_musicmaker_three],
-        [(132, 8), (134, 8), contrabass_musicmaker_three],
-        [(134, 8), (136, 8), contrabass_musicmaker_three],
+        # [(104, 8), (106, 8), contrabass_musicmaker_two],
+        # [(106, 8), (108, 8), contrabass_musicmaker_two],
+        # [(108, 8), (110, 8), contrabass_musicmaker_two],
+        # [(110, 8), (112, 8), contrabass_musicmaker_two],
+        # [(112, 8), (114, 8), contrabass_musicmaker_two],
+        # [(114, 8), (116, 8), contrabass_musicmaker_two],
+        # [(116, 8), (118, 8), contrabass_musicmaker_three],
+        # [(118, 8), (120, 8), contrabass_musicmaker_three],
+        # [(120, 8), (122, 8), contrabass_musicmaker_three],
+        # [(122, 8), (124, 8), contrabass_musicmaker_three],
+        # [(124, 8), (126, 8), contrabass_musicmaker_three],
+        # [(126, 8), (128, 8), contrabass_musicmaker_two],
+        # [(128, 8), (130, 8), contrabass_musicmaker_three],
+        # [(130, 8), (132, 8), contrabass_musicmaker_three],
+        # [(132, 8), (134, 8), contrabass_musicmaker_three],
+        # [(134, 8), (136, 8), contrabass_musicmaker_three],
         # [(136, 8), (138, 8), contrabass_musicmaker_two],
         # [(138, 8), (140, 8), contrabass_musicmaker_two],
         # [(140, 8), (142, 8), contrabass_musicmaker_three],

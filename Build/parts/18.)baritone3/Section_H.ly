@@ -57,6 +57,7 @@
                     \markup { "Baritone 3" }
                     \tempo 4=60
                     r1
+                    \!
                 }
                 {
                     \times 2/3 {

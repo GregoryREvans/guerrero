@@ -47,18 +47,6 @@
             % [Global Context measure 13] %! COMMENT_MEASURE_NUMBERS
             \time 4/4
             s1 * 1
-            % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
         }
         \context Staff = "Staff 17"
         {
@@ -72,20 +60,13 @@
                         \set Staff.instrumentName =
                         \markup { "Baritone 2" }
                         \tempo 4=90
-                        dqs'16
+                        gqf'16
                         \mf
                         \>
                         [
                         \glissando
                         \!
-                        ef'16
-                        \glissando
-                        eqf'8.
-                        \glissando
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        ef'8
+                        g'16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -93,85 +74,82 @@
                         \glissando
                         r16
                         \!
+                        gqs'8
+                        \mf
+                        \>
+                        [
+                        \glissando
                     }
+                    g'8
+                    \glissando
+                    gqs'16
+                    \glissando
+                    af'16
+                    \pp
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \glissando
                 }
                 {
-                    \times 4/5 {
-                        r16
-                        eqf'8
-                        \mp
-                        ~
-                        [
-                        eqf'16
-                        \<
-                        \glissando
-                        e'16
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        aqf'16
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         \glissando
+                        r16
+                        \!
+                        af'16
+                        \mp
+                        \<
+                        ~
+                        [
+                    }
+                    af'8
+                    \glissando
+                    gqs'8
+                    \glissando
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 17 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        g'8
+                        \glissando
+                        gqs'8.
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        \glissando
+                    }
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        g'8
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \glissando
+                        r16
+                        \!
                     }
                     r4
-                    \!
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 17 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        eqs'16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \glissando
-                        r16
-                        \!
-                        e'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        [
-                        \glissando
-                    }
-                }
-                {
-                    eqf'16
+                    gqs'16
                     \mf
                     \>
+                    [
                     \glissando
-                    ef'8.
+                    g'8.
                     \glissando
-                    \times 4/5 {
-                        eqf'16
-                        \glissando
-                        ef'16
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                        r16
-                        \!
-                        eqf'16
-                        \mf
-                        \>
-                        [
-                        \glissando
-                        ef'16
-                        \glissando
-                    }
+                }
+                {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        eqf'8
-                        \glissando
-                        e'16
-                        ~
-                    }
-                }
-                {
-                    \times 4/5 {
                         % [Voice 17 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        e'16
+                        gqs'16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -179,360 +157,312 @@
                         \glissando
                         r16
                         \!
-                        eqf'16
+                        af'16
                         \mf
-                        ~
-                        [
-                        eqf'16
-                        \>
-                        \glissando
-                        e'16
-                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                         \glissando
                     }
                 }
                 {
-                    eqf'8.
+                    gqs'16
                     \mp
                     \<
                     \glissando
-                    e'16
-                    ~
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        e'16
-                        \glissando
-                        eqs'8
+                    af'16
+                    \glissando
+                    gqs'8
+                    \glissando
+                    \times 4/5 {
+                        af'8
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         \glissando
+                        r16
+                        \!
+                        aqf'8
+                        \mp
+                        \<
+                        [
+                        \glissando
                     }
-                    r8.
-                    \!
-                    e'16
-                    \mp
-                    \<
-                    ~
-                    [
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        af'16
+                        \glissando
+                        aqf'8
+                        ~
+                    }
                 }
                 {
                     \times 4/5 {
                         % [Voice 17 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        e'16
+                        aqf'16
                         \glissando
-                        eqs'16
-                        \glissando
-                        f'16
-                        \glissando
-                        fqs'8
+                        a'8
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         \glissando
+                        r8
+                        \!
                     }
+                    aqs'8.
+                    \mp
+                    \<
+                    [
+                    \glissando
+                    a'16
+                    \f
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \glissando
+                }
+                {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
+                        aqs'16
+                        \mf
+                        \>
+                        \glissando
+                        bf'16
+                        \glissando
+                        bqf'16
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \glissando
+                    }
+                    r8
+                    \!
+                    bf'16
+                    \mf
+                    \>
+                    [
+                    \glissando
+                    aqs'16
+                    \glissando
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 17 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        bf'16
+                        \glissando
+                        aqs'8
+                        \pp
+                        ~
+                        aqs'16
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \glissando
                         r16
                         \!
-                        f'16
-                        \mp
-                        \<
-                        [
-                        \glissando
-                        fqs'16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
                     }
-                }
-                {
                     r4
-                    \!
-                    fs'16
-                    \mf
-                    \>
-                    [
-                    \glissando
-                    gqf'16
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                    \glissando
-                    r16
-                    \!
-                    fs'16
-                    \mf
-                    \>
-                    ~
-                    [
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 17 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        fs'16
-                        \glissando
-                        fqs'8
-                        \glissando
-                    }
-                    fs'16
-                    \glissando
-                    fqs'16
-                    \pp
-                    ~
-                    fqs'16
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                    \glissando
-                    r16
-                    \!
                     \times 4/5 {
-                        fs'8.
+                        bf'16
                         \mf
                         \>
                         [
                         \glissando
-                        fqs'8
+                        aqs'8
                         \glissando
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        fs'8
-                        \glissando
-                        gqf'16
+                        bf'8
                         \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \glissando
-                    }
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 17 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        g'8
-                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         \glissando
-                        r16
-                        \!
-                        r16
-                        gqf'16
-                        \mp
-                        \<
-                        [
-                        \glissando
                     }
-                    fs'16
-                    \glissando
-                    fqs'16
+                    r16
+                    \!
+                    bqf'16
+                    \mf
                     ~
-                    fqs'16
+                    [
+                    bqf'16
+                    \>
                     \glissando
-                    fs'16
+                    b'16
+                    \pp
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    \glissando
+                }
+                {
+                    % [Voice 17 measure 6] %! COMMENT_MEASURE_NUMBERS
+                    bqf'4
+                    \mp
+                    \<
+                    \glissando
+                    bf'8
+                    [
+                    \glissando
+                    aqs'8
                     \f
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
                     \glissando
+                    \times 4/5 {
+                        r8.
+                        \!
+                        bf'8
+                        \mp
+                        \<
+                        [
+                        \glissando
+                    }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        r16
-                        \!
-                        fqs'16
-                        \mp
-                        \<
-                        [
+                        aqs'16
                         \glissando
-                        fs'16
+                        bf'16
+                        \glissando
+                        aqs'16
                         ~
                     }
-                    fs'8
-                    \glissando
-                    fqs'16
-                    \glissando
-                    fs'16
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                    \glissando
                 }
                 {
                     \times 4/5 {
                         % [Voice 17 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        r16
-                        \!
-                        gqf'16
-                        \mp
-                        \<
-                        [
-                        \glissando
-                        fs'16
-                        \glissando
-                        gqf'8
+                        aqs'16
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         \glissando
-                    }
-                    r4
-                    \!
-                    \times 4/5 {
-                        r8
-                        g'16
+                        r16
+                        \!
+                        bf'16
                         \mp
                         \<
                         [
                         \glissando
-                        gqs'8
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        bqf'16
                         \glissando
+                        bf'16
+                        ~
                     }
-                }
-                {
-                    g'16
-                    \mf
-                    \>
+                    bf'8
                     \glissando
-                    gqf'8
+                    bqf'16
+                    \f
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
                     \glissando
-                    g'16
-                    ~
-                }
-                {
+                    r16
+                    \!
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        % [Voice 17 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        g'16
-                        \pp
+                        b'16
+                        \mp
+                        \<
+                        [
+                        \glissando
+                        bqs'16
+                        \glissando
+                        b'16
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         \glissando
-                        r8
-                        \!
                     }
-                    r16
-                    gqf'16
+                }
+                {
+                    bqf'8
                     \mf
-                    ~
-                    [
-                    gqf'16
                     \>
                     \glissando
-                    g'16
+                    b'8
+                    \pp
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
                     \glissando
-                    \times 4/5 {
-                        gqs'16
-                        \glissando
-                        af'8
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                        r16
-                        \!
-                        gqs'16
+                }
+                {
+                    % [Voice 17 measure 8] %! COMMENT_MEASURE_NUMBERS
+                    r4
+                    \!
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        bqf'8
                         \mf
                         \>
                         [
                         \glissando
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        af'16
-                        \glissando
-                        aqf'8
+                        b'16
                         ~
                     }
+                    \times 4/5 {
+                        b'16
+                        \glissando
+                        bqs'8
+                        \glissando
+                        c''8
+                        ~
+                    }
+                    c''16
+                    \pp
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    \glissando
+                    r16
+                    \!
+                    r16
+                    bqs'16
+                    \mf
+                    \>
+                    [
+                    \glissando
                 }
                 {
-                    \times 4/5 {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
                         % [Voice 17 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        aqf'16
+                        c''16
                         \glissando
-                        af'16
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                        r16
-                        \!
-                        gqs'16
-                        \mf
-                        \>
-                        [
-                        \glissando
-                        af'16
+                        cqs''8
                         \glissando
                     }
-                    aqf'16
-                    \glissando
-                    af'16
+                    c''16
                     \pp
-                    ~
-                    af'16
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
                     \glissando
                     r16
                     \!
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        r16
-                        gqs'16
-                        \mp
-                        \<
-                        [
-                        \glissando
-                        af'16
-                        ~
-                    }
-                    af'16
+                    bqs'16
+                    \mf
+                    \>
+                    [
                     \glissando
-                    gqs'16
-                    \glissando
-                    g'8
-                    \f
+                    c''16
+                    \pp
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                     \glissando
                 }
                 {
-                    % [Voice 17 measure 10] %! COMMENT_MEASURE_NUMBERS
-                    r4
-                    \!
-                    gqf'4
-                    \mp
-                    \<
-                    \glissando
                     \times 4/5 {
-                        g'8
-                        [
+                        cqs''8
+                        \mp
+                        \<
                         \glissando
-                        gqs'16
+                        c''16
                         \glissando
-                        g'16
+                        bqs'16
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
@@ -541,96 +471,50 @@
                         r16
                         \!
                     }
-                    r16
-                    gqf'16
-                    \mp
-                    \<
-                    [
-                    \glissando
-                    g'16
-                    \glissando
-                    gqs'16
-                    ]
-                    \glissando
-                }
-                {
-                    % [Voice 17 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    g'4
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                }
-                {
-                    gqs'16
-                    \pp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \glissando
-                    r16
-                    \!
-                    af'16
-                    \mf
-                    \>
-                    [
-                    \glissando
-                    gqs'16
-                    \glissando
-                    \times 4/5 {
-                        af'16
-                        \glissando
-                        aqf'8
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                        r8
-                        \!
-                    }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        a'16
-                        \mf
-                        \>
+                        c''16
+                        \mp
+                        \<
                         [
                         \glissando
-                        aqf'8
+                        bqs'16
                         \glissando
+                        b'16
+                        ~
                     }
                 }
                 {
                     \times 4/5 {
-                        % [Voice 17 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        af'16
+                        % [Voice 17 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        b'16
                         \glissando
-                        gqs'8
-                        \pp
-                        ~
-                        gqs'16
+                        bqf'8
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         \glissando
                         r16
                         \!
+                        b'16
+                        \mp
+                        \<
+                        ~
+                        [
                     }
-                    r16
-                    g'16
-                    \mf
-                    ~
-                    [
-                    g'16
-                    \>
+                    b'16
                     \glissando
-                    gqf'16
+                    bqs'16
+                    \glissando
+                    b'8
                     ~
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {
-                        gqf'8
+                        b'16
                         \glissando
-                        fs'16
-                        \pp
+                        bqf'8
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -638,54 +522,128 @@
                     }
                     r4
                     \!
+                }
+                {
+                    \times 4/5 {
+                        % [Voice 17 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        b'16
+                        \mp
+                        \<
+                        [
+                        \glissando
+                        bqs'8
+                        \glissando
+                        b'16
+                        \glissando
+                        bqs'16
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        \glissando
+                    }
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        c''8
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \glissando
+                        r16
+                        \!
+                    }
+                    \times 4/5 {
+                        bqs'16
+                        \mf
+                        \>
+                        [
+                        \glissando
+                        c''16
+                        \glissando
+                        cqs''8.
+                        \glissando
+                    }
+                    cs''16
+                    \pp
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                    \glissando
+                    r16
+                    \!
+                    cqs''16
+                    \mf
+                    \>
+                    [
+                    \glissando
+                    c''16
+                    \glissando
+                }
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        % [Voice 17 measure 12] %! COMMENT_MEASURE_NUMBERS
+                        bqs'16
+                        \glissando
+                        b'8
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \glissando
+                    }
+                    r8
+                    \!
+                    bqf'16
+                    \mf
+                    \>
+                    [
+                    \glissando
+                    bf'16
+                    ~
+                    \times 4/5 {
+                        bf'16
+                        \glissando
+                        bqf'16
+                        \glissando
+                        b'8.
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \glissando
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 4/3 {
+                        r8
+                        \!
+                        bqs'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        \glissando
+                    }
                 }
                 {
                     \times 4/5 {
                         % [Voice 17 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        gqf'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \glissando
-                        r16
-                        \!
-                        g'16
+                        c''16
                         \mp
                         \<
-                        [
                         \glissando
-                        gqs'16
+                        cqs''8
+                        ~
+                        cqs''16
                         \glissando
-                        af'16
+                        c''16
                         ~
                     }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        af'8
-                        \glissando
-                        aqf'16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                    }
-                    \times 4/5 {
-                        r16
-                        \!
-                        af'16
-                        \mp
-                        \<
-                        [
-                        \glissando
-                        aqf'16
-                        \glissando
-                        af'16
-                        \glissando
-                        aqf'16
-                        ~
-                    }
-                    aqf'16
+                    c''16
+                    \glissando
+                    cqs''16
                     \f
                     - \tweak stencil #constante-hairpin
                     \<
@@ -693,203 +651,24 @@
                     \glissando
                     r16
                     \!
-                    r16
-                    a'16
+                    c''16
                     \mp
-                    \<
-                    [
-                    \glissando
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 17 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        aqs'8
-                        \glissando
-                        a'16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \glissando
-                    }
-                }
-                {
-                    aqf'8.
-                    \mf
-                    \>
-                    \glissando
-                    af'16
-                    ~
-                    \times 4/5 {
-                        af'16
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                        r8
-                        \!
-                        aqf'8
-                        \mf
-                        \>
-                        ~
-                        [
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        aqf'16
-                        \glissando
-                        af'8
-                        \glissando
-                    }
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 17 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        aqf'16
-                        \glissando
-                        af'16
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                        r16
-                        \!
-                        r16
-                        gqs'16
-                        \mf
-                        \>
-                        [
-                        \glissando
-                    }
-                    g'16
-                    \glissando
-                    gqs'16
-                    \glissando
-                    g'8
-                    \pp
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
                     \glissando
-                }
-                {
                     r4
                     \!
-                    r16
-                    gqf'16
+                    cqs''16
                     \mp
                     \<
                     [
                     \glissando
-                    fs'16
-                    \glissando
-                    gqf'16
-                    ~
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 17 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        gqf'16
-                        \glissando
-                        g'8
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                        r16
-                        \!
-                        gqf'16
-                        \mp
-                        \<
-                        ~
-                        [
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        gqf'16
-                        \glissando
-                        g'16
-                        \glissando
-                        gqs'16
-                        ~
-                    }
-                    \times 4/5 {
-                        gqs'8
-                        \glissando
-                        g'16
-                        \f
-                        ~
-                        g'16
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                        r16
-                        \!
-                    }
-                }
-                {
-                    r16
-                    gqf'8.
-                    \mf
-                    \>
-                    [
-                    \glissando
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 17 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        fs'8
-                        \glissando
-                        fqs'16
-                        \glissando
-                    }
-                    f'16
-                    \pp
+                    cs''8.
+                    \f
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
-                    \glissando
-                    r16
-                    \!
-                    r16
-                    fqs'16
-                    \mf
-                    \>
-                    [
-                    \glissando
-                    \times 4/5 {
-                        fs'16
-                        \glissando
-                        fqs'16
-                        \glissando
-                        fs'8.
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \glissando
-                    }
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        r16
-                        \!
-                        fqs'16
-                        \mf
-                        \>
-                        [
-                        \glissando
-                        fs'16
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \bar "||"
-                    }
+                    \bar "||"
                 }
             }
         }

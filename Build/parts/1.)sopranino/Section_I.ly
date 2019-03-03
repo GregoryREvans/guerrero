@@ -50,15 +50,6 @@
             % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS
             \time 4/4
             s1 * 1
-            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
-            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS
-            \time 4/4
-            s1 * 1
         }
         \context Staff = "Staff 1"
         {
@@ -408,95 +399,6 @@
                     \p
                     - \tweak stencil #constante-hairpin
                     \<
-                }
-                {
-                    % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    a''4
-                }
-                {
-                    r4
-                    \!
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        r16
-                        af''8
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    af''4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ~
-                }
-                {
-                    % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
-                    af''8
-                    [
-                    g''8
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        g''16
-                        \mf
-                        \>
-                        af''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    fs''8.
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    f''16
-                    ~
-                    f''8.
-                    ]
-                    r16
-                    \!
-                }
-                {
-                    % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS
-                    r4
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        a''8
-                        \mf
-                        \>
-                        [
-                        bf''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
-                }
-                {
-                    fs''4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ~
-                }
-                {
-                    bf''16
-                    \mf
-                    \>
-                    [
-                    a''8.
-                    \mp
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
                     \bar "||"
                 }
             }

@@ -57,6 +57,7 @@
                     \markup { "Soprano 1" }
                     \tempo 4=60
                     r1
+                    \!
                 }
                 {
                     \times 2/3 {
@@ -213,7 +214,6 @@
                     \!
                     r4.
                     \bar "||"
-                    \pageBreak
                 }
             }
         }

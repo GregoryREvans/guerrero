@@ -120,7 +120,7 @@
                     \mp
                     _ \markup {
                         \override
-                            #'(size . 0.3)
+                            #'(size . 0.5)
                         \woodwind-diagram
                             #'alto-saxophone
                             #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ()))
@@ -207,7 +207,6 @@
                 {
                     r4
                 }
-                \pageBreak
                 {
                     % [Voice 9 measure 9] %! COMMENT_MEASURE_NUMBERS
                     r2
@@ -402,7 +401,6 @@
                     a'16
 
                 }
-                \pageBreak
                 {
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 4/3 {

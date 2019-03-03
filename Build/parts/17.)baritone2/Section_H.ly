@@ -61,6 +61,7 @@
                     - \halfopen
                     \<
                     [
+                    \!
                     bqf8
 
                     \times 2/3 {
@@ -109,7 +110,6 @@
                     r2
                     \!
                 }
-                \pageBreak
                 {
                     % [Voice 17 measure 5] %! COMMENT_MEASURE_NUMBERS
                     cs'2

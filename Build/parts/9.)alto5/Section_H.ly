@@ -62,6 +62,7 @@
 
                         \<
                         [
+                        \!
                         dqf'8
                         \mf
                         - \stopped

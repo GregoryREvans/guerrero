@@ -57,6 +57,7 @@
                     \markup { "Tenor 1" }
                     \tempo 4=60
                     r2
+                    \!
                 }
                 {
                     g'2
@@ -219,7 +220,6 @@
                     r4.
                     r4
                     \bar "||"
-                    \pageBreak
                 }
             }
         }

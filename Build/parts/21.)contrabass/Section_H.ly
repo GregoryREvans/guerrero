@@ -61,6 +61,7 @@
                         \mp
                         - \halfopen
                         \<
+                        \!
                         gqf'4
 
                     }
@@ -197,7 +198,6 @@
                     r2.
                     \!
                 }
-                \pageBreak
                 {
                     % [Voice 21 measure 11] %! COMMENT_MEASURE_NUMBERS
                     r4

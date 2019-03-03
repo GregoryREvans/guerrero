@@ -78,6 +78,7 @@
                         - \halfopen
                         \<
                         [
+                        \!
                         dqs''8
 
                         ef''8
@@ -242,6 +243,7 @@
                         \markup { "Soprano 1" }
                         \tempo 4=60
                         r1
+                        \!
                     }
                     {
                         \times 2/3 {
@@ -413,6 +415,7 @@
                         \markup { "Soprano 2" }
                         \tempo 4=60
                         r2
+                        \!
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -554,6 +557,7 @@
                         \markup { "Soprano 3" }
                         \tempo 4=60
                         r8
+                        \!
                     }
                     {
                         b'4.
@@ -761,6 +765,7 @@
                         \mp
                         - \stopped
                         \<
+                        \!
                         dqs''4.
                         r8
                         \!
@@ -925,6 +930,7 @@
                         \markup { "Alto 2" }
                         \tempo 4=60
                         r1
+                        \!
                     }
                     {
                         bf'4
@@ -1101,6 +1107,7 @@
                         \markup { "Alto 3" }
                         \tempo 4=60
                         r2
+                        \!
                     }
                     {
                         fs'4
@@ -1250,6 +1257,7 @@
                         \markup { "Alto 4" }
                         \tempo 4=60
                         r8
+                        \!
                     }
                     {
                         r4.
@@ -1427,6 +1435,7 @@
 
                             \<
                             [
+                            \!
                             dqf'8
                             \mf
                             - \stopped
@@ -1606,6 +1615,7 @@
                         \markup { "Alto 6" }
                         \tempo 4=60
                         r1
+                        \!
                     }
                     {
                         r4
@@ -1787,6 +1797,7 @@
                         \markup { "Tenor 1" }
                         \tempo 4=60
                         r2
+                        \!
                     }
                     {
                         g'2
@@ -1964,6 +1975,7 @@
                         \markup { "Tenor 2" }
                         \tempo 4=60
                         r8
+                        \!
                     }
                     {
                         r8.
@@ -2130,6 +2142,7 @@
                         b2
                         \mp
                         \<
+                        \!
                         bqs4
                         \mf
 
@@ -2314,6 +2327,7 @@
                         \markup { "Tenor 4" }
                         \tempo 4=60
                         r1
+                        \!
                     }
                     {
                         cqs'4
@@ -2485,6 +2499,7 @@
                         \markup { "Tenor 5" }
                         \tempo 4=60
                         r2
+                        \!
                     }
                     {
                         c'4
@@ -2647,6 +2662,7 @@
                         \markup { "Baritone 1" }
                         \tempo 4=60
                         r8
+                        \!
                     }
                     {
                         r4.
@@ -2821,6 +2837,7 @@
                         - \halfopen
                         \<
                         [
+                        \!
                         bqf8
 
                         \times 2/3 {
@@ -2990,6 +3007,7 @@
                         \markup { "Baritone 3" }
                         \tempo 4=60
                         r1
+                        \!
                     }
                     {
                         \times 2/3 {
@@ -3169,6 +3187,7 @@
                         \markup { "Bass 1" }
                         \tempo 4=60
                         r2
+                        \!
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3338,6 +3357,7 @@
                         \markup { "Bass 2" }
                         \tempo 4=60
                         r8
+                        \!
                     }
                     {
                         b8
@@ -3514,6 +3534,7 @@
                             \mp
                             - \halfopen
                             \<
+                            \!
                             gqf'4
 
                         }

@@ -86,7 +86,7 @@
                     \mp
                     _ \markup {
                         \override
-                            #'(size . 0.3)
+                            #'(size . 0.5)
                         \woodwind-diagram
                             #'tenor-saxophone
                             #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
@@ -285,7 +285,6 @@
                     \<
                     ]
                 }
-                \pageBreak
                 {
                     % [Voice 11 measure 10] %! COMMENT_MEASURE_NUMBERS
                     r2.

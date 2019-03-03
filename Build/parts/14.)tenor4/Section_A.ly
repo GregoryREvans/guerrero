@@ -87,7 +87,7 @@
                     - \espressivo
                     _ \markup {
                         \override
-                            #'(size . 0.3)
+                            #'(size . 0.5)
                         \woodwind-diagram
                             #'tenor-saxophone
                             #'((cc . (one two three five six)) (lh . (cis)) (rh . ()))
@@ -190,7 +190,6 @@
                     r2
                     \!
                 }
-                \pageBreak
                 {
                     % [Voice 14 measure 8] %! COMMENT_MEASURE_NUMBERS
                     fs'2.
