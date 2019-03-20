@@ -8,6 +8,9 @@ from MusicMaker import MusicMaker
 from AttachmentHandler import AttachmentHandler
 from random import random
 from random import seed
+from evans.general_tools.random_walk import randomWalk
+from evans.general_tools.rotate import rotate
+from evans.general_tools.mirror import mirror
 
 print('Interpreting file ...')
 
@@ -71,238 +74,200 @@ contrabass_chord = [-2, 2, 7, -2, 2, 7, 2, -2]
 def reduceMod(x, rw):
     return [(y % x) for y in rw]
 
-seed(101)
-sopranino_random_walk = []
-sopranino_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = sopranino_random_walk[i-1] + movement
-    sopranino_random_walk.append(value)
-    sopranino_walk_chord = [x + 9 for x in [18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, ]]
-l = len(sopranino_walk_chord)
-sopranino_random_walk_notes = [sopranino_walk_chord[x] for x in reduceMod(l, sopranino_random_walk)]
+walk_list = []
+for x in range(-1, 30):
+    walk_list.append(x)
+mirrored_walk_list = mirror(walk_list, sequential_duplicates=False)
 
-seed(102)
-soprano_1_random_walk = []
-soprano_1_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = soprano_1_random_walk[i-1] + movement
-    soprano_1_random_walk.append(value)
-soprano_1_walk_chord = [x + 5 for x in [17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, ]]
-l = len(soprano_1_walk_chord)
-soprano_1_random_walk_notes = [soprano_1_walk_chord[x] for x in reduceMod(l, soprano_1_random_walk)]
+sopranino_walk_chord = rotate(mirrored_walk_list, 28)
+sopranino_random_walk_notes = [x for x in randomWalk(
+    random_seed=101,
+    length=1000,
+    step_list=[1],
+    mapped_list=sopranino_walk_chord
+            )
+        ]
 
-seed(103)
-soprano_2_random_walk = []
-soprano_2_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = soprano_2_random_walk[i-1] + movement
-    soprano_2_random_walk.append(value)
-soprano_2_random_walk.append(value)
-soprano_2_walk_chord = [16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, ]
-l = len(soprano_2_walk_chord)
-soprano_2_random_walk_notes = [soprano_2_walk_chord[x] for x in reduceMod(l, soprano_2_random_walk)]
 
-seed(104)
-soprano_3_random_walk = []
-soprano_3_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = soprano_3_random_walk[i-1] + movement
-    soprano_3_random_walk.append(value)
-soprano_3_random_walk.append(value)
-soprano_3_walk_chord = [x - 2 for x in [15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, ]]
-l = len(soprano_3_walk_chord)
-soprano_3_random_walk_notes = [soprano_3_walk_chord[x] for x in reduceMod(l, soprano_3_random_walk)]
+soprano_1_walk_chord = rotate(mirrored_walk_list, 23)
+soprano_1_random_walk_notes = [x for x in randomWalk(
+    random_seed=102,
+    length=1000,
+    step_list=[1],
+    mapped_list=soprano_1_walk_chord
+            )
+        ]
 
-seed(105)
-alto_1_random_walk = []
-alto_1_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = alto_1_random_walk[i-1] + movement
-    alto_1_random_walk.append(value)
-alto_1_walk_chord = [x + 6 for x in [14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, ]]
-l = len(alto_1_walk_chord)
-alto_1_random_walk_notes = [alto_1_walk_chord[x] for x in reduceMod(l, alto_1_random_walk)]
+soprano_2_walk_chord = rotate(mirrored_walk_list, 17)
+soprano_2_random_walk_notes = [x for x in randomWalk(
+    random_seed=103,
+    length=1000,
+    step_list=[1],
+    mapped_list=soprano_2_walk_chord
+            )
+        ]
 
-seed(106)
-alto_2_random_walk = []
-alto_2_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = alto_2_random_walk[i-1] + movement
-    alto_2_random_walk.append(value)
-alto_2_walk_chord = [x - 1 for x in [13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, ]]
-l = len(alto_2_walk_chord)
-alto_2_random_walk_notes = [alto_2_walk_chord[x] for x in reduceMod(l, alto_2_random_walk)]
+soprano_3_walk_chord = rotate(mirrored_walk_list, 14)
+soprano_3_random_walk_notes = [x for x in randomWalk(
+    random_seed=104,
+    length=1000,
+    step_list=[1],
+    mapped_list=soprano_3_walk_chord
+            )
+        ]
 
-seed(107)
-alto_3_random_walk = []
-alto_3_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = alto_3_random_walk[i-1] + movement
-    alto_3_random_walk.append(value)
-alto_3_walk_chord = [x - 11 for x in [12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, ]]
-l = len(alto_3_walk_chord)
-alto_3_random_walk_notes = [alto_3_walk_chord[x] for x in reduceMod(l, alto_3_random_walk)]
+alto_1_walk_chord = rotate(mirrored_walk_list, 21)
+alto_1_random_walk_notes = [x for x in randomWalk(
+    random_seed=105,
+    length=1000,
+    step_list=[1],
+    mapped_list=alto_1_walk_chord
+            )
+        ]
 
-seed(108)
-alto_4_random_walk = []
-alto_4_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = alto_4_random_walk[i-1] + movement
-    alto_4_random_walk.append(value)
-alto_4_walk_chord = [x + 9 for x in [11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, ]]
-l = len(alto_4_walk_chord)
-alto_4_random_walk_notes = [alto_4_walk_chord[x] for x in reduceMod(l, alto_4_random_walk)]
+alto_2_walk_chord = rotate(mirrored_walk_list, 13)
+alto_2_random_walk_notes = [x for x in randomWalk(
+    random_seed=106,
+    length=1000,
+    step_list=[1],
+    mapped_list=alto_2_walk_chord
+            )
+        ]
 
-seed(109)
-alto_5_random_walk = []
-alto_5_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = alto_5_random_walk[i-1] + movement
-    alto_5_random_walk.append(value)
-alto_5_walk_chord = [x + 2 for x in [10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, ]]
-l = len(alto_5_walk_chord)
-alto_5_random_walk_notes = [alto_5_walk_chord[x] for x in reduceMod(l, alto_5_random_walk)]
+alto_3_walk_chord = rotate(mirrored_walk_list, 2)
+alto_3_random_walk_notes = [x for x in randomWalk(
+    random_seed=107,
+    length=1000,
+    step_list=[1],
+    mapped_list=alto_3_walk_chord
+            )
+        ]
 
-seed(110)
-alto_6_random_walk = []
-alto_6_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = alto_6_random_walk[i-1] + movement
-    alto_6_random_walk.append(value)
-alto_6_walk_chord = [x - 8 for x in [9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, ]]
-l = len(alto_6_walk_chord)
-alto_6_random_walk_notes = [alto_6_walk_chord[x] for x in reduceMod(l, alto_6_random_walk)]
+alto_4_walk_chord = rotate(mirrored_walk_list, 21)
+alto_4_random_walk_notes = [x for x in randomWalk(
+    random_seed=108,
+    length=1000,
+    step_list=[1],
+    mapped_list=alto_4_walk_chord
+            )
+        ]
 
-seed(111)
-tenor_1_random_walk = []
-tenor_1_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = tenor_1_random_walk[i-1] + movement
-    tenor_1_random_walk.append(value)
-tenor_1_walk_chord = [x + 9 for x in [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, ]]
-l = len(tenor_1_walk_chord)
-tenor_1_random_walk_notes = [tenor_1_walk_chord[x] for x in reduceMod(l, tenor_1_random_walk)]
+alto_5_walk_chord = rotate(mirrored_walk_list, 13)
+alto_5_random_walk_notes = [x for x in randomWalk(
+    random_seed=109,
+    length=1000,
+    step_list=[1],
+    mapped_list=alto_5_walk_chord
+            )
+        ]
 
-seed(112)
-tenor_2_random_walk = []
-tenor_2_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = tenor_2_random_walk[i-1] + movement
-    tenor_2_random_walk.append(value)
-tenor_2_walk_chord = [x - 1 for x in [7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, ]]
-l = len(tenor_2_walk_chord)
-tenor_2_random_walk_notes = [tenor_2_walk_chord[x] for x in reduceMod(l, tenor_2_random_walk)]
+alto_6_walk_chord = rotate(mirrored_walk_list, 2)
+alto_6_random_walk_notes = [x for x in randomWalk(
+    random_seed=110,
+    length=1000,
+    step_list=[1],
+    mapped_list=alto_6_walk_chord
+            )
+        ]
 
-seed(113)
-tenor_3_random_walk = []
-tenor_3_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = tenor_3_random_walk[i-1] + movement
-    tenor_3_random_walk.append(value)
-tenor_3_walk_chord = [x - 7 for x in [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, ]]
-l = len(tenor_3_walk_chord)
-tenor_3_random_walk_notes = [tenor_3_walk_chord[x] for x in reduceMod(l, tenor_3_random_walk)]
+tenor_1_walk_chord = rotate(mirrored_walk_list, 18)
+tenor_1_random_walk_notes = [x for x in randomWalk(
+    random_seed=111,
+    length=1000,
+    step_list=[1],
+    mapped_list=tenor_1_walk_chord
+            )
+        ]
 
-seed(114)
-tenor_4_random_walk = []
-tenor_4_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = tenor_4_random_walk[i-1] + movement
-    tenor_4_random_walk.append(value)
-tenor_4_walk_chord = [x + 12 for x in [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, ]]
-l = len(tenor_4_walk_chord)
-tenor_4_random_walk_notes = [tenor_4_walk_chord[x] for x in reduceMod(l, tenor_4_random_walk)]
+tenor_2_walk_chord = rotate(mirrored_walk_list, 7)
+tenor_2_random_walk_notes = [x for x in randomWalk(
+    random_seed=112,
+    length=1000,
+    step_list=[1],
+    mapped_list=tenor_2_walk_chord
+            )
+        ]
 
-seed(115)
-tenor_5_random_walk = []
-tenor_5_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = tenor_5_random_walk[i-1] + movement
-    tenor_5_random_walk.append(value)
-tenor_5_walk_chord = [x + 2 for x in [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, ]]
-l = len(tenor_5_walk_chord)
-tenor_5_random_walk_notes = [tenor_5_walk_chord[x] for x in reduceMod(l, tenor_5_random_walk)]
+tenor_3_walk_chord = rotate(mirrored_walk_list, 0)
+tenor_3_random_walk_notes = [x for x in randomWalk(
+    random_seed=113,
+    length=1000,
+    step_list=[1],
+    mapped_list=tenor_3_walk_chord
+            )
+        ]
 
-seed(116)
-baritone_1_random_walk = []
-baritone_1_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = baritone_1_random_walk[i-1] + movement
-    baritone_1_random_walk.append(value)
-baritone_1_walk_chord = [x + 10 for x in [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, ]]
-l = len(baritone_1_walk_chord)
-baritone_1_random_walk_notes = [baritone_1_walk_chord[x] for x in reduceMod(l, baritone_1_random_walk)]
+tenor_4_walk_chord = rotate(mirrored_walk_list, 18)
+tenor_4_random_walk_notes = [x for x in randomWalk(
+    random_seed=114,
+    length=1000,
+    step_list=[1],
+    mapped_list=tenor_4_walk_chord
+            )
+        ]
 
-seed(117)
-baritone_2_random_walk = []
-baritone_2_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = baritone_2_random_walk[i-1] + movement
-    baritone_2_random_walk.append(value)
-baritone_2_walk_chord = [x + 4 for x in [2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, ]]
-l = len(baritone_2_walk_chord)
-baritone_2_random_walk_notes = [baritone_2_walk_chord[x] for x in reduceMod(l, baritone_2_random_walk)]
+tenor_5_walk_chord = rotate(mirrored_walk_list, 7)
+tenor_5_random_walk_notes = [x for x in randomWalk(
+    random_seed=115,
+    length=1000,
+    step_list=[1],
+    mapped_list=tenor_5_walk_chord
+            )
+        ]
 
-seed(118)
-baritone_3_random_walk = []
-baritone_3_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = baritone_3_random_walk[i-1] + movement
-    baritone_3_random_walk.append(value)
-baritone_3_walk_chord = [x + 3 for x in [1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, 0, 0.5, ]]
-l = len(baritone_3_walk_chord)
-baritone_3_random_walk_notes = [baritone_3_walk_chord[x] for x in reduceMod(l, baritone_3_random_walk)]
+baritone_1_walk_chord = rotate(mirrored_walk_list, 14)
+baritone_1_random_walk_notes = [x for x in randomWalk(
+    random_seed=116,
+    length=1000,
+    step_list=[1],
+    mapped_list=baritone_1_walk_chord
+            )
+        ]
 
-seed(119)
-bass_1_random_walk = []
-bass_1_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = bass_1_random_walk[i-1] + movement
-    bass_1_random_walk.append(value)
-bass_1_walk_chord = [x + 11 for x in [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, -1, -0.5, ]]
-l = len(bass_1_walk_chord)
-bass_1_random_walk_notes = [bass_1_walk_chord[x] for x in reduceMod(l, bass_1_random_walk)]
+baritone_2_walk_chord = rotate(mirrored_walk_list, 7)
+baritone_2_random_walk_notes = [x for x in randomWalk(
+    random_seed=117,
+    length=1000,
+    step_list=[1],
+    mapped_list=baritone_2_walk_chord
+            )
+        ]
 
-seed(120)
-bass_2_random_walk = []
-bass_2_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = bass_2_random_walk[i-1] + movement
-    bass_2_random_walk.append(value)
-bass_2_walk_chord = [x + 10 for x in [-1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, -2, -1.5, ]]
-l = len(bass_2_walk_chord)
-bass_2_random_walk_notes = [bass_2_walk_chord[x] for x in reduceMod(l, bass_2_random_walk)]
+baritone_3_walk_chord = rotate(mirrored_walk_list, 5)
+baritone_3_random_walk_notes = [x for x in randomWalk(
+    random_seed=118,
+    length=1000,
+    step_list=[1],
+    mapped_list=baritone_3_walk_chord
+            )
+        ]
 
-seed(121)
-contrabass_random_walk = []
-contrabass_random_walk.append(-1 if random() < 0.5 else 1)
-for i in range(1, 1000):
-    movement = -1 if random() < 0.5 else 1
-    value = contrabass_random_walk[i-1] + movement
-    contrabass_random_walk.append(value)
-contrabass_walk_chord = [x + 4 for x in [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22, 22.5, 22, 21.5, 21, 20.5, 20, 19.5, 19, 18.5, 18, 17.5, 17, 16.5, 16, 15.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11, 10.5, 10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.5, 2, 1.5, 1, 0.5, 0, -0.5, -1, -1.5, ]]
-l = len(contrabass_walk_chord)
-contrabass_random_walk_notes = [contrabass_walk_chord[x] for x in reduceMod(l, contrabass_random_walk)]
+bass_1_walk_chord = rotate(mirrored_walk_list, 12)
+bass_1_random_walk_notes = [x for x in randomWalk(
+    random_seed=119,
+    length=1000,
+    step_list=[1],
+    mapped_list=bass_1_walk_chord
+            )
+        ]
+
+bass_2_walk_chord = rotate(mirrored_walk_list, 10)
+bass_2_random_walk_notes = [x for x in randomWalk(
+    random_seed=120,
+    length=1000,
+    step_list=[1],
+    mapped_list=bass_2_walk_chord
+            )
+        ]
+
+contrabass_walk_chord = rotate(mirrored_walk_list, 3)
+contrabass_random_walk_notes = [x for x in randomWalk(
+    random_seed=121,
+    length=1000,
+    step_list=[1],
+    mapped_list=contrabass_walk_chord
+            )
+        ]
 
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
