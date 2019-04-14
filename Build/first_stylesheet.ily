@@ -2,10 +2,10 @@
 
 \version "2.19.82"
 \language "english"
-#(set-default-paper-size "11x17portrait")
-%{ #(set-default-paper-size "ansi c") %}
+%{ #(set-default-paper-size "11x17portrait") %}
+#(set-default-paper-size "ansi c")
 %{ #(set-global-staff-size 6) %}
-#(set-global-staff-size 11)
+#(set-global-staff-size 14)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
@@ -90,15 +90,15 @@
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 22) (minimum-distance . 22) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 19) (minimum-distance . 19) (padding . 0))
 		\override Stem.stemlet-length = #1.15
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 34)
-		%{ proportionalNotationDuration = #(ly:make-moment 1 65) %}
+		%{ proportionalNotationDuration = #(ly:make-moment 1 34) %}
+		proportionalNotationDuration = #(ly:make-moment 1 50)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -127,10 +127,10 @@
 	left-margin = 1.2\cm
 	right-margin = 1\cm %}
 
-	top-margin = 0.5\cm
-	bottom-margin = 0.15\cm
-	left-margin = 1.2\cm
-	right-margin = 0.2\cm
+	top-margin = 1.6\cm
+	bottom-margin = 0.7\cm
+	left-margin = 2.3\cm
+	right-margin = 1.3\cm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""
