@@ -1,18 +1,21 @@
 \documentclass[12pt]{article}
 \usepackage{fontspec}
-\setmainfont[Ligatures=TeX]{Didot}
-\usepackage[utf8]{inputenc}
-\usepackage[papersize={17in, 22in}]{geometry}
-\usepackage[absolute]{textpos}
-\TPGrid[0.5in, 0.25in]{23}{24}
-\usepackage{palatino}
+\usepackage[T1]{fontenc}
+\usepackage[papersize={17in, 22in}, margin=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xltxtra,fontspec,xunicode}
+\usetikzlibrary{calc}
+\defaultfontfeatures{Scale=MatchLowercase}
+\newlength{\drop}
+\pagenumbering{gobble}
 \parindent=0pt
-\parskip=12pt
-\usepackage{nopageno}
+\setmainfont{Didot}
+\usepackage{microtype}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
-\usepackage{lilyglyphs}
-\usepackage{amsmath}
+\usepackage{amsmath}\usepackage[absolute]{textpos}
+\TPGrid[0.5in, 0.25in]{23}{24}
 \begin{document}
 
 \begin{center}

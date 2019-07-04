@@ -2,11 +2,13 @@
 *.mp3
 *.m4a
 *.wav
+*.WAV
 *.aif
 *.eps
 *.aux
 *.log
 *.gz
 *.png
+soundcloud
 __images__
 __pycache__

@@ -8,5 +8,6 @@
 *.log
 *.gz
 *.png
+*.pdf
 __images__
 __pycache__

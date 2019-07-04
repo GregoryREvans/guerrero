@@ -8,5 +8,9 @@
 *.log
 *.gz
 *.png
+*.pdf
+*.synctex.gz
+*.aux
+*.log
 __images__
 __pycache__

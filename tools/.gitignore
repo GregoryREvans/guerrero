@@ -4,6 +4,7 @@
 *.wav
 *.aif
 *.eps
+*.pdf
 *.aux
 *.log
 *.gz
