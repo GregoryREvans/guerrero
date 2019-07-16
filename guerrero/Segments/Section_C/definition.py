@@ -4562,7 +4562,7 @@ for voice_name, timespan_list in all_timespan_lists.items():
         durations = [timespan.duration for timespan in grouper]
         container = make_container(music_maker, durations)
         voice = score[voice_name]
-        voice.append(container) #should be container[:]
+        voice.append(container)  # should be container[:]
 
 print("Splitting and rewriting ...")
 # split and rewite meters
@@ -4716,13 +4716,12 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
 
 # Make a lilypond file and show it:
 
-abjad_stylesheet_path = os.path.join(
-    os.environ.get("HOME"), "abjad/docs/source/_stylesheets/abjad.ily"
-)
-current_directory = pathlib.Path(__file__).parent
-stylesheet_path = (current_directory / ".." / ".." / "Build").resolve()
 score_file = abjad.LilyPondFile.new(
-    score, includes=[abjad_stylesheet_path, f"{stylesheet_path}/first_stylesheet.ily"]
+    score,
+    includes=[
+        "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
+        "/Users/evansdsg2/Scores/guerrero/guerrero/Build/first_stylesheet.ily",
+    ],
 )
 
 abjad.SegmentMaker.comment_measure_numbers(score)
@@ -4770,7 +4769,10 @@ for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
     part.insert(0, signature_copy)
     part_file = abjad.LilyPondFile.new(
         part,
-        includes=[abjad_stylesheet_path, f"{stylesheet_path}/parts_stylesheet.ily"],
+        includes=[
+            "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
+            "/Users/evansdsg2/Scores/guerrero/guerrero/Build/parts_stylesheet.ily",
+        ],
     )
     pdf_path = f"{directory}/part_illustration{count + 1}.pdf"
     path = pathlib.Path(f"part_illustration{count + 1}.pdf")
@@ -4789,7 +4791,7 @@ for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
         print(f"Opening {pdf_path} ...")
         os.system(f"open {pdf_path}")
     build_path = (directory / ".." / ".." / f"Build/parts/part_{count + 1}").resolve()
-    part_lines = open(f"{directory}/part_illustration{count}.ly").readlines()
+    part_lines = open(f"{directory}/part_illustration{count + 1}.ly").readlines()
     open(f"{build_path}/Section_C.ly", "w").writelines(part_lines[15:-1])
 time_6 = time.time()
 parts_time = time_6 - time_5
