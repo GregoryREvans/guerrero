@@ -16,7 +16,7 @@ before_install:
     - LOCATION=`pwd`
 
     # alias package:
-    - PACKAGE=`pwd`/sand
+    - PACKAGE=`pwd`/guerrero
     - export PYTHONPATH=$PACKAGE:$PYTHONPATH
 
     # upgrade pip:
