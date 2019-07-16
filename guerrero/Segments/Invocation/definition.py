@@ -5,8 +5,8 @@ import pathlib
 import time
 import datetime
 import abjadext.rmakers
-from .MusicMaker import MusicMaker
-from .AttachmentHandler import AttachmentHandler
+from guerrero.tools.MusicMaker import MusicMaker
+from guerrero.tools.AttachmentHandler import AttachmentHandler
 from random import random
 from random import seed
 

@@ -5,8 +5,8 @@ import pathlib
 import time
 import datetime
 import abjadext.rmakers
-from .MusicMaker import MusicMaker
-from .AttachmentHandler import AttachmentHandler
+from guerrero.tools.MusicMaker import MusicMaker
+from guerrero.tools.AttachmentHandler import AttachmentHandler
 from random import random
 from random import seed
 
@@ -4562,7 +4562,7 @@ for voice_name, timespan_list in all_timespan_lists.items():
         durations = [timespan.duration for timespan in grouper]
         container = make_container(music_maker, durations)
         voice = score[voice_name]
-        voice.append(container)
+        voice.append(container) #should be container[:]
 
 print("Splitting and rewriting ...")
 # split and rewite meters
