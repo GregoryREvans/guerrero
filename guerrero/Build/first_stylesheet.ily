@@ -2,8 +2,8 @@
 
 \version "2.19.82"
 \language "english"
-%{ #(set-default-paper-size "11x17portrait") %}
-#(set-default-paper-size "ansi c")
+#(set-default-paper-size "11x17portrait")
+%{ #(set-default-paper-size "ansi c") %}
 %{ #(set-global-staff-size 6) %}
 #(set-global-staff-size 14)
 \include "ekmel.ily"
@@ -26,7 +26,7 @@
 	%\accidentalStyle modern
     indent = #5
 	%ragged-last = ##t
-    %{ ragged-right = ##t %}
+    ragged-right = ##t
     %left-margin = #15
 	\context {
         \name TimeSignatureContext
