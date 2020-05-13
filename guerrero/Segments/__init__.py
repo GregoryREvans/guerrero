@@ -1,11 +1,13 @@
-from . import Invocation
-from . import Section_A
-from . import Section_B
-from . import Section_C
-from . import Section_D
-from . import Section_E
-from . import Section_F
-from . import Section_G
-from . import Section_H
-from . import Section_I
-from . import Section_J
+from . import (
+    Invocation,
+    Section_A,
+    Section_B,
+    Section_C,
+    Section_D,
+    Section_E,
+    Section_F,
+    Section_G,
+    Section_H,
+    Section_I,
+    Section_J,
+)

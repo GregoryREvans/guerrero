@@ -1,2 +1,1 @@
-from . import Build
-from . import Segments
+from . import Build, Segments

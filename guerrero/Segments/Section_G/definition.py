@@ -1,17 +1,17 @@
-import abjad
+import datetime
 import itertools
 import os
 import pathlib
 import time
-import datetime
+from random import random, seed
+
+import abjad
 import abjadext.rmakers
-from guerrero.tools.MusicMaker import MusicMaker
-from guerrero.tools.AttachmentHandler import AttachmentHandler
-from random import random
-from random import seed
+from evans.general_tools.mirror import mirror
 from evans.general_tools.random_walk import randomWalk
 from evans.general_tools.rotate import rotate
-from evans.general_tools.mirror import mirror
+from guerrero.tools.AttachmentHandler import AttachmentHandler
+from guerrero.tools.MusicMaker import MusicMaker
 
 time_1 = time.time()
 
