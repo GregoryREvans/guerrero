@@ -1,4 +1,5 @@
 # Guerrero
 for 21 saxophones (2018)
 composed for the FROST Saxophone Ensemble<br/>
-[![Build Status](https://travis-ci.org/GregoryREvans/guerrero.svg?branch=master)](https://travis-ci.org/GregoryREvans/guerrero) [![Coverage Status](https://coveralls.io/repos/github/GregoryREvans/guerrero/badge.svg?branch=master)](https://coveralls.io/github/GregoryREvans/guerrero?branch=master) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black) [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/GregoryREvans/guerrero.svg)](http://isitmaintained.com/project/GregoryREvans/guerrero "Average time to resolve an issue") [![Percentage of issues still open](http://isitmaintained.com/badge/open/GregoryREvans/guerrero.svg)](http://isitmaintained.com/project/GregoryREvans/guerrero "Percentage of issues still open")
+[![Build Status](https://travis-ci.org/GregoryREvans/guerrero.svg?branch=master)](https://travis-ci.org/GregoryREvans/guerrero)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
