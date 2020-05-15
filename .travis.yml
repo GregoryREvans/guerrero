@@ -34,19 +34,10 @@ before_install:
     - export MYPYPATH=$ABJAD
     - export PATH=$PATH:$ABJAD/abjad/scr
 
-    # # clone & install rmakers:
-    # - RMAKERS=/tmp/abjad-ext-rmakers
-    # - git clone https://github.com/Abjad/abjad-ext-rmakers.git $RMAKERS
-    # - cd $RMAKERS
-    # - pip install -e $RMAKERS
-    # - cd $LOCATION
-    # - export MYPYPATH=$MYPYPATH:$RMAKERS
-
-    # clone & install old rmakers:
+    # clone & install rmakers:
     - RMAKERS=/tmp/abjad-ext-rmakers
     - git clone https://github.com/Abjad/abjad-ext-rmakers.git $RMAKERS
     - cd $RMAKERS
-    - git checkout 49bd2d86258d0c209fed3a93ff9434b18c784cdd # doesn't work
     - pip install -e $RMAKERS
     - cd $LOCATION
     - export MYPYPATH=$MYPYPATH:$RMAKERS
@@ -61,6 +52,14 @@ before_install:
     - git clone https://github.com/trevorbaca/baca.git $BACA
     - export PYTHONPATH=$BACA/:$PYTHONPATH
 
+    # clone & install evans test:
+    - TEST=/tmp/test
+    - git clone https://github.com/GregoryREvans/test.git $TEST
+
+    # symlink to evans test
+    - unlink $PACKAGE/test.py
+    - ln -s $TEST/test_segments.py $PACKAGE/test.py
+
     # clone & install tsmakers:
     - TSMAKERS=/tmp/tsmakers
     - git clone https://github.com/ivanalexandermoscotta/tsmakers.git $TSMAKERS
@@ -68,9 +67,12 @@ before_install:
 
     # log setup:
     - echo $PYTHONPATH
+    - echo $TRAVIS_BUILD_DIR
+    - ls
+    - echo $PACKAGE
 
 script:
-    - py.test -rf $PACKAGE
+    - py.test -rf $PACKAGE/test.py
 
 after_success:
     - pip install --quiet coveralls
