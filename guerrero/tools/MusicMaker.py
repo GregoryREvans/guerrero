@@ -1,7 +1,5 @@
 import abjad
 
-from .AttachmentHandler import AttachmentHandler
-
 
 class MusicMaker:
     def __init__(
@@ -23,14 +21,13 @@ class MusicMaker:
         return self._make_music(durations)
 
     def _make_basic_rhythm(self, durations):
-        state = self.state
         selections = self.rmaker(durations, previous_state=self.rmaker.state)
         self.state = self.rmaker.state
         return selections
 
     def _make_music(self, durations):
         selections = self._make_basic_rhythm(durations)
-        if self.pitches == None:
+        if self.pitches is None:
             start_command = abjad.LilyPondLiteral(
                 r"\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff",
                 format_slot="before",
@@ -44,16 +41,16 @@ class MusicMaker:
             abjad.attach(literal, selections[0][0])
             abjad.attach(start_command, selections[0][0])
             abjad.attach(stop_command, selections[0][-1])
-        if self.pitches != None:
+        if self.pitches is not None:
             selections = self._apply_pitches(selections, self.pitches)
-        if self.attachment_handler != None:
+        if self.attachment_handler is not None:
             selections = self.attachment_handler(selections)
             self._count += 1
         return selections
 
     def _collect_pitches_durations_leaves(self, logical_ties, pitches):
         def cyc(lst):
-            if self.continuous == False:
+            if self.continuous is False:
                 self._count = 0
             while True:
                 yield lst[self._count % len(lst)]

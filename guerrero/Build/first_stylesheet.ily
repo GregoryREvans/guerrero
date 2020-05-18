@@ -12,7 +12,7 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Didot") \fontsize #4.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
+	dedication = \markup \override #'(font-name . "Didot") \fontsize #4.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  list_  e"}
 	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"GUERRERO" }
 	subtitle = \markup \override #'(font-name . "Didot") \fontsize #7 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
 	%{ subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #5 \center-column {" "} %}

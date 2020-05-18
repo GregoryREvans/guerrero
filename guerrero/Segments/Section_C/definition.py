@@ -250,9 +250,9 @@ for i in range(1, 1000):
         16,
         17,
     ]
-l = len(sopranino_walk_chord)
+list_ = len(sopranino_walk_chord)
 sopranino_random_walk_notes = [
-    sopranino_walk_chord[x] for x in reduceMod(l, sopranino_random_walk)
+    sopranino_walk_chord[x] for x in reduceMod(list_, sopranino_random_walk)
 ]
 
 seed(23)
@@ -312,9 +312,9 @@ soprano_1_walk_chord = [
     15,
     16,
 ]
-l = len(soprano_1_walk_chord)
+list_ = len(soprano_1_walk_chord)
 soprano_1_random_walk_notes = [
-    soprano_1_walk_chord[x] for x in reduceMod(l, soprano_1_random_walk)
+    soprano_1_walk_chord[x] for x in reduceMod(list_, soprano_1_random_walk)
 ]
 
 seed(24)
@@ -375,9 +375,9 @@ soprano_2_walk_chord = [
     14,
     15,
 ]
-l = len(soprano_2_walk_chord)
+list_ = len(soprano_2_walk_chord)
 soprano_2_random_walk_notes = [
-    soprano_2_walk_chord[x] for x in reduceMod(l, soprano_2_random_walk)
+    soprano_2_walk_chord[x] for x in reduceMod(list_, soprano_2_random_walk)
 ]
 
 seed(25)
@@ -438,9 +438,9 @@ soprano_3_walk_chord = [
     13,
     14,
 ]
-l = len(soprano_3_walk_chord)
+list_ = len(soprano_3_walk_chord)
 soprano_3_random_walk_notes = [
-    soprano_3_walk_chord[x] for x in reduceMod(l, soprano_3_random_walk)
+    soprano_3_walk_chord[x] for x in reduceMod(list_, soprano_3_random_walk)
 ]
 
 seed(26)
@@ -500,9 +500,9 @@ alto_1_walk_chord = [
     12,
     13,
 ]
-l = len(alto_1_walk_chord)
+list_ = len(alto_1_walk_chord)
 alto_1_random_walk_notes = [
-    alto_1_walk_chord[x] for x in reduceMod(l, alto_1_random_walk)
+    alto_1_walk_chord[x] for x in reduceMod(list_, alto_1_random_walk)
 ]
 
 seed(27)
@@ -562,9 +562,9 @@ alto_2_walk_chord = [
     11,
     12,
 ]
-l = len(alto_2_walk_chord)
+list_ = len(alto_2_walk_chord)
 alto_2_random_walk_notes = [
-    alto_2_walk_chord[x] for x in reduceMod(l, alto_2_random_walk)
+    alto_2_walk_chord[x] for x in reduceMod(list_, alto_2_random_walk)
 ]
 
 seed(28)
@@ -624,9 +624,9 @@ alto_3_walk_chord = [
     10,
     11,
 ]
-l = len(alto_3_walk_chord)
+list_ = len(alto_3_walk_chord)
 alto_3_random_walk_notes = [
-    alto_3_walk_chord[x] for x in reduceMod(l, alto_3_random_walk)
+    alto_3_walk_chord[x] for x in reduceMod(list_, alto_3_random_walk)
 ]
 
 seed(29)
@@ -686,9 +686,9 @@ alto_4_walk_chord = [
     9,
     10,
 ]
-l = len(alto_4_walk_chord)
+list_ = len(alto_4_walk_chord)
 alto_4_random_walk_notes = [
-    alto_4_walk_chord[x] for x in reduceMod(l, alto_4_random_walk)
+    alto_4_walk_chord[x] for x in reduceMod(list_, alto_4_random_walk)
 ]
 
 seed(30)
@@ -748,9 +748,9 @@ alto_5_walk_chord = [
     8,
     9,
 ]
-l = len(alto_5_walk_chord)
+list_ = len(alto_5_walk_chord)
 alto_5_random_walk_notes = [
-    alto_5_walk_chord[x] for x in reduceMod(l, alto_5_random_walk)
+    alto_5_walk_chord[x] for x in reduceMod(list_, alto_5_random_walk)
 ]
 
 seed(31)
@@ -810,9 +810,9 @@ alto_6_walk_chord = [
     7,
     8,
 ]
-l = len(alto_6_walk_chord)
+list_ = len(alto_6_walk_chord)
 alto_6_random_walk_notes = [
-    alto_6_walk_chord[x] for x in reduceMod(l, alto_6_random_walk)
+    alto_6_walk_chord[x] for x in reduceMod(list_, alto_6_random_walk)
 ]
 
 seed(32)
@@ -872,9 +872,9 @@ tenor_1_walk_chord = [
     6,
     7,
 ]
-l = len(tenor_1_walk_chord)
+list_ = len(tenor_1_walk_chord)
 tenor_1_random_walk_notes = [
-    tenor_1_walk_chord[x] for x in reduceMod(l, tenor_1_random_walk)
+    tenor_1_walk_chord[x] for x in reduceMod(list_, tenor_1_random_walk)
 ]
 
 seed(33)
@@ -934,9 +934,9 @@ tenor_2_walk_chord = [
     5,
     6,
 ]
-l = len(tenor_2_walk_chord)
+list_ = len(tenor_2_walk_chord)
 tenor_2_random_walk_notes = [
-    tenor_2_walk_chord[x] for x in reduceMod(l, tenor_2_random_walk)
+    tenor_2_walk_chord[x] for x in reduceMod(list_, tenor_2_random_walk)
 ]
 
 seed(34)
@@ -996,9 +996,9 @@ tenor_3_walk_chord = [
     4,
     5,
 ]
-l = len(tenor_3_walk_chord)
+list_ = len(tenor_3_walk_chord)
 tenor_3_random_walk_notes = [
-    tenor_3_walk_chord[x] for x in reduceMod(l, tenor_3_random_walk)
+    tenor_3_walk_chord[x] for x in reduceMod(list_, tenor_3_random_walk)
 ]
 
 seed(35)
@@ -1058,9 +1058,9 @@ tenor_4_walk_chord = [
     3,
     4,
 ]
-l = len(tenor_4_walk_chord)
+list_ = len(tenor_4_walk_chord)
 tenor_4_random_walk_notes = [
-    tenor_4_walk_chord[x] for x in reduceMod(l, tenor_4_random_walk)
+    tenor_4_walk_chord[x] for x in reduceMod(list_, tenor_4_random_walk)
 ]
 
 seed(36)
@@ -1120,9 +1120,9 @@ tenor_5_walk_chord = [
     2,
     3,
 ]
-l = len(tenor_5_walk_chord)
+list_ = len(tenor_5_walk_chord)
 tenor_5_random_walk_notes = [
-    tenor_5_walk_chord[x] for x in reduceMod(l, tenor_5_random_walk)
+    tenor_5_walk_chord[x] for x in reduceMod(list_, tenor_5_random_walk)
 ]
 
 seed(37)
@@ -1182,9 +1182,9 @@ baritone_1_walk_chord = [
     1,
     2,
 ]
-l = len(baritone_1_walk_chord)
+list_ = len(baritone_1_walk_chord)
 baritone_1_random_walk_notes = [
-    baritone_1_walk_chord[x] for x in reduceMod(l, baritone_1_random_walk)
+    baritone_1_walk_chord[x] for x in reduceMod(list_, baritone_1_random_walk)
 ]
 
 seed(38)
@@ -1244,9 +1244,9 @@ baritone_2_walk_chord = [
     0,
     1,
 ]
-l = len(baritone_2_walk_chord)
+list_ = len(baritone_2_walk_chord)
 baritone_2_random_walk_notes = [
-    baritone_2_walk_chord[x] for x in reduceMod(l, baritone_2_random_walk)
+    baritone_2_walk_chord[x] for x in reduceMod(list_, baritone_2_random_walk)
 ]
 
 seed(39)
@@ -1306,9 +1306,9 @@ baritone_3_walk_chord = [
     -1,
     0,
 ]
-l = len(baritone_3_walk_chord)
+list_ = len(baritone_3_walk_chord)
 baritone_3_random_walk_notes = [
-    baritone_3_walk_chord[x] for x in reduceMod(l, baritone_3_random_walk)
+    baritone_3_walk_chord[x] for x in reduceMod(list_, baritone_3_random_walk)
 ]
 
 seed(40)
@@ -1368,9 +1368,9 @@ bass_1_walk_chord = [
     -2,
     -1,
 ]
-l = len(bass_1_walk_chord)
+list_ = len(bass_1_walk_chord)
 bass_1_random_walk_notes = [
-    bass_1_walk_chord[x] for x in reduceMod(l, bass_1_random_walk)
+    bass_1_walk_chord[x] for x in reduceMod(list_, bass_1_random_walk)
 ]
 
 seed(41)
@@ -1430,9 +1430,9 @@ bass_2_walk_chord = [
     -1,
     -2,
 ]
-l = len(bass_2_walk_chord)
+list_ = len(bass_2_walk_chord)
 bass_2_random_walk_notes = [
-    bass_2_walk_chord[x] for x in reduceMod(l, bass_2_random_walk)
+    bass_2_walk_chord[x] for x in reduceMod(list_, bass_2_random_walk)
 ]
 
 seed(42)
@@ -1492,9 +1492,9 @@ contrabass_walk_chord = [
     0,
     -1,
 ]
-l = len(contrabass_walk_chord)
+list_ = len(contrabass_walk_chord)
 contrabass_random_walk_notes = [
-    contrabass_walk_chord[x] for x in reduceMod(l, contrabass_random_walk)
+    contrabass_walk_chord[x] for x in reduceMod(list_, contrabass_random_walk)
 ]
 
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.

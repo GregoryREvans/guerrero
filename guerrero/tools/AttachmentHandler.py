@@ -67,22 +67,22 @@ class AttachmentHandler:
         runs = abjad.select(selections).runs()
         ties = abjad.select(selections).logical_ties(pitched=True)
         for run in runs:
-            if self.clef != None:
+            if self.clef is not None:
                 abjad.attach(
                     abjad.Clef(self.clef), run[0]
                 )  # doesn't seem to always work, redo entire attachment handler?
             if len(run) > 1:
                 leaves = abjad.select(run).leaves()
-                if self.starting_dynamic != None:
+                if self.starting_dynamic is not None:
                     abjad.attach(abjad.Dynamic(self.starting_dynamic), leaves[0])
-                if self.hairpin != None:
+                if self.hairpin is not None:
                     abjad.attach(abjad.StartHairpin(self.hairpin), leaves[0])
-                if self.ending_dynamic != None:
+                if self.ending_dynamic is not None:
                     abjad.attach(abjad.Dynamic(self.ending_dynamic), leaves[-1])
                     abjad.attach(
                         abjad.StartHairpin("--"), leaves[-1]
                     )  # makes ending with a logical tie weird. If problematic: reduce indentation by 1
-                if self.text_list != None:
+                if self.text_list is not None:
                     if len(self.text_list) > 1:
                         self._apply_text_and_span_lr(run)
                     else:
@@ -90,20 +90,20 @@ class AttachmentHandler:
             else:
                 leaves = abjad.select(run).leaves()
                 dynamic = next(self._cyc_dynamics)
-                if self.starting_dynamic != None:
-                    if self.ending_dynamic != None:
+                if self.starting_dynamic is not None:
+                    if self.ending_dynamic is not None:
                         abjad.attach(abjad.Dynamic(dynamic), leaves[0])
                     else:
                         abjad.attach(abjad.Dynamic(self.starting_dynamic), leaves[0])
-                if self.starting_dynamic == None:
-                    if self.ending_dynamic != None:
+                if self.starting_dynamic is None:
+                    if self.ending_dynamic is not None:
                         abjad.attach(abjad.Dynamic(self.ending_dynamic), leaves[0])
                 abjad.attach(abjad.StartHairpin("--"), leaves[0])
-                if self.text_list != None:
+                if self.text_list is not None:
                     self._apply_text_and_span_l_only(run)
         for tie in ties:
             if len(tie) == 1:
-                if self.articulation_list != None:
+                if self.articulation_list is not None:
                     articulation = self._cyc_articulations
                     abjad.attach(abjad.Articulation(next(articulation)), tie[0])
         return selections

@@ -3,7 +3,6 @@ import itertools
 import os
 import pathlib
 import time
-from random import random, seed
 
 import abjad
 import abjadext.rmakers
@@ -1943,7 +1942,7 @@ for staff, scale in zip(staffs, scales):
     logicl_ties = [i for i in abjad.iterate(staff).logical_ties(pitched=True)]
     pitches = cyc(scale)
     for i, logicl_tie in enumerate(logicl_ties):
-        if logicl_tie.is_pitched == True:
+        if logicl_tie.is_pitched is True:
             pitch = next(pitches)
             for note in logicl_tie:
                 note.written_pitch = pitch
