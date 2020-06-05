@@ -10,3 +10,4 @@
 *.png
 __images__
 __pycache__
+.mypy_cache
