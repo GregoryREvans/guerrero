@@ -5,18 +5,18 @@
 #(set-default-paper-size "11x17portrait")
 %{ #(set-default-paper-size "ansi c") %}
 %{ #(set-global-staff-size 6) %}
-#(set-global-staff-size 14)
+#(set-global-staff-size 13)
 \include "ekmel.ily"
 \ekmelicStyle evans
 
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Didot") \fontsize #4.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  list_  e"}
-	title =  \markup \override #'(font-name . "Didot") \fontsize #16 \bold\center-column {"GUERRERO" }
-	subtitle = \markup \override #'(font-name . "Didot") \fontsize #7 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
-	%{ subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #5 \center-column {" "} %}
-	arranger = \markup \override #'(font-name . "Didot") \fontsize #4.3 {"Gregory Rowland Evans"}
+	dedication = \markup \override #'(font-name . "STIXGeneral") \fontsize #4.5 \center-column {"t  o     t  h  e     F  r  o  s  t     S  a  x  o  p  h  o  n  e    E  n  s  e  m  b  l  e"}
+	title =  \markup \override #'(font-name . "STIXGeneral") \fontsize #16 \bold\center-column {"GUERRERO" }
+	subtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #7 \center-column {"f o r      t w e n t y   -   o n e      s a x o p h o n e s"}
+	%{ subsubtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #5 \center-column {" "} %}
+	arranger = \markup \override #'(font-name . "STIXGeneral") \fontsize #4 {"Gregory Rowland Evans (*1995)"}
 }
 
 \layout {
@@ -26,7 +26,7 @@
 	%\accidentalStyle modern
     indent = #5
 	%ragged-last = ##t
-    ragged-right = ##t
+    %{ ragged-right = ##t %}
     %left-margin = #15
 	\context {
         \name TimeSignatureContext
@@ -40,7 +40,7 @@
 		\override BarNumber.Y-extent = #'(0 . 0)
 		\override BarNumber.Y-offset = 0
 		\override BarNumber.extra-offset = #'(-4 . 0)
-		%\override BarNumber.font-name = "Didot"
+		%\override BarNumber.font-name = "STIXGeneral"
 		%{ \override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print) %}
 		\override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
 		\override BarNumber.font-size = 5
@@ -57,7 +57,7 @@
 		\override RehearsalMark.Y-offset = -2.5
 		\override RehearsalMark.break-align-symbols = #'(time-signature)
 		\override RehearsalMark.break-visibility = #end-of-line-invisible
-		\override RehearsalMark.font-name = "Didot"
+		\override RehearsalMark.font-name = "STIXGeneral"
 		\override RehearsalMark.font-size = 9.5
 		\override RehearsalMark.outside-staff-priority = 500
 		\override RehearsalMark.self-alignment-X = #center
@@ -98,7 +98,7 @@
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 		%{ proportionalNotationDuration = #(ly:make-moment 1 34) %}
-		proportionalNotationDuration = #(ly:make-moment 1 50)
+		proportionalNotationDuration = #(ly:make-moment 1 47)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
