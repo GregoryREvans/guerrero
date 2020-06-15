@@ -45,17 +45,6 @@ def cyc(lst):
         count += 1
 
 
-def grouper(lst1, lst2):
-    def cyc(lst):
-        c = 0
-        while True:
-            yield lst[c % len(lst)]
-            c += 1
-
-    lst1 = cyc(lst1)
-    return [next(lst1) if i == 1 else [next(lst1) for _ in range(i)] for i in lst2]
-
-
 sopranino_notes = [
     14,
     14.5,
@@ -662,7 +651,7 @@ attachment_handler_two = AttachmentHandler(
 )
 
 # Initialize MusicMakers with the rhythm-makers.
-#####sopranino#####
+# ####sopranino#####
 sopranino_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=sopranino_notes,
@@ -675,7 +664,7 @@ sopranino_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####soprano_one#####
+# ####soprano_one#####
 soprano_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=soprano_1_notes,
@@ -688,7 +677,7 @@ soprano_one_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####soprano_two#####
+# ####soprano_two#####
 soprano_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=soprano_2_notes,
@@ -701,7 +690,7 @@ soprano_two_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####soprano_three#####
+# ####soprano_three#####
 soprano_three_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=soprano_3_notes,
@@ -714,7 +703,7 @@ soprano_three_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####alto_one#####
+# ####alto_one#####
 alto_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_1_notes,
@@ -727,7 +716,7 @@ alto_one_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####alto_two#####
+# ####alto_two#####
 alto_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_2_notes,
@@ -740,7 +729,7 @@ alto_two_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####alto_three#####
+# ####alto_three#####
 alto_three_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_3_notes,
@@ -753,7 +742,7 @@ alto_three_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####alto_four#####
+# ####alto_four#####
 alto_four_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_4_notes,
@@ -766,7 +755,7 @@ alto_four_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####alto_five#####
+# ####alto_five#####
 alto_five_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_5_notes,
@@ -779,7 +768,7 @@ alto_five_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####alto_six#####
+# ####alto_six#####
 alto_six_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_6_notes,
@@ -792,7 +781,7 @@ alto_six_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####tenor_one#####
+# ####tenor_one#####
 tenor_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_1_notes,
@@ -805,7 +794,7 @@ tenor_one_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####tenor_two#####
+# ####tenor_two#####
 tenor_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_2_notes,
@@ -818,7 +807,7 @@ tenor_two_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####tenor_three#####
+# ####tenor_three#####
 tenor_three_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_3_notes,
@@ -831,7 +820,7 @@ tenor_three_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####tenor_four#####
+# ####tenor_four#####
 tenor_four_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_4_notes,
@@ -844,7 +833,7 @@ tenor_four_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####tenor_five#####
+# ####tenor_five#####
 tenor_five_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_5_notes,
@@ -857,7 +846,7 @@ tenor_five_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####baritone_one#####
+# ####baritone_one#####
 baritone_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=baritone_1_notes,
@@ -870,7 +859,7 @@ baritone_one_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####baritone_two#####
+# ####baritone_two#####
 baritone_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=baritone_2_notes,
@@ -883,7 +872,7 @@ baritone_two_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####baritone_three#####
+# ####baritone_three#####
 baritone_three_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=baritone_3_notes,
@@ -896,7 +885,7 @@ baritone_three_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####bass_one#####
+# ####bass_one#####
 bass_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=bass_1_notes,
@@ -909,7 +898,7 @@ bass_one_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####bass_two#####
+# ####bass_two#####
 bass_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=bass_2_notes,
@@ -922,7 +911,7 @@ bass_two_musicmaker_two = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_two,
 )
-#####contrabass#####
+# ####contrabass#####
 contrabass_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=contrabass_notes,
@@ -2079,7 +2068,7 @@ score_file = abjad.LilyPondFile.new(
 
 abjad.SegmentMaker.comment_measure_numbers(score)
 time_2 = time.time()
-###################
+# ##################
 directory = pathlib.Path(__file__).parent
 print("directory")
 print(directory)
@@ -2112,7 +2101,7 @@ open(f"{build_path}/Invocation.ly", "w").writelines(score_lines[15:-1])
 segment_time = time_2 - time_1
 
 time_5 = time.time()
-###make parts###
+# ##make parts###
 for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
     signatures = abjad.select(score["Global Context"]).components(abjad.Staff)
     signature_copy = abjad.mutate(signatures).copy()
