@@ -387,58 +387,21 @@ contrabass_random_walk_notes = [
 
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
-rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
-    talea=abjadext.rmakers.Talea(
-        counts=[12, 7, -1, 11, 8, -1, 10, 9, -1], denominator=16
-    ),
-    beam_specifier=abjadext.rmakers.BeamSpecifier(
-        beam_divisions_together=True, beam_rests=False
-    ),
-    extra_counts_per_division=[0, 1, -1, 1, 0, -1, 0],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Rest],
-    #     left_counts=[1],
-    #     right_classes=[abjad.Rest],
-    #     right_counts=[2],
-    #     outer_divisions_only=True,
-    #     ),
-    # division_masks=[
-    #     abjadext.rmakers.sustain([0], 4),
-    #     ],
-    # logical_tie_masks=[
-    #     abjadext.rmakers.silence([2], 7),
-    #     ],
-    tuplet_specifier=abjadext.rmakers.TupletSpecifier(
-        trivialize=True,
-        extract_trivial=True,
-        rewrite_rest_filled=True,
-        rewrite_dots=True,
-        rewrite_sustained=True,
-        denominator="divisions",
-    ),
+rmaker_one = abjadext.rmakers.stack(
+    abjadext.rmakers.talea([12, 7, -1, 11, 8, -1, 10, 9, -1], 16, extra_counts=[0, 1, -1, 1, 0, -1, 0]),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
-rmaker_two = abjadext.rmakers.EvenDivisionRhythmMaker(
-    denominators=[16, 16, 8, 16, 4, 8, 4, 16, 8],
-    extra_counts_per_division=[0, 1, -1, 0, 1, 0, -1],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Rest],
-    #     left_counts=[1],
-    #     right_classes=[abjad.Rest],
-    #     right_counts=[2],
-    #     outer_divisions_only=True,
-    #     ),
-    # division_masks=[
-    #     abjadext.rmakers.sustain([0], 4),
-    #     ],
-    logical_tie_masks=[abjadext.rmakers.silence([2], 7)],
-    tuplet_specifier=abjadext.rmakers.TupletSpecifier(
-        trivialize=True,
-        extract_trivial=True,
-        rewrite_rest_filled=True,
-        rewrite_sustained=True,
-        denominator="divisions",
-    ),
+rmaker_two = abjadext.rmakers.stack(
+    abjadext.rmakers.even_division([16, 16, 8, 16, 4, 8, 4, 16, 8], extra_counts=[0, 1, -1, 0, 1, 0, -1]),
+    abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([2], 7)),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
 # Initialize AttachmentHandler
@@ -864,8 +827,9 @@ contrabass_musicmaker_three = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 
-silence_maker = abjadext.rmakers.NoteRhythmMaker(
-    division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([0], 1))]
+silence_maker = abjadext.rmakers.stack(
+    abjadext.rmakers.NoteRhythmMaker(),
+    abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
 )
 
 # Define a small class so that we can annotate timespans with additional
@@ -3516,9 +3480,9 @@ trill(score)
 
 print("Beaming runs ...")
 for voice in abjad.select(score).components(abjad.Voice):
-    for run in abjad.select(voice).runs():
-        specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
-        specifier(run)
+    # for run in abjad.select(voice).runs():
+    #     specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
+    #     specifier(run)
     abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False)
 
 print("Beautifying score ...")

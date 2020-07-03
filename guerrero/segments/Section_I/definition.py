@@ -405,22 +405,14 @@ contrabass_random_walk_notes = [
 
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
-# rmaker_two = abjadext.rmakers.NoteRhythmMaker()
-
-rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
-    talea=abjadext.rmakers.Talea(counts=[3, 5, 4, 6, 2, 7], denominator=16),
-    beam_specifier=abjadext.rmakers.BeamSpecifier(
-        beam_divisions_together=True, beam_rests=False
-    ),
-    extra_counts_per_division=[0, 1, -1, 1, 0, -1, 0],
-    logical_tie_masks=[abjadext.rmakers.silence([2], 5)],
-    division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([1], 7))],
-    tuplet_specifier=abjadext.rmakers.TupletSpecifier(
-        trivialize=True,
-        extract_trivial=True,
-        rewrite_rest_filled=True,
-        rewrite_sustained=True,
-    ),
+rmaker_one = abjadext.rmakers.stack(
+    abjadext.rmakers.talea([3, 5, 4, 6, 2, 7], 16, extra_counts=[0, 1, -1, 1, 0, -1, 0]),
+    abjadext.rmakers.force_rest(abjad.select().tuplets().get([1], 7)),
+    abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([2], 5)),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
 # Initialize AttachmentHandler
@@ -840,8 +832,9 @@ contrabass_musicmaker_two = MusicMaker(
 #     attachment_handler=attachment_handler_two,
 # )
 
-silence_maker = abjadext.rmakers.NoteRhythmMaker(
-    division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([0], 1))]
+silence_maker = abjadext.rmakers.stack(
+    abjadext.rmakers.NoteRhythmMaker(),
+    abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
 )
 
 # Define a small class so that we can annotate timespans with additional
@@ -3542,9 +3535,9 @@ for voice in abjad.iterate(score["Staff Group"]).components(abjad.Voice):
 
 print("Beaming runs ...")
 for voice in abjad.select(score).components(abjad.Voice):
-    for run in abjad.select(voice).runs():
-        specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
-        specifier(run)
+    # for run in abjad.select(voice).runs():
+    #     specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
+    #     specifier(run)
     abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False)
 
 print("Beautifying score ...")

@@ -252,29 +252,16 @@ contrabass_random_walk_notes = [
 
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
-rmaker_one = abjadext.rmakers.NoteRhythmMaker()
+rmaker_one = abjadext.rmakers.stack(abjadext.rmakers.NoteRhythmMaker())
 
-rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
-    talea=abjadext.rmakers.Talea(
-        counts=[1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 3, 2, 2, 3, 2, 1, 1, 2, 1, 1, 1, 3],
-        denominator=16,
-    ),
-    beam_specifier=abjadext.rmakers.BeamSpecifier(
-        beam_divisions_together=True, beam_rests=False
-    ),
-    extra_counts_per_division=[-1, 0, 1, -1, 1, 0],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
-    #     left_classes=[abjad.Note, abjad.Rest],
-    #     left_counts=[1, 0, 1],
-    #     ),
-    logical_tie_masks=[abjadext.rmakers.silence([8], 5)],
-    division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([2], 11))],
-    tuplet_specifier=abjadext.rmakers.TupletSpecifier(
-        trivialize=True,
-        extract_trivial=True,
-        rewrite_rest_filled=True,
-        rewrite_sustained=True,
-    ),
+rmaker_two = abjadext.rmakers.stack(
+    abjadext.rmakers.talea([1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 3, 2, 2, 3, 2, 1, 1, 2, 1, 1, 1, 3], 16, extra_counts=[-1, 0, 1, -1, 1, 0]),
+    abjadext.rmakers.force_rest(abjad.select().tuplets().get([2], 11)),
+    abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([8], 5)),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
 # Initialize AttachmentHandler
@@ -694,8 +681,9 @@ contrabass_musicmaker_three = MusicMaker(
     attachment_handler=attachment_handler_two,
 )
 
-silence_maker = abjadext.rmakers.NoteRhythmMaker(
-    division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([0], 1))]
+silence_maker = abjadext.rmakers.stack(
+    abjadext.rmakers.NoteRhythmMaker(),
+    abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
 )
 
 # Define a small class so that we can annotate timespans with additional
@@ -3419,9 +3407,9 @@ for voice in abjad.iterate(score["Staff Group"]).components(abjad.Voice):
 
 print("Beaming runs ...")
 for voice in abjad.select(score).components(abjad.Voice):
-    for run in abjad.select(voice).runs():
-        specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
-        specifier(run)
+    # for run in abjad.select(voice).runs():
+    #     specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
+    #     specifier(run)
     abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False)
 
 
