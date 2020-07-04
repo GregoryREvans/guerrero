@@ -2,7 +2,7 @@
     <<
         \context TimeSignatureContext = "Global Context"
         {
-            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             \mark \markup {
                 \bold
@@ -11,201 +11,204 @@
                     }
                 }
             s1 * 5/4
-            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             s1 * 5/4
-            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             s1 * 5/4
-            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             s1 * 5/4
         }
-        \context Staff = "Staff 15"
+        \context Voice = "Voice 15"
         {
-            \context Voice = "Voice 15"
             {
-                {
-                    % [Voice 15 measure 1] %! COMMENT_MEASURE_NUMBERS
-                    \set Staff.shortInstrumentName =
-                    \markup { ten.5 }
-                    \set Staff.instrumentName =
-                    \markup { "Tenor 5" }
-                    \tempo 4=60
-                    r2
-                    \!
-                }
-                {
-                    c'4
-                    \mp
-                    \<
-                    ~
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        c'8
-                        cqs'4
-                        \mf
-                        - \halfopen
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    % [Voice 15 measure 2] %! COMMENT_MEASURE_NUMBERS
-                    r1
-                    \!
-                }
-                {
-                    % [Voice 15 measure 3] %! COMMENT_MEASURE_NUMBERS
-                    cs'2
+                % [Voice 15 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                \set Staff.shortInstrumentName =
+                \markup { ten.5 }
+                \set Staff.instrumentName =
+                \markup { "Tenor 5" }
+                \tempo 4=60
+                r2
+                \!
+            }
+            {
+                c'4
+                \mp
+                \<
+                ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    c'8
+                    cqs'4
                     \mf
-                    \>
-                    ~
-                    \times 2/3 {
-                        cs'8
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r4
-                        \!
-                    }
-                }
-                {
-                    % [Voice 15 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    r2
-                }
-                {
-                    r4
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        r4
-                        dqf'8
-                        \p
-                        - \flageolet
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    % [Voice 15 measure 5] %! COMMENT_MEASURE_NUMBERS
-                    r1
-                    \!
-                }
-                {
-                    % [Voice 15 measure 6] %! COMMENT_MEASURE_NUMBERS
-                    d'8
-                    \mp
-                    - \stopped
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    r8
-                    \!
-                    r8
-                    dqs'4.
-                    \mp
-                    \<
-                }
-                {
-                    % [Voice 15 measure 7] %! COMMENT_MEASURE_NUMBERS
-                    ef'4
-                    \mf
-                    - \stopped
-                    \>
-                    eqf'8
-                    - \flageolet
-                    e'4.
-                }
-                {
-                    % [Voice 15 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    r1
-                    \!
-                }
-                {
-                    % [Voice 15 measure 9] %! COMMENT_MEASURE_NUMBERS
-                    eqs'4
-                    \mp
-                    - \halfopen
-                    \<
-                    f'8
 
-                    [
-                    fqs'8
-                    - \stopped
-                    ]
-                    fs'4
-                    \mf
-                    - \halfopen
                     - \tweak stencil #constante-hairpin
                     \<
                 }
-                {
-                    r2
-                    \!
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 15 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        gqf'4.
-                        \mf
-                        - \stopped
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r4
-                        \!
-                    }
-                    r4
-                }
-                {
-                    % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    r1
-                }
-                {
-                    % [Voice 15 measure 12] %! COMMENT_MEASURE_NUMBERS
-                    g'4
-                    \mf
-                    - \flageolet
-                    \>
-                    gqs'8
+            }
+            {
+                % [Voice 15 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                r1
+                \!
+            }
+            {
+                % [Voice 15 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                cs'2
+                \mf
+                \>
+                ~
+                \times 2/3 {
+                    cs'8
+                    dqf'4
                     \p
-
-                    ~
-                    [
-                    gqs'8
+                    - \flageolet
                     - \tweak stencil #constante-hairpin
                     \<
-                    ]
-                    r8
-                    \!
                 }
-                {
-                    r4.
-                    r4
-                    \bar "||"
+            }
+            {
+                % [Voice 15 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                r2
+                \!
+            }
+            {
+                d'4
+                \mf
+                \>
+                ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    d'4
+                    dqs'8
+                    \p
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
+            }
+            {
+                % [Voice 15 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                r1
+                \!
+            }
+            {
+                % [Voice 15 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                ef'8
+                \mp
+                - \stopped
+                \<
+                [
+                eqf'8
+                - \halfopen
+                ~
+                eqf'8
+                ]
+                e'4.
+            }
+            {
+                % [Voice 15 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                eqs'4
+                \mf
+
+                \>
+                f'8
+                - \flageolet
+                fqs'4.
+            }
+            {
+                % [Voice 15 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                r1
+                \!
+            }
+            {
+                % [Voice 15 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                fs'4
+                \mp
+                - \stopped
+                \<
+                gqf'8
+                - \halfopen
+                [
+                g'8
+                \mf
+
+                - \tweak stencil #constante-hairpin
+                \<
+                ]
+                r4
+                \!
+            }
+            {
+                r2
+            }
+            {
+                \times 4/5 {
+                    % [Voice 15 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    gqs'4.
+                    \mp
+                    - \stopped
+                    \<
+                    af'4
+                    ~
+                }
+                af'4
+                \mf
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                r1
+                \!
+            }
+            {
+                % [Voice 15 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                aqf'4
+                \mf
+                - \stopped
+                \>
+                a'8
+                \p
+                - \flageolet
+                ~
+                [
+                a'8
+                - \tweak stencil #constante-hairpin
+                \<
+                ]
+                r8
+                \!
+            }
+            {
+                r4.
+                r4
+                \bar "||"
             }
         }
     >>

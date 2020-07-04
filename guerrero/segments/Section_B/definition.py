@@ -7,7 +7,7 @@ import time
 import abjad
 import abjadext.rmakers
 from evans.general_tools.mirror import mirror
-from evans.general_tools.random_walk import randomWalk
+from evans.general_tools.random_walk import random_walk
 from evans.general_tools.rotate import rotate
 from guerrero.tools.AttachmentHandler import AttachmentHandler
 from guerrero.tools.MusicMaker import MusicMaker
@@ -84,7 +84,7 @@ mirrored_walk_list = mirror(walk_list, sequential_duplicates=False)
 sopranino_walk_chord = rotate(mirrored_walk_list, 56)
 sopranino_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=1, length=1000, step_list=[1], mapped_list=sopranino_walk_chord
     )
 ]
@@ -93,7 +93,7 @@ sopranino_random_walk_notes = [
 soprano_1_walk_chord = rotate(mirrored_walk_list, 46)
 soprano_1_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=2, length=1000, step_list=[1], mapped_list=soprano_1_walk_chord
     )
 ]
@@ -101,7 +101,7 @@ soprano_1_random_walk_notes = [
 soprano_2_walk_chord = rotate(mirrored_walk_list, 34)
 soprano_2_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=3, length=1000, step_list=[1], mapped_list=soprano_2_walk_chord
     )
 ]
@@ -109,7 +109,7 @@ soprano_2_random_walk_notes = [
 soprano_3_walk_chord = rotate(mirrored_walk_list, 28)
 soprano_3_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=4, length=1000, step_list=[1], mapped_list=soprano_3_walk_chord
     )
 ]
@@ -117,7 +117,7 @@ soprano_3_random_walk_notes = [
 alto_1_walk_chord = rotate(mirrored_walk_list, 42)
 alto_1_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=5, length=1000, step_list=[1], mapped_list=alto_1_walk_chord
     )
 ]
@@ -125,7 +125,7 @@ alto_1_random_walk_notes = [
 alto_2_walk_chord = rotate(mirrored_walk_list, 26)
 alto_2_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=6, length=1000, step_list=[1], mapped_list=alto_2_walk_chord
     )
 ]
@@ -133,7 +133,7 @@ alto_2_random_walk_notes = [
 alto_3_walk_chord = rotate(mirrored_walk_list, 4)
 alto_3_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=7, length=1000, step_list=[1], mapped_list=alto_3_walk_chord
     )
 ]
@@ -141,7 +141,7 @@ alto_3_random_walk_notes = [
 alto_4_walk_chord = rotate(mirrored_walk_list, 42)
 alto_4_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=8, length=1000, step_list=[1], mapped_list=alto_4_walk_chord
     )
 ]
@@ -149,7 +149,7 @@ alto_4_random_walk_notes = [
 alto_5_walk_chord = rotate(mirrored_walk_list, 26)
 alto_5_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=9, length=1000, step_list=[1], mapped_list=alto_5_walk_chord
     )
 ]
@@ -157,7 +157,7 @@ alto_5_random_walk_notes = [
 alto_6_walk_chord = rotate(mirrored_walk_list, 4)
 alto_6_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=10, length=1000, step_list=[1], mapped_list=alto_6_walk_chord
     )
 ]
@@ -165,7 +165,7 @@ alto_6_random_walk_notes = [
 tenor_1_walk_chord = rotate(mirrored_walk_list, 36)
 tenor_1_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=11, length=1000, step_list=[1], mapped_list=tenor_1_walk_chord
     )
 ]
@@ -173,7 +173,7 @@ tenor_1_random_walk_notes = [
 tenor_2_walk_chord = rotate(mirrored_walk_list, 14)
 tenor_2_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=12, length=1000, step_list=[1], mapped_list=tenor_2_walk_chord
     )
 ]
@@ -181,7 +181,7 @@ tenor_2_random_walk_notes = [
 tenor_3_walk_chord = rotate(mirrored_walk_list, 0)
 tenor_3_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=13, length=1000, step_list=[1], mapped_list=tenor_3_walk_chord
     )
 ]
@@ -189,7 +189,7 @@ tenor_3_random_walk_notes = [
 tenor_4_walk_chord = rotate(mirrored_walk_list, 36)
 tenor_4_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=14, length=1000, step_list=[1], mapped_list=tenor_4_walk_chord
     )
 ]
@@ -197,7 +197,7 @@ tenor_4_random_walk_notes = [
 tenor_5_walk_chord = rotate(mirrored_walk_list, 14)
 tenor_5_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=15, length=1000, step_list=[1], mapped_list=tenor_5_walk_chord
     )
 ]
@@ -205,7 +205,7 @@ tenor_5_random_walk_notes = [
 baritone_1_walk_chord = rotate(mirrored_walk_list, 28)
 baritone_1_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=16, length=1000, step_list=[1], mapped_list=baritone_1_walk_chord
     )
 ]
@@ -213,7 +213,7 @@ baritone_1_random_walk_notes = [
 baritone_2_walk_chord = rotate(mirrored_walk_list, 14)
 baritone_2_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=17, length=1000, step_list=[1], mapped_list=baritone_2_walk_chord
     )
 ]
@@ -221,7 +221,7 @@ baritone_2_random_walk_notes = [
 baritone_3_walk_chord = rotate(mirrored_walk_list, 10)
 baritone_3_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=18, length=1000, step_list=[1], mapped_list=baritone_3_walk_chord
     )
 ]
@@ -229,7 +229,7 @@ baritone_3_random_walk_notes = [
 bass_1_walk_chord = rotate(mirrored_walk_list, 24)
 bass_1_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=19, length=1000, step_list=[1], mapped_list=bass_1_walk_chord
     )
 ]
@@ -237,7 +237,7 @@ bass_1_random_walk_notes = [
 bass_2_walk_chord = rotate(mirrored_walk_list, 20)
 bass_2_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=20, length=1000, step_list=[1], mapped_list=bass_2_walk_chord
     )
 ]
@@ -245,7 +245,7 @@ bass_2_random_walk_notes = [
 contrabass_walk_chord = rotate(mirrored_walk_list, 6)
 contrabass_random_walk_notes = [
     x
-    for x in randomWalk(
+    for x in random_walk(
         random_seed=21, length=1000, step_list=[1], mapped_list=contrabass_walk_chord
     )
 ]

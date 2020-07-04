@@ -2,7 +2,7 @@
     <<
         \context TimeSignatureContext = "Global Context"
         {
-            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             \mark \markup {
                 \bold
@@ -11,71 +11,71 @@
                     }
                 }
             s1 * 5/4
-            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             s1 * 5/4
-            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             s1 * 5/4
-            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 13] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             s1 * 5/4
-            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 5/4
             s1 * 5/4
-            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 18] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 19] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 3/4
             s1 * 3/4
-            % [Global Context measure 20] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
         }
         \context Voice = "Voice 10"
         {
             {
-                % [Voice 10 measure 1] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 \set Staff.shortInstrumentName =
                 \markup { alt.6 }
                 \set Staff.instrumentName =
@@ -92,20 +92,27 @@
                 \<
                 r16
                 \!
-                af''4.
+                af''8
                 \p
                 - \tweak stencil #constante-hairpin
                 \<
                 ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    af''4
+                    \mp
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
             }
             {
                 r2
                 \!
             }
             {
-                % [Voice 10 measure 2] %! COMMENT_MEASURE_NUMBERS
-                <cqs'' g'' eef''' bf'''>4
-                \mp
+                % [Voice 10 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                <cqs'' g'' e''' bf'''>4
+                \f
                 - \espressivo
                 _ \markup {
                     \override
@@ -122,11 +129,11 @@
                 \!
             }
             {
-                % [Voice 10 measure 3] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 r2.
             }
             {
-                % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 b''16
                 \mp
                 - \tenuto
@@ -158,9 +165,9 @@
                 \<
             }
             {
-                % [Voice 10 measure 5] %! COMMENT_MEASURE_NUMBERS
-                <cqs'' g'' eef''' bf'''>8.
-                \f
+                % [Voice 10 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                <cqs'' g'' e''' bf'''>8.
+                \mp
                 - \espressivo
                 - \tweak stencil #constante-hairpin
                 \<
@@ -171,17 +178,24 @@
                 r2
             }
             {
-                % [Voice 10 measure 6] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 r2
             }
             {
-                <cqs'' g'' eef''' bf'''>2
+                <cqs'' g'' e''' bf'''>4
                 \mp
                 \<
                 ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    <cqs'' g'' e''' bf'''>4
+                    \f
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
             }
             {
-                % [Voice 10 measure 7] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 af''4
                 \p
                 - \tenuto
@@ -193,27 +207,32 @@
                 \!
             }
             {
-                <cqs'' g'' eef''' bf'''>4..
+                <cqs'' g'' e''' bf'''>4..
                 \mp
                 \<
                 r16
                 \!
             }
             {
-                % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS
-                b''2.
-                \p
-                - \tweak stencil #constante-hairpin
-                \<
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    b''4
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ~
+                }
+                b''2
             }
             {
                 r2
                 \!
             }
             {
-                % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS
-                <cqs'' g'' eef''' bf'''>4
-                \mp
+                % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                <cqs'' g'' e''' bf'''>4
+                \f
                 - \espressivo
                 - \tweak stencil #constante-hairpin
                 \<
@@ -223,12 +242,12 @@
                 \!
             }
             {
-                % [Voice 10 measure 10] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 r2.
             }
             {
                 \times 4/5 {
-                    % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS
+                    % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                     bqf'16
                     \mf
 
@@ -263,7 +282,7 @@
             }
             {
                 \times 4/5 {
-                    % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS
+                    % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                     c''16
                     \mp
                     - \tenuto
@@ -284,11 +303,11 @@
                 \!
             }
             {
-                % [Voice 10 measure 13] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 r4
             }
             {
-                <cqs'' g'' eef''' bf'''>2
+                <cqs'' g'' e''' bf'''>2
                 \mp
                 \<
             }
@@ -298,7 +317,7 @@
             }
             {
                 \times 4/5 {
-                    % [Voice 10 measure 14] %! COMMENT_MEASURE_NUMBERS
+                    % [Voice 10 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                     r16
                     b'16
                     \mf
@@ -334,7 +353,7 @@
             }
             {
                 \times 4/5 {
-                    % [Voice 10 measure 15] %! COMMENT_MEASURE_NUMBERS
+                    % [Voice 10 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                     b''16
                     \p
                     - \tenuto
@@ -355,7 +374,7 @@
                 \!
             }
             {
-                % [Voice 10 measure 16] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 cs'8.
                 \mp
                 - \tenuto
@@ -368,40 +387,42 @@
                 r2.
             }
             {
-                % [Voice 10 measure 17] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 r2.
             }
             {
-                % [Voice 10 measure 18] %! COMMENT_MEASURE_NUMBERS
-                <cqs'' g'' eef''' bf'''>2
-                \mp
-                \<
-                ~
-                <cqs'' g'' eef''' bf'''>8.
-                \f
-                - \tweak stencil #constante-hairpin
-                \<
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    % [Voice 10 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    <cqs'' g'' e''' bf'''>4
+                    \mp
+                    \<
+                    ~
+                }
+                <cqs'' g'' e''' bf'''>4..
                 r16
                 \!
-                <cqs'' g'' eef''' bf'''>4
+                <cqs'' g'' e''' bf'''>4
                 \mp
                 \<
                 ~
             }
             {
-                % [Voice 10 measure 19] %! COMMENT_MEASURE_NUMBERS
-                <cqs'' g'' eef''' bf'''>4
-                \f
-                - \tweak stencil #constante-hairpin
-                \<
-                ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    % [Voice 10 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    <cqs'' g'' e''' bf'''>4
+                    \f
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
             }
             {
                 r2
                 \!
             }
             {
-                % [Voice 10 measure 20] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 r4
             }
             {
@@ -438,7 +459,7 @@
                 \<
             }
             {
-                % [Voice 10 measure 21] %! COMMENT_MEASURE_NUMBERS
+                % [Voice 10 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                 r2.
                 \!
             }

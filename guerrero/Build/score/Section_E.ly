@@ -1,9 +1,8 @@
-
     \new Score
     <<
         \context TimeSignatureContext = "Global Context"
         {
-            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             \mark \markup {
                 \bold
@@ -12,76 +11,76 @@
                     }
                 }
             s1 * 1
-            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 13] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 18] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 19] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 20] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 22] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 23] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 24] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 25] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
         }
@@ -92,7 +91,7 @@
                 \context Voice = "Voice 1"
                 {
                     {
-                        % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { spro. }
                         \set Staff.instrumentName =
@@ -141,33 +140,47 @@
                         ]
                     }
                     {
-                        % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
-                        f''2.
+                        f''4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ~
                         \startTrillSpan ef'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            f''4
+                            ~
+                        }
+                        f''4
                     }
                     {
                         c'4
                         \f
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \>
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
+                        % [Voice 1 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        r8
+                        \!
                     }
                     {
-                        eef'''4.
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            e'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        e'''8
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
@@ -183,48 +196,46 @@
                         \<
                     }
                     {
-                        % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c'4
                         \f
                         \>
                         f''16
-                        [
-                        c'16
-                        af'16
-                        c'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
+                        r16
+                        \!
+                        c'16
+                        \f
+                        \>
+                        [
+                        af'16
                         \times 2/3 {
-                            r8
-                            \!
+                            c'8
                             f''8
-                            \f
-                            \>
-                            [
                             c'8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             af'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             c'16
-                            f''16
+                            \f
+                            \>
+                            [
                         }
                     }
                     {
-                        % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''16
                         b'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
                         af'16
-                        \f
-                        \>
-                        [
                         c'16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -232,7 +243,7 @@
                         ]
                     }
                     {
-                        fes''4
+                        f''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -252,39 +263,46 @@
                         \stopTrillSpan
                     }
                     {
-                        aqf'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            aqf'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS
-                           \pitchedTrill
-                           af'8
+                            % [Voice 1 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            af'8
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
                             \startTrillSpan b'
                             r16
-                            \stopTrillSpan
                             \!
+                            \stopTrillSpan
                         }
                     }
                     {
-                        ctes'2
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        cs'4
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            ctes'16
+                            cs'16
                             [
-                            eef'''8
+                            e'''8
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -292,7 +310,7 @@
                         }
                     }
                     {
-                        % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         c'4..
                         \mf
@@ -302,13 +320,15 @@
                         r16
                         \!
                         \stopTrillSpan
-                        \pitchedTrill
-                        f''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan ef'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan ef'''
+                        }
                     }
                     {
                         \times 2/3 {
@@ -316,24 +336,24 @@
                             \f
                             \>
                             [
-                            b'8
                             \stopTrillSpan
-                            af'8
+                            b'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        c'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        f''16
+                        % [Voice 1 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        af'16
                         \f
                         \>
                         [
+                        c'16
+                        f''16
                         b'16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -368,7 +388,7 @@
                         }
                     }
                     {
-                        % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c'4
                     }
                     {
@@ -385,7 +405,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            fes''8
+                            f''8
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -399,24 +419,22 @@
                         \<
                     }
                     {
-                        % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b'4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \f
+                        \>
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
+                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             r16
                             \!
-                            f''16
-                            \f
-                            \>
-                            [
                             b'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                         }
                     }
                     {
@@ -438,8 +456,8 @@
                         }
                     }
                     {
-                        % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        ctes'4
+                        % [Voice 1 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -479,7 +497,7 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 1 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             f''16
                             \f
                             \>
@@ -504,7 +522,7 @@
                         }
                     }
                     {
-                        eef'''4
+                        e'''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -515,22 +533,24 @@
                         \>
                         [
                         c'16
-                        af'16
-                        b'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
+                        r16
                         \!
-                        af'8
+                        af'16
                         \f
+                        \>
+                        [
+                        b'8
+                        af'8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                     }
                     {
-                        % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         c'8
                         \mf
@@ -552,7 +572,7 @@
                             \stopTrillSpan
                             r16
                             \!
-                            fes''16
+                            f''16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -564,34 +584,43 @@
                         \f
                         \>
                         f''16
-                        c'16
-                        af'16
-                        ]
-                    }
-                    {
-                        % [Voice 1 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        b'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r8
+                        ]
+                        r16
                         \!
+                        c'16
+                        \f
+                        \>
+                    }
+                    {
+                        % [Voice 1 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        af'4
+                        b'8
+                        [
                         af'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         \pitchedTrill
-                        c'2
+                        c'4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan af'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c'4
+                            ~
+                        }
                     }
                     {
-                        % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c'8.
                         [
                         \pitchedTrill
@@ -613,24 +642,22 @@
                         \>
                         \times 4/5 {
                             af'16
-                            [
-                            c'16
-                            f''16
-                            c'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                             r16
                             \!
+                            c'16
+                            \f
+                            \>
+                            [
+                            f''16
+                            c'16
                         }
                     }
                     {
-                        % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         af'8
-                        \f
-                        \>
-                        [
                         b'8
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -656,37 +683,44 @@
                             \>
                             [
                             c'16
-                            af'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        ctes'4
+                        cs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                     }
                     {
-                        % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        ctes'4
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 1 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs'4
+                            ~
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            ctes'8
+                            cs'8
                             [
-                            eef'''16
+                            e'''16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        b'16
+                        af'16
                         \f
+                        \>
+                        b'16
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -696,17 +730,17 @@
                         \f
                         \>
                         [
-                        b'16
                         \times 2/3 {
+                            b'8
                             af'8
                             c'8
-                            f''8
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 1 measure 18] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 1 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f''16
                             c'16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -714,56 +748,63 @@
                             ]
                             r16
                             \!
-                            af'16
-                            \f
-                            \>
                         }
-                        b'4
+                        af'4
+                        \f
+                        \>
                         \times 2/3 {
-                            af'8
+                            b'8
                             [
-                            c'8
                             af'8
+                            c'8
                             ]
                         }
-                        b'4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        af'4
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 1 measure 19] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 1 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             r16
                             \!
                             f''16
                             \f
                             \>
                             [
-                            c'16
                         }
-                        af'8
                         c'8
+                        af'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        bqs'4.
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            bqs'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        bqs'8
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        fes''16
+                        f''16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         c'4
                         \mf
@@ -773,23 +814,23 @@
                     }
                     {
                         \times 4/5 {
-                            af'16
+                            c'16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            b'16
+                            af'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            f''16
+                            b'16
                             \f
                             \>
                             [
-                            b'16
+                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -812,60 +853,12 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            af'16
+                            % [Voice 1 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b'16
                             \f
                             \>
                             \stopTrillSpan
-                            b'16
-                            f''16
-                        }
-                        b'8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r8
-                        \!
-                    }
-                    {
-                        aqf'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        \times 4/5 {
-                            f''16
-                            \f
-                            \>
-                            [
-                            c'16
                             af'16
-                            b'16
-                            f''16
-                            ]
-                        }
-                    }
-                    {
-                        % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        c'4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r8
-                        \!
-                        af'8
-                        \f
-                        \>
-                        c'4
-                        \times 4/5 {
-                            f''16
-                            [
-                            c'16
-                            af'16
-                            c'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -873,35 +866,11 @@
                             r16
                             \!
                         }
-                    }
-                    {
-                        % [Voice 1 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        af'8
+                        b'8
                         \f
                         \>
                         [
-                        c'8
-                        f''16
-                        b'16
-                        f''16
-                        c'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \times 4/5 {
-                            r16
-                            \!
-                            af'16
-                            \f
-                            \>
-                            [
-                            c'16
-                            f''16
-                            b'16
-                        }
-                        af'8
-                        b'8
+                        f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -909,15 +878,98 @@
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 1 measure 24] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
-                            f''16
+                        \times 1/1 {
+                            aqf'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            b'16
                             \f
                             \>
                             [
+                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             c'16
+                            \f
+                            \>
+                            [
+                            af'16
+                            ]
+                        }
+                    }
+                    {
+                        % [Voice 1 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b'4
+                        f''8
+                        [
+                        c'8
+                        ]
+                        af'4
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        \times 4/5 {
+                            r16
+                            \!
+                            c'16
+                            \f
+                            \>
+                            [
+                            f''16
+                            c'16
+                            af'16
+                        }
+                    }
+                    {
+                        % [Voice 1 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'8
+                        af'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        c'16
+                        \f
+                        \>
+                        [
+                        f''16
+                        b'16
+                        \times 4/5 {
+                            f''16
+                            c'16
+                            af'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            c'16
+                            \f
+                            \>
+                            [
+                        }
+                        f''8
+                        b'8
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 1 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            af'16
+                            b'16
+                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -926,7 +978,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            ctes'8
+                            cs'8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -936,26 +988,29 @@
                         }
                     }
                     {
-                        af'4
-                        \mp
+                        c'4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        \pitchedTrill
-                        f''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan ef'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan ef'''
+                        }
                     }
                     {
-                        % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 1 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''4
                     }
                     {
-                        eef'''4
+                        e'''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -969,7 +1024,7 @@
                             \<
                             r16
                             \!
-                            fes''16
+                            f''16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -984,7 +1039,7 @@
                 {
                     {
                         \times 2/3 {
-                            % [Voice 2 measure 1] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 2 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.shortInstrumentName =
                             \markup { spr.1 }
                             \set Staff.instrumentName =
@@ -996,52 +1051,6 @@
                             [
                             \!
                             e''8
-                            f'8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                        r4
-                        \!
-                    }
-                    {
-                        dtef''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        cs''16
-                        \f
-                        \>
-                        [
-                        f'16
-                        e''16
-                        bf''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
-                    {
-                        % [Voice 2 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        eqs''4.
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        bqf''8
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        [
-                    }
-                    {
-                        \times 2/3 {
-                            e''8
-                            \f
-                            \>
-                            bf''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -1049,20 +1058,78 @@
                             r8
                             \!
                         }
+                        f'4
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        cs''4
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
                         cs''16
                         \f
                         \>
                         [
                         f'16
-                        cs''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        e''16
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 2 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            eqs''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        eqs''8
+                        [
+                        bqf''8
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \times 2/3 {
+                            bf''8
+                            \f
+                            \>
+                            e''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
+                        }
                         bf''16
+                        \f
+                        \>
+                        [
+                        cs''16
+                        f'16
+                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        % [Voice 2 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f'4..
                         \mf
@@ -1076,11 +1143,11 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            e''16
+                            bf''16
                             \f
                             \>
                             [
-                            bf''16
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -1088,103 +1155,114 @@
                             r16
                             \!
                         }
-                        cs''8
+                        bf''8
                         \f
                         \>
                         [
-                        f'8
+                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        % [Voice 2 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        fes'4
+                        % [Voice 2 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            e''16
+                            f'16
                             \f
                             \>
                             [
-                            f'16
-                            cs''16
-                            bf''16
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
+                            f'16
+                            \f
+                            \>
+                            [
+                            cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                         }
                     }
                     {
-                        \pitchedTrill
-                        e''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan bf''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            e''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan bf''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            e''16
+                            cs''16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             [
+                            \stopTrillSpan
                             eqs''8
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            \stopTrillSpan
                         }
                     }
                     {
-                        % [Voice 2 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        e''4
+                        % [Voice 2 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf''4
                         \f
                         \>
-                        f'8
-                        [
-                        cs''8
-                        ]
-                        bf''4
+                        e''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        f'4
+                        \f
+                        \>
                         cs''16
                         [
+                        bf''16
+                        cs''16
                         f'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
-                        \!
-                        e''16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
                     }
                     {
-                        % [Voice 2 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        bqf''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 2 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bqf''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        f'8
+                        e''8
                         \f
                         \>
                         [
-                        cs''8
+                        f'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1211,16 +1289,15 @@
                         ~
                     }
                     {
-                        % [Voice 2 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f'4
                     }
                     {
-                        bf''16
+                        cs''16
                         \f
                         \>
                         [
                         \stopTrillSpan
-                        e''16
                         bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -1228,47 +1305,59 @@
                         ]
                         r16
                         \!
+                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
-                        fes'4
+                        f'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
-                        dtef''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \times 4/5 {
-                            % [Voice 2 measure 8] %! COMMENT_MEASURE_NUMBERS
-                            cs''16
+                            % [Voice 2 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf''16
                             \f
                             \>
                             [
-                            f'16
                             cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             f'16
-                            e''16
+                            \f
+                            \>
+                            [
+                            cs''16
                         }
-                        bf''8
+                        f'8
+                        e''8
+                        bf''16
+                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
+                        r16
                         \!
-                        cs''16
+                        f'16
                         \f
-                        \>
-                        [
-                        f'16
-                        e''16
-                        f'16
-                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1286,29 +1375,31 @@
                         }
                     }
                     {
-                        % [Voice 2 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        cs''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan e''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 2 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            cs''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan e''
+                        }
                     }
                     {
-                        cs''4
+                        eqs''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''8
+                            eqs''8
                             [
                             bqf''16
                             ~
                             ]
-                            \stopTrillSpan
                         }
                         bqf''4
                         \pp
@@ -1316,11 +1407,11 @@
                         \<
                     }
                     {
-                        % [Voice 2 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         e''4
                         \f
                         \>
-                        bf''8
+                        f'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1343,13 +1434,18 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 2 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        e''2
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan bf''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 2 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            e''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan bf''
+                        }
+                        e''4
                     }
                     {
                         bf''16
@@ -1357,66 +1453,69 @@
                         \>
                         [
                         \stopTrillSpan
-                        cs''16
-                        bf''16
-                        cs''16
-                        \times 2/3 {
-                            bf''8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r8
-                            \!
-                            cs''8
-                            \f
-                            \>
-                            [
-                        }
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 2 measure 12] %! COMMENT_MEASURE_NUMBERS
-                            f'16
-                            e''16
-                            f'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                        }
-                    }
-                    {
-                        \times 4/5 {
-                            fes'8
-                            \p
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            dtef''8.
-                            \pp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                        }
-                    }
-                    {
                         e''16
-                        \f
-                        \>
-                        bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        e''16
+                        bf''16
                         \f
                         \>
                         [
                         \times 2/3 {
+                            cs''8
                             bf''8
                             cs''8
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 2 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf''16
+                            cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                    }
+                    {
+                        \times 4/5 {
                             f'8
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            [
+                            cs''8.
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        f'16
+                        \f
+                        \>
+                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        f'16
+                        \f
+                        \>
+                        [
+                        \times 2/3 {
+                            e''8
+                            bf''8
+                            e''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -1424,7 +1523,7 @@
                         }
                     }
                     {
-                        % [Voice 2 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         eqs''4
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -1451,57 +1550,57 @@
                         \startTrillSpan cs''
                     }
                     {
-                        cs''16
+                        bf''16
                         \f
                         \>
                         [
                         \stopTrillSpan
-                        bf''16
+                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        e''16
+                        f'16
                         \f
                         \>
                     }
                     {
-                        % [Voice 2 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        bf''4
-                        e''8
-                        [
+                        % [Voice 2 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
                         bf''8
+                        [
+                        e''8
                         ]
-                        e''4
+                        bf''4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            bf''16
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
-                            e''16
+                            bf''16
                             \f
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        % [Voice 2 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         bqf''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        bf''8
+                        e''8
                         \f
                         \>
                         [
-                        cs''8
+                        bf''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1525,13 +1624,12 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 2 measure 16] %! COMMENT_MEASURE_NUMBERS
-                            f'16
+                            % [Voice 2 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e''16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            e''16
                             bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -1543,11 +1641,12 @@
                             \f
                             \>
                             [
+                            f'16
                         }
-                        bf''16
                         e''16
                         bf''16
                         cs''16
+                        bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1574,18 +1673,19 @@
                         }
                     }
                     {
-                        f'8
+                        e''8
+                        \f
+                        \>
+                        \stopTrillSpan
+                        bf''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \stopTrillSpan
-                        r8
-                        \!
                     }
                     {
-                        % [Voice 2 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        fes'2
+                        % [Voice 2 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1607,36 +1707,44 @@
                         f'4
                     }
                     {
-                        % [Voice 2 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''16
                         \f
                         \>
                         [
                         \stopTrillSpan
                         f'16
-                        e''16
-                        bf''16
-                        ]
-                        e''4
-                        bf''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r8
+                        ]
+                        r16
                         \!
-                        e''4
+                        cs''16
                         \f
                         \>
+                        f'4
+                        e''8
+                        [
+                        bf''8
+                        ]
+                        e''4
                     }
                     {
                         \times 4/5 {
-                            % [Voice 2 measure 19] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 2 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             bf''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r16
+                            \!
+                            e''16
+                            \f
+                            \>
                             [
+                            bf''16
                             e''16
-                            f'16
-                            e''16
-                            f'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -1644,7 +1752,7 @@
                     }
                     {
                         \times 4/5 {
-                            dtef''8.
+                            cs''8.
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -1655,156 +1763,181 @@
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
-                        }
-                    }
-                    {
-                        r8
-                        \!
-                        e''8
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        bqf''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        % [Voice 2 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        bqf''4
-                        ~
-                        bqf''16
-                        [
-                        fes'8.
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            bf''16
-                            \f
-                            \>
-                            e''16
-                            f'16
-                        }
-                        e''16
-                        f'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        e''16
-                        \f
-                        \>
-                        [
-                    }
-                    {
-                        \times 2/3 {
-                            % [Voice 2 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            f'8
-                            cs''8
-                            bf''8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                    }
-                    {
-                        dtef''4..
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            cs''16
-                            \f
-                            \>
                             [
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
                         }
-                    }
-                    {
-                        % [Voice 2 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        cs''4
-                        \f
-                        \>
-                        \times 2/3 {
-                            bf''8
-                            [
-                            cs''8
-                            bf''8
-                            ]
-                        }
-                        e''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        eqs''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        % [Voice 2 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        eqs''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            r16
-                            \!
-                            e''16
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                        }
-                    }
-                    {
-                        bqf''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
                     }
                     {
                         f'8
                         \f
                         \>
-                        [
                         e''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                    {
+                        bqf''4
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ~
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 2 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bqf''4
+                            ~
+                        }
+                        bqf''16
+                        [
+                        f'8.
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            f'16
+                            \f
+                            \>
+                            e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                        bf''16
+                        \f
+                        \>
+                        [
+                        e''16
+                        f'16
+                        e''16
+                    }
+                    {
+                        \times 2/3 {
+                            % [Voice 2 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f'8
+                            e''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
+                        }
+                    }
+                    {
+                        cs''4..
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            f'16
+                            \f
+                            \>
+                            [
+                            cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                    }
+                    {
+                        % [Voice 2 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf''4
+                        \f
+                        \>
+                        \times 2/3 {
+                            cs''8
+                            [
+                            bf''8
+                            cs''8
+                            ]
+                        }
+                        bf''4
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        eqs''4
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ~
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 2 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            eqs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            cs''16
+                            \f
+                            \>
+                            [
+                            bf''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                    }
+                    {
+                        bqf''4
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        e''8
+                        \f
+                        \>
+                        [
+                        bf''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \times 4/5 {
-                            % [Voice 2 measure 24] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 2 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            r16
+                            \!
+                            e''16
+                            \f
+                            \>
+                            [
                             f'16
+                            e''16
+                            f'16
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
                             cs''16
                             f'16
                             \mp
@@ -1813,29 +1946,20 @@
                             ]
                             r16
                             \!
-                            cs''16
-                            \f
-                            \>
-                            [
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            bf''16
-                            e''16
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                         }
                     }
                     {
-                        \pitchedTrill
-                        e''4.
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan bf''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            e''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan bf''
+                        }
+                        e''8
                         r16
                         \!
                         \stopTrillSpan
@@ -1848,7 +1972,7 @@
                         \startTrillSpan e''
                     }
                     {
-                        % [Voice 2 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 2 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''2
                         ~
                         cs''8.
@@ -1859,7 +1983,7 @@
                         \stopTrillSpan
                     }
                     {
-                        fes'8
+                        f'8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -1881,7 +2005,7 @@
                 {
                     {
                         \times 4/5 {
-                            % [Voice 3 measure 1] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 3 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.shortInstrumentName =
                             \markup { spr.2 }
                             \set Staff.instrumentName =
@@ -1889,16 +2013,20 @@
                             \tempo 4=90
                             f'16
                             \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            \!
-                            r16
+                            \>
+                            [
                             \!
                             e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            f'16
                             \f
                             \>
                             [
-                            f'16
                             e''16
                             ]
                         }
@@ -1922,7 +2050,7 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 3 measure 2] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 3 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             e''16
                             r16
                             \!
@@ -1938,35 +2066,40 @@
                         f'2
                     }
                     {
-                        r4
-                        \!
+                        e''4
+                        \f
+                        \>
                         \stopTrillSpan
                     }
                     {
                         \times 4/5 {
-                            % [Voice 3 measure 3] %! COMMENT_MEASURE_NUMBERS
-                            e''16
+                            % [Voice 3 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r16
+                            \!
+                            cs''16
                             \f
                             \>
                             [
                             f'16
                             cs''16
-                            f'16
-                            cs''16
                         }
                         f'8
+                        cs''8
+                        f'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
+                        r16
                         \!
                         cs''16
                         \f
                         \>
                         [
-                        f'16
-                        cs''16
                         f'16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -1981,7 +2114,7 @@
                         ~
                     }
                     {
-                        % [Voice 3 measure 4] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 3 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         dqf''4
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -2022,7 +2155,7 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 3 measure 5] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 3 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             cs''16
                             \mf
@@ -2040,31 +2173,35 @@
                             ~
                             \startTrillSpan bf''
                         }
-                        e''2
+                        e''4
                         ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            e''4
+                        }
                     }
                     {
-                        e''16
+                        f''16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        btef''8.
+                        \stopTrillSpan
+                        bf''8.
                         ~
                         ]
-                        \stopTrillSpan
                     }
                     {
-                        % [Voice 3 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        btef''4
+                        % [Voice 3 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf''4
                         ~
-                        btef''16
+                        bf''16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        ftes'8
+                        fs'8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2075,64 +2212,66 @@
                         \>
                         \times 2/3 {
                             f'8
-                            [
-                            cs''8
-                            f'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
+                            r8
+                            \!
+                            cs''8
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
-                        % [Voice 3 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 3 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         eqs''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        e''4
+                        f'4
                         \f
                         \>
-                        bf''16
+                        e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        cs''16
+                        bf''16
                         \f
                         \>
                         [
-                        bf''16
+                        cs''16
                         \times 2/3 {
-                            cs''8
                             bf''8
                             cs''8
+                            bf''8
                         }
                     }
                     {
-                        % [Voice 3 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        f'16
+                        % [Voice 3 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        cs''16
+                        f'16
                         \f
                         \>
                         [
-                        bf''16
+                        cs''16
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            e''16
                             bf''16
                             e''16
+                            bf''16
                         }
-                        bf''8
+                        e''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2140,14 +2279,14 @@
                         r8
                         \!
                         \times 4/5 {
-                            e''16
+                            bf''16
                             \f
                             \>
                             [
+                            e''16
                             bf''16
                             e''16
                             f'16
-                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2155,61 +2294,76 @@
                         }
                     }
                     {
-                        % [Voice 3 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 3 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            f'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs''
+                        }
                         \pitchedTrill
-                        f'2.
+                        cs''4
+                        ~
+                        \startTrillSpan e''
+                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                        }
+                        r16
+                        \!
+                        \stopTrillSpan
+                        \pitchedTrill
+                        e''8.
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
-                        \startTrillSpan cs''
-                        f'16
-                        [
-                        \pitchedTrill
-                        cs''8.
-                        ~
-                        ]
-                        \startTrillSpan e''
-                        \stopTrillSpan
+                        \startTrillSpan bf''
                     }
                     {
-                        % [Voice 3 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 3 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''4
+                    }
+                    {
+                        e''4
+                        \f
+                        \>
+                        \stopTrillSpan
+                        bf''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
                         cs''4
-                    }
-                    {
-                        bf''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \stopTrillSpan
-                        r8
-                        \!
-                        cs''8
                         \f
                         \>
-                        f'4
                     }
                     {
-                        % [Voice 3 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        e''16
+                        % [Voice 3 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'16
                         [
+                        e''16
                         bf''16
                         cs''16
-                        f'16
+                        f'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r8
                         \!
-                        cs''8
+                        cs''16
                         \f
                         \>
                         [
                         f'16
                         e''16
                         bf''16
-                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2222,18 +2376,23 @@
                         \<
                     }
                     {
-                        % [Voice 3 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        etes''4
+                        % [Voice 3 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            f'16
+                            cs''16
                             \f
+                            \>
+                            [
+                            f'16
+                            \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             r16
                             \!
                             cs''16
@@ -2241,7 +2400,6 @@
                             \>
                             [
                             f'16
-                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2249,38 +2407,40 @@
                         }
                     }
                     {
-                        \pitchedTrill
-                        e''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan bf''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs''
+                        }
                     }
                     {
                         e''8
                         \f
                         \>
                         [
-                        cs''8
                         \stopTrillSpan
-                    }
-                    {
-                        % [Voice 3 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        f'16
+                        f'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                    }
+                    {
+                        % [Voice 3 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r16
                         \!
-                        e''16
+                        cs''16
                         \f
                         \>
                         [
                         f'16
+                        e''16
                         ]
-                        e''4
+                        f'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2290,7 +2450,7 @@
                         \times 4/3 {
                             r16
                             \!
-                            btef''8
+                            bf''8
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2298,64 +2458,75 @@
                         }
                     }
                     {
-                        f'8
+                        e''8
                         \f
                         \>
-                        cs''8
-                        ]
-                    }
-                    {
-                        % [Voice 3 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        bf''4
+                        f'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r16
+                        ]
+                    }
+                    {
+                        % [Voice 3 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
                         \!
                         cs''16
                         \f
                         \>
                         [
-                        f'16
+                        bf''16
                         cs''16
+                        f'16
                         \times 2/3 {
-                            f'8
                             cs''8
                             f'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        \pitchedTrill
-                        f'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            cs''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan e''
+                        }
                     }
                     {
-                        % [Voice 3 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        f'4
+                        % [Voice 3 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
-                            \stopTrillSpan
                             cs''16
                             \f
                             \>
                             [
+                            \stopTrillSpan
                             f'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
-                        e''16
-                        bf''16
                         cs''16
+                        \f
+                        \>
+                        [
+                        f'16
+                        e''16
                         bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -2364,7 +2535,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            ftes'16
+                            fs'16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2374,7 +2545,7 @@
                         }
                     }
                     {
-                        % [Voice 3 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 3 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         eqs''4
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -2382,17 +2553,24 @@
                     }
                     {
                         \times 2/3 {
-                            r8
-                            \!
-                            e''8
+                            cs''8
                             \f
                             \>
                             [
                             bf''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                         e''16
-                        f'16
-                        cs''16
+                        \f
+                        \>
+                        [
+                        bf''16
+                        e''16
                         f'16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -2406,68 +2584,78 @@
                         ]
                         r16
                         \!
-                        etes''8
+                        f''8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 3 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        r4
-                        \!
-                        cs''8
+                        % [Voice 3 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
                         \f
                         \>
-                        [
-                        bf''8
+                        f'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
+                        r8
+                        \!
                     }
                     {
-                        btef''2
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            bf''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        bf''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 3 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 3 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''4
                         \f
                         \>
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             bf''16
-                            [
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r16
+                            \!
                             cs''16
+                            \f
+                            \>
+                            [
+                        }
+                        bf''8
+                        cs''8
+                        \times 4/5 {
                             f'16
+                            cs''16
+                            bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                        }
-                        r8
-                        \!
-                        cs''8
-                        \f
-                        \>
-                        [
-                        \times 4/5 {
-                            bf''16
+                            r16
+                            \!
                             cs''16
-                            f'16
-                            e''16
-                            bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
                         \times 4/5 {
-                            % [Voice 3 measure 19] %! COMMENT_MEASURE_NUMBERS
-                            ftes'16
+                            % [Voice 3 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            fs'16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2486,67 +2674,74 @@
                             r16
                             \!
                             \pitchedTrill
-                            cs''8
+                            e''8
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
-                            \startTrillSpan e''
+                            \startTrillSpan bf''
                         }
-                        cs''4
+                        e''4
                         ~
                     }
                     {
-                        % [Voice 3 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        cs''4
+                        % [Voice 3 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''4
                     }
                     {
-                        r16
-                        \!
-                        \stopTrillSpan
-                        cs''16
+                        f'16
                         \f
                         \>
                         [
+                        \stopTrillSpan
+                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        bf''16
+                        \f
+                        \>
+                        [
+                        cs''8
+                        f'8
+                        e''16
                         f'16
                         e''16
-                        f'8
-                        e''8
-                        f'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        cs''16
-                        \f
-                        \>
-                        [
-                        f'16
-                        ]
                     }
                     {
-                        % [Voice 3 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        e''4
-                        bf''8
-                        [
-                        e''8
-                        ]
+                        % [Voice 3 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f'4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \f
+                        \>
+                        cs''8
+                        [
+                        f'8
+                        ]
+                        e''4
                         \times 4/5 {
+                            bf''16
+                            [
+                            e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                             r16
                             \!
-                            e''16
+                            f'16
                             \f
                             \>
                             [
-                            f'16
                             e''16
-                            bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2554,59 +2749,68 @@
                         }
                     }
                     {
-                        % [Voice 3 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        dqf''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 3 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            dqf''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        e''8
+                        f'8
                         \f
                         \>
                         [
-                        bf''8
+                        e''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        etes''4
+                        f''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \times 4/5 {
-                            etes''16
+                            f''16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
-                            btef''8.
+                            bf''8.
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 3 measure 23] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
-                            e''16
+                            % [Voice 3 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf''16
                             \f
                             \>
-                            [
-                            bf''16
+                            e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
+                        bf''16
+                        \f
+                        \>
+                        [
                         e''16
                         bf''16
-                        cs''16
-                        bf''16
+                        e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2614,41 +2818,39 @@
                     }
                     {
                         \pitchedTrill
-                        e''2
+                        f'2
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
-                        \startTrillSpan bf''
+                        \startTrillSpan cs''
                     }
                     {
-                        % [Voice 3 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        e''8
+                        % [Voice 3 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'8
                         [
                         \pitchedTrill
-                        f'8
-                        ]
-                        \startTrillSpan cs''
+                        cs''8
+                        \startTrillSpan e''
                         \stopTrillSpan
                     }
                     {
                         \times 2/3 {
-                            r8
-                            \!
-                            \stopTrillSpan
-                            e''8
+                            bf''8
                             \f
                             \>
-                            [
-                            bf''8
+                            \stopTrillSpan
+                            cs''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        ftes'4
+                        fs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2656,40 +2858,42 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''16
+                            bf''16
                             \f
                             \>
                             [
-                            bf''16
                             e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 3 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 3 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         bf''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \f
+                        \>
                         \times 2/3 {
-                            r8
-                            \!
-                            e''8
-                            \f
-                            \>
+                            cs''8
                             [
-                            f'8
+                            bf''8
+                            e''8
                             ]
                         }
-                        cs''4
-                        bf''16
-                        [
-                        cs''16
-                        bf''8
+                        bf''4
+                        e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
+                        r16
+                        \!
+                        f'8
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \bar "||"
                     }
                 }
@@ -2700,25 +2904,17 @@
                 {
                     {
                         \times 4/5 {
-                            % [Voice 4 measure 1] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 4 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.shortInstrumentName =
                             \markup { spr.3 }
                             \set Staff.instrumentName =
                             \markup { "Soprano 3" }
                             \tempo 4=90
-                            r16
-                            \!
                             cs''16
                             \f
                             \>
                             [
-                            bf''16
-                            f'16
-                            e''16
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            cs''16
+                            \!
                             bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -2726,14 +2922,29 @@
                             ]
                             r16
                             \!
+                            f'16
+                            \f
+                            \>
+                            [
+                            e''16
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            cs''16
+                            bf''16
+                            cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
                         \times 4/5 {
-                            dtef''16
+                            cs''16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             r16
                             \!
                             eqs''8.
@@ -2746,41 +2957,47 @@
                         ~
                     }
                     {
-                        % [Voice 4 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        eqs''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        cs''8
-                        \f
-                        \>
-                        [
-                        e''8
-                        \times 4/5 {
-                            f'16
-                            e''16
-                            f'16
-                            e''16
-                            \mp
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 4 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            eqs''4
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
-                            r16
-                            \!
                         }
-                        cs''4
-                        \f
-                        \>
                     }
                     {
-                        % [Voice 4 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        bf''8
+                        e''8
+                        \f
+                        \>
                         [
                         f'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
+                        \times 4/5 {
+                            r16
+                            \!
+                            e''16
+                            \f
+                            \>
+                            [
+                            f'16
+                            e''16
+                            cs''16
+                            ]
+                        }
+                        bf''4
+                    }
+                    {
+                        % [Voice 4 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
                         bf''4
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -2794,7 +3011,7 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 4 measure 4] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 4 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             cs''16
                             \f
                             \>
@@ -2819,14 +3036,14 @@
                         \<
                     }
                     {
-                        fes'16
+                        f'16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        dtef''8
+                        cs''8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -2850,7 +3067,7 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 4 measure 5] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 4 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             bf''16
                             cs''16
                             e''16
@@ -2885,7 +3102,7 @@
                         \<
                     }
                     {
-                        % [Voice 4 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f'4
                         \f
                         \>
@@ -2911,7 +3128,7 @@
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
-                            fes'16
+                            f'16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -2919,24 +3136,24 @@
                         }
                     }
                     {
-                        % [Voice 4 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''16
                         \f
                         \>
-                        e''16
-                        f'16
                         e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        f'16
+                        \f
+                        \>
+                        [
                         \times 2/3 {
-                            r8
-                            \!
+                            e''8
                             f'8
-                            \f
-                            \>
-                            [
                             e''8
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -2945,33 +3162,40 @@
                         }
                     }
                     {
-                        dtef''2
+                        cs''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        % [Voice 4 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''16
                         \f
                         \>
                         [
                         bf''16
-                        cs''16
-                        bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        cs''16
+                        \f
+                        \>
+                        [
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
+                            bf''16
                             f'16
-                            \f
-                            \>
-                            [
                             bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -2988,25 +3212,25 @@
                         \<
                     }
                     {
-                        % [Voice 4 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f'8
                         \f
                         \>
                         [
                         bf''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
-                            f'16
-                            e''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                             r16
                             \!
                             f'16
                             \f
                             \>
                             [
+                            e''16
+                            f'16
                             e''16
                             ]
                         }
@@ -3025,29 +3249,40 @@
                         \startTrillSpan cs''
                     }
                     {
-                        % [Voice 4 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f'8
+                        [
                         \pitchedTrill
-                        e''4.
+                        e''8
                         ~
+                        ]
                         \startTrillSpan bf''
                         \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            e''4
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            e''16
-                            [
+                            r16
+                            \!
+                            \stopTrillSpan
                             \pitchedTrill
                             cs''8
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ~
-                            ]
                             \startTrillSpan e''
-                            \stopTrillSpan
                         }
-                        cs''4
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                            ~
+                        }
                     }
                     {
-                        % [Voice 4 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''4
                         \pitchedTrill
                         f'2
@@ -3066,13 +3301,15 @@
                         \startTrillSpan bf''
                     }
                     {
-                        % [Voice 4 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        bqf''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 4 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bqf''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
                         bf''8
@@ -3080,52 +3317,52 @@
                         \>
                         [
                         cs''8
-                        ]
-                        bf''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r16
+                        ]
+                        r4
                         \!
-                        f'16
+                        bf''16
                         \f
                         \>
                         [
+                        f'16
                         bf''16
                         f'16
                     }
                     {
-                        % [Voice 4 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         bf''8
                         cs''8
-                        bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        f'16
+                        bf''16
                         \f
                         \>
                         [
+                        f'16
                         e''16
                         \times 4/5 {
                             f'16
                             bf''16
                             f'16
-                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
+                            e''16
+                            \f
+                            \>
+                            [
                         }
                         cs''8
-                        \f
-                        \>
-                        [
                         bf''8
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -3133,12 +3370,20 @@
                         ]
                     }
                     {
-                        % [Voice 4 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        fes'4
+                        % [Voice 4 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
-                        dtef''2
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                            ~
+                        }
+                        cs''4
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         f'16
@@ -3146,20 +3391,20 @@
                         \>
                         [
                         bf''16
-                        cs''16
-                        e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        % [Voice 4 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        r4
+                        r16
                         \!
-                        f'8
+                        cs''16
                         \f
                         \>
+                    }
+                    {
+                        % [Voice 4 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''4
+                        f'8
                         [
                         bf''8
                         \mp
@@ -3184,7 +3429,7 @@
                         \<
                     }
                     {
-                        % [Voice 4 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         cs''4
                         \mf
@@ -3211,17 +3456,21 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 4 measure 17] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         e''16
-                        [
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
                         f'16
+                        \f
+                        \>
+                        [
                         bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
-                        r16
-                        \!
                     }
                     {
                         \times 4/5 {
@@ -3229,38 +3478,47 @@
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             r16
                             \!
-                            fes'8.
+                            f'8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        fes'2
+                        f'2
                     }
                     {
                         \times 2/3 {
-                            % [Voice 4 measure 18] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 4 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             f'8
                             \f
                             \>
                             [
                             bf''8
-                            cs''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
+                            cs''16
+                            \f
+                            \>
+                            [
                             e''16
                             cs''16
-                            bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        dtef''16
+                        cs''16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3268,41 +3526,42 @@
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     {
-                        r16
-                        \!
-                        f'16
+                        bf''16
                         \f
                         \>
-                        [
-                        e''16
-                        cs''16
-                    }
-                    {
-                        \times 2/3 {
-                            % [Voice 4 measure 19] %! COMMENT_MEASURE_NUMBERS
-                            e''8
-                            cs''8
-                            bf''8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                        r16
-                        \!
-                        f'16
-                        \f
-                        \>
-                        [
-                        e''16
                         f'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        e''16
+                        \f
+                        \>
+                        [
+                    }
+                    {
+                        \times 2/3 {
+                            % [Voice 4 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''8
+                            e''8
+                            cs''8
+                        }
+                        bf''16
+                        f'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        e''16
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         \pitchedTrill
@@ -3327,7 +3586,7 @@
                         }
                     }
                     {
-                        % [Voice 4 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 4 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''4
                     }
                     {
@@ -3337,63 +3596,60 @@
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
-                            fes'16
+                            f'16
                             ~
                         }
-                        fes'4
+                        f'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        e''4
+                        f'4
                         \f
                         \>
                     }
                     {
-                        % [Voice 4 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        cs''8
+                        % [Voice 4 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        cs''4
+                        \f
+                        \>
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            bf''16
+                            [
+                            cs''16
+                            bf''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                    }
+                    {
+                        cs''4
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 4 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'8
+                        \f
+                        \>
                         [
-                        bf''8
+                        e''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r4
-                        \!
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            cs''16
-                            \f
-                            \>
-                            [
-                            bf''16
-                            f'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                    }
-                    {
-                        dtef''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        % [Voice 4 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        e''8
-                        \f
-                        \>
-                        [
-                        cs''8
                         \times 4/5 {
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                             r16
                             \!
                             cs''16
@@ -3401,10 +3657,10 @@
                             \>
                             [
                             bf''16
-                            f'16
+                            cs''16
+                            bf''16
                         }
-                        e''16
-                        cs''16
+                        f'16
                         e''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -3412,15 +3668,15 @@
                         ]
                         r16
                         \!
-                        cs''8
+                        cs''16
                         \f
                         \>
                         [
                         e''8
+                        cs''8
                     }
                     {
-                        % [Voice 4 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        f'16
+                        % [Voice 4 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         e''16
                         f'16
                         e''16
@@ -3428,8 +3684,12 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r4
+                        r16
                         \!
+                        f'4
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         \pitchedTrill
@@ -3450,55 +3710,58 @@
                         \startTrillSpan bf''
                     }
                     {
-                        % [Voice 4 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        e''4
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 4 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e''4
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            e''16
+                            eqs''16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             [
+                            \stopTrillSpan
                             bqf''8
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
-                            \stopTrillSpan
                         }
                     }
                     {
-                        cs''8
+                        e''8
                         \f
                         \>
-                        bf''8
+                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        fes'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            f'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        % [Voice 4 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        fes'16
-                        [
-                        dtef''8.
+                        % [Voice 4 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r16
+                        \!
+                        cs''8.
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     {
-                        f'4
-                        \mp
+                        bf''4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -3525,7 +3788,7 @@
                 {
                     {
                         \times 4/5 {
-                            % [Voice 5 measure 1] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 5 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.shortInstrumentName =
                             \markup { alt.1 }
                             \set Staff.instrumentName =
@@ -3537,17 +3800,17 @@
                             [
                             \!
                             e''16
-                            f'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            cs''16
+                            f'16
                             \f
                             \>
                             [
+                            cs''16
                         }
                         f'8
                         e''8
@@ -3557,7 +3820,7 @@
                     }
                     {
                         \times 4/5 {
-                            btes''16
+                            c'''16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -3570,14 +3833,14 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 5 measure 2] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 5 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             aqf''16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
-                            ces''8.
+                            c''8.
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -3591,11 +3854,12 @@
                             \f
                             \>
                             e''16
-                            bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
@@ -3605,61 +3869,65 @@
                         \<
                     }
                     {
-                        r16
-                        \!
-                        cs''16
+                        bf''16
                         \f
                         \>
                         [
-                        f'16
                         cs''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        f'16
+                        \f
+                        \>
+                        [
                     }
                     {
                         \times 2/3 {
-                            % [Voice 5 measure 3] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 5 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''8
                             bf''8
                             e''8
-                            bf''8
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            bf''16
+                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
                             r16
                             \!
-                            cs''16
-                            \f
-                            \>
-                            [
-                            f'16
-                            ]
                         }
-                        e''4
+                        f'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        btes''4
+                        c'''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 2/3 {
-                            % [Voice 5 measure 4] %! COMMENT_MEASURE_NUMBERS
-                            f'8
+                            % [Voice 5 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e''8
                             \f
                             \>
                             [
-                            cs''8
-                            bf''8
+                            f'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
                         }
                     }
                     {
@@ -3689,41 +3957,52 @@
                         }
                     }
                     {
-                        % [Voice 5 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        e''2
+                        % [Voice 5 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''4
                         ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            e''4
+                        }
                     }
                     {
-                        e''16
+                        c''16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
+                        \stopTrillSpan
                         cqs'8.
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \stopTrillSpan
                     }
                     {
-                        r4
-                        \!
+                        cs''4
+                        \f
+                        \>
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 5 measure 6] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 5 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r16
+                            \!
                             e''16
                             \f
                             \>
                             [
-                            f'16
-                            cs''16
                         }
-                        bf''8
+                        f'8
                         cs''8
                         \times 4/5 {
+                            bf''16
+                            cs''16
                             f'16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -3733,14 +4012,8 @@
                             \!
                             e''16
                             \f
-                            \>
-                            [
-                            f'16
-                            cs''16
-                            \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                         }
                     }
                     {
@@ -3753,20 +4026,22 @@
                         \startTrillSpan e''
                     }
                     {
-                        % [Voice 5 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''16
                         r16
                         \!
                         \stopTrillSpan
                         \pitchedTrill
-                        f'8
+                        f'4.
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan cs''
-                        f'2
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            f'4
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -3775,64 +4050,64 @@
                             \f
                             \>
                             [
-                            e''16
                             \stopTrillSpan
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                    }
-                    {
-                        % [Voice 5 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
-                        cs''8
-                        \f
-                        \>
-                        [
-                        \times 4/5 {
-                            f'16
                             cs''16
-                            f'16
-                            e''16
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                        r4
-                        \!
-                        cs''8
-                        \f
-                        \>
-                        [
-                        f'8
-                        ]
-                    }
-                    {
-                        % [Voice 5 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        e''4
-                        \times 4/5 {
-                            f'16
-                            [
-                            e''16
-                            bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
+                        }
+                    }
+                    {
+                        % [Voice 5 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf''8
+                        \f
+                        \>
+                        [
+                        e''8
+                        \times 4/5 {
+                            bf''16
+                            cs''16
+                            f'16
+                            cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                        f'4
+                        \f
+                        \>
+                        e''8
+                        [
+                        bf''8
+                        ]
+                    }
+                    {
+                        % [Voice 5 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
+                        \times 4/5 {
+                            f'16
+                            [
                             e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            f'16
                             \f
                             \>
                             [
+                            e''16
                         }
                         bf''8
-                        cs''8
+                        e''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -3847,20 +4122,21 @@
                         \startTrillSpan bf''
                     }
                     {
-                        % [Voice 5 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        btes''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
-                        btes''16
-                        [
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 5 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            c'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
+                        r16
+                        \!
                         aqf''8.
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     {
                         \pitchedTrill
@@ -3871,27 +4147,27 @@
                         \startTrillSpan e''
                     }
                     {
-                        % [Voice 5 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         bf''16
                         \f
                         \>
                         [
                         \stopTrillSpan
                         cs''16
-                        bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
+                        bf''16
+                        \f
+                        \>
+                        [
                         \times 4/5 {
                             cs''16
-                            \f
-                            \>
-                            [
-                            f'16
-                            e''16
+                            bf''16
+                            cs''16
                             f'16
                             e''16
                             \mp
@@ -3909,17 +4185,19 @@
                         \startTrillSpan cs''
                     }
                     {
-                        ces''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 5 measure 12] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 5 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             r16
                             \!
                             \pitchedTrill
@@ -3932,24 +4210,27 @@
                         }
                     }
                     {
-                        bf''8
+                        f'8
                         \f
+                        \>
+                        \stopTrillSpan
+                        e''8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \stopTrillSpan
-                        r8
-                        \!
                     }
                     {
-                        cqs'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cqs'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         cs''4
                         \mf
                         - \tweak stencil #constante-hairpin
@@ -3960,7 +4241,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 5 measure 13] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 5 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             cs''16
                             [
                             \pitchedTrill
@@ -3968,35 +4249,40 @@
                             ~
                             ]
                             \startTrillSpan cs''
+                            \stopTrillSpan
                         }
                         f'4
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            e''16
+                            bf''16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            bf''16
-                            cs''16
-                            ]
-                        }
-                        f'4
-                    }
-                    {
-                        \times 2/3 {
-                            % [Voice 5 measure 14] %! COMMENT_MEASURE_NUMBERS
-                            cs''8
-                            [
-                            bf''8
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            r8
+                            r16
                             \!
+                        }
+                        bf''4
+                        \f
+                        \>
+                    }
+                    {
+                        \times 2/3 {
+                            % [Voice 5 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''8
+                            [
+                            f'8
+                            cs''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
@@ -4005,6 +4291,7 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         \startTrillSpan bf''
                         r16
                         \!
@@ -4017,15 +4304,17 @@
                         \startTrillSpan e''
                     }
                     {
-                        btes''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         f'4
                         \mf
                         - \tweak stencil #constante-hairpin
@@ -4033,29 +4322,29 @@
                         \startTrillSpan cs''
                     }
                     {
-                        % [Voice 5 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        e''4
-                        \stopTrillSpan
+                        % [Voice 5 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf''4
                         \f
                         \>
+                        \stopTrillSpan
+                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
                         bf''16
+                        \f
+                        \>
                         [
                         e''16
-                        bf''16
-                        e''16
                         \times 2/3 {
+                            bf''8
+                            e''8
                             bf''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
-                            r8
-                            \!
-                            e''8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            [
                         }
                     }
                     {
@@ -4065,38 +4354,42 @@
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            ces''4
+                            c''4
                             ~
                         }
                     }
                     {
-                        % [Voice 5 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        ces''4
+                        % [Voice 5 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        bf''16
+                        e''16
                         \f
                         \>
                         [
+                        bf''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         cs''16
-                        f'16
-                        e''16
+                        \f
+                        \>
+                        [
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
+                            f'16
+                            e''16
                             bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            r16
-                            \!
-                            cs''16
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
                         }
                     }
                     {
@@ -4111,48 +4404,57 @@
                         }
                     }
                     {
-                        % [Voice 5 measure 17] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         e''2
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         \startTrillSpan bf''
-                        \pitchedTrill
-                        cs''2
-                        \startTrillSpan e''
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            cs''4
+                            ~
+                            \startTrillSpan e''
+                            \stopTrillSpan
+                        }
+                        cs''4
                     }
                     {
-                        % [Voice 5 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        bf''8
+                        % [Voice 5 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''8
                         \f
                         \>
                         [
                         \stopTrillSpan
-                        e''8
+                        bf''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
+                            r16
+                            \!
+                            e''16
+                            \f
+                            \>
+                            [
                             bf''16
                             cs''16
                             f'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
                             ]
-                            r16
-                            \!
-                            cs''16
-                            \f
-                            \>
                         }
-                        f'4
-                        e''8
-                        [
-                        bf''8
-                        ]
+                        cs''4
+                        f'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
                     }
                     {
-                        % [Voice 5 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         e''4
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -4180,14 +4482,14 @@
                         e''4
                     }
                     {
-                        btes''4
+                        c'''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 5 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         cs''8
                         \mf
@@ -4202,55 +4504,57 @@
                     }
                     {
                         bf''16
+                        \f
+                        \>
+                        \stopTrillSpan
+                        e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \stopTrillSpan
                         r16
                         \!
-                        e''16
+                        bf''16
                         \f
                         \>
                         [
-                        bf''16
                         e''8
-                        f'8
+                        bf''8
                         e''16
                         f'16
+                        e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        e''16
-                        \f
-                        \>
-                        [
                     }
                     {
                         \times 4/5 {
-                            % [Voice 5 measure 21] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 5 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f'16
+                            \f
+                            \>
+                            [
+                            e''16
                             bf''16
                             e''16
                             f'16
-                            e''16
-                            f'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                         }
+                        e''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         r8
                         \!
-                        e''8
+                        f'16
                         \f
                         \>
                         [
+                        e''16
                         f'16
-                        cs''16
-                        bf''16
                         cs''16
                         ]
                         bf''4
@@ -4259,7 +4563,7 @@
                         \<
                     }
                     {
-                        % [Voice 5 measure 22] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 5 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         aqf''4
                         \p
                         - \tweak stencil #constante-hairpin
@@ -4272,19 +4576,22 @@
                             \<
                             r16
                             \!
-                            ces''8.
+                            c''8.
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
-                        r8
-                        \!
                         cs''8
                         \f
+                        \>
+                        bf''8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         cqs'4
@@ -4293,14 +4600,20 @@
                         \<
                     }
                     {
-                        % [Voice 5 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        bf''4
+                        % [Voice 5 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
                         \f
                         \>
-                        cs''16
-                        [
                         bf''16
-                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        cs''16
+                        \f
+                        \>
+                        [
                         bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -4308,30 +4621,39 @@
                         ]
                     }
                     {
-                        btes''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c'''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \times 2/3 {
-                            r8
-                            \!
                             e''8
                             \f
                             \>
                             [
-                            f'8
+                            bf''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 5 measure 24] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 5 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             e''16
+                            \f
+                            \>
+                            [
                             f'16
-                            cs''16
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -4346,20 +4668,24 @@
                     }
                     {
                         f'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                        cs''16
                         \f
                         \>
                         [
-                        bf''16
+                        cs''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        f'16
+                        \f
+                        \>
+                        [
                         \times 2/3 {
-                            e''8
-                            bf''8
                             cs''8
+                            bf''8
+                            e''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -4367,8 +4693,8 @@
                         }
                     }
                     {
-                        % [Voice 5 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        ces''4
+                        % [Voice 5 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4415,7 +4741,7 @@
                 \context Voice = "Voice 6"
                 {
                     {
-                        % [Voice 6 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { alt.2 }
                         \set Staff.instrumentName =
@@ -4423,31 +4749,35 @@
                         \tempo 4=90
                         f'16
                         \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \!
-                        r16
-                        \!
-                        e''16
-                        \f
                         \>
                         [
-                        f'16
+                        \!
+                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
+                        r16
+                        \!
+                        f'16
+                        \f
+                        \>
                         e''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        bqs''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            bqs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         e''4
                         \mf
                         - \tweak stencil #constante-hairpin
@@ -4457,10 +4787,10 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 6 measure 2] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 6 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             r16
-                            \stopTrillSpan
                             \!
+                            \stopTrillSpan
                             \pitchedTrill
                             f'8
                             \mf
@@ -4470,7 +4800,7 @@
                         }
                     }
                     {
-                        atef''4
+                        af''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4492,14 +4822,14 @@
                             \<
                             [
                             \stopTrillSpan
-                            ctes'8.
+                            cs'8.
                             ~
                             ]
                         }
                     }
                     {
-                        % [Voice 6 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        ctes'4
+                        % [Voice 6 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4510,11 +4840,12 @@
                         \>
                         [
                         e''8
-                        ]
-                        f'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
+                        r4
+                        \!
                     }
                     {
                         \times 4/5 {
@@ -4524,7 +4855,7 @@
                             \<
                             r16
                             \!
-                            atef''8.
+                            af''8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -4532,8 +4863,8 @@
                         }
                     }
                     {
-                        % [Voice 6 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        atef''4
+                        % [Voice 6 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        af''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4541,16 +4872,23 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
-                            e''16
+                            f'16
                             \f
                             \>
                             [
-                            f'16
+                            e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
-                        cs''8
                         f'8
+                        \f
+                        \>
+                        [
+                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4566,7 +4904,7 @@
                         \startTrillSpan bf''
                     }
                     {
-                        % [Voice 6 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         e''16
                         \pitchedTrill
                         f'4..
@@ -4582,60 +4920,60 @@
                             \stopTrillSpan
                             r16
                             \!
-                            ctes'8.
+                            cs'8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        ctes'4
+                        cs'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            % [Voice 6 measure 6] %! COMMENT_MEASURE_NUMBERS
-                            cs''16
+                            % [Voice 6 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f'16
                             \f
                             \>
                             [
-                            f'16
+                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            cs''16
+                            f'16
                             \f
                             \>
                             [
-                            f'16
+                            cs''16
                         }
+                        f'16
                         cs''16
                         f'16
                         e''16
-                        bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r8
                         \!
-                        cs''8
+                        bf''8
                         \f
                         \>
                         [
+                        cs''16
                         f'16
                         cs''16
                         f'16
-                        e''16
                         ]
                     }
                     {
-                        % [Voice 6 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        f'4
+                        % [Voice 6 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4665,60 +5003,64 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 6 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         bqs''16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        atef''8
+                        af''8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \pitchedTrill
-                        f'2
+                        f'4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan cs''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            f'4
+                        }
                     }
                     {
                         f'8
-                        [
-                        cs''8
                         \f
                         \>
-                        ]
+                        [
                         \stopTrillSpan
-                    }
-                    {
-                        % [Voice 6 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        f'4
-                        \times 4/5 {
-                            cs''16
-                            [
-                            f'16
-                            e''16
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                        }
                         cs''8
-                        \f
-                        \>
-                        [
-                        bf''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
+                    }
+                    {
+                        % [Voice 6 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        \!
+                        \times 4/5 {
+                            f'16
+                            \f
+                            \>
+                            [
+                            cs''16
+                            f'16
+                            e''16
+                            bf''16
+                        }
+                        cs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -4728,6 +5070,7 @@
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                             \startTrillSpan e''
                             \pitchedTrill
                             e''8
@@ -4737,13 +5080,15 @@
                         }
                     }
                     {
-                        % [Voice 6 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        cqs''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 6 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cqs''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
                         r16
@@ -4759,33 +5104,33 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''16
+                            bf''16
                             \f
                             \>
                             \stopTrillSpan
-                            bf''16
                             cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
-                        f'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        cs''16
+                        bf''16
                         \f
                         \>
                         [
-                        bf''16
+                        cs''16
+                        f'16
+                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        % [Voice 6 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        ctes'2
+                        % [Voice 6 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -4796,114 +5141,132 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                         \startTrillSpan e''
                         \pitchedTrill
-                        e''4..
+                        e''8.
                         ~
+                        ]
                         \startTrillSpan bf''
                         \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            e''4
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 6 measure 12] %! COMMENT_MEASURE_NUMBERS
-                            e''16
-                            [
+                            % [Voice 6 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            r16
+                            \!
+                            \stopTrillSpan
                             \pitchedTrill
                             f'8
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            [
                             \startTrillSpan cs''
-                            \stopTrillSpan
                         }
                     }
                     {
                         \times 2/3 {
-                            e''8
+                            bf''8
                             \f
                             \>
                             \stopTrillSpan
-                            bf''8
                             e''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                            e''16
                             \f
                             \>
+                            [
+                            e''16
+                            bf''16
+                            ]
                         }
-                        bf''4
+                        e''4
                     }
                     {
                         \times 2/3 {
-                            % [Voice 6 measure 13] %! COMMENT_MEASURE_NUMBERS
-                            e''8
+                            % [Voice 6 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf''8
                             [
-                            f'8
                             e''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        bqs''4..
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        atef''16
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            bqs''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        bqs''8.
+                        [
+                        af''16
                         ~
-                        atef''4
+                        ]
+                        af''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 6 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        bf''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        % [Voice 6 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'4
+                        \f
+                        \>
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
+                            e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             r16
                             \!
-                            cs''16
+                            bf''16
                             \f
                             \>
                             [
-                            f'16
                         }
-                        e''8
-                        bf''8
+                        cs''8
+                        f'8
                         \times 4/5 {
+                            e''16
+                            bf''16
                             cs''16
-                            f'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            cs''16
-                            \f
-                            \>
-                            [
                             f'16
-                            \mp
+                            \f
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                         }
                     }
                     {
-                        % [Voice 6 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         cs''4
                         \mf
@@ -4922,12 +5285,17 @@
                         \<
                         ~
                         \startTrillSpan bf''
-                        e''2
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            e''4
+                            ~
+                        }
+                        e''4
                         ~
                     }
                     {
                         \times 4/5 {
-                            % [Voice 6 measure 16] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 6 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             e''8
                             [
                             \pitchedTrill
@@ -4947,7 +5315,7 @@
                         \times 4/3 {
                             r16
                             \!
-                            ctes'8
+                            cs'8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -4957,22 +5325,29 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            e''16
+                            cs''16
                             \f
                             \>
-                            bf''16
-                            cs''16
+                            f'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 6 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        f'8
+                        % [Voice 6 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''8
+                        \f
+                        \>
+                        [
+                        bf''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
-                        \!
                     }
                     {
                         \pitchedTrill
@@ -4992,19 +5367,27 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 6 measure 18] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 6 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             cs''16
                             \f
                             \>
                             [
                             \stopTrillSpan
                             f'16
-                            e''16
-                            f'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             cs''16
+                            \f
+                            \>
+                            [
+                            f'16
                             ]
                         }
-                        f'4
+                        e''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5022,62 +5405,69 @@
                             \<
                             r16
                             \!
-                            atef''8.
+                            af''8.
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
-                        % [Voice 6 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
-                        e''8
+                        % [Voice 6 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'8
                         \f
                         \>
-                        f'4
+                        cs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r4
+                        \!
                         \times 4/5 {
-                            e''16
+                            f'16
+                            \f
+                            \>
                             [
+                            e''16
+                            f'16
+                            e''16
+                            f'16
+                        }
+                        cs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
+                    }
+                    {
+                        % [Voice 6 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf''16
+                        \f
+                        \>
+                        [
+                        cs''16
+                        f'16
+                        cs''16
+                        \times 4/5 {
                             f'16
                             cs''16
-                            bf''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                        }
-                        cs''8
-                        \f
-                        \>
-                        [
-                        f'8
-                    }
-                    {
-                        % [Voice 6 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        cs''16
-                        f'16
-                        cs''16
-                        f'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \times 4/5 {
-                            r16
-                            \!
-                            cs''16
+                            f'16
                             \f
                             \>
                             [
-                            f'16
-                            e''16
-                            bf''16
+                            cs''16
                         }
-                        cs''8
-                        bf''8
+                        f'8
+                        e''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5093,7 +5483,7 @@
                         \startTrillSpan cs''
                     }
                     {
-                        % [Voice 6 measure 21] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f'4
                         \pitchedTrill
                         cs''4
@@ -5114,14 +5504,14 @@
                             \<
                             r16
                             \!
-                            ctes'8.
+                            cs'8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        % [Voice 6 measure 22] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         e''4
                         \mf
@@ -5130,51 +5520,59 @@
                         \startTrillSpan bf''
                     }
                     {
-                        bqs''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            bqs''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \stopTrillSpan
+                        }
                         bqs''16
-                        atef''4..
+                        af''4..
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 6 measure 23] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
-                            e''16
+                            % [Voice 6 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf''16
                             \f
                             \>
                             [
-                            bf''16
-                            ]
-                        }
-                        e''4
-                        \times 2/3 {
-                            f'8
-                            [
-                            cs''8
-                            f'8
+                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
-                        r4
-                        \!
+                        bf''4
+                        \f
+                        \>
+                        \times 2/3 {
+                            e''8
+                            [
+                            bf''8
+                            e''8
+                            ]
+                        }
+                        f'4
                     }
                     {
-                        % [Voice 6 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 6 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        f'16
                         \f
                         \>
                         [
-                        bf''16
                         cs''16
-                        bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5198,17 +5596,24 @@
                         \startTrillSpan e''
                     }
                     {
-                        cqs''2
+                        cqs''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cqs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        % [Voice 6 measure 25] %! COMMENT_MEASURE_NUMBERS
-                       \pitchedTrill
-                       e''4
+                        % [Voice 6 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \pitchedTrill
+                        e''4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5216,12 +5621,12 @@
                     }
                     {
                         \times 2/3 {
-                            cs''8
-                            \stopTrillSpan
+                            bf''8
                             \f
                             \>
                             [
-                            f'8
+                            \stopTrillSpan
+                            cs''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -5229,15 +5634,15 @@
                             r8
                             \!
                         }
-                        cs''16
+                        bf''16
                         \f
                         \>
                         [
-                        bf''16
                         cs''16
                         f'16
-                        e''16
+                        cs''16
                         bf''16
+                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5254,7 +5659,7 @@
                 {
                     {
                         \times 4/5 {
-                            % [Voice 7 measure 1] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 7 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.shortInstrumentName =
                             \markup { alt.3 }
                             \set Staff.instrumentName =
@@ -5266,31 +5671,39 @@
                             [
                             \!
                             bf''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             f'16
+                            \f
+                            \>
+                            [
                             e''16
-                            cs''16
                             ]
                         }
-                        bf''4
+                        cs''4
+                        bf''8
+                        [
+                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r8
-                        \!
-                        cs''8
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        ]
                     }
                     {
-                        bes''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            b''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        % [Voice 7 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 7 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r16
                         \!
                         \pitchedTrill
@@ -5309,30 +5722,32 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 7 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 7 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f'16
-                        [
-                        e''16
-                        f'16
-                        e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
-                        r8
+                        r16
                         \!
-                        cs''8
+                        e''16
                         \f
                         \>
                         [
+                        f'16
+                        e''8
+                        cs''8
                         bf''16
                         f'16
-                        bf''16
-                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        bf''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         aqf''4
@@ -5342,11 +5757,16 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 7 measure 4] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 7 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''16
+                            \f
+                            \>
+                            [
                             e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             r16
                             \!
                             f'16
@@ -5354,7 +5774,6 @@
                             \>
                             [
                             e''16
-                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -5362,27 +5781,33 @@
                         }
                     }
                     {
-                        ctes''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            ctes''16
-                            [
+                            r16
+                            \!
                             cqs'8
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ~
-                            ]
                         }
-                        cqs'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cqs'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        % [Voice 7 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 7 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         e''4
                         \mf
@@ -5397,39 +5822,41 @@
                             \pitchedTrill
                             cs''8
                             \startTrillSpan e''
+                            \stopTrillSpan
                         }
                     }
                     {
-                        e''8
+                        cs''8
                         \f
                         \>
                         \stopTrillSpan
-                        f'8
-                        bf''16
+                        e''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        cs''16
+                        f'16
                         \f
                         \>
                         [
                         bf''16
+                        cs''16
                         ]
                     }
                     {
-                        % [Voice 7 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        cs''4
-                        e''8
+                        % [Voice 7 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf''4
+                        cs''8
                         [
-                        f'8
-                        ]
-                        e''4
+                        e''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
+                        r4
+                        \!
                     }
                     {
                         \pitchedTrill
@@ -5440,68 +5867,71 @@
                         \startTrillSpan cs''
                     }
                     {
-                        % [Voice 7 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        bes''16
-                        \pp
+                        % [Voice 7 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b''16
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                         r16
                         \!
                         aqf''8
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        \pitchedTrill
-                        e''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan bf''
-                    }
-                    {
-                        e''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            e''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan bf''
+                        }
+                    }
+                    {
+                        cs''4
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        \stopTrillSpan
+                    }
+                    {
+                        f'16
+                        \f
+                        \>
+                        [
+                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         r16
                         \!
-                        \stopTrillSpan
                         cs''16
                         \f
                         \>
                         [
-                        bf''16
-                        cs''16
                     }
                     {
                         \times 2/3 {
-                            % [Voice 7 measure 8] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 7 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf''8
+                            cs''8
                             e''8
-                            f'8
-                            e''8
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            f'16
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
                             r16
                             \!
-                            f'16
-                            \f
-                            \>
-                            [
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
                         }
                     }
                     {
@@ -5510,56 +5940,59 @@
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
-                            bes''4
+                            b''4
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
+                        f'16
+                        \f
+                        \>
+                        [
+                        bf''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         cs''16
                         \f
                         \>
                         [
-                        e''16
+                    }
+                    {
+                        \times 2/3 {
+                            % [Voice 7 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e''8
+                            f'8
+                            e''8
+                        }
                         f'16
                         e''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \times 2/3 {
-                            % [Voice 7 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            r8
-                            \!
-                            f'8
-                            \f
-                            \>
-                            [
-                            e''8
-                        }
+                        r16
+                        \!
                         cs''16
-                        bf''16
-                        cs''16
-                        bf''16
-                        \mp
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     {
                         aqf''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             r16
                             \!
-                            ctes''8
+                            cs''8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -5567,135 +6000,149 @@
                         }
                     }
                     {
-                        % [Voice 7 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        ctes''4
+                        % [Voice 7 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        r4
-                        \!
-                        f'8
+                        bf''4
                         \f
                         \>
-                        [
-                        bf''8
+                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
+                        r8
+                        \!
                     }
                     {
                         cqs'4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 7 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        cs''2
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan e''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 7 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            cs''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan e''
+                        }
+                        cs''4
                     }
                     {
-                        f'4
+                        bf''4
                         \f
                         \>
                         \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            bf''16
-                            [
                             f'16
-                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            r16
+                            \!
+                            bf''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            [
                         }
                     }
                     {
                         \times 4/5 {
-                            % [Voice 7 measure 12] %! COMMENT_MEASURE_NUMBERS
-                            bes''16
-                            \p
+                            % [Voice 7 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b''16
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
                             aqf''8.
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
-                        r8
-                        \!
                         f'8
                         \f
+                        \>
+                        bf''8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
-                        ctes''2
+                        cs''2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            % [Voice 7 measure 13] %! COMMENT_MEASURE_NUMBERS
-                            e''16
+                            % [Voice 7 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f'16
                             \f
                             \>
                             [
-                            cs''16
-                            bf''16
-                            cs''16
-                            bf''16
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
+                            f'16
+                            \f
+                            \>
+                            [
+                            e''16
                         }
-                        r16
-                        \!
-                        f'16
-                        \f
-                        \>
-                        [
+                        cs''16
                         bf''16
-                        f'16
-                        bf''8
-                        cs''8
+                        cs''16
                         bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
+                        r8
                         \!
-                        f'16
+                        f'8
                         \f
                         \>
                         [
-                        e''16
+                        bf''16
+                        f'16
+                        bf''16
+                        cs''16
                         ]
                     }
                     {
-                        % [Voice 7 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        f'4
-                        bf''8
-                        [
-                        f'8
+                        % [Voice 7 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        r8
+                        \!
+                        f'8
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
                     }
                     {
                         \pitchedTrill
@@ -5720,15 +6167,15 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 7 measure 15] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 7 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             cqs'16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
-                            bes''8.
-                            \p
+                            b''8.
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                         }
@@ -5743,20 +6190,22 @@
                     }
                     {
                         e''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \f
+                        \>
                         \stopTrillSpan
                         \times 4/5 {
+                            f'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             r16
                             \!
-                            cs''16
+                            bf''16
                             \f
                             \>
                             [
-                            bf''16
                             f'16
-                            bf''16
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -5764,9 +6213,16 @@
                         }
                     }
                     {
-                        % [Voice 7 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        aqf''2
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 7 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            aqf''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                        cs''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -5775,7 +6231,7 @@
                         \f
                         \>
                         [
-                        e''8
+                        bf''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5796,43 +6252,43 @@
                         }
                     }
                     {
-                        % [Voice 7 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        ctes''4
+                        % [Voice 7 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cqs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
-                        ctes''16
+                        cqs'16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        cqs'8
-                        \pp
+                        b''8
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
                     }
                     {
-                        f'16
+                        cs''16
                         \f
                         \>
                         e''16
-                        f'16
-                        bf''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        f'16
+                        \f
+                        \>
+                        [
                         \times 2/3 {
-                            r8
-                            \!
-                            f'8
-                            \f
-                            \>
-                            [
                             bf''8
+                            f'8
+                            e''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -5840,15 +6296,15 @@
                         }
                     }
                     {
-                        % [Voice 7 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        bes''4
+                        % [Voice 7 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        aqf''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \times 4/5 {
-                            bes''4
-                            aqf''16
+                            aqf''4
+                            cs''16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -5858,20 +6314,24 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''16
+                            f'16
                             \f
                             \>
-                            e''16
-                            cs''16
+                            bf''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
-                        bf''4
+                        f'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 7 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 7 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f'4
                         \mf
@@ -5880,12 +6340,14 @@
                         \startTrillSpan cs''
                     }
                     {
-                        ctes''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cqs'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
                         r16
@@ -5898,7 +6360,7 @@
                         \startTrillSpan bf''
                     }
                     {
-                        cqs'4
+                        b''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -5906,34 +6368,39 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 7 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        cqs'4.
-                        bes''8
+                        % [Voice 7 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b''4.
+                        aqf''8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                     }
                     {
                         \times 2/3 {
-                            r8
-                            \!
-                            f'8
+                            bf''8
                             \f
                             \>
-                            [
-                            e''8
+                            cs''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r8
+                            \!
                         }
-                        cs''4
+                        e''4
+                        \f
+                        \>
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 7 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            e''16
-                            [
+                            % [Voice 7 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             cs''16
+                            [
                             bf''16
+                            f'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -5941,35 +6408,38 @@
                         }
                     }
                     {
-                        \pitchedTrill
-                        cs''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan e''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            cs''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan e''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''16
-                            [
-                            aqf''8
+                            r16
+                            \!
+                            \stopTrillSpan
+                            cs''8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
-                            ]
-                            \stopTrillSpan
                         }
-                        aqf''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        % [Voice 7 measure 22] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 7 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f'4
                         \mf
@@ -5979,21 +6449,29 @@
                         \pitchedTrill
                         e''4
                         \startTrillSpan bf''
+                        \stopTrillSpan
                     }
                     {
-                        r8
-                        \!
-                        \stopTrillSpan
-                        f'8
+                        e''8
                         \f
                         \>
                         [
+                        \stopTrillSpan
+                        cs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
+                            r16
+                            \!
                             e''16
-                            f'16
-                            e''16
+                            \f
+                            \>
+                            [
                             cs''16
                             bf''16
+                            f'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -6001,62 +6479,69 @@
                         }
                     }
                     {
-                        % [Voice 7 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        ctes''4
-                        \pp
+                        % [Voice 7 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cqs'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
-                            cs''16
+                            e''16
                             \f
                             \>
                             [
-                            bf''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                        }
-                    }
-                    {
-                        cqs'16
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        bes''4.
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        % [Voice 7 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        f'8
-                        \f
-                        \>
-                        [
-                        e''8
-                        \times 4/5 {
-                            cs''16
-                            bf''16
+                            f'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            cs''16
+                        }
+                    }
+                    {
+                        b''16
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        aqf''8
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            aqf''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        % [Voice 7 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''8
+                        \f
+                        \>
+                        [
+                        cs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \times 4/5 {
+                            r16
+                            \!
+                            bf''16
                             \f
                             \>
                             [
+                            cs''16
                             bf''16
+                            f'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -6072,15 +6557,17 @@
                         \startTrillSpan e''
                     }
                     {
-                        aqf''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
-                        % [Voice 7 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 7 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f'4
                         \mf
@@ -6088,11 +6575,10 @@
                         \<
                         \startTrillSpan cs''
                         \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3
-                        {
+                        \times 4/3 {
                             r16
-                            \stopTrillSpan
                             \!
+                            \stopTrillSpan
                             \pitchedTrill
                             e''8
                             \mf
@@ -6102,17 +6588,16 @@
                         }
                     }
                     {
-                        f'4
+                        e''4
                         \f
                         \>
                         \stopTrillSpan
-                        e''8
-                        [
                         cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
+                        r8
+                        \!
                         \bar "||"
                     }
                 }
@@ -6122,7 +6607,7 @@
                 \context Voice = "Voice 8"
                 {
                     {
-                        % [Voice 8 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { alt.4 }
                         \set Staff.instrumentName =
@@ -6137,66 +6622,68 @@
                         \times 4/5 {
                             bqs''8
                             [
-                            aef''8.
+                            a''8.
                             ~
                             ]
                         }
-                        aef''4
+                        a''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            % [Voice 8 measure 2] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 8 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             c''16
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            r16
-                            \!
-                            b''16
                             \f
                             \>
                             [
+                            b''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             c''16
+                            \f
+                            \>
+                            [
                             b''16
                         }
                         c''8
                         af''8
                         c''16
+                        af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        af''16
-                        \f
-                        \>
-                        [
                         c''16
-                        \mp
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                     }
                     {
                         \times 4/5 {
                             cqs''16
-                            \p
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            ces'8.
-                            \pp
+                            c'8.
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        % [Voice 8 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         c''4
                         \mf
@@ -6212,19 +6699,19 @@
                             [
                             \stopTrillSpan
                             b''16
-                            af''16
-                            c''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
+                            af''16
+                            \f
+                            \>
+                            [
+                            c''16
                         }
                         af''8
-                        \f
-                        \>
-                        [
                         c''8
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -6239,9 +6726,9 @@
                         ~
                     }
                     {
-                        % [Voice 8 measure 4] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         bqs''16
-                        aef''4..
+                        a''4..
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -6251,23 +6738,23 @@
                             \>
                             [
                             b''16
-                            c''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
-                        af''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        c''4
+                        \f
+                        \>
                     }
                     {
                         \times 2/3 {
-                            % [Voice 8 measure 5] %! COMMENT_MEASURE_NUMBERS
-                            r8
-                            \!
-                            c''8
-                            \f
-                            \>
+                            % [Voice 8 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            af''8
                             [
+                            c''8
                             af''8
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -6277,19 +6764,19 @@
                     {
                         \times 4/5 {
                             cqs''16
-                            \p
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            ces'8.
+                            c'8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        ces'4
+                        c'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -6300,17 +6787,22 @@
                         \>
                     }
                     {
-                        % [Voice 8 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         af''16
-                        [
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
                         b''16
+                        \f
+                        \>
+                        [
                         af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
-                        \!
                     }
                     {
                         \times 4/5 {
@@ -6336,11 +6828,20 @@
                             [
                             \stopTrillSpan
                             af''8
-                            b''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        % [Voice 8 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b''16
+                        \f
+                        \>
+                        [
                         af''16
                         b''16
                         af''16
@@ -6348,8 +6849,6 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
-                        \!
                     }
                     {
                         bqs''4
@@ -6363,20 +6862,23 @@
                         \<
                         r16
                         \!
-                        aef''4.
+                        a''4.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 8 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        c''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan af''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 8 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            c''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan af''
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             c''16
@@ -6388,29 +6890,29 @@
                             \startTrillSpan c''
                             \stopTrillSpan
                         }
-                        cs'4
-                        ~
-                        cs'16
-                        [
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs'4
+                        }
+                        r16
+                        \!
+                        \stopTrillSpan
                         \pitchedTrill
                         af''8.
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
                         \startTrillSpan b''
-                        \stopTrillSpan
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 8 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 8 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             b''16
                             \f
                             \>
                             \stopTrillSpan
-                            af''16
-                            c''16
-                        }
-                        af''8
-                        b''8
-                        \times 4/5 {
                             af''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -6418,58 +6920,68 @@
                             ]
                             r16
                             \!
+                        }
+                        c''8
+                        \f
+                        \>
+                        [
+                        af''8
+                        \times 4/5 {
                             b''16
-                            \f
-                            \>
-                            [
                             af''16
                             b''16
+                            af''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
-                        af''4
+                        b''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 8 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cqs''4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        c''8
+                        af''8
                         \f
                         \>
                         [
-                        b''8
+                        c''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r4
                         \!
-                        c''16
+                        b''16
                         \f
                         \>
                         [
-                        af''16
                         c''16
                         af''16
+                        c''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        % [Voice 8 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        ces'4
+                        % [Voice 8 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
-                        ces'16
+                        c'16
                         [
                         bqs''8.
                         \pp
@@ -6477,109 +6989,114 @@
                         \<
                     }
                     {
-                        c''8
+                        af''8
                         \f
                         \>
-                        af''8
+                        c''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        c''16
+                        af''16
                         \f
                         \>
                         [
+                        c''16
                         b''16
-                        cs'16
                     }
                     {
                         \times 4/5 {
-                            % [Voice 8 measure 12] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 8 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs'16
                             c''16
                             af''16
-                            c''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            cs'16
-                            \mp
+                            c''16
+                            \f
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        \pitchedTrill
-                        c''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan af''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            c''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan af''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            c''16
-                            [
-                            aef''8
-                            \p
+                            r16
+                            \!
+                            \stopTrillSpan
+                            a''8
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
-                            \stopTrillSpan
                         }
                     }
                     {
-                        \pitchedTrill
-                        cs'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan c''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            cs'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan c''
+                        }
                     }
                     {
-                        % [Voice 8 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        cs'8.
+                        % [Voice 8 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cqs''8.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        ces'16
+                        \stopTrillSpan
+                        c'16
                         ~
                         ]
-                        \stopTrillSpan
-                        ces'2
+                        c'2
                     }
                     {
-                        c''8
+                        cs'8
                         \f
                         \>
                         [
-                        af''8
-                    }
-                    {
-                        % [Voice 8 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        c''16
-                        af''16
-                        b''16
+                        c''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                    }
+                    {
+                        % [Voice 8 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r16
                         \!
-                        af''4
+                        af''16
                         \f
                         \>
-                        b''8
                         [
+                        c''16
+                        af''16
+                        ]
+                        b''4
                         af''8
+                        [
+                        b''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -6603,36 +7120,44 @@
                         \startTrillSpan af''
                     }
                     {
-                        % [Voice 8 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        bqs''2
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 8 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bqs''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \stopTrillSpan
+                        }
+                        bqs''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopTrillSpan
                     }
                     {
-                        c''4
+                        af''4
                         \f
                         \>
+                        c''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
                         cs'16
+                        \f
+                        \>
                         [
                         b''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
-                        r16
-                        \!
-                        c''16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        [
                     }
                     {
                         \times 4/5 {
-                            % [Voice 8 measure 16] %! COMMENT_MEASURE_NUMBERS
-                            aef''8
+                            % [Voice 8 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            a''8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -6647,52 +7172,64 @@
                     }
                     {
                         \times 2/3 {
-                            af''8
+                            c''8
                             \f
                             \>
                             [
-                            c''8
-                            b''8
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            c''16
-                            af''16
+                            af''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            r16
+                            r8
                             \!
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            c''16
+                            \f
+                            \>
+                            [
+                            b''16
+                            c''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 8 measure 17] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 8 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             r16
-                            ces'8
-                            \pp
+                            \!
+                            c'8
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             [
                         }
                     }
                     {
-                        b''16
+                        af''16
                         \f
                         \>
-                        af''16
-                        c''16
-                        af''16
+                        b''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        af''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         bqs''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -6712,7 +7249,7 @@
                         }
                     }
                     {
-                        % [Voice 8 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         cs'4
                         \mf
@@ -6729,31 +7266,35 @@
                         }
                     }
                     {
-                        b''16
+                        c''16
                         \f
                         \>
                         [
                         \stopTrillSpan
                         af''16
-                        b''16
-                        af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        aef''4
-                        \pp
+                        r16
+                        \!
+                        b''16
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 8 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        c''4
+                        a''4
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 8 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        af''4
                         \f
                         \>
-                        cs'8
+                        b''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -6763,25 +7304,25 @@
                     {
                         \times 4/5 {
                             cqs''16
-                            \p
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
-                            ces'8.
+                            c'8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        ces'4
+                        c'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 8 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        b''4
+                        % [Voice 8 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        af''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -6791,7 +7332,7 @@
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
-                        aef''4
+                        a''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -6807,84 +7348,97 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 8 measure 21] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 8 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             c''16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            af''16
-                            c''16
-                        }
-                        af''8
-                        b''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \times 4/5 {
-                            r16
-                            \!
-                            af''16
-                            \f
-                            \>
-                            [
-                            c''16
-                            af''16
-                            c''16
-                        }
-                        af''16
-                        b''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        af''16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        [
-                    }
-                    {
-                        \times 4/5 {
-                            % [Voice 8 measure 22] %! COMMENT_MEASURE_NUMBERS
-                            cqs''16
-                            \pp
+                            cs'16
+                            \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            ces'8.
-                            \p
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ~
                         }
-                        ces'2
-                        ~
-                    }
-                    {
-                        c''8
+                        b''8
                         \f
                         \>
                         [
-                        af''8
-                    }
-                    {
-                        % [Voice 8 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        b''16
+                        c''8
+                        \times 4/5 {
+                            af''16
+                            c''16
+                            af''16
+                            b''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                        af''16
+                        \f
+                        \>
+                        [
+                        c''16
                         af''16
                         c''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \times 4/5 {
+                            % [Voice 8 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cqs''16
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            c'8.
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        c'4
+                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        af''8
+                        \f
+                        \>
+                        [
+                        b''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
+                    }
+                    {
+                        % [Voice 8 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r16
                         \!
-                        af''4
+                        af''16
+                        \f
+                        \>
+                        [
+                        c''16
+                        af''16
+                        ]
+                        b''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -6895,37 +7449,37 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        aef''8.
+                        a''8.
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        b''8
+                        af''8
                         \f
                         \>
-                        af''8
+                        c''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        % [Voice 8 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 8 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cqs''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        b''4
+                        af''4
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        ces'16
-                        \pp
+                        c'16
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
@@ -6937,23 +7491,23 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 8 measure 25] %! COMMENT_MEASURE_NUMBERS
-                            af''16
+                            % [Voice 8 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b''16
                             \f
                             \>
                             [
-                            b''16
+                            af''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            af''16
+                            b''16
                             \f
                             \>
                             [
-                            b''16
+                            af''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -6961,14 +7515,16 @@
                         }
                     }
                     {
-                        aef''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            a''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         cs'4
                         \mf
                         - \tweak stencil #constante-hairpin
@@ -6976,17 +7532,18 @@
                         \startTrillSpan c''
                     }
                     {
-                        af''8
-                        \stopTrillSpan
+                        b''8
                         \f
                         \>
                         [
-                        b''16
+                        \stopTrillSpan
                         af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
                         \bar "||"
                     }
                 }
@@ -6996,24 +7553,28 @@
                 \context Voice = "Voice 9"
                 {
                     {
-                        % [Voice 9 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { alt.5 }
                         \set Staff.instrumentName =
                         \markup { "Alto 5" }
                         \tempo 4=90
                         c''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \!
-                        r16
-                        \!
-                        af''16
                         \f
                         \>
                         [
+                        \!
+                        af''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         b''16
+                        \f
+                        \>
+                        [
                         \times 2/3 {
                             af''8
                             b''8
@@ -7022,27 +7583,26 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             c''16
+                            af''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            af''16
-                            \f
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c'''4
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        btes''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        % [Voice 9 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c''4
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -7052,7 +7612,7 @@
                         r16
                         \!
                         aqf''8.
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -7063,24 +7623,24 @@
                             \f
                             \>
                             c''8
-                            af''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r8
+                            \!
                         }
-                        c''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        af''4
+                        \f
+                        \>
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 9 measure 3] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
-                            af''16
-                            \f
-                            \>
+                            % [Voice 9 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            c''16
                             [
+                            af''16
                             c''16
                         }
                         af''8
@@ -7099,13 +7659,20 @@
                         \startTrillSpan c''
                     }
                     {
-                        % [Voice 9 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        ces''2
+                        % [Voice 9 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -7144,7 +7711,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 9 measure 5] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 9 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             b''16
                             c''16
                             b''16
@@ -7173,7 +7740,7 @@
                         \<
                     }
                     {
-                        % [Voice 9 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r8
                         \!
                         af''8
@@ -7185,11 +7752,13 @@
                         \<
                     }
                     {
-                        cqs'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cqs'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \times 4/5 {
@@ -7198,20 +7767,27 @@
                             \>
                             [
                             c''16
-                            af''16
-                            b''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
+                            af''16
+                            \f
+                            \>
+                            [
+                            b''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                         }
                     }
                     {
-                        % [Voice 9 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        btes''4
-                        \p
+                        % [Voice 9 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -7232,7 +7808,7 @@
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
-                            ces''8
+                            c''8
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -7249,7 +7825,7 @@
                         \startTrillSpan b''
                     }
                     {
-                        % [Voice 9 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c''16
                         r16
                         \!
@@ -7268,65 +7844,73 @@
                         \>
                         \stopTrillSpan
                         b''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         c''16
-                        b''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \f
+                        \>
+                        [
                         \times 4/5 {
-                            r16
-                            \!
-                            c''16
-                            \f
-                            \>
-                            [
                             b''16
                             c''16
                             b''16
+                            c''16
+                            b''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                         }
+                        r8
+                        \!
                         cs'8
-                        b''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \f
+                        \>
+                        [
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 9 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
+                            % [Voice 9 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b''16
                             c''16
-                            \f
-                            \>
-                            [
                             af''16
                             ]
                         }
                         c''4
                         \times 2/3 {
                             af''8
-                            [
-                            b''8
-                            af''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
+                            r8
+                            \!
+                            b''8
+                            \f
+                            \>
                         }
-                        r4
-                        \!
-                    }
-                    {
-                        % [Voice 9 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        cs'2
-                        \mf
+                        af''4
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        \startTrillSpan c''
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 9 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            cs'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan c''
+                        }
+                        cs'4
                     }
                     {
                         \times 4/5 {
@@ -7335,7 +7919,7 @@
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
-                            btes''4
+                            c'''4
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -7347,33 +7931,40 @@
                         \>
                         [
                         af''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         c''16
-                        af''16
+                        \f
+                        \>
+                        [
                     }
                     {
                         \times 2/3 {
-                            % [Voice 9 measure 11] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 9 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            af''8
                             c''8
                             af''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            r8
-                            \!
                         }
                     }
                     {
                         aqf''4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             r16
                             \!
-                            ces''8
-                            \p
+                            c''8
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             [
@@ -7384,52 +7975,53 @@
                         \f
                         \>
                         af''16
-                        b''16
-                        af''16
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 9 measure 12] %! COMMENT_MEASURE_NUMBERS
-                            b''16
-                            af''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                        }
-                        b''8
-                        \f
-                        \>
-                        [
-                        af''8
-                        \times 4/5 {
-                            b''16
-                            af''16
-                            b''16
-                            af''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                        }
-                        c''4
-                        \f
-                        \>
-                    }
-                    {
-                        % [Voice 9 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        af''8
-                        [
-                        c''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        b''16
+                        \f
+                        \>
+                        [
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 9 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            af''16
+                            b''16
+                            af''16
+                        }
+                        b''8
+                        af''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \times 4/5 {
+                            r16
+                            \!
+                            b''16
+                            \f
+                            \>
+                            [
+                            af''16
+                            b''16
+                            af''16
+                            ]
+                        }
+                        c''4
+                    }
+                    {
+                        % [Voice 9 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        af''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
                     }
                     {
                         \pitchedTrill
@@ -7438,34 +8030,36 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         \startTrillSpan b''
-                        \pitchedTrill
-                        c''4
-                        ~
-                        \startTrillSpan b''
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            c''4
+                            \startTrillSpan b''
+                            \stopTrillSpan
+                        }
                     }
                     {
-                        % [Voice 9 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        c''4
+                        % [Voice 9 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cqs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \stopTrillSpan
                         \times 4/5 {
-                            c''16
+                            cqs'16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
-                            \stopTrillSpan
-                            btes''8.
+                            c'''8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        btes''4
+                        c'''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -7479,59 +8073,57 @@
                         \startTrillSpan af''
                     }
                     {
-                        % [Voice 9 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         aqf''8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
                         \stopTrillSpan
-                        ces''8
+                        c''8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        af''4
+                        c''4
                         \f
                         \>
-                        b''16
-                        [
                         af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         r16
                         \!
-                        c''16
+                        b''16
                         \f
                         \>
                         [
-                        b''8
+                        af''16
                         c''8
+                        b''8
                     }
                     {
-                        % [Voice 9 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        af''16
+                        % [Voice 9 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c''16
-                        b''16
+                        af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
+                        c''16
+                        \f
+                        \>
+                        [
                         \times 4/5 {
+                            b''16
                             c''16
-                            \f
-                            \>
-                            [
                             af''16
                             c''16
                             b''16
-                            c''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -7549,20 +8141,20 @@
                     {
                         \times 4/5 {
                             cqs'16
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
                             r16
                             \!
-                            btes''8.
-                            \p
+                            c'''8.
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        % [Voice 9 measure 17] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         af''4
                         \mf
@@ -7571,12 +8163,17 @@
                         \startTrillSpan b''
                     }
                     {
-                        b''8
+                        c''8
                         \f
+                        \>
+                        [
+                        \stopTrillSpan
+                        b''8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopTrillSpan
-                        r8
+                        ]
+                        r16
                         \!
                         c''16
                         \f
@@ -7584,65 +8181,69 @@
                         [
                         af''16
                         b''16
-                        af''16
                         ]
-                        c''4
+                        af''4
                     }
                     {
-                        % [Voice 9 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c''8
+                        [
                         cs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r8
-                        \!
+                        ]
                     }
                     {
-                        aqf''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            aqf''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         c''4
                         \f
                         \>
                         cs'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        c''16
+                        \f
+                        \>
                         [
-                        c''16
                         cs'16
-                        c''16
                     }
                     {
                         \times 2/3 {
-                            % [Voice 9 measure 19] %! COMMENT_MEASURE_NUMBERS
-                            af''8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r8
-                            \!
+                            % [Voice 9 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             c''8
-                            \f
-                            \>
-                            [
+                            af''8
+                            c''8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             af''16
-                            c''16
-                            af''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
+                            c''16
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
-                        ces''4
-                        \p
+                        c''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -7655,21 +8256,21 @@
                         \startTrillSpan b''
                     }
                     {
-                        % [Voice 9 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cqs'16
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                         r16
                         \!
-                        btes''4.
+                        c'''4.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \times 4/5 {
-                            btes''4
+                            c'''4
                             aqf''16
                             \pp
                             - \tweak stencil #constante-hairpin
@@ -7678,75 +8279,81 @@
                         }
                     }
                     {
-                        c''16
+                        af''16
                         \f
                         \>
-                        cs'16
+                        c''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        c''16
+                        cs'16
                         \f
                         \>
                         [
                     }
                     {
                         \times 2/3 {
-                            % [Voice 9 measure 21] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 9 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            c''8
                             cs'8
                             b''8
-                            cs'8
                         }
-                        b''16
                         cs'16
+                        b''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        b''16
+                        cs'16
                         \f
                         \>
-                        cs'4
-                        b''8
+                        b''4
+                        cs'8
                         [
-                        c''8
+                        b''8
                         ]
                     }
                     {
-                        % [Voice 9 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        b''4
+                        % [Voice 9 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \pitchedTrill
-                        c''2
+                        c''4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan af''
-                        c''16
-                        [
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c''4
+                        }
+                        r16
+                        \!
+                        \stopTrillSpan
                         \pitchedTrill
                         cs'8.
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ~
-                        ]
                         \startTrillSpan c''
-                        \stopTrillSpan
                     }
                     {
-                        % [Voice 9 measure 23] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs'4
                     }
                     {
-                        ces''4.
+                        c''4.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -7760,6 +8367,9 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
+                            b''16
+                            \f
+                            \>
                             c''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -7767,17 +8377,17 @@
                             ]
                             r16
                             \!
-                            b''16
-                            \f
-                            \>
-                            [
                         }
                     }
                     {
-                        % [Voice 9 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b''8
+                        \f
+                        \>
+                        [
                         cs'8
-                        c''8
                         \times 4/5 {
+                            c''16
                             cs'16
                             b''16
                             c''16
@@ -7787,59 +8397,61 @@
                             ]
                             r16
                             \!
-                            af''16
-                            \f
-                            \>
-                            [
                         }
+                        af''16
+                        \f
+                        \>
+                        [
                         c''16
                         b''16
                         c''16
-                        af''16
+                        af''8
                         c''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
-                        \!
                     }
                     {
-                        % [Voice 9 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 9 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r16
+                        \!
                         af''16
                         \f
                         \>
                         [
                         b''16
                         af''16
-                        c''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        \pitchedTrill
-                        af''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan b''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            af''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan b''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            af''16
-                            [
-                            btes''8
+                            r16
+                            \!
+                            \stopTrillSpan
+                            c'''8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
-                            \stopTrillSpan
+                            [
                         }
-                        btes''8
+                        c'''8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -7861,7 +8473,7 @@
                 \context Voice = "Voice 10"
                 {
                     {
-                        % [Voice 10 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { alt.6 }
                         \set Staff.instrumentName =
@@ -7895,7 +8507,7 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 10 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         bqs''4
                         \p
                         - \tweak stencil #constante-hairpin
@@ -7909,13 +8521,13 @@
                             \<
                             r16
                             \!
-                            atef''8.
+                            af''8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        atef''4
+                        af''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -7935,58 +8547,60 @@
                         }
                     }
                     {
-                        % [Voice 10 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         af''4
                         \f
                         \>
                         \stopTrillSpan
                         \times 4/5 {
                             b''16
-                            [
-                            af''16
-                            c''16
-                            cs'16
-                            c''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
+                            r16
+                            \!
+                            af''16
+                            \f
+                            \>
+                            [
+                            c''16
+                            cs'16
                         }
-                        r8
-                        \!
+                        c''8
                         cs'8
-                        \f
-                        \>
-                        [
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             c''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             af''16
-                            c''16
+                            \f
+                            \>
+                            [
                         }
                     }
                     {
-                        % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c''16
                         cs'16
                         c''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
                         cs'16
-                        \f
-                        \>
-                        [
                         \times 2/3 {
-                            c''8
-                            cs'8
                             c''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
+                            cs'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
@@ -7996,7 +8610,7 @@
                         \<
                     }
                     {
-                        % [Voice 10 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         cs'16
                         \mf
@@ -8007,14 +8621,17 @@
                         \!
                         \stopTrillSpan
                         \pitchedTrill
-                        c''8
+                        c''4.
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan af''
-                        c''2
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            c''4
+                            ~
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             c''16
@@ -8028,43 +8645,45 @@
                         }
                     }
                     {
-                        % [Voice 10 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        af''4
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 10 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            af''4
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            af''16
+                            c''16
                             \f
                             \>
                             [
-                            c''16
+                            \stopTrillSpan
+                            cs'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            \stopTrillSpan
                             r16
                             \!
                         }
-                        cs'4
+                        c''4
                         \f
                         \>
                         \times 2/3 {
-                            c''8
-                            [
                             cs'8
+                            [
                             c''8
+                            cs'8
                             ]
                         }
                     }
                     {
-                        % [Voice 10 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        af''4
+                        % [Voice 10 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c''4
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            b''16
+                            af''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -8076,25 +8695,25 @@
                             [
                         }
                         b''8
-                        af''8
+                        b''8
                         \times 4/5 {
-                            c''16
                             af''16
                             c''16
+                            af''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            cs'16
+                            c''16
                             \f
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r16
                         \!
                         \pitchedTrill
@@ -8105,7 +8724,7 @@
                         \startTrillSpan c''
                     }
                     {
-                        ctes'2
+                        cs'2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8126,61 +8745,73 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        bqs''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 10 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bqs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            c''16
+                            cs'16
                             \f
                             \>
                             [
-                            cs'16
                             c''16
-                        }
-                        cs'8
-                        c''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \times 4/5 {
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                             r16
                             \!
+                        }
+                        cs'8
+                        \f
+                        \>
+                        [
+                        c''8
+                        \times 4/5 {
                             cs'16
-                            \f
-                            \>
-                            [
                             c''16
                             cs'16
                             c''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 10 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        af''4
-                        b''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r8
-                        \!
-                        b''4
+                        % [Voice 10 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'4
                         \f
                         \>
+                        c''8
+                        [
+                        af''8
+                        ]
+                        b''4
                         \times 4/5 {
                             b''16
                             [
+                            b''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             af''16
-                            c''16
-                            cs'16
+                            \f
+                            \>
+                            [
                             c''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -8191,7 +8822,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 10 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             r16
                             \!
                             \pitchedTrill
@@ -8202,37 +8833,46 @@
                             ~
                             \startTrillSpan c''
                         }
-                        cs'4
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs'4
+                        }
                     }
                     {
-                        cs'8.
+                        af''8.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
+                        \stopTrillSpan
                         cqs''16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
-                        \stopTrillSpan
                     }
                     {
-                        r8
-                        \!
                         cs'8
                         \f
                         \>
-                        [
+                        c''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
-                        % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        c''16
+                        % [Voice 10 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r16
+                        \!
                         cs'16
+                        \f
+                        \>
+                        [
                         c''16
                         cs'16
                         \times 4/5 {
+                            c''16
+                            cs'16
                             c''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -8244,11 +8884,9 @@
                             \f
                             \>
                             [
-                            c''16
-                            cs'16
                         }
                         c''8
-                        af''8
+                        cs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8263,80 +8901,91 @@
                         \startTrillSpan af''
                     }
                     {
-                        % [Voice 10 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        ctes'4
+                        % [Voice 10 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \stopTrillSpan
-                        ctes'16
+                        cs'16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        bqs''4.
+                        bqs''8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            bqs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            b''16
+                            c''16
+                            \f
+                            \>
+                            [
+                            af''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             r16
                             \!
-                            b''16
-                            \f
-                            \>
                         }
                     }
                     {
-                        % [Voice 10 measure 14] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b''4
+                        \f
+                        \>
                         \times 2/3 {
                             b''8
                             [
-                            af''8
-                            c''8
+                            b''8
+                            b''8
                             ]
                         }
-                        cs'4
+                        af''4
+                        c''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        c''16
+                        cs'16
                         \f
                         \>
                         [
-                        af''16
-                        b''16
+                        c''16
                     }
                     {
                         \times 2/3 {
-                            % [Voice 10 measure 15] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 10 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             af''8
-                            c''8
-                            cs'8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
+                            b''8
+                            af''8
                         }
+                        c''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         r16
                         \!
-                        c''16
+                        cs'16
                         \f
                         \>
                         [
-                        cs'16
                         c''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -8353,7 +9002,7 @@
                     }
                     {
                         \times 4/5 {
-                            atef''8
+                            af''8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -8367,7 +9016,7 @@
                         }
                     }
                     {
-                        % [Voice 10 measure 16] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         cs'4
                         \mf
@@ -8381,13 +9030,13 @@
                             r16
                             \!
                             \stopTrillSpan
-                            ctes'8
+                            cs'8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        ctes'4
+                        cs'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8403,46 +9052,46 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 10 measure 17] %! COMMENT_MEASURE_NUMBERS
-                            af''16
+                            % [Voice 10 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs'16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            b''16
-                            b''16
+                            c''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
-                        r8
-                        \!
-                        b''8
+                        af''8
                         \f
                         \>
                         [
+                        b''8
                         \times 4/5 {
                             b''16
                             b''16
-                            af''16
                             b''16
-                            af''16
+                            b''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
-                        r4
-                        \!
-                    }
-                    {
-                        % [Voice 10 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        c''8
+                        af''4
                         \f
                         \>
+                    }
+                    {
+                        % [Voice 10 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b''8
                         [
-                        cs'8
+                        af''8
                         ]
                         c''4
                         \mp
@@ -8455,17 +9104,17 @@
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
-                            atef''4
+                            af''4
                             ~
                         }
-                        atef''4
+                        af''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            % [Voice 10 measure 19] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 10 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             af''16
                             \mf
@@ -8485,7 +9134,7 @@
                     }
                     {
                         cqs''4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -8503,53 +9152,54 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 10 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 10 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs'16
                         \f
                         \>
                         [
                         \stopTrillSpan
                         c''16
-                        af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        b''8
+                        cs'16
                         \f
                         \>
                         [
-                        b''8
+                        c''8
+                        af''8
                         b''16
-                        af''16
                         b''16
                         b''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
                         \times 4/5 {
-                            r16
-                            \!
                             af''16
                             \f
                             \>
                             [
                             b''16
+                            b''16
                             af''16
-                            c''16
+                            b''16
                         }
                     }
                     {
-                        % [Voice 10 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        cs'8
-                        c''8
+                        % [Voice 10 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        af''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r8
+                        \!
                     }
                     {
                         \pitchedTrill
@@ -8561,15 +9211,15 @@
                     }
                     {
                         \times 4/5 {
-                            ctes'16
-                            \p
+                            cs'16
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
                             r16
                             \!
                             bqs''8.
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                         }
@@ -8583,44 +9233,51 @@
                         \startTrillSpan af''
                     }
                     {
-                        % [Voice 10 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        atef''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 10 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            af''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
-                        r16
-                        \!
-                        cs'16
+                        c''16
                         \f
                         \>
                         [
-                        c''16
-                        af''16
-                        ]
-                        b''4
-                        af''8
-                        [
-                        b''8
+                        cs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        c''16
+                        \f
+                        \>
+                        cs'4
+                        c''8
+                        [
+                        af''8
+                        ]
                     }
                     {
-                        % [Voice 10 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        r4
+                        % [Voice 10 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b''4
+                        af''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
                         \!
                         b''16
                         \f
                         \>
                         [
-                        af''16
                         b''16
-                        af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8631,12 +9288,12 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        ctes'4..
+                        cs'4..
                         ~
                     }
                     {
-                        % [Voice 10 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        ctes'16
+                        % [Voice 10 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8649,7 +9306,7 @@
                     }
                     {
                         \times 2/3 {
-                            b''8
+                            af''8
                             \f
                             \>
                             [
@@ -8668,14 +9325,14 @@
                             \>
                             [
                             b''16
-                            af''16
+                            b''16
                         }
                     }
                     {
-                        % [Voice 10 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        c''16
+                        % [Voice 10 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         af''16
                         b''16
+                        af''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8683,27 +9340,27 @@
                         r16
                         \!
                         \times 2/3 {
-                            af''8
+                            c''8
                             \f
                             \>
                             [
-                            c''8
-                            cs'8
+                            af''8
+                            b''8
                         }
-                        c''16
                         af''16
                         c''16
+                        cs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        af''8
+                        c''8
                         \f
                         \>
                         [
-                        b''8
+                        af''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8717,7 +9374,7 @@
                 \context Voice = "Voice 11"
                 {
                     {
-                        % [Voice 11 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 11 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { ten.1 }
                         \set Staff.instrumentName =
@@ -8730,61 +9387,76 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             b16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r16
+                            \!
+                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            dqf'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                        fs'4
+                        ~
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 11 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            fs'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        b8
+                        \f
+                        \>
+                        [
+                        f''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \times 4/5 {
+                            r16
+                            \!
+                            cs'''16
+                            \f
+                            \>
                             [
                             f''16
-                            b16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                    }
-                    {
-                        dqf'''2
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        % [Voice 11 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        dqf'''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                    }
-                    {
-                        r8
-                        \!
-                        f''8
-                        \f
-                        \>
-                        [
-                        \times 4/5 {
                             cs'''16
                             f''16
-                            cs'''16
-                            f''16
-                            fs'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                         }
+                        fs'16
+                        f''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         r16
                         \!
-                        f''16
+                        cs'''16
                         \f
                         \>
                         [
-                        cs'''16
-                        f''16
                     }
                     {
-                        % [Voice 11 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        cs'''8
+                        % [Voice 11 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''8
+                        cs'''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8801,51 +9473,55 @@
                         \startTrillSpan fs'
                     }
                     {
-                        gtef'2
+                        fqs''2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 11 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        fqs''4
+                        % [Voice 11 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        dqf'''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        \pitchedTrill
-                        f''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs'''
+                        }
                     }
                     {
-                        f''16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                        \stopTrillSpan
                         f''16
                         \f
                         \>
                         [
-                        fs'16
+                        \stopTrillSpan
+                        cs'''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
-                        b4
+                        r16
+                        \!
+                        f''16
+                        \f
+                        \>
+                        fs'4
                     }
                     {
-                        % [Voice 11 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        f''8
-                        [
+                        % [Voice 11 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b8
+                        [
+                        f''8
                         ]
-                        fs'4
+                        b4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8864,15 +9540,17 @@
                         }
                     }
                     {
-                        dqf'''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fs'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
-                        % [Voice 11 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 11 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         b4
                         \mf
@@ -8882,55 +9560,56 @@
                     }
                     {
                         \times 4/5 {
-                            r16
+                            fs'16
+                            \f
+                            \>
+                            [
                             \stopTrillSpan
-                            \!
                             b16
-                            \f
-                            \>
-                            [
-                            fs'16
-                            f''16
-                            cs'''16
-                        }
-                        f''8
-                        b8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            r16
-                            \!
-                            fs'16
-                            \f
-                            \>
-                            [
-                            b16
-                        }
-                    }
-                    {
-                        % [Voice 11 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        f''16
-                        cs'''16
-                        f''16
-                        cs'''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \times 2/3 {
-                            r8
-                            \!
-                            f''8
-                            \f
-                            \>
-                            [
-                            b8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
+                            r16
+                            \!
+                            fs'16
+                            \f
+                            \>
+                            [
+                            f''16
+                        }
+                        cs'''8
+                        f''8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            b16
+                            fs'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                    }
+                    {
+                        % [Voice 11 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b16
+                        \f
+                        \>
+                        [
+                        f''16
+                        cs'''16
+                        f''16
+                        \times 2/3 {
+                            cs'''8
+                            f''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
@@ -8941,6 +9620,7 @@
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                             \startTrillSpan cs'''
                             \pitchedTrill
                             fs'8
@@ -8950,7 +9630,7 @@
                         }
                     }
                     {
-                        gtef'4
+                        fqs''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -8958,26 +9638,28 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 11 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        gtef'16
+                        % [Voice 11 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fqs''16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        fqs''8
-                        \p
+                        dqf'''8
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        \pitchedTrill
-                        b4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan fs'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            b4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan fs'
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -8986,33 +9668,40 @@
                             \f
                             \>
                             [
-                            cs'''16
                             \stopTrillSpan
                             f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
-                        fs'4
-                        \mp
+                        cs'''4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 11 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        dqf'''4
-                        \pp
+                        % [Voice 11 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 2/3 {
-                            r8
-                            \!
                             f''8
                             \f
                             \>
                             [
-                            cs'''8
+                            fs'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r8
+                            \!
                         }
                         f''4
                         \mp
@@ -9021,17 +9710,17 @@
                     }
                     {
                         \times 4/5 {
-                            gtef'16
+                            fqs''16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
-                            fqs''4
+                            dqf'''4
                             ~
                         }
                     }
                     {
-                        % [Voice 11 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        fqs''4
+                        % [Voice 11 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        dqf'''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -9039,62 +9728,62 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            b16
+                            cs'''16
                             \f
                             \>
                             [
                             f''16
-                            b16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
-                        r8
-                        \!
-                        f''8
+                        b8
                         \f
                         \>
                         [
+                        f''8
                         \times 4/5 {
                             b16
                             f''16
-                            cs'''16
-                            f''16
                             b16
+                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 11 measure 11] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
-                            f''16
+                            % [Voice 11 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs'''16
                             \f
                             \>
                             [
+                            f''16
                             b16
                         }
                         f''8
                         b8
                         \times 4/5 {
-                            fs'16
-                            b16
+                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            f''16
+                            b16
                             \f
                             \>
                             [
+                            fs'16
                             b16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -9116,109 +9805,25 @@
                         }
                     }
                     {
-                        % [Voice 11 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        dqf'''2
+                        % [Voice 11 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        \pitchedTrill
-                        fs'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan f''
-                    }
-                    {
-                        fs'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        % [Voice 11 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        fs'4
-                        \f
-                        \>
-                        \stopTrillSpan
-                        f''8
-                        [
-                        fs'8
-                        ]
-                        b4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \times 4/5 {
-                            r16
-                            \!
-                            fs'16
-                            \f
-                            \>
-                            [
-                            f''16
-                            cs'''16
-                            f''16
-                        }
-                    }
-                    {
-                        % [Voice 11 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        cs'''8
-                        f''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        cs'''16
-                        \f
-                        \>
-                        [
-                        f''16
-                        b16
-                        \times 4/5 {
-                            f''16
-                            b16
-                            f''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                            b16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            [
-                        }
-                    }
-                    {
-                        \times 4/5 {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
                             \pitchedTrill
-                            b16
+                            fs'4
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
-                            \startTrillSpan fs'
-                            r16
-                            \!
-                            \stopTrillSpan
-                            \pitchedTrill
-                            f''8.
-                            \mf
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            \startTrillSpan cs'''
+                            \startTrillSpan f''
                         }
                     }
                     {
-                        % [Voice 11 measure 15] %! COMMENT_MEASURE_NUMBERS
                         fqs''4
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -9226,6 +9831,92 @@
                         \stopTrillSpan
                     }
                     {
+                        % [Voice 11 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''4
+                        \f
+                        \>
+                        b8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        fs'4
+                        \f
+                        \>
+                        \times 4/5 {
+                            f''16
+                            [
+                            fs'16
+                            b16
+                            fs'16
+                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                    }
+                    {
+                        % [Voice 11 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r8
+                        \!
+                        cs'''8
+                        \f
+                        \>
+                        [
+                        f''16
+                        cs'''16
+                        f''16
+                        cs'''16
+                        \times 4/5 {
+                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            b16
+                            \f
+                            \>
+                            [
+                            f''16
+                            b16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \pitchedTrill
+                            b16
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            \startTrillSpan fs'
+                            r16
+                            \!
+                            \stopTrillSpan
+                            \pitchedTrill
+                            f''8.
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs'''
+                        }
+                    }
+                    {
+                        % [Voice 11 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        dqf'''4
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        \stopTrillSpan
+                    }
+                    {
                         \pitchedTrill
                         fs'4
                         \mf
@@ -9234,16 +9925,16 @@
                         \startTrillSpan f''
                     }
                     {
-                        dqf'''8
+                        fs'8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
-                        gtef'4.
+                        fqs''4.
                     }
                     {
                         \times 4/5 {
-                            % [Voice 11 measure 16] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 11 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             b16
                             \mf
@@ -9263,16 +9954,35 @@
                         }
                     }
                     {
-                        fs'8
+                        f''8
                         \f
                         \>
                         \stopTrillSpan
-                        f''8
+                        b8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs'''16
-                            f''16
+                            r16
+                            \!
                             fs'16
+                            \f
+                            \>
+                            [
+                            f''16
+                            ]
+                        }
+                        cs'''4
+                    }
+                    {
+                        \times 2/3 {
+                            % [Voice 11 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f''8
+                            [
+                            fs'8
+                            f''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -9280,67 +9990,54 @@
                         }
                         r4
                         \!
-                    }
-                    {
-                        \times 2/3 {
-                            % [Voice 11 measure 17] %! COMMENT_MEASURE_NUMBERS
-                            f''8
-                            \f
-                            \>
-                            [
-                            fs'8
-                            f''8
-                            ]
-                        }
-                        cs'''4
-                        f''16
-                        [
                         fs'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        f''16
                         \f
                         \>
                         [
+                        f''16
+                        cs'''16
+                        f''16
                         \times 2/3 {
                             fs'8
                             f''8
-                            cs'''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        % [Voice 11 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 11 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'16
+                        \f
+                        \>
+                        [
                         f''16
                         cs'''16
+                        f''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
-                        \!
-                        f''16
-                        \f
+                    }
+                    {
+                        dqf'''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        fqs''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        \pitchedTrill
-                        fs'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan f''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            fs'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan f''
+                        }
                     }
                     {
                         fs'4
@@ -9348,9 +10045,10 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \stopTrillSpan
                     }
                     {
-                        % [Voice 11 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 11 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         fs'4
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -9359,42 +10057,47 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            b16
+                            cs'''16
                             \f
                             \>
                             [
-                            \stopTrillSpan
-                            fs'16
-                            b16
-                        }
-                        fs'8
-                        b8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \times 4/5 {
+                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                             r16
                             \!
+                        }
+                        b8
+                        \f
+                        \>
+                        [
+                        fs'8
+                        \times 4/5 {
+                            b16
                             fs'16
-                            \f
-                            \>
-                            [
-                            f''16
+                            b16
                             fs'16
-                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 11 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        fs'4
-                        b8
+                        % [Voice 11 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''4
+                        \f
+                        \>
+                        fs'8
+                        [
+                        f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r8
-                        \!
                     }
                     {
                         \pitchedTrill
@@ -9402,6 +10105,7 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         \startTrillSpan fs'
                         r16
                         \!
@@ -9414,15 +10118,15 @@
                         \startTrillSpan cs'''
                     }
                     {
-                        gtef'4
-                        \pp
+                        fqs''4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
                         \times 4/5 {
-                            % [Voice 11 measure 21] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 11 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             fs'4
                             \mf
@@ -9442,54 +10146,57 @@
                         \f
                         \>
                         \stopTrillSpan
-                        f''16
-                        [
-                        fs'16
                         b16
-                        fs'16
-                    }
-                    {
-                        % [Voice 11 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
-                        r8
+                        r16
                         \!
                         fs'16
                         \f
                         \>
                         [
-                        b16
+                        f''16
+                    }
+                    {
+                        % [Voice 11 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'8
+                        b8
                         fs'16
-                        b16
+                        f''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        \pitchedTrill
-                        f''4
-                        \mf
+                        r16
+                        \!
+                        fs'16
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        ~
-                        \startTrillSpan cs'''
                     }
                     {
-                        f''16
-                        [
-                        fqs''8.
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs'''
+                        }
+                    }
+                    {
+                        r16
+                        \!
                         \stopTrillSpan
+                        dqf'''8.
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
-                        % [Voice 11 measure 23] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 11 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         fs'2
                         \mf
@@ -9498,96 +10205,97 @@
                         \startTrillSpan f''
                     }
                     {
-                        dqf'''8
+                        fs'8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
                         \stopTrillSpan
-                        gtef'8
+                        fqs''8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            f''16
+                            b16
                             \f
                             \>
-                            cs'''16
+                            fs'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            f''16
+                            b16
                             \f
                             \>
                             [
-                            b16
+                            f''16
                         }
                     }
                     {
-                        % [Voice 11 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        fs'8
-                        b8
-                        fs'16
+                        % [Voice 11 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'''8
+                        f''8
                         b16
+                        fs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        fs'16
+                        b16
                         \f
                         \>
-                        b4
-                        f''8
-                        [
+                        fs'4
                         b8
+                        [
+                        fs'8
                         ]
                     }
                     {
-                        % [Voice 11 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        fs'4
-                        b16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                        fs'16
-                        \f
-                        \>
-                        [
+                        % [Voice 11 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b4
                         f''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
-                    }
-                    {
-                        \pitchedTrill
-                        b4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan fs'
-                    }
-                    {
-                        b8
+                        r16
+                        \!
+                        b16
+                        \f
+                        \>
                         [
-                    }
-                    {
-                        fs'8
+                        fs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            b4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan fs'
+                        }
+                    }
+                    {
+                        r8
+                        \!
                         \stopTrillSpan
+                    }
+                    {
+                        b8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \bar "||"
                     }
                 }
@@ -9597,21 +10305,23 @@
                 \context Voice = "Voice 12"
                 {
                     {
-                        % [Voice 12 measure 1] %! COMMENT_MEASURE_NUMBERS
-                        \set Staff.shortInstrumentName =
-                        \markup { ten.2 }
-                        \set Staff.instrumentName =
-                        \markup { "Tenor 2" }
-                        \tempo 4=90
-                        dtef'''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \!
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 12 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \set Staff.shortInstrumentName =
+                            \markup { ten.2 }
+                            \set Staff.instrumentName =
+                            \markup { "Tenor 2" }
+                            \tempo 4=90
+                            cs'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \!
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         fs'4
                         \mf
                         - \tweak stencil #constante-hairpin
@@ -9625,6 +10335,7 @@
                             \pitchedTrill
                             b16
                             \startTrillSpan fs'
+                            \stopTrillSpan
                         }
                     }
                     {
@@ -9635,38 +10346,38 @@
                             \>
                             \stopTrillSpan
                             b16
-                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 12 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        r16
-                        \!
-                        b16
+                        % [Voice 12 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''16
                         \f
                         \>
                         [
+                        b16
                         fs'16
                         f''16
                         \times 2/3 {
                             cs'''8
                             f''8
-                            fs'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
                         }
-                        r16
-                        \!
-                        b16
+                        fs'16
                         \f
                         \>
                         [
+                        b16
                         f''16
                         cs'''16
                         \mp
@@ -9676,12 +10387,12 @@
                     }
                     {
                         gqf'4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 12 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f''8.
                         \mf
@@ -9693,28 +10404,29 @@
                         \stopTrillSpan
                     }
                     {
-                        ftes''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fs''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         f''4
                         \f
                         \>
                         b8
-                        [
-                        fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
+                        r8
+                        \!
                     }
                     {
-                        % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        dtef'''4
-                        \p
+                        % [Voice 12 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -9735,59 +10447,57 @@
                         }
                     }
                     {
-                        r4
-                        \!
+                        fs'4
+                        \f
+                        \>
                         \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             b16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r16
+                            \!
+                            fs'16
                             \f
                             \>
                             [
-                            fs'16
-                            b16
                         }
                     }
                     {
-                        % [Voice 12 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        fs'8
+                        % [Voice 12 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b8
+                        fs'8
                         \times 4/5 {
+                            b16
                             fs'16
+                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            f''16
+                            fs'16
                             \f
                             \>
                             [
-                            fs'16
-                            f''16
                         }
+                        f''16
                         cs'''16
                         f''16
                         fs'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
                         f''8
-                        \f
-                        \>
-                        [
-                        fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r8
+                        \!
                     }
                     {
-                        % [Voice 12 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f''4
                         \mf
@@ -9799,7 +10509,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             gqf'8
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
@@ -9816,41 +10526,41 @@
                         \startTrillSpan f''
                     }
                     {
-                        ftes''4
-                        \p
+                        fs''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 12 measure 7] %! COMMENT_MEASURE_NUMBERS
-                        b16
+                        % [Voice 12 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'16
                         \f
                         \>
                         [
-                        fs'16
-                        f''16
-                        cs'''16
+                        b16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r4
+                        r16
                         \!
-                        f''8
+                        fs'16
                         \f
                         \>
-                        [
-                        cs'''8
-                        ]
                         f''4
+                        cs'''8
+                        [
+                        f''8
+                        ]
+                        cs'''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 12 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             b4
                             \mf
@@ -9864,20 +10574,19 @@
                         }
                     }
                     {
-                        dtef'''4
-                        \pp
+                        cs'''4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
                         \times 4/5 {
-                            cs'''16
+                            f''16
                             \f
                             \>
                             [
-                            f''16
-                            b16
+                            cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -9888,48 +10597,49 @@
                             \f
                             \>
                             [
+                            b16
                         }
+                        f''8
                         b8
-                        fs'8
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 12 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            b16
+                            % [Voice 12 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             fs'16
-                            f''16
+                            b16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
-                        r16
-                        \!
-                        cs'''16
+                        fs'16
                         \f
                         \>
                         [
                         f''16
-                        fs'16
+                        cs'''16
+                        f''16
                         \times 2/3 {
-                            b8
-                            f''8
+                            fs'8
                             b8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
-                            fs'16
+                            f''16
                             \f
                             \>
                             [
                             b16
+                            fs'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -9937,16 +10647,16 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 12 measure 10] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 12 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             gqf'8.
-                            \p
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            ftes''16
-                            \pp
+                            fs''16
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                         }
@@ -9960,7 +10670,7 @@
                         \startTrillSpan f''
                     }
                     {
-                        dtef'''8.
+                        cs'''8.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -9971,44 +10681,58 @@
                         ]
                     }
                     {
-                        % [Voice 12 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         gqf'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        f''4
+                        b4
                         \f
                         \>
                         \times 2/3 {
-                            b8
-                            [
-                            fs'8
                             f''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
+                            r8
+                            \!
+                            b8
+                            \f
+                            \>
                         }
-                        r4
-                        \!
+                        fs'4
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 12 measure 12] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 12 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f''16
+                            [
                             fs'16
+                            b16
+                        }
+                        f''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
+                        \times 4/5 {
+                            b16
                             \f
                             \>
                             [
+                            f''16
                             b16
                             f''16
-                        }
-                        b8
-                        f''8
-                        \times 4/5 {
                             b16
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            fs'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -10019,37 +10743,27 @@
                             \f
                             \>
                             [
-                            b16
-                            fs'16
                         }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            f''16
+                    }
+                    {
+                        % [Voice 12 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'8
+                        f''8
+                        \times 4/5 {
                             fs'16
                             f''16
+                            fs'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                        }
-                    }
-                    {
-                        % [Voice 12 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
-                        fs'8
-                        \f
-                        \>
-                        [
-                        \times 4/5 {
+                            r16
+                            \!
                             f''16
-                            fs'16
-                            f''16
-                            cs'''16
-                            f''16
-                            \mp
+                            \f
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
@@ -10073,7 +10787,7 @@
                         }
                     }
                     {
-                        ftes''4
+                        fs''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -10081,46 +10795,45 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 12 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        ftes''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 12 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            fs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        r4
-                        \!
-                        cs'''8
+                        cs'''4
                         \f
                         \>
-                        [
                         f''8
-                        ]
-                        b4
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        cs'''4
+                        \f
+                        \>
                     }
                     {
                         \times 4/5 {
-                            % [Voice 12 measure 15] %! COMMENT_MEASURE_NUMBERS
-                            fs'16
+                            % [Voice 12 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f''16
                             [
+                            b16
+                            fs'16
                             f''16
                             cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
-                            r16
-                            \!
-                            f''16
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            [
                         }
                     }
                     {
-                        dtef'''16
+                        cs'''16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -10142,55 +10855,56 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 12 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        cs'''8
+                        % [Voice 12 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''8
                         \f
                         \>
                         [
-                        f''8
-                        cs'''16
-                        f''16
-                        cs'''16
+                        cs'''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
+                        f''16
+                        \f
+                        \>
+                        [
+                        cs'''16
+                        f''16
                         \times 4/5 {
+                            cs'''16
+                            f''16
+                            cs'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             f''16
                             \f
                             \>
                             [
-                            cs'''16
-                            f''16
-                            cs'''16
-                            f''16
                         }
                         cs'''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r8
-                        \!
+                        f''8
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 12 measure 17] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 12 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs'''16
                             f''16
-                            \f
-                            \>
-                            [
                             b16
-                            fs'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
                         }
-                        f''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        r4
+                        \!
                     }
                     {
                         \pitchedTrill
@@ -10201,15 +10915,17 @@
                         \startTrillSpan fs'
                     }
                     {
-                        ftes''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
-                        % [Voice 12 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f''4
                         \mf
@@ -10218,15 +10934,23 @@
                         \startTrillSpan cs'''
                     }
                     {
-                        dtef'''4.
-                        \stopTrillSpan
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \stopTrillSpan
+                        }
+                        cs'''8
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
                         gqf'16
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
@@ -10236,7 +10960,7 @@
                             fs'8
                             \f
                             \>
-                            b8
+                            f''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -10246,17 +10970,17 @@
                         }
                     }
                     {
-                        % [Voice 12 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        f''4
+                        % [Voice 12 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'4
                         \f
                         \>
-                        cs'''16
+                        b16
                         [
                         f''16
-                        b16
+                        cs'''16
                         f''16
                         \times 2/3 {
-                            cs'''8
+                            b8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -10276,7 +11000,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 12 measure 20] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 12 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -10299,8 +11023,8 @@
                         \startTrillSpan f''
                     }
                     {
-                        ftes''4
-                        \p
+                        fs''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -10321,41 +11045,47 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 12 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        f''4
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 12 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f''4
+                        }
                     }
                     {
-                        f''8
+                        cs'''8
                         \f
                         \>
                         [
-                        f''8
                         \stopTrillSpan
+                        f''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
-                            cs'''16
-                            f''16
-                            cs'''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                             r16
                             \!
-                            f''16
+                            fs'16
                             \f
                             \>
+                            [
+                            f''16
+                            cs'''16
+                            f''16
+                            ]
                         }
-                        fs'4
+                        cs'''4
                     }
                     {
-                        % [Voice 12 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        b8
-                        [
+                        % [Voice 12 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''8
-                        ]
-                        b4
                         \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        fs'4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -10374,19 +11104,22 @@
                         }
                     }
                     {
-                        dtef'''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
                     }
                     {
-                        % [Voice 12 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        dtef'''4
+                        % [Voice 12 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'''4
                         ~
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            dtef'''16
+                            cs'''16
                             [
                             gqf'8
                             \pp
@@ -10395,23 +11128,26 @@
                         }
                     }
                     {
-                        fs'16
+                        b16
                         \f
+                        \>
+                        f''16
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        f''16
+                        b16
                         \f
                         \>
                         [
-                        fs'16
-                        b8
                         fs'8
+                        f''8
                     }
                     {
-                        % [Voice 12 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'16
                         b16
                         fs'16
                         \mp
@@ -10420,10 +11156,6 @@
                         ]
                         r16
                         \!
-                        f''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
                     }
                     {
                         \pitchedTrill
@@ -10434,8 +11166,8 @@
                         \startTrillSpan fs'
                     }
                     {
-                        ftes''8.
-                        \pp
+                        fs''8.
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -10443,41 +11175,46 @@
                         \!
                     }
                     {
-                        \pitchedTrill
-                        f''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan cs'''
+                        }
                     }
                     {
-                        % [Voice 12 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 12 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''4
                     }
                     {
                         \times 4/5 {
-                            cs'''16
+                            b16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            f''16
                             fs'16
-                            b16
-                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
+                            f''16
+                            \f
+                            \>
+                            [
+                            cs'''16
                         }
-                        r8
-                        \!
-                        cs'''8
-                        \f
+                        f''8
+                        fs'8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                     }
                     {
                         \pitchedTrill
@@ -10500,7 +11237,7 @@
                 \context Voice = "Voice 13"
                 {
                     {
-                        % [Voice 13 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { ten.3 }
                         \set Staff.instrumentName =
@@ -10512,38 +11249,38 @@
                         [
                         \!
                         f''16
-                        fs'16
-                        b16
-                        ]
-                        fs'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r8
+                        ]
+                        r16
                         \!
-                        f''8
+                        fs'16
                         \f
                         \>
+                        b4
+                        fs'8
+                        [
+                        f''8
+                        ]
                         cs'''4
                     }
                     {
-                        % [Voice 13 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''16
-                        [
-                        cs'''16
-                        f''16
-                        cs'''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
+                        r16
+                        \!
+                        cs'''16
+                        \f
+                        \>
+                        [
+                        f''16
                         \times 2/3 {
-                            r8
-                            \!
+                            cs'''8
                             f''8
-                            \f
-                            \>
-                            [
                             b8
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -10560,7 +11297,7 @@
                         \!
                     }
                     {
-                        % [Voice 13 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         fs'4
                         \mf
@@ -10569,28 +11306,33 @@
                         \startTrillSpan f''
                     }
                     {
-                        gef'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            g'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \stopTrillSpan
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            gef'8
+                            g'8
                             [
                             fqs''16
                             ~
                             ]
                         }
-                        fqs''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fqs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        % [Voice 13 measure 4] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f''8
                         \mf
@@ -10598,8 +11340,8 @@
                         \<
                         \startTrillSpan cs'''
                         r16
-                        \stopTrillSpan
                         \!
+                        \stopTrillSpan
                         \pitchedTrill
                         b16
                         \mf
@@ -10616,19 +11358,19 @@
                             \>
                             \stopTrillSpan
                             b16
-                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
-                        b16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        fs'16
+                        f''16
                         \f
                         \>
                         [
+                        b16
+                        fs'16
                         f''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -10637,12 +11379,12 @@
                     }
                     {
                         dqf'''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 13 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         fs'4
                         \mf
@@ -10651,13 +11393,22 @@
                         \startTrillSpan f''
                     }
                     {
-                        gef'8
+                        g'8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                         \stopTrillSpan
-                        fqs''4.
+                        fqs''8
                         ~
+                        ]
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fqs''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \times 2/3 {
@@ -10666,61 +11417,59 @@
                             \>
                             [
                             b8
-                            f''8
-                        }
-                    }
-                    {
-                        % [Voice 13 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        cs'''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        f''16
-                        \f
-                        \>
-                        [
-                        fs'16
-                        ]
-                        b4
-                        fs'8
-                        [
-                        b8
-                        ]
-                        fs'4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 13 measure 7] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
-                            b16
-                            \f
-                            \>
-                            [
-                            f''16
-                        }
-                        b8
-                        fs'8
-                        \times 4/5 {
-                            f''16
-                            cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
+                        }
+                    }
+                    {
+                        % [Voice 13 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''16
+                        \f
+                        \>
+                        [
+                        cs'''16
+                        f''16
+                        fs'16
+                        ]
+                        b4
+                        fs'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        b4
+                        \f
+                        \>
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 13 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            fs'16
+                            [
+                            b16
+                            f''16
+                        }
+                        b8
+                        fs'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        \times 4/5 {
                             r16
                             \!
                             f''16
                             \f
                             \>
                             [
+                            cs'''16
+                            f''16
                             cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -10731,7 +11480,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             dqf'''8
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
@@ -10740,17 +11489,22 @@
                         }
                     }
                     {
-                        % [Voice 13 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        f''2
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 13 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan cs'''
+                        }
+                        f''4
                     }
                     {
-                        gef'4
-                        \p
+                        g'4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -10764,72 +11518,78 @@
                         \startTrillSpan fs'
                     }
                     {
-                        % [Voice 13 measure 9] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''16
                         \f
                         \>
                         [
                         \stopTrillSpan
                         fs'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         b16
+                        \f
+                        \>
+                        [
+                        f''8
+                        cs'''8
+                        f''16
+                        cs'''16
                         f''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
+                        r16
                         \!
-                        cs'''8
-                        \f
-                        \>
-                        [
-                        f''16
-                        cs'''16
-                        f''16
-                        b16
-                        ]
-                        fs'4
+                        b4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 13 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         fqs''8.
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
                     }
                     {
-                        \pitchedTrill
-                        fs'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan f''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            fs'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan f''
+                        }
                     }
                     {
-                        fs'4
+                        dqf'''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \stopTrillSpan
                         \times 4/5 {
-                            fs'8.
+                            dqf'''8.
                             [
-                            gef'8
+                            g'8
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            \stopTrillSpan
                         }
                     }
                     {
-                        % [Voice 13 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         f''4
                         \mf
@@ -10841,7 +11601,7 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             fqs''8
-                            \p
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
@@ -10849,72 +11609,72 @@
                             \!
                         }
                         dqf'''4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        r8
-                        \!
-                        b8
-                        \f
-                        \>
-                    }
-                    {
-                        % [Voice 13 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        fs'4
-                        \times 4/5 {
-                            f''16
-                            [
-                            fs'16
-                            f''16
-                            cs'''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                        }
-                        f''8
+                        fs'8
                         \f
                         \>
                         [
                         b8
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                    {
+                        % [Voice 13 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        \!
+                        \times 4/5 {
+                            fs'16
+                            \f
+                            \>
+                            [
+                            f''16
                             fs'16
                             f''16
                             cs'''16
                         }
+                        f''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            b16
+                            \f
+                            \>
+                            [
+                            fs'16
+                            f''16
+                        }
                     }
                     {
-                        % [Voice 13 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'''16
                         f''16
+                        cs'''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        cs'''16
-                        \f
-                        \>
-                        [
-                        f''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
                     }
                     {
-                        gef'4
+                        g'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \times 4/5 {
-                            gef'8
+                            g'8
                             [
                             fqs''8.
                             ~
@@ -10927,40 +11687,46 @@
                     }
                     {
                         \times 2/3 {
-                            % [Voice 13 measure 14] %! COMMENT_MEASURE_NUMBERS
-                            cs'''8
+                            % [Voice 13 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f''8
                             \f
                             \>
                             [
-                            f''8
-                            fs'8
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            f''16
+                            cs'''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            r16
+                            r8
                             \!
-                            cs'''16
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            f''16
                             \f
                             \>
-                        }
-                        f''4
-                        \times 2/3 {
-                            fs'8
                             [
-                            b8
-                            fs'8
+                            fs'16
+                            f''16
                             ]
+                        }
+                        cs'''4
+                        \times 2/3 {
+                            f''8
+                            [
+                            fs'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        % [Voice 13 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        f''4
-                        \mp
+                        % [Voice 13 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -10985,7 +11751,7 @@
                     }
                     {
                         dqf'''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -10999,9 +11765,9 @@
                         \startTrillSpan cs'''
                     }
                     {
-                        % [Voice 13 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        gef'4
-                        \pp
+                        % [Voice 13 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        g'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -11024,29 +11790,61 @@
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                             \startTrillSpan f''
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
-                            \stopTrillSpan
                             fs'16
                             \f
                             \>
-                            [
-                            b16
+                            \stopTrillSpan
+                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 13 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        f''8
+                        % [Voice 13 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'8
+                        \f
+                        \>
+                        [
                         b8
                         \times 4/5 {
                             f''16
                             b16
+                            f''16
+                            b16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            f''16
+                            \f
+                            \>
+                            [
+                            b16
+                            f''16
+                        }
+                        cs'''8
+                        f''8
+                    }
+                    {
+                        \times 4/5 {
+                            % [Voice 13 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -11057,31 +11855,6 @@
                             \f
                             \>
                             [
-                            b16
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            f''16
-                            cs'''16
-                            f''16
-                        }
-                        cs'''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r8
-                        \!
-                    }
-                    {
-                        \times 4/5 {
-                            % [Voice 13 measure 18] %! COMMENT_MEASURE_NUMBERS
-                            f''16
-                            \f
-                            \>
-                            [
-                            fs'16
-                            b16
                             fs'16
                             b16
                             \mp
@@ -11092,60 +11865,64 @@
                     }
                     {
                         fqs''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         fs'4
+                        \f
+                        \>
+                        b8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         r8
                         \!
-                        f''8
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
                     }
                     {
-                        % [Voice 13 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        dqf'''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 13 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            dqf'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        cs'''4
+                        fs'4
                         \f
                         \>
                         \times 4/5 {
                             f''16
-                            [
-                            cs'''16
-                            f''16
-                            b16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                             r16
                             \!
+                            cs'''16
+                            \f
+                            \>
+                            [
+                            f''16
+                            cs'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
-                        gef'8
+                        g'8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         fqs''8
                         ~
                         ]
                     }
                     {
-                        % [Voice 13 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         fqs''4
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -11156,34 +11933,40 @@
                         \f
                         \>
                         [
-                        cs'''8
-                        f''16
-                        cs'''16
-                        f''16
-                        b16
+                        b8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
+                        f''16
+                        \f
+                        \>
+                        [
+                        cs'''16
+                        f''16
                         \times 4/5 {
-                            r16
-                            \!
-                            fs'16
-                            \f
-                            \>
-                            [
+                            cs'''16
                             f''16
-                            fs'16
-                            f''16
+                            b16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
+                            r16
+                            \!
+                            fs'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            [
                         }
                     }
                     {
-                        % [Voice 13 measure 21] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         dqf'''8.
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
@@ -11192,44 +11975,48 @@
                     }
                     {
                         \pitchedTrill
-                        f''2
+                        f''4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            f''4
+                        }
                     }
                     {
                         f''8
                         \f
                         \>
                         [
-                        f''8
+                        \stopTrillSpan
+                        fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \stopTrillSpan
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 13 measure 22] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 13 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             r16
                             \!
-                            cs'''16
+                            f''16
                             \f
                             \>
                             [
-                            f''16
+                            cs'''16
                             ]
                         }
-                        b4
+                        f''4
                         \times 2/3 {
-                            fs'8
+                            cs'''8
                             [
+                            f''8
                             b8
-                            fs'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -11239,17 +12026,17 @@
                         \!
                     }
                     {
-                        % [Voice 13 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        f''16
+                        % [Voice 13 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'16
                         \f
                         \>
                         [
-                        cs'''16
-                        f''16
+                        b16
                         fs'16
+                        f''16
                         \times 2/3 {
+                            cs'''8
                             f''8
-                            fs'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -11257,17 +12044,17 @@
                             r8
                             \!
                         }
-                        f''16
+                        fs'16
                         \f
                         \>
                         [
-                        cs'''16
                         f''16
                         fs'16
+                        f''16
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            b16
-                            fs'16
+                            cs'''16
+                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -11279,7 +12066,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 13 measure 24] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 13 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             b16
                             \mf
@@ -11294,7 +12081,12 @@
                             \startTrillSpan f''
                             \stopTrillSpan
                         }
-                        fs'4.
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fs'4
+                            ~
+                        }
+                        fs'8
                         r16
                         \!
                         \stopTrillSpan
@@ -11309,28 +12101,36 @@
                         ~
                     }
                     {
-                        % [Voice 13 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 13 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''4
                     }
                     {
-                        gef'4
-                        \pp
+                        g'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        b8
+                        fs'8
                         \f
                         \>
                         [
-                        f''8
+                        b8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 2/3 {
-                            b16
-                            f''16
+                            r16
+                            \!
+                            fs'16
+                            \f
+                            \>
+                            [
                             b16
                         }
-                        fs'8
+                        f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -11344,21 +12144,24 @@
                 \context Voice = "Voice 14"
                 {
                     {
-                        % [Voice 14 measure 1] %! COMMENT_MEASURE_NUMBERS
-                        \set Staff.shortInstrumentName =
-                        \markup { ten.4 }
-                        \set Staff.instrumentName =
-                        \markup { "Tenor 4" }
-                        \tempo 4=90
-                        def'''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \!
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 14 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \set Staff.shortInstrumentName =
+                            \markup { ten.4 }
+                            \set Staff.instrumentName =
+                            \markup { "Tenor 4" }
+                            \tempo 4=90
+                            d'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \!
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            def'''8
+                            d'''8
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -11367,69 +12170,81 @@
                         }
                     }
                     {
-                        \pitchedTrill
-                        fs'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan f''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            fs'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan f''
+                        }
                     }
                     {
-                        fs'4
+                        gqf'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \stopTrillSpan
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 14 measure 2] %! COMMENT_MEASURE_NUMBERS
-                            fs'8
+                            % [Voice 14 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            gqf'8
                             [
-                            fes''16
+                            f''16
                             ~
                             ]
-                            \stopTrillSpan
                         }
-                        fes''4..
+                        f''4..
                         r16
                         \!
                     }
                     {
-                        r8
                         cs'''8
                         \f
                         \>
-                    }
-                    {
-                        % [Voice 14 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        f''4
-                        fs'16
                         [
-                        b16
-                        fs'16
-                        f''16
+                        f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
+                    }
+                    {
+                        % [Voice 14 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
                         \!
-                        fs'8
+                        fs'16
                         \f
                         \>
                         [
                         b16
                         fs'16
+                        f''16
+                        fs'8
+                        b8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        fs'16
+                        \f
+                        \>
+                        [
                         b16
                         fs'16
                     }
                     {
                         \times 4/5 {
-                            % [Voice 14 measure 4] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 14 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             b16
+                            fs'16
+                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -11440,11 +12255,11 @@
                             \f
                             \>
                             [
-                            f''16
-                            fs'16
                         }
                         f''8
                         cs'''8
+                        f''16
+                        fs'16
                         f''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -11452,16 +12267,12 @@
                         ]
                         r16
                         \!
-                        fs'16
+                        fs'4
                         \f
                         \>
-                        [
-                        f''16
-                        ]
-                        fs'4
                     }
                     {
-                        % [Voice 14 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b8
                         [
                         fs'8
@@ -11471,19 +12282,22 @@
                         ]
                     }
                     {
-                        \pitchedTrill
-                        f''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs'''
+                        }
                     }
                     {
-                        f''4
-                        \p
+                        d'''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
+                        \stopTrillSpan
                     }
                     {
                         \times 4/5 {
@@ -11494,7 +12308,6 @@
                             \<
                             [
                             \startTrillSpan fs'
-                            \stopTrillSpan
                             \pitchedTrill
                             fs'8.
                             ]
@@ -11503,7 +12316,7 @@
                         }
                     }
                     {
-                        % [Voice 14 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         gqf'4
                         \p
                         - \tweak stencil #constante-hairpin
@@ -11519,67 +12332,65 @@
                             r16
                             \!
                         }
-                        fes''2
+                        f''2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 14 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b4
+                        \f
+                        \>
+                        fs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        fs'16
+                        f''16
                         \f
                         \>
                         [
-                        f''16
                         cs'''16
                         \times 2/3 {
                             f''8
                             cs'''8
                             f''8
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                        }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
                             r16
                             \!
-                            cs'''16
+                            f''16
                             \f
                             \>
                             [
-                            f''16
                         }
                     }
                     {
-                        % [Voice 14 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs'''16
                         f''16
                         fs'16
                         f''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
                         \times 2/3 {
-                            r8
-                            \!
                             fs'8
-                            \f
-                            \>
-                            [
-                            b8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
+                            b8
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
@@ -11600,16 +12411,16 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 14 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            def'''8.
-                            \pp
+                            % [Voice 14 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            d'''8.
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
                             r16
                             \!
                             gqf'16
-                            \p
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                         }
@@ -11623,34 +12434,34 @@
                         \startTrillSpan f''
                     }
                     {
-                        fes''4..
+                        f''4..
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
-                        def'''16
+                        d'''16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         [
                     }
                     {
-                        % [Voice 14 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         fs'16
                         \f
                         \>
                         f''16
-                        fs'16
-                        b16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r4
+                        r16
                         \!
-                        fs'8
+                        fs'16
                         \f
                         \>
+                        b4
+                        fs'8
                         [
                         f''8
                         ]
@@ -11659,43 +12470,45 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 14 measure 11] %! COMMENT_MEASURE_NUMBERS
-                            f''16
-                            [
-                            fs'16
+                            % [Voice 14 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
+                            r16
+                            \!
+                            fs'16
+                            \f
+                            \>
+                            [
                         }
-                        r8
-                        \!
+                        f''8
                         fs'8
-                        \f
-                        \>
-                        [
                         \times 4/5 {
                             f''16
                             cs'''16
                             f''16
-                            cs'''16
-                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
+                            cs'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
                         gqf'4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            % [Voice 14 measure 12] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 14 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             f''8.
                             \mf
@@ -11714,56 +12527,61 @@
                         }
                     }
                     {
-                        fes''4
-                        \p
+                        f''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        \pitchedTrill
-                        fs'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan f''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            fs'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan f''
+                        }
                     }
                     {
-                        fs'16
-                        [
-                        cs'''16
+                        f''16
                         \f
                         \>
+                        [
                         \stopTrillSpan
-                        f''16
-                        b16
-                    }
-                    {
-                        % [Voice 14 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        f''8
-                        cs'''8
-                        f''16
+                        cs'''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        b16
+                        f''16
                         \f
                         \>
                         [
-                        fs'16
+                    }
+                    {
+                        % [Voice 14 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b8
+                        f''8
+                        cs'''16
+                        f''16
+                        b16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
+                        r16
+                        \!
                     }
                     {
-                        def'''16
+                        d'''16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                         gqf'8.
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -11771,18 +12589,20 @@
                         ]
                     }
                     {
-                        b4
+                        fs'4
                         \f
                         \>
                     }
                     {
-                        % [Voice 14 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        fs'8
-                        [
-                        f''8
-                        ]
-                        cs'''4
+                        % [Voice 14 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b8
                         \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        fs'4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -11795,88 +12615,102 @@
                         \startTrillSpan cs'''
                     }
                     {
-                        fes''8.
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \stopTrillSpan
-                        r16
-                        \!
-                    }
-                    {
-                        % [Voice 14 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        def'''4
+                        f''8.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
+                        \stopTrillSpan
+                        r16
+                        \!
                     }
                     {
-                        \pitchedTrill
-                        b2
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan fs'
-                    }
-                    {
-                        \times 4/5 {
-                            r16
-                            \!
-                            \stopTrillSpan
-                            f''16
-                            \f
-                            \>
-                            [
-                            fs'16
-                            f''16
-                            cs'''16
-                        }
-                    }
-                    {
-                        % [Voice 14 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        f''8
-                        fs'8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            r16
-                            \!
-                            f''16
-                            \f
-                            \>
-                            [
-                            fs'16
-                        }
-                        b16
-                        fs'16
-                        f''16
-                        fs'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
-                    {
-                        gqf'4
+                        % [Voice 14 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        d'''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ~
                     }
                     {
-                        % [Voice 14 measure 17] %! COMMENT_MEASURE_NUMBERS
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            b4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan fs'
+                        }
+                        b4
+                    }
+                    {
+                        \times 4/5 {
+                            f''16
+                            \f
+                            \>
+                            [
+                            \stopTrillSpan
+                            cs'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            f''16
+                            \f
+                            \>
+                            [
+                            fs'16
+                        }
+                    }
+                    {
+                        % [Voice 14 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''8
+                        cs'''8
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            f''16
+                            fs'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                        f''16
+                        \f
+                        \>
+                        [
+                        fs'16
+                        b16
+                        fs'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        % [Voice 14 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         fs'8
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
-                         \startTrillSpan f''
+                        \startTrillSpan f''
                         r16
-                        \stopTrillSpan
                         \!
+                        \stopTrillSpan
                         \pitchedTrill
                         f''16
                         \mf
@@ -11885,7 +12719,7 @@
                         \startTrillSpan cs'''
                     }
                     {
-                        fes''2
+                        f''2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -11901,79 +12735,86 @@
                         \startTrillSpan fs'
                         \pitchedTrill
                         fs'16
-                        ]
                         \startTrillSpan f''
                         \stopTrillSpan
                     }
                     {
                         \times 2/3 {
-                            % [Voice 14 measure 18] %! COMMENT_MEASURE_NUMBERS
-                            r8
-                            \!
-                            \stopTrillSpan
-                            b8
+                            % [Voice 14 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f''8
                             \f
                             \>
-                            [
+                            \stopTrillSpan
                             fs'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            f''16
-                            cs'''16
+                            b16
+                            \f
+                            \>
+                            [
+                            fs'16
                             f''16
                             ]
                         }
                         cs'''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
                         \times 2/3 {
+                            f''8
+                            [
+                            cs'''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                             r8
                             \!
-                            f''8
-                            \f
-                            \>
-                            [
-                            b8
-                            ]
                         }
                     }
                     {
-                        % [Voice 14 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        fs'4
+                        % [Voice 14 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        \pitchedTrill
-                        f''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs'''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            f''8
+                            d'''8
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                            r16
+                            \!
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf'4
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
-                            r16
-                            \!
-                            \stopTrillSpan
                         }
-                        gqf'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
                     }
                     {
-                        % [Voice 14 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         b4
                         \mf
@@ -11984,17 +12825,17 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            fes''16
-                            \stopTrillSpan
+                            f''16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             [
-                            def'''8
+                            \stopTrillSpan
+                            d'''8
                             ~
                             ]
                         }
-                        def'''4
+                        d'''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -12013,63 +12854,63 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 14 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            f''16
+                            % [Voice 14 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b16
                             \f
                             \>
                             [
                             fs'16
-                            b16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
-                        r8
-                        \!
-                        fs'8
+                        f''8
                         \f
                         \>
                         [
+                        fs'8
                         \times 4/5 {
                             b16
                             fs'16
-                            f''16
-                            cs'''16
-                            f''16
+                            b16
+                            fs'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
-                            b16
+                            f''16
                             \f
                             \>
                             [
-                            fs'16
+                            cs'''16
+                            f''16
                         }
                     }
                     {
-                        % [Voice 14 measure 22] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b8
                         fs'8
                         \times 4/5 {
-                            f''16
-                            fs'16
+                            b16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            b16
+                            fs'16
                             \f
                             \>
                             [
+                            f''16
                             fs'16
                             ]
                         }
@@ -12077,23 +12918,29 @@
                         fs'8
                         [
                         b8
-                        ]
-                    }
-                    {
-                        % [Voice 14 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        f''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
-                        \pitchedTrill
-                        f''2
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        % [Voice 14 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        \!
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan cs'''
+                        }
+                        f''4
                         ~
-                        \startTrillSpan cs'''
                         \times 4/5 {
                             f''4
                             \pitchedTrill
@@ -12103,9 +12950,9 @@
                         }
                     }
                     {
-                        % [Voice 14 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 14 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         gqf'4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -12125,8 +12972,8 @@
                         }
                     }
                     {
-                        fes''4
-                        \pp
+                        f''4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -12141,7 +12988,7 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 14 measure 25] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 14 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             f''8.
                             [
                             \pitchedTrill
@@ -12155,34 +13002,37 @@
                     }
                     {
                         \times 4/5 {
-                            def'''8.
-                            \p
+                            d'''8.
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
                             r16
                             \!
                             gqf'16
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
                         \times 2/3 {
-                            r16
-                            \!
-                            cs'''16
+                            fs'16
                             \f
                             \>
-                            [
-                            f''16
+                            b16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
-                        fs'8
-                        \mp
+                        f''8
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                         \bar "||"
                     }
                 }
@@ -12192,7 +13042,7 @@
                 \context Voice = "Voice 15"
                 {
                     {
-                        % [Voice 15 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { ten.5 }
                         \set Staff.instrumentName =
@@ -12204,17 +13054,20 @@
                         [
                         \!
                         cs'''16
-                        f''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
+                        f''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                     }
                     {
                         dqf'''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -12225,32 +13078,36 @@
                             \>
                             [
                             f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             cs'''16
+                            \f
+                            \>
+                            [
                             f''16
-                            fs'16
                         }
+                        fs'8
                         b8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r8
-                        \!
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 15 measure 2] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 15 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             f''16
-                            \f
-                            \>
-                            [
                             b16
-                            fs'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
-                        b4
-                        \mp
+                        fs'4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -12263,7 +13120,7 @@
                         \startTrillSpan fs'
                     }
                     {
-                        gtef'8
+                        fs'8
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -12274,7 +13131,7 @@
                         ]
                     }
                     {
-                        % [Voice 15 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         fqs''4
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -12303,12 +13160,12 @@
                     }
                     {
                         \times 2/3 {
-                            fs'8
+                            b8
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            f''8
+                            fs'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -12318,62 +13175,69 @@
                         }
                     }
                     {
-                        % [Voice 15 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        cs'''4
+                        % [Voice 15 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''4
                         \f
                         \>
-                        f''16
+                        cs'''16
                         [
+                        f''16
                         fs'16
                         b16
-                        fs'16
                         \times 2/3 {
-                            b8
+                            fs'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r8
                             \!
-                            f''8
+                            b8
                             \f
                             \>
                             [
                         }
+                        f''16
                         b16
                         fs'16
                         f''16
-                        cs'''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        % [Voice 15 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        dqf'''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 15 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            dqf'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            f''16
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            r16
-                            \!
                             cs'''16
                             \f
                             \>
                             [
+                            f''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
+                        cs'''8
+                        \f
+                        \>
+                        [
                         f''8
-                        fs'8
                         \times 4/5 {
+                            fs'16
                             b16
                             fs'16
                             b16
@@ -12383,20 +13247,17 @@
                             ]
                             r16
                             \!
-                            f''16
-                            \f
-                            \>
                         }
                     }
                     {
-                        % [Voice 15 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        b4
+                        % [Voice 15 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        gtef'8.
+                        fs'8.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -12419,93 +13280,99 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 15 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
-                        fs'2
+                        fs'4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan f''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fs'4
+                        }
                     }
                     {
-                        fs'8
+                        b8
                         \f
                         \>
                         [
-                        b8
-                        ]
                         \stopTrillSpan
-                        fs'4
-                    }
-                    {
-                        % [Voice 15 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        f''16
+                        f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r16
+                        ]
+                        r4
                         \!
-                        fs'16
+                    }
+                    {
+                        % [Voice 15 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b16
                         \f
                         \>
                         [
-                        b16
-                        f''8
-                        b8
                         fs'16
-                        b16
+                        f''16
+                        fs'16
+                        b8
+                        f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        fs'16
+                        b16
                         \f
                         \>
                         [
+                        fs'16
+                        b16
                         \times 4/5 {
+                            fs'16
                             f''16
                             cs'''16
-                            f''16
-                            cs'''16
-                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
+                            f''16
+                            \f
+                            \>
+                            [
                         }
                     }
                     {
-                        % [Voice 15 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
+                        % [Voice 15 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs'''8
+                        f''8
+                        cs'''16
+                        f''16
+                        cs'''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        f''4
                         \f
                         \>
+                        cs'''8
                         [
-                        f''16
-                        cs'''16
-                        f''16
-                        cs'''16
-                        ]
-                        f''4
+                        f''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r8
-                        \!
-                        b8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        [
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 15 measure 10] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 15 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             f''8
                             \mf
@@ -12520,91 +13387,119 @@
                         }
                     }
                     {
-                        dqf'''4.
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            dqf'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \stopTrillSpan
+                        }
+                        dqf'''8
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        \stopTrillSpan
                         r16
                         \!
-                        gtef'16
+                        fs'16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
-                        gtef'4
+                        fs'4
                         ~
                     }
                     {
-                        % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        gtef'4.
+                        % [Voice 15 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'4.
                         fqs''8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        f''4
+                        b4
                         \f
                         \>
+                        f''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
                         b16
+                        \f
+                        \>
                         [
                         f''16
-                        b16
-                        fs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        % [Voice 15 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        dqf'''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 15 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            dqf'''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                           \pitchedTrill
+                            \pitchedTrill
                             fs'8
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
                             \startTrillSpan f''
                             r16
-                            \stopTrillSpan
                             \!
+                            \stopTrillSpan
                         }
-                        \pitchedTrill
-                        f''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs'''
+                        }
                     }
                     {
                         \times 2/3 {
-                            f''8
-                            [
-                            f''8
+                            b8
                             \f
                             \>
+                            [
                             \stopTrillSpan
                             fs'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 15 measure 13] %! COMMENT_MEASURE_NUMBERS
-                            b16
-                            fs'16
+                            % [Voice 15 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             f''16
+                            \f
+                            \>
+                            [
+                            fs'16
+                            b16
                         }
+                        fs'16
+                        f''16
                         cs'''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -12612,16 +13507,16 @@
                         ]
                         r16
                         \!
-                        f''16
-                        \f
-                        \>
-                        [
-                        cs'''16
                         \times 2/3 {
                             f''8
-                            fs'8
+                            \f
+                            \>
+                            [
+                            cs'''8
                             f''8
                         }
+                        fs'16
+                        f''16
                         cs'''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -12629,17 +13524,13 @@
                         ]
                         r16
                         \!
-                        f''16
-                        \f
-                        \>
-                        [
-                        fs'16
-                        ]
                     }
                     {
-                        % [Voice 15 measure 14] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''4
-                        cs'''8
+                        \f
+                        \>
+                        fs'8
                         [
                         f''8
                         \mp
@@ -12656,36 +13547,34 @@
                         \startTrillSpan fs'
                     }
                     {
-                        gtef'4
-                        \pp
+                        fs'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 15 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs'''4
                         \f
-                        - \tweak stencil #constante-hairpin
-                        \<
+                        \>
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
                             f''16
-                            \f
-                            \>
-                            [
-                            b16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
+                            r16
+                            \!
+                            cs'''16
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
                         fqs''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -12701,62 +13590,65 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 15 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        f''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 15 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            f''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs'''
+                        }
                     }
                     {
                         f''8
                         \f
                         \>
                         [
-                        cs'''8
                         \stopTrillSpan
+                        b8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
-                            f''16
-                            cs'''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                             r16
                             \!
                             f''16
                             \f
                             \>
                             [
-                            fs'16
+                            cs'''16
+                            f''16
+                            cs'''16
                         }
                         f''16
-                        cs'''16
-                        f''16
-                        b16
+                        fs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        % [Voice 15 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        r8
+                        r16
                         \!
-                        f''8
+                        f''16
                         \f
                         \>
                         [
-                        b16
-                        fs'16
+                    }
+                    {
+                        % [Voice 15 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'''8
+                        f''8
                         b16
                         f''16
+                        b16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r16
+                        \!
                     }
                     {
                         \pitchedTrill
@@ -12774,45 +13666,42 @@
                             \<
                             [
                             \stopTrillSpan
-                            gtef'8
+                            fs'8
                             ~
                             ]
                         }
                     }
                     {
-                        % [Voice 15 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        gtef'4
+                        % [Voice 15 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        cs'''4
+                        fs'4
+                        \f
+                        \>
+                        b8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         r8
                         \!
-                        f''8
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        [
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             fqs''8
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                             r16
                             \!
                         }
                     }
                     {
-                        % [Voice 15 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         fs'4
                         \mf
@@ -12822,7 +13711,7 @@
                     }
                     {
                         dqf'''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -12844,7 +13733,7 @@
                         }
                     }
                     {
-                        gtef'4
+                        fs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -12853,28 +13742,44 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 15 measure 20] %! COMMENT_MEASURE_NUMBERS
-                            gtef'8.
+                            % [Voice 15 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            fs'8.
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
                             fqs''16
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        cs'''4
+                        f''4
                         \f
                         \>
                         \times 4/5 {
+                            cs'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r16
+                            \!
                             f''16
+                            \f
+                            \>
                             [
-                            fs'16
-                            b16
+                            cs'''16
+                            f''16
+                        }
+                        fs'8
+                        b8
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 15 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             fs'16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -12882,29 +13787,15 @@
                             ]
                             r16
                             \!
-                        }
-                        b8
-                        \f
-                        \>
-                        [
-                        fs'8
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 15 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            f''16
-                            fs'16
-                            f''16
+                            b16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                         }
                     }
                     {
                         dqf'''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -12917,43 +13808,44 @@
                         \startTrillSpan f''
                     }
                     {
-                        cs'''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \stopTrillSpan
-                        r16
-                        \!
-                        f''16
+                        fs'16
                         \f
                         \>
                         [
-                        cs'''16
+                        \stopTrillSpan
+                        f''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        fs'16
+                        \f
+                        \>
+                        [
                     }
                     {
                         \times 2/3 {
-                            % [Voice 15 measure 22] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 15 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             f''8
-                            fs'8
+                            cs'''8
                             f''8
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             cs'''16
+                            f''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            f''16
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
                         }
                     }
                     {
-                        gtef'4
+                        fs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -12963,29 +13855,27 @@
                         \<
                     }
                     {
-                        % [Voice 15 measure 23] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         fs'4
                         \f
                         \>
                         \times 2/3 {
                             f''8
-                            [
-                            cs'''8
-                            f''8
-                            ]
-                        }
-                        cs'''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            r16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r8
                             \!
-                            f''16
+                            cs'''8
                             \f
                             \>
+                        }
+                        f''4
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            fs'16
                             [
+                            f''16
                             cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -12994,43 +13884,67 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 15 measure 24] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 15 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             dqf'''8.
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            gtef'16
+                            fs'16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        gtef'2
+                        fs'4
                         ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fs'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \pitchedTrill
                         f''8
-                        [
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                         \startTrillSpan cs'''
                         \pitchedTrill
                         b8
                         \startTrillSpan fs'
+                        \stopTrillSpan
                     }
                     {
-                        % [Voice 15 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 15 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         f''8
                         \f
                         \>
                         \stopTrillSpan
-                        fs'8
+                        cs'''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
+                            r16
+                            \!
+                            f''16
+                            \f
+                            \>
+                            [
+                            cs'''16
+                            f''16
+                            fs'16
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
                             f''16
                             fs'16
                             \mp
@@ -13039,30 +13953,14 @@
                             ]
                             r16
                             \!
-                            f''16
-                            \f
-                            \>
-                            [
-                            cs'''16
                         }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            f''16
-                            cs'''16
-                            f''16
-                        }
-                        cs'''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        f''8
+                        \f
+                        \>
+                        [
                         \times 2/3 {
-                            r16
-                            \!
+                            cs'''16
                             f''16
-                            \f
-                            \>
-                            [
                             cs'''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -13078,13 +13976,13 @@
                 \context Voice = "Voice 16"
                 {
                     {
-                        % [Voice 16 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { bar.1 }
                         \set Staff.instrumentName =
                         \markup { "Baritone 1" }
                         \tempo 4=90
-                        dtef''4..
+                        cs''4..
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -13101,31 +13999,35 @@
                         \startTrillSpan fs'
                     }
                     {
-                        cqs'''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cqs'''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
-                        % [Voice 16 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''4
                         \f
                         \>
                         c'''8
-                        [
-                        cs''8
-                        ]
-                        e'4
                         \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        cs''4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            etes'16
+                            f'16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -13138,23 +14040,25 @@
                         }
                     }
                     {
-                        % [Voice 16 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        cs''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan c'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 16 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            cs''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan c'''
+                        }
                     }
                     {
                         cs''8
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
+                        \stopTrillSpan
                         r16
                         \!
-                        \stopTrillSpan
                         cqs'''16
                         \p
                         - \tweak stencil #constante-hairpin
@@ -13175,63 +14079,69 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 16 measure 4] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
-                            \stopTrillSpan
-                            fs'16
+                            % [Voice 16 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e'16
                             \f
                             \>
                             [
-                            e'16
+                            \stopTrillSpan
                             fs'16
-                            e'16
-                        }
-                        fs'8
-                        cs''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        c'''16
-                        \f
-                        \>
-                        [
-                        cs''16
-                        c'''16
-                        \times 4/5 {
-                            cs''16
-                            c'''16
-                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
+                            e'16
+                            \f
+                            \>
+                            [
+                            fs'16
+                        }
+                        e'8
+                        fs'8
+                        cs''16
+                        c'''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        cs''16
+                        \f
+                        \>
+                        [
+                        \times 4/5 {
+                            c'''16
+                            cs''16
+                            c'''16
+                            cs''16
                             c'''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                         }
                     }
                     {
-                        % [Voice 16 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        etes'4
-                        \p
+                        % [Voice 16 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        \pitchedTrill
-                        e'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan fs'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            e'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan fs'
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             e'8
@@ -13246,36 +14156,48 @@
                         \>
                         [
                         fs'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 16 measure 6] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 16 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            r16
+                            \!
                             e'16
+                            \f
+                            \>
+                            [
                             fs'16
-                            cs''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
                             ]
                         }
-                        r4
-                        \!
-                    }
-                    {
-                        gqf'2
-                        \p
+                        cs''4
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        gqf'4
                         ~
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 16 measure 7] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 16 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             gqf'8
                             [
-                            dtef''16
+                            cs''16
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -13287,28 +14209,30 @@
                             \f
                             \>
                             cs''8
-                            c'''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r8
+                            \!
                         }
-                        cs''4
-                        e'16
-                        [
+                        c'''4
+                        \f
+                        \>
                         cs''16
+                        [
+                        e'16
+                        cs''16
+                        e'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
-                        \!
-                        e'16
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
                     }
                     {
-                        % [Voice 16 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cqs'''4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -13324,29 +14248,32 @@
                         \stopTrillSpan
                     }
                     {
-                        etes'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            f'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         fs'4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
-                         \startTrillSpan cs''
+                        \startTrillSpan cs''
                     }
                     {
                         \times 4/5 {
-                            % [Voice 16 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 16 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             fs'8
                             [
                             \pitchedTrill
                             e'8.
                             \startTrillSpan fs'
+                            \stopTrillSpan
                         }
                     }
                     {
@@ -13356,33 +14283,34 @@
                             \>
                             \stopTrillSpan
                             e'8
-                            cs''8
-                        }
-                        e'16
-                        fs'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        e'16
-                        \f
-                        \>
-                        [
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            cs''16
-                            c'''16
-                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
+                        }
+                        cs''16
+                        \f
+                        \>
+                        [
+                        e'16
+                        fs'16
+                        e'16
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            cs''16
+                            c'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 16 measure 10] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         gqf'4
                         \p
                         - \tweak stencil #constante-hairpin
@@ -13397,17 +14325,17 @@
                             r16
                             \!
                         }
-                        dtef''4
-                        \pp
+                        cs''4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        c'''8
+                        cs''8
                         \f
                         \>
                         [
-                        cs''8
+                        c'''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -13415,26 +14343,26 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 16 measure 11] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 16 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             r16
                             \!
-                            e'16
+                            cs''16
                             \f
                             \>
                             [
+                            e'16
                             fs'16
                             cs''16
-                            fs'16
                             ]
                         }
-                        e'4
+                        fs'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         cqs'''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -13453,37 +14381,42 @@
                         }
                     }
                     {
-                        % [Voice 16 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        etes'4
-                        \pp
+                        % [Voice 16 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        fs'8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r8
-                        \!
-                        e'4
+                        e'8
                         \f
                         \>
-                        fs'16
                         [
-                        e'16
-                        fs'16
-                        e'16
-                    }
-                    {
-                        % [Voice 16 measure 13] %! COMMENT_MEASURE_NUMBERS
                         fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
+                        r4
+                        \!
+                        e'16
+                        \f
+                        \>
+                        [
+                        fs'16
+                        e'16
+                        fs'16
+                    }
+                    {
+                        % [Voice 16 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e'8
+                        fs'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
                         \!
                         e'16
                         \f
@@ -13491,7 +14424,6 @@
                         [
                         fs'16
                         cs''16
-                        c'''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -13499,25 +14431,25 @@
                     {
                         \times 4/5 {
                             gqf'8.
-                            \p
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            dtef''16
+                            cs''16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ~
                         }
-                        dtef''4
+                        cs''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 16 measure 14] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         e'4
                         \mf
@@ -13527,41 +14459,41 @@
                     }
                     {
                         \times 4/5 {
-                            cs''16
+                            c'''16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            e'16
+                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            fs'16
+                            e'16
                             \f
                             \>
                             [
-                            e'16
+                            fs'16
                         }
-                        cs''8
                         e'8
-                        fs'16
+                        cs''8
                         e'16
+                        fs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        cs''16
+                        e'16
                         \f
                         \>
                     }
                     {
-                        % [Voice 16 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        c'''4
+                        % [Voice 16 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -13572,50 +14504,54 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         [
-                        etes'16
+                        f'16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        cs''8
+                        c'''8
                         \f
                         \>
-                        fs'8
-                        ]
-                        cs''4
-                    }
-                    {
-                        % [Voice 16 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        c'''16
+                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r16
+                        ]
+                        r4
                         \!
-                        cs''16
+                    }
+                    {
+                        % [Voice 16 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'16
                         \f
                         \>
                         [
-                        e'16
+                        cs''16
+                        c'''16
+                        cs''16
                         \times 2/3 {
-                            fs'8
                             e'8
-                            cs''8
+                            fs'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
+                            e'16
+                            \f
+                            \>
+                            [
+                            cs''16
                             e'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            r16
-                            \!
-                            cs''16
-                            \f
-                            - \tweak stencil #constante-hairpin
-                            \<
                         }
                     }
                     {
@@ -13629,7 +14565,7 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 16 measure 17] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 16 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             cs''8.
                             r16
                             \!
@@ -13645,141 +14581,52 @@
                         fs'4
                     }
                     {
-                        gqf'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
                         \pitchedTrill
                         e'16
-                        [
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                         \startTrillSpan fs'
                         \pitchedTrill
                         cs''8.
                         \startTrillSpan c'''
+                        \stopTrillSpan
                     }
                     {
-                        % [Voice 16 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        c'''16
+                        % [Voice 16 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''16
                         \f
                         \>
                         \stopTrillSpan
-                        cs''16
                         c'''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         cs''16
+                        \f
+                        \>
+                        [
                         \times 2/3 {
                             c'''8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r8
-                            \!
                             cs''8
-                            \f
-                            \>
-                            [
+                            c'''8
                         }
+                        cs''16
                         e'16
-                        cs''16
-                        c'''16
-                        cs''16
-                        ]
-                        e'4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        % [Voice 16 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        dtef''4..
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r16
-                        \!
-                    }
-                    {
-                        r8
-                        fs'8
-                        \f
-                        \>
-                        cs''4
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 16 measure 20] %! COMMENT_MEASURE_NUMBERS
-                            c'''16
-                            [
-                            cs''16
-                            c'''16
-                        }
-                        cs''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r8
-                        \!
-                        \times 4/5 {
-                            e'16
-                            \f
-                            \>
-                            [
-                            fs'16
-                            e'16
-                            cs''16
-                            c'''16
-                        }
-                        cs''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                        e'16
-                        \f
-                        \>
-                        [
-                        fs'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
-                    {
-                        % [Voice 16 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        cqs'''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        \pitchedTrill
-                        fs'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs''
-                    }
-                    {
-                        fs'8
-                        \f
-                        \>
-                        [
-                        c'''8
-                        \stopTrillSpan
-                        cs''16
-                        c'''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -13789,27 +14636,135 @@
                         cs''16
                         \f
                         \>
-                    }
-                    {
-                        % [Voice 16 measure 22] %! COMMENT_MEASURE_NUMBERS
                         c'''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        etes'4
+                        % [Voice 16 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4..
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                    }
+                    {
+                        cs''8
+                        \f
+                        \>
+                        [
+                        e'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r4
+                        \!
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 16 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            fs'16
+                            \f
+                            \>
+                            [
+                            cs''16
+                            c'''16
+                        }
+                        cs''8
+                        c'''8
+                        \times 4/5 {
+                            cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            e'16
+                            \f
+                            \>
+                            [
+                            fs'16
+                            e'16
+                        }
+                        cs''16
+                        c'''16
+                        cs''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                    }
+                    {
+                        % [Voice 16 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cqs'''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        \pitchedTrill
-                        e'4.
-                        \mf
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            fs'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan cs''
+                        }
+                    }
+                    {
+                        e'8
+                        \f
+                        \>
+                        [
+                        \stopTrillSpan
+                        fs'8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        \startTrillSpan fs'
+                        ]
+                        r16
+                        \!
+                        cs''16
+                        \f
+                        \>
+                        [
+                        c'''16
+                        cs''16
+                        ]
+                    }
+                    {
+                        % [Voice 16 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'''4
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        f'4
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            e'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan fs'
+                        }
+                        e'8
                         r16
                         \!
                         \stopTrillSpan
@@ -13822,37 +14777,38 @@
                         \startTrillSpan c'''
                     }
                     {
-                        % [Voice 16 measure 23] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''8
                         \f
                         \>
                         \stopTrillSpan
                         c'''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
-                        cs''4
+                        r4
+                        \!
                         \times 4/5 {
-                            e'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            r16
-                            \!
                             cs''16
                             \f
                             \>
                             [
                             c'''16
                             cs''16
+                            e'16
+                            cs''16
                         }
                         c'''8
-                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r8
+                        \!
                     }
                     {
-                        % [Voice 16 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 16 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         fs'4
                         \mf
@@ -13866,41 +14822,48 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
-                        dtef''16
+                        cs''16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        \pitchedTrill
-                        e'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan fs'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            e'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan fs'
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 16 measure 25] %! COMMENT_MEASURE_NUMBERS
-                            e'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            r16
-                            \!
-                            \stopTrillSpan
-                            fs'16
+                            % [Voice 16 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''16
                             \f
                             \>
                             [
+                            \stopTrillSpan
+                            c'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
                         cs''16
-                        c'''16
+                        \f
+                        \>
+                        [
+                        e'16
+                        fs'16
                         cs''16
-                        c'''16
                         \times 2/3 {
+                            c'''8
                             cs''8
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -13908,14 +14871,13 @@
                             ]
                             r8
                             \!
-                            e'8
-                            \f
-                            \>
-                            [
                         }
+                        c'''16
+                        \f
+                        \>
+                        [
                         cs''16
-                        e'16
-                        cs''8
+                        e'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -13930,7 +14892,7 @@
                 {
                     {
                         \times 2/3 {
-                            % [Voice 17 measure 1] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 17 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.shortInstrumentName =
                             \markup { bar.2 }
                             \set Staff.instrumentName =
@@ -13950,15 +14912,15 @@
                             \!
                         }
                         cs''4
-                        \f
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            dtef''8
-                            \p
+                            cs''8
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
@@ -13966,20 +14928,23 @@
                         }
                     }
                     {
-                        \pitchedTrill
-                        e'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan fs'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            e'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan fs'
+                        }
                     }
                     {
-                        % [Voice 17 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        e'4
-                        \pp
+                        % [Voice 17 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cqs'''4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
+                        \stopTrillSpan
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -13988,34 +14953,24 @@
                             \f
                             \>
                             [
-                            \stopTrillSpan
                             cs''16
-                            c'''16
-                        }
-                        fs'8
-                        c'''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \times 4/5 {
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                             r16
                             \!
-                            cs''16
-                            \f
-                            \>
-                            [
-                            e'16
-                            cs''16
-                            e'16
                         }
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 17 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        c'''8
+                        \f
+                        \>
+                        [
+                        fs'8
+                        \times 4/5 {
+                            c'''16
                             cs''16
                             e'16
+                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -14027,11 +14982,25 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            etes'16
+                            % [Voice 17 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e'16
+                            \f
+                            \>
+                            [
+                            cs''16
+                            e'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            f'16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
-                            [
                             gqf'8
                             \pp
                             - \tweak stencil #constante-hairpin
@@ -14048,8 +15017,8 @@
                         \startTrillSpan cs''
                     }
                     {
-                        dtef''8.
-                        \p
+                        cs''8.
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -14057,12 +15026,14 @@
                         \!
                     }
                     {
-                        % [Voice 17 measure 4] %! COMMENT_MEASURE_NUMBERS
-                        cqs'''4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 17 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cqs'''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         cs''8
@@ -14070,54 +15041,56 @@
                         \>
                         [
                         c'''8
-                        \times 4/5 {
-                            cs''16
-                            c'''16
-                            cs''16
-                            c'''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                        }
-                        fs'4
-                        \f
-                        \>
-                    }
-                    {
-                        % [Voice 17 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        c'''8
-                        [
-                        fs'8
-                        ]
-                        cs''4
-                        \times 4/5 {
-                            e'16
-                            [
-                            cs''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                            e'16
-                            \f
-                            \>
-                            [
-                            cs''16
-                        }
-                        c'''8
-                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        \times 4/5 {
+                            r16
+                            \!
+                            cs''16
+                            \f
+                            \>
+                            [
+                            c'''16
+                            cs''16
+                            c'''16
+                            ]
+                        }
+                        fs'4
                     }
                     {
-                        % [Voice 17 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 17 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        fs'4
+                        \f
+                        \>
+                        \times 4/5 {
+                            cs''16
+                            [
+                            e'16
+                            cs''16
+                            e'16
+                            cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                        r8
+                        \!
+                        c'''8
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 17 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         cs''4
                         \mf
@@ -14127,7 +15100,7 @@
                     }
                     {
                         \times 4/5 {
-                            etes'4
+                            f'4
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -14141,30 +15114,30 @@
                         \<
                     }
                     {
-                        e'16
+                        cs''16
                         \f
                         \>
                         [
-                        cs''16
+                        e'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        e'16
+                        cs''16
                         \f
                         \>
                         [
                     }
                     {
                         \times 4/5 {
-                            % [Voice 17 measure 7] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 17 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e'16
                             cs''16
                             e'16
                             cs''16
                             c'''16
-                            fs'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -14173,8 +15146,8 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            dtef''8
-                            \p
+                            cs''8
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
@@ -14182,65 +15155,74 @@
                             \!
                         }
                         cqs'''4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        r8
-                        \!
-                        c'''8
+                        fs'8
                         \f
                         \>
                         [
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 17 measure 8] %! COMMENT_MEASURE_NUMBERS
-                            cs''16
-                            e'16
-                            cs''16
-                            ]
-                        }
-                        e'4
-                        \times 2/3 {
-                            cs''8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            r8
-                            \!
-                            e'8
-                            \f
-                            \>
-                        }
-                        cs''4
-                    }
-                    {
-                        % [Voice 17 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        c'''16
-                        [
-                        cs''16
-                        c'''16
-                        fs'16
+                        c'''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \times 2/3 {
-                            r8
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 17 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            r16
                             \!
-                            cs''8
+                            cs''16
                             \f
                             \>
                             [
-                            fs'8
+                            e'16
+                            ]
                         }
+                        cs''4
+                        \times 2/3 {
+                            e'8
+                            [
+                            cs''8
+                            e'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                        }
+                        r4
+                        \!
+                    }
+                    {
+                        % [Voice 17 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''16
+                        \f
+                        \>
+                        [
+                        c'''16
+                        cs''16
+                        c'''16
+                        \times 2/3 {
+                            fs'8
+                            cs''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
+                        }
+                        fs'16
+                        \f
+                        \>
+                        [
                         c'''16
                         fs'16
                         c'''16
-                        fs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -14256,8 +15238,8 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 17 measure 10] %! COMMENT_MEASURE_NUMBERS
-                            etes'8.
+                            % [Voice 17 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            f'8.
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -14280,8 +15262,8 @@
                     }
                     {
                         \times 4/5 {
-                            dtef''8.
-                            \p
+                            cs''8.
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
@@ -14299,7 +15281,7 @@
                         \<
                     }
                     {
-                        % [Voice 17 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 17 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         cs''4
                         \mf
@@ -14310,42 +15292,47 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
-                            \stopTrillSpan
-                            cs''16
+                            fs'16
                             \f
                             \>
                             [
-                            e'16
-                        }
-                        cs''8
-                        e'8
-                        \times 4/5 {
+                            \stopTrillSpan
                             cs''16
-                            e'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            cs''16
-                            \f
-                            \>
-                            [
+                        }
+                        e'8
+                        \f
+                        \>
+                        [
+                        cs''8
+                        \times 4/5 {
                             e'16
+                            cs''16
+                            e'16
+                            cs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 17 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        cs''4
-                        e'8
-                        [
-                        cs''8
-                        ]
+                        % [Voice 17 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         e'4
+                        \f
+                        \>
+                        cs''8
+                        [
+                        e'8
+                        ]
+                        cs''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -14366,13 +15353,13 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 17 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 17 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         fs'4
                     }
                     {
                         \times 4/5 {
-                            etes'8.
-                            \pp
+                            f'8.
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
@@ -14390,27 +15377,29 @@
                         \<
                     }
                     {
-                        \pitchedTrill
-                        cs''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan c'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            cs''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan c'''
+                        }
                     }
                     {
-                        % [Voice 17 measure 14] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 17 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cs''8.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
+                        \stopTrillSpan
                         cqs'''16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        \stopTrillSpan
                     }
                     {
                         \pitchedTrill
@@ -14421,97 +15410,105 @@
                         \startTrillSpan fs'
                     }
                     {
-                        r16
-                        \!
-                        \stopTrillSpan
-                        cs''16
+                        e'16
                         \f
                         \>
                         [
-                        fs'16
-                        c'''16
-                        fs'8
-                        cs''8
-                    }
-                    {
-                        % [Voice 17 measure 15] %! COMMENT_MEASURE_NUMBERS
-                        fs'16
+                        \stopTrillSpan
+                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        c'''16
+                        fs'16
                         \f
                         \>
                         [
+                        c'''8
+                        fs'8
+                    }
+                    {
+                        % [Voice 17 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''16
                         fs'16
+                        c'''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         \times 4/5 {
+                            fs'16
+                            \f
+                            \>
+                            [
                             cs''16
                             fs'16
                             cs''16
                             e'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
                         }
                         cs''8
-                        \f
-                        \>
-                        [
-                        e'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
+                        r8
+                        \!
                     }
                     {
-                        etes'8.
-                        \p
+                        f'8.
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                    }
+                    {
+                        % [Voice 17 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e'16
+                        \f
+                        \>
+                        [
+                        cs''16
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                    }
-                    {
-                        % [Voice 17 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        cs''16
+                        c'''16
                         \f
                         \>
-                        [
-                        c'''16
-                        cs''16
-                        e'16
+                        cs''4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
-                        r4
-                        \!
                     }
                     {
                         gqf'4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        \pitchedTrill
-                        fs'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan cs''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            fs'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \startTrillSpan cs''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 17 measure 17] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 17 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             fs'8
                             [
                             \pitchedTrill
@@ -14521,42 +15518,49 @@
                         }
                     }
                     {
-                        cs''8
+                        e'8
                         \f
                         \>
                         \stopTrillSpan
-                        fs'8
-                        ]
-                        c'''4
-                        cs''16
-                        [
-                        c'''16
-                        fs'16
+                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
+                        r4
                         \!
-                    }
-                    {
-                        % [Voice 17 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        e'4
-                        \mf
+                        fs'16
+                        \f
+                        \>
+                        [
+                        c'''16
+                        cs''16
+                        c'''16
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        ~
-                        \startTrillSpan fs'
+                        ]
                     }
                     {
-                        e'8
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 17 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            e'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan fs'
+                        }
+                    }
+                    {
+                        cs''8
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r16
-                        \!
                         \stopTrillSpan
+                        r16
+                        \!
                         cqs'''16
                         \p
                         - \tweak stencil #constante-hairpin
@@ -14569,83 +15573,84 @@
                     }
                     {
                         \times 2/3 {
-                            cs''8
+                            fs'8
                             \f
                             \>
                             [
-                            e'8
                             cs''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 17 measure 19] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 17 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             e'16
+                            \f
+                            \>
+                            [
                             cs''16
                             e'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                         }
-                        r16
-                        \!
                         cs''16
-                        \f
-                        \>
-                        [
-                        c'''16
-                        fs'16
-                        \times 2/3 {
-                            c'''8
-                            cs''8
-                            e'8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                        r16
-                        \!
-                        cs''16
-                        \f
-                        \>
-                        [
                         e'16
                         cs''16
-                        ]
-                    }
-                    {
-                        % [Voice 17 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        e'4
-                        cs''8
-                        [
-                        fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r4
+                        r16
                         \!
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            cs''16
+                        \times 2/3 {
+                            c'''8
                             \f
                             \>
                             [
+                            fs'8
+                            c'''8
+                        }
+                        cs''16
+                        e'16
+                        cs''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                    }
+                    {
+                        % [Voice 17 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e'4
+                        \f
+                        \>
+                        cs''8
+                        [
+                        e'8
+                        ]
+                        cs''4
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
                             fs'16
-                            c'''16
+                            [
+                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 17 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        etes'4
-                        \pp
+                        % [Voice 17 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        f'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -14655,12 +15660,19 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                         \startTrillSpan cs''
                         \pitchedTrill
-                        cs''4.
+                        cs''8
                         ~
+                        ]
                         \startTrillSpan c'''
                         \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cs''4
+                            ~
+                        }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
                             cs''8
@@ -14670,36 +15682,37 @@
                         }
                     }
                     {
-                        % [Voice 17 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        gqf'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 17 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            gqf'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                        cs''8
+                        fs'8
                         \f
                         \>
                         [
                         c'''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
-                            fs'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                             r16
                             \!
-                            c'''16
+                            cs''16
                             \f
                             \>
                             [
+                            c'''16
                             fs'16
-                            cs''16
+                            c'''16
                         }
                         fs'16
-                        c'''16
                         cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -14707,33 +15720,37 @@
                         ]
                         r16
                         \!
-                    }
-                    {
-                        % [Voice 17 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        e'8
+                        fs'16
                         \f
                         \>
                         [
+                    }
+                    {
+                        % [Voice 17 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'''8
                         cs''8
                         e'16
                         cs''16
                         e'16
-                        cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r4
+                        r16
                         \!
-                    }
-                    {
-                        dtef''4
-                        \pp
+                        cs''4
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 17 measure 24] %! COMMENT_MEASURE_NUMBERS
+                        cs''4
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        % [Voice 17 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         e'4
                         \mf
@@ -14748,33 +15765,32 @@
                         [
                         \stopTrillSpan
                         cs''8
-                        ]
-                        c'''4
-                        \times 4/5 {
-                            fs'16
-                            [
-                            cs''16
-                            fs'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                            cs''16
-                            \f
-                            \>
-                            [
-                        }
-                    }
-                    {
-                        % [Voice 17 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        e'8
-                        cs''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r4
+                        \!
+                        \times 4/5 {
+                            e'16
+                            \f
+                            \>
+                            [
+                            cs''16
+                            c'''16
+                            fs'16
+                            cs''16
+                        }
+                    }
+                    {
+                        % [Voice 17 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
                     }
                     {
                         cqs'''4..
@@ -14785,11 +15801,10 @@
                         \!
                     }
                     {
-                        fs'16
+                        cs''16
                         \f
                         \>
                         [
-                        cs''16
                         e'16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -14797,6 +15812,10 @@
                         ]
                         r16
                         \!
+                        cs''16
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
                         \bar "||"
                     }
                 }
@@ -14807,7 +15826,7 @@
                 {
                     {
                         \times 2/3 {
-                            % [Voice 18 measure 1] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 18 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \set Staff.shortInstrumentName =
                             \markup { bar.3 }
                             \set Staff.instrumentName =
@@ -14819,37 +15838,48 @@
                             [
                             \!
                             fs'8
-                            e'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''16
-                            c'''16
-                            cs''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                        r4
-                        \!
-                        \times 2/3 {
-                            fs'8
+                            e'16
                             \f
                             \>
                             [
+                            cs''16
+                            c'''16
+                            ]
+                        }
+                        cs''4
+                        \times 2/3 {
+                            fs'8
+                            [
                             e'8
-                            cs''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        % [Voice 18 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        dtef''2
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 18 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        cs''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -14871,56 +15901,54 @@
                     }
                     {
                         cqs'''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        c'''4
+                        % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
                         \f
                         \>
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''16
-                            [
                             c'''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
                             r16
                             \!
+                            cs''16
+                            \f
+                            \>
+                            [
                         }
+                        c'''8
                         cs''8
-                        \f
-                        \>
-                        [
-                        e'8
                         \times 4/5 {
+                            e'16
                             fs'16
                             cs''16
-                            fs'16
-                            e'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                        }
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 18 measure 4] %! COMMENT_MEASURE_NUMBERS
                             fs'16
                             \f
                             \>
                             [
-                            cs''16
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 18 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e'16
                             fs'16
+                            cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -14929,8 +15957,8 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            etes'8
-                            \pp
+                            f'8
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
@@ -14948,14 +15976,14 @@
                     }
                     {
                         gqf'4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
                         \times 4/5 {
-                            % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             cs''8
                             \mf
@@ -14970,17 +15998,16 @@
                         }
                     }
                     {
-                        cs''8
+                        fs'8
                         \f
                         \>
                         \stopTrillSpan
-                        c'''8
+                        cs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
-                            cs''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                             r16
                             \!
                             c'''16
@@ -14988,27 +16015,28 @@
                             \>
                             [
                             cs''16
-                            fs'16
+                            c'''16
+                            cs''16
                             ]
                         }
-                        cs''4
+                        fs'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 18 measure 6] %! COMMENT_MEASURE_NUMBERS
-                        dtef''4
-                        \pp
+                        % [Voice 18 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        fs'8
+                        cs''8
                         \f
                         \>
                         [
-                        cs''8
+                        fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -15019,13 +16047,13 @@
                     {
                         \times 4/5 {
                             cqs'''8.
-                            \p
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
-                            etes'16
-                            \pp
+                            f'16
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             [
@@ -15033,43 +16061,43 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 18 measure 7] %! COMMENT_MEASURE_NUMBERS
-                            c'''16
+                            % [Voice 18 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''16
                             \f
                             \>
+                            c'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                             cs''16
+                            \f
+                            \>
+                            [
                             e'16
-                            fs'16
-                            cs''16
                         }
                         fs'8
+                        cs''8
+                        fs'16
+                        e'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
+                        r16
                         \!
-                        e'16
+                        cs''16
                         \f
                         \>
                         [
-                        cs''16
-                        e'16
-                        cs''16
                         \times 4/5 {
                             e'16
-                            fs'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                            e'16
-                            \f
-                            \>
-                            [
                             cs''16
+                            e'16
+                            fs'16
+                            e'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -15077,7 +16105,7 @@
                         }
                     }
                     {
-                        % [Voice 18 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 18 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         e'4
                         \mf
@@ -15093,33 +16121,35 @@
                         \stopTrillSpan
                     }
                     {
-                        e'8
+                        cs''8
                         \f
                         \>
                         [
-                        cs''8
+                        e'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 18 measure 9] %! COMMENT_MEASURE_NUMBERS
-                            c'''16
-                            cs''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
+                            % [Voice 18 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             r16
                             \!
-                        }
-                        fs'4
-                        \f
-                        \>
-                        \times 2/3 {
-                            cs''8
+                            cs''16
+                            \f
+                            \>
                             [
-                            c'''8
+                            c'''16
+                            ]
+                        }
+                        cs''4
+                        \times 2/3 {
+                            fs'8
+                            [
                             cs''8
+                            c'''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -15136,16 +16166,16 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS
-                            dtef''8.
-                            \p
+                            % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''8.
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
                             r16
                             \!
                             cqs'''16
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                         }
@@ -15159,36 +16189,43 @@
                         \startTrillSpan cs''
                     }
                     {
-                        etes'4.
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            f'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \stopTrillSpan
+                        }
+                        f'8
+                        [
                         gqf'8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
-                        % [Voice 18 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        c'''4
+                        % [Voice 18 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
                         \f
                         \>
-                        cs''16
+                        c'''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
                         \!
-                        e'16
+                        cs''16
                         \f
                         \>
                         [
-                        fs'16
+                        e'16
                         \times 2/3 {
+                            fs'8
                             e'8
                             cs''8
-                            c'''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -15204,48 +16241,53 @@
                         \startTrillSpan fs'
                     }
                     {
-                        % [Voice 18 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        dtef''8.
-                        \p
+                        % [Voice 18 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''8.
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                         r16
                         \!
                         cqs'''4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
+                        c'''16
+                        \f
+                        \>
+                        [
                         cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                         r16
                         \!
                         c'''16
                         \f
                         \>
                         [
-                        cs''16
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
+                            cs''16
                             c'''16
                             cs''16
-                            e'16
                         }
                     }
                     {
-                        % [Voice 18 measure 13] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 18 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e'8
                         fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r8
-                        \!
                         \times 4/5 {
+                            r16
+                            \!
                             cs''16
                             \f
                             \>
@@ -15253,59 +16295,59 @@
                             c'''16
                             cs''16
                             e'16
-                            cs''16
                             ]
                         }
-                        e'4
+                        cs''4
+                        e'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         r8
                         \!
-                        fs'8
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
                     }
                     {
-                        % [Voice 18 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        cs''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan c'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 18 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            cs''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan c'''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''16
+                            f'16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             [
+                            \stopTrillSpan
                             gqf'8
                             ~
                             ]
-                            \stopTrillSpan
                         }
-                        gqf'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         fs'8
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         \startTrillSpan cs''
                         r16
-                        \stopTrillSpan
                         \!
+                        \stopTrillSpan
                         \pitchedTrill
                         e'16
                         \mf
@@ -15315,50 +16357,48 @@
                         \startTrillSpan fs'
                     }
                     {
-                        % [Voice 18 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 18 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         e'2
                     }
                     {
-                        e'4
+                        fs'4
                         \f
                         \>
                         \stopTrillSpan
+                        e'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
                         fs'16
+                        \f
+                        \>
                         [
                         e'16
+                    }
+                    {
+                        % [Voice 18 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''8
+                        c'''8
                         cs''16
                         c'''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                    }
-                    {
-                        % [Voice 18 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        r8
+                        r16
                         \!
-                        cs''8
+                        cs''16
                         \f
                         \>
                         [
-                        c'''16
-                        cs''16
-                        fs'16
-                        cs''16
                         \times 4/5 {
                             fs'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                            e'16
-                            \f
-                            \>
-                            [
-                            fs'16
                             cs''16
+                            fs'16
+                            e'16
+                            fs'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -15366,88 +16406,99 @@
                         }
                     }
                     {
-                        dtef''4
-                        \p
+                        cs''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 18 measure 17] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        cs''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan c'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 18 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \pitchedTrill
+                            cs''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan c'''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            cs''8
-                            \pp
+                            cqs'''8
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
+                            \stopTrillSpan
                             r16
                             \!
-                            \stopTrillSpan
                         }
                     }
                     {
-                        fs'8
+                        cs''8
                         \f
                         \>
                         [
-                        cs''8
-                        fs'16
+                        fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        e'16
+                        cs''16
                         \f
                         \>
                         [
                         fs'16
+                        e'16
                         ]
                     }
                     {
-                        % [Voice 18 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        cs''4
-                        fs'8
-                        [
+                        % [Voice 18 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'4
                         cs''8
-                        ]
-                        c'''4
+                        [
+                        fs'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
-                        r16
+                        ]
+                        r4
                         \!
                         cs''16
                         \f
                         \>
                         [
-                        fs'16
+                        c'''16
                         cs''16
+                        fs'16
                     }
                     {
                         \times 2/3 {
-                            % [Voice 18 measure 19] %! COMMENT_MEASURE_NUMBERS
-                            c'''8
+                            % [Voice 18 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             cs''8
-                            fs'8
+                            c'''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        etes'2
-                        \p
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            f'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                        }
+                        f'4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -15470,45 +16521,52 @@
                         }
                     }
                     {
-                        % [Voice 18 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 18 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         e'4
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            r16
-                            \!
-                            \stopTrillSpan
                             cs''16
                             \f
                             \>
                             [
+                            \stopTrillSpan
                             fs'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
                         }
+                        cs''16
+                        \f
+                        \>
+                        [
+                        fs'16
                         e'16
                         fs'16
-                        cs''16
-                        fs'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
                         \times 2/3 {
+                            cs''8
+                            fs'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                             r8
                             \!
-                            e'8
-                            \f
-                            \>
-                            [
-                            fs'8
                         }
                     }
                     {
-                        % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e'16
+                        \f
+                        \>
+                        [
+                        fs'16
                         cs''16
                         c'''16
-                        cs''16
-                        fs'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -15526,14 +16584,16 @@
                         \stopTrillSpan
                     }
                     {
-                        gqf'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         fs'4
                         \mf
                         - \tweak stencil #constante-hairpin
@@ -15542,13 +16602,13 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 18 measure 22] %! COMMENT_MEASURE_NUMBERS
-                            dtef''8
-                            \stopTrillSpan
+                            % [Voice 18 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            cs''8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
                             [
+                            \stopTrillSpan
                             cqs'''8.
                             \pp
                             - \tweak stencil #constante-hairpin
@@ -15567,8 +16627,8 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            etes'8
-                            \pp
+                            f'8
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
@@ -15577,42 +16637,46 @@
                         }
                     }
                     {
-                        r4
+                        cs''4
+                        \f
+                        \>
                     }
                     {
-                        % [Voice 18 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        cs''8
-                        \f
-                        \>
-                        [
-                        c'''8
-                        ]
-                        cs''4
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            e'16
-                            [
-                            fs'16
-                            cs''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
+                        % [Voice 18 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         r8
                         \!
-                        c'''8
+                        cs''4
                         \f
                         \>
-                        [
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            c'''16
+                            [
+                            cs''16
+                            e'16
+                        }
+                        fs'8
+                        cs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                     }
                     {
                         \times 4/5 {
-                            % [Voice 18 measure 24] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 18 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            r16
+                            \!
+                            c'''16
+                            \f
+                            \>
+                            [
                             cs''16
                             fs'16
-                            cs''16
-                            c'''16
                             cs''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -15622,7 +16686,7 @@
                     }
                     {
                         gqf'4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -15643,35 +16707,18 @@
                         }
                     }
                     {
-                        % [Voice 18 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        dtef''4
-                        \pp
+                        % [Voice 18 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs''4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        r16
-                        \!
                         c'''16
                         \f
                         \>
                         [
-                        cs''16
-                        c'''16
-                        cs''8
-                        fs'8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        cqs'''8
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
                         cs''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -15679,6 +16726,31 @@
                         ]
                         r16
                         \!
+                        c'''16
+                        \f
+                        \>
+                        [
+                        cs''8
+                        c'''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        cqs'''8
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        cs''16
+                        \f
+                        \>
+                        fs'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \bar "||"
                     }
                 }
@@ -15688,7 +16760,7 @@
                 \context Voice = "Voice 19"
                 {
                     {
-                        % [Voice 19 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 19 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { bs.1 }
                         \set Staff.instrumentName =
@@ -15696,8 +16768,8 @@
                         \tempo 4=90
                         r16
                         \!
-                        bes'8.
-                        \pp
+                        b'8.
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -15711,7 +16783,7 @@
                     }
                     {
                         gqf''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -15722,26 +16794,22 @@
                         \>
                     }
                     {
-                        % [Voice 19 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 19 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c'8
-                        [
-                        fs''8
-                        ]
-                        b'4
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
+                        fs''4
+                        \f
+                        \>
                         \times 4/5 {
-                            fs''16
-                            [
                             b'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                            fs''16
-                            \f
-                            \>
                             [
+                            fs''16
+                            b'16
+                            fs''16
                             c'16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -15749,7 +16817,7 @@
                         }
                     }
                     {
-                        ates'16
+                        bf'16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -15759,26 +16827,26 @@
                         \<
                     }
                     {
-                        % [Voice 19 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 19 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         a'8
                         \f
                         \>
                         b'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            fs''16
-                            c'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                             r16
                             \!
+                            fs''16
+                            \f
+                            \>
+                            [
+                            c'16
                         }
                         a'16
-                        \f
-                        \>
-                        [
                         b'16
                         fs''16
                         b'16
@@ -15788,16 +16856,18 @@
                         ]
                     }
                     {
-                        bes'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            b'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 19 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             r16
                             \!
                             \pitchedTrill
@@ -15809,16 +16879,21 @@
                         }
                     }
                     {
-                        gqf''4..
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \stopTrillSpan
-                        ates'16
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf''4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ~
+                            \stopTrillSpan
+                        }
+                        gqf''8.
+                        [
+                        bf'16
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                     }
                     {
                         \times 2/3 {
@@ -15837,7 +16912,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 19 measure 5] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 19 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             a'16
                             \f
                             \>
@@ -15865,7 +16940,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 19 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             c'16
                             [
                             fs''16
@@ -15901,7 +16976,7 @@
                         }
                     }
                     {
-                        % [Voice 19 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 19 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         fs''8
                         \f
                         \>
@@ -15936,16 +17011,18 @@
                         \startTrillSpan a'
                     }
                     {
-                        % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        bes'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 19 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
-                      \pitchedTrill
+                        \pitchedTrill
                         b'4
                         \mf
                         - \tweak stencil #constante-hairpin
@@ -15960,19 +17037,18 @@
                             ~
                             ]
                             \startTrillSpan b'
+                            \stopTrillSpan
                         }
                         a'4
                     }
                     {
                         \times 8/9 {
-                            % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 19 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             fs''16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            c'16
-                            fs''16
                             c'16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -15985,34 +17061,42 @@
                             \>
                             [
                             c'16
-                            a'16
-                            b'16
-                            ]
-                        }
-                        fs''4
-                        c'8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r8
-                        \!
-                    }
-                    {
-                        % [Voice 19 measure 10] %! COMMENT_MEASURE_NUMBERS
-                        fs''4
-                        \f
-                        \>
-                        \times 4/5 {
-                            c'16
-                            [
                             fs''16
-                            b'16
+                            c'16
                             a'16
                             b'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                        }
+                        r4
+                        \!
+                        fs''8
+                        \f
+                        \>
+                        [
+                        c'8
+                        ]
+                    }
+                    {
+                        % [Voice 19 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs''4
+                        \times 4/5 {
+                            c'16
+                            [
+                            fs''16
+                            b'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            a'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
@@ -16037,30 +17121,37 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 19 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 19 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         gqf''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        r8
-                        \!
-                        fs''8
+                        b'8
                         \f
                         \>
                         [
+                        fs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         c'16
+                        \f
+                        \>
+                        [
                         a'16
                         c'16
-                        a'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            ates'16
+                            bf'16
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -16072,7 +17163,7 @@
                         }
                     }
                     {
-                        % [Voice 19 measure 12] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 19 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         b'4
                         \mf
@@ -16082,11 +17173,16 @@
                     }
                     {
                         \times 4/5 {
-                            b'16
+                            a'16
                             \f
+                            \>
+                            [
+                            \stopTrillSpan
+                            b'16
+                            \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            \stopTrillSpan
+                            ]
                             r16
                             \!
                             fs''16
@@ -16094,12 +17190,12 @@
                             \>
                             [
                             c'16
-                            fs''16
                         }
+                        fs''8
                         c'8
-                        a'8
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
+                            a'16
                             c'16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -16107,15 +17203,12 @@
                             ]
                             r16
                             \!
-                            a'16
-                            \f
-                            \>
                         }
                     }
                     {
-                        % [Voice 19 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        b'4
-                        \mp
+                        % [Voice 19 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        a'4
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -16139,7 +17232,7 @@
                         }
                     }
                     {
-                        bes'2
+                        b'2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
@@ -16147,23 +17240,27 @@
                     }
                     {
                         \times 2/3 {
-                            % [Voice 19 measure 14] %! COMMENT_MEASURE_NUMBERS
-                            a'8
+                            % [Voice 19 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b'8
                             \f
                             \>
                             [
-                            c'8
                             a'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r8
+                            \!
                         }
-                        b'4
+                        c'4
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         gqf''4
-                        \pp
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -16177,98 +17274,104 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 19 measure 15] %! COMMENT_MEASURE_NUMBERS
-                            ates'16
-                            \p
+                            % [Voice 19 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf'16
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             \stopTrillSpan
                             r16
                             \!
                             cqs'8.
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
                         \pitchedTrill
-                        a'2
+                        a'4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan b'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            a'4
+                        }
                     }
                     {
-                        a'16
-                        [
                         a'16
                         \f
                         \>
+                        [
                         \stopTrillSpan
-                        c'16
-                        a'16
-                    }
-                    {
-                        \times 2/3 {
-                            % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS
-                            b'8
-                            fs''8
-                            c'8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
+                        b'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         r16
                         \!
                         a'16
                         \f
                         \>
                         [
-                        b'16
-                        fs''16
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            c'16
-                            fs''16
-                            b'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                        }
-                        r8
-                        \!
-                        a'8
-                        \f
-                        \>
-                        [
                     }
                     {
-                        \times 4/5 {
-                            % [Voice 19 measure 17] %! COMMENT_MEASURE_NUMBERS
-                            b'16
-                            a'16
-                            c'16
-                            a'16
-                            b'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
+                        \times 2/3 {
+                            % [Voice 19 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            c'8
+                            a'8
+                            b'8
                         }
-                        r4
-                        \!
-                        a'8
-                        \f
-                        \>
-                        [
-                        c'8
+                        fs''16
+                        c'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
+                        r16
+                        \!
+                        a'16
+                        \f
+                        \>
+                        [
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            b'16
+                            fs''16
+                            c'16
+                        }
+                        fs''8
+                        b'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                    {
+                        \times 4/5 {
+                            % [Voice 19 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            r16
+                            \!
+                            a'16
+                            \f
+                            \>
+                            [
+                            b'16
+                            a'16
+                            c'16
+                            ]
+                        }
+                        a'4
+                        b'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
                     }
                     {
                         \pitchedTrill
@@ -16276,6 +17379,7 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
+                        [
                         \startTrillSpan a'
                         \pitchedTrill
                         b'8.
@@ -16284,9 +17388,9 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 19 measure 18] %! COMMENT_MEASURE_NUMBERS
-                        bes'4
-                        \p
+                        % [Voice 19 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b'4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -16309,12 +17413,26 @@
                         \startTrillSpan a'
                     }
                     {
-                        fs''4
+                        a'4
                         \f
                         \>
                         \stopTrillSpan
-                        b'16
+                        c'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
+                        fs''16
+                        \f
+                        \>
                         [
+                        b'16
+                    }
+                    {
+                        % [Voice 19 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        a'8
+                        c'8
                         a'16
                         c'16
                         \mp
@@ -16323,90 +17441,94 @@
                         ]
                         r16
                         \!
-                    }
-                    {
-                        % [Voice 19 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        a'8
-                        \f
-                        \>
-                        [
-                        c'8
                         a'16
-                        c'16
-                        fs''16
-                        c'16
-                        \mp
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        ]
                     }
                     {
-                        gqf''2
+                        gqf''4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
-                    }
-                    {
-                        % [Voice 19 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        b'2
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan fs''
-                        ~
-                    }
-                    {
-                        r16
-                        \stopTrillSpan
-                        \!
-                        ates'8.
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        \times 4/5 {
-                            r16
-                            \!
-                            a'16
-                            \f
-                            \>
-                            [
-                            c'16
-                            fs''16
-                            c'16
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
                         }
                     }
                     {
-                        % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        a'8
+                        % [Voice 19 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \pitchedTrill
+                        b'4
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ~
+                        \startTrillSpan fs''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            b'4
+                        }
+                    }
+                    {
+                        r16
+                        \!
+                        \stopTrillSpan
+                        bf'8.
+                        \p
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                    }
+                    {
+                        \times 4/5 {
+                            c'16
+                            \f
+                            \>
+                            fs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            c'16
+                            \f
+                            \>
+                            [
+                            a'16
+                        }
+                    }
+                    {
+                        % [Voice 19 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c'8
+                        fs''8
+                        c'16
+                        a'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        a'16
+                        c'16
                         \f
                         \>
-                        [
-                        c'16
-                        fs''16
-                        ]
                         \times 2/3 {
-                            b'4
                             a'4
                             c'4
+                            fs''4
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                         }
                     }
                     {
-                        % [Voice 19 measure 22] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 19 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         cqs'2
                         \p
                         - \tweak stencil #constante-hairpin
@@ -16421,64 +17543,73 @@
                         \startTrillSpan b'
                     }
                     {
-                        bes'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \stopTrillSpan
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            b'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                        }
                     }
                     {
-                        % [Voice 19 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
-                        a'8
+                        % [Voice 19 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b'8
                         \f
                         \>
-                        c'4
-                        a'16
                         [
-                        b'16
-                        fs''16
-                        b'16
+                        a'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
+                        r4
+                        \!
+                        c'16
+                        \f
+                        \>
+                        [
+                        a'16
+                        c'16
+                        a'16
                         \times 2/3 {
+                            b'8
+                            fs''8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                             r8
                             \!
-                            fs''8
-                            \f
-                            \>
-                            [
-                            c'8
                         }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 19 measure 24] %! COMMENT_MEASURE_NUMBERS
-                            fs''16
+                            % [Voice 19 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             b'16
-                            a'16
+                            \f
+                            \>
+                            [
+                            fs''16
+                            c'16
                         }
+                        fs''16
                         b'16
+                        a'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        fs''16
-                        \f
-                        \>
-                        [
-                        c'16
                         \times 2/3 {
-                            a'8
                             b'8
+                            \f
+                            \>
+                            [
                             fs''8
+                            c'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -16500,8 +17631,13 @@
                         }
                     }
                     {
-                        % [Voice 19 measure 25] %! COMMENT_MEASURE_NUMBERS
-                        c'2
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 19 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            c'4
+                            ~
+                        }
+                        c'4
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -16512,22 +17648,23 @@
                             \<
                             [
                             \stopTrillSpan
-                            ates'8
+                            bf'8
                             ~
                         }
-                        ates'8
+                        bf'8
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
+                        a'16
+                        \f
+                        \>
                         b'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
-                        \!
                         \bar "||"
                     }
                 }
@@ -16537,58 +17674,63 @@
                 \context Voice = "Voice 20"
                 {
                     {
-                        % [Voice 20 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { bs.2 }
                         \set Staff.instrumentName =
                         \markup { "Bass 2" }
                         \tempo 4=90
-                        bes'8.
-                        \pp
+                        b'8.
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \!
                         r16
                         \!
-                        gqf''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            gqf''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         a'4
                         \f
                         \>
                         fs''8
-                        [
-                        b'8
-                        ]
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
+                        \!
                     }
                     {
-                        % [Voice 20 measure 2] %! COMMENT_MEASURE_NUMBERS
-                        c'4
+                        % [Voice 20 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        b'4
+                        \f
+                        \>
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            b'16
+                            c'16
                             [
+                            b'16
                             c'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
-                            r16
-                            \!
                         }
                     }
                     {
-                        ates'4
+                        bf'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \times 4/5 {
-                            ates'8.
+                            bf'8.
                             [
                             cqs'8
                             \pp
@@ -16598,7 +17740,7 @@
                         }
                     }
                     {
-                        % [Voice 20 measure 3] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         c'4
                         \mf
@@ -16613,35 +17755,41 @@
                         [
                         \stopTrillSpan
                         fs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
                         \times 4/5 {
+                            r16
+                            \!
                             b'16
+                            \f
+                            \>
+                            [
                             fs''16
                             a'16
                             fs''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
                         }
-                        a'16
-                        \f
-                        \>
-                        [
-                        c'16
                         a'16
                         c'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
+                        r16
+                        \!
+                        a'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS
-                            bes'8
-                            \pp
+                            % [Voice 20 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            b'8
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
@@ -16649,7 +17797,7 @@
                             \!
                         }
                         gqf''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -16671,36 +17819,36 @@
                         }
                     }
                     {
-                        % [Voice 20 measure 5] %! COMMENT_MEASURE_NUMBERS
-                        b'8
+                        % [Voice 20 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'8
                         \f
                         \>
                         \stopTrillSpan
-                        fs''8
+                        b'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                         r16
                         \!
-                        b'16
+                        fs''16
                         \f
                         \>
                         [
+                        b'16
                         fs''16
-                        a'16
                         ]
-                        fs''4
-                        b'8
-                        [
+                        a'4
                         fs''8
+                        [
+                        b'8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        % [Voice 20 measure 6] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r4
                         \!
                     }
@@ -16726,14 +17874,14 @@
                         }
                     }
                     {
-                        ates'4
-                        \pp
+                        bf'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 20 measure 7] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         a'4
                         \mf
@@ -16747,7 +17895,7 @@
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
-                        bes'4
+                        b'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -16772,55 +17920,91 @@
                         }
                     }
                     {
-                        % [Voice 20 measure 8] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         gqf''4
-                        \p
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
                     }
                     {
-                        \pitchedTrill
-                        a'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan b'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            a'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan b'
+                        }
                     }
                     {
                         \times 4/5 {
-                            a'16
+                            fs''16
                             \f
                             \>
                             [
-                            fs''16
                             \stopTrillSpan
                             a'16
-                            c'16
-                            b'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            fs''16
+                            \f
+                            \>
+                            [
+                            a'16
                         }
                         c'8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r8
-                        \!
+                        b'8
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
-                            % [Voice 20 measure 9] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 20 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            c'16
                             b'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            c'16
                             \f
                             \>
                             [
-                            c'16
                             b'16
                             fs''16
                             a'16
-                            fs''16
+                        }
+                        fs''16
+                        b'16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                        fs''16
+                        \f
+                        \>
+                        [
+                        \times 2/3 {
+                            a'8
+                            c'8
+                            a'8
+                        }
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            % [Voice 20 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            c'16
+                            b'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -16828,47 +18012,17 @@
                             r16
                             \!
                         }
-                        b'16
+                        c'4
                         \f
                         \>
-                        [
-                        fs''16
-                        a'16
-                        c'16
                         \times 2/3 {
                             a'8
-                            c'8
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r8
-                            \!
-                        }
-                    }
-                    {
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            % [Voice 20 measure 10] %! COMMENT_MEASURE_NUMBERS
-                            b'16
-                            \f
-                            \>
                             [
-                            c'16
-                            a'16
-                            ]
-                        }
-                        c'4
-                        \times 2/3 {
+                            c'8
                             b'8
-                            [
-                            c'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
-                            r8
-                            \!
                         }
                     }
                     {
@@ -16877,7 +18031,6 @@
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
                         \startTrillSpan a'
                         \pitchedTrill
                         b'8
@@ -16886,9 +18039,9 @@
                         \stopTrillSpan
                     }
                     {
-                        % [Voice 20 measure 11] %! COMMENT_MEASURE_NUMBERS
-                        ates'4
-                        \pp
+                        % [Voice 20 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf'4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -16905,79 +18058,94 @@
                         \stopTrillSpan
                     }
                     {
-                        cqs'2
+                        cqs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cqs'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 20 measure 12] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 20 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             c'16
-                            [
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                             \startTrillSpan a'
                             \pitchedTrill
                             b'8
                             ]
                             \startTrillSpan fs''
+                            \stopTrillSpan
                         }
                     }
                     {
-                        a'4
+                        c'4
                         \f
                         \>
                         \stopTrillSpan
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            c'16
-                            [
-                            b'16
-                            c'16
-                        }
-                        a'8
-                        fs''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
-                    {
-                        \times 4/5 {
-                            % [Voice 20 measure 13] %! COMMENT_MEASURE_NUMBERS
+                            a'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             r16
                             \!
-                            b'16
+                            c'16
                             \f
                             \>
                             [
-                            c'16
-                            b'16
-                            fs''16
                         }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
+                        b'8
+                        c'8
+                    }
+                    {
+                        \times 4/5 {
+                            % [Voice 20 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            a'16
+                            fs''16
                             b'16
-                            c'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
+                            c'16
+                            \f
+                            \>
+                            [
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            b'16
+                            fs''16
+                            b'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                         }
                     }
                     {
-                        bes'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            b'4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \pitchedTrill
@@ -16987,8 +18155,8 @@
                         \<
                         \startTrillSpan b'
                         r16
-                        \stopTrillSpan
                         \!
+                        \stopTrillSpan
                         \pitchedTrill
                         c'16
                         \mf
@@ -16998,7 +18166,7 @@
                         \startTrillSpan a'
                     }
                     {
-                        % [Voice 20 measure 14] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         c'4
                     }
                     {
@@ -17009,114 +18177,120 @@
                         \stopTrillSpan
                     }
                     {
-                        \pitchedTrill
-                        b'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan fs''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            b'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan fs''
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 20 measure 15] %! COMMENT_MEASURE_NUMBERS
-                            b'8
+                            % [Voice 20 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            bf'8
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \stopTrillSpan
+                            r16
+                            \!
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            cqs'4
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
-                            r16
-                            \!
-                            \stopTrillSpan
                         }
-                        cqs'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
                     }
                     {
-                        b'8
+                        c'8
                         \f
                         \>
                         [
-                        c'8
-                        \times 4/5 {
-                            a'16
-                            c'16
-                            a'16
-                            c'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                        }
-                    }
-                    {
-                        % [Voice 20 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        a'4
-                        \f
-                        \>
-                        c'8
-                        [
-                        a'8
-                        ]
-                        fs''4
-                        \times 4/5 {
-                            b'16
-                            [
-                            c'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                            b'16
-                            \f
-                            \>
-                            [
-                            c'16
-                        }
-                    }
-                    {
-                        % [Voice 20 measure 17] %! COMMENT_MEASURE_NUMBERS
                         b'8
-                        fs''8
-                        a'16
-                        c'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
-                        r16
+                        \times 4/5 {
+                            r16
+                            \!
+                            c'16
+                            \f
+                            \>
+                            [
+                            a'16
+                            c'16
+                            a'16
+                            ]
+                        }
+                    }
+                    {
+                        % [Voice 20 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        c'4
+                        a'8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r8
                         \!
-                        a'16
+                        c'4
                         \f
                         \>
-                        [
                         \times 4/5 {
+                            a'16
+                            [
+                            fs''16
+                            b'16
                             c'16
                             b'16
-                            fs''16
-                            b'16
-                            fs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                         }
-                        r8
-                        \!
-                        a'8
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
                     }
                     {
-                        % [Voice 20 measure 18] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r8
+                        \!
+                        c'8
+                        \f
+                        \>
+                        [
+                        b'16
+                        fs''16
+                        a'16
+                        c'16
+                        \times 4/5 {
+                            a'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            c'16
+                            \f
+                            \>
+                            [
+                            b'16
+                            fs''16
+                        }
+                        b'8
+                        fs''8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                    }
+                    {
+                        % [Voice 20 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         a'4
                         \mf
@@ -17127,7 +18301,7 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            bes'8
+                            b'8
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -17151,26 +18325,30 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            c'16
+                            a'16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            b'16
                             c'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
-                        % [Voice 20 measure 19] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b'4
-                        \mp
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        ates'8.
-                        \pp
+                        bf'8.
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                         r16
@@ -17178,77 +18356,90 @@
                     }
                     {
                         \times 2/3 {
-                            fs''8
+                            c'8
+                            \f
+                            \>
+                            [
+                            b'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
                             r8
                             \!
-                            b'8
-                            \f
-                            \>
                         }
-                        c'4
+                        fs''4
+                        \f
+                        \>
                     }
                     {
-                        % [Voice 20 measure 20] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b'16
                         [
-                        fs''16
-                        a'16
                         c'16
+                        b'16
+                        fs''16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        \pitchedTrill
-                        b'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan fs''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            b'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan fs''
+                        }
                     }
                     {
-                        b'4
+                        cqs'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
+                        \stopTrillSpan
                         \times 4/5 {
-                            b'8
+                            cqs'8
                             [
-                            bes'8.
+                            b'8.
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
-                            ]
-                            \stopTrillSpan
                         }
                     }
                     {
                         \times 2/3 {
-                            % [Voice 20 measure 21] %! COMMENT_MEASURE_NUMBERS
-                            r8
-                            \!
-                            b'8
+                            % [Voice 20 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            a'8
                             \f
                             \>
-                            [
-                            fs''8
+                            c'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r8
+                            \!
                         }
+                        b'16
+                        \f
+                        \>
+                        [
+                        fs''16
                         a'16
                         c'16
-                        b'16
-                        c'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 8/7 {
+                            b'16
+                            c'16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
                             r16
                             \!
                             a'16
@@ -17258,22 +18449,16 @@
                             fs''16
                             a'16
                             c'16
-                            b'16
-                            c'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
                         }
                     }
                     {
-                        % [Voice 20 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
+                        % [Voice 20 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         b'8
-                        \f
+                        c'8
+                        \mp
                         - \tweak stencil #constante-hairpin
                         \<
+                        ]
                     }
                     {
                         gqf''4
@@ -17301,40 +18486,52 @@
                         \startTrillSpan b'
                     }
                     {
-                        % [Voice 20 measure 23] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 20 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         a'4
                     }
                     {
                         \times 4/5 {
-                            c'16
+                            b'16
                             \f
                             \>
                             [
                             \stopTrillSpan
-                            a'16
                             c'16
-                            b'16
-                            fs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
+                            a'16
+                            \f
+                            \>
+                            [
+                            c'16
+                            ]
                         }
-                        r4
-                        \!
-                        b'8
-                        \f
-                        \>
-                        [
+                        b'4
                         fs''8
+                        [
+                        b'8
                         ]
                     }
                     {
-                        % [Voice 20 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        a'4
-                        fs''16
-                        [
+                        % [Voice 20 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs''4
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        r16
+                        \!
                         a'16
+                        \f
+                        \>
+                        [
+                        fs''16
+                        a'16
+                        fs''8
+                        a'8
                         fs''16
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -17342,36 +18539,25 @@
                         ]
                         r16
                         \!
-                        a'8
+                        a'16
                         \f
                         \>
                         [
-                        fs''8
-                        a'16
                         c'16
-                        a'16
-                        c'16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
                     }
                     {
                         \times 4/5 {
-                            % [Voice 20 measure 25] %! COMMENT_MEASURE_NUMBERS
-                            r16
-                            \!
+                            % [Voice 20 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             a'16
-                            \f
-                            \>
-                            [
-                            fs''16
-                            b'16
                             c'16
+                            a'16
+                            fs''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
+                            r16
+                            \!
                         }
                     }
                     {
@@ -17389,8 +18575,8 @@
                         }
                     }
                     {
-                        ates'4
-                        \p
+                        bf'4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
@@ -17420,19 +18606,19 @@
                 \context Voice = "Voice 21"
                 {
                     {
-                        % [Voice 21 measure 1] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 21 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \set Staff.shortInstrumentName =
                         \markup { cbs. }
                         \set Staff.instrumentName =
                         \markup { Contrabass }
                         \tempo 4=90
-                        des'2
+                        d'2
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \!
-                        des'8.
+                        d'8.
                         [
                         aqs16
                         \pp
@@ -17450,7 +18636,7 @@
                         ]
                     }
                     {
-                        % [Voice 21 measure 2] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 21 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         r16
                         \!
                         g'16
@@ -17466,11 +18652,13 @@
                         \<
                     }
                     {
-                        gtes'4
-                        \pp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            af'4
+                            \p
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
@@ -17482,17 +18670,19 @@
                             \<
                             \startTrillSpan d'
                             r16
-                            \stopTrillSpan
                             \!
+                            \stopTrillSpan
                         }
                     }
                     {
-                        % [Voice 21 measure 3] %! COMMENT_MEASURE_NUMBERS
-                        gqf''4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            % [Voice 21 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            gqf''4
+                            \pp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                        }
                     }
                     {
                         g'8
@@ -17508,15 +18698,15 @@
                         \!
                     }
                     {
-                        ees''4
-                        \pp
+                        e''4
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 21 measure 4] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 21 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             fs''16
                             \mf
@@ -17541,27 +18731,63 @@
                         \!
                     }
                     {
-                        \pitchedTrill
-                        d'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan g'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            d'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan g'
+                        }
                     }
                     {
-                        % [Voice 21 measure 5] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 21 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         d'16
                         \f
                         \>
                         [
-                        e''16
                         \stopTrillSpan
+                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         g'16
-                        fs''16
+                        \f
+                        \>
+                        [
                         \times 2/3 {
+                            fs''8
                             g'8
                             fs''8
+                        }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            g'16
+                            fs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                        cs'''16
+                        \f
+                        \>
+                        [
+                        e''16
+                        cs'''16
+                        fs''16
+                    }
+                    {
+                        \times 2/3 {
+                            % [Voice 21 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            g'8
+                            e''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -17569,44 +18795,14 @@
                             r8
                             \!
                         }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            g'16
-                            \f
-                            \>
-                            [
-                            fs''16
-                            cs'''16
-                        }
-                        e''16
-                        cs'''16
-                        fs''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r16
-                        \!
-                    }
-                    {
-                        \times 2/3 {
-                            % [Voice 21 measure 6] %! COMMENT_MEASURE_NUMBERS
-                            g'8
-                            \f
-                            \>
-                            [
-                            e''8
-                            g'8
-                        }
+                        g'16
+                        \f
+                        \>
+                        [
                         fs''16
                         cs'''16
                         e''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
                         ]
-                        r16
-                        \!
                         cs'''4
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -17622,8 +18818,8 @@
                     }
                     {
                         \times 4/5 {
-                            % [Voice 21 measure 7] %! COMMENT_MEASURE_NUMBERS
-                            des'4
+                            % [Voice 21 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            d'4
                             \p
                             - \tweak stencil #constante-hairpin
                             \<
@@ -17651,15 +18847,15 @@
                         }
                     }
                     {
-                        gtes'4
+                        af'4
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                     }
                     {
-                        % [Voice 21 measure 8] %! COMMENT_MEASURE_NUMBERS
-                        gtes'4
+                        % [Voice 21 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        af'4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -17670,56 +18866,62 @@
                         \>
                         [
                         bf8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
                         ]
-                        e''4
+                        r4
+                        \!
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            bf16
-                            [
-                            e''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                        }
-                    }
-                    {
-                        % [Voice 21 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        bf8
-                        \f
-                        \>
-                        [
-                        e''8
-                        bf8
-                        d'8
-                        \times 4/5 {
-                            e''16
-                            g'16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
                             e''16
                             \f
                             \>
                             [
+                            bf16
+                            e''16
+                        }
+                    }
+                    {
+                        % [Voice 21 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf8
+                        e''8
+                        bf8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
+                        \times 4/5 {
+                            d'16
+                            \f
+                            \>
+                            [
+                            e''16
+                            g'16
+                            e''16
                             g'16
                         }
                         e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         g'16
+                        \f
+                        \>
+                        [
                         e''16
-                        d'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
                         \times 4/5 {
-                            % [Voice 21 measure 10] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 21 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             \pitchedTrill
                             fs''8.
                             \mf
@@ -17747,8 +18949,8 @@
                             \<
                             r16
                             \!
-                            ees''16
-                            \p
+                            e''16
+                            \pp
                             - \tweak stencil #constante-hairpin
                             \<
                         }
@@ -17762,81 +18964,34 @@
                         \startTrillSpan g'
                     }
                     {
-                        % [Voice 21 measure 11] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 21 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         dqf'''4.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         \stopTrillSpan
-                        des'4.
+                        d'4.
                         ~
                         \times 4/5 {
-                            des'8.
+                            d'8.
                             \pp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
                             aqs16
-                            \pp
+                            \p
                             - \tweak stencil #constante-hairpin
                             \<
-                        }
-                    }
-                    {
-                        % [Voice 21 measure 12] %! COMMENT_MEASURE_NUMBERS
-                        r8
-                        \!
-                        bf8
-                        \f
-                        \>
-                        [
-                        e''16
-                        cs'''16
-                        fs''16
-                        cs'''16
-                        ]
-                        e''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r8
-                        \!
-                        cs'''8
-                        \f
-                        \>
-                    }
-                    {
-                        % [Voice 21 measure 13] %! COMMENT_MEASURE_NUMBERS
-                        e''4
-                        \times 4/5 {
-                            cs'''16
                             [
-                            fs''16
-                            cs'''16
-                            e''16
-                            \mp
-                            - \tweak stencil #constante-hairpin
-                            \<
-                            ]
-                            r16
-                            \!
-                        }
-                        bf8
-                        \f
-                        \>
-                        [
-                        d'8
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            bf16
-                            d'16
-                            e''16
                         }
                     }
                     {
-                        % [Voice 21 measure 14] %! COMMENT_MEASURE_NUMBERS
-                        g'16
+                        % [Voice 21 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        d'8
+                        \f
+                        \>
+                        bf8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -17847,51 +19002,105 @@
                         \f
                         \>
                         [
-                        d'16
+                        cs'''16
+                        fs''16
+                        ]
+                        cs'''4
+                        e''8
+                        [
+                        cs'''8
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                         ]
                     }
                     {
-                        gtes'4
-                        \p
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                    {
-                        \pitchedTrill
-                        e''4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan fs''
-                    }
-                    {
-                        \times 2/3 {
-                            e''8
+                        % [Voice 21 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        \!
+                        \times 4/5 {
+                            e''16
                             \f
                             \>
                             [
-                            g'8
+                            cs'''16
+                            fs''16
+                            cs'''16
+                            e''16
+                        }
+                        bf8
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r8
+                        \!
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            d'16
+                            \f
+                            \>
+                            [
+                            bf16
+                            d'16
+                        }
+                    }
+                    {
+                        % [Voice 21 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        e''16
+                        g'16
+                        e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
+                    }
+                    {
+                        af'4
+                        \pp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                    }
+                    {
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            e''4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan fs''
+                        }
+                    }
+                    {
+                        \times 2/3 {
+                            d'8
+                            \f
+                            \>
+                            [
                             \stopTrillSpan
                             e''8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            ]
+                            r8
+                            \!
                         }
                     }
                     {
-                        % [Voice 21 measure 15] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 21 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         gqf''8.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
-                        ees''16
+                        [
+                        e''16
                         ~
                         ]
-                        ees''4
+                        e''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
@@ -17899,63 +19108,65 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            d'16
+                            g'16
                             \f
+                            \>
+                            [
+                            e''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                        }
+                        d'4
+                        \f
+                        \>
+                    }
+                    {
+                        \times 2/3 {
+                            % [Voice 21 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            e''8
+                            [
+                            d'8
+                            bf8
+                            ]
+                        }
+                        e''4
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            bf16
+                            \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             r16
                             \!
-                            e''16
-                            \f
-                            \>
-                        }
-                        d'4
-                    }
-                    {
-                        \times 2/3 {
-                            % [Voice 21 measure 16] %! COMMENT_MEASURE_NUMBERS
-                            bf8
-                            [
-                            e''8
-                            bf8
-                            ]
-                        }
-                        d'4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            r16
-                            \!
-                            e''16
-                            \f
-                            \>
-                            [
                             d'16
+                            \f
+                            \>
+                            [
                         }
                         e''8
                         d'8
                     }
                     {
                         \times 4/5 {
-                            % [Voice 21 measure 17] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 21 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             e''16
-                            g'16
+                            d'16
+                            e''16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                             r16
                             \!
-                            fs''16
-                            \f
-                            \>
-                            [
                             g'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
+                            [
                         }
                     }
                     {
@@ -17970,17 +19181,22 @@
                         \!
                         \stopTrillSpan
                         \pitchedTrill
-                        fs''2
+                        fs''4
                         \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
                         \startTrillSpan cs'''
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            fs''4
+                            ~
+                        }
                     }
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            % [Voice 21 measure 18] %! COMMENT_MEASURE_NUMBERS
+                            % [Voice 21 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                             fs''8
                             [
                             \pitchedTrill
@@ -17992,49 +19208,27 @@
                     {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 4/3 {
-                            e''16
+                            fs''16
                             \f
                             \>
                             \stopTrillSpan
                             g'16
-                            e''16
-                        }
-                        d'8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        r8
-                        \!
-                        \times 4/5 {
-                            bf16
-                            \f
-                            \>
-                            [
-                            e''16
-                            bf16
-                            e''16
-                            cs'''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
                             ]
+                            r16
+                            \!
                         }
-                    }
-                    {
-                        % [Voice 21 measure 19] %! COMMENT_MEASURE_NUMBERS
-                        fs''4
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        r8
-                        \!
-                        g'8
+                        e''8
                         \f
                         \>
-                        fs''4
+                        [
+                        g'8
                         \times 4/5 {
-                            cs'''16
-                            [
                             e''16
-                            cs'''16
+                            d'16
+                            bf16
                             e''16
                             \mp
                             - \tweak stencil #constante-hairpin
@@ -18045,11 +19239,35 @@
                         }
                     }
                     {
-                        % [Voice 21 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        bf8
+                        % [Voice 21 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf4
                         \f
                         \>
+                        e''8
                         [
+                        cs'''8
+                        ]
+                        fs''4
+                        \times 4/5 {
+                            g'16
+                            [
+                            fs''16
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ]
+                            r16
+                            \!
+                            cs'''16
+                            \f
+                            \>
+                            [
+                            e''16
+                        }
+                    }
+                    {
+                        % [Voice 21 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'''8
                         e''8
                         \mp
                         - \tweak stencil #constante-hairpin
@@ -18057,33 +19275,35 @@
                         ]
                     }
                     {
-                        \pitchedTrill
-                        d'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ~
-                        \startTrillSpan g'
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            \pitchedTrill
+                            d'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            \startTrillSpan g'
+                        }
                     }
                     {
-                        d'8
-                        \pp
+                        dqf'''8
+                        \p
                         - \tweak stencil #constante-hairpin
                         \<
+                        \stopTrillSpan
                         r16
                         \!
-                        \stopTrillSpan
-                        des'16
+                        d'16
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         ~
-                        des'4
+                        d'4
                         ~
                     }
                     {
-                        % [Voice 21 measure 21] %! COMMENT_MEASURE_NUMBERS
-                        des'4.
+                        % [Voice 21 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        d'4.
                         aqs8
                         \pp
                         - \tweak stencil #constante-hairpin
@@ -18110,95 +19330,97 @@
                         }
                     }
                     {
-                        % [Voice 21 measure 22] %! COMMENT_MEASURE_NUMBERS
-                        bf2
+                        % [Voice 21 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf4
                         ~
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 1/1 {
+                            bf4
+                        }
                     }
                     {
-                        bf8.
+                        af'8.
                         \p
                         - \tweak stencil #constante-hairpin
                         \<
                         [
+                        \stopTrillSpan
                         gqf''16
                         ~
                         ]
-                        \stopTrillSpan
                         gqf''4
                         \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 21 measure 23] %! COMMENT_MEASURE_NUMBERS
-                        cs'''16
+                        % [Voice 21 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        bf16
                         \f
                         \>
                         [
                         e''16
+                        \mp
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        ]
+                        r16
+                        \!
                         cs'''16
-                        e''16
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
+                        \f
+                        \>
+                        [
                         \times 4/5 {
-                            r16
-                            \!
-                            bf16
-                            \f
-                            \>
-                            [
-                            d'16
                             e''16
-                            g'16
-                        }
-                        fs''8
-                        cs'''8
-                        \mp
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 4/3 {
-                            r16
-                            \!
-                            fs''16
-                            \f
-                            \>
-                            [
-                            g'16
-                            ]
-                        }
-                    }
-                    {
-                        % [Voice 21 measure 24] %! COMMENT_MEASURE_NUMBERS
-                        e''4
-                        \times 2/3 {
-                            g'8
-                            [
-                            fs''8
-                            g'8
+                            cs'''16
+                            e''16
+                            bf16
+                            d'16
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
                             ]
                         }
-                        r4
+                        r8
                         \!
-                        e''16
+                        e''8
                         \f
                         \>
                         [
-                        d'16
-                        e''16
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 4/3 {
+                            g'16
+                            fs''16
+                            cs'''16
+                            ]
+                        }
+                    }
+                    {
+                        % [Voice 21 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        fs''4
+                        \times 2/3 {
+                            g'8
+                            \mp
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            r8
+                            \!
+                            e''8
+                            \f
+                            \>
+                        }
+                        g'4
+                        fs''16
+                        [
                         g'16
+                        e''16
+                        d'16
                         \mp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
                     {
-                        % [Voice 21 measure 25] %! COMMENT_MEASURE_NUMBERS
+                        % [Voice 21 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
                         \pitchedTrill
                         fs''8.
                         \mf
@@ -18211,8 +19433,8 @@
                         \stopTrillSpan
                     }
                     {
-                        ees''4
-                        \p
+                        e''4
+                        \pp
                         - \tweak stencil #constante-hairpin
                         \<
                     }
@@ -18222,7 +19444,7 @@
                             \f
                             \>
                             [
-                            d'8
+                            g'8
                             \mp
                             - \tweak stencil #constante-hairpin
                             \<
@@ -18230,11 +19452,11 @@
                             r8
                             \!
                         }
-                        bf16
+                        e''16
                         \f
                         \>
                         [
-                        e''16
+                        d'16
                         bf16
                         e''16
                         \mp

@@ -2,7 +2,7 @@
     <<
         \context TimeSignatureContext = "Global Context"
         {
-            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             \mark \markup {
                 \bold
@@ -11,735 +11,897 @@
                     }
                 }
             s1 * 1
-            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 13] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 18] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 19] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 20] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 22] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 23] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 24] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
-            % [Global Context measure 25] %! COMMENT_MEASURE_NUMBERS
+            % [Global Context measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
             \time 4/4
             s1 * 1
         }
-        \context Staff = "Staff 18"
+        \context Voice = "Voice 18"
         {
-            \context Voice = "Voice 18"
             {
-                {
-                    % [Voice 18 measure 1] %! COMMENT_MEASURE_NUMBERS
-                    \set Staff.shortInstrumentName =
-                    \markup { bar.3 }
-                    \set Staff.instrumentName =
-                    \markup { "Baritone 3" }
-                    dtef''8.
-                    \pp
-                    - \halfopen
-                    \<
-                    [
-                    \!
-                    \stopTrillSpan
-                    cqs'''16
-                    ~
-                    ]
-                    cqs'''2
-                    ~
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        \pitchedTrill
-                        cs''8
-                        [
-                        \ff
+                % [Voice 18 measure 1] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                \set Staff.shortInstrumentName =
+                \markup { bar.3 }
+                \set Staff.instrumentName =
+                \markup { "Baritone 3" }
+                cs''8.
+                \pp
 
-                        \>
-                        \startTrillSpan c'''
-                        \pitchedTrill
-                        fs'16
-                        ~
-                        ]
-                        \startTrillSpan cs''
-                    }
-                }
-                {
-                    % [Voice 18 measure 2] %! COMMENT_MEASURE_NUMBERS
-                    fs'4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ~
-                }
-                {
-                    fs'16
-                    \pp
-
-                    \<
-                    gqf'4..
-                    \stopTrillSpan
-                    r4
-                    \!
-                }
-                {
-                    % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS
-                    r2
-                }
-                {
-                    r2
-                }
-                {
-                    % [Voice 18 measure 4] %! COMMENT_MEASURE_NUMBERS
-                    r8.
-                    dtef''16
-                    \pp
-                    \<
-                    ~
-                    dtef''2
-                }
-                {
-                    \pitchedTrill
-                    cs''4
-                    \ff
-                    \>
-                    ~
-                    \startTrillSpan c'''
-                }
-                {
-                    % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS
-                    cs''2
-                }
-                {
-                    cqs'''4.
-                    \pp
-                    \<
-                    \stopTrillSpan
-                    etes'8
-                    ~
-                }
-                {
-                    % [Voice 18 measure 6] %! COMMENT_MEASURE_NUMBERS
-                    etes'4
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    \pitchedTrill
-                    fs'4
-                    \p
-                    - \portato
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan cs''
-                }
-                {
-                    gqf'16
-                    \pp
-                    - \tenuto
-                    \<
-                    [
-                    \stopTrillSpan
-                    dtef''8.
-                    \f
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                }
-                {
-                    \pitchedTrill
-                    e'4
-                    \ff
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan fs'
-                }
-                \pageBreak
-                {
-                    % [Voice 18 measure 7] %! COMMENT_MEASURE_NUMBERS
-                    r4
-                    \!
-                    \stopTrillSpan
-                }
-                {
-                    cqs'''2
-                    \pp
-                    \<
-                    etes'4
-                    \f
-                    - \tenuto
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    % [Voice 18 measure 8] %! COMMENT_MEASURE_NUMBERS
-                    \pitchedTrill
-                    cs''4
-                    \p
-                    - \flageolet
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan c'''
-                }
-                {
-                    gqf'16
-                    \pp
-
-                    \<
-                    [
-                    \stopTrillSpan
-                    dtef''8.
-                    \f
-                    - \tenuto
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ]
-                }
-                {
-                    \pitchedTrill
-                    fs'2
-                    \ff
-                    \>
-                    ~
-                    \startTrillSpan cs''
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 18 measure 9] %! COMMENT_MEASURE_NUMBERS
-                        fs'16
-                        \pitchedTrill
-                        e'4
-                        \p
-                        - \halfopen
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan fs'
-                        \stopTrillSpan
-                    }
-                }
-                {
-                    cqs'''8.
-                    \pp
-                    - \halfopen
-                    \<
-                    [
-                    \stopTrillSpan
-                    etes'16
-                    ~
-                    ]
-                    etes'2
-                }
-                {
-                    % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS
-                    \pitchedTrill
-                    cs''8
-                    \ff
-
-                    \>
-                    \startTrillSpan c'''
-                    \pitchedTrill
-                    fs'4.
-                    ~
-                    \startTrillSpan cs''
-                    \stopTrillSpan
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        fs'8
-                        \pp
-                        - \flageolet
-                        \<
-                        [
-                        dtef''16
-                        ~
-                        ]
-                        \stopTrillSpan
-                    }
-                    dtef''4
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ~
-                }
-                {
-                    % [Voice 18 measure 11] %! COMMENT_MEASURE_NUMBERS
-                    \pitchedTrill
-                    e'4
-                    \ff
-                    - \portato
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan fs'
-                    r4
-                    \stopTrillSpan
-                    \!
-                }
-                {
-                    r4.
-                    cqs'''8
-                    \f
-                    - \halfopen
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    % [Voice 18 measure 12] %! COMMENT_MEASURE_NUMBERS
-                    \pitchedTrill
-                    cs''2
-                    \ff
-                    \>
-                    \startTrillSpan c'''
-                }
-                {
-                    \times 4/5 {
-                        etes'8
-                        \pp
-
-                        \<
-                        [
-                        \stopTrillSpan
-                        gqf'8.
-                        ~
-                        ]
-                    }
-                    gqf'4
-                }
-                {
-                    % [Voice 18 measure 13] %! COMMENT_MEASURE_NUMBERS
-                    dtef''2
-                }
-                {
-                    \pitchedTrill
-                    fs'8.
-                    \ff
-                    - \flageolet
-                    \>
-                    [
-                    \startTrillSpan cs''
-                    \pitchedTrill
-                    e'16
-                    ~
-                    ]
-                    \startTrillSpan fs'
-                    \stopTrillSpan
-                    e'4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ~
-                }
-                {
-                    % [Voice 18 measure 14] %! COMMENT_MEASURE_NUMBERS
-                    e'4
-                    \pp
-                    - \tenuto
-                    \<
-                    etes'2
-                    ~
-                    \stopTrillSpan
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        etes'8
-                        [
-                        gqf'16
-                        ~
-                        ]
-                    }
-                }
-                {
-                    % [Voice 18 measure 15] %! COMMENT_MEASURE_NUMBERS
-                    gqf'4..
-                    dtef''16
-                    \f
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    r4
-                    \!
-                    \pitchedTrill
-                    cs''4
-                    \p
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan c'''
-                }
-                {
-                    \times 4/5 {
-                        % [Voice 18 measure 16] %! COMMENT_MEASURE_NUMBERS
-                        cqs'''8.
-                        \pp
-                        - \tenuto
-                        \<
-                        [
-                        \stopTrillSpan
-                        etes'8
-                        ~
-                        ]
-                    }
-                    etes'4
-                    ~
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        etes'16
-                        [
-                        gqf'8
-                        \f
-
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
-                }
-                {
-                    \pitchedTrill
-                    fs'4
-                    \ff
-                    \>
-                    ~
-                    \startTrillSpan cs''
-                }
-                {
-                    % [Voice 18 measure 17] %! COMMENT_MEASURE_NUMBERS
-                    fs'4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    dtef''2
-                    \pp
-                    \<
-                    \stopTrillSpan
-                }
-                {
-                    \times 4/5 {
-                        \pitchedTrill
-                        e'16
-                        \ff
-                        - \portato
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan fs'
-                        r4
-                        \!
-                        \stopTrillSpan
-                    }
-                }
-                {
-                    % [Voice 18 measure 18] %! COMMENT_MEASURE_NUMBERS
-                    r2
-                }
-                {
-                    r4
-                }
-                {
-                    r4
-                }
-                {
-                    % [Voice 18 measure 19] %! COMMENT_MEASURE_NUMBERS
-                    etes'4
-                    \pp
-                    - \tenuto
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ~
-                }
-                {
-                    \pitchedTrill
-                    fs'4
-                    \ff
-                    \>
-                    ~
-                    \startTrillSpan cs''
-                    \times 4/5 {
-                        fs'4
-                        \pitchedTrill
-                        e'16
-                        \p
-
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan fs'
-                    }
-                }
-                {
-                    r4
-                    \!
-                    \stopTrillSpan
-                }
-                {
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \times 4/3 {
-                        % [Voice 18 measure 20] %! COMMENT_MEASURE_NUMBERS
-                        \pitchedTrill
-                        cs''8
-                        \ff
-                        - \flageolet
-                        \>
-                        [
-                        \startTrillSpan c'''
-                        \pitchedTrill
-                        fs'16
-                        ~
-                        ]
-                        \startTrillSpan cs''
-                        \stopTrillSpan
-                    }
-                    fs'4
-                    \p
-                    - \tweak stencil #constante-hairpin
-                    \<
-                }
-                {
-                    dtef''4
-                    \pp
-                    \<
-                    ~
-                    \stopTrillSpan
-                    \times 4/5 {
-                        dtef''16
-                        cqs'''4
-                        \f
-                        - \halfopen
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS
-                    \pitchedTrill
-                    e'4
-                    \p
-                    - \halfopen
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan fs'
-                }
-                {
-                    \times 4/5 {
-                        etes'8
-                        \pp
-                        - \flageolet
-                        \<
-                        [
-                        \stopTrillSpan
-                        gqf'8.
-                        \f
-                        - \halfopen
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ]
-                    }
-                }
-                {
-                    \pitchedTrill
-                    cs''4
-                    \ff
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan c'''
-                }
-                {
-                    dtef''4
-                    \f
-
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \stopTrillSpan
-                }
-                {
-                    % [Voice 18 measure 22] %! COMMENT_MEASURE_NUMBERS
-                    \pitchedTrill
-                    fs'16
-                    \ff
-                    - \portato
-                    \>
-                    \startTrillSpan cs''
-                    \pitchedTrill
-                    e'4..
-                    \startTrillSpan fs'
-                    \stopTrillSpan
-                }
-                {
-                    \times 4/5 {
-                        cqs'''16
-                        \pp
-                        - \tenuto
-                        \<
-                        \stopTrillSpan
-                        etes'4
-                        \f
-
-                        - \tweak stencil #constante-hairpin
-                        \<
-                    }
-                }
-                {
-                    \pitchedTrill
-                    cs''4
-                    \p
-                    - \flageolet
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan c'''
-                }
-                {
-                    % [Voice 18 measure 23] %! COMMENT_MEASURE_NUMBERS
-                    gqf'2
-                    \pp
-                    \<
-                    \stopTrillSpan
-                }
-                {
-                    \pitchedTrill
-                    fs'4
-                    \ff
-
-                    \>
-                    \startTrillSpan cs''
-                    \pitchedTrill
-                    e'4
-                    \p
-                    - \portato
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    \startTrillSpan fs'
-                    \stopTrillSpan
-                }
-                {
-                    % [Voice 18 measure 24] %! COMMENT_MEASURE_NUMBERS
-                    r4
-                    \!
-                    \stopTrillSpan
-                    \times 4/5 {
-                        dtef''8
-                        \pp
-                        - \tenuto
-                        \<
-                        [
-                        cqs'''8.
-                        ~
-                        ]
-                    }
+                \<
+                [
+                \!
+                \stopTrillSpan
+                cqs'''16
+                ~
+                ]
+                cqs'''4
+                ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
                     cqs'''4
                     \f
                     - \tweak stencil #constante-hairpin
                     \<
                 }
-                {
-                    \times 4/5 {
-                        \pitchedTrill
-                        cs''8.
-                        \ff
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    \pitchedTrill
+                    cs''8
+                    \ff
 
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        \startTrillSpan c'''
-                        r8
-                        \!
-                        \stopTrillSpan
-                    }
+                    \>
+                    [
+                    \startTrillSpan c'''
+                    \pitchedTrill
+                    fs'16
+                    ~
+                    ]
+                    \startTrillSpan cs''
+                    \stopTrillSpan
                 }
-                {
-                    % [Voice 18 measure 25] %! COMMENT_MEASURE_NUMBERS
-                    r4
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    % [Voice 18 measure 2] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    fs'4
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
                 }
-                {
-                    r4.
-                    etes'8
+            }
+            {
+                f'16
+                \pp
+                - \tenuto
+                \<
+                [
+                \stopTrillSpan
+                gqf'8.
+                ~
+                ]
+                gqf'2
+            }
+            {
+                % [Voice 18 measure 3] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                cs''4
+                ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    cs''4
+                    \f
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+            }
+            {
+                \pitchedTrill
+                e'4
+                \ff
+                \>
+                ~
+                \startTrillSpan fs'
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    e'4
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+            }
+            {
+                % [Voice 18 measure 4] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                cqs'''8.
+                \pp
+                - \halfopen
+                \<
+                [
+                \stopTrillSpan
+                f'16
+                ~
+                ]
+                f'2
+            }
+            {
+                \pitchedTrill
+                cs''4
+                \ff
+                \>
+                ~
+                \startTrillSpan c'''
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    % [Voice 18 measure 5] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    cs''4
+                    ~
+                }
+                cs''4
+                \p
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    gqf'4
                     \pp
+                    \<
+                    ~
+                    \stopTrillSpan
+                }
+                gqf'8
+                [
+                cs''8
+                ~
+                ]
+            }
+            {
+                % [Voice 18 measure 6] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                cs''4
+                \f
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \pitchedTrill
+                fs'4
+                \p
+                - \portato
+                - \tweak stencil #constante-hairpin
+                \<
+                \startTrillSpan cs''
+            }
+            {
+                cqs'''16
+                \pp
+                - \flageolet
+                \<
+                [
+                \stopTrillSpan
+                f'8.
+                \f
+                - \halfopen
+                - \tweak stencil #constante-hairpin
+                \<
+                ]
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    \pitchedTrill
+                    e'4
+                    \ff
+                    \>
+                    ~
+                    \startTrillSpan fs'
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    % [Voice 18 measure 7] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    e'16
+                    [
+                    \pitchedTrill
+                    cs''8
+                    \p
 
                     - \tweak stencil #constante-hairpin
                     \<
-                    [
+                    ]
+                    \startTrillSpan c'''
+                    \stopTrillSpan
                 }
-                {
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    gqf'4
+                    \pp
+                    \<
+                    ~
+                    \stopTrillSpan
+                }
+                gqf'4
+                cs''4
+                \f
+
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                % [Voice 18 measure 8] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                \pitchedTrill
+                fs'4
+                \ff
+                - \flageolet
+                - \tweak stencil #constante-hairpin
+                \<
+                \startTrillSpan cs''
+            }
+            {
+                cqs'''16
+                \pp
+                - \tenuto
+                \<
+                [
+                \stopTrillSpan
+                f'8.
+                \f
+
+                - \tweak stencil #constante-hairpin
+                \<
+                ]
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    \pitchedTrill
+                    e'4
+                    \ff
+                    \>
+                    ~
+                    \startTrillSpan fs'
+                }
+                e'4
+                ~
+            }
+            {
+                \times 4/5 {
+                    % [Voice 18 measure 9] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    e'16
+                    \pitchedTrill
+                    cs''4
+                    \p
+                    - \halfopen
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \startTrillSpan c'''
+                    \stopTrillSpan
+                }
+            }
+            {
+                gqf'8.
+                \pp
+                - \tenuto
+                \<
+                [
+                \stopTrillSpan
+                cs''16
+                ~
+                ]
+                cs''2
+            }
+            {
+                % [Voice 18 measure 10] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                \pitchedTrill
+                fs'8
+                \ff
+
+                \>
+                [
+                \startTrillSpan cs''
+                \pitchedTrill
+                e'8
+                ~
+                ]
+                \startTrillSpan fs'
+                \stopTrillSpan
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    e'4
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    cqs'''8
+                    \pp
+
+                    \<
+                    [
+                    \stopTrillSpan
+                    f'16
+                    ~
+                    ]
+                }
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    f'4
+                    \f
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+            }
+            {
+                % [Voice 18 measure 11] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                \pitchedTrill
+                cs''4
+                \ff
+                \>
+                ~
+                \startTrillSpan c'''
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    cs''16
+                    [
                     \pitchedTrill
                     fs'8
                     \p
-                    - \flageolet
+                    - \portato
                     - \tweak stencil #constante-hairpin
                     \<
+                    ]
                     \startTrillSpan cs''
+                    \stopTrillSpan
                 }
-                {
-                    gqf'8
+            }
+            {
+                gqf'4.
+                \pp
+                \<
+                \stopTrillSpan
+                cs''8
+                \f
+                - \tenuto
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    % [Voice 18 measure 12] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \pitchedTrill
+                    e'4
+                    \ff
+                    \>
+                    ~
+                    \startTrillSpan fs'
+                }
+                e'4
+                \p
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \times 4/5 {
+                    cqs'''8
+                    \pp
+                    - \halfopen
+                    \<
+                    [
+                    \stopTrillSpan
+                    f'8.
+                    ~
+                    ]
+                }
+                f'4
+            }
+            {
+                % [Voice 18 measure 13] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                gqf'2
+            }
+            {
+                \pitchedTrill
+                cs''8.
+                \ff
+                - \flageolet
+                \>
+                [
+                \startTrillSpan c'''
+                \pitchedTrill
+                fs'16
+                ~
+                ]
+                \startTrillSpan cs''
+                \stopTrillSpan
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    fs'4
+                    \p
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+            }
+            {
+                % [Voice 18 measure 14] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                cs''4
+                \pp
+                - \flageolet
+                \<
+                \stopTrillSpan
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    cqs'''4
+                    ~
+                }
+                cqs'''4
+                ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    cqs'''8
+                    [
+                    f'16
+                    ~
+                    ]
+                }
+            }
+            {
+                % [Voice 18 measure 15] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                f'4..
+                gqf'16
+                \f
+                - \halfopen
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    \pitchedTrill
+                    e'4
+                    \ff
+                    \>
+                    ~
+                    \startTrillSpan fs'
+                }
+                e'4
+                \p
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \times 4/5 {
+                    % [Voice 18 measure 16] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    cs''8.
+                    \pp
+
+                    \<
+                    [
+                    \stopTrillSpan
+                    cqs'''8
+                    ~
+                    ]
+                }
+                cqs'''4
+                ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    cqs'''16
+                    [
+                    f'8
                     \f
                     - \tenuto
                     - \tweak stencil #constante-hairpin
                     \<
                     ]
-                    \stopTrillSpan
-                    \bar "||"
                 }
+            }
+            {
+                \pitchedTrill
+                cs''4
+                \ff
+                \>
+                ~
+                \startTrillSpan c'''
+            }
+            {
+                % [Voice 18 measure 17] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                cs''4
+                \p
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    gqf'4
+                    \pp
+                    \<
+                    ~
+                    \stopTrillSpan
+                }
+                gqf'4
+                \f
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \times 4/5 {
+                    \pitchedTrill
+                    fs'16
+                    \ff
+
+                    \>
+                    \startTrillSpan cs''
+                    \pitchedTrill
+                    e'4
+                    \p
+                    - \portato
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \startTrillSpan fs'
+                    \stopTrillSpan
+                }
+            }
+            {
+                % [Voice 18 measure 18] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                cs''2
+                \pp
+                \<
+                \stopTrillSpan
+            }
+            {
+                \pitchedTrill
+                cs''4
+                \p
+
+                - \tweak stencil #constante-hairpin
+                \<
+                \startTrillSpan c'''
+            }
+            {
+                cqs'''4
+                \pp
+
+                \<
+                \stopTrillSpan
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    % [Voice 18 measure 19] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    f'4
+                    \f
+                    - \tenuto
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+            }
+            {
+                \pitchedTrill
+                fs'4
+                \ff
+                \>
+                ~
+                \startTrillSpan cs''
+                \times 4/5 {
+                    fs'4
+                    \pitchedTrill
+                    e'16
+                    \p
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    \startTrillSpan fs'
+                    \stopTrillSpan
+                }
+            }
+            {
+                gqf'4
+                \f
+
+                - \tweak stencil #constante-hairpin
+                \<
+                \stopTrillSpan
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 4/3 {
+                    % [Voice 18 measure 20] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \pitchedTrill
+                    cs''8
+                    \ff
+                    - \halfopen
+                    \>
+                    [
+                    \startTrillSpan c'''
+                    \pitchedTrill
+                    fs'16
+                    ~
+                    ]
+                    \startTrillSpan cs''
+                    \stopTrillSpan
+                }
+                fs'4
+                \p
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                cs''4
+                \pp
+                \<
+                ~
+                \stopTrillSpan
+                \times 4/5 {
+                    cs''16
+                    cqs'''4
+                    \f
+                    - \tenuto
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+            }
+            {
+                % [Voice 18 measure 21] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                \pitchedTrill
+                e'4
+                \ff
+
+                - \tweak stencil #constante-hairpin
+                \<
+                \startTrillSpan fs'
+            }
+            {
+                \times 4/5 {
+                    f'8
+                    \pp
+                    - \halfopen
+                    \<
+                    [
+                    \stopTrillSpan
+                    gqf'8.
+                    \f
+                    - \flageolet
+                    - \tweak stencil #constante-hairpin
+                    \<
+                    ]
+                }
+            }
+            {
+                \pitchedTrill
+                cs''4
+                \p
+                - \portato
+                - \tweak stencil #constante-hairpin
+                \<
+                \startTrillSpan c'''
+            }
+            {
+                cs''4
+                \pp
+                - \halfopen
+                - \tweak stencil #constante-hairpin
+                \<
+                \stopTrillSpan
+            }
+            {
+                % [Voice 18 measure 22] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                \pitchedTrill
+                fs'16
+                \ff
+                - \flageolet
+                \>
+                \startTrillSpan cs''
+                \pitchedTrill
+                e'4..
+                \startTrillSpan fs'
+                \stopTrillSpan
+            }
+            {
+                \times 4/5 {
+                    cqs'''16
+                    \pp
+
+                    \<
+                    \stopTrillSpan
+                    f'4
+                    \f
+                    - \tenuto
+                    - \tweak stencil #constante-hairpin
+                    \<
+                }
+            }
+            {
+                \pitchedTrill
+                cs''4
+                \ff
+
+                - \tweak stencil #constante-hairpin
+                \<
+                \startTrillSpan c'''
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 1/1 {
+                    % [Voice 18 measure 23] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    gqf'4
+                    \pp
+
+                    \<
+                    \stopTrillSpan
+                }
+                cs''4
+                \f
+                - \tenuto
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \pitchedTrill
+                fs'4
+                \ff
+                - \portato
+                \>
+                \startTrillSpan cs''
+                \pitchedTrill
+                e'4
+                \p
+
+                - \tweak stencil #constante-hairpin
+                \<
+                \startTrillSpan fs'
+                \stopTrillSpan
+            }
+            {
+                % [Voice 18 measure 24] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                cqs'''4
+                \pp
+                \<
+                ~
+                \stopTrillSpan
+                \times 4/5 {
+                    cqs'''8
+                    [
+                    f'8.
+                    ~
+                    ]
+                }
+                f'4
+                \f
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                \times 4/5 {
+                    \pitchedTrill
+                    cs''8.
+                    \ff
+                    - \flageolet
+                    \>
+                    [
+                    \startTrillSpan c'''
+                    \pitchedTrill
+                    fs'8
+                    ~
+                    ]
+                    \startTrillSpan cs''
+                    \stopTrillSpan
+                }
+            }
+            {
+                % [Voice 18 measure 25] %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                fs'4
+                \p
+                - \tweak stencil #constante-hairpin
+                \<
+            }
+            {
+                gqf'4.
+                \pp
+                \<
+                \stopTrillSpan
+                cs''8
+                \f
+
+                - \tweak stencil #constante-hairpin
+                \<
+                [
+            }
+            {
+                \pitchedTrill
+                e'8
+                \p
+                - \halfopen
+                - \tweak stencil #constante-hairpin
+                \<
+                \startTrillSpan fs'
+            }
+            {
+                cqs'''8
+                \f
+                - \tenuto
+                - \tweak stencil #constante-hairpin
+                \<
+                ]
+                \stopTrillSpan
+                \bar "||"
             }
         }
     >>
