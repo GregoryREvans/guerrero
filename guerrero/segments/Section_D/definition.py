@@ -3768,10 +3768,11 @@ for voice_name, timespan_list in all_timespan_lists.items():
 
 print("Splitting and rewriting ...")
 # split and rewite meters
-for voice in abjad.iterate(score["Staff Group"]).components(abjad.Voice):
+for _, voice in enumerate(abjad.iterate(score["Staff Group"]).components(abjad.Voice)):
     for i, shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
+        print(f"Rewriting measure {i} in Voice {_ + 1}")
         time_signature = time_signatures[i]
-        abjad.Meter.rewrite_meter(shard, time_signature)
+        abjad.Meter.rewrite_meter(shard, time_signature, rewrite_tuplets=False)
 
 print("Beaming runs ...")
 for voice in abjad.select(score).components(abjad.Voice):
