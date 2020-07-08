@@ -1389,7 +1389,11 @@ contrabass_random_walk_notes = [
 rmaker_two = abjadext.rmakers.stack(abjadext.rmakers.NoteRhythmMaker())
 
 rmaker_one = abjadext.rmakers.stack(
-    abjadext.rmakers.talea([1, 1, 1, 3, 2, 1, 2, 4, 1, 3, 2, 3, 2, 1, 4, 1, 5, 2, 1, 3], 16, extra_counts=[0, 1, -1, 1, 0, -1, 0]),
+    abjadext.rmakers.talea(
+        [1, 1, 1, 3, 2, 1, 2, 4, 1, 3, 2, 3, 2, 1, 4, 1, 5, 2, 1, 3],
+        16,
+        extra_counts=[0, 1, -1, 1, 0, -1, 0],
+    ),
     abjadext.rmakers.force_rest(abjad.select().tuplets().get([6], 15)),
     abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([6], 11)),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),

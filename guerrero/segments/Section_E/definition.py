@@ -388,7 +388,9 @@ contrabass_random_walk_notes = [
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
 rmaker_one = abjadext.rmakers.stack(
-    abjadext.rmakers.talea([12, 7, -1, 11, 8, -1, 10, 9, -1], 16, extra_counts=[0, 1, -1, 1, 0, -1, 0]),
+    abjadext.rmakers.talea(
+        [12, 7, -1, 11, 8, -1, 10, 9, -1], 16, extra_counts=[0, 1, -1, 1, 0, -1, 0]
+    ),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
     abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
@@ -396,7 +398,9 @@ rmaker_one = abjadext.rmakers.stack(
 )
 
 rmaker_two = abjadext.rmakers.stack(
-    abjadext.rmakers.even_division([16, 16, 8, 16, 4, 8, 4, 16, 8], extra_counts=[0, 1, -1, 0, 1, 0, -1]),
+    abjadext.rmakers.even_division(
+        [16, 16, 8, 16, 4, 8, 4, 16, 8], extra_counts=[0, 1, -1, 0, 1, 0, -1]
+    ),
     abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([2], 7)),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),

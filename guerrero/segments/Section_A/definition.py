@@ -291,7 +291,11 @@ contrabass_random_walk_notes = [(x / 2.0) for x in contrabass_random_walk]
 # Define rhythm-makers: two to be used by the MusicMaker, one for silence.
 
 rmaker_one = abjadext.rmakers.stack(
-    abjadext.rmakers.talea([19, -1, 17, -1, 15, -1, 13, -1, 11, -1, 9, -1, 7, -1], 16, extra_counts=[0, 1, -1, 0]),
+    abjadext.rmakers.talea(
+        [19, -1, 17, -1, 15, -1, 13, -1, 11, -1, 9, -1, 7, -1],
+        16,
+        extra_counts=[0, 1, -1, 0],
+    ),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
     abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
@@ -299,7 +303,11 @@ rmaker_one = abjadext.rmakers.stack(
 )
 
 rmaker_two = abjadext.rmakers.stack(
-    abjadext.rmakers.talea([1, 1, 1, 1, -1, 2, 2, 1, -2, 1, 3, 2, 2, 3, 2, -1, 1, 2, 1, -1, 1, 3], 16, extra_counts=[-1, 0, 1, 0]),
+    abjadext.rmakers.talea(
+        [1, 1, 1, 1, -1, 2, 2, 1, -2, 1, 3, 2, 2, 3, 2, -1, 1, 2, 1, -1, 1, 3],
+        16,
+        extra_counts=[-1, 0, 1, 0],
+    ),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
     abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),

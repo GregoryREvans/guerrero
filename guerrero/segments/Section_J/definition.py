@@ -1495,7 +1495,9 @@ contrabass_random_walk_notes = [
 # Define rhythm-makers: two to be sued by the MusicMaker, one for silence.
 
 rmaker_one = abjadext.rmakers.stack(
-    abjadext.rmakers.talea([3, 2, 5, 2, 3, 1, 3, 2, 3, 1, 2], 8, extra_counts=[1, 0, -1, 1, -1, 0, 1]),
+    abjadext.rmakers.talea(
+        [3, 2, 5, 2, 3, 1, 3, 2, 3, 1, 2], 8, extra_counts=[1, 0, -1, 1, -1, 0, 1]
+    ),
     abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([3], 4)),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
@@ -1504,8 +1506,14 @@ rmaker_one = abjadext.rmakers.stack(
 )
 
 rmaker_two = abjadext.rmakers.stack(
-    abjadext.rmakers.talea([1, 1, 3, 1, 5, 5, 3, 1, 1, 3, 1, 3, 3, 1, 3, 7, 1, 6, 1, 3], 8, extra_counts=[-1, 0, 1, -1, 1, 0]),
-    abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([4, 8], 9)),
+    abjadext.rmakers.talea(
+        [1, 1, 3, 1, 5, 5, 3, 1, 1, 3, 1, 3, 3, 1, 3, 7, 1, 6, 1, 3],
+        8,
+        extra_counts=[-1, 0, 1, -1, 1, 0],
+    ),
+    abjadext.rmakers.force_rest(
+        abjad.select().logical_ties(pitched=True).get([4, 8], 9)
+    ),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
     abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
