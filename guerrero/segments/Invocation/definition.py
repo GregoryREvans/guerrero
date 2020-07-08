@@ -6,6 +6,7 @@ import time
 
 import abjad
 import abjadext.rmakers
+
 from guerrero.tools.AttachmentHandler import AttachmentHandler
 from guerrero.tools.MusicMaker import MusicMaker
 

@@ -7,6 +7,7 @@ from random import random, seed
 
 import abjad
 import abjadext.rmakers
+
 from guerrero.tools.AttachmentHandler import AttachmentHandler
 from guerrero.tools.MusicMaker import MusicMaker
 from guerrero.tools.TrillHandler import TrillHandler
