@@ -6,9 +6,9 @@ import time
 
 import abjad
 import abjadext.rmakers
-from evans.general_tools.mirror import mirror
-from evans.general_tools.random_walk import random_walk
-from evans.general_tools.rotate import rotate
+from evans import mirror
+from evans import random_walk
+from evans import rotate
 
 from guerrero.tools.AttachmentHandler import AttachmentHandler
 from guerrero.tools.MusicMaker import MusicMaker
