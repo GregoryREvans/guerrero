@@ -6,9 +6,7 @@ import time
 
 import abjad
 import abjadext.rmakers
-from evans import mirror
-from evans import random_walk
-from evans import rotate
+from evans import mirror, random_walk, rotate
 
 from guerrero.tools.AttachmentHandler import AttachmentHandler
 from guerrero.tools.MusicMaker import MusicMaker
@@ -3598,7 +3596,7 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
     abjad.attach(mark, leaf1)
 
 # for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
-#     abjad.Instrument.transpose_from_sounding_pitch(staff)
+#     abjad.iterpitches.transpose_from_sounding_pitch(staff)
 
 # Make a lilypond file and show it:
 
