@@ -34,7 +34,7 @@ time_signatures = [
     ]
 ]
 
-bounds = abjad.mathtools.cumulative_sums([_.duration for _ in time_signatures])
+bounds = abjad.mathx.cumulative_sums([_.duration for _ in time_signatures])
 
 # Define Pitch Material
 
