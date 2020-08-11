@@ -636,273 +636,273 @@ attachment_handler_two = AttachmentHandler(
 sopranino_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=sopranino_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 sopranino_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=sopranino_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####soprano_one#####
 soprano_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=soprano_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 soprano_one_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=soprano_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####soprano_two#####
 soprano_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=soprano_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 soprano_two_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=soprano_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####soprano_three#####
 soprano_three_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=soprano_3_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 soprano_three_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=soprano_3_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####alto_one#####
 alto_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 alto_one_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=alto_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####alto_two#####
 alto_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 alto_two_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=alto_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####alto_three#####
 alto_three_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_3_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 alto_three_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=alto_3_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####alto_four#####
 alto_four_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_4_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 alto_four_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=alto_4_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####alto_five#####
 alto_five_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_5_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 alto_five_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=alto_5_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####alto_six#####
 alto_six_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=alto_6_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 alto_six_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=alto_6_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####tenor_one#####
 tenor_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 tenor_one_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=tenor_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####tenor_two#####
 tenor_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 tenor_two_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=tenor_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####tenor_three#####
 tenor_three_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_3_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 tenor_three_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=tenor_3_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####tenor_four#####
 tenor_four_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_4_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 tenor_four_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=tenor_4_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####tenor_five#####
 tenor_five_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=tenor_5_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 tenor_five_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=tenor_5_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####baritone_one#####
 baritone_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=baritone_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 baritone_one_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=baritone_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####baritone_two#####
 baritone_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=baritone_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 baritone_two_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=baritone_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####baritone_three#####
 baritone_three_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=baritone_3_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 baritone_three_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=baritone_3_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####bass_one#####
 bass_one_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=bass_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 bass_one_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=bass_1_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####bass_two#####
 bass_two_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=bass_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 bass_two_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=bass_2_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 # ####contrabass#####
 contrabass_musicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=contrabass_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 contrabass_musicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=contrabass_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 
