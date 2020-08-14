@@ -2210,7 +2210,7 @@ for voice_name, timespan_list in all_timespan_lists.items():
 print("Splitting and rewriting ...")
 # split and rewite meters
 for _, voice in enumerate(abjad.iterate(score["Staff Group"]).components(abjad.Voice)):
-    for i, shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
+    for i, shard in enumerate.split(abjad.mutate(voice[:], time_signatures)):
         print(f"Rewriting measure {i} in Voice {_ + 1}")
         time_signature = time_signatures[i]
         abjad.Meter.rewrite_meter(shard, time_signature, rewrite_tuplets=False)
@@ -2590,7 +2590,7 @@ if path.exists():
     path.unlink()
 time_3 = time.time()
 print(f"Persisting {pdf_path} ...")
-result = abjad.persist(score_file).as_pdf(pdf_path)  # or ly
+result = abjad.persist.as_pdf(score_file, pdf_path)  # or ly
 print(result[0])
 print(result[1])
 print(result[2])
@@ -2613,8 +2613,8 @@ time_5 = time.time()
 # ##make parts###
 for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
     signatures = abjad.select(score["Global Context"]).components(abjad.Staff)
-    signature_copy = abjad.mutate(signatures).copy()
-    copied_staff = abjad.mutate(staff).copy()
+    signature_copy = abjad.mutate.copy(signatures)
+    copied_staff = abjad.mutate.copy(staff)
     part = abjad.Score()
     part.insert(0, copied_staff)
     part.insert(0, signature_copy)
@@ -2631,7 +2631,7 @@ for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
         print(f"Removing {pdf_path} ...")
         path.unlink()
     print(f"Persisting {pdf_path} ...")
-    result = abjad.persist(part_file).as_pdf(pdf_path)
+    result = abjad.persist.as_pdf(part_file, pdf_path)
     print(result[0])
     print(result[1])
     print(result[2])

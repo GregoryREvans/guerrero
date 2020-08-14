@@ -66,7 +66,7 @@
         \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = #9
+        \override TimeSignature.font-size = #6
         \override TimeSignature.self-alignment-X = #center
         \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 13) (padding . 7) (stretchability . 0))
     }
@@ -88,17 +88,19 @@
 		\override Staff.thickness = #0.5
 		\override MetronomeMark.font-size = 3
         \override SpacingSpanner.strict-grace-spacing = ##t
-        \override SpacingSpanner.strict-note-spacing = ##t
-        \override SpacingSpanner.uniform-stretching = ##t
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 19) (minimum-distance . 19) (padding . 0))
+        %{ \override SpacingSpanner.strict-note-spacing = ##t %}
+        %{ \override SpacingSpanner.uniform-stretching = ##t %}
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 17) (minimum-distance . 17) (padding . 0))
 		\override Stem.stemlet-length = #1.15
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
+		\override TupletBracket.staff-padding = #1.5
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+		\override TupletBracket.direction = #down
+		\override TupletNumber.font-size = #1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		%{ proportionalNotationDuration = #(ly:make-moment 1 34) %}
-		proportionalNotationDuration = #(ly:make-moment 1 47)
+		proportionalNotationDuration = #(ly:make-moment 1 22)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -109,7 +111,7 @@
     \context {
         \Staff
         \remove Time_signature_engraver
-		fontSize = #-2.5
+		fontSize = #-1
     }
     \context {
         \RhythmicStaff
@@ -122,15 +124,12 @@
 
 \paper {
 
-	%{ top-margin = 1\cm
-	bottom-margin = 0.4\cm
-	left-margin = 1.2\cm
-	right-margin = 1\cm %}
-
-	top-margin = 1.6\cm
-	bottom-margin = 0.7\cm
-	left-margin = 2.3\cm
-	right-margin = 1.3\cm
+	indent = 25\mm
+    short-indent = 15\mm
+    bottom-margin = 11\mm
+    left-margin = 11\mm
+    right-margin = 11\mm
+    top-margin = 11\mm
 
 	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""
@@ -138,16 +137,16 @@
 	oddFooterMarkup = \markup \fill-line {
     ""
     \concat {
-      "GUERRERO ~"
+      "GUERRERO -"
 	  \fontsize #2
-	  \fromproperty #'page:page-number-string "~ Evans"
+	  \fromproperty #'page:page-number-string "- GR Evans"
      }
     ""
   }
   evenFooterMarkup = \markup \fill-line {
     ""
-	\concat { "GUERRERO ~" \fontsize #2
-	\fromproperty #'page:page-number-string "~ Evans"
+	\concat { "GUERRERO -" \fontsize #2
+	\fromproperty #'page:page-number-string "- GR Evans"
     } ""
   }
 }
