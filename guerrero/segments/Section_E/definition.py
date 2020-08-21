@@ -3509,7 +3509,7 @@ print("Beautifying score ...")
 print("Stopping Hairpins ...")
 for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
     for rest in abjad.iterate(staff).components(abjad.Rest):
-        previous_leaf = abjad.inspect(rest).leaf(-1)
+        previous_leaf = abjad.get.leaf(rest, -1)
         if isinstance(previous_leaf, abjad.Note):
             abjad.attach(abjad.StopHairpin(), rest)
         elif isinstance(previous_leaf, abjad.Chord):

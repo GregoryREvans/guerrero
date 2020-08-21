@@ -28,23 +28,23 @@ class TrillHandler:
                 abjad.attach(trill_start, new_leaf)
                 abjad.attach(trill_literal, new_leaf)
                 last_leaf = tie[-1]
-                next_leaf = abjad.inspect(last_leaf).leaf(1)
+                next_leaf = abjad.get.leaf(last_leaf, 1)
                 if next_leaf is not None:
                     abjad.attach(trill_stop, next_leaf)
 
-                indicators = abjad.inspect(old_chord).indicators()
+                indicators = abjad.get.indicators(old_chord)
                 for indicator in indicators:
                     abjad.attach(indicator, new_leaf)
 
-                parent = abjad.inspect(old_chord).parentage().parent
+                parent = abjad.get.parentage(old_chord).parent
                 parent[parent.index(old_chord)] = new_leaf
 
                 tail = abjad.select(tie).leaves()[1:]
                 for leaf in tail:
                     new_tail = abjad.Note(base_pitch, leaf.written_duration)
-                    parent = abjad.inspect(leaf).parentage().parent
+                    parent = abjad.get.parentage(leaf).parent
                     parent[parent.index(leaf)] = new_tail
-                    indicators = abjad.inspect(leaf).indicators()
+                    indicators = abjad.get.indicators(leaf)
                     for indicator in indicators:
                         abjad.attach(indicator, new_tail)
 
