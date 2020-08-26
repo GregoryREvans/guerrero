@@ -3,7 +3,12 @@ import abjad
 
 class MusicMaker:
     def __init__(
-        self, rmaker, attachment_handler=None, pitches=None, forget=True, state=None,
+        self,
+        rmaker,
+        attachment_handler=None,
+        pitches=None,
+        forget=True,
+        state=None,
     ):
         self.attachment_handler = attachment_handler
         self.rmaker = rmaker
