@@ -44,7 +44,7 @@ time_signatures = [
     ]
 ]
 
-bounds = abjad.mathx.cumulative_sums([_.duration for _ in time_signatures])
+bounds = abjad.math.cumulative_sums([_.duration for _ in time_signatures])
 
 # Define Pitch Material
 
@@ -2210,7 +2210,7 @@ for voice_name, timespan_list in all_timespan_lists.items():
 print("Splitting and rewriting ...")
 # split and rewite meters
 for _, voice in enumerate(abjad.iterate(score["Staff Group"]).components(abjad.Voice)):
-    for i, shard in enumerate.split(abjad.mutate(voice[:], time_signatures)):
+    for i, shard in enumerate(abjad.mutate.split(voice[:], time_signatures)):
         print(f"Rewriting measure {i} in Voice {_ + 1}")
         time_signature = time_signatures[i]
         abjad.Meter.rewrite_meter(shard, time_signature, rewrite_tuplets=False)
