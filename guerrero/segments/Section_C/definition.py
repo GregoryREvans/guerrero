@@ -1511,7 +1511,13 @@ rmaker_two = abjadext.rmakers.stack(
     abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
-rmaker_three = abjadext.rmakers.stack(abjadext.rmakers.NoteRhythmMaker())
+rmaker_three = abjadext.rmakers.stack(
+    abjadext.rmakers.NoteRhythmMaker(),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+)
 
 # Initialize AttachmentHandler
 
@@ -1980,6 +1986,10 @@ contrabass_musicmaker_three = MusicMaker(
 silence_maker = abjadext.rmakers.stack(
     abjadext.rmakers.NoteRhythmMaker(),
     abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
 )
 
 # Define a small class so that we can annotate timespans with additional
