@@ -1939,7 +1939,7 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
 print("Adding attachments ...")
 bar_line = abjad.BarLine("||")
 metro = abjad.MetronomeMark((1, 4), 60)
-markup = abjad.Markup(r"\bold { Invocation }")
+markup = abjad.Markup(r"\markup \bold { Invocation }", literal=True)
 mark = abjad.RehearsalMark(markup=markup)
 
 instruments = cyc(
@@ -1970,53 +1970,53 @@ instruments = cyc(
 
 abbreviations = cyc(
     [
-        abjad.MarginMarkup(markup=abjad.Markup("spro.")),
-        abjad.MarginMarkup(markup=abjad.Markup("spr.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("spr.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("spr.3")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.3")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.4")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.5")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.6")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.3")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.4")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.5")),
-        abjad.MarginMarkup(markup=abjad.Markup("bar.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("bar.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("bar.3")),
-        abjad.MarginMarkup(markup=abjad.Markup("bs.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("bs.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("cbs.")),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spro.", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.3", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.3", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.4", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.5", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.6", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.3", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.4", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.5", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.3", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup cbs.", literal=True)),
     ]
 )
 
 names = cyc(
     [
-        abjad.StartMarkup(markup=abjad.Markup("Sopranino")),
-        abjad.StartMarkup(markup=abjad.Markup("Soprano 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Soprano 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Soprano 3")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 3")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 4")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 5")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 6")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 3")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 4")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 5")),
-        abjad.StartMarkup(markup=abjad.Markup("Baritone 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Baritone 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Baritone 3")),
-        abjad.StartMarkup(markup=abjad.Markup("Bass 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Bass 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Contrabass")),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup Sopranino", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 3}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 3}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 4}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 5}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 6}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 3}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 4}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 5}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 3}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup Contrabass", literal=True)),
     ]
 )
 
@@ -2041,8 +2041,8 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
 
 # Make a lilypond file and show it:
 
-score_file = abjad.LilyPondFile.new(
-    score,
+score_file = abjad.LilyPondFile(
+    items=[score],
     includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/guerrero/guerrero/Build/first_stylesheet.ily",
@@ -2092,8 +2092,8 @@ for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
     part = abjad.Score()
     part.insert(0, copied_staff)
     part.insert(0, signature_copy)
-    part_file = abjad.LilyPondFile.new(
-        part,
+    part_file = abjad.LilyPondFile(
+        items=[part],
         includes=[
             "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
             "/Users/evansdsg2/Scores/guerrero/guerrero/Build/parts_stylesheet.ily",

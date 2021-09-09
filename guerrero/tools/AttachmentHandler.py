@@ -38,13 +38,17 @@ class AttachmentHandler:
             leaves = abjad.select(run).leaves()
             start_span = abjad.StartTextSpan(
                 command=r"\startTextSpanOne",
-                left_text=abjad.Markup(next(text)).upright(),
+                left_text=abjad.Markup(
+                    fr"\markup \upright {{ {next(text)} }}", literal=True
+                ),
                 style=self.line_style,
             )
             stop_span = abjad.StartTextSpan(
                 command=r"\startTextSpanOne",
                 right_padding=2.5,
-                left_text=abjad.Markup(next(text)).upright(),
+                left_text=abjad.Markup(
+                    fr"\markup \upright {{ {next(text)} }}", literal=True
+                ),
                 style="solid-line-with-hook",
             )
             abjad.text_spanner(leaves[0], start_text_span=start_span)
@@ -58,7 +62,9 @@ class AttachmentHandler:
             span = abjad.StartTextSpan(
                 command=r"\startTextSpanOne",
                 right_padding=2.5,
-                left_text=abjad.Markup(next(text)).upright(),
+                left_text=abjad.Markup(
+                    fr"\markup \upright {{ {next(text)} }}", literal=True
+                ),
                 style="solid-line-with-hook",
             )
             abjad.text_spanner(leaves[0], start_text_span=span)

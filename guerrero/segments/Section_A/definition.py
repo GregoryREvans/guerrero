@@ -2264,58 +2264,45 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
 print("Adding attachments ...")
 bar_line = abjad.BarLine("||")
 # metro = abjad.MetronomeMark((1, 4), 90)
-markup = abjad.Markup(r"\bold { A }")
+markup = abjad.Markup(r"\markup \bold { A }", literal=True)
 mark = abjad.RehearsalMark(markup=markup)
 
-size = abjad.MarkupCommand("override", abjad.SchemePair(("size", 0.5)))
-
-fingering_1 = abjad.WoodwindFingering(  # [13.5, 16, 26.5]
-    name="soprano-saxophone",
-    center_column=("one", "two", "three", "four", "six"),
-    left_hand=("ees", "d"),
-    right_hand=("low-c",),
+soprano_1_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c))) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_1 = fingering_1()
-soprano_1_fingering = abjad.Markup(contents=[size, command_1], direction=abjad.Down)
 soprano_1_multiphonic = [
     x for x in abjad.iterate(score["Voice 2"]).components(abjad.Chord)
 ]
 abjad.attach(soprano_1_fingering, soprano_1_multiphonic[0])
 
-fingering_2 = abjad.WoodwindFingering(  # [13, 16, 26]
-    name="soprano-saxophone",
-    center_column=("one", "two", "three", "four", "six"),
-    left_hand=("ees", "d", "b"),
-    right_hand=("low-c",),
+soprano_2_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c))) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_2 = fingering_2()
-soprano_2_fingering = abjad.Markup(contents=[size, command_2], direction=abjad.Down)
 soprano_2_multiphonic = [
     x for x in abjad.iterate(score["Voice 3"]).components(abjad.Chord)
 ]
 abjad.attach(soprano_2_fingering, soprano_2_multiphonic[0])
 
-fingering_3 = abjad.WoodwindFingering(  # [12.5, 14.5, 26]
-    name="soprano-saxophone",
-    center_column=("one", "two", "three", "four", "five"),
-    left_hand=("ees", "d"),
-    right_hand=("low-c",),
+
+soprano_3_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c))) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_3 = fingering_3()
-soprano_3_fingering = abjad.Markup(contents=[size, command_3], direction=abjad.Down)
 soprano_3_multiphonic = [
     x for x in abjad.iterate(score["Voice 4"]).components(abjad.Chord)
 ]
 abjad.attach(soprano_3_fingering, soprano_3_multiphonic[0])
 
-fingering_4 = abjad.WoodwindFingering(  # [12.5, 19, 27.5, 34]
-    name="alto-saxophone",
-    center_column=("one", "two", "three"),
-    left_hand=("d", "gis"),
-    right_hand=(),
+alto_1_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three)) (lh . (d gis)) (rh . ())) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_4 = fingering_4()
-alto_1_fingering = abjad.Markup(contents=[size, command_4], direction=abjad.Down)
 alto_1_multiphonic = [
     x for x in abjad.iterate(score["Voice 5"]).components(abjad.Chord)
 ]
@@ -2325,66 +2312,53 @@ alto_6_multiphonic = [
 ]
 abjad.attach(alto_1_fingering, alto_6_multiphonic[0])
 
-fingering_5 = abjad.WoodwindFingering(  # [12.5, 15.5, 25.5]
-    name="alto-saxophone",
-    center_column=("one", "two", "three", "four", "five"),
-    left_hand=("b",),
-    right_hand=("low-c", "c"),
+
+alto_2_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c))) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_5 = fingering_5()
-alto_2_fingering = abjad.Markup(contents=[size, command_5], direction=abjad.Down)
 alto_2_multiphonic = [
     x for x in abjad.iterate(score["Voice 6"]).components(abjad.Chord)
 ]
 abjad.attach(alto_2_fingering, alto_2_multiphonic[0])
 
-fingering_6 = abjad.WoodwindFingering(  # [1.5, 13.5, 22.5, 27, 30]
-    name="alto-saxophone",
-    center_column=("one", "two", "three", "four", "five", "six"),
-    left_hand=("low-bes",),
-    right_hand=(),
+alto_3_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ())) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_6 = fingering_6()
-alto_3_fingering = abjad.Markup(contents=[size, command_6], direction=abjad.Down)
 alto_3_multiphonic = [
     x for x in abjad.iterate(score["Voice 7"]).components(abjad.Chord)
 ]
 abjad.attach(alto_3_fingering, alto_3_multiphonic[0])
 
-fingering_7 = abjad.WoodwindFingering(  # [12.5, 15.5, 25.5]
-    name="alto-saxophone",
-    center_column=("one", "two", "three", "four", "five"),
-    left_hand=("b",),
-    right_hand=("low-c", "c"),
+alto_4_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c))) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_7 = fingering_7()
-alto_4_fingering = abjad.Markup(contents=[size, command_7], direction=abjad.Down)
 alto_4_multiphonic = [
     x for x in abjad.iterate(score["Voice 8"]).components(abjad.Chord)
 ]
 abjad.attach(alto_4_fingering, alto_4_multiphonic[0])
 
-fingering_8 = abjad.WoodwindFingering(  # [1.5, 13.5, 22.5, 27, 30]
-    name="alto-saxophone",
-    center_column=("one", "two", "three", "four", "five", "six"),
-    left_hand=("low-bes",),
-    right_hand=(),
+alto_5_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ())) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_8 = fingering_8()
-alto_5_fingering = abjad.Markup(contents=[size, command_8], direction=abjad.Down)
 alto_5_multiphonic = [
     x for x in abjad.iterate(score["Voice 9"]).components(abjad.Chord)
 ]
 abjad.attach(alto_5_fingering, alto_5_multiphonic[0])
 
-fingering_9 = abjad.WoodwindFingering(  # [6, 17.5]
-    name="tenor-saxophone",
-    center_column=("one", "two", "three", "five", "six"),
-    left_hand=("cis",),
-    right_hand=(),
+
+tenor_1_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . (cis)) (rh . ())) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_9 = fingering_9()
-tenor_1_fingering = abjad.Markup(contents=[size, command_9], direction=abjad.Down)
 tenor_1_multiphonic = [
     x for x in abjad.iterate(score["Voice 11"]).components(abjad.Chord)
 ]
@@ -2394,79 +2368,61 @@ tenor_4_multiphonic = [
 ]
 abjad.attach(tenor_1_fingering, tenor_4_multiphonic[0])
 
-fingering_10 = abjad.WoodwindFingering(  # [6, 17.5, 25.5, 30]
-    name="tenor-saxophone",
-    center_column=("one", "two", "three", "five", "six"),
-    left_hand=("b",),
-    right_hand=(),
+tenor_2_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . (b)) (rh . ())) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_10 = fingering_10()
-tenor_2_fingering = abjad.Markup(contents=[size, command_10], direction=abjad.Down)
 tenor_2_multiphonic = [
     x for x in abjad.iterate(score["Voice 12"]).components(abjad.Chord)
 ]
 abjad.attach(tenor_2_fingering, tenor_2_multiphonic[0])
 
-fingering_11 = abjad.WoodwindFingering(  # [6, 17.5, 25.5, 30.5]
-    name="tenor-saxophone",
-    center_column=("one", "two", "three", "five", "six"),
-    left_hand=(),
-    right_hand=(),
+tenor_3_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . ()) (rh . ())) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_11 = fingering_11()
-tenor_3_fingering = abjad.Markup(contents=[size, command_11], direction=abjad.Down)
 tenor_3_multiphonic = [
     x for x in abjad.iterate(score["Voice 13"]).components(abjad.Chord)
 ]
 abjad.attach(tenor_3_fingering, tenor_3_multiphonic[0])
 
-fingering_12 = abjad.WoodwindFingering(  # [6, 17.5, 25.5, 30.5]
-    name="tenor-saxophone",
-    center_column=("one", "two", "three", "five", "six"),
-    left_hand=(),
-    right_hand=(),
+tenor_5_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . ()) (rh . ())) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_12 = fingering_12()
-tenor_5_fingering = abjad.Markup(contents=[size, command_12], direction=abjad.Down)
 tenor_5_multiphonic = [
     x for x in abjad.iterate(score["Voice 15"]).components(abjad.Chord)
 ]
 abjad.attach(tenor_5_fingering, tenor_5_multiphonic[0])
 
-fingering_13 = abjad.WoodwindFingering(  # [13.5, 27.5, 33.5]
-    name="baritone-saxophone",
-    center_column=("one", "two", "three"),
-    left_hand=("ees", "d", "gis"),
-    right_hand=(),
+baritone_1_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three)) (lh . (ees d gis)) (rh . ())) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_13 = fingering_13()
-baritone_1_fingering = abjad.Markup(contents=[size, command_13], direction=abjad.Down)
 baritone_1_multiphonic = [
     x for x in abjad.iterate(score["Voice 16"]).components(abjad.Chord)
 ]
 abjad.attach(baritone_1_fingering, baritone_1_multiphonic[0])
 
-fingering_14 = abjad.WoodwindFingering(  # [4, 16.5, 23.5]
-    name="baritone-saxophone",
-    center_column=("one", "two", "three", "four", "five"),
-    left_hand=("b",),
-    right_hand=("low-c",),
+baritone_2_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c))) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_14 = fingering_14()
-baritone_2_fingering = abjad.Markup(contents=[size, command_14], direction=abjad.Down)
 baritone_2_multiphonic = [
     x for x in abjad.iterate(score["Voice 17"]).components(abjad.Chord)
 ]
 abjad.attach(baritone_2_fingering, baritone_2_multiphonic[0])
 
-fingering_15 = abjad.WoodwindFingering(  # [6.5, 17.5, 25.5, 34]
-    name="baritone-saxophone",
-    center_column=("one", "two", "three", "five", "six"),
-    left_hand=("low-a",),
-    right_hand=("low-c",),
+baritone_3_fingering = abjad.Markup(
+    contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c))) }",
+    direction=abjad.Down,
+    literal=True,
 )
-command_15 = fingering_15()
-baritone_3_fingering = abjad.Markup(contents=[size, command_15], direction=abjad.Down)
 baritone_3_multiphonic = [
     x for x in abjad.iterate(score["Voice 18"]).components(abjad.Chord)
 ]
@@ -2500,53 +2456,53 @@ instruments = cyc(
 
 abbreviations = cyc(
     [
-        abjad.MarginMarkup(markup=abjad.Markup("spro.")),
-        abjad.MarginMarkup(markup=abjad.Markup("spr.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("spr.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("spr.3")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.3")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.4")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.5")),
-        abjad.MarginMarkup(markup=abjad.Markup("alt.6")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.3")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.4")),
-        abjad.MarginMarkup(markup=abjad.Markup("ten.5")),
-        abjad.MarginMarkup(markup=abjad.Markup("bar.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("bar.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("bar.3")),
-        abjad.MarginMarkup(markup=abjad.Markup("bs.1")),
-        abjad.MarginMarkup(markup=abjad.Markup("bs.2")),
-        abjad.MarginMarkup(markup=abjad.Markup("cbs.")),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spro.", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.3", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.3", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.4", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.5", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.6", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.3", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.4", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.5", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.3", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.1", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.2", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup cbs.", literal=True)),
     ]
 )
 
 names = cyc(
     [
-        abjad.StartMarkup(markup=abjad.Markup("Sopranino")),
-        abjad.StartMarkup(markup=abjad.Markup("Soprano 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Soprano 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Soprano 3")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 3")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 4")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 5")),
-        abjad.StartMarkup(markup=abjad.Markup("Alto 6")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 3")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 4")),
-        abjad.StartMarkup(markup=abjad.Markup("Tenor 5")),
-        abjad.StartMarkup(markup=abjad.Markup("Baritone 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Baritone 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Baritone 3")),
-        abjad.StartMarkup(markup=abjad.Markup("Bass 1")),
-        abjad.StartMarkup(markup=abjad.Markup("Bass 2")),
-        abjad.StartMarkup(markup=abjad.Markup("Contrabass")),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup Sopranino", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 3}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 3}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 4}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 5}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 6}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 3}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 4}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 5}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 3}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 1}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 2}", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup Contrabass", literal=True)),
     ]
 )
 
@@ -2571,8 +2527,8 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
 
 # Make a lilypond file and show it:
 
-score_file = abjad.LilyPondFile.new(
-    score,
+score_file = abjad.LilyPondFile(
+    items=[score],
     includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/guerrero/guerrero/Build/first_stylesheet.ily",
@@ -2622,8 +2578,8 @@ for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
     part = abjad.Score()
     part.insert(0, copied_staff)
     part.insert(0, signature_copy)
-    part_file = abjad.LilyPondFile.new(
-        part,
+    part_file = abjad.LilyPondFile(
+        items=[part],
         includes=[
             "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
             "/Users/evansdsg2/Scores/guerrero/guerrero/Build/parts_stylesheet.ily",
