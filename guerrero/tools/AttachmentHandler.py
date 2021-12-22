@@ -39,7 +39,7 @@ class AttachmentHandler:
             start_span = abjad.StartTextSpan(
                 command=r"\startTextSpanOne",
                 left_text=abjad.Markup(
-                    fr"\markup \upright {{ {next(text)} }}",  
+                    fr"\markup \upright {{ {next(text)} }}",
                 ),
                 style=self.line_style,
             )
@@ -47,7 +47,7 @@ class AttachmentHandler:
                 command=r"\startTextSpanOne",
                 right_padding=2.5,
                 left_text=abjad.Markup(
-                    fr"\markup \upright {{ {next(text)} }}",  
+                    fr"\markup \upright {{ {next(text)} }}",
                 ),
                 style="solid-line-with-hook",
             )
@@ -63,7 +63,7 @@ class AttachmentHandler:
                 command=r"\startTextSpanOne",
                 right_padding=2.5,
                 left_text=abjad.Markup(
-                    fr"\markup \upright {{ {next(text)} }}",  
+                    fr"\markup \upright {{ {next(text)} }}",
                 ),
                 style="solid-line-with-hook",
             )

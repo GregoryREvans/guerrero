@@ -598,7 +598,9 @@ contrabass_notes = [
 rmaker_one = abjadext.rmakers.stack(
     abjadext.rmakers.talea([1, 1, 1, 5, 3, 2, 4], 8, extra_counts=[0, 1, -1]),
     abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).tuplets().get([2], 11)),
-    abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).logical_ties(pitched=True).get([8], 5)),
+    abjadext.rmakers.force_rest(
+        lambda _: abjad.Selection(_).logical_ties(pitched=True).get([8], 5)
+    ),
     abjadext.rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
     abjadext.rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
     abjadext.rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
@@ -608,7 +610,9 @@ rmaker_one = abjadext.rmakers.stack(
 rmaker_two = abjadext.rmakers.stack(
     abjadext.rmakers.talea([4, 3, 1, 5, 2], 8, extra_counts=[-1, 0, -1, 1, 0]),
     abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).tuplets().get([2], 11)),
-    abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).logical_ties(pitched=True).get([8], 5)),
+    abjadext.rmakers.force_rest(
+        lambda _: abjad.Selection(_).logical_ties(pitched=True).get([8], 5)
+    ),
     abjadext.rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
     abjadext.rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
     abjadext.rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
@@ -1933,7 +1937,9 @@ for staff, scale in zip(staffs, scales):
 print("Adding attachments ...")
 bar_line = abjad.BarLine("||")
 metro = abjad.MetronomeMark((1, 4), 60)
-markup = abjad.Markup(r"\markup \bold { H }",  )
+markup = abjad.Markup(
+    r"\markup \bold { H }",
+)
 mark = abjad.RehearsalMark(markup=markup)
 
 instruments = cyc(
@@ -1964,53 +1970,221 @@ instruments = cyc(
 
 abbreviations = cyc(
     [
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spro.",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.3",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.3",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.4",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.5",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.6",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.3",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.4",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.5",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.3",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup cbs.",  )),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup spro.",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup spr.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup spr.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup spr.3",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.3",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.4",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.5",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.6",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.3",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.4",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.5",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bar.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bar.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bar.3",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bs.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bs.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup cbs.",
+            )
+        ),
     ]
 )
 
 names = cyc(
     [
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup Sopranino",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 3}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 3}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 4}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 5}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 6}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 3}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 4}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 5}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 3}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup Contrabass",  )),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup Sopranino",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Soprano 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Soprano 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Soprano 3}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 3}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 4}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 5}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 6}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 3}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 4}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 5}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Baritone 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Baritone 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Baritone 3}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Bass 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Bass 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup Contrabass",
+            )
+        ),
     ]
 )
 

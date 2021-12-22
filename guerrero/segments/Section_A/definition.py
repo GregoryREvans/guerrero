@@ -2264,13 +2264,14 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
 print("Adding attachments ...")
 bar_line = abjad.BarLine("||")
 # metro = abjad.MetronomeMark((1, 4), 90)
-markup = abjad.Markup(r"\markup \bold { A }",  )
+markup = abjad.Markup(
+    r"\markup \bold { A }",
+)
 mark = abjad.RehearsalMark(markup=markup)
 
 soprano_1_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four six)) (lh . (ees d)) (rh . (low-c))) }",
     direction=abjad.Down,
-     
 )
 soprano_1_multiphonic = [
     x for x in abjad.iterate(score["Voice 2"]).components(abjad.Chord)
@@ -2280,7 +2281,6 @@ abjad.attach(soprano_1_fingering, soprano_1_multiphonic[0])
 soprano_2_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four six)) (lh . (ees d b)) (rh . (low-c))) }",
     direction=abjad.Down,
-     
 )
 soprano_2_multiphonic = [
     x for x in abjad.iterate(score["Voice 3"]).components(abjad.Chord)
@@ -2291,7 +2291,6 @@ abjad.attach(soprano_2_fingering, soprano_2_multiphonic[0])
 soprano_3_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five)) (lh . (ees d)) (rh . (low-c))) }",
     direction=abjad.Down,
-     
 )
 soprano_3_multiphonic = [
     x for x in abjad.iterate(score["Voice 4"]).components(abjad.Chord)
@@ -2301,7 +2300,6 @@ abjad.attach(soprano_3_fingering, soprano_3_multiphonic[0])
 alto_1_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three)) (lh . (d gis)) (rh . ())) }",
     direction=abjad.Down,
-     
 )
 alto_1_multiphonic = [
     x for x in abjad.iterate(score["Voice 5"]).components(abjad.Chord)
@@ -2316,7 +2314,6 @@ abjad.attach(alto_1_fingering, alto_6_multiphonic[0])
 alto_2_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c))) }",
     direction=abjad.Down,
-     
 )
 alto_2_multiphonic = [
     x for x in abjad.iterate(score["Voice 6"]).components(abjad.Chord)
@@ -2326,7 +2323,6 @@ abjad.attach(alto_2_fingering, alto_2_multiphonic[0])
 alto_3_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ())) }",
     direction=abjad.Down,
-     
 )
 alto_3_multiphonic = [
     x for x in abjad.iterate(score["Voice 7"]).components(abjad.Chord)
@@ -2336,7 +2332,6 @@ abjad.attach(alto_3_fingering, alto_3_multiphonic[0])
 alto_4_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c c))) }",
     direction=abjad.Down,
-     
 )
 alto_4_multiphonic = [
     x for x in abjad.iterate(score["Voice 8"]).components(abjad.Chord)
@@ -2346,7 +2341,6 @@ abjad.attach(alto_4_fingering, alto_4_multiphonic[0])
 alto_5_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five six)) (lh . (low-bes)) (rh . ())) }",
     direction=abjad.Down,
-     
 )
 alto_5_multiphonic = [
     x for x in abjad.iterate(score["Voice 9"]).components(abjad.Chord)
@@ -2357,7 +2351,6 @@ abjad.attach(alto_5_fingering, alto_5_multiphonic[0])
 tenor_1_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . (cis)) (rh . ())) }",
     direction=abjad.Down,
-     
 )
 tenor_1_multiphonic = [
     x for x in abjad.iterate(score["Voice 11"]).components(abjad.Chord)
@@ -2371,7 +2364,6 @@ abjad.attach(tenor_1_fingering, tenor_4_multiphonic[0])
 tenor_2_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . (b)) (rh . ())) }",
     direction=abjad.Down,
-     
 )
 tenor_2_multiphonic = [
     x for x in abjad.iterate(score["Voice 12"]).components(abjad.Chord)
@@ -2381,7 +2373,6 @@ abjad.attach(tenor_2_fingering, tenor_2_multiphonic[0])
 tenor_3_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . ()) (rh . ())) }",
     direction=abjad.Down,
-     
 )
 tenor_3_multiphonic = [
     x for x in abjad.iterate(score["Voice 13"]).components(abjad.Chord)
@@ -2391,7 +2382,6 @@ abjad.attach(tenor_3_fingering, tenor_3_multiphonic[0])
 tenor_5_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . ()) (rh . ())) }",
     direction=abjad.Down,
-     
 )
 tenor_5_multiphonic = [
     x for x in abjad.iterate(score["Voice 15"]).components(abjad.Chord)
@@ -2401,7 +2391,6 @@ abjad.attach(tenor_5_fingering, tenor_5_multiphonic[0])
 baritone_1_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three)) (lh . (ees d gis)) (rh . ())) }",
     direction=abjad.Down,
-     
 )
 baritone_1_multiphonic = [
     x for x in abjad.iterate(score["Voice 16"]).components(abjad.Chord)
@@ -2411,7 +2400,6 @@ abjad.attach(baritone_1_fingering, baritone_1_multiphonic[0])
 baritone_2_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three four five)) (lh . (b)) (rh . (low-c))) }",
     direction=abjad.Down,
-     
 )
 baritone_2_multiphonic = [
     x for x in abjad.iterate(score["Voice 17"]).components(abjad.Chord)
@@ -2421,7 +2409,6 @@ abjad.attach(baritone_2_fingering, baritone_2_multiphonic[0])
 baritone_3_fingering = abjad.Markup(
     contents=r"\markup { \override #'(size . 0.5) \woodwind-diagram #'soprano-saxophone #'((cc . (one two three five six)) (lh . (low-a)) (rh . (low-c))) }",
     direction=abjad.Down,
-     
 )
 baritone_3_multiphonic = [
     x for x in abjad.iterate(score["Voice 18"]).components(abjad.Chord)
@@ -2456,53 +2443,221 @@ instruments = cyc(
 
 abbreviations = cyc(
     [
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spro.",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.3",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.3",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.4",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.5",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.6",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.3",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.4",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.5",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.3",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.1",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.2",  )),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup cbs.",  )),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup spro.",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup spr.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup spr.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup spr.3",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.3",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.4",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.5",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup alt.6",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.3",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.4",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup ten.5",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bar.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bar.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bar.3",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bs.1",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup bs.2",
+            )
+        ),
+        abjad.MarginMarkup(
+            markup=abjad.Markup(
+                r"\markup cbs.",
+            )
+        ),
     ]
 )
 
 names = cyc(
     [
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup Sopranino",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 3}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 3}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 4}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 5}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 6}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 3}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 4}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 5}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 3}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 1}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 2}",  )),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup Contrabass",  )),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup Sopranino",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Soprano 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Soprano 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Soprano 3}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 3}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 4}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 5}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Alto 6}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 3}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 4}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Tenor 5}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Baritone 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Baritone 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Baritone 3}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Bass 1}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup {Bass 2}",
+            )
+        ),
+        abjad.StartMarkup(
+            markup=abjad.Markup(
+                r"\markup Contrabass",
+            )
+        ),
     ]
 )
 
