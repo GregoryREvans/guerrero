@@ -39,7 +39,7 @@ class TrillHandler:
                 parent = abjad.get.parentage(old_chord).parent
                 parent[parent.index(old_chord)] = new_leaf
 
-                tail = abjad.select(tie).leaves()[1:]
+                tail = abjad.Selection(tie).leaves()[1:]
                 for leaf in tail:
                     new_tail = abjad.Note(base_pitch, leaf.written_duration)
                     parent = abjad.get.parentage(leaf).parent

@@ -34,12 +34,12 @@ class AttachmentHandler:
 
     def _apply_text_and_span_lr(self, selections):
         text = self._cyc_text
-        for run in abjad.select(selections).runs():
-            leaves = abjad.select(run).leaves()
+        for run in abjad.Selection(selections).runs():
+            leaves = abjad.Selection(run).leaves()
             start_span = abjad.StartTextSpan(
                 command=r"\startTextSpanOne",
                 left_text=abjad.Markup(
-                    fr"\markup \upright {{ {next(text)} }}", literal=True
+                    fr"\markup \upright {{ {next(text)} }}",  
                 ),
                 style=self.line_style,
             )
@@ -47,7 +47,7 @@ class AttachmentHandler:
                 command=r"\startTextSpanOne",
                 right_padding=2.5,
                 left_text=abjad.Markup(
-                    fr"\markup \upright {{ {next(text)} }}", literal=True
+                    fr"\markup \upright {{ {next(text)} }}",  
                 ),
                 style="solid-line-with-hook",
             )
@@ -57,28 +57,28 @@ class AttachmentHandler:
 
     def _apply_text_and_span_l_only(self, selections):
         text = self._cyc_text
-        for run in abjad.select(selections).runs():
-            leaves = abjad.select(run).leaves()
+        for run in abjad.Selection(selections).runs():
+            leaves = abjad.Selection(run).leaves()
             span = abjad.StartTextSpan(
                 command=r"\startTextSpanOne",
                 right_padding=2.5,
                 left_text=abjad.Markup(
-                    fr"\markup \upright {{ {next(text)} }}", literal=True
+                    fr"\markup \upright {{ {next(text)} }}",  
                 ),
                 style="solid-line-with-hook",
             )
             abjad.text_spanner(leaves[0], start_text_span=span)
 
     def add_attachments(self, selections):
-        runs = abjad.select(selections).runs()
-        ties = abjad.select(selections).logical_ties(pitched=True)
+        runs = abjad.Selection(selections).runs()
+        ties = abjad.Selection(selections).logical_ties(pitched=True)
         for run in runs:
             if self.clef is not None:
                 abjad.attach(
                     abjad.Clef(self.clef), run[0]
                 )  # doesn't seem to always work, redo entire attachment handler?
             if len(run) > 1:
-                leaves = abjad.select(run).leaves()
+                leaves = abjad.Selection(run).leaves()
                 if self.starting_dynamic is not None:
                     abjad.attach(abjad.Dynamic(self.starting_dynamic), leaves[0])
                 if self.hairpin is not None:
@@ -94,7 +94,7 @@ class AttachmentHandler:
                     else:
                         self._apply_text_and_span_l_only(run)
             else:
-                leaves = abjad.select(run).leaves()
+                leaves = abjad.Selection(run).leaves()
                 dynamic = next(self._cyc_dynamics)
                 if self.starting_dynamic is not None:
                     if self.ending_dynamic is not None:

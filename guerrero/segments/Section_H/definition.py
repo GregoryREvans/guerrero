@@ -597,22 +597,22 @@ contrabass_notes = [
 
 rmaker_one = abjadext.rmakers.stack(
     abjadext.rmakers.talea([1, 1, 1, 5, 3, 2, 4], 8, extra_counts=[0, 1, -1]),
-    abjadext.rmakers.force_rest(abjad.select().tuplets().get([2], 11)),
-    abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([8], 5)),
-    abjadext.rmakers.trivialize(abjad.select().tuplets()),
-    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
-    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+    abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).tuplets().get([2], 11)),
+    abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).logical_ties(pitched=True).get([8], 5)),
+    abjadext.rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
 )
 
 rmaker_two = abjadext.rmakers.stack(
     abjadext.rmakers.talea([4, 3, 1, 5, 2], 8, extra_counts=[-1, 0, -1, 1, 0]),
-    abjadext.rmakers.force_rest(abjad.select().tuplets().get([2], 11)),
-    abjadext.rmakers.force_rest(abjad.select().logical_ties(pitched=True).get([8], 5)),
-    abjadext.rmakers.trivialize(abjad.select().tuplets()),
-    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
-    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+    abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).tuplets().get([2], 11)),
+    abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).logical_ties(pitched=True).get([8], 5)),
+    abjadext.rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
 )
 
 # Initialize AttachmentHandler
@@ -908,11 +908,11 @@ contrabass_musicmaker_two = MusicMaker(
 
 silence_maker = abjadext.rmakers.stack(
     abjadext.rmakers.NoteRhythmMaker(),
-    abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
-    abjadext.rmakers.trivialize(abjad.select().tuplets()),
-    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
-    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+    abjadext.rmakers.force_rest(lambda _: abjad.Selection(_).leaves(pitched=True)),
+    abjadext.rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    abjadext.rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
 )
 
 # Define a small class so that we can annotate timespans with additional
@@ -1799,16 +1799,16 @@ def make_container(music_maker, durations):
     # start_indicator = abjad.LilyPondLiteral('\startGroup', format_slot='after')
     # stop_indicator = abjad.LilyPondLiteral('\stopGroup', format_slot='after')
     # for cell in selections:
-    #     cell_first_leaf = abjad.select(cell).leaves()[0]
-    #     cell_last_leaf = abjad.select(cell).leaves()[-1]
+    #     cell_first_leaf = abjad.Selection(cell).leaves()[0]
+    #     cell_last_leaf = abjad.Selection(cell).leaves()[-1]
     #     abjad.attach(start_indicator, cell_first_leaf)
     #     abjad.attach(stop_indicator, cell_last_leaf)
     # # The extra space in the literals is a hack around a check for whether an
     # # identical object has already been attached
     # start_indicator = abjad.LilyPondLiteral('\startGroup ', format_slot='after')
     # stop_indicator = abjad.LilyPondLiteral('\stopGroup ', format_slot='after')
-    # phrase_first_leaf = abjad.select(container).leaves()[0]
-    # phrase_last_leaf = abjad.select(container).leaves()[-1]
+    # phrase_first_leaf = abjad.Selection(container).leaves()[0]
+    # phrase_last_leaf = abjad.Selection(container).leaves()[-1]
     # abjad.attach(start_indicator, phrase_first_leaf)
     # abjad.attach(stop_indicator, phrase_last_leaf)
     return container
@@ -1854,8 +1854,8 @@ for _, voice in enumerate(abjad.iterate(score["Staff Group"]).components(abjad.V
         abjad.Meter.rewrite_meter(shard, time_signature, rewrite_tuplets=False)
 
 print("Beaming runs ...")
-for voice in abjad.select(score).components(abjad.Voice):
-    # for run in abjad.select(voice).runs():
+for voice in abjad.Selection(score).components(abjad.Voice):
+    # for run in abjad.Selection(voice).runs():
     #     specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
     #     specifier(run)
     abjad.beam(voice[:], beam_lone_notes=False, beam_rests=False)
@@ -1863,7 +1863,7 @@ for voice in abjad.select(score).components(abjad.Voice):
 # print('Beautifying score ...')
 # # cutaway score
 # for staff in abjad.iterate(score['Staff Group']).components(abjad.Staff):
-#     for selection in abjad.select(staff).components(abjad.Rest).group_by_contiguity():
+#     for selection in abjad.Selection(staff).components(abjad.Rest).group_by_contiguity():
 #         start_command = abjad.LilyPondLiteral(
 #             r'\stopStaff \once \override Staff.StaffSymbol.line-count = #1 \startStaff',
 #             format_slot='before',
@@ -1887,7 +1887,7 @@ for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
             pass
 
 for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
-    first_leaf = abjad.select(staff).leaves()[0]
+    first_leaf = abjad.Selection(staff).leaves()[0]
     stop = abjad.LilyPondLiteral(r"\!", format_slot="after")
     abjad.attach(stop, first_leaf)
 
@@ -1933,7 +1933,7 @@ for staff, scale in zip(staffs, scales):
 print("Adding attachments ...")
 bar_line = abjad.BarLine("||")
 metro = abjad.MetronomeMark((1, 4), 60)
-markup = abjad.Markup(r"\markup \bold { H }", literal=True)
+markup = abjad.Markup(r"\markup \bold { H }",  )
 mark = abjad.RehearsalMark(markup=markup)
 
 instruments = cyc(
@@ -1964,70 +1964,70 @@ instruments = cyc(
 
 abbreviations = cyc(
     [
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spro.", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.1", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.2", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.3", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.1", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.2", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.3", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.4", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.5", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.6", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.1", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.2", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.3", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.4", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.5", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.1", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.2", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.3", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.1", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.2", literal=True)),
-        abjad.MarginMarkup(markup=abjad.Markup(r"\markup cbs.", literal=True)),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spro.",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.1",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.2",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup spr.3",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.1",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.2",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.3",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.4",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.5",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup alt.6",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.1",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.2",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.3",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.4",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup ten.5",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.1",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.2",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bar.3",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.1",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup bs.2",  )),
+        abjad.MarginMarkup(markup=abjad.Markup(r"\markup cbs.",  )),
     ]
 )
 
 names = cyc(
     [
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup Sopranino", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 1}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 2}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 3}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 1}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 2}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 3}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 4}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 5}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 6}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 1}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 2}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 3}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 4}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 5}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 1}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 2}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 3}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 1}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 2}", literal=True)),
-        abjad.StartMarkup(markup=abjad.Markup(r"\markup Contrabass", literal=True)),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup Sopranino",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 1}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 2}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Soprano 3}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 1}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 2}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 3}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 4}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 5}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Alto 6}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 1}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 2}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 3}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 4}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Tenor 5}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 1}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 2}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Baritone 3}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 1}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup {Bass 2}",  )),
+        abjad.StartMarkup(markup=abjad.Markup(r"\markup Contrabass",  )),
     ]
 )
 
 for staff in abjad.iterate(score["Staff Group"]).components(abjad.Staff):
-    leaf1 = abjad.select(staff).leaves()[0]
+    leaf1 = abjad.Selection(staff).leaves()[0]
     abjad.attach(next(instruments), leaf1)
     abjad.attach(next(abbreviations), leaf1)
     abjad.attach(next(names), leaf1)
 
-for staff in abjad.select(score["Staff Group"]).components(abjad.Staff):
-    leaf1 = abjad.select(staff).leaves()[0]
-    last_leaf = abjad.select(staff).leaves()[-1]
+for staff in abjad.Selection(score["Staff Group"]).components(abjad.Staff):
+    leaf1 = abjad.Selection(staff).leaves()[0]
+    last_leaf = abjad.Selection(staff).leaves()[-1]
     abjad.attach(metro, leaf1)
     abjad.attach(bar_line, last_leaf)
 
 for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
-    leaf1 = abjad.select(staff).leaves()[0]
+    leaf1 = abjad.Selection(staff).leaves()[0]
     abjad.attach(mark, leaf1)
 
 # for staff in abjad.iterate(score['Staff Group 1']).components(abjad.Staff):
@@ -2080,7 +2080,7 @@ segment_time = time_2 - time_1
 time_5 = time.time()
 # ##make parts###
 for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
-    signatures = abjad.select(score["Global Context"]).components(abjad.Staff)
+    signatures = abjad.Selection(score["Global Context"]).components(abjad.Staff)
     signature_copy = abjad.mutate.copy(signatures)
     copied_staff = abjad.mutate.copy(staff)
     part = abjad.Score()
