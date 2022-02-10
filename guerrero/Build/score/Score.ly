@@ -1,8 +1,8 @@
 \version "2.19.82"  %! LilyPondFile
 \language "english" %! LilyPondFile
 
-\include "/Users/evansdsg2/Scores/guerrero/guerrero/Build/first_stylesheet.ily"                                      %! LilyPondFile
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
+\include "/Users/gregoryevans/Scores/guerrero/guerrero/Build/first_stylesheet.ily"                                      %! LilyPondFile
+\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
 
 \header { %! LilyPondFile
     tagline = ##f

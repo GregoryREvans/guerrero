@@ -2212,8 +2212,8 @@ for staff in abjad.iterate(score["Global Context"]).components(abjad.Staff):
 score_file = abjad.LilyPondFile(
     items=[score],
     includes=[
-        "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
-        "/Users/evansdsg2/Scores/guerrero/guerrero/Build/first_stylesheet.ily",
+        "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily",
+        "/Users/gregoryevans/Scores/guerrero/guerrero/Build/first_stylesheet.ily",
     ],
 )
 
@@ -2263,8 +2263,8 @@ for count, staff in enumerate(abjad.iterate(score).components(abjad.Voice)):
     part_file = abjad.LilyPondFile(
         items=[part],
         includes=[
-            "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
-            "/Users/evansdsg2/Scores/guerrero/guerrero/Build/parts_stylesheet.ily",
+            "/Users/gregoryevans/abjad/docs/source/_stylesheets/abjad.ily",
+            "/Users/gregoryevans/Scores/guerrero/guerrero/Build/parts_stylesheet.ily",
         ],
     )
     pdf_path = f"{directory}/part_illustration{count + 1}.pdf"
